@@ -60,20 +60,7 @@
   color: var(--text-muted);
 }
 
-/* --- Carousel Layout --- */
-.market-section__carousel-wrapper {
-  width: 100%;
-  position: relative;
-  /* Add subtle edge masks if desired, but letting it bleed naturally looks cleaner */
-}
-
-.market-section__carousel {
-  display: flex;
-  flex-direction: row;
-  gap: var(--space-lg);
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  /* Dynamic left padding to align with strict container, right padding for simple overflow */
+/* --- List Layout --- */
 .market-section__list {
   display: flex;
   flex-direction: column;

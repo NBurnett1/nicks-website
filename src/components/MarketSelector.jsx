@@ -45,6 +45,7 @@ export default function MarketSelector({ onSelect }) {
     <div className={`market-selector-gate ${exitingMarket ? 'market-selector-gate--exiting' : ''}`}>
       <div className="market-selector__bg-orb market-selector__bg-orb--1" />
       <div className="market-selector__bg-orb market-selector__bg-orb--2" />
+      <div className="market-selector__bg-orb market-selector__bg-orb--3" />
       
       <div className="container market-selector__content">
         <h1 className="market-selector__title animate-fade-in-up">
