@@ -65,7 +65,13 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.stock-card__brand-group {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
 }
 
 .stock-card__ticker-group {

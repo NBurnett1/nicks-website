@@ -12,17 +12,23 @@ export default function Home() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
+    if (!selectedExchange) return;
+    setLoading(true);
+    const exchangeKey = selectedExchange.toLowerCase();
     Promise.all([
-      fetch('/data/summary.json').then(res => res.json()),
-      fetch('/data/meta.json').then(res => res.json())
+      fetch(`/data/${exchangeKey}_summary.json`).then(res => res.json()),
+      fetch(`/data/${exchangeKey}_meta.json`).then(res => res.json())
     ])
       .then(([summaryData, metaData]) => {
         setData(summaryData)
         setMeta(metaData)
         setLoading(false)
       })
-      .catch(() => setLoading(false))
-  }, [])
+      .catch(() => {
+        setData(null)
+        setLoading(false)
+      })
+  }, [selectedExchange])
 
   const formatDate = (dateStr) => {
     if (!dateStr) return ''
@@ -53,11 +59,17 @@ export default function Home() {
 
   return (
     <div className="home" id="home-page">
+      <div className="home__bg-orbs">
+        <div className="home__bg-orb home__bg-orb--1" />
+        <div className="home__bg-orb home__bg-orb--2" />
+        <div className="home__bg-orb home__bg-orb--3" />
+      </div>
+
       <header className="home__header">
         <div className="container home__header-container">
           <div className="home__brand">
-            <span style={{ display: 'inline-block', width: '8px', height: '8px', background: 'var(--blue-400)', borderRadius: '50%', boxShadow: '0 0 10px var(--blue-400)' }} />
-            ASX AI Valuations
+            <img src="/logo.png" alt="N Valuations Logo" className="home__logo-img" />
+            <span className="hide-mobile">{selectedExchange}</span> N Valuations
           </div>
           {meta && (
             <div className="home__header-meta">

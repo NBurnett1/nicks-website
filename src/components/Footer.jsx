@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer__content">
           <div className="footer__brand">
-            <span className="footer__logo">ASX Valuations</span>
+            <span className="footer__logo">N Valuations</span>
             <p className="footer__tagline">AI-powered stock analysis for the Australian market.</p>
           </div>
 
@@ -21,7 +21,7 @@ export default function Footer() {
         </div>
 
         <div className="footer__bottom">
-          <p className="footer__copyright">© {year} ASX Valuations. All rights reserved.</p>
+          <p className="footer__copyright">© {year} N Valuations. All rights reserved.</p>
           <p className="footer__note">Data refreshed weekly. Not affiliated with ASX Limited.</p>
         </div>
       </div>

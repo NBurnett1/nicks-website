@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom'
+import StockLogo from './StockLogo'
 import './StockCard.css'
 
 export default function StockCard({ stock, type, index }) {
@@ -24,13 +25,18 @@ export default function StockCard({ stock, type, index }) {
       <div className={`stock-card__glow stock-card__glow--${type}`} />
 
       <div className="stock-card__header">
-        <div className="stock-card__ticker-group">
-          <span className="stock-card__ticker">{stock.ticker}</span>
-          <span className={`badge badge--${isOvervalued ? 'red' : 'green'}`}>
-            {isOvervalued ? '▲' : '▼'} {scoreAbs}%
-          </span>
+        <div className="stock-card__brand-group">
+          <StockLogo ticker={stock.ticker} name={stock.name} />
+          <div>
+            <div className="stock-card__ticker-group">
+              <span className="stock-card__ticker">{stock.ticker}</span>
+              <span className={`badge badge--${isOvervalued ? 'red' : 'green'}`}>
+                {isOvervalued ? '▲' : '▼'} {scoreAbs}%
+              </span>
+            </div>
+            <span className="stock-card__sector">{stock.sector}</span>
+          </div>
         </div>
-        <span className="stock-card__sector">{stock.sector}</span>
       </div>
 
       <div className="stock-card__name">{stock.name}</div>
