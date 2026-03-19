@@ -1,0 +1,203 @@
+/* ============================================
+   Market Selector Splash Gate
+   ============================================ */
+
+.market-selector-gate {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background: var(--bg-primary);
+  padding: var(--space-xl) var(--space-md);
+  text-align: center;
+}
+
+/* Background Glowing Orbs */
+.market-selector__bg-orb {
+  position: absolute;
+  width: 60vw;
+  height: 60vw;
+  max-width: 600px;
+  max-height: 600px;
+  border-radius: 50%;
+  filter: blur(120px);
+  z-index: 0;
+  opacity: 0.3;
+  animation: float 20s infinite ease-in-out;
+}
+
+.market-selector__bg-orb--1 {
+  top: -20vh;
+  left: -10vw;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.6) 0%, transparent 70%);
+}
+
+.market-selector__bg-orb--2 {
+  bottom: -20vh;
+  right: -10vw;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.4) 0%, transparent 70%);
+  animation-delay: -10s;
+}
+
+.market-selector__content {
+  position: relative;
+  z-index: 10;
+  max-width: 1000px;
+}
+
+.market-selector__title {
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: var(--space-md);
+  color: var(--text-primary);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--blue-400), var(--green-300));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.market-selector__subtitle {
+  font-size: var(--text-xl);
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto var(--space-4xl);
+}
+
+.market-selector__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-xl);
+  perspective: 1000px;
+}
+
+/* Market Cards */
+.market-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-xl);
+  padding: var(--space-2xl) var(--space-lg);
+  text-align: center;
+  transition: all var(--duration-normal) var(--ease-out);
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  position: relative;
+  overflow: hidden;
+  color: var(--text-primary);
+  outline: none;
+  font-family: inherit;
+}
+
+.market-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(180deg, rgba(255,255,255,0.03) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+.market-card__icon-wrapper {
+  font-size: 3rem;
+  margin-bottom: var(--space-lg);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-lg);
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border-light);
+  box-shadow: inset 0 2px 10px rgba(255,255,255,0.05);
+}
+
+.market-card__title {
+  font-size: var(--text-3xl);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  margin-bottom: var(--space-xs);
+  letter-spacing: -0.02em;
+}
+
+.market-card__desc {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  margin-bottom: var(--space-xl);
+  height: 40px;
+}
+
+/* Active Hover Card (ASX) */
+.market-card--active:hover {
+  transform: translateY(-8px);
+  border-color: rgba(59, 130, 246, 0.4);
+  box-shadow: 0 20px 40px -10px rgba(59, 130, 246, 0.15);
+  background: var(--bg-card-hover);
+}
+
+.market-card__status {
+  display: inline-block;
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--green-400);
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  animation: pulse-green 2s infinite;
+}
+
+/* Disabled Cards (NYSE/NASDAQ) */
+.market-card--disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  filter: grayscale(0.8);
+}
+
+.market-card--disabled:hover {
+  transform: none;
+  border-color: var(--border-medium);
+}
+
+.market-card__badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-secondary);
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  border: 1px solid var(--border-light);
+}
+
+/* Animations */
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-5%) scale(1.05); }
+}
+
+@media (max-width: 768px) {
+  .market-selector__title {
+    font-size: 2.5rem;
+  }
+  .market-selector__subtitle {
+    font-size: var(--text-lg);
+  }
+  .market-selector__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+  .market-card {
+    padding: var(--space-xl) var(--space-md);
+  }
+}

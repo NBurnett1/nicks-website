@@ -1,0 +1,26 @@
+{
+  "ticker": "NWL",
+  "name": "NETWEALTH FPO [NWL]",
+  "price": 21.05,
+  "sector": "Financials",
+  "marketCap": "5.2B",
+  "valuationScore": 60.0,
+  "generatedAt": "2026-03-19T13:58:06.789826+11:00",
+  "report": {
+    "executiveSummary": "NETWEALTH FPO (NWL) is a high-growth financial platform company exhibiting strong profitability and efficiency, trading at premium multiples. Our analysis indicates a fair value of A$17.55 per share, suggesting the stock is currently overvalued by approximately 19.9%. Key drivers include aggressive growth assumptions and a high WACC.",
+    "businessOverview": "NWL operates a leading wealth management platform, providing superannuation, investment, and managed account services to financial advisors and their clients. Revenue is primarily derived from platform administration fees based on Funds Under Administration (FUA), with a cost structure focused on technology and client servicing. Its competitive advantage lies in its scalable technology, strong brand, and network effects within the advisor community.",
+    "financialAnalysis": "NWL exhibits exceptional growth (23.8% YoY revenue) and profitability (48.9% operating margin, 34.6% ROE), significantly outperforming sector medians. Its P/E (91.54x) and EV/EBITDA (28.40x) are substantially higher than sector averages, reflecting market expectations for continued high growth. The reported Debt/Equity of 8.37 is atypical for traditional WACC calculations but common for financial institutions' total liabilities, with strong FCF generation (A$189M) indicating operational health.",
+    "assumptions": "**DCF Assumptions (5-year explicit forecast, then terminal):**\n- **Revenue Growth:** Declining from 20% (Y1) to 10% (Y5), reflecting market maturation.\n- **Operating Margin:** Maintained at 48.9%, reflecting operational efficiency.\n- **Tax Rate:** 30% (Australian corporate tax rate).\n- **Capital Expenditures & NWC:** Assumed to grow in line with revenue, maintaining FCF generation.\n- **WACC:** 10.5% (Risk-Free Rate: 4.2%, Beta: 1.05, ERP: 6.0%; assuming minimal net interest-bearing debt for WACC due to platform nature).\n- **Terminal Growth Rate:** 2.5% (long-term inflation/GDP growth).\n**Comparable Company Analysis Assumptions:**\n- **Target P/E:** 32x (premium to sector median, reflecting NWL's superior growth and profitability, but below current P/E).\n- **Target EV/EBITDA:** 25x (premium to sector median, reflecting NWL's superior growth and profitability, but below current EV/EBITDA).",
+    "valuationDCF": "**1. Project Free Cash Flows (FCF):** Base FCF A$189M, grown by assumed rates (20%, 18%, 15%, 12%, 10%).\n**2. Calculate WACC:** Cost of Equity (Ke) = 4.2% + 1.05 * 6.0% = 10.5%. WACC assumed to be 10.5% given minimal net interest-bearing debt.\n**3. Determine Terminal Value (TV):** FCF_Y5 * (1 + 2.5%) / (10.5% - 2.5%) = A$4,857.2M.\n**4. Calculate Enterprise Value (EV):** Sum of PV of explicit FCFs (A$1,113.2M) + PV of TV (A$2,942.0M) = A$4,055.2M.\n**5. Equity Value & Per Share Value:** Assuming negligible net debt, Equity Value = A$4,055.2M. Shares Outstanding = 247.03M. **DCF Value per Share = A$16.42.**",
+    "valuationComps": "**1. P/E Multiple:** Using Forward EPS (A$0.624) and a target P/E of 32x, **Value per Share = A$19.97.**\n**2. EV/EBITDA Multiple:** Using current EBITDA (A$183.1M) and a target EV/EBITDA of 25x, Fair EV = A$4,577.5M. Assuming negligible net debt, **Value per Share = A$18.53.**\n**3. Average Comps Value:** Averaging P/E and EV/EBITDA derived values: (A$19.97 + A$18.53) / 2 = **A$19.25.**",
+    "valuationSummary": "| Method | Fair Value (A$/share) | Weight |\n|--------|----------------------|--------|\n| DCF    | 16.42                | 60%    |\n| Comps  | 19.25                | 40%    |\n| **Weighted Average** | **17.55** | **100%** |",
+    "verdict": {
+      "fairValue": 17.55,
+      "currentPrice": 21.05,
+      "mispricing": 19.94,
+      "signal": "overvalued",
+      "recommendation": "Potentially Overvalued"
+    },
+    "risksAndSensitivity": "Key sensitivities include revenue growth rates, WACC, and the terminal growth rate. A 1% change in WACC can shift valuation by ~10-15%.\n**Bear Case (WACC 11.5%, Terminal Growth 2.0%, Comps P/E 28x):** A$14.50/share.\n**Base Case (as above):** A$17.55/share.\n**Bull Case (WACC 9.5%, Terminal Growth 3.0%, Comps P/E 35x):** A$20.50/share.\n**Key Risks:** Macroeconomic downturn impacting FUA, increased competition from other platforms, adverse regulatory changes, and technology disruption."
+  }
+}
