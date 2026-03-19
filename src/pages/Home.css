@@ -184,6 +184,20 @@
   padding-bottom: 0.1em;
 }
 
+.home__split-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: flex-start;
+  margin-bottom: var(--space-4xl);
+}
+
+@media (max-width: 1024px) {
+  .home__split-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .home__hero-subtitle {
   font-size: clamp(1.1rem, 2vw, 1.35rem);
   color: var(--text-secondary);

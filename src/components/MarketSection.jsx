@@ -16,14 +16,10 @@ export default function MarketSection({ title, subtitle, stocks, type, icon }) {
         </div>
       </div>
 
-      <div className="market-section__carousel-wrapper">
-        <div className="market-section__carousel stagger-children">
-          {stocks.map((stock, i) => (
-            <div className="market-section__card-wrapper" key={stock.ticker}>
-              <StockCard stock={stock} type={type} index={i} />
-            </div>
-          ))}
-        </div>
+      <div className="market-section__list stagger-children">
+        {stocks.map((stock, i) => (
+          <StockCard stock={stock} type={type} index={i} key={stock.ticker} />
+        ))}
       </div>
     </section>
   )

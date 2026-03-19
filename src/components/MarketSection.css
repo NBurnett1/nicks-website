@@ -74,20 +74,10 @@
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   /* Dynamic left padding to align with strict container, right padding for simple overflow */
-  padding: 0 var(--space-lg) var(--space-2xl) max(var(--space-lg), calc((100vw - 1280px) / 2 + var(--space-lg)));
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
-/* Hide webkit scrollbars */
-.market-section__carousel::-webkit-scrollbar {
-  display: none;
-}
-
-.market-section__card-wrapper {
-  flex: 0 0 auto;
-  width: 340px;
-  scroll-snap-align: center;
+.market-section__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
 }
 
 @media (max-width: 768px) {
@@ -97,14 +87,5 @@
 
   .market-section__title {
     font-size: var(--text-xl);
-  }
-  
-  .market-section__carousel {
-    padding: 0 var(--space-md) var(--space-xl) var(--space-md);
-    gap: var(--space-md);
-  }
-
-  .market-section__card-wrapper {
-    width: 280px;
   }
 }

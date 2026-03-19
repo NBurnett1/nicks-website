@@ -95,7 +95,7 @@ export default function Home() {
       )}
 
       {/* Market Gates */}
-      <div id="market-overview">
+      <div id="market-overview" className="container home__split-grid">
         <MarketSection
           title="Top 10 Undervalued"
           subtitle="Stocks trading below their estimated intrinsic value"
