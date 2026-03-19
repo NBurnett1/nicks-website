@@ -104,12 +104,6 @@ export default function Home() {
           icon="📈"
         />
 
-        <div className="home__divider">
-          <div className="container">
-            <div className="home__divider-line" />
-          </div>
-        </div>
-
         <MarketSection
           title="Top 10 Overvalued"
           subtitle="Stocks trading above their estimated intrinsic value"
