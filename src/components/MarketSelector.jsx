@@ -36,9 +36,9 @@ export default function MarketSelector({ onSelect }) {
   }
 
   const markets = [
-    { id: 'NYSE', name: 'NYSE', region: 'New York', icon: '🇺🇸', status: 'LIVE' },
-    { id: 'ASX', name: 'ASX', region: 'Australia', icon: '🇦🇺', status: 'LIVE' },
-    { id: 'NASDAQ', name: 'NASDAQ', region: 'New York', icon: '🇺🇸', status: 'LIVE' }
+    { id: 'NYSE', name: 'NYSE', desc: 'New York Stock Exchange', flag: '🇺🇸', status: 'LIVE' },
+    { id: 'ASX', name: 'ASX', desc: 'Australian Securities Exchange', flag: '🇦🇺', status: 'LIVE' },
+    { id: 'NASDAQ', name: 'NASDAQ', desc: 'National Association of Securities Dealers', flag: '🇺🇸', status: 'LIVE' }
   ]
 
   return (
