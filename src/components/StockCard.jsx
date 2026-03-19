@@ -1,14 +1,29 @@
+import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import StockLogo from './StockLogo'
 import './StockCard.css'
 
-export default function StockCard({ stock, type, index }) {
+export default function StockCard({ stock, type, index, exchange }) {
   const navigate = useNavigate()
   const isOvervalued = type === 'overvalued'
   const scoreAbs = Math.abs(stock.valuationScore).toFixed(1)
 
+  // Lazy-load detail data (sparkline) only when component mounts
+  const [detail, setDetail] = useState(null)
+
+  useEffect(() => {
+    const exchangeKey = (exchange || 'asx').toLowerCase()
+    const ticker = stock.ticker
+    fetch(`/data/${exchangeKey}/details/${ticker}.json`)
+      .then(res => res.ok ? res.json() : null)
+      .then(data => setDetail(data))
+      .catch(() => {}) // silently fail — sparkline just won't show
+  }, [stock.ticker, exchange])
+
+  const chartData = detail?.chartData || stock.chartData
+
   const handleClick = () => {
-    navigate(`/stock/${stock.ticker}`, { state: { chartData: stock.chartData, isOvervalued } })
+    navigate(`/stock/${stock.ticker}`, { state: { chartData, isOvervalued } })
   }
 
   const renderSparkline = (data) => {
@@ -50,7 +65,7 @@ export default function StockCard({ stock, type, index }) {
       </div>
 
       <div className="stock-list__center">
-        {renderSparkline(stock.chartData)}
+        {renderSparkline(chartData)}
       </div>
 
       <div className="stock-list__right">

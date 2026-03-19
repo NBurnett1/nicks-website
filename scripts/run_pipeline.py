@@ -1,16 +1,15 @@
 """
-ASX Valuation Pipeline — Orchestrator
+N Valuations Pipeline — Orchestrator (v2: Static API Architecture)
 
-Runs the full pipeline:
-1. Fetch financial data for ASX top 100 via yfinance
-2. Score and rank stocks by composite valuation metric
-3. Generate AI equity research reports for top 20 stocks (via Gemini)
-4. Write results as static JSON to public/data/
+Outputs:
+  - {exchange}_index.json  → lightweight list for dashboard search (ticker, name, score, price, domain)
+  - {exchange}/details/{TICKER}.json → individual heavy files (chartData, full metrics, AI report)
+  - {exchange}_meta.json → pipeline metadata
 
 Usage:
-    python scripts/run_pipeline.py                     # Full pipeline
-    python scripts/run_pipeline.py --skip-reports       # Skip AI reports (data only)
-    python scripts/run_pipeline.py --tickers BHP CBA    # Test with specific tickers
+    python scripts/run_pipeline.py --exchange ASX                           # Full pipeline  
+    python scripts/run_pipeline.py --exchange NYSE --skip-reports           # Skip AI reports
+    python scripts/run_pipeline.py --exchange NASDAQ --limit 50            # Pilot test
 """
 
 import json
@@ -22,17 +21,20 @@ from datetime import datetime, timezone, timedelta
 # Add scripts dir to path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from config import ASX_TICKERS, format_market_cap
+from config import format_market_cap
 from fetch_data import fetch_stock_data
 from score_stocks import score_stocks, get_top_stocks, stock_to_summary_dict
+from discover_tickers import get_all_tickers
 
 
-def run_pipeline(tickers=None, exchange="ASX", skip_reports=False, top_n=10):
-    """Run the full valuation pipeline."""
+def run_pipeline(exchange="ASX", skip_reports=False, top_n=None, limit=None, tickers=None):
+    """Run the full valuation pipeline with Static API output."""
     project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     data_dir = os.path.join(project_root, "public", "data")
+    details_dir = os.path.join(data_dir, exchange.lower(), "details")
     reports_dir = os.path.join(data_dir, "reports")
 
+    os.makedirs(details_dir, exist_ok=True)
     os.makedirs(reports_dir, exist_ok=True)
 
     aest = timezone(timedelta(hours=11))
@@ -40,76 +42,150 @@ def run_pipeline(tickers=None, exchange="ASX", skip_reports=False, top_n=10):
     timestamp = now.isoformat()
 
     print("=" * 60)
-    print("  ASX VALUATION PIPELINE")
+    print(f"  N VALUATIONS PIPELINE — {exchange}")
     print(f"  {now.strftime('%A %d %B %Y, %I:%M %p AEST')}")
     print("=" * 60)
 
-    # ── Step 1: Fetch data ──
-    print(f"\n📊 Step 1: Fetching {exchange} stock data...\n")
+    # ── Step 1: Discover tickers ──
+    if tickers is None:
+        print(f"\n🔍 Step 1: Discovering {exchange} tickers...")
+        tickers = get_all_tickers(exchange, limit=limit)
+    else:
+        print(f"\n📋 Step 1: Using {len(tickers)} provided tickers...")
+
+    print(f"  → {len(tickers)} tickers queued for analysis")
+
+    # ── Step 2: Fetch data ──
+    print(f"\n📊 Step 2: Fetching financial data...\n")
     df = fetch_stock_data(tickers=tickers, exchange=exchange)
 
     if df.empty:
         print("\n❌ No data fetched. Aborting.")
         sys.exit(1)
 
-    # ── Step 2: Score and rank ──
-    print("\n🧮 Step 2: Scoring stocks...\n")
+    # ── Step 3: Score and rank ──
+    print("\n🧮 Step 3: Scoring stocks...\n")
     df = score_stocks(df)
-
-    # Add formatted market cap
     df["marketCapFormatted"] = df["marketCap"].apply(format_market_cap)
 
-    overvalued, undervalued = get_top_stocks(df, top_n=top_n)
+    # If top_n is set, limit results; otherwise return all scored stocks
+    effective_top_n = top_n if top_n else len(df)
+    overvalued, undervalued = get_top_stocks(df, top_n=effective_top_n)
 
-    # ── Step 3: Write summary.json ──
-    print("\n💾 Step 3: Writing summary.json...")
+    # ── Step 4: Write lightweight index.json ──
+    print("\n💾 Step 4: Writing index + detail files...")
 
-    summary = {
+    index_overvalued = []
+    index_undervalued = []
+
+    def make_index_entry(row):
+        return {
+            "ticker": row["ticker"],
+            "name": row["name"],
+            "price": round(float(row["price"]), 2),
+            "valuationScore": float(row["valuationScore"]),
+            "marketCap": row.get("marketCapFormatted", "—"),
+            "sector": row.get("sector", "Unknown"),
+            "domain": row.get("domain", ""),
+        }
+
+    def make_detail_file(row):
+        return {
+            "ticker": row["ticker"],
+            "name": row["name"],
+            "price": round(float(row["price"]), 2),
+            "valuationScore": float(row["valuationScore"]),
+            "marketCap": row.get("marketCapFormatted", "—"),
+            "sector": row.get("sector", "Unknown"),
+            "domain": row.get("domain", ""),
+            "chartData": row.get("chartData", []),
+            "metrics": {
+                "pe": _safe_float(row.get("pe")),
+                "sectorPe": _safe_float(row.get("sectorPe")),
+                "pb": _safe_float(row.get("pb")),
+                "evEbitda": _safe_float(row.get("evEbitda")),
+                "fcfYield": _safe_float(row.get("fcfYield")),
+                "forwardPe": _safe_float(row.get("forwardPe")),
+                "dividendYield": _safe_float(row.get("dividendYield")),
+                "revenueGrowth": _safe_float(row.get("revenueGrowth")),
+                "profitMargin": _safe_float(row.get("profitMargin")),
+                "operatingMargin": _safe_float(row.get("operatingMargin")),
+                "roe": _safe_float(row.get("roe")),
+                "debtEquity": _safe_float(row.get("debtEquity")),
+            },
+        }
+
+    # Process overvalued
+    for _, row in overvalued.iterrows():
+        index_overvalued.append(make_index_entry(row))
+        detail = make_detail_file(row)
+        detail_path = os.path.join(details_dir, f"{row['ticker']}.json")
+        with open(detail_path, "w") as f:
+            json.dump(detail, f, indent=2, ensure_ascii=False)
+
+    # Process undervalued
+    for _, row in undervalued.iterrows():
+        index_undervalued.append(make_index_entry(row))
+        detail = make_detail_file(row)
+        detail_path = os.path.join(details_dir, f"{row['ticker']}.json")
+        with open(detail_path, "w") as f:
+            json.dump(detail, f, indent=2, ensure_ascii=False)
+
+    # Write lightweight index
+    index_data = {
+        "lastUpdated": timestamp,
+        "marketName": exchange,
+        "overvalued": index_overvalued,
+        "undervalued": index_undervalued,
+    }
+
+    index_path = os.path.join(data_dir, f"{exchange.lower()}_index.json")
+    with open(index_path, "w") as f:
+        json.dump(index_data, f, indent=2, ensure_ascii=False)
+    print(f"  ✓ Index: {index_path} ({len(index_overvalued)} overvalued, {len(index_undervalued)} undervalued)")
+
+    # Also write legacy summary.json for backward compatibility
+    legacy_summary = {
         "lastUpdated": timestamp,
         "marketName": exchange,
         "overvalued": [stock_to_summary_dict(row) for _, row in overvalued.iterrows()],
         "undervalued": [stock_to_summary_dict(row) for _, row in undervalued.iterrows()],
     }
-
     summary_path = os.path.join(data_dir, f"{exchange.lower()}_summary.json")
     with open(summary_path, "w") as f:
-        json.dump(summary, f, indent=2, ensure_ascii=False)
-    print(f"  ✓ Written to {summary_path}")
+        json.dump(legacy_summary, f, indent=2, ensure_ascii=False)
 
-    # ── Step 4: Write meta.json ──
+    print(f"  ✓ Details: {len(os.listdir(details_dir))} individual files in {details_dir}")
+
+    # ── Step 5: Write meta.json ──
     meta = {
         "lastUpdated": timestamp,
-        "pipelineVersion": "1.0.0",
+        "pipelineVersion": "2.0.0",
         "stocksAnalyzed": len(df),
+        "stocksOvervalued": len(index_overvalued),
+        "stocksUndervalued": len(index_undervalued),
         "dataSource": "yfinance",
         "aiModel": "gemini-2.5-flash",
     }
-
     meta_path = os.path.join(data_dir, f"{exchange.lower()}_meta.json")
     with open(meta_path, "w") as f:
         json.dump(meta, f, indent=2)
-    print(f"  ✓ Written to {meta_path}")
+    print(f"  ✓ Meta: {meta_path}")
 
-    # ── Step 5: Generate AI reports ──
+    # ── Step 6: Generate AI reports ──
     if not skip_reports:
-        print("\n🤖 Step 4: Generating AI equity research reports...\n")
-
+        print("\n🤖 Step 5: Generating AI equity research reports...\n")
         try:
             from generate_reports import setup_gemini, generate_all_reports
+            import pandas as pd
 
             model = setup_gemini()
-
-            # Combine overvalued + undervalued for report generation
-            import pandas as pd
             report_stocks = pd.concat([overvalued, undervalued], ignore_index=True)
-
-            success = generate_all_reports(model, report_stocks, reports_dir, delay=10.0)
+            success = generate_all_reports(model, report_stocks, reports_dir, delay=3.0)
             print(f"\n  ✓ Generated {success} / {len(report_stocks)} reports")
-
         except ValueError as e:
             print(f"\n  ⚠ Skipping AI reports: {e}")
             print("  Set GEMINI_API_KEY environment variable to enable report generation.")
-
     else:
         print("\n⏭ Skipping AI reports (--skip-reports flag)")
 
@@ -117,22 +193,45 @@ def run_pipeline(tickers=None, exchange="ASX", skip_reports=False, top_n=10):
     print("\n" + "=" * 60)
     print("  ✅ PIPELINE COMPLETE")
     print(f"  Stocks analyzed: {len(df)}")
-    print(f"  Overvalued: {len(overvalued)} | Undervalued: {len(undervalued)}")
-    print(f"  Output: {data_dir}")
+    print(f"  Overvalued: {len(index_overvalued)} | Undervalued: {len(index_undervalued)}")
+    print(f"  Index: {index_path}")
+    print(f"  Details: {details_dir}")
     print("=" * 60)
 
 
+def _safe_float(val):
+    """Convert to float or None."""
+    import numpy as np
+    if val is None:
+        return None
+    try:
+        f = float(val)
+        if np.isnan(f) or np.isinf(f):
+            return None
+        return round(f, 2)
+    except (ValueError, TypeError):
+        return None
+
+
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Valuation Pipeline")
-    parser.add_argument("--exchange", type=str, default="ASX", choices=["ASX", "NYSE", "NASDAQ"], help="Exchange to analyze")
-    parser.add_argument("--skip-reports", action="store_true", help="Skip AI report generation")
-    parser.add_argument("--tickers", nargs="+", help="Specific tickers to analyze (for testing)")
-    parser.add_argument("--top-n", type=int, default=100, help="Number of extreme stocks to select per category")
+    parser = argparse.ArgumentParser(description="N Valuations Pipeline v2")
+    parser.add_argument("--exchange", type=str, default="ASX",
+                        choices=["ASX", "NYSE", "NASDAQ"],
+                        help="Exchange to analyze")
+    parser.add_argument("--skip-reports", action="store_true",
+                        help="Skip AI report generation")
+    parser.add_argument("--tickers", nargs="+",
+                        help="Specific tickers to analyze (for testing)")
+    parser.add_argument("--top-n", type=int, default=None,
+                        help="Limit N stocks per category (default: all)")
+    parser.add_argument("--limit", type=int, default=None,
+                        help="Limit total tickers to discover (for piloting)")
     args = parser.parse_args()
 
     run_pipeline(
-        tickers=args.tickers,
         exchange=args.exchange,
         skip_reports=args.skip_reports,
         top_n=args.top_n,
+        limit=args.limit,
+        tickers=args.tickers,
     )

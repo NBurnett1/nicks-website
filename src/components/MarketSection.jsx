@@ -1,7 +1,7 @@
 import StockCard from './StockCard'
 import './MarketSection.css'
 
-export default function MarketSection({ title, subtitle, stocks, type, icon }) {
+export default function MarketSection({ title, subtitle, stocks, type, icon, exchange }) {
   return (
     <section className={`market-section market-section--${type}`} id={`${type}-stocks`}>
       <div className="market-section__header">
@@ -16,9 +16,13 @@ export default function MarketSection({ title, subtitle, stocks, type, icon }) {
 
       <div className="market-section__list stagger-children">
         {stocks.map((stock, i) => (
-          <StockCard stock={stock} type={type} index={i} key={stock.ticker} />
+          <StockCard stock={stock} type={type} index={i} key={stock.ticker} exchange={exchange} />
         ))}
+        {stocks.length === 0 && (
+          <p className="market-section__empty">No stocks match your search.</p>
+        )}
       </div>
     </section>
   )
 }
+

@@ -8,7 +8,7 @@ import './Home.css'
 
 export default function Home() {
   const [selectedExchange, setSelectedExchange] = useState(null)
-  const [data, setData] = useState(null)
+  const [indexData, setIndexData] = useState(null)
   const [meta, setMeta] = useState(null)
   const [searchQuery, setSearchQuery] = useState('')
   const [loading, setLoading] = useState(true)
@@ -17,17 +17,27 @@ export default function Home() {
     if (!selectedExchange) return;
     setLoading(true);
     const exchangeKey = selectedExchange.toLowerCase();
+
+    // Load the lightweight index (no chart data, no heavy metrics)
     Promise.all([
-      fetch(`/data/${exchangeKey}_summary.json`).then(res => res.json()),
-      fetch(`/data/${exchangeKey}_meta.json`).then(res => res.json())
+      fetch(`/data/${exchangeKey}_index.json`)
+        .then(res => res.ok ? res.json() : null)
+        .catch(() => null),
+      fetch(`/data/${exchangeKey}_summary.json`)
+        .then(res => res.ok ? res.json() : null)
+        .catch(() => null),
+      fetch(`/data/${exchangeKey}_meta.json`)
+        .then(res => res.ok ? res.json() : null)
+        .catch(() => null),
     ])
-      .then(([summaryData, metaData]) => {
-        setData(summaryData)
+      .then(([idx, legacy, metaData]) => {
+        // Prefer the new index format; fall back to legacy summary
+        setIndexData(idx || legacy)
         setMeta(metaData)
         setLoading(false)
       })
       .catch(() => {
-        setData(null)
+        setIndexData(null)
         setLoading(false)
       })
   }, [selectedExchange])
@@ -36,6 +46,17 @@ export default function Home() {
     if (!dateStr) return ''
     const d = new Date(dateStr)
     return d.toLocaleDateString('en-AU', { day: 'numeric', month: 'short', year: 'numeric' })
+  }
+
+  const filterStocks = (stocks) => {
+    if (!stocks) return []
+    if (!searchQuery) return stocks
+    const q = searchQuery.toLowerCase()
+    return stocks.filter(s =>
+      s.ticker.toLowerCase().includes(q) ||
+      s.name.toLowerCase().includes(q) ||
+      (s.sector && s.sector.toLowerCase().includes(q))
+    )
   }
 
   if (!selectedExchange) {
@@ -51,13 +72,15 @@ export default function Home() {
     )
   }
 
-  if (!data) {
+  if (!indexData) {
     return (
       <div className="loading-screen">
         <p className="loading-screen__text">Unable to load market data. Please try again later.</p>
       </div>
     )
   }
+
+  const totalStocks = (indexData.overvalued?.length || 0) + (indexData.undervalued?.length || 0)
 
   return (
     <div className="home" id="home-page">
@@ -75,7 +98,7 @@ export default function Home() {
           </div>
           {meta && (
             <div className="home__header-meta">
-              Updated {formatDate(meta.lastUpdated)} <span className="hide-mobile">• {meta.stocksAnalyzed} stocks analyzed</span>
+              Updated {formatDate(meta.lastUpdated)} <span className="hide-mobile">• {meta.stocksAnalyzed || totalStocks} stocks analyzed</span>
             </div>
           )}
         </div>
@@ -100,6 +123,11 @@ export default function Home() {
       {selectedExchange && (
         <div className="container" style={{ position: 'relative', zIndex: 10 }}>
           <SearchBar onSearch={setSearchQuery} />
+          {searchQuery && (
+            <p className="home__search-count">
+              {filterStocks(indexData.undervalued).length + filterStocks(indexData.overvalued).length} results for "{searchQuery}"
+            </p>
+          )}
         </div>
       )}
 
@@ -108,17 +136,19 @@ export default function Home() {
         <MarketSection
           title="Undervalued"
           subtitle="Companies trading at a massive systemic discount"
-          stocks={data.undervalued.filter(s => s.ticker.toLowerCase().includes(searchQuery.toLowerCase()) || s.name.toLowerCase().includes(searchQuery.toLowerCase()))}
+          stocks={filterStocks(indexData.undervalued)}
           type="undervalued"
           icon="📈"
+          exchange={selectedExchange}
         />
 
         <MarketSection
           title="Overvalued"
           subtitle="Companies trading at a severe systemic premium"
-          stocks={data.overvalued.filter(s => s.ticker.toLowerCase().includes(searchQuery.toLowerCase()) || s.name.toLowerCase().includes(searchQuery.toLowerCase()))}
+          stocks={filterStocks(indexData.overvalued)}
           type="overvalued"
           icon="📉"
+          exchange={selectedExchange}
         />
       </div>
 
