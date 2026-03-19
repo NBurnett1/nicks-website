@@ -59,7 +59,7 @@ def run_pipeline(tickers=None, exchange="ASX", skip_reports=False, top_n=10):
     # Add formatted market cap
     df["marketCapFormatted"] = df["marketCap"].apply(format_market_cap)
 
-    overvalued, undervalued = get_top_stocks(df, n=top_n)
+    overvalued, undervalued = get_top_stocks(df, top_n=top_n)
 
     # ── Step 3: Write summary.json ──
     print("\n💾 Step 3: Writing summary.json...")
@@ -127,7 +127,7 @@ if __name__ == "__main__":
     parser.add_argument("--exchange", type=str, default="ASX", choices=["ASX", "NYSE", "NASDAQ"], help="Exchange to analyze")
     parser.add_argument("--skip-reports", action="store_true", help="Skip AI report generation")
     parser.add_argument("--tickers", nargs="+", help="Specific tickers to analyze (for testing)")
-    parser.add_argument("--top-n", type=int, default=10, help="Number of top stocks per category")
+    parser.add_argument("--top-n", type=int, default=100, help="Number of extreme stocks to select per category")
     args = parser.parse_args()
 
     run_pipeline(

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import MarketSelector from '../components/MarketSelector'
 import MarketSection from '../components/MarketSection'
+import SearchBar from '../components/SearchBar'
 import Disclaimer from '../components/Disclaimer'
 import Footer from '../components/Footer'
 import './Home.css'
@@ -9,6 +10,7 @@ export default function Home() {
   const [selectedExchange, setSelectedExchange] = useState(null)
   const [data, setData] = useState(null)
   const [meta, setMeta] = useState(null)
+  const [searchQuery, setSearchQuery] = useState('')
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
@@ -94,20 +96,27 @@ export default function Home() {
         </div>
       )}
 
+      {/* Search Filter */}
+      {selectedExchange && (
+        <div className="container" style={{ position: 'relative', zIndex: 10 }}>
+          <SearchBar onSearch={setSearchQuery} />
+        </div>
+      )}
+
       {/* Market Gates */}
       <div id="market-overview" className="container home__split-grid">
         <MarketSection
-          title="Top 10 Undervalued"
-          subtitle="Stocks trading below their estimated intrinsic value"
-          stocks={data.undervalued}
+          title="Undervalued"
+          subtitle="Companies trading at a massive systemic discount"
+          stocks={data.undervalued.filter(s => s.ticker.toLowerCase().includes(searchQuery.toLowerCase()) || s.name.toLowerCase().includes(searchQuery.toLowerCase()))}
           type="undervalued"
           icon="📈"
         />
 
         <MarketSection
-          title="Top 10 Overvalued"
-          subtitle="Stocks trading above their estimated intrinsic value"
-          stocks={data.overvalued}
+          title="Overvalued"
+          subtitle="Companies trading at a severe systemic premium"
+          stocks={data.overvalued.filter(s => s.ticker.toLowerCase().includes(searchQuery.toLowerCase()) || s.name.toLowerCase().includes(searchQuery.toLowerCase()))}
           type="overvalued"
           icon="📉"
         />

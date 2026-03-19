@@ -26,6 +26,12 @@ def score_stocks(df):
     """
     df = df.copy()
 
+    # Clean extreme and string values from yfinance
+    for col in ["pe", "pb", "evEbitda", "fcfYield"]:
+        if col in df.columns:
+            df[col] = pd.to_numeric(df[col], errors='coerce')
+            df[col] = df[col].replace([np.inf, -np.inf], np.nan)
+
     # Calculate global medians (fallback for small sectors)
     global_medians = {
         "sectorPe": df["pe"].median(),
@@ -80,26 +86,15 @@ def score_stocks(df):
     return df
 
 
-def get_top_stocks(df, n=10):
+def get_top_stocks(df, top_n=100):
     """
     Get top N overvalued and top N undervalued stocks.
-    
-    Stocks are definitively classified:
-    - Positive score → overvalued (cannot appear in undervalued)
-    - Negative score → undervalued (cannot appear in overvalued)
-    - Near zero (within ±1) → fairly valued, excluded from both
-
-    Returns:
-        (overvalued_df, undervalued_df) — two mutually exclusive DataFrames
     """
     valid = df[df["valuationScore"].notna()].copy()
 
     # Split into definitive categories — no overlap possible
-    overvalued_pool = valid[valid["valuationScore"] >= 0.0].sort_values("valuationScore", ascending=False)
-    undervalued_pool = valid[valid["valuationScore"] < 0.0].sort_values("valuationScore", ascending=True)
-
-    overvalued = overvalued_pool.head(n)
-    undervalued = undervalued_pool.head(n)
+    overvalued = valid[valid["valuationScore"] >= 0.0].sort_values("valuationScore", ascending=False).head(top_n)
+    undervalued = valid[valid["valuationScore"] < 0.0].sort_values("valuationScore", ascending=True).head(top_n)
 
     print(f"\n  Top {len(overvalued)} Overvalued:")
     for _, row in overvalued.iterrows():
@@ -109,10 +104,10 @@ def get_top_stocks(df, n=10):
     for _, row in undervalued.iterrows():
         print(f"    {row['ticker']:>5}  {row['valuationScore']:>+6.1f}  (P/E: {_f(row['pe'])}, EV/EBITDA: {_f(row['evEbitda'])})")
 
-    if len(overvalued) < n:
-        print(f"\n  ⚠ Only {len(overvalued)} stocks scored as overvalued (need {n}+ stocks with score > 1.0)")
-    if len(undervalued) < n:
-        print(f"\n  ⚠ Only {len(undervalued)} stocks scored as undervalued (need {n}+ stocks with score < -1.0)")
+    if len(overvalued) < top_n:
+        print(f"\n  ⚠ Only {len(overvalued)} stocks scored as overvalued")
+    if len(undervalued) < top_n:
+        print(f"\n  ⚠ Only {len(undervalued)} stocks scored as undervalued")
 
     return overvalued, undervalued
 
