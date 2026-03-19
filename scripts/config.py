@@ -28,6 +28,9 @@ ASX_TICKERS = [
     "TLS", "TPG", "AGL", "APA", "AST",
 ]
 
+NYSE_TICKERS = ["JPM", "V", "WMT", "DIS", "KO", "BAC", "HD", "PG", "MA", "UNH"]
+NASDAQ_TICKERS = ["AAPL", "MSFT", "GOOGL", "AMZN", "META", "TSLA", "NVDA", "NFLX", "ADBE", "CSCO"]
+
 # Sector mapping for z-score calculations
 SECTOR_MAP = {
     "CBA": "Financials", "NAB": "Financials", "WBC": "Financials", "ANZ": "Financials",

@@ -108,10 +108,22 @@
 .stock-card__price-row {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   margin-bottom: var(--space-md);
   padding-bottom: var(--space-md);
-  border-bottom: 1px solid var(--border-subtle);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.stock-card__price-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.stock-card__sparkline {
+  width: 120px;
+  height: 40px;
+  opacity: 0.8;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.3));
 }
 
 .stock-card__price {

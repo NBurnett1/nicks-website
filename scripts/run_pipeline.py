@@ -27,7 +27,7 @@ from fetch_data import fetch_stock_data
 from score_stocks import score_stocks, get_top_stocks, stock_to_summary_dict
 
 
-def run_pipeline(tickers=None, skip_reports=False, top_n=10):
+def run_pipeline(tickers=None, exchange="ASX", skip_reports=False, top_n=10):
     """Run the full valuation pipeline."""
     project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     data_dir = os.path.join(project_root, "public", "data")
@@ -45,8 +45,8 @@ def run_pipeline(tickers=None, skip_reports=False, top_n=10):
     print("=" * 60)
 
     # ── Step 1: Fetch data ──
-    print("\n📊 Step 1: Fetching ASX stock data...\n")
-    df = fetch_stock_data(tickers=tickers)
+    print(f"\n📊 Step 1: Fetching {exchange} stock data...\n")
+    df = fetch_stock_data(tickers=tickers, exchange=exchange)
 
     if df.empty:
         print("\n❌ No data fetched. Aborting.")
@@ -66,12 +66,12 @@ def run_pipeline(tickers=None, skip_reports=False, top_n=10):
 
     summary = {
         "lastUpdated": timestamp,
-        "marketName": "ASX",
+        "marketName": exchange,
         "overvalued": [stock_to_summary_dict(row) for _, row in overvalued.iterrows()],
         "undervalued": [stock_to_summary_dict(row) for _, row in undervalued.iterrows()],
     }
 
-    summary_path = os.path.join(data_dir, "summary.json")
+    summary_path = os.path.join(data_dir, f"{exchange.lower()}_summary.json")
     with open(summary_path, "w") as f:
         json.dump(summary, f, indent=2, ensure_ascii=False)
     print(f"  ✓ Written to {summary_path}")
@@ -85,7 +85,7 @@ def run_pipeline(tickers=None, skip_reports=False, top_n=10):
         "aiModel": "gemini-2.5-flash",
     }
 
-    meta_path = os.path.join(data_dir, "meta.json")
+    meta_path = os.path.join(data_dir, f"{exchange.lower()}_meta.json")
     with open(meta_path, "w") as f:
         json.dump(meta, f, indent=2)
     print(f"  ✓ Written to {meta_path}")
@@ -123,7 +123,8 @@ def run_pipeline(tickers=None, skip_reports=False, top_n=10):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="ASX Valuation Pipeline")
+    parser = argparse.ArgumentParser(description="Valuation Pipeline")
+    parser.add_argument("--exchange", type=str, default="ASX", choices=["ASX", "NYSE", "NASDAQ"], help="Exchange to analyze")
     parser.add_argument("--skip-reports", action="store_true", help="Skip AI report generation")
     parser.add_argument("--tickers", nargs="+", help="Specific tickers to analyze (for testing)")
     parser.add_argument("--top-n", type=int, default=10, help="Number of top stocks per category")
@@ -131,6 +132,7 @@ if __name__ == "__main__":
 
     run_pipeline(
         tickers=args.tickers,
+        exchange=args.exchange,
         skip_reports=args.skip_reports,
         top_n=args.top_n,
     )

@@ -69,7 +69,7 @@ export default function Home() {
         <div className="container home__header-container">
           <div className="home__brand">
             <img src="/logo.png" alt="N Valuations Logo" className="home__logo-img" />
-            <span className="hide-mobile">{selectedExchange}</span> N Valuations
+            N Valuations
           </div>
           {meta && (
             <div className="home__header-meta">

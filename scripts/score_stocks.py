@@ -139,6 +139,8 @@ def stock_to_summary_dict(row):
         "name": row["name"],
         "price": round(float(row["price"]), 2),
         "sector": row["sector"],
+        "domain": row.get("domain", ""),
+        "chartData": row.get("chartData", []),
         "marketCap": row.get("marketCapFormatted", "—"),
         "valuationScore": float(row["valuationScore"]),
         "metrics": {

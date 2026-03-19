@@ -12,17 +12,19 @@ const generateGradient = (str) => {
   return `linear-gradient(135deg, hsl(${hue1}, 85%, 60%), hsl(${hue2}, 90%, 50%))`;
 };
 
-export default function StockLogo({ ticker, name }) {
+export default function StockLogo({ ticker, name, domain }) {
   const [imageError, setImageError] = useState(false);
   
-  // Clean ticker for API (remove .AX if present)
   const cleanTicker = ticker.replace('.AX', '');
   
-  // Best effort domain guess since we don't have an exact domain mapping in the data
-  const domainGuess = name.split(' ')[0].toLowerCase().replace(/[^a-z0-9]/g, '') + '.com';
-  
-  // Clearbit fetches the official logo from the domain
-  const logoUrl = `https://logo.clearbit.com/${domainGuess}`;
+  let logoUrl = '';
+  if (domain && domain.length > 3) {
+    logoUrl = `https://logo.clearbit.com/${domain}`;
+  } else {
+    // Best effort domain guess as a final fallback
+    const domainGuess = name.split(' ')[0].toLowerCase().replace(/[^a-z0-9]/g, '') + '.com';
+    logoUrl = `https://logo.clearbit.com/${domainGuess}`;
+  }
 
   return (
     <div className="stock-logo" style={{ background: generateGradient(ticker) }}>
