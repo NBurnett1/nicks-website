@@ -8,7 +8,7 @@ export default function StockCard({ stock, type, index }) {
   const scoreAbs = Math.abs(stock.valuationScore).toFixed(1)
 
   const handleClick = () => {
-    navigate(`/stock/${stock.ticker}`)
+    navigate(`/stock/${stock.ticker}`, { state: { chartData: stock.chartData, isOvervalued } })
   }
 
   const renderSparkline = (data, isOvervalued) => {

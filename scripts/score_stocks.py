@@ -95,8 +95,8 @@ def get_top_stocks(df, n=10):
     valid = df[df["valuationScore"].notna()].copy()
 
     # Split into definitive categories — no overlap possible
-    overvalued_pool = valid[valid["valuationScore"] > 1.0].sort_values("valuationScore", ascending=False)
-    undervalued_pool = valid[valid["valuationScore"] < -1.0].sort_values("valuationScore", ascending=True)
+    overvalued_pool = valid[valid["valuationScore"] >= 0.0].sort_values("valuationScore", ascending=False)
+    undervalued_pool = valid[valid["valuationScore"] < 0.0].sort_values("valuationScore", ascending=True)
 
     overvalued = overvalued_pool.head(n)
     undervalued = undervalued_pool.head(n)

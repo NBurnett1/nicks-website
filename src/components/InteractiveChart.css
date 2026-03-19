@@ -1,0 +1,61 @@
+.interactive-chart {
+  background: rgba(30, 41, 59, 0.4);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl);
+  margin-bottom: var(--space-2xl);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.interactive-chart__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-lg);
+  height: 24px;
+}
+
+.interactive-chart__title {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.interactive-chart__tooltip {
+  display: flex;
+  gap: var(--space-md);
+  font-family: var(--font-mono);
+  background: rgba(0,0,0,0.5);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.interactive-chart__date {
+  color: var(--text-secondary);
+}
+
+.interactive-chart__price {
+  color: var(--text-primary);
+  font-weight: bold;
+}
+
+.interactive-chart__svg-container {
+  width: 100%;
+  height: 240px;
+  position: relative;
+  cursor: crosshair;
+}
+
+.interactive-chart__svg-container svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}

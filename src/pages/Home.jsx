@@ -69,7 +69,7 @@ export default function Home() {
         <div className="container home__header-container">
           <div className="home__brand">
             <img src="/logo.png" alt="N Valuations Logo" className="home__logo-img" />
-            N Valuations
+            <span className="home__brand-text">N Valuations</span>
           </div>
           {meta && (
             <div className="home__header-meta">
@@ -79,6 +79,22 @@ export default function Home() {
         </div>
       </header>
 
+      {/* Hero Section */}
+      {selectedExchange && (
+        <div className="home__hero animate-fade-in-up">
+          <div className="container">
+            <h1 className="home__hero-title">
+              Institutional-Grade <br/>
+              <span className="home__hero-highlight">Equity Research.</span>
+            </h1>
+            <p className="home__hero-subtitle">
+              Discover the most profoundly mispriced stocks across global markets with AI-powered financial models.
+            </p>
+          </div>
+        </div>
+      )}
+
+      {/* Market Gates */}
       <div id="market-overview">
         <MarketSection
           title="Top 10 Undervalued"

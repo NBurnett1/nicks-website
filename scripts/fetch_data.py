@@ -49,7 +49,7 @@ def fetch_stock_data(tickers=None, exchange="ASX", batch_size=10, delay=1.0):
                 chart_data = []
                 if not hist.empty:
                     weekly = hist['Close'].resample('W').last().dropna()
-                    chart_data = [round(x, 2) for x in weekly.tolist()]
+                    chart_data = [{"date": str(date.date()), "price": round(price, 2)} for date, price in weekly.items()]
 
                 website = info.get("website", "")
                 domain = ""

@@ -28,8 +28,19 @@ ASX_TICKERS = [
     "TLS", "TPG", "AGL", "APA", "AST",
 ]
 
-NYSE_TICKERS = ["JPM", "V", "WMT", "DIS", "KO", "BAC", "HD", "PG", "MA", "UNH"]
-NASDAQ_TICKERS = ["AAPL", "MSFT", "GOOGL", "AMZN", "META", "TSLA", "NVDA", "NFLX", "ADBE", "CSCO"]
+NYSE_TICKERS = [
+    "JPM", "V", "WMT", "DIS", "KO", "BAC", "HD", "PG", "MA", "UNH",
+    "CVX", "ABBV", "PFE", "MRK", "XOM", "MCD", "NKE", "LIN", "PM",
+    "T", "VZ", "BMY", "DHR", "CAT", "BA", "GE", "IBM", "MMM", "F",
+    "UBER", "GS", "MS", "AXP", "LOW", "C", "RTX", "HON"
+]
+
+NASDAQ_TICKERS = [
+    "AAPL", "MSFT", "GOOGL", "AMZN", "META", "TSLA", "NVDA", "NFLX", "ADBE", "CSCO",
+    "PEP", "COST", "AVGO", "TXN", "INTC", "CMCSA", "TMUS", "QCOM", "AMGN",
+    "INTU", "SBUX", "AMD", "GILD", "ISRG", "MDLZ", "CHTR", "BKNG", "VRTX",
+    "REGN", "ZTS", "PYPL", "LRCX", "GPN", "SNPS", "CSX", "MAR", "ADI"
+]
 
 # Sector mapping for z-score calculations
 SECTOR_MAP = {

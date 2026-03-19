@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
-import { useParams, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate, useLocation } from 'react-router-dom'
 import ReportView from '../components/ReportView'
+import InteractiveChart from '../components/InteractiveChart'
 import Disclaimer from '../components/Disclaimer'
 import Footer from '../components/Footer'
 import './StockDetail.css'
@@ -8,6 +9,7 @@ import './StockDetail.css'
 export default function StockDetail() {
   const { ticker } = useParams()
   const navigate = useNavigate()
+  const location = useLocation()
   const [reportData, setReportData] = useState(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(false)
@@ -119,6 +121,12 @@ export default function StockDetail() {
       {/* Report */}
       <main className="stock-detail__body">
         <div className="container">
+          {location.state?.chartData && (
+            <InteractiveChart 
+              data={location.state.chartData} 
+              isOvervalued={location.state.isOvervalued || isOvervalued} 
+            />
+          )}
           <ReportView report={report} />
         </div>
       </main>
