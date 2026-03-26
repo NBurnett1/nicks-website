@@ -15,20 +15,40 @@ export default function MarketSelector({ onSelect }) {
         const res = await fetch(`/data/${ex}_index.json`)
         if (!res.ok) return
         const data = await res.json()
-        const undervalued = (data.undervalued || [])
+        let candidates = (data.undervalued || [])
           .filter(s => {
-            // Filter micro-caps
             const mc = s.marketCap || '0'
             let val = 0
             if (mc.endsWith('B')) val = parseFloat(mc) * 1e9
             else if (mc.endsWith('M')) val = parseFloat(mc) * 1e6
             else if (mc.endsWith('T')) val = parseFloat(mc) * 1e12
-            return val >= 500_000_000 // $500M minimum for top picks
+            return val >= 500_000_000
           })
           .sort((a, b) => a.valuationScore - b.valuationScore)
-          .slice(0, 5)
+          .slice(0, 30) // take top 30 candidates to find best mispricing
 
-        setTopPicks(prev => ({ ...prev, [ex.toUpperCase()]: undervalued }))
+        // Fetch report for each candidate to get mispricing %
+        const withMispricing = await Promise.all(
+          candidates.map(async (s) => {
+            try {
+              const rRes = await fetch(`/data/reports/${s.ticker}.json`)
+              if (!rRes.ok) return { ...s, mispricing: null }
+              const report = await rRes.json()
+              const mispricing = report?.report?.verdict?.mispricing ?? null
+              const fairValue = report?.report?.verdict?.fairValue ?? null
+              return { ...s, mispricing, fairValue }
+            } catch {
+              return { ...s, mispricing: null }
+            }
+          })
+        )
+
+        // Filter to those that are actually undervalued (mispricing < 0) and sort by most undervalued
+        const ranked = withMispricing
+          .filter(s => s.mispricing !== null && s.mispricing < 0)
+          .sort((a, b) => a.mispricing - b.mispricing) // most negative first
+
+        setTopPicks(prev => ({ ...prev, [ex.toUpperCase()]: ranked.slice(0, 5) }))
       } catch {
         // silently fail
       }
@@ -130,15 +150,15 @@ export default function MarketSelector({ onSelect }) {
                           key={stock.ticker}
                           className={`pick-chip pick-chip--${market.accent}`}
                           onClick={(e) => handleStockClick(e, stock.ticker, stock)}
-                          title={`${stock.name} — Score: ${stock.valuationScore.toFixed(1)}`}
+                          title={`${stock.name} — ${stock.sector || 'Equity'}`}
                         >
                           <span className="pick-chip__rank">{i + 1}</span>
                           <span className="pick-chip__ticker">{stock.ticker}</span>
                           <span className="pick-chip__price">
                             {market.id === 'ASX' ? 'A$' : '$'}{stock.price.toFixed(2)}
                           </span>
-                          <span className="pick-chip__score">
-                            {stock.valuationScore.toFixed(0)}
+                          <span className="pick-chip__mispricing">
+                            {stock.mispricing != null ? `${stock.mispricing.toFixed(0)}%` : '—'}
                           </span>
                         </div>
                       ))}
