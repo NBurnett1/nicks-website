@@ -1,0 +1,27 @@
+{
+  "ticker": "SRE",
+  "name": "DBA Sempra",
+  "price": 95.04,
+  "sector": "Utilities",
+  "marketCap": "62.1B",
+  "valuationScore": 29.1,
+  "generatedAt": "2026-03-22T23:10:14.703661+11:00",
+  "report": {
+    "executiveSummary": "Sempra (SRE) is a utility company exhibiting significant expected earnings growth, as indicated by its low forward P/E. Our multi-method valuation, combining DCF, DDM, and Comparable Company Analysis, suggests a fair value of A$126.50 per share. This implies SRE is approximately 33.1% undervalued compared to its current market price of A$95.04.",
+    "businessOverview": "Sempra operates as a regulated utility, generating stable revenues from infrastructure assets like natural gas and electric transmission. Its business model is capital-intensive, requiring significant ongoing investment in infrastructure. Key competitive advantages stem from its regulated monopoly status and essential service provision, though it faces regulatory and interest rate risks.",
+    "financialAnalysis": "SRE's current P/E of 34.56x is high, but its forward P/E of 17.19x suggests substantial expected earnings growth, contrasting with flat revenue (-0.2%). The highly negative FCF yield (-44.7%) indicates significant capital expenditure or cash burn, while a high Debt/Equity (83.39%) and low ROE (5.2%) are notable. These metrics highlight a company in a heavy investment phase with anticipated future profitability.",
+    "assumptions": "Key assumptions include a WACC of 5.65% (Ke 7.2%, Kd 5%, Tax 25%, D/E 83.39%) and a terminal growth rate of 1.5-2%. For DCF, FCF is projected to normalize from negative to positive by year 3, growing at 5-8% for 5 years. DDM assumes a 3.5% dividend growth rate, while comps use sector median multiples and SRE's forward earnings.",
+    "valuationDCF": "The DCF model projects Free Cash Flows (FCF) to gradually normalize from a significantly negative current yield to positive by year 3, growing at 5-8% for the explicit period, then 1.5% perpetually. Using a WACC of 5.65%, the present value of these FCFs and the terminal value yields an intrinsic value of A$139.86 per share. This valuation is highly sensitive to the assumed FCF normalization path and growth rates.",
+    "valuationComps": "Comparable Company Analysis applies the sector median P/E of 21.11x to SRE's forward EPS of A$5.53, yielding A$116.79 per share. Additionally, using a conservative utility sector median EV/EBITDA of 13.0x (vs. SRE's 19.54x) on SRE's estimated EBITDA per share (A$8.91) suggests A$115.83 per share. Averaging these provides a comparable value of A$116.31 per share, indicating potential undervaluation on a forward basis.",
+    "valuationDDM": "The Dividend Discount Model (DDM) is applied, assuming a current dividend per share of A$2.66 (2.8% yield) and a sustainable dividend growth rate of 3.5% annually, converging to a 2% terminal growth. With a WACC of 5.65%, this model yields an intrinsic value of A$128.05 per share. This method is suitable for a stable, dividend-paying utility like Sempra.",
+    "valuationSummary": "| Method | Fair Value (A$/share) | Weight |\n|--------|----------------------|--------|\n| DCF    | 139.86               | 25%    |\n| DDM    | 128.05               | 35%    |\n| Comps  | 116.31               | 40%    |\n| **Weighted Average** | **126.50** | **100%** |",
+    "verdict": {
+      "fairValue": 126.5,
+      "currentPrice": 95.04,
+      "mispricing": -33.1,
+      "signal": "undervalued",
+      "recommendation": "Potentially Undervalued"
+    },
+    "risksAndSensitivity": "Key risks include adverse regulatory changes impacting allowed returns, higher-than-expected interest rates increasing debt costs, and failure to execute on capital projects to normalize FCF. Sensitivity analysis shows that a 1% change in WACC or terminal growth rate can significantly alter the valuation. **Bear Case (A$85.00):** Slower FCF normalization, lower dividend growth, and multiple contraction. **Base Case (A$126.50):** As per current analysis. **Bull Case (A$160.00):** Faster FCF turnaround, higher sustained growth, and multiple expansion."
+  }
+}

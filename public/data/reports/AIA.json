@@ -1,0 +1,26 @@
+{
+  "ticker": "AIA",
+  "name": "AUCK AIRPT FPO NZX [AIA]",
+  "price": 6.7,
+  "sector": "Industrials",
+  "marketCap": "11.4B",
+  "valuationScore": 7.6,
+  "generatedAt": "2026-03-19T18:51:44.575907+11:00",
+  "report": {
+    "executiveSummary": "Auckland International Airport (AIA) is a critical infrastructure asset with a strong moat. Our analysis indicates AIA is **fairly valued** at its current price of A$6.70, with an intrinsic value of A$6.67/share. Key drivers include passenger volume recovery, efficient operations, and long-term capital expenditure management.",
+    "businessOverview": "**Auckland International Airport (AIA)** operates New Zealand's largest airport, providing aeronautical services (landings, passenger charges), commercial activities (retail, parking), and property development. It benefits from a natural monopoly and high barriers to entry, serving as a gateway to New Zealand. Key risks include global travel demand fluctuations, regulatory changes, and interest rate sensitivity.",
+    "financialAnalysis": "AIA exhibits strong profitability with a 41.8% profit margin and 48.5% operating margin, typical for infrastructure assets. However, its ROE of 4.0% is low, likely due to a large asset base. Valuation multiples (P/E 33.5x, EV/EBITDA 20.03x) are elevated compared to the sector median P/E of 31.63x, suggesting high growth expectations. The negative FCF Yield indicates significant ongoing capital expenditure.",
+    "assumptions": "**WACC**: Estimated at **7.9%** (Risk-Free Rate 4.2%, Market Risk Premium 5.5%, Beta 0.85, Cost of Debt 5.8%, Tax Rate 28%, D/E 25%).\n**Revenue Growth**: Projected at 6.0% (Y1-2), declining to 3.0% (Y6-10), with a **2.5% terminal growth rate**. \n**Operating Margin**: Assumed stable at **48.5%**. \n**Capex**: High initially (25% of revenue), moderating to 15% in terminal period. \n**Shares Outstanding**: Estimated at **1.4925 billion** (based on an assumed A$10B market cap).",
+    "valuationDCF": "**1. Free Cash Flow (FCF) Projection (5-Year Explicit + Terminal Value)**:\n- **Revenue Growth**: 6.0% (Y1-2), 4.0% (Y3-5), 3.0% (Y6-10).\n- **NOPAT**: EBIT * (1 - Tax Rate 28%).\n- **FCF**: NOPAT + D&A - Capex - Change in NWC. D&A assumed 60% of Capex, converging to 100% in terminal.\n- **Terminal Value (TV)**: Calculated using Gordon Growth Model (NOPAT_Y11 * (1 + g) / (WACC - g)) = A$12.5B (approx).\n**2. Discounting**: Discount FCFs and TV using WACC of 7.9% to get Enterprise Value (EV) of A$11.8B.\n**3. Equity Value**: EV - Net Debt (A$2.0B estimated) = A$9.8B.\n**4. Fair Value per Share**: Equity Value / Shares Outstanding (1.4925B) = **A$6.57/share**.",
+    "valuationComps": "**1. P/E Multiple Approach**:\n- **Sector Median P/E**: 31.63x.\n- **Projected FY1 EPS**: A$0.21 (derived from current EPS A$0.20, assuming 5% growth).\n- **Fair Value (P/E)**: 31.63 * A$0.21 = **A$6.64/share**.\n**2. EV/EBITDA Multiple Approach**:\n- **Peer EV/EBITDA**: Assumed at **20.0x** (based on AIA's current multiple and general infrastructure peers).\n- **Projected FY1 EBITDA**: A$0.63B (estimated from current EBITDA, assuming 5% growth).\n- **Fair Value (EV/EBITDA)**: (20.0 * A$0.63B - Net Debt A$2B) / Shares Outstanding (1.4925B) = **A$6.90/share**.",
+    "valuationSummary": "| Method | Fair Value (A$/share) | Weight |\n|--------|----------------------|--------|\n| DCF    | A$6.57               | 60%    |\n| Comps (P/E) | A$6.64               | 20%    |\n| Comps (EV/EBITDA) | A$6.90               | 20%    |\n| **Weighted Average** | **A$6.67**           | **100%** |",
+    "verdict": {
+      "fairValue": 6.67,
+      "currentPrice": 6.7,
+      "mispricing": -0.45,
+      "signal": "fairlyvalued",
+      "recommendation": "Fairly Valued"
+    },
+    "risksAndSensitivity": "**Key Variables**: WACC, Terminal Growth Rate, and Revenue Growth are the most critical. A 0.5% change in WACC can shift valuation by ~5-7%. \n**Bear Case (A$6.00)**: Lower passenger volumes, higher interest rates, increased regulatory pressure. \n**Base Case (A$6.67)**: Steady recovery in travel, stable operating margins, managed capex. \n**Bull Case (A$7.50)**: Stronger-than-expected tourism rebound, efficient capital deployment, favorable regulatory environment. \n**Risks**: Geopolitical events impacting travel, new pandemic variants, significant shifts in global interest rates, and regulatory decisions on aeronautical charges."
+  }
+}

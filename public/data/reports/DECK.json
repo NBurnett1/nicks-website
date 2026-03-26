@@ -1,0 +1,26 @@
+{
+  "ticker": "DECK",
+  "name": "Deckers Outdoor Corporation",
+  "price": 104.54,
+  "sector": "Consumer Cyclical",
+  "marketCap": "15.2B",
+  "valuationScore": 4.3,
+  "generatedAt": "2026-03-20T05:44:21.551802+11:00",
+  "report": {
+    "executiveSummary": "Deckers Outdoor Corporation (DECK) exhibits strong profitability and growth, yet trades at a discount to its sector median P/E. Our analysis, incorporating a DCF model and comparable company analysis, suggests DECK is undervalued. The valuation is highly sensitive to the provided Debt/Equity ratio, which appears anomalous.",
+    "businessOverview": "Deckers Outdoor Corporation designs, markets, and distributes footwear, apparel, and accessories globally, operating through a portfolio of brands including UGG, Hoka, Teva, and Sanuk. Revenue streams are diversified across wholesale and direct-to-consumer (DTC) channels, with costs primarily comprising cost of goods sold and selling, general, and administrative expenses. DECK benefits from strong brand equity, product innovation, and a loyal customer base, particularly with Hoka's rapid growth, providing a competitive moat. Key risks include shifts in consumer preferences, intense competition, supply chain disruptions, and macroeconomic downturns impacting discretionary spending.",
+    "financialAnalysis": "DECK demonstrates excellent profitability with a 19.4% profit margin and an outstanding 31.4% operating margin, alongside a very high 39.7% ROE, indicating efficient capital utilization. Its current P/E of 14.85 and forward P/E of 14.28 are significantly below the sector median P/E of 19.12, suggesting potential undervaluation. The provided Debt/Equity ratio of 13.14 is an extreme anomaly for a company of this type and would imply excessive leverage, which we address with a normalized WACC for our base case while acknowledging its impact.",
+    "assumptions": "For DCF, we assume a 5-year explicit forecast period with revenue growth declining from 7.1% to 3.0%, and a terminal growth rate of 2.5%. Operating margin is held constant at 31.4%, and a tax rate of 25% is applied. D&A and CapEx are assumed at 3.0% and 4.0% of revenue, respectively, with change in NWC at 5.0% of revenue change. Due to the anomalous provided Debt/Equity of 13.14, we normalize WACC to 8.5% (Risk-Free Rate: 3.0%, Equity Risk Premium: 5.5%, Beta: 1.1, Cost of Debt: 6.0%, Target D/E: 0.2) for a more realistic base case, noting that using 13.14 would yield an extremely low WACC and inflated valuation. Shares outstanding are assumed at 60 million for per-share calculations.",
+    "valuationDCF": "Our 5-year DCF model projects free cash flows, discounted using a normalized WACC of 8.5%. The sum of present values of explicit period free cash flows and terminal value (calculated using a 2.5% perpetual growth rate) yields an Enterprise Value of approximately A$9.35 billion. Assuming negligible net debt (given data limitations and the D/E anomaly), this results in an Equity Value of A$9.35 billion, translating to a fair value of **A$155.76 per share**.",
+    "valuationComps": "DECK's P/E of 14.85 is well below the sector median of 19.12. Applying the sector median P/E to DECK's implied EPS (A$7.04) yields a fair value of **A$134.59 per share**. For EV/EBITDA, using DECK's current EV/EBITDA of 9.63 and assuming a peer median of 12.0x (given DECK's strong margins and growth relative to peers like Skechers/Crocs), results in a fair value of approximately **A$130.17 per share**.",
+    "valuationSummary": "| Method | Fair Value (A$/share) | Weight |\n|--------|----------------------|--------|\n| DCF    | 155.76               | 50%    |\n| P/E    | 134.59               | 25%    |\n| EV/EBITDA | 130.17               | 25%    |\n| **Weighted Average** | **144.07**           | **100%** |",
+    "verdict": {
+      "fairValue": 144.07,
+      "currentPrice": 104.54,
+      "mispricing": -37.81,
+      "signal": "undervalued",
+      "recommendation": "Potentially Undervalued"
+    },
+    "risksAndSensitivity": "The valuation is highly sensitive to the assumed WACC, particularly the treatment of the provided Debt/Equity ratio of 13.14. Other critical variables include revenue growth rates, operating margins, and the terminal growth rate. A **Bear Case** (lower growth, higher WACC, e.g., A$110-120) could still suggest undervaluation, while a **Bull Case** (stronger growth, sustained margins, e.g., A$160-170) indicates significant upside. Key risks include consumer spending slowdowns, competitive pressures, and fashion trend shifts. The D/E anomaly, if accurate, would drastically lower WACC and inflate valuation, but is likely a data error."
+  }
+}
