@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
+import AlertsFeed from './AlertsFeed'
 import './MarketSelector.css'
 
 export default function MarketSelector({ onSelect }) {
@@ -177,6 +178,8 @@ export default function MarketSelector({ onSelect }) {
         <p className="market-selector__footnote animate-fade-in-up stagger-3">
           Lower valuation scores indicate stronger undervaluation signals. Click any stock to view its full analysis report.
         </p>
+
+        <AlertsFeed />
       </div>
     </div>
   )

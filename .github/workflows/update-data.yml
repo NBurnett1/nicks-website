@@ -2,8 +2,8 @@ name: Daily Valuation Pipeline
 
 on:
   schedule:
-    # Every day at midnight AEST (13:00 UTC — AEST is UTC+11)
-    - cron: '0 13 * * *'
+    # Run 4x daily: 6am, 12pm, 6pm, midnight AEST (UTC+11)
+    - cron: '0 1,7,13,19 * * *'
   workflow_dispatch: # Manual trigger
 
 permissions:
@@ -12,7 +12,7 @@ permissions:
 jobs:
   update-data:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 120
 
     steps:
       - name: Checkout repository
@@ -28,30 +28,27 @@ jobs:
       - name: Install dependencies
         run: pip install -r scripts/requirements.txt
 
-      # --- ASX Pipeline ---
-      - name: Run ASX pipeline
+      # --- Exchange Pipelines (run at midnight AEST only) ---
+      - name: Run exchange pipelines (midnight refresh only)
+        if: github.event.schedule == '0 13 * * *' || github.event_name == 'workflow_dispatch'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python scripts/run_pipeline.py --exchange ASX --skip-reports
+        run: |
+          python scripts/run_pipeline.py --exchange ASX --skip-reports
+          python scripts/run_pipeline.py --exchange NYSE --skip-reports
+          python scripts/run_pipeline.py --exchange NASDAQ --skip-reports
 
-      # --- NYSE Pipeline ---
-      - name: Run NYSE pipeline
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python scripts/run_pipeline.py --exchange NYSE --skip-reports
-
-      # --- NASDAQ Pipeline ---
-      - name: Run NASDAQ pipeline
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python scripts/run_pipeline.py --exchange NASDAQ --skip-reports
-
-      # --- Generate Screener Reports (all exchanges) ---
+      # --- Generate Screener Reports (midnight only) ---
       - name: Generate screener reports
+        if: github.event.schedule == '0 13 * * *' || github.event_name == 'workflow_dispatch'
         run: |
           python scripts/generate_screener_reports.py --exchange ASX --top 50
           python scripts/generate_screener_reports.py --exchange NYSE --top 50
           python scripts/generate_screener_reports.py --exchange NASDAQ --top 50
+
+      # --- Market Intelligence Scanner (every run) ---
+      - name: Fetch market alerts
+        run: python scripts/fetch_alerts.py
 
       # --- Commit and Push ---
       - name: Commit and push changes
@@ -59,8 +56,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add public/data/
-          git diff --staged --quiet || git commit -m "chore: daily valuation refresh [$(date -u +%Y-%m-%d)]
+          git diff --staged --quiet || git commit -m "chore: market data refresh [$(date -u +%Y-%m-%d %H:%M)]
 
-          - ASX, NYSE, NASDAQ data updated
-          - Top 50 screener reports per exchange regenerated"
+          - Market alerts updated (news, volume, insider activity)
+          - Exchange data and reports refreshed (if midnight run)"
           git push
