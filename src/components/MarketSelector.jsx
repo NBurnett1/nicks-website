@@ -1,14 +1,50 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import './MarketSelector.css'
 
 export default function MarketSelector({ onSelect }) {
   const [exitingMarket, setExitingMarket] = useState(null)
+  const [topPicks, setTopPicks] = useState({})
+  const navigate = useNavigate()
+
+  // Load top picks for each market on mount
+  useEffect(() => {
+    const exchanges = ['asx', 'nyse', 'nasdaq']
+    exchanges.forEach(async (ex) => {
+      try {
+        const res = await fetch(`/data/${ex}_index.json`)
+        if (!res.ok) return
+        const data = await res.json()
+        const undervalued = (data.undervalued || [])
+          .filter(s => {
+            // Filter micro-caps
+            const mc = s.marketCap || '0'
+            let val = 0
+            if (mc.endsWith('B')) val = parseFloat(mc) * 1e9
+            else if (mc.endsWith('M')) val = parseFloat(mc) * 1e6
+            else if (mc.endsWith('T')) val = parseFloat(mc) * 1e12
+            return val >= 500_000_000 // $500M minimum for top picks
+          })
+          .sort((a, b) => a.valuationScore - b.valuationScore)
+          .slice(0, 5)
+
+        setTopPicks(prev => ({ ...prev, [ex.toUpperCase()]: undervalued }))
+      } catch {
+        // silently fail
+      }
+    })
+  }, [])
 
   const handleSelect = (market) => {
     setExitingMarket(market)
     setTimeout(() => {
       onSelect(market)
     }, 600)
+  }
+
+  const handleStockClick = (e, ticker, stock) => {
+    e.stopPropagation()
+    navigate(`/stock/${ticker}`, { state: { chartData: stock.chartData } })
   }
 
   const handleMouseMove = (e) => {
@@ -22,8 +58,8 @@ export default function MarketSelector({ onSelect }) {
     
     const centerX = rect.width / 2
     const centerY = rect.height / 2
-    const rotateX = ((y - centerY) / centerY) * -8 
-    const rotateY = ((x - centerX) / centerX) * 8
+    const rotateX = ((y - centerY) / centerY) * -5  
+    const rotateY = ((x - centerX) / centerX) * 5
     
     card.style.setProperty('--rotateX', `${rotateX}deg`)
     card.style.setProperty('--rotateY', `${rotateY}deg`)
@@ -36,9 +72,9 @@ export default function MarketSelector({ onSelect }) {
   }
 
   const markets = [
-    { id: 'NYSE', name: 'NYSE', desc: 'New York Stock Exchange', flag: '🇺🇸', status: 'LIVE' },
-    { id: 'ASX', name: 'ASX', desc: 'Australian Securities Exchange', flag: '🇦🇺', status: 'LIVE' },
-    { id: 'NASDAQ', name: 'NASDAQ', desc: 'National Association of Securities Dealers', flag: '🇺🇸', status: 'LIVE' }
+    { id: 'ASX', name: 'ASX', desc: 'Australian Securities Exchange', flag: '🇦🇺', status: 'LIVE', accent: 'green' },
+    { id: 'NYSE', name: 'NYSE', desc: 'New York Stock Exchange', flag: '🇺🇸', status: 'LIVE', accent: 'blue' },
+    { id: 'NASDAQ', name: 'NASDAQ', desc: 'NASDAQ Stock Market', flag: '🇺🇸', status: 'LIVE', accent: 'purple' }
   ]
 
   return (
@@ -52,25 +88,75 @@ export default function MarketSelector({ onSelect }) {
           Select <span className="text-gradient">Market</span>
         </h1>
         <p className="market-selector__subtitle animate-fade-in-up stagger-1">
-          Choose an exchange to view AI-powered valuations and equity research.
+          AI-powered valuations and equity research across global exchanges. 
+          <span className="market-selector__subtitle-highlight"> Top picks updated daily.</span>
         </p>
 
         <div className="market-selector__grid animate-fade-in-up stagger-2">
-          {markets.map((market) => (
-            <button 
-              key={market.id}
-              className={`market-card market-card--active ${exitingMarket && exitingMarket !== market.id ? 'market-card--fading' : ''} ${exitingMarket === market.id ? 'market-card--selected' : ''}`}
-              onClick={() => handleSelect(market.id)}
-              onMouseMove={handleMouseMove}
-              onMouseLeave={handleMouseLeave}
-            >
-              <div className="market-card__icon-wrapper">{market.flag}</div>
-              <h3 className="market-card__title">{market.name}</h3>
-              <p className="market-card__desc">{market.desc}</p>
-              <div className="market-card__status">LIVE</div>
-            </button>
-          ))}
+          {markets.map((market) => {
+            const picks = topPicks[market.id] || []
+            return (
+              <button 
+                key={market.id}
+                className={`market-card market-card--active market-card--${market.accent} ${exitingMarket && exitingMarket !== market.id ? 'market-card--fading' : ''} ${exitingMarket === market.id ? 'market-card--selected' : ''}`}
+                onClick={() => handleSelect(market.id)}
+                onMouseMove={handleMouseMove}
+                onMouseLeave={handleMouseLeave}
+              >
+                <div className="market-card__header">
+                  <div className="market-card__icon-wrapper">{market.flag}</div>
+                  <div className="market-card__header-text">
+                    <h3 className="market-card__title">{market.name}</h3>
+                    <p className="market-card__desc">{market.desc}</p>
+                  </div>
+                </div>
+
+                <div className="market-card__status-row">
+                  <div className={`market-card__status market-card__status--${market.accent}`}>LIVE</div>
+                  {picks.length > 0 && (
+                    <span className="market-card__picks-count">{picks.length} top picks</span>
+                  )}
+                </div>
+
+                {/* Top Picks Section */}
+                {picks.length > 0 && (
+                  <div className="market-card__picks">
+                    <div className="market-card__picks-header">
+                      <span className="market-card__picks-label">🔥 Top Undervalued</span>
+                    </div>
+                    <div className="market-card__picks-list">
+                      {picks.map((stock, i) => (
+                        <div 
+                          key={stock.ticker}
+                          className={`pick-chip pick-chip--${market.accent}`}
+                          onClick={(e) => handleStockClick(e, stock.ticker, stock)}
+                          title={`${stock.name} — Score: ${stock.valuationScore.toFixed(1)}`}
+                        >
+                          <span className="pick-chip__rank">{i + 1}</span>
+                          <span className="pick-chip__ticker">{stock.ticker}</span>
+                          <span className="pick-chip__price">
+                            {market.id === 'ASX' ? 'A$' : '$'}{stock.price.toFixed(2)}
+                          </span>
+                          <span className="pick-chip__score">
+                            {stock.valuationScore.toFixed(0)}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                <div className="market-card__cta">
+                  View all stocks →
+                </div>
+              </button>
+            )
+          })}
         </div>
+
+        <p className="market-selector__footnote animate-fade-in-up stagger-3">
+          Lower valuation scores indicate stronger undervaluation signals. Click any stock to view its full analysis report.
+        </p>
       </div>
     </div>
   )

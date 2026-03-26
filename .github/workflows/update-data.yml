@@ -1,9 +1,9 @@
-name: Update ASX Valuation Data
+name: Daily Valuation Pipeline
 
 on:
   schedule:
-    # Every day at midnight AEST (14:00 UTC)
-    - cron: '0 14 * * *'
+    # Every day at midnight AEST (13:00 UTC — AEST is UTC+11)
+    - cron: '0 13 * * *'
   workflow_dispatch: # Manual trigger
 
 permissions:
@@ -12,7 +12,7 @@ permissions:
 jobs:
   update-data:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 90
 
     steps:
       - name: Checkout repository
@@ -28,15 +28,39 @@ jobs:
       - name: Install dependencies
         run: pip install -r scripts/requirements.txt
 
-      - name: Run pipeline
+      # --- ASX Pipeline ---
+      - name: Run ASX pipeline
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python scripts/run_pipeline.py
+        run: python scripts/run_pipeline.py --exchange ASX --skip-reports
 
+      # --- NYSE Pipeline ---
+      - name: Run NYSE pipeline
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/run_pipeline.py --exchange NYSE --skip-reports
+
+      # --- NASDAQ Pipeline ---
+      - name: Run NASDAQ pipeline
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/run_pipeline.py --exchange NASDAQ --skip-reports
+
+      # --- Generate Screener Reports (all exchanges) ---
+      - name: Generate screener reports
+        run: |
+          python scripts/generate_screener_reports.py --exchange ASX --top 50
+          python scripts/generate_screener_reports.py --exchange NYSE --top 50
+          python scripts/generate_screener_reports.py --exchange NASDAQ --top 50
+
+      # --- Commit and Push ---
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add public/data/
-          git diff --staged --quiet || git commit -m "chore: update ASX valuation data [$(date -u +%Y-%m-%d)]"
+          git diff --staged --quiet || git commit -m "chore: daily valuation refresh [$(date -u +%Y-%m-%d)]
+
+          - ASX, NYSE, NASDAQ data updated
+          - Top 50 screener reports per exchange regenerated"
           git push
