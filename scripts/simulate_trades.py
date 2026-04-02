@@ -1,32 +1,40 @@
 """
-N Valuations — ASX Trading Engine v2
+Nick Knows Best — ASX Trading Engine v3 (SMC Edition)
 
-Simulated hedge fund that trades ASX stocks using valuation models
-combined with technical momentum confirmation and dynamic risk management.
+Smart Money Concepts + Valuation confluence trading system.
 
-Strategy:
-  ENTRY — Buy undervalued stocks (mispricing < -30%) ONLY when:
-    • Price is above 5-day EMA (short-term uptrend established)
-    • Volume is above 20-day average (institutional interest)
-    • RSI(14) is between 30-65 (not overbought; recovering from oversold ideal)
+Strategy based on:
+  1. Technical Analysis — Market structure (HH/HL/LH/LL), trend identification
+  2. Multi-Timeframe — Weekly bias (trend) + daily entry confirmation
+  3. Market Structure — Break of Structure (BOS), Change of Character (CHoCH)
+  4. Liquidity Sweeps — Equal highs/lows, sweep + reversal patterns
+  5. Fair Value Gaps — Three-candle imbalance zones for optimal entries
+  6. Risk Management — Asymmetric R:R (min 3:1), 1-2% account risk per trade
 
-  EXIT — Dynamic trailing stop + partial profit-taking:
-    • Initial stop: -6% from entry
-    • After +5%: trail stop to breakeven
-    • After +10%: trail stop to +5%
-    • Partial exit: sell 50% at +15% gain, let the rest ride
-    • Max hold: 30 trading days (but extended if in profit)
+ENTRY CONDITIONS (ALL must align):
+  1. Undervalued by our valuation model (mispricing < -25%)
+  2. Weekly structure is bullish (HH/HL pattern) — multi-timeframe bias
+  3. Daily structure shows BOS or CHoCH confirming bullish shift
+  4. Recent liquidity sweep of lows (stop hunt) followed by reversal
+  5. Fair Value Gap present as entry zone
+  6. Volume confirms (above average)
+  7. Minimum 3:1 risk-reward ratio to fair value target
 
-  POSITION SIZING — Conviction-weighted:
-    • Base allocation: 8-15% of portfolio per position
-    • Max 8 concurrent positions
-    • Max 3 positions per sector (diversification)
+EXIT:
+  • Stop-loss behind the most recent swing low (structure-based, not fixed %)
+  • Trail stop to previous swing lows as new structure forms
+  • Partial profit at 3R, let remainder ride toward fair value
+  • Full exit at fair value target or on bearish CHoCH
 
-  STARTING CAPITAL: A$10,000
+POSITION SIZING:
+  • Risk 1.5% of portfolio value per trade
+  • Position size = risk amount / distance to stop-loss
+  • Max 8 concurrent positions, max 3 per sector
 
 Usage:
-    python scripts/simulate_trades.py            # Normal run
-    python scripts/simulate_trades.py --reset     # Fresh start
+    python scripts/simulate_trades.py --live        # 30-min live session
+    python scripts/simulate_trades.py --maintain     # Update prices & exits only
+    python scripts/simulate_trades.py --reset        # Fresh start
 """
 
 import json
@@ -42,21 +50,267 @@ import numpy as np
 # ---------- Configuration ----------
 STARTING_CAPITAL = 10_000.00
 MAX_POSITIONS = 8
-MAX_POSITION_PCT = 0.15        # 15% of portfolio per trade
-MAX_SECTOR_POSITIONS = 3       # Max positions per sector
-MIN_MISPRICING = -30           # Only buy if mispricing < -30%
-INITIAL_STOP_PCT = -0.06       # -6% initial stop loss
-BREAKEVEN_TRIGGER = 0.05       # Trail to breakeven after +5%
-TRAIL_TRIGGER = 0.10           # Trail to +5% after +10%
-TRAIL_LOCK_PCT = 0.05          # Lock in 5% when trailing
-PARTIAL_PROFIT_PCT = 0.15      # Take partial profits at +15%
-PARTIAL_SELL_RATIO = 0.50      # Sell 50% at partial profit
-MAX_HOLD_DAYS = 30             # Max hold for losing positions
-MIN_TRADE_VALUE = 200          # Minimum trade in dollars
-MIN_VOLUME_RATIO = 1.0         # Volume must be >= average
-RSI_MIN = 25                   # Min RSI for entry
-RSI_MAX = 65                   # Max RSI for entry
+MAX_SECTOR_POSITIONS = 3
+MIN_MISPRICING = -25           # Slightly relaxed from -30 to catch more setups
+RISK_PER_TRADE_PCT = 0.015     # 1.5% of portfolio per trade
+MIN_RR_RATIO = 3.0             # Minimum 3:1 risk-reward
+MIN_TRADE_VALUE = 150          # Minimum trade in dollars
+MAX_HOLD_DAYS = 40             # Max hold for losing positions
+PARTIAL_PROFIT_R = 3.0         # Take partial at 3R
+PARTIAL_SELL_RATIO = 0.50      # Sell 50% at partial profit target
+SWING_LOOKBACK = 5             # Bars to look back for swing detection
 
+
+# ═══════════════════════════════════════════════════════════
+#  SMART MONEY CONCEPTS — Technical Analysis Functions
+# ═══════════════════════════════════════════════════════════
+
+def find_swing_highs(highs, lookback=SWING_LOOKBACK):
+    """Find swing high points in a price series.
+    A swing high is a bar whose high is higher than the `lookback` bars on each side."""
+    swings = []
+    for i in range(lookback, len(highs) - lookback):
+        is_swing = True
+        for j in range(1, lookback + 1):
+            if highs[i] <= highs[i - j] or highs[i] <= highs[i + j]:
+                is_swing = False
+                break
+        if is_swing:
+            swings.append((i, float(highs[i])))
+    return swings
+
+
+def find_swing_lows(lows, lookback=SWING_LOOKBACK):
+    """Find swing low points in a price series."""
+    swings = []
+    for i in range(lookback, len(lows) - lookback):
+        is_swing = True
+        for j in range(1, lookback + 1):
+            if lows[i] >= lows[i - j] or lows[i] >= lows[i + j]:
+                is_swing = False
+                break
+        if is_swing:
+            swings.append((i, float(lows[i])))
+    return swings
+
+
+def detect_market_structure(highs, lows, closes):
+    """
+    Detect market structure: HH/HL (bullish) or LH/LL (bearish).
+    Returns: structure dict with trend, swing points, BOS, CHoCH signals.
+    """
+    swing_highs = find_swing_highs(highs)
+    swing_lows = find_swing_lows(lows)
+
+    if len(swing_highs) < 2 or len(swing_lows) < 2:
+        return {"trend": "neutral", "swingHighs": [], "swingLows": [], "bos": False, "choch": False}
+
+    # Classify swing point sequences
+    sh = swing_highs[-2:]
+    sl = swing_lows[-2:]
+
+    hh = sh[-1][1] > sh[-2][1]  # Higher High
+    hl = sl[-1][1] > sl[-2][1]  # Higher Low
+    lh = sh[-1][1] < sh[-2][1]  # Lower High
+    ll = sl[-1][1] < sl[-2][1]  # Lower Low
+
+    # Determine trend
+    if hh and hl:
+        trend = "bullish"
+    elif lh and ll:
+        trend = "bearish"
+    elif hh and not hl:
+        trend = "bullish_weak"  # HH but not HL yet
+    elif hl and not hh:
+        trend = "bullish_building"  # HL forming
+    else:
+        trend = "neutral"
+
+    # Break of Structure (BOS) — price broke the most recent swing high (bullish)
+    current_price = float(closes[-1])
+    last_swing_high = sh[-1][1]
+    last_swing_low = sl[-1][1]
+    bos_bullish = current_price > last_swing_high
+    bos_bearish = current_price < last_swing_low
+
+    # Change of Character (CHoCH) — trend reversal signal
+    # Bullish CHoCH: was making LH/LL but now breaks above the last LH
+    choch_bullish = (lh or ll) and current_price > sh[-1][1]
+    choch_bearish = (hh or hl) and current_price < sl[-1][1]
+
+    return {
+        "trend": trend,
+        "swingHighs": [(i, round(v, 2)) for i, v in swing_highs[-3:]],
+        "swingLows": [(i, round(v, 2)) for i, v in swing_lows[-3:]],
+        "lastSwingHigh": round(last_swing_high, 2),
+        "lastSwingLow": round(last_swing_low, 2),
+        "hh": bool(hh), "hl": bool(hl), "lh": bool(lh), "ll": bool(ll),
+        "bos": bool(bos_bullish),
+        "bosBearish": bool(bos_bearish),
+        "choch": bool(choch_bullish),
+        "chochBearish": bool(choch_bearish),
+    }
+
+
+def detect_liquidity_sweep(lows, closes, swing_lows):
+    """
+    Detect if a recent liquidity sweep occurred.
+    A sweep happens when price dips below a swing low then closes back above it.
+    This indicates smart money grabbed stop-losses and reversed.
+    """
+    if len(swing_lows) < 1 or len(lows) < 3:
+        return {"swept": False}
+
+    # Check the last few bars for a sweep of the most recent swing low
+    target_low = swing_lows[-1][1]
+
+    for i in range(-3, 0):  # Check last 3 bars
+        if i >= -len(lows):
+            bar_low = float(lows[i])
+            bar_close = float(closes[i])
+            # Price wicked below swing low but closed above it = sweep
+            if bar_low < target_low * 0.998 and bar_close > target_low:
+                return {
+                    "swept": True,
+                    "sweepLevel": round(target_low, 2),
+                    "sweepLow": round(bar_low, 2),
+                    "closeAbove": round(bar_close, 2),
+                }
+
+    # Also check for equal lows sweep (double bottom + break below then reversal)
+    if len(swing_lows) >= 2:
+        prev_low = swing_lows[-2][1]
+        recent_low = swing_lows[-1][1]
+        # Equal lows (within 1% of each other)
+        if abs(prev_low - recent_low) / max(prev_low, 0.01) < 0.01:
+            for i in range(-3, 0):
+                if i >= -len(lows):
+                    bar_low = float(lows[i])
+                    bar_close = float(closes[i])
+                    if bar_low < min(prev_low, recent_low) and bar_close > min(prev_low, recent_low):
+                        return {
+                            "swept": True,
+                            "sweepLevel": round(min(prev_low, recent_low), 2),
+                            "type": "equal_lows",
+                            "sweepLow": round(bar_low, 2),
+                            "closeAbove": round(bar_close, 2),
+                        }
+
+    return {"swept": False}
+
+
+def detect_fair_value_gap(highs, lows, closes):
+    """
+    Detect bullish Fair Value Gaps (FVGs) in recent price action.
+    A bullish FVG is a 3-candle pattern where:
+      - Candle 1 high < Candle 3 low (gap between wicks)
+      - Candle 2 is a strong bullish candle (the impulse)
+    The gap zone is a high-probability entry area.
+    """
+    fvgs = []
+    for i in range(2, min(len(highs), 10)):  # Check last 10 bars
+        idx = len(highs) - i
+        if idx < 2:
+            break
+
+        c1_high = float(highs[idx - 2])  # First candle high
+        c2_open = float(closes[idx - 2])
+        c2_close = float(closes[idx - 1])
+        c3_low = float(lows[idx])        # Third candle low
+
+        # Bullish FVG: gap between candle 1's high and candle 3's low
+        if c3_low > c1_high and c2_close > c2_open:
+            gap_top = c3_low
+            gap_bottom = c1_high
+            gap_size = (gap_top - gap_bottom) / gap_bottom * 100
+
+            if gap_size > 0.3:  # Minimum gap size of 0.3%
+                fvgs.append({
+                    "top": round(gap_top, 2),
+                    "bottom": round(gap_bottom, 2),
+                    "midpoint": round((gap_top + gap_bottom) / 2, 2),
+                    "gapPct": round(gap_size, 2),
+                    "barsAgo": i,
+                })
+
+    return fvgs
+
+
+def detect_order_block(opens, highs, lows, closes):
+    """
+    Detect bullish order blocks.
+    A bullish OB is the last bearish candle before a strong impulsive bullish move.
+    """
+    if len(closes) < 5:
+        return None
+
+    # Look back through recent bars
+    for i in range(len(closes) - 4, max(0, len(closes) - 15), -1):
+        candle_open = float(opens[i])
+        candle_close = float(closes[i])
+        candle_low = float(lows[i])
+        candle_high = float(highs[i])
+
+        # Is this a bearish candle?
+        if candle_close >= candle_open:
+            continue
+
+        # Check if the next 2-3 candles form a strong bullish impulse
+        impulse_high = max(float(highs[j]) for j in range(i + 1, min(i + 4, len(highs))))
+        move_size = (impulse_high - candle_close) / candle_close * 100
+
+        if move_size > 2.0:  # At least 2% impulse move
+            return {
+                "top": round(candle_open, 2),  # OB zone top
+                "bottom": round(candle_low, 2),  # OB zone bottom
+                "midpoint": round((candle_open + candle_low) / 2, 2),
+                "impulsePct": round(move_size, 2),
+                "barsAgo": len(closes) - 1 - i,
+            }
+
+    return None
+
+
+def calc_rsi(prices, period=14):
+    """Calculate RSI from a price series."""
+    if len(prices) < period + 1:
+        return 50.0
+
+    deltas = np.diff(prices)
+    gains = np.where(deltas > 0, deltas, 0)
+    losses = np.where(deltas < 0, -deltas, 0)
+
+    avg_gain = np.mean(gains[:period])
+    avg_loss = np.mean(losses[:period])
+
+    if avg_loss == 0:
+        return 100.0
+
+    for i in range(period, len(gains)):
+        avg_gain = (avg_gain * (period - 1) + gains[i]) / period
+        avg_loss = (avg_loss * (period - 1) + losses[i]) / period
+
+    if avg_loss == 0:
+        return 100.0
+
+    rs = avg_gain / avg_loss
+    return 100.0 - (100.0 / (1.0 + rs))
+
+
+def calc_ema(prices, period=5):
+    """Calculate EMA from a price series."""
+    if len(prices) < period:
+        return prices[-1] if len(prices) > 0 else 0
+    multiplier = 2 / (period + 1)
+    ema = float(prices[0])
+    for p in prices[1:]:
+        ema = (float(p) - ema) * multiplier + ema
+    return ema
+
+
+# ═══════════════════════════════════════════════════════════
+#  PORTFOLIO & DATA FUNCTIONS
+# ═══════════════════════════════════════════════════════════
 
 def load_portfolio(path):
     """Load existing portfolio state or create fresh one."""
@@ -90,94 +344,28 @@ def new_portfolio():
     }
 
 
-def get_stock_data(ticker, suffix=".AX", period="1mo"):
+def get_stock_data(ticker, suffix=".AX", period="3mo"):
     """Fetch historical data for a ticker. Returns (hist_df, current_price) or (None, None)."""
     try:
         t = yf.Ticker(f"{ticker}{suffix}")
         hist = t.history(period=period)
-        if hist is not None and not hist.empty and len(hist) >= 5:
+        if hist is not None and not hist.empty and len(hist) >= 10:
             return hist, float(hist["Close"].iloc[-1])
     except Exception:
         pass
     return None, None
 
 
-def calc_rsi(prices, period=14):
-    """Calculate RSI from a price series."""
-    if len(prices) < period + 1:
-        return 50.0  # Default neutral if not enough data
-
-    deltas = np.diff(prices)
-    gains = np.where(deltas > 0, deltas, 0)
-    losses = np.where(deltas < 0, -deltas, 0)
-
-    avg_gain = np.mean(gains[:period])
-    avg_loss = np.mean(losses[:period])
-
-    if avg_loss == 0:
-        return 100.0
-
-    for i in range(period, len(gains)):
-        avg_gain = (avg_gain * (period - 1) + gains[i]) / period
-        avg_loss = (avg_loss * (period - 1) + losses[i]) / period
-
-    if avg_loss == 0:
-        return 100.0
-
-    rs = avg_gain / avg_loss
-    return 100.0 - (100.0 / (1.0 + rs))
-
-
-def calc_ema(prices, period=5):
-    """Calculate EMA from a price series. Returns the last EMA value."""
-    if len(prices) < period:
-        return prices[-1] if len(prices) > 0 else 0
-    multiplier = 2 / (period + 1)
-    ema = float(prices[0])
-    for p in prices[1:]:
-        ema = (float(p) - ema) * multiplier + ema
-    return ema
-
-
-def passes_momentum_filter(hist):
-    """
-    Check if a stock passes the momentum confirmation filter.
-    Returns (passes: bool, details: dict)
-    """
-    closes = hist["Close"].values
-    volumes = hist["Volume"].values
-
-    current_price = float(closes[-1])
-
-    # 1. Price above 5-day EMA (short-term uptrend)
-    ema5 = calc_ema(closes, 5)
-    above_ema = current_price >= ema5 * 0.995  # tiny tolerance
-
-    # 2. Volume above 20-day average
-    if len(volumes) >= 20:
-        avg_vol = float(np.mean(volumes[-21:-1]))  # exclude today
-    else:
-        avg_vol = float(np.mean(volumes[:-1])) if len(volumes) > 1 else 0
-    
-    vol_ratio = float(volumes[-1]) / avg_vol if avg_vol > 0 else 0
-    vol_ok = vol_ratio >= MIN_VOLUME_RATIO
-
-    # 3. RSI between 25-65
-    rsi = calc_rsi(closes)
-    rsi_ok = RSI_MIN <= rsi <= RSI_MAX
-
-    passes = above_ema and vol_ok and rsi_ok
-
-    details = {
-        "ema5": round(float(ema5), 2),
-        "aboveEma": bool(above_ema),
-        "volRatio": round(float(vol_ratio), 2),
-        "volOk": bool(vol_ok),
-        "rsi": round(float(rsi), 1),
-        "rsiOk": bool(rsi_ok),
-    }
-
-    return passes, details
+def get_weekly_data(ticker, suffix=".AX"):
+    """Fetch weekly data for higher-timeframe analysis."""
+    try:
+        t = yf.Ticker(f"{ticker}{suffix}")
+        hist = t.history(period="6mo", interval="1wk")
+        if hist is not None and not hist.empty and len(hist) >= 8:
+            return hist
+    except Exception:
+        pass
+    return None
 
 
 def load_candidates(data_dir):
@@ -232,84 +420,266 @@ def load_candidates(data_dir):
     return candidates
 
 
-def get_trailing_stop(pos, current_price):
-    """
-    Calculate the current trailing stop level for a position.
-    Returns the stop price.
-    """
-    entry_price = pos["entryPrice"]
-    pnl_pct = (current_price - entry_price) / entry_price
-    
-    # Highest price seen (track for trailing)
-    highest = max(current_price, pos.get("highestPrice", current_price))
+# ═══════════════════════════════════════════════════════════
+#  SMC ENTRY ANALYSIS
+# ═══════════════════════════════════════════════════════════
 
-    if pnl_pct >= TRAIL_TRIGGER:
-        # After +10%: trail stop to lock in 5% from highest
-        stop_price = highest * (1 - (TRAIL_TRIGGER - TRAIL_LOCK_PCT))
-        # But never lower than breakeven
-        stop_price = max(stop_price, entry_price * 1.001)
-    elif pnl_pct >= BREAKEVEN_TRIGGER:
-        # After +5%: trail stop to breakeven
-        stop_price = entry_price * 1.001  # tiny buffer above breakeven
+def analyze_smc_entry(ticker, suffix, fair_value, portfolio_value):
+    """
+    Run full SMC analysis on a stock to determine if it's a valid entry.
+    Returns (valid: bool, analysis: dict, stop_price: float, position_size: int)
+    """
+    # 1. Get daily data (3 months for structure analysis)
+    hist, current_price = get_stock_data(ticker, suffix, period="3mo")
+    if hist is None or current_price is None or current_price <= 0:
+        return False, {"reason": "no data"}, 0, 0
+
+    closes = hist["Close"].values
+    highs = hist["High"].values
+    lows = hist["Low"].values
+    opens = hist["Open"].values
+    volumes = hist["Volume"].values
+
+    # 2. MULTI-TIMEFRAME: Weekly structure for bias
+    weekly = get_weekly_data(ticker, suffix)
+    weekly_bullish = False
+    weekly_structure = {"trend": "unknown"}
+
+    if weekly is not None:
+        w_highs = weekly["High"].values
+        w_lows = weekly["Low"].values
+        w_closes = weekly["Close"].values
+        weekly_structure = detect_market_structure(w_highs, w_lows, w_closes)
+        weekly_bullish = weekly_structure["trend"] in ("bullish", "bullish_weak", "bullish_building")
+
+    if not weekly_bullish:
+        return False, {
+            "reason": f"weekly trend {weekly_structure['trend']}",
+            "weeklyStructure": weekly_structure["trend"]
+        }, 0, 0
+
+    # 3. DAILY MARKET STRUCTURE
+    daily_structure = detect_market_structure(highs, lows, closes)
+
+    # Need bullish structure or CHoCH (reversal from bearish to bullish)
+    structure_bullish = daily_structure["trend"] in ("bullish", "bullish_weak", "bullish_building")
+    has_bos = daily_structure["bos"]
+    has_choch = daily_structure["choch"]
+
+    if not (structure_bullish or has_bos or has_choch):
+        return False, {
+            "reason": f"daily structure {daily_structure['trend']}, no BOS/CHoCH",
+            "dailyStructure": daily_structure["trend"],
+        }, 0, 0
+
+    # 4. LIQUIDITY SWEEP check
+    sweep = detect_liquidity_sweep(lows, closes, daily_structure.get("swingLows", []))
+
+    # 5. FAIR VALUE GAP check
+    fvgs = detect_fair_value_gap(highs, lows, closes)
+
+    # 6. ORDER BLOCK check
+    ob = detect_order_block(opens, highs, lows, closes)
+
+    # 7. VOLUME confirmation
+    if len(volumes) >= 20:
+        avg_vol = float(np.mean(volumes[-21:-1]))
     else:
-        # Below +5%: fixed stop at -6%
-        stop_price = entry_price * (1 + INITIAL_STOP_PCT)
-    
-    return stop_price, highest
+        avg_vol = float(np.mean(volumes[:-1])) if len(volumes) > 1 else 0
+    vol_ratio = float(volumes[-1]) / avg_vol if avg_vol > 0 else 0
+
+    # 8. RSI check (not overbought)
+    rsi = calc_rsi(closes)
+
+    # ── SCORING: How many SMC confluences align? ──
+    score = 0
+    confluences = []
+
+    if structure_bullish:
+        score += 2
+        confluences.append("STRUCTURE")
+    if has_bos:
+        score += 2
+        confluences.append("BOS")
+    if has_choch:
+        score += 3  # CHoCH is a strong signal
+        confluences.append("CHoCH")
+    if sweep.get("swept"):
+        score += 3  # Liquidity sweep is very high value
+        confluences.append("SWEEP")
+    if fvgs:
+        score += 2
+        confluences.append("FVG")
+    if ob:
+        score += 1
+        confluences.append("OB")
+    if vol_ratio >= 1.2:
+        score += 1
+        confluences.append("VOL")
+    if 25 <= rsi <= 60:
+        score += 1
+        confluences.append("RSI")
+
+    # Need minimum 5 confluence points to enter
+    min_score = 5
+    if score < min_score:
+        return False, {
+            "reason": f"score {score}/{min_score} — {', '.join(confluences) or 'none'}",
+            "score": score,
+            "confluences": confluences,
+        }, 0, 0
+
+    # 9. STOP-LOSS placement (behind the most recent swing low — structure-based)
+    swing_lows_list = daily_structure.get("swingLows", [])
+    if swing_lows_list:
+        stop_price = swing_lows_list[-1][1] * 0.995  # Tiny buffer below swing low
+    else:
+        stop_price = current_price * 0.94  # Fallback: 6% below
+
+    # 10. RISK-REWARD calculation
+    risk_per_share = current_price - stop_price
+    if risk_per_share <= 0:
+        return False, {"reason": "stop above current price"}, 0, 0
+
+    reward_per_share = fair_value - current_price
+    if reward_per_share <= 0:
+        return False, {"reason": "already above fair value"}, 0, 0
+
+    rr_ratio = reward_per_share / risk_per_share
+    if rr_ratio < MIN_RR_RATIO:
+        return False, {
+            "reason": f"R:R {rr_ratio:.1f} < {MIN_RR_RATIO}",
+            "rrRatio": round(rr_ratio, 1),
+        }, 0, 0
+
+    # 11. POSITION SIZING — risk 1.5% of portfolio per trade
+    risk_amount = portfolio_value * RISK_PER_TRADE_PCT
+    shares = int(risk_amount / risk_per_share)
+    if shares <= 0:
+        return False, {"reason": "position too small"}, 0, 0
+
+    position_value = shares * current_price
+    if position_value < MIN_TRADE_VALUE:
+        return False, {"reason": f"value ${position_value:.0f} < min"}, 0, 0
+
+    # ── ENTRY CONFIRMED ──
+    analysis = {
+        "score": score,
+        "confluences": confluences,
+        "weeklyTrend": weekly_structure["trend"],
+        "dailyTrend": daily_structure["trend"],
+        "bos": has_bos,
+        "choch": has_choch,
+        "sweep": sweep,
+        "fvgCount": len(fvgs),
+        "fvg": fvgs[0] if fvgs else None,
+        "orderBlock": ob,
+        "rsi": round(float(rsi), 1),
+        "volRatio": round(float(vol_ratio), 2),
+        "rrRatio": round(rr_ratio, 1),
+        "riskPerShare": round(risk_per_share, 2),
+        "riskAmount": round(risk_amount, 2),
+    }
+
+    return True, analysis, round(stop_price, 2), shares
+
+
+# ═══════════════════════════════════════════════════════════
+#  EXIT LOGIC
+# ═══════════════════════════════════════════════════════════
+
+def get_structure_stop(pos, hist):
+    """
+    Calculate stop-loss based on market structure (swing lows).
+    As new higher lows form, the stop trails up.
+    """
+    if hist is None or len(hist) < 10:
+        # Fallback to initial stop
+        return pos.get("stopPrice", pos["entryPrice"] * 0.94)
+
+    lows = hist["Low"].values
+    highs = hist["High"].values
+    closes = hist["Close"].values
+    current_price = float(closes[-1])
+
+    structure = detect_market_structure(highs, lows, closes)
+    swing_lows = structure.get("swingLows", [])
+
+    if not swing_lows:
+        return pos.get("stopPrice", pos["entryPrice"] * 0.94)
+
+    # Use the most recent swing low as the trailing stop
+    latest_swing_low = swing_lows[-1][1]
+    stop_price = latest_swing_low * 0.995  # Buffer below
+
+    # Never move stop below the initial stop
+    initial_stop = pos.get("initialStop", pos["entryPrice"] * 0.94)
+    stop_price = max(stop_price, initial_stop)
+
+    return round(stop_price, 2)
 
 
 def check_exits(portfolio, now):
-    """Check open positions for exit conditions."""
+    """Check open positions for exit conditions using SMC structure."""
     exits = []
     remaining = []
 
     for pos in portfolio["openPositions"]:
         ticker = pos["ticker"]
         suffix = pos.get("suffix", ".AX")
-        hist, current_price = get_stock_data(ticker, suffix, period="5d")
+        hist, current_price = get_stock_data(ticker, suffix, period="3mo")
 
         if current_price is None:
             remaining.append(pos)
             continue
 
         entry_price = pos["entryPrice"]
+        risk_per_share = pos.get("riskPerShare", entry_price * 0.06)
         pnl_pct = (current_price - entry_price) / entry_price
-        fair_value = pos.get("fairValue", entry_price * 1.15)
+        r_multiple = (current_price - entry_price) / risk_per_share if risk_per_share > 0 else 0
 
-        # Track highest price for trailing stop
+        # Update structure-based trailing stop
+        new_stop = get_structure_stop(pos, hist)
+        # Only move stop UP, never down
+        pos["stopPrice"] = max(new_stop, pos.get("stopPrice", 0))
+
+        # Track highest price and R-multiple
         highest = max(current_price, pos.get("highestPrice", current_price))
         pos["highestPrice"] = round(highest, 2)
+        pos["rMultiple"] = round(r_multiple, 1)
 
-        # Calculate hold duration
+        # Hold duration
         entry_date = datetime.fromisoformat(pos["entryDate"])
         hold_days = (now - entry_date).days
 
         exit_reason = None
-        sell_ratio = 1.0  # Full position by default
+        sell_ratio = 1.0
 
-        # 1. Trailing stop check
-        stop_price, highest = get_trailing_stop(pos, current_price)
-        pos["highestPrice"] = round(highest, 2)
-        pos["stopPrice"] = round(stop_price, 2)
+        # 1. Structure-based stop-loss
+        if current_price <= pos["stopPrice"]:
+            exit_reason = "STOP LOSS" if pnl_pct <= 0 else "TRAILING STOP"
 
-        if current_price <= stop_price:
-            if pnl_pct > 0:
-                exit_reason = "TRAILING STOP"
-            else:
-                exit_reason = "STOP LOSS"
-
-        # 2. Partial profit: sell 50% at +15% (only if not already partialed)
-        elif pnl_pct >= PARTIAL_PROFIT_PCT and not pos.get("partialTaken"):
-            exit_reason = "PARTIAL PROFIT"
+        # 2. Partial profit at 3R
+        elif r_multiple >= PARTIAL_PROFIT_R and not pos.get("partialTaken"):
+            exit_reason = f"PARTIAL {PARTIAL_PROFIT_R:.0f}R"
             sell_ratio = PARTIAL_SELL_RATIO
 
-        # 3. Time-based exit (only for losing positions)
+        # 3. Fair value target hit
+        elif current_price >= pos.get("fairValue", entry_price * 1.5) * 0.97:
+            exit_reason = "TARGET HIT"
+
+        # 4. Bearish CHoCH on daily — structure reversal
+        elif hist is not None and len(hist) >= 10:
+            closes = hist["Close"].values
+            highs_arr = hist["High"].values
+            lows_arr = hist["Low"].values
+            struct = detect_market_structure(highs_arr, lows_arr, closes)
+            if struct.get("chochBearish") and pnl_pct > 0:
+                exit_reason = "CHoCH EXIT"
+
+        # 5. Time-based exit for losing positions
         elif hold_days >= MAX_HOLD_DAYS and pnl_pct <= 0:
             exit_reason = "TIME EXIT"
-
-        # 4. Fair value reached — take full profit
-        elif current_price >= fair_value * 0.95:
-            exit_reason = "TARGET HIT"
 
         if exit_reason:
             shares_to_sell = int(pos["shares"] * sell_ratio)
@@ -335,14 +705,16 @@ def check_exits(portfolio, now):
                 "returned": round(current_price * shares_to_sell, 2),
                 "pnl": round(pnl, 2),
                 "pnlPct": round(pnl_pct * 100, 2),
+                "rMultiple": round(r_multiple, 1),
                 "exitReason": exit_reason,
             }
             exits.append(trade_record)
             portfolio["cash"] += round(current_price * shares_to_sell, 2)
 
-            print(f"    EXIT  {ticker:8s} @ A${current_price:.2f}  P&L: A${pnl:+.2f} ({pnl_pct*100:+.1f}%)  [{exit_reason}]")
+            print(f"    EXIT  {ticker:8s} @ A${current_price:.2f}  "
+                  f"P&L: A${pnl:+.2f} ({pnl_pct*100:+.1f}%) {r_multiple:+.1f}R  [{exit_reason}]")
 
-            # If partial exit, keep remaining shares
+            # Keep remaining shares if partial
             if remaining_shares > 0:
                 pos["shares"] = remaining_shares
                 pos["invested"] = round(entry_price * remaining_shares, 2)
@@ -352,7 +724,7 @@ def check_exits(portfolio, now):
                 pos["pnlPct"] = round(pnl_pct * 100, 2)
                 remaining.append(pos)
         else:
-            # Update current price and tracking
+            # Update tracking
             pos["currentPrice"] = round(current_price, 2)
             pos["pnl"] = round((current_price - entry_price) * pos["shares"], 2)
             pos["pnlPct"] = round(pnl_pct * 100, 2)
@@ -363,12 +735,12 @@ def check_exits(portfolio, now):
 
 
 def check_entries(portfolio, candidates, now):
-    """Look for new entry opportunities with momentum confirmation."""
+    """Look for new SMC-confirmed entry opportunities."""
     entries = []
     open_tickers = {p["ticker"] for p in portfolio["openPositions"]}
     closed_tickers = {t["ticker"] for t in portfolio["tradeHistory"][-30:]}
 
-    # Count positions per sector
+    # Sector diversification
     sector_counts = {}
     for p in portfolio["openPositions"]:
         s = p.get("sector", "Unknown")
@@ -383,57 +755,40 @@ def check_entries(portfolio, candidates, now):
             break
 
         ticker = c["ticker"]
-
-        # Skip if already in portfolio or recently closed
         if ticker in open_tickers or ticker in closed_tickers:
             continue
-
-        # Only enter if mispricing is significant
         if c["mispricing"] >= MIN_MISPRICING:
             continue
 
-        # Sector diversification check
         sector = c.get("sector", "Unknown")
         if sector_counts.get(sector, 0) >= MAX_SECTOR_POSITIONS:
             continue
 
-        # Fetch historical data for momentum check
-        hist, current_price = get_stock_data(ticker, c["suffix"], period="1mo")
-        if hist is None or current_price is None or current_price <= 0:
+        # Run full SMC analysis
+        valid, analysis, stop_price, shares = analyze_smc_entry(
+            ticker, c["suffix"], c["fairValue"], portfolio["totalValue"]
+        )
+
+        if not valid:
+            reason = analysis.get("reason", "unknown")
+            if "weekly" not in reason and "no data" not in reason:
+                print(f"    SKIP  {ticker:8s}  mispricing {c['mispricing']:.0f}%  — {reason}")
             continue
 
-        # MOMENTUM FILTER — the key upgrade
-        passes, momentum = passes_momentum_filter(hist)
-        if not passes:
-            reason_parts = []
-            if not momentum["aboveEma"]:
-                reason_parts.append(f"below EMA5 ({momentum['ema5']})")
-            if not momentum["volOk"]:
-                reason_parts.append(f"low vol ({momentum['volRatio']}x)")
-            if not momentum["rsiOk"]:
-                reason_parts.append(f"RSI {momentum['rsi']}")
-            print(f"    SKIP  {ticker:8s}  mispricing {c['mispricing']:.0f}%  — {', '.join(reason_parts)}")
-            continue
-
-        # Position sizing: proportional to mispricing severity
-        conviction = min(abs(c["mispricing"]) / 100, 1.0)
-        position_pct = 0.08 + (conviction * 0.07)
-        position_value = portfolio["cash"] * min(position_pct, MAX_POSITION_PCT)
-
-        if position_value < MIN_TRADE_VALUE:
-            continue
-
-        shares = int(position_value / current_price)
-        if shares <= 0:
+        # Check we can afford it
+        _, current_price = get_stock_data(ticker, c["suffix"], period="5d")
+        if current_price is None:
             continue
 
         cost = round(current_price * shares, 2)
         if cost > portfolio["cash"]:
+            shares = int(portfolio["cash"] / current_price)
+            cost = round(current_price * shares, 2)
+        if shares <= 0 or cost < MIN_TRADE_VALUE:
             continue
 
-        # Calculate initial stop and target
-        stop_price = current_price * (1 + INITIAL_STOP_PCT)
-        target_price = c["fairValue"]  # Full fair value as ultimate target
+        risk_per_share = current_price - stop_price
+        target_price = c["fairValue"]
 
         position = {
             "ticker": ticker,
@@ -445,6 +800,7 @@ def check_entries(portfolio, candidates, now):
             "currentPrice": round(current_price, 2),
             "targetPrice": round(target_price, 2),
             "stopPrice": round(stop_price, 2),
+            "initialStop": round(stop_price, 2),
             "highestPrice": round(current_price, 2),
             "fairValue": c["fairValue"],
             "mispricing": c["mispricing"],
@@ -453,8 +809,16 @@ def check_entries(portfolio, candidates, now):
             "entryDate": now.isoformat(),
             "pnl": 0.0,
             "pnlPct": 0.0,
+            "rMultiple": 0.0,
+            "riskPerShare": round(risk_per_share, 2),
             "partialTaken": False,
-            "momentum": momentum,
+            "smc": {
+                "score": analysis["score"],
+                "confluences": analysis["confluences"],
+                "rrRatio": analysis["rrRatio"],
+                "weeklyTrend": analysis["weeklyTrend"],
+                "dailyTrend": analysis["dailyTrend"],
+            },
         }
 
         portfolio["openPositions"].append(position)
@@ -476,12 +840,13 @@ def check_entries(portfolio, candidates, now):
             "stopPrice": round(stop_price, 2),
             "mispricing": c["mispricing"],
             "entryDate": now.isoformat(),
-            "momentum": momentum,
+            "smc": analysis,
         }
         entries.append(entry_record)
 
+        conf_str = "+".join(analysis["confluences"])
         print(f"    ENTRY {ticker:8s} @ A${current_price:.2f} x {shares} = A${cost:.2f}  "
-              f"[RSI:{momentum['rsi']} Vol:{momentum['volRatio']}x EMA5:{momentum['ema5']}]")
+              f"[{conf_str}] R:R={analysis['rrRatio']:.1f} Score={analysis['score']}")
 
     return entries
 
@@ -498,7 +863,6 @@ def update_stats(portfolio):
         (portfolio["totalValue"] / STARTING_CAPITAL - 1) * 100, 2
     )
 
-    # Win/loss from completed trades (SELL side)
     completed = [t for t in portfolio["tradeHistory"] if t.get("side") == "SELL"]
     portfolio["totalTrades"] = len(completed)
     portfolio["wins"] = sum(1 for t in completed if t.get("pnl", 0) > 0)
@@ -507,7 +871,6 @@ def update_stats(portfolio):
         portfolio["wins"] / max(1, portfolio["totalTrades"]) * 100, 1
     )
 
-    # Best/worst trade
     if completed:
         best = max(completed, key=lambda t: t.get("pnlPct", 0))
         worst = min(completed, key=lambda t: t.get("pnlPct", 0))
@@ -521,7 +884,6 @@ def update_stats(portfolio):
 
     portfolio["lastUpdated"] = datetime.now(timezone.utc).isoformat()
 
-    # Equity curve
     curve = portfolio.get("equityCurve", [])
     curve.append({
         "date": datetime.now(timezone.utc).isoformat(),
@@ -532,18 +894,22 @@ def update_stats(portfolio):
     portfolio["equityCurve"] = curve
 
 
+# ═══════════════════════════════════════════════════════════
+#  MAIN
+# ═══════════════════════════════════════════════════════════
+
 def main():
-    parser = argparse.ArgumentParser(description="Nick Knows Best — ASX Trading Engine v2")
+    parser = argparse.ArgumentParser(description="Nick Knows Best — ASX Trading Engine v3 (SMC)")
     parser.add_argument("--reset", action="store_true", help="Reset portfolio to A$10,000")
     parser.add_argument("--live", action="store_true",
-                        help="Live trading session: scan for entries every 5 min for 30 min")
+                        help="Live trading session: 30 min, 1-min price tracking")
     parser.add_argument("--maintain", action="store_true",
-                        help="Maintain mode: update prices & check exits only, no new entries")
+                        help="Maintain mode: update prices & check exits only")
     parser.add_argument("--cycles", type=int, default=30,
-                        help="Number of 1-min cycles in live mode (default: 30 = 30 min)")
+                        help="Number of 1-min cycles in live mode (default: 30)")
     args = parser.parse_args()
 
-    # Default to maintain mode if neither flag is set
+    # Default to maintain mode
     if not args.live and not args.maintain and not args.reset:
         args.maintain = True
 
@@ -562,19 +928,19 @@ def main():
 
     if args.live:
         # ═══════════════════════════════════════════
-        #  LIVE TRADING SESSION — 30 min, 1 min price tracking
-        #  Entry scans every 5 min, price updates every 1 min
+        #  LIVE TRADING SESSION — SMC Analysis
         # ═══════════════════════════════════════════
         import time as _time
 
         total_cycles = args.cycles
-        cycle_interval = 60  # 1 minute between price checks
-        entry_scan_every = 5  # scan for new entries every 5th cycle
+        cycle_interval = 60
+        entry_scan_every = 5
 
         print("\n" + "=" * 60)
-        print("  🟢 LIVE TRADING SESSION")
+        print("  🟢 LIVE SESSION — Smart Money Concepts v3")
         print(f"  {total_cycles} cycles × 1 min = {total_cycles} min")
-        print(f"  Price tracking: every 1 min | Entry scan: every {entry_scan_every} min")
+        print(f"  Price tracking: 1 min | Entry scan: every {entry_scan_every} min")
+        print(f"  Strategy: Market Structure + Liquidity + FVG + R:R")
         print(f"  Started: {now.strftime('%Y-%m-%d %H:%M UTC')}")
         print("=" * 60)
 
@@ -584,7 +950,7 @@ def main():
             marker = "📡" if is_entry_cycle else "📈"
             print(f"\n  {marker} Cycle {cycle}/{total_cycles} ({cycle_time.strftime('%H:%M:%S UTC')})")
 
-            # Always check exits (fast — only open positions)
+            # Always check exits
             exits = check_exits(portfolio, cycle_time)
             for exit_trade in exits:
                 portfolio["tradeHistory"].append(exit_trade)
@@ -592,41 +958,39 @@ def main():
                 for e in exits:
                     print(f"    🔴 EXIT {e['ticker']} {e['exitReason']}")
 
-            # Scan for entries only on entry cycles
+            # SMC entry scan on entry cycles
             if is_entry_cycle:
-                print("    Scanning for entries...")
+                print("    Scanning for SMC-confirmed entries...")
                 candidates = load_candidates(data_dir)
                 entries = check_entries(portfolio, candidates, cycle_time)
                 for entry in entries:
                     portfolio["tradeHistory"].append(entry)
 
-            # Update all open position prices (fast — just price fetch)
+            # Update all open position prices
             for pos in portfolio["openPositions"]:
-                _, price = get_stock_data(pos["ticker"], pos.get("suffix", ".AX"), period="5d")
+                hist, price = get_stock_data(pos["ticker"], pos.get("suffix", ".AX"), period="3mo")
                 if price:
                     pos["currentPrice"] = round(price, 2)
                     pos["pnl"] = round((price - pos["entryPrice"]) * pos["shares"], 2)
                     pos["pnlPct"] = round((price / pos["entryPrice"] - 1) * 100, 2)
                     highest = max(price, pos.get("highestPrice", price))
                     pos["highestPrice"] = round(highest, 2)
-                    stop_price, _ = get_trailing_stop(pos, price)
-                    pos["stopPrice"] = round(stop_price, 2)
+                    new_stop = get_structure_stop(pos, hist)
+                    pos["stopPrice"] = max(new_stop, pos.get("stopPrice", 0))
 
-            # Save after every cycle so dashboard stays current
+            # Save after every cycle
             update_stats(portfolio)
             if len(portfolio["tradeHistory"]) > 100:
                 portfolio["tradeHistory"] = portfolio["tradeHistory"][-100:]
             with open(portfolio_path, "w") as f:
                 json.dump(portfolio, f, indent=2)
 
-            # Quick status line
             pos_summary = "  ".join(
                 f"{p['ticker']}:{p['pnlPct']:+.1f}%"
                 for p in portfolio["openPositions"]
             ) or "no positions"
             print(f"    A${portfolio['totalValue']:,.2f} ({portfolio['totalPnLPct']:+.1f}%) | {pos_summary}")
 
-            # Wait before next cycle (skip on last)
             if cycle < total_cycles:
                 _time.sleep(cycle_interval)
 
@@ -642,7 +1006,6 @@ def main():
         print(f"  Session: {now.strftime('%Y-%m-%d %H:%M UTC')}")
         print("=" * 60)
 
-        # Check exits only
         print("\n  Checking exits...")
         exits = check_exits(portfolio, now)
         for exit_trade in exits:
@@ -650,25 +1013,22 @@ def main():
         if not exits:
             print("    No exits triggered")
 
-        # Update open position prices
         print("\n  Updating open positions...")
         for pos in portfolio["openPositions"]:
-            _, price = get_stock_data(pos["ticker"], pos.get("suffix", ".AX"), period="5d")
+            hist, price = get_stock_data(pos["ticker"], pos.get("suffix", ".AX"), period="3mo")
             if price:
                 pos["currentPrice"] = round(price, 2)
                 pos["pnl"] = round((price - pos["entryPrice"]) * pos["shares"], 2)
                 pos["pnlPct"] = round((price / pos["entryPrice"] - 1) * 100, 2)
                 highest = max(price, pos.get("highestPrice", price))
                 pos["highestPrice"] = round(highest, 2)
-                stop_price, _ = get_trailing_stop(pos, price)
-                pos["stopPrice"] = round(stop_price, 2)
+                new_stop = get_structure_stop(pos, hist)
+                pos["stopPrice"] = max(new_stop, pos.get("stopPrice", 0))
 
-        # Update stats
         update_stats(portfolio)
         if len(portfolio["tradeHistory"]) > 100:
             portfolio["tradeHistory"] = portfolio["tradeHistory"][-100:]
 
-        # Save
         with open(portfolio_path, "w") as f:
             json.dump(portfolio, f, indent=2)
 
@@ -690,4 +1050,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

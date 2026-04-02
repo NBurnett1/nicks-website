@@ -102,7 +102,13 @@ export default function TradingDashboard() {
     if (reason.includes('PROFIT') || reason.includes('TARGET')) return 'trade-row__reason--take-profit'
     if (reason.includes('STOP')) return 'trade-row__reason--stop-loss'
     if (reason.includes('TRAIL')) return 'trade-row__reason--trailing'
+    if (reason.includes('CHoCH')) return 'trade-row__reason--choch'
     return 'trade-row__reason--time-exit'
+  }
+
+  const confluenceEmoji = (c) => {
+    const map = { STRUCTURE: '📐', BOS: '💥', CHoCH: '🔄', SWEEP: '🧹', FVG: '📊', OB: '🧱', VOL: '📈', RSI: '⚡' }
+    return map[c] || '✓'
   }
 
   if (loading) {
@@ -123,7 +129,7 @@ export default function TradingDashboard() {
           <div className="trading-dashboard__icon">📊</div>
           <div>
             <h2 className="trading-dashboard__title">Live Portfolio</h2>
-            <p className="trading-dashboard__subtitle">
+            <p className="trading-dashboard__subtitle" style={{ fontSize: '0.7rem', opacity: 0.6 }}>SMC v3 · 
               Paper trading · Updated {fmtDate(portfolio.lastUpdated)}
             </p>
           </div>
@@ -215,7 +221,8 @@ export default function TradingDashboard() {
           {openPositions.length === 0 ? (
             <div className="trading-empty">
               <div className="trading-empty__icon">🔍</div>
-              <p>Scanning for momentum-confirmed entries…</p>
+              <p>Scanning for SMC-confirmed entries…</p>
+              <p style={{ fontSize: '0.75rem', opacity: 0.5, marginTop: '4px' }}>Requires: weekly bullish + daily BOS/CHoCH + sweep + FVG + 3:1 R:R</p>
             </div>
           ) : (
             openPositions.map(pos => {
@@ -245,6 +252,15 @@ export default function TradingDashboard() {
                     </div>
                     <div className="position-row__stop">
                       Stop: A${pos.stopPrice?.toFixed(2) || '—'}
+                      {pos.smc?.confluences && (
+                        <span className="position-row__confluences">
+                          {pos.smc.confluences.map(c => (
+                            <span key={c} className="position-row__confluence-badge" title={c}>
+                              {confluenceEmoji(c)}
+                            </span>
+                          ))}
+                        </span>
+                      )}
                     </div>
                   </div>
 
@@ -254,6 +270,11 @@ export default function TradingDashboard() {
                     </div>
                     <div className={`position-row__pnl-pct ${pos.pnlPct >= 0 ? 'position-row__pnl-value--positive' : 'position-row__pnl-value--negative'}`}>
                       {pos.pnlPct >= 0 ? '+' : ''}{pos.pnlPct?.toFixed(1) ?? '0.0'}%
+                      {pos.rMultiple != null && (
+                        <span className="position-row__r-multiple">
+                          {pos.rMultiple >= 0 ? '+' : ''}{pos.rMultiple}R
+                        </span>
+                      )}
                     </div>
                     <div className="position-row__shares">{pos.shares} shares</div>
                   </div>
@@ -289,6 +310,9 @@ export default function TradingDashboard() {
                 )}
                 <span className={`trade-row__pnl ${trade.pnl > 0 ? 'trade-row__pnl--positive' : trade.pnl < 0 ? 'trade-row__pnl--negative' : 'trade-row__pnl--neutral'}`}>
                   {fmt(trade.pnl)} ({trade.pnlPct > 0 ? '+' : ''}{trade.pnlPct?.toFixed(1)}%)
+                  {trade.rMultiple != null && (
+                    <span className="trade-row__r-tag">{trade.rMultiple >= 0 ? '+' : ''}{trade.rMultiple}R</span>
+                  )}
                 </span>
               </div>
             ))
