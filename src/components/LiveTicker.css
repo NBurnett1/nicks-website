@@ -1,0 +1,142 @@
+/* ============================================
+   Live Ticker — Scrolling ASX Price Bar
+   ============================================ */
+
+.live-ticker {
+  display: flex;
+  align-items: center;
+  background: rgba(10, 14, 26, 0.9);
+  border-bottom: 1px solid var(--border-subtle);
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.live-ticker__label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  border-right: 1px solid var(--border-subtle);
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.live-ticker__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green-400);
+  animation: pulse-green 2s infinite;
+}
+
+.live-ticker__track {
+  flex: 1;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 5%,
+    black 95%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 5%,
+    black 95%,
+    transparent 100%
+  );
+}
+
+.live-ticker__scroll {
+  display: flex;
+  gap: 0;
+  animation: ticker-scroll 60s linear infinite;
+  width: max-content;
+}
+
+.live-ticker__scroll:hover {
+  animation-play-state: paused;
+}
+
+@keyframes ticker-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.live-ticker__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+  white-space: nowrap;
+  transition: background 0.15s ease;
+  flex-shrink: 0;
+  border-right: 1px solid var(--border-subtle);
+}
+
+.live-ticker__item:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.live-ticker__ticker {
+  font-size: 12px;
+  font-weight: 700;
+  font-family: var(--font-heading);
+  color: var(--text-primary);
+  letter-spacing: 0.03em;
+}
+
+.live-ticker__price {
+  font-size: 11px;
+  color: var(--text-secondary);
+  font-variant-numeric: tabular-nums;
+}
+
+.live-ticker__score {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  font-variant-numeric: tabular-nums;
+}
+
+.live-ticker__score--green {
+  background: rgba(16, 185, 129, 0.12);
+  color: var(--green-400);
+}
+
+.live-ticker__score--red {
+  background: rgba(239, 68, 68, 0.12);
+  color: var(--red-400);
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .live-ticker__label {
+    padding: 8px 12px;
+    font-size: 10px;
+  }
+
+  .live-ticker__item {
+    padding: 8px 12px;
+    gap: 6px;
+  }
+
+  .live-ticker__ticker {
+    font-size: 11px;
+  }
+}

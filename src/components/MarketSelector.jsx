@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import AlertsFeed from './AlertsFeed'
+import TradingDashboard from './TradingDashboard'
 import './MarketSelector.css'
 
 export default function MarketSelector({ onSelect }) {
@@ -180,6 +181,7 @@ export default function MarketSelector({ onSelect }) {
         </p>
 
         <AlertsFeed />
+        <TradingDashboard />
       </div>
     </div>
   )

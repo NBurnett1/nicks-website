@@ -1,9 +1,10 @@
-name: Daily Valuation Pipeline
+name: ASX Trading Pipeline
 
 on:
   schedule:
-    # Run 4x daily: 6am, 12pm, 6pm, midnight AEST (UTC+11)
-    - cron: '0 1,7,13,19 * * *'
+    # Run 2x daily: market open (10am AEST = 11pm UTC) and close (4pm AEST = 5am UTC)
+    - cron: '0 23 * * 1-5'  # Market open (Mon-Fri)
+    - cron: '0 5 * * 1-5'   # Market close (Mon-Fri)
   workflow_dispatch: # Manual trigger
 
 permissions:
@@ -12,7 +13,7 @@ permissions:
 jobs:
   update-data:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 60
 
     steps:
       - name: Checkout repository
@@ -28,27 +29,15 @@ jobs:
       - name: Install dependencies
         run: pip install -r scripts/requirements.txt
 
-      # --- Exchange Pipelines (run at midnight AEST only) ---
-      - name: Run exchange pipelines (midnight refresh only)
-        if: github.event.schedule == '0 13 * * *' || github.event_name == 'workflow_dispatch'
+      # --- ASX Valuation Pipeline ---
+      - name: Run ASX valuation pipeline
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: |
-          python scripts/run_pipeline.py --exchange ASX --skip-reports
-          python scripts/run_pipeline.py --exchange NYSE --skip-reports
-          python scripts/run_pipeline.py --exchange NASDAQ --skip-reports
+        run: python scripts/run_pipeline.py --exchange ASX --skip-reports
 
-      # --- Generate Screener Reports (midnight only) ---
-      - name: Generate screener reports
-        if: github.event.schedule == '0 13 * * *' || github.event_name == 'workflow_dispatch'
-        run: |
-          python scripts/generate_screener_reports.py --exchange ASX --top 50
-          python scripts/generate_screener_reports.py --exchange NYSE --top 50
-          python scripts/generate_screener_reports.py --exchange NASDAQ --top 50
-
-      # --- Market Intelligence Scanner (every run) ---
-      - name: Fetch market alerts
-        run: python scripts/fetch_alerts.py
+      # --- Trading Engine ---
+      - name: Run ASX trading engine
+        run: python scripts/simulate_trades.py
 
       # --- Commit and Push ---
       - name: Commit and push changes
@@ -56,8 +45,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add public/data/
-          git diff --staged --quiet || git commit -m "chore: market data refresh [$(date -u +%Y-%m-%d %H:%M)]
+          git diff --staged --quiet || git commit -m "chore: ASX data refresh [$(date -u +%Y-%m-%d' '%H:%M)]
 
-          - Market alerts updated (news, volume, insider activity)
-          - Exchange data and reports refreshed (if midnight run)"
+          - ASX valuations, alerts, and trading engine updated"
           git push

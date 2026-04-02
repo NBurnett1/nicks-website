@@ -311,8 +311,6 @@ def main():
 
     exchanges = {
         "ASX": ".AX",
-        "NYSE": "",
-        "NASDAQ": "",
     }
 
     all_alerts = []

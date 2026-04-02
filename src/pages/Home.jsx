@@ -1,156 +1,76 @@
 import { useState, useEffect } from 'react'
-import MarketSelector from '../components/MarketSelector'
-import MarketSection from '../components/MarketSection'
-import SearchBar from '../components/SearchBar'
+import LiveTicker from '../components/LiveTicker'
+import TradingDashboard from '../components/TradingDashboard'
 import Disclaimer from '../components/Disclaimer'
 import Footer from '../components/Footer'
 import './Home.css'
 
 export default function Home() {
-  const [selectedExchange, setSelectedExchange] = useState(null)
-  const [indexData, setIndexData] = useState(null)
   const [meta, setMeta] = useState(null)
-  const [searchQuery, setSearchQuery] = useState('')
-  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    if (!selectedExchange) return;
-    setLoading(true);
-    const exchangeKey = selectedExchange.toLowerCase();
-
-    // Load the lightweight index (no chart data, no heavy metrics)
-    Promise.all([
-      fetch(`/data/${exchangeKey}_index.json`)
-        .then(res => res.ok ? res.json() : null)
-        .catch(() => null),
-      fetch(`/data/${exchangeKey}_summary.json`)
-        .then(res => res.ok ? res.json() : null)
-        .catch(() => null),
-      fetch(`/data/${exchangeKey}_meta.json`)
-        .then(res => res.ok ? res.json() : null)
-        .catch(() => null),
-    ])
-      .then(([idx, legacy, metaData]) => {
-        // Prefer the new index format; fall back to legacy summary
-        setIndexData(idx || legacy)
-        setMeta(metaData)
-        setLoading(false)
-      })
-      .catch(() => {
-        setIndexData(null)
-        setLoading(false)
-      })
-  }, [selectedExchange])
+    fetch('/data/asx_meta.json')
+      .then(res => res.ok ? res.json() : null)
+      .then(setMeta)
+      .catch(() => {})
+  }, [])
 
   const formatDate = (dateStr) => {
     if (!dateStr) return ''
     const d = new Date(dateStr)
-    return d.toLocaleDateString('en-AU', { day: 'numeric', month: 'short', year: 'numeric' })
+    return d.toLocaleDateString('en-AU', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' })
   }
-
-  const filterStocks = (stocks) => {
-    if (!stocks) return []
-    if (!searchQuery) return stocks
-    const q = searchQuery.toLowerCase()
-    return stocks.filter(s =>
-      s.ticker.toLowerCase().includes(q) ||
-      s.name.toLowerCase().includes(q) ||
-      (s.sector && s.sector.toLowerCase().includes(q))
-    )
-  }
-
-  if (!selectedExchange) {
-    return <MarketSelector onSelect={setSelectedExchange} />
-  }
-
-  if (loading) {
-    return (
-      <div className="loading-screen">
-        <div className="loading-screen__spinner" />
-        <p className="loading-screen__text">Loading market data...</p>
-      </div>
-    )
-  }
-
-  if (!indexData) {
-    return (
-      <div className="loading-screen">
-        <p className="loading-screen__text">Unable to load market data. Please try again later.</p>
-      </div>
-    )
-  }
-
-  const totalStocks = (indexData.overvalued?.length || 0) + (indexData.undervalued?.length || 0)
 
   return (
     <div className="home" id="home-page">
+      {/* Background effects */}
       <div className="home__bg-orbs">
         <div className="home__bg-orb home__bg-orb--1" />
         <div className="home__bg-orb home__bg-orb--2" />
-        <div className="home__bg-orb home__bg-orb--3" />
       </div>
 
+      {/* Live Ticker Bar */}
+      <LiveTicker />
+
+      {/* Header */}
       <header className="home__header">
         <div className="container home__header-container">
           <div className="home__brand">
-            <img src="/logo.png" alt="N Valuations Logo" className="home__logo-img" />
-            <span className="home__brand-text">N Valuations</span>
+            <img src="/logo.png" alt="Nick Knows Best" className="home__logo-img" />
+            <span className="home__brand-text">Nick Knows Best</span>
           </div>
           {meta && (
             <div className="home__header-meta">
-              Updated {formatDate(meta.lastUpdated)} <span className="hide-mobile">• {meta.stocksAnalyzed || totalStocks} stocks analyzed</span>
+              Updated {formatDate(meta.lastUpdated)}
+              <span className="hide-mobile"> · {meta.stocksAnalyzed || 0} stocks tracked</span>
             </div>
           )}
         </div>
       </header>
 
-      {/* Hero Section */}
-      {selectedExchange && (
-        <div className="home__hero animate-fade-in-up">
-          <div className="container">
-            <h1 className="home__hero-title">
-              Institutional-Grade <br/>
-              <span className="home__hero-highlight">Equity Research.</span>
-            </h1>
-            <p className="home__hero-subtitle">
-              Discover the most profoundly mispriced stocks across global markets with AI-powered financial models.
-            </p>
+      {/* Hero */}
+      <section className="home__hero animate-fade-in-up">
+        <div className="container">
+          <div className="home__hero-badge">
+            <span className="home__hero-badge-dot" />
+            ASX Live Trading
           </div>
+          <h1 className="home__hero-title">
+            AI-Powered<br />
+            <span className="home__hero-highlight">ASX Trading.</span>
+          </h1>
+          <p className="home__hero-subtitle">
+            Valuation models + momentum confirmation = smarter entries.
+            Watch the portfolio perform in real-time.
+          </p>
         </div>
-      )}
+      </section>
 
-      {/* Search Filter */}
-      {selectedExchange && (
-        <div className="container" style={{ position: 'relative', zIndex: 10 }}>
-          <SearchBar onSearch={setSearchQuery} />
-          {searchQuery && (
-            <p className="home__search-count">
-              {filterStocks(indexData.undervalued).length + filterStocks(indexData.overvalued).length} results for "{searchQuery}"
-            </p>
-          )}
-        </div>
-      )}
-
-      {/* Market Gates */}
-      <div id="market-overview" className="container home__split-grid">
-        <MarketSection
-          title="Undervalued"
-          subtitle="Companies trading at a massive systemic discount"
-          stocks={filterStocks(indexData.undervalued)}
-          type="undervalued"
-          icon="📈"
-          exchange={selectedExchange}
-        />
-
-        <MarketSection
-          title="Overvalued"
-          subtitle="Companies trading at a severe systemic premium"
-          stocks={filterStocks(indexData.overvalued)}
-          type="overvalued"
-          icon="📉"
-          exchange={selectedExchange}
-        />
+      {/* Trading Dashboard — the main event */}
+      <div className="container">
+        <TradingDashboard />
       </div>
+
 
       <Disclaimer />
       <Footer />
