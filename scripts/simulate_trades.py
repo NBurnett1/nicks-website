@@ -533,9 +533,19 @@ def update_stats(portfolio):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="N Valuations ASX Trading Engine v2")
+    parser = argparse.ArgumentParser(description="Nick Knows Best — ASX Trading Engine v2")
     parser.add_argument("--reset", action="store_true", help="Reset portfolio to A$10,000")
+    parser.add_argument("--live", action="store_true",
+                        help="Live trading session: scan for entries every 5 min for 30 min")
+    parser.add_argument("--maintain", action="store_true",
+                        help="Maintain mode: update prices & check exits only, no new entries")
+    parser.add_argument("--cycles", type=int, default=30,
+                        help="Number of 1-min cycles in live mode (default: 30 = 30 min)")
     args = parser.parse_args()
+
+    # Default to maintain mode if neither flag is set
+    if not args.live and not args.maintain and not args.reset:
+        args.maintain = True
 
     project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     data_dir = os.path.join(project_root, "public", "data")
@@ -550,56 +560,119 @@ def main():
         portfolio = load_portfolio(portfolio_path)
         print(f"  Portfolio loaded: A${portfolio['totalValue']:,.2f} ({portfolio['totalPnLPct']:+.1f}%)")
 
-    print("\n" + "=" * 60)
-    print("  ASX TRADING ENGINE v2")
-    print(f"  Session: {now.strftime('%Y-%m-%d %H:%M UTC')}")
-    print(f"  Strategy: Valuation + Momentum Confirmation")
-    print("=" * 60)
+    if args.live:
+        # ═══════════════════════════════════════════
+        #  LIVE TRADING SESSION — 30 min, 1 min price tracking
+        #  Entry scans every 5 min, price updates every 1 min
+        # ═══════════════════════════════════════════
+        import time as _time
 
-    # 1. Check exits
-    print("\n  Checking exits...")
-    exits = check_exits(portfolio, now)
-    for exit_trade in exits:
-        portfolio["tradeHistory"].append(exit_trade)
-    if not exits:
-        print("    No exits triggered")
+        total_cycles = args.cycles
+        cycle_interval = 60  # 1 minute between price checks
+        entry_scan_every = 5  # scan for new entries every 5th cycle
 
-    # 2. Scan for entries
-    print("\n  Scanning for momentum-confirmed entries...")
-    candidates = load_candidates(data_dir)
-    print(f"    {len(candidates)} undervalued ASX candidates")
+        print("\n" + "=" * 60)
+        print("  🟢 LIVE TRADING SESSION")
+        print(f"  {total_cycles} cycles × 1 min = {total_cycles} min")
+        print(f"  Price tracking: every 1 min | Entry scan: every {entry_scan_every} min")
+        print(f"  Started: {now.strftime('%Y-%m-%d %H:%M UTC')}")
+        print("=" * 60)
 
-    entries = check_entries(portfolio, candidates, now)
-    for entry in entries:
-        portfolio["tradeHistory"].append(entry)
-    if not entries:
-        print("    No entries passed momentum filter")
+        for cycle in range(1, total_cycles + 1):
+            cycle_time = datetime.now(timezone.utc)
+            is_entry_cycle = (cycle == 1) or (cycle % entry_scan_every == 0)
+            marker = "📡" if is_entry_cycle else "📈"
+            print(f"\n  {marker} Cycle {cycle}/{total_cycles} ({cycle_time.strftime('%H:%M:%S UTC')})")
 
-    # 3. Update open position prices
-    print("\n  Updating open positions...")
-    for pos in portfolio["openPositions"]:
-        _, price = get_stock_data(pos["ticker"], pos.get("suffix", ".AX"), period="5d")
-        if price:
-            pos["currentPrice"] = round(price, 2)
-            pos["pnl"] = round((price - pos["entryPrice"]) * pos["shares"], 2)
-            pos["pnlPct"] = round((price / pos["entryPrice"] - 1) * 100, 2)
-            highest = max(price, pos.get("highestPrice", price))
-            pos["highestPrice"] = round(highest, 2)
-            stop_price, _ = get_trailing_stop(pos, price)
-            pos["stopPrice"] = round(stop_price, 2)
+            # Always check exits (fast — only open positions)
+            exits = check_exits(portfolio, cycle_time)
+            for exit_trade in exits:
+                portfolio["tradeHistory"].append(exit_trade)
+            if exits:
+                for e in exits:
+                    print(f"    🔴 EXIT {e['ticker']} {e['exitReason']}")
 
-    # 4. Update stats
-    update_stats(portfolio)
+            # Scan for entries only on entry cycles
+            if is_entry_cycle:
+                print("    Scanning for entries...")
+                candidates = load_candidates(data_dir)
+                entries = check_entries(portfolio, candidates, cycle_time)
+                for entry in entries:
+                    portfolio["tradeHistory"].append(entry)
 
-    # 5. Trim history
-    if len(portfolio["tradeHistory"]) > 100:
-        portfolio["tradeHistory"] = portfolio["tradeHistory"][-100:]
+            # Update all open position prices (fast — just price fetch)
+            for pos in portfolio["openPositions"]:
+                _, price = get_stock_data(pos["ticker"], pos.get("suffix", ".AX"), period="5d")
+                if price:
+                    pos["currentPrice"] = round(price, 2)
+                    pos["pnl"] = round((price - pos["entryPrice"]) * pos["shares"], 2)
+                    pos["pnlPct"] = round((price / pos["entryPrice"] - 1) * 100, 2)
+                    highest = max(price, pos.get("highestPrice", price))
+                    pos["highestPrice"] = round(highest, 2)
+                    stop_price, _ = get_trailing_stop(pos, price)
+                    pos["stopPrice"] = round(stop_price, 2)
 
-    # 6. Save
-    with open(portfolio_path, "w") as f:
-        json.dump(portfolio, f, indent=2)
+            # Save after every cycle so dashboard stays current
+            update_stats(portfolio)
+            if len(portfolio["tradeHistory"]) > 100:
+                portfolio["tradeHistory"] = portfolio["tradeHistory"][-100:]
+            with open(portfolio_path, "w") as f:
+                json.dump(portfolio, f, indent=2)
 
-    # Summary
+            # Quick status line
+            pos_summary = "  ".join(
+                f"{p['ticker']}:{p['pnlPct']:+.1f}%"
+                for p in portfolio["openPositions"]
+            ) or "no positions"
+            print(f"    A${portfolio['totalValue']:,.2f} ({portfolio['totalPnLPct']:+.1f}%) | {pos_summary}")
+
+            # Wait before next cycle (skip on last)
+            if cycle < total_cycles:
+                _time.sleep(cycle_interval)
+
+        print(f"\n{'=' * 60}")
+        print(f"  🏁 LIVE SESSION COMPLETE — {total_cycles} cycles")
+
+    else:
+        # ═══════════════════════════════════════════
+        #  MAINTAIN MODE — prices & exits only
+        # ═══════════════════════════════════════════
+        print("\n" + "=" * 60)
+        print("  🔄 MAINTAIN MODE — no new entries")
+        print(f"  Session: {now.strftime('%Y-%m-%d %H:%M UTC')}")
+        print("=" * 60)
+
+        # Check exits only
+        print("\n  Checking exits...")
+        exits = check_exits(portfolio, now)
+        for exit_trade in exits:
+            portfolio["tradeHistory"].append(exit_trade)
+        if not exits:
+            print("    No exits triggered")
+
+        # Update open position prices
+        print("\n  Updating open positions...")
+        for pos in portfolio["openPositions"]:
+            _, price = get_stock_data(pos["ticker"], pos.get("suffix", ".AX"), period="5d")
+            if price:
+                pos["currentPrice"] = round(price, 2)
+                pos["pnl"] = round((price - pos["entryPrice"]) * pos["shares"], 2)
+                pos["pnlPct"] = round((price / pos["entryPrice"] - 1) * 100, 2)
+                highest = max(price, pos.get("highestPrice", price))
+                pos["highestPrice"] = round(highest, 2)
+                stop_price, _ = get_trailing_stop(pos, price)
+                pos["stopPrice"] = round(stop_price, 2)
+
+        # Update stats
+        update_stats(portfolio)
+        if len(portfolio["tradeHistory"]) > 100:
+            portfolio["tradeHistory"] = portfolio["tradeHistory"][-100:]
+
+        # Save
+        with open(portfolio_path, "w") as f:
+            json.dump(portfolio, f, indent=2)
+
+    # Final summary
     print(f"\n{'=' * 60}")
     print(f"  PORTFOLIO SUMMARY")
     print(f"  Total Value:     A${portfolio['totalValue']:>10,.2f}")
@@ -617,3 +690,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

@@ -2,10 +2,20 @@ name: ASX Trading Pipeline
 
 on:
   schedule:
-    # Run 2x daily: market open (10am AEST = 11pm UTC) and close (4pm AEST = 5am UTC)
-    - cron: '0 23 * * 1-5'  # Market open (Mon-Fri)
-    - cron: '0 5 * * 1-5'   # Market close (Mon-Fri)
-  workflow_dispatch: # Manual trigger
+    # Live trading session: 10:30am AEST (23:30 UTC previous day) — 30 min live
+    - cron: '30 23 * * 0-4'  # Sun-Thu UTC = Mon-Fri AEST
+    # Maintain run: 4pm AEST (5:00 UTC) — update prices, check exits only
+    - cron: '0 5 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Trading mode'
+        required: true
+        default: 'maintain'
+        type: choice
+        options:
+          - live
+          - maintain
 
 permissions:
   contents: write
@@ -13,7 +23,7 @@ permissions:
 jobs:
   update-data:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 45
 
     steps:
       - name: Checkout repository
@@ -29,15 +39,27 @@ jobs:
       - name: Install dependencies
         run: pip install -r scripts/requirements.txt
 
-      # --- ASX Valuation Pipeline ---
+      # --- ASX Valuation Pipeline (runs before live session) ---
       - name: Run ASX valuation pipeline
+        if: github.event.schedule == '30 23 * * 0-4' || github.event.inputs.mode == 'live'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/run_pipeline.py --exchange ASX --skip-reports
 
       # --- Trading Engine ---
+      - name: Determine trading mode
+        id: mode
+        run: |
+          if [[ "${{ github.event.schedule }}" == "30 23 * * 0-4" ]] || [[ "${{ github.event.inputs.mode }}" == "live" ]]; then
+            echo "flag=--live" >> $GITHUB_OUTPUT
+            echo "Trading mode: LIVE (30 min session)"
+          else
+            echo "flag=--maintain" >> $GITHUB_OUTPUT
+            echo "Trading mode: MAINTAIN (prices & exits only)"
+          fi
+
       - name: Run ASX trading engine
-        run: python scripts/simulate_trades.py
+        run: python scripts/simulate_trades.py ${{ steps.mode.outputs.flag }}
 
       # --- Commit and Push ---
       - name: Commit and push changes
@@ -45,7 +67,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add public/data/
-          git diff --staged --quiet || git commit -m "chore: ASX data refresh [$(date -u +%Y-%m-%d' '%H:%M)]
+          git diff --staged --quiet || git commit -m "chore: ASX trading update [$(date -u +%Y-%m-%d' '%H:%M)]
 
-          - ASX valuations, alerts, and trading engine updated"
+          Mode: ${{ steps.mode.outputs.flag }}"
           git push
