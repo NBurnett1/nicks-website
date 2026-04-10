@@ -72,6 +72,35 @@ GRADE_ALLOCATION = {
     "F": 0.00,   #  0% — don't trade Grade F
 }
 
+# ETF candidates for SMC-only trading (bypass valuation filters)
+# These have cleaner trending structure suited to Smart Money analysis
+ETF_CANDIDATES = [
+    {
+        "ticker": "GOLD", "suffix": ".AX", "exchange": "ASX",
+        "name": "ETFS Physical Gold", "sector": "Gold",
+        "grade": "B", "testsPassed": 0,
+        "targetPct": 8.0,  # Target 8% move from entry
+    },
+    {
+        "ticker": "QAU", "suffix": ".AX", "exchange": "ASX",
+        "name": "BetaShares Gold Bullion", "sector": "Gold",
+        "grade": "B", "testsPassed": 0,
+        "targetPct": 8.0,
+    },
+    {
+        "ticker": "ETPMAG", "suffix": ".AX", "exchange": "ASX",
+        "name": "ETFS Physical Silver", "sector": "Silver",
+        "grade": "C", "testsPassed": 0,
+        "targetPct": 12.0,  # Silver more volatile
+    },
+    {
+        "ticker": "IVV", "suffix": ".AX", "exchange": "ASX",
+        "name": "iShares S&P 500", "sector": "Index",
+        "grade": "C", "testsPassed": 0,
+        "targetPct": 6.0,  # Broad market, lower target
+    },
+]
+
 
 # ═══════════════════════════════════════════════════════════
 #  SMART MONEY CONCEPTS — Technical Analysis Functions
@@ -463,6 +492,40 @@ def load_candidates(data_dir):
     # Sort by grade first (A > B > C > D), then by tests passed
     grade_order = {"A": 0, "B": 1, "C": 2, "D": 3, "F": 4}
     candidates.sort(key=lambda c: (grade_order.get(c["grade"], 4), -c["testsPassed"]))
+
+    # Add ETF candidates (SMC-only, no valuation tests needed)
+    for etf in ETF_CANDIDATES:
+        ticker = etf["ticker"]
+        # Skip if already in candidates list
+        if any(c["ticker"] == ticker for c in candidates):
+            continue
+        try:
+            t = yf.Ticker(f"{ticker}{etf['suffix']}")
+            h = t.history(period="5d")
+            if h is None or h.empty:
+                continue
+            price = float(h["Close"].iloc[-1])
+        except Exception:
+            continue
+
+        target_pct = etf.get("targetPct", 8.0)
+        fair_value = round(price * (1 + target_pct / 100), 2)
+
+        candidates.insert(0, {  # Prepend — ETFs scanned first
+            "ticker": ticker,
+            "exchange": etf["exchange"],
+            "suffix": etf["suffix"],
+            "name": etf["name"],
+            "sector": etf["sector"],
+            "mispricing": -target_pct,  # Synthetic mispricing
+            "fairValue": fair_value,
+            "price": price,
+            "grade": etf["grade"],
+            "testsPassed": 0,
+            "valuationTests": {},
+            "isETF": True,
+        })
+
     return candidates
 
 
@@ -816,7 +879,8 @@ def check_entries(portfolio, candidates, now):
         ticker = c["ticker"]
         if ticker in open_tickers or ticker in closed_tickers:
             continue
-        if c["mispricing"] >= MIN_MISPRICING:
+        # ETFs bypass mispricing filter — they're SMC-only plays
+        if not c.get("isETF") and c["mispricing"] >= MIN_MISPRICING:
             continue
 
         sector = c.get("sector", "Unknown")
