@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import LiveTicker from '../components/LiveTicker'
 import TradingDashboard from '../components/TradingDashboard'
+import UndervaluedScreener from '../components/UndervaluedScreener'
 import Disclaimer from '../components/Disclaimer'
 import Footer from '../components/Footer'
 import './Home.css'
@@ -69,6 +70,11 @@ export default function Home() {
       {/* Trading Dashboard — the main event */}
       <div className="container">
         <TradingDashboard />
+      </div>
+
+      {/* Undervalued Screener — multi-test analysis */}
+      <div className="container">
+        <UndervaluedScreener exchange="ASX" />
       </div>
 
 

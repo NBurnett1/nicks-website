@@ -23,7 +23,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from config import format_market_cap
 from fetch_data import fetch_stock_data
-from score_stocks import score_stocks, get_top_stocks, stock_to_summary_dict
+from score_stocks import score_stocks, get_top_stocks, stock_to_summary_dict, run_valuation_tests, conviction_grade
 from discover_tickers import get_all_tickers
 
 
@@ -68,6 +68,23 @@ def run_pipeline(exchange="ASX", skip_reports=False, top_n=None, limit=None, tic
     df = score_stocks(df)
     df["marketCapFormatted"] = df["marketCap"].apply(format_market_cap)
 
+    # Run the 6 valuation tests on every stock
+    print("\n🧪 Step 3b: Running valuation tests...\n")
+    test_results = []
+    for _, row in df.iterrows():
+        tests = run_valuation_tests(row)
+        passed_count = sum(1 for t in tests.values() if t["passed"] is True)
+        grade = conviction_grade(passed_count)
+        test_results.append({
+            "tests": tests,
+            "testsPassed": passed_count,
+            "grade": grade,
+        })
+    df["valuationTests"] = [tr["tests"] for tr in test_results]
+    df["testsPassed"] = [tr["testsPassed"] for tr in test_results]
+    df["grade"] = [tr["grade"] for tr in test_results]
+    print(f"  Tests complete. Grade distribution: A={sum(1 for g in df['grade'] if g=='A')}, B={sum(1 for g in df['grade'] if g=='B')}, C={sum(1 for g in df['grade'] if g=='C')}, D={sum(1 for g in df['grade'] if g=='D')}, F={sum(1 for g in df['grade'] if g=='F')}")
+
     # If top_n is set, limit results; otherwise return all scored stocks
     effective_top_n = top_n if top_n else len(df)
     overvalued, undervalued = get_top_stocks(df, top_n=effective_top_n)
@@ -87,9 +104,23 @@ def run_pipeline(exchange="ASX", skip_reports=False, top_n=None, limit=None, tic
             "marketCap": row.get("marketCapFormatted", "—"),
             "sector": row.get("sector", "Unknown"),
             "domain": row.get("domain", ""),
+            "testsPassed": int(row.get("testsPassed", 0)),
+            "grade": row.get("grade", "F"),
         }
 
     def make_detail_file(row):
+        # Serialize test results (convert Python bools/None for JSON)
+        raw_tests = row.get("valuationTests", {})
+        serialized_tests = {}
+        for key, test in raw_tests.items():
+            serialized_tests[key] = {
+                "name": test["name"],
+                "passed": test["passed"],
+                "value": test["value"],
+                "threshold": test["threshold"],
+                "label": test["label"],
+            }
+
         return {
             "ticker": row["ticker"],
             "name": row["name"],
@@ -99,6 +130,9 @@ def run_pipeline(exchange="ASX", skip_reports=False, top_n=None, limit=None, tic
             "sector": row.get("sector", "Unknown"),
             "domain": row.get("domain", ""),
             "chartData": row.get("chartData", []),
+            "testsPassed": int(row.get("testsPassed", 0)),
+            "grade": row.get("grade", "F"),
+            "valuationTests": serialized_tests,
             "metrics": {
                 "pe": _safe_float(row.get("pe")),
                 "sectorPe": _safe_float(row.get("sectorPe")),

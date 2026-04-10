@@ -14,6 +14,9 @@ import sys
 import argparse
 from datetime import datetime, timezone, timedelta
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from score_stocks import run_valuation_tests, conviction_grade
+
 
 def load_index(data_dir, exchange):
     """Load the index file for an exchange."""
@@ -328,6 +331,16 @@ def generate_report_for_stock(stock_index, detail, exchange):
         f"- Position Type: {pos_type}"
     )
 
+    # Run valuation tests
+    test_row = {
+        "pe": pe, "sectorPe": sector_pe, "pb": pb, "evEbitda": ev_ebitda,
+        "fcfYield": fcf_yield, "forwardPe": forward_pe,
+        "profitMargin": profit_margin, "roe": roe,
+    }
+    valuation_tests = run_valuation_tests(test_row)
+    tests_passed = sum(1 for t in valuation_tests.values() if t["passed"] is True)
+    grade = conviction_grade(tests_passed)
+
     # Build the report JSON
     report = {
         "ticker": ticker,
@@ -336,6 +349,9 @@ def generate_report_for_stock(stock_index, detail, exchange):
         "sector": sector,
         "marketCap": mcap,
         "valuationScore": float(score),
+        "testsPassed": tests_passed,
+        "grade": grade,
+        "valuationTests": valuation_tests,
         "generatedAt": datetime.now(timezone(timedelta(hours=11))).isoformat(),
         "report": {
             "executiveSummary": executive_summary,

@@ -94,16 +94,21 @@ def find_swing_lows(lows, lookback=SWING_LOOKBACK):
     return swings
 
 
-def detect_market_structure(highs, lows, closes):
+def detect_market_structure(highs, lows, closes, lookback=SWING_LOOKBACK):
     """
     Detect market structure: HH/HL (bullish) or LH/LL (bearish).
     Returns: structure dict with trend, swing points, BOS, CHoCH signals.
     """
-    swing_highs = find_swing_highs(highs)
-    swing_lows = find_swing_lows(lows)
+    swing_highs = find_swing_highs(highs, lookback)
+    swing_lows = find_swing_lows(lows, lookback)
 
     if len(swing_highs) < 2 or len(swing_lows) < 2:
-        return {"trend": "neutral", "swingHighs": [], "swingLows": [], "bos": False, "choch": False}
+        return {
+            "trend": "neutral", "swingHighs": [], "swingLows": [],
+            "lastSwingHigh": 0, "lastSwingLow": 0,
+            "hh": False, "hl": False, "lh": False, "ll": False,
+            "bos": False, "bosBearish": False, "choch": False, "chochBearish": False,
+        }
 
     # Classify swing point sequences
     sh = swing_highs[-2:]
@@ -449,8 +454,13 @@ def analyze_smc_entry(ticker, suffix, fair_value, portfolio_value):
         w_highs = weekly["High"].values
         w_lows = weekly["Low"].values
         w_closes = weekly["Close"].values
-        weekly_structure = detect_market_structure(w_highs, w_lows, w_closes)
-        weekly_bullish = weekly_structure["trend"] in ("bullish", "bullish_weak", "bullish_building")
+        weekly_structure = detect_market_structure(w_highs, w_lows, w_closes, lookback=3)
+        weekly_bullish = weekly_structure["trend"] in (
+            "bullish", "bullish_weak", "bullish_building"
+        )
+        # Also accept neutral with HL pattern (market recovering)
+        if not weekly_bullish and weekly_structure.get("hl"):
+            weekly_bullish = True
 
     if not weekly_bullish:
         return False, {
