@@ -1,7 +1,7 @@
 {
   "ticker": "ANN",
   "name": "ANSELL FPO [ANN]",
-  "price": 29.91,
+  "price": 29.59,
   "valuationScore": -0.7,
   "marketCap": "4.3B",
   "sector": "Healthcare",
@@ -217,17 +217,63 @@
     },
     {
       "date": "2026-04-12",
-      "price": 29.91
+      "price": 29.59
     }
   ],
+  "testsPassed": 2,
+  "grade": "D",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": false,
+      "value": 22.59,
+      "threshold": 19.43,
+      "label": "22.6x vs 19.4x sector"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": true,
+      "value": 1.48,
+      "threshold": 1.5,
+      "label": "1.48x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": false,
+      "value": 13.81,
+      "threshold": 10.0,
+      "label": "13.8x vs 10x"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": false,
+      "value": 2.68,
+      "threshold": 5.0,
+      "label": "2.7% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": true,
+      "value": 13.09,
+      "threshold": 22.59,
+      "label": "Fwd 13.1x vs Trail 22.6x"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": false,
+      "value": 6.74,
+      "threshold": 5.0,
+      "label": "Margin 6.7% / ROE 7.0%"
+    }
+  },
   "metrics": {
-    "pe": 22.16,
-    "sectorPe": 22.61,
-    "pb": 1.5,
-    "evEbitda": 13.94,
-    "fcfYield": 2.65,
-    "forwardPe": 13.24,
-    "dividendYield": 2.69,
+    "pe": 22.59,
+    "sectorPe": 22.85,
+    "pb": 1.48,
+    "evEbitda": 13.81,
+    "fcfYield": 2.68,
+    "forwardPe": 13.09,
+    "dividendYield": 2.72,
     "revenueGrowth": 0.7,
     "profitMargin": 6.74,
     "operatingMargin": 14.31,

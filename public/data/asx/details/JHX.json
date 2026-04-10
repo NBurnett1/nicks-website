@@ -1,9 +1,9 @@
 {
   "ticker": "JHX",
   "name": "J HARDIE CDI 1:1 [JHX]",
-  "price": 29.14,
-  "valuationScore": 4.8,
-  "marketCap": "16.9B",
+  "price": 28.91,
+  "valuationScore": 4.9,
+  "marketCap": "16.8B",
   "sector": "Basic Materials",
   "domain": "jameshardie.com",
   "chartData": [
@@ -217,16 +217,62 @@
     },
     {
       "date": "2026-04-12",
-      "price": 29.14
+      "price": 28.91
     }
   ],
+  "testsPassed": 1,
+  "grade": "D",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": false,
+      "value": 85.03,
+      "threshold": 41.77,
+      "label": "85.0x vs 41.8x sector"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": false,
+      "value": 1.81,
+      "threshold": 1.5,
+      "label": "1.81x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": false,
+      "value": 19.3,
+      "threshold": 10.0,
+      "label": "19.3x vs 10x"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": false,
+      "value": 1.79,
+      "threshold": 5.0,
+      "label": "1.8% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": true,
+      "value": 15.81,
+      "threshold": 85.03,
+      "label": "Fwd 15.8x vs Trail 85.0x"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": false,
+      "value": 2.71,
+      "threshold": 5.0,
+      "label": "Margin 2.7% / ROE 2.8%"
+    }
+  },
   "metrics": {
-    "pe": 83.26,
-    "sectorPe": 48.39,
-    "pb": 1.83,
-    "evEbitda": 19.42,
-    "fcfYield": 1.78,
-    "forwardPe": 15.94,
+    "pe": 85.03,
+    "sectorPe": 49.14,
+    "pb": 1.81,
+    "evEbitda": 19.3,
+    "fcfYield": 1.79,
+    "forwardPe": 15.81,
     "dividendYield": null,
     "revenueGrowth": 30.1,
     "profitMargin": 2.71,

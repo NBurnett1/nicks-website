@@ -1,9 +1,9 @@
 {
   "ticker": "NST",
   "name": "NTH STAR FPO [NST]",
-  "price": 23.93,
-  "valuationScore": 0.4,
-  "marketCap": "34.2B",
+  "price": 24.47,
+  "valuationScore": 0.6,
+  "marketCap": "35.0B",
   "sector": "Materials",
   "domain": "nsrltd.com",
   "chartData": [
@@ -217,17 +217,63 @@
     },
     {
       "date": "2026-04-12",
-      "price": 23.93
+      "price": 24.47
     }
   ],
+  "testsPassed": 3,
+  "grade": "C",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": false,
+      "value": 20.91,
+      "threshold": 17.78,
+      "label": "20.9x vs 17.8x sector"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": false,
+      "value": 2.3,
+      "threshold": 1.5,
+      "label": "2.30x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": true,
+      "value": 9.57,
+      "threshold": 10.0,
+      "label": "9.6x vs 10x"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": false,
+      "value": 0.82,
+      "threshold": 5.0,
+      "label": "0.8% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": true,
+      "value": 11.15,
+      "threshold": 20.91,
+      "label": "Fwd 11.1x vs Trail 20.9x"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": true,
+      "value": 22.24,
+      "threshold": 5.0,
+      "label": "Margin 22.2% / ROE 12.8%"
+    }
+  },
   "metrics": {
-    "pe": 20.45,
-    "sectorPe": 20.45,
-    "pb": 2.25,
-    "evEbitda": 9.37,
-    "fcfYield": 0.84,
-    "forwardPe": 10.9,
-    "dividendYield": 2.09,
+    "pe": 20.91,
+    "sectorPe": 20.91,
+    "pb": 2.3,
+    "evEbitda": 9.57,
+    "fcfYield": 0.82,
+    "forwardPe": 11.15,
+    "dividendYield": 2.04,
     "revenueGrowth": 19.0,
     "profitMargin": 22.24,
     "operatingMargin": 30.47,

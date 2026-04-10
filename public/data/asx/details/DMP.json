@@ -1,8 +1,8 @@
 {
   "ticker": "DMP",
   "name": "DOMINOS FPO [DMP]",
-  "price": 18.0,
-  "valuationScore": 3.8,
+  "price": 17.9,
+  "valuationScore": 4.4,
   "marketCap": "1.7B",
   "sector": "Consumer Cyclical",
   "domain": "dominos.com.au",
@@ -217,17 +217,63 @@
     },
     {
       "date": "2026-04-12",
-      "price": 18.0
+      "price": 17.9
     }
   ],
+  "testsPassed": 2,
+  "grade": "D",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": false,
+      "value": 27.97,
+      "threshold": 21.34,
+      "label": "28.0x vs 21.3x sector"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": false,
+      "value": 2.48,
+      "threshold": 1.5,
+      "label": "2.48x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": false,
+      "value": 14.02,
+      "threshold": 10.0,
+      "label": "14.0x vs 10x"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": true,
+      "value": 7.22,
+      "threshold": 5.0,
+      "label": "7.2% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": true,
+      "value": 12.74,
+      "threshold": 27.97,
+      "label": "Fwd 12.7x vs Trail 28.0x"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": false,
+      "value": 2.65,
+      "threshold": 5.0,
+      "label": "Margin 2.6% / ROE 9.1%"
+    }
+  },
   "metrics": {
-    "pe": 28.12,
-    "sectorPe": 25.3,
-    "pb": 2.5,
-    "evEbitda": 14.06,
-    "fcfYield": 7.18,
-    "forwardPe": 12.81,
-    "dividendYield": 2.58,
+    "pe": 27.97,
+    "sectorPe": 25.11,
+    "pb": 2.48,
+    "evEbitda": 14.02,
+    "fcfYield": 7.22,
+    "forwardPe": 12.74,
+    "dividendYield": 2.6,
     "revenueGrowth": -5.5,
     "profitMargin": 2.65,
     "operatingMargin": 8.27,

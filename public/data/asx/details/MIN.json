@@ -1,8 +1,8 @@
 {
   "ticker": "MIN",
   "name": "MINERALRES FPO [MIN]",
-  "price": 58.2,
-  "valuationScore": 12.5,
+  "price": 58.22,
+  "valuationScore": 12.4,
   "marketCap": "11.5B",
   "sector": "Materials",
   "domain": "mineralresources.com.au",
@@ -217,16 +217,62 @@
     },
     {
       "date": "2026-04-12",
-      "price": 58.2
+      "price": 58.22
     }
   ],
+  "testsPassed": 3,
+  "grade": "C",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": false,
+      "value": 28.97,
+      "threshold": 17.78,
+      "label": "29.0x vs 17.8x sector"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": false,
+      "value": 3.07,
+      "threshold": 1.5,
+      "label": "3.07x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": true,
+      "value": 8.56,
+      "threshold": 10.0,
+      "label": "8.6x vs 10x"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": false,
+      "value": -3.07,
+      "threshold": 5.0,
+      "label": "-3.1% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": true,
+      "value": 18.14,
+      "threshold": 28.97,
+      "label": "Fwd 18.1x vs Trail 29.0x"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": true,
+      "value": 7.64,
+      "threshold": 5.0,
+      "label": "Margin 7.6% / ROE 12.1%"
+    }
+  },
   "metrics": {
-    "pe": 28.81,
-    "sectorPe": 20.45,
-    "pb": 3.06,
-    "evEbitda": 8.55,
+    "pe": 28.97,
+    "sectorPe": 20.91,
+    "pb": 3.07,
+    "evEbitda": 8.56,
     "fcfYield": -3.07,
-    "forwardPe": 18.17,
+    "forwardPe": 18.14,
     "dividendYield": null,
     "revenueGrowth": 33.3,
     "profitMargin": 7.64,

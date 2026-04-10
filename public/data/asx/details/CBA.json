@@ -1,9 +1,9 @@
 {
   "ticker": "CBA",
   "name": "CWLTH BANK FPO [CBA]",
-  "price": 180.21,
-  "valuationScore": 4.8,
-  "marketCap": "301.3B",
+  "price": 182.53,
+  "valuationScore": 4.7,
+  "marketCap": "305.2B",
   "sector": "Financials",
   "domain": "commbank.com.au",
   "chartData": [
@@ -217,17 +217,63 @@
     },
     {
       "date": "2026-04-12",
-      "price": 180.21
+      "price": 182.53
     }
   ],
+  "testsPassed": 2,
+  "grade": "D",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": false,
+      "value": 29.39,
+      "threshold": 17.81,
+      "label": "29.4x vs 17.8x sector"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": false,
+      "value": 3.95,
+      "threshold": 1.5,
+      "label": "3.95x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": null,
+      "value": null,
+      "threshold": 10.0,
+      "label": "No EV/EBITDA data"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": null,
+      "value": null,
+      "threshold": 5.0,
+      "label": "No FCF data"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": true,
+      "value": 26.76,
+      "threshold": 29.39,
+      "label": "Fwd 26.8x vs Trail 29.4x"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": true,
+      "value": 36.35,
+      "threshold": 5.0,
+      "label": "Margin 36.4% / ROE 13.6%"
+    }
+  },
   "metrics": {
-    "pe": 28.97,
-    "sectorPe": 20.56,
-    "pb": 3.9,
+    "pe": 29.39,
+    "sectorPe": 20.96,
+    "pb": 3.95,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 26.42,
-    "dividendYield": 2.75,
+    "forwardPe": 26.76,
+    "dividendYield": 2.71,
     "revenueGrowth": 6.6,
     "profitMargin": 36.35,
     "operatingMargin": 55.51,

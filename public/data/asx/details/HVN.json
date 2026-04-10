@@ -1,9 +1,9 @@
 {
   "ticker": "HVN",
   "name": "HARVEY FPO [HVN]",
-  "price": 4.91,
-  "valuationScore": -9.2,
-  "marketCap": "6.1B",
+  "price": 4.81,
+  "valuationScore": -9.1,
+  "marketCap": "6.0B",
   "sector": "Consumer Discretionary",
   "domain": "harveynormanholdings.com.au",
   "chartData": [
@@ -217,17 +217,63 @@
     },
     {
       "date": "2026-04-12",
-      "price": 4.91
+      "price": 4.81
     }
   ],
+  "testsPassed": 5,
+  "grade": "A",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": true,
+      "value": 10.69,
+      "threshold": 15.48,
+      "label": "10.7x vs 15.5x sector"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": true,
+      "value": 1.22,
+      "threshold": 1.5,
+      "label": "1.22x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": true,
+      "value": 9.2,
+      "threshold": 10.0,
+      "label": "9.2x vs 10x"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": true,
+      "value": 12.61,
+      "threshold": 5.0,
+      "label": "12.6% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": false,
+      "value": 11.96,
+      "threshold": 10.69,
+      "label": "Fwd 12.0x vs Trail 10.7x"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": true,
+      "value": 18.12,
+      "threshold": 5.0,
+      "label": "Margin 18.1% / ROE 11.8%"
+    }
+  },
   "metrics": {
-    "pe": 10.91,
-    "sectorPe": 18.64,
-    "pb": 1.25,
-    "evEbitda": 9.34,
-    "fcfYield": 12.35,
-    "forwardPe": 12.21,
-    "dividendYield": 5.91,
+    "pe": 10.69,
+    "sectorPe": 18.22,
+    "pb": 1.22,
+    "evEbitda": 9.2,
+    "fcfYield": 12.61,
+    "forwardPe": 11.96,
+    "dividendYield": 6.03,
     "revenueGrowth": 11.6,
     "profitMargin": 18.12,
     "operatingMargin": 26.54,

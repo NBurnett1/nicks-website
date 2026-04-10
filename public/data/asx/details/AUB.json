@@ -1,8 +1,8 @@
 {
   "ticker": "AUB",
   "name": "AUB GROUP FPO [AUB]",
-  "price": 24.33,
-  "valuationScore": 1.2,
+  "price": 24.2,
+  "valuationScore": 1.0,
   "marketCap": "3.2B",
   "sector": "Financial Services",
   "domain": "aubgroup.com.au",
@@ -217,17 +217,63 @@
     },
     {
       "date": "2026-04-12",
-      "price": 24.33
+      "price": 24.2
     }
   ],
+  "testsPassed": 3,
+  "grade": "C",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": true,
+      "value": 15.03,
+      "threshold": 15.45,
+      "label": "15.0x vs 15.4x sector"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": false,
+      "value": 2.04,
+      "threshold": 1.5,
+      "label": "2.04x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": false,
+      "value": 11.28,
+      "threshold": 10.0,
+      "label": "11.3x vs 10x"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": false,
+      "value": 3.07,
+      "threshold": 5.0,
+      "label": "3.1% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": true,
+      "value": 12.09,
+      "threshold": 15.03,
+      "label": "Fwd 12.1x vs Trail 15.0x"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": true,
+      "value": 15.65,
+      "threshold": 5.0,
+      "label": "Margin 15.7% / ROE 12.4%"
+    }
+  },
   "metrics": {
-    "pe": 15.11,
-    "sectorPe": 18.0,
-    "pb": 2.05,
-    "evEbitda": 11.32,
-    "fcfYield": 3.05,
-    "forwardPe": 12.15,
-    "dividendYield": 3.82,
+    "pe": 15.03,
+    "sectorPe": 18.18,
+    "pb": 2.04,
+    "evEbitda": 11.28,
+    "fcfYield": 3.07,
+    "forwardPe": 12.09,
+    "dividendYield": 3.84,
     "revenueGrowth": 6.3,
     "profitMargin": 15.65,
     "operatingMargin": 23.67,

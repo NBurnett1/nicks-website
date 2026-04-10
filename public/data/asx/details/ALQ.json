@@ -1,9 +1,9 @@
 {
   "ticker": "ALQ",
   "name": "ALS FPO [ALQ]",
-  "price": 22.93,
-  "valuationScore": 10.3,
-  "marketCap": "11.6B",
+  "price": 22.49,
+  "valuationScore": 9.9,
+  "marketCap": "11.4B",
   "sector": "Industrials",
   "domain": "alsglobal.com",
   "chartData": [
@@ -217,17 +217,63 @@
     },
     {
       "date": "2026-04-12",
-      "price": 22.93
+      "price": 22.49
     }
   ],
+  "testsPassed": 2,
+  "grade": "D",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": false,
+      "value": 40.89,
+      "threshold": 28.2,
+      "label": "40.9x vs 28.2x sector"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": false,
+      "value": 6.68,
+      "threshold": 1.5,
+      "label": "6.68x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": false,
+      "value": 19.42,
+      "threshold": 10.0,
+      "label": "19.4x vs 10x"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": false,
+      "value": 1.72,
+      "threshold": 5.0,
+      "label": "1.7% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": true,
+      "value": 25.36,
+      "threshold": 40.89,
+      "label": "Fwd 25.4x vs Trail 40.9x"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": true,
+      "value": 8.49,
+      "threshold": 5.0,
+      "label": "Margin 8.5% / ROE 19.4%"
+    }
+  },
   "metrics": {
-    "pe": 41.69,
-    "sectorPe": 33.23,
-    "pb": 6.81,
-    "evEbitda": 19.75,
-    "fcfYield": 1.69,
-    "forwardPe": 25.86,
-    "dividendYield": 1.69,
+    "pe": 40.89,
+    "sectorPe": 33.18,
+    "pb": 6.68,
+    "evEbitda": 19.42,
+    "fcfYield": 1.72,
+    "forwardPe": 25.36,
+    "dividendYield": 1.73,
     "revenueGrowth": 13.3,
     "profitMargin": 8.49,
     "operatingMargin": 16.28,

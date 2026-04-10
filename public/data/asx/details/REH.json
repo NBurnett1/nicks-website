@@ -1,8 +1,8 @@
 {
   "ticker": "REH",
   "name": "REECE FPO [REH]",
-  "price": 14.62,
-  "valuationScore": 2.6,
+  "price": 14.6,
+  "valuationScore": 2.7,
   "marketCap": "9.0B",
   "sector": "Industrials",
   "domain": "reece.com.au",
@@ -217,16 +217,62 @@
     },
     {
       "date": "2026-04-12",
-      "price": 14.62
+      "price": 14.6
     }
   ],
+  "testsPassed": 1,
+  "grade": "D",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": false,
+      "value": 33.18,
+      "threshold": 28.2,
+      "label": "33.2x vs 28.2x sector"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": false,
+      "value": 2.45,
+      "threshold": 1.5,
+      "label": "2.45x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": false,
+      "value": 18.69,
+      "threshold": 10.0,
+      "label": "18.7x vs 10x"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": false,
+      "value": 3.85,
+      "threshold": 5.0,
+      "label": "3.9% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": true,
+      "value": 26.97,
+      "threshold": 33.18,
+      "label": "Fwd 27.0x vs Trail 33.2x"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": false,
+      "value": 3.04,
+      "threshold": 5.0,
+      "label": "Margin 3.0% / ROE 7.2%"
+    }
+  },
   "metrics": {
-    "pe": 33.23,
-    "sectorPe": 33.23,
-    "pb": 2.46,
-    "evEbitda": 18.71,
-    "fcfYield": 3.84,
-    "forwardPe": 27.01,
+    "pe": 33.18,
+    "sectorPe": 33.18,
+    "pb": 2.45,
+    "evEbitda": 18.69,
+    "fcfYield": 3.85,
+    "forwardPe": 26.97,
     "dividendYield": 1.18,
     "revenueGrowth": 5.6,
     "profitMargin": 3.04,

@@ -1,8 +1,8 @@
 {
   "ticker": "EDV",
   "name": "ENDEAVOUR FPO [EDV]",
-  "price": 3.28,
-  "valuationScore": -7.8,
+  "price": 3.27,
+  "valuationScore": -7.9,
   "marketCap": "5.9B",
   "sector": "Consumer Defensive",
   "domain": "endeavourgroup.com.au",
@@ -217,17 +217,63 @@
     },
     {
       "date": "2026-04-12",
-      "price": 3.28
+      "price": 3.27
     }
   ],
+  "testsPassed": 4,
+  "grade": "B",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": true,
+      "value": 15.57,
+      "threshold": 19.2,
+      "label": "15.6x vs 19.2x sector"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": true,
+      "value": 1.47,
+      "threshold": 1.5,
+      "label": "1.47x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": false,
+      "value": 10.03,
+      "threshold": 10.0,
+      "label": "10.0x vs 10x"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": true,
+      "value": 9.93,
+      "threshold": 5.0,
+      "label": "9.9% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": true,
+      "value": 14.06,
+      "threshold": 15.57,
+      "label": "Fwd 14.1x vs Trail 15.6x"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": false,
+      "value": 3.09,
+      "threshold": 5.0,
+      "label": "Margin 3.1% / ROE 9.4%"
+    }
+  },
   "metrics": {
-    "pe": 15.62,
-    "sectorPe": 21.56,
-    "pb": 1.48,
-    "evEbitda": 10.05,
-    "fcfYield": 9.9,
-    "forwardPe": 14.1,
-    "dividendYield": 5.21,
+    "pe": 15.57,
+    "sectorPe": 22.59,
+    "pb": 1.47,
+    "evEbitda": 10.03,
+    "fcfYield": 9.93,
+    "forwardPe": 14.06,
+    "dividendYield": 5.23,
     "revenueGrowth": 0.9,
     "profitMargin": 3.09,
     "operatingMargin": 7.75,

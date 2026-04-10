@@ -1,9 +1,9 @@
 {
   "ticker": "MP1",
   "name": "MEGAPORT FPO [MP1]",
-  "price": 7.43,
-  "valuationScore": 5.5,
-  "marketCap": "1.4B",
+  "price": 6.85,
+  "valuationScore": 4.5,
+  "marketCap": "1.3B",
   "sector": "Technology",
   "domain": "megaport.com",
   "chartData": [
@@ -217,16 +217,62 @@
     },
     {
       "date": "2026-04-12",
-      "price": 7.43
+      "price": 6.85
     }
   ],
+  "testsPassed": 1,
+  "grade": "D",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": null,
+      "value": null,
+      "threshold": null,
+      "label": "Insufficient data"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": false,
+      "value": 2.44,
+      "threshold": 1.5,
+      "label": "2.44x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": false,
+      "value": 66.19,
+      "threshold": 10.0,
+      "label": "66.2x vs 10x"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": true,
+      "value": 6.41,
+      "threshold": 5.0,
+      "label": "6.4% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": null,
+      "value": 61.24,
+      "threshold": null,
+      "label": "Insufficient data"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": false,
+      "value": -7.94,
+      "threshold": 5.0,
+      "label": "Margin -7.9% / ROE -6.0%"
+    }
+  },
   "metrics": {
     "pe": null,
-    "sectorPe": 45.96,
-    "pb": 2.64,
-    "evEbitda": 72.38,
-    "fcfYield": 5.91,
-    "forwardPe": 70.8,
+    "sectorPe": 43.03,
+    "pb": 2.44,
+    "evEbitda": 66.19,
+    "fcfYield": 6.41,
+    "forwardPe": 61.24,
     "dividendYield": null,
     "revenueGrowth": 26.3,
     "profitMargin": -7.94,

@@ -1,9 +1,9 @@
 {
   "ticker": "ASG",
   "name": "AUTOSPORTS FPO [ASG]",
-  "price": 2.55,
-  "valuationScore": 6.0,
-  "marketCap": "543M",
+  "price": 2.42,
+  "valuationScore": 5.4,
+  "marketCap": "516M",
   "sector": "Consumer Cyclical",
   "domain": "autosportsgroup.com.au",
   "chartData": [
@@ -217,17 +217,63 @@
     },
     {
       "date": "2026-04-12",
-      "price": 2.55
+      "price": 2.42
     }
   ],
+  "testsPassed": 3,
+  "grade": "C",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": true,
+      "value": 11.0,
+      "threshold": 21.34,
+      "label": "11.0x vs 21.3x sector"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": true,
+      "value": 0.94,
+      "threshold": 1.5,
+      "label": "0.94x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": false,
+      "value": 11.96,
+      "threshold": 10.0,
+      "label": "12.0x vs 10x"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": false,
+      "value": -18.32,
+      "threshold": 5.0,
+      "label": "-18.3% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": true,
+      "value": 8.1,
+      "threshold": 11.0,
+      "label": "Fwd 8.1x vs Trail 11.0x"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": false,
+      "value": 1.46,
+      "threshold": 5.0,
+      "label": "Margin 1.5% / ROE 8.7%"
+    }
+  },
   "metrics": {
-    "pe": 11.59,
-    "sectorPe": 25.3,
-    "pb": 0.99,
-    "evEbitda": 12.15,
-    "fcfYield": -17.38,
-    "forwardPe": 8.53,
-    "dividendYield": 3.92,
+    "pe": 11.0,
+    "sectorPe": 25.11,
+    "pb": 0.94,
+    "evEbitda": 11.96,
+    "fcfYield": -18.32,
+    "forwardPe": 8.1,
+    "dividendYield": 4.13,
     "revenueGrowth": 10.9,
     "profitMargin": 1.46,
     "operatingMargin": 4.24,

@@ -1,8 +1,8 @@
 {
   "ticker": "S32",
   "name": "SOUTH32 FPO [S32]",
-  "price": 4.57,
-  "valuationScore": 9.6,
+  "price": 4.58,
+  "valuationScore": 10.0,
   "marketCap": "20.5B",
   "sector": "Materials",
   "domain": "south32.net",
@@ -217,17 +217,63 @@
     },
     {
       "date": "2026-04-12",
-      "price": 4.57
+      "price": 4.58
     }
   ],
+  "testsPassed": 1,
+  "grade": "D",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": false,
+      "value": 38.17,
+      "threshold": 17.78,
+      "label": "38.2x vs 17.8x sector"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": false,
+      "value": 1.54,
+      "threshold": 1.5,
+      "label": "1.54x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": false,
+      "value": 17.27,
+      "threshold": 10.0,
+      "label": "17.3x vs 10x"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": false,
+      "value": -0.69,
+      "threshold": 5.0,
+      "label": "-0.7% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": true,
+      "value": 11.4,
+      "threshold": 38.17,
+      "label": "Fwd 11.4x vs Trail 38.2x"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": false,
+      "value": 5.37,
+      "threshold": 5.0,
+      "label": "Margin 5.4% / ROE 4.2%"
+    }
+  },
   "metrics": {
-    "pe": 35.15,
-    "sectorPe": 20.45,
+    "pe": 38.17,
+    "sectorPe": 20.91,
     "pb": 1.54,
-    "evEbitda": 17.23,
+    "evEbitda": 17.27,
     "fcfYield": -0.69,
-    "forwardPe": 11.12,
-    "dividendYield": 2.07,
+    "forwardPe": 11.4,
+    "dividendYield": 2.06,
     "revenueGrowth": -2.6,
     "profitMargin": 5.37,
     "operatingMargin": 12.87,

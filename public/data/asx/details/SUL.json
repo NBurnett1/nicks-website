@@ -1,8 +1,8 @@
 {
   "ticker": "SUL",
   "name": "SUPARETAIL FPO [SUL]",
-  "price": 13.16,
-  "valuationScore": -8.0,
+  "price": 13.09,
+  "valuationScore": -7.6,
   "marketCap": "3.0B",
   "sector": "Consumer Discretionary",
   "domain": "superretailgroup.com.au",
@@ -217,17 +217,63 @@
     },
     {
       "date": "2026-04-12",
-      "price": 13.16
+      "price": 13.09
     }
   ],
+  "testsPassed": 4,
+  "grade": "B",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": true,
+      "value": 15.22,
+      "threshold": 15.48,
+      "label": "15.2x vs 15.5x sector"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": false,
+      "value": 2.33,
+      "threshold": 1.5,
+      "label": "2.33x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": true,
+      "value": 9.39,
+      "threshold": 10.0,
+      "label": "9.4x vs 10x"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": true,
+      "value": 13.89,
+      "threshold": 5.0,
+      "label": "13.9% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": true,
+      "value": 11.76,
+      "threshold": 15.22,
+      "label": "Fwd 11.8x vs Trail 15.2x"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": false,
+      "value": 4.72,
+      "threshold": 5.0,
+      "label": "Margin 4.7% / ROE 15.2%"
+    }
+  },
   "metrics": {
-    "pe": 15.3,
-    "sectorPe": 18.64,
-    "pb": 2.34,
-    "evEbitda": 9.42,
-    "fcfYield": 13.82,
-    "forwardPe": 11.83,
-    "dividendYield": 4.86,
+    "pe": 15.22,
+    "sectorPe": 18.22,
+    "pb": 2.33,
+    "evEbitda": 9.39,
+    "fcfYield": 13.89,
+    "forwardPe": 11.76,
+    "dividendYield": 4.89,
     "revenueGrowth": 4.2,
     "profitMargin": 4.72,
     "operatingMargin": 8.48,

@@ -1,9 +1,9 @@
 {
   "ticker": "STO",
   "name": "SANTOS FPO [STO]",
-  "price": 7.76,
-  "valuationScore": -0.1,
-  "marketCap": "25.2B",
+  "price": 7.95,
+  "valuationScore": -0.0,
+  "marketCap": "25.8B",
   "sector": "Energy",
   "domain": "santos.com",
   "chartData": [
@@ -217,17 +217,63 @@
     },
     {
       "date": "2026-04-12",
-      "price": 7.76
+      "price": 7.95
     }
   ],
+  "testsPassed": 2,
+  "grade": "D",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": false,
+      "value": 22.71,
+      "threshold": 17.79,
+      "label": "22.7x vs 17.8x sector"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": true,
+      "value": 1.14,
+      "threshold": 1.5,
+      "label": "1.14x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": false,
+      "value": 10.86,
+      "threshold": 10.0,
+      "label": "10.9x vs 10x"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": false,
+      "value": 2.89,
+      "threshold": 5.0,
+      "label": "2.9% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": true,
+      "value": 10.99,
+      "threshold": 22.71,
+      "label": "Fwd 11.0x vs Trail 22.7x"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": false,
+      "value": 16.56,
+      "threshold": 5.0,
+      "label": "Margin 16.6% / ROE 5.2%"
+    }
+  },
   "metrics": {
-    "pe": 21.56,
-    "sectorPe": 20.44,
-    "pb": 1.11,
-    "evEbitda": 10.65,
-    "fcfYield": 2.96,
-    "forwardPe": 10.48,
-    "dividendYield": 4.49,
+    "pe": 22.71,
+    "sectorPe": 20.93,
+    "pb": 1.14,
+    "evEbitda": 10.86,
+    "fcfYield": 2.89,
+    "forwardPe": 10.99,
+    "dividendYield": 4.39,
     "revenueGrowth": -11.6,
     "profitMargin": 16.56,
     "operatingMargin": 25.89,

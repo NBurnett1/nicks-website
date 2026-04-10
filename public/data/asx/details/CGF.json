@@ -1,7 +1,7 @@
 {
   "ticker": "CGF",
   "name": "CHALLENGER FPO [CGF]",
-  "price": 8.28,
+  "price": 8.2,
   "valuationScore": -18.8,
   "marketCap": "5.7B",
   "sector": "Financial Services",
@@ -217,17 +217,63 @@
     },
     {
       "date": "2026-04-12",
-      "price": 8.28
+      "price": 8.2
     }
   ],
+  "testsPassed": 5,
+  "grade": "A",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": true,
+      "value": 13.23,
+      "threshold": 15.45,
+      "label": "13.2x vs 15.4x sector"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": true,
+      "value": 1.38,
+      "threshold": 1.5,
+      "label": "1.38x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": null,
+      "value": null,
+      "threshold": 10.0,
+      "label": "No EV/EBITDA data"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": true,
+      "value": 17.97,
+      "threshold": 5.0,
+      "label": "18.0% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": true,
+      "value": 11.41,
+      "threshold": 13.23,
+      "label": "Fwd 11.4x vs Trail 13.2x"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": true,
+      "value": 16.39,
+      "threshold": 5.0,
+      "label": "Margin 16.4% / ROE 11.6%"
+    }
+  },
   "metrics": {
-    "pe": 13.35,
-    "sectorPe": 18.0,
-    "pb": 1.39,
-    "evEbitda": -3.76,
-    "fcfYield": 17.8,
-    "forwardPe": 11.49,
-    "dividendYield": 3.74,
+    "pe": 13.23,
+    "sectorPe": 18.18,
+    "pb": 1.38,
+    "evEbitda": -3.8,
+    "fcfYield": 17.97,
+    "forwardPe": 11.41,
+    "dividendYield": 3.78,
     "revenueGrowth": -16.9,
     "profitMargin": 16.39,
     "operatingMargin": 55.62,

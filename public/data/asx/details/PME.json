@@ -1,9 +1,9 @@
 {
   "ticker": "PME",
   "name": "PROMEDICUS FPO [PME]",
-  "price": 132.08,
+  "price": 127.38,
   "valuationScore": 60.0,
-  "marketCap": "13.8B",
+  "marketCap": "13.3B",
   "sector": "Healthcare",
   "domain": "promed.com.au",
   "chartData": [
@@ -217,17 +217,63 @@
     },
     {
       "date": "2026-04-12",
-      "price": 132.08
+      "price": 127.38
     }
   ],
+  "testsPassed": 1,
+  "grade": "D",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": false,
+      "value": 56.87,
+      "threshold": 19.43,
+      "label": "56.9x vs 19.4x sector"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": false,
+      "value": 34.22,
+      "threshold": 1.5,
+      "label": "34.22x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": false,
+      "value": 73.16,
+      "threshold": 10.0,
+      "label": "73.2x vs 10x"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": false,
+      "value": 0.77,
+      "threshold": 5.0,
+      "label": "0.8% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": false,
+      "value": 66.68,
+      "threshold": 56.87,
+      "label": "Fwd 66.7x vs Trail 56.9x"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": true,
+      "value": 97.56,
+      "threshold": 5.0,
+      "label": "Margin 97.6% / ROE 76.8%"
+    }
+  },
   "metrics": {
-    "pe": 58.7,
-    "sectorPe": 22.61,
-    "pb": 35.49,
-    "evEbitda": 75.91,
-    "fcfYield": 0.74,
-    "forwardPe": 69.14,
-    "dividendYield": 0.48,
+    "pe": 56.87,
+    "sectorPe": 22.85,
+    "pb": 34.22,
+    "evEbitda": 73.16,
+    "fcfYield": 0.77,
+    "forwardPe": 66.68,
+    "dividendYield": 0.5,
     "revenueGrowth": 28.4,
     "profitMargin": 97.56,
     "operatingMargin": 72.66,

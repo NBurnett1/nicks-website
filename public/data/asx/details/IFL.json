@@ -1,8 +1,8 @@
 {
   "ticker": "IFL",
   "name": "INSIGNIA FPO [IFL]",
-  "price": 4.78,
-  "valuationScore": 6.1,
+  "price": 4.77,
+  "valuationScore": 5.9,
   "marketCap": "3.2B",
   "sector": "Financial Services",
   "domain": "insigniafinancial.com.au",
@@ -217,16 +217,62 @@
     },
     {
       "date": "2026-04-12",
-      "price": 4.78
+      "price": 4.77
     }
   ],
+  "testsPassed": 3,
+  "grade": "C",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": false,
+      "value": 28.06,
+      "threshold": 15.45,
+      "label": "28.1x vs 15.4x sector"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": true,
+      "value": 1.49,
+      "threshold": 1.5,
+      "label": "1.49x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": true,
+      "value": 9.16,
+      "threshold": 10.0,
+      "label": "9.2x vs 10x"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": false,
+      "value": -1.66,
+      "threshold": 5.0,
+      "label": "-1.7% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": true,
+      "value": 12.24,
+      "threshold": 28.06,
+      "label": "Fwd 12.2x vs Trail 28.1x"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": false,
+      "value": 6.8,
+      "threshold": 5.0,
+      "label": "Margin 6.8% / ROE 5.4%"
+    }
+  },
   "metrics": {
-    "pe": 28.12,
-    "sectorPe": 18.0,
+    "pe": 28.06,
+    "sectorPe": 18.18,
     "pb": 1.49,
-    "evEbitda": 9.18,
-    "fcfYield": -1.65,
-    "forwardPe": 12.27,
+    "evEbitda": 9.16,
+    "fcfYield": -1.66,
+    "forwardPe": 12.24,
     "dividendYield": null,
     "revenueGrowth": 7.8,
     "profitMargin": 6.8,

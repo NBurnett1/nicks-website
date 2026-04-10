@@ -1,9 +1,9 @@
 {
   "ticker": "PLS",
   "name": "PLSGROUP FPO [PLS]",
-  "price": 5.28,
-  "valuationScore": 40.9,
-  "marketCap": "17.0B",
+  "price": 5.3,
+  "valuationScore": 41.7,
+  "marketCap": "17.1B",
   "sector": "Basic Materials",
   "domain": "pls.com",
   "chartData": [
@@ -217,16 +217,62 @@
     },
     {
       "date": "2026-04-12",
-      "price": 5.28
+      "price": 5.3
     }
   ],
+  "testsPassed": 0,
+  "grade": "F",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": null,
+      "value": null,
+      "threshold": null,
+      "label": "Insufficient data"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": false,
+      "value": 4.78,
+      "threshold": 1.5,
+      "label": "4.78x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": false,
+      "value": 90.48,
+      "threshold": 10.0,
+      "label": "90.5x vs 10x"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": false,
+      "value": -0.55,
+      "threshold": 5.0,
+      "label": "-0.6% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": null,
+      "value": 27.56,
+      "threshold": null,
+      "label": "Insufficient data"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": false,
+      "value": -9.67,
+      "threshold": 5.0,
+      "label": "Margin -9.7% / ROE -2.8%"
+    }
+  },
   "metrics": {
     "pe": null,
-    "sectorPe": 48.39,
-    "pb": 4.76,
-    "evEbitda": 90.13,
+    "sectorPe": 49.14,
+    "pb": 4.78,
+    "evEbitda": 90.48,
     "fcfYield": -0.55,
-    "forwardPe": 27.46,
+    "forwardPe": 27.56,
     "dividendYield": null,
     "revenueGrowth": 46.6,
     "profitMargin": -9.67,

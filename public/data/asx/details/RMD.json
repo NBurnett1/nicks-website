@@ -1,9 +1,9 @@
 {
   "ticker": "RMD",
   "name": "RESMED CDI 10:1 [RMD]",
-  "price": 33.01,
+  "price": 32.68,
   "valuationScore": -6.3,
-  "marketCap": "48.1B",
+  "marketCap": "47.6B",
   "sector": "Healthcare",
   "domain": "resmed.com",
   "chartData": [
@@ -217,17 +217,63 @@
     },
     {
       "date": "2026-04-12",
-      "price": 33.01
+      "price": 32.68
     }
   ],
+  "testsPassed": 4,
+  "grade": "B",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": false,
+      "value": 22.85,
+      "threshold": 19.43,
+      "label": "22.9x vs 19.4x sector"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": true,
+      "value": 0.52,
+      "threshold": 1.5,
+      "label": "0.52x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": true,
+      "value": 2.07,
+      "threshold": 10.0,
+      "label": "2.1x vs 10x"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": false,
+      "value": 2.98,
+      "threshold": 5.0,
+      "label": "3.0% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": true,
+      "value": 18.57,
+      "threshold": 22.85,
+      "label": "Fwd 18.6x vs Trail 22.9x"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": true,
+      "value": 27.53,
+      "threshold": 5.0,
+      "label": "Margin 27.5% / ROE 25.7%"
+    }
+  },
   "metrics": {
-    "pe": 22.61,
-    "sectorPe": 22.61,
-    "pb": 0.53,
-    "evEbitda": 2.09,
-    "fcfYield": 2.95,
-    "forwardPe": 18.34,
-    "dividendYield": 1.05,
+    "pe": 22.85,
+    "sectorPe": 22.85,
+    "pb": 0.52,
+    "evEbitda": 2.07,
+    "fcfYield": 2.98,
+    "forwardPe": 18.57,
+    "dividendYield": 1.06,
     "revenueGrowth": 11.0,
     "profitMargin": 27.53,
     "operatingMargin": 35.16,

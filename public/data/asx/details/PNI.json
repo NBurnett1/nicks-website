@@ -1,9 +1,9 @@
 {
   "ticker": "PNI",
   "name": "PINNACLE FPO [PNI]",
-  "price": 15.21,
+  "price": 14.31,
   "valuationScore": 60.0,
-  "marketCap": "3.5B",
+  "marketCap": "3.3B",
   "sector": "Financial Services",
   "domain": "pinnacleinvestment.com",
   "chartData": [
@@ -217,17 +217,63 @@
     },
     {
       "date": "2026-04-12",
-      "price": 15.21
+      "price": 14.31
     }
   ],
+  "testsPassed": 2,
+  "grade": "D",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": false,
+      "value": 25.55,
+      "threshold": 15.45,
+      "label": "25.6x vs 15.4x sector"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": false,
+      "value": 3.41,
+      "threshold": 1.5,
+      "label": "3.41x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": false,
+      "value": 119.62,
+      "threshold": 10.0,
+      "label": "119.6x vs 10x"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": false,
+      "value": -0.1,
+      "threshold": 5.0,
+      "label": "-0.1% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": true,
+      "value": 16.71,
+      "threshold": 25.55,
+      "label": "Fwd 16.7x vs Trail 25.6x"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": true,
+      "value": 150.25,
+      "threshold": 5.0,
+      "label": "Margin 150.2% / ROE 13.5%"
+    }
+  },
   "metrics": {
-    "pe": 27.16,
-    "sectorPe": 18.0,
-    "pb": 3.62,
-    "evEbitda": 128.01,
-    "fcfYield": -0.09,
-    "forwardPe": 17.76,
-    "dividendYield": 3.68,
+    "pe": 25.55,
+    "sectorPe": 18.18,
+    "pb": 3.41,
+    "evEbitda": 119.62,
+    "fcfYield": -0.1,
+    "forwardPe": 16.71,
+    "dividendYield": 3.91,
     "revenueGrowth": 66.6,
     "profitMargin": 150.25,
     "operatingMargin": 25.21,

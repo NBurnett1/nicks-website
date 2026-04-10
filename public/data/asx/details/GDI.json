@@ -2,7 +2,7 @@
   "ticker": "GDI",
   "name": "GDI PROP STAPLED [GDI]",
   "price": 0.59,
-  "valuationScore": 49.6,
+  "valuationScore": 49.3,
   "marketCap": "318M",
   "sector": "Real Estate",
   "domain": "gdi.com.au",
@@ -220,9 +220,55 @@
       "price": 0.59
     }
   ],
+  "testsPassed": 2,
+  "grade": "D",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": true,
+      "value": 8.43,
+      "threshold": 10.03,
+      "label": "8.4x vs 10.0x sector"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": false,
+      "value": 12.04,
+      "threshold": 1.5,
+      "label": "12.04x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": false,
+      "value": 27.89,
+      "threshold": 10.0,
+      "label": "27.9x vs 10x"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": false,
+      "value": -16.91,
+      "threshold": 5.0,
+      "label": "-16.9% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": true,
+      "value": 7.2,
+      "threshold": 8.43,
+      "label": "Fwd 7.2x vs Trail 8.4x"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": false,
+      "value": 1.91,
+      "threshold": 5.0,
+      "label": "Margin 1.9% / ROE 5.3%"
+    }
+  },
   "metrics": {
     "pe": 8.43,
-    "sectorPe": 11.76,
+    "sectorPe": 11.8,
     "pb": 12.04,
     "evEbitda": 27.89,
     "fcfYield": -16.91,

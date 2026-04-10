@@ -1,7 +1,7 @@
 {
   "ticker": "CQR",
   "name": "CHRETAILRT ORD UNITS [CQR]",
-  "price": 3.71,
+  "price": 3.74,
   "valuationScore": -2.6,
   "marketCap": "2.2B",
   "sector": "Real Estate",
@@ -217,17 +217,63 @@
     },
     {
       "date": "2026-04-12",
-      "price": 3.71
+      "price": 3.74
     }
   ],
+  "testsPassed": 3,
+  "grade": "C",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": true,
+      "value": 6.23,
+      "threshold": 10.03,
+      "label": "6.2x vs 10.0x sector"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": true,
+      "value": 0.76,
+      "threshold": 1.5,
+      "label": "0.76x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": null,
+      "value": null,
+      "threshold": 10.0,
+      "label": "No EV/EBITDA data"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": false,
+      "value": 4.85,
+      "threshold": 5.0,
+      "label": "4.8% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": false,
+      "value": 13.73,
+      "threshold": 6.23,
+      "label": "Fwd 13.7x vs Trail 6.2x"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": true,
+      "value": 90.43,
+      "threshold": 5.0,
+      "label": "Margin 90.4% / ROE 12.7%"
+    }
+  },
   "metrics": {
-    "pe": 6.18,
-    "sectorPe": 11.76,
+    "pe": 6.23,
+    "sectorPe": 11.8,
     "pb": 0.76,
     "evEbitda": null,
-    "fcfYield": 4.89,
-    "forwardPe": 13.62,
-    "dividendYield": 8.49,
+    "fcfYield": 4.85,
+    "forwardPe": 13.73,
+    "dividendYield": 8.42,
     "revenueGrowth": 37.1,
     "profitMargin": 90.43,
     "operatingMargin": 75.74,

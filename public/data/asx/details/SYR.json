@@ -1,9 +1,9 @@
 {
   "ticker": "SYR",
   "name": "SYRAH RES FPO [SYR]",
-  "price": 0.12,
-  "valuationScore": 40.7,
-  "marketCap": "198M",
+  "price": 0.11,
+  "valuationScore": 42.5,
+  "marketCap": "189M",
   "sector": "Basic Materials",
   "domain": "syrahresources.com.au",
   "chartData": [
@@ -217,16 +217,62 @@
     },
     {
       "date": "2026-04-12",
-      "price": 0.12
+      "price": 0.11
     }
   ],
+  "testsPassed": 1,
+  "grade": "D",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": null,
+      "value": null,
+      "threshold": null,
+      "label": "Insufficient data"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": true,
+      "value": 0.3,
+      "threshold": 1.5,
+      "label": "0.30x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": null,
+      "value": null,
+      "threshold": 10.0,
+      "label": "No EV/EBITDA data"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": false,
+      "value": -19.71,
+      "threshold": 5.0,
+      "label": "-19.7% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": null,
+      "value": 8.79,
+      "threshold": null,
+      "label": "Insufficient data"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": false,
+      "value": 0.0,
+      "threshold": 5.0,
+      "label": "Margin 0.0% / ROE -28.4%"
+    }
+  },
   "metrics": {
     "pe": null,
-    "sectorPe": 48.39,
-    "pb": 0.32,
-    "evEbitda": -5.49,
-    "fcfYield": -18.85,
-    "forwardPe": 9.19,
+    "sectorPe": 49.14,
+    "pb": 0.3,
+    "evEbitda": -5.39,
+    "fcfYield": -19.71,
+    "forwardPe": 8.79,
     "dividendYield": null,
     "revenueGrowth": 151.5,
     "profitMargin": 0.0,

@@ -2,7 +2,7 @@
   "ticker": "RSG",
   "name": "RESOLUTE FPO [RSG]",
   "price": 1.5,
-  "valuationScore": -13.0,
+  "valuationScore": -12.6,
   "marketCap": "3.2B",
   "sector": "Basic Materials",
   "domain": "rml.com.au",
@@ -220,9 +220,55 @@
       "price": 1.5
     }
   ],
+  "testsPassed": 4,
+  "grade": "B",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": true,
+      "value": 18.81,
+      "threshold": 41.77,
+      "label": "18.8x vs 41.8x sector"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": false,
+      "value": 3.03,
+      "threshold": 1.5,
+      "label": "3.03x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": false,
+      "value": 11.05,
+      "threshold": 10.0,
+      "label": "11.0x vs 10x"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": true,
+      "value": 5.62,
+      "threshold": 5.0,
+      "label": "5.6% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": true,
+      "value": 7.0,
+      "threshold": 18.81,
+      "label": "Fwd 7.0x vs Trail 18.8x"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": true,
+      "value": 14.88,
+      "threshold": 5.0,
+      "label": "Margin 14.9% / ROE 25.6%"
+    }
+  },
   "metrics": {
-    "pe": 16.72,
-    "sectorPe": 48.39,
+    "pe": 18.81,
+    "sectorPe": 49.14,
     "pb": 3.03,
     "evEbitda": 11.05,
     "fcfYield": 5.62,

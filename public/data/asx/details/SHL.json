@@ -1,9 +1,9 @@
 {
   "ticker": "SHL",
   "name": "SONIC HLTH FPO [SHL]",
-  "price": 20.14,
-  "valuationScore": -6.5,
-  "marketCap": "10.0B",
+  "price": 19.87,
+  "valuationScore": -6.6,
+  "marketCap": "9.8B",
   "sector": "Healthcare",
   "domain": "sonichealthcare.com",
   "chartData": [
@@ -217,17 +217,63 @@
     },
     {
       "date": "2026-04-12",
-      "price": 20.14
+      "price": 19.87
     }
   ],
+  "testsPassed": 4,
+  "grade": "B",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": true,
+      "value": 17.9,
+      "threshold": 19.43,
+      "label": "17.9x vs 19.4x sector"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": true,
+      "value": 1.15,
+      "threshold": 1.5,
+      "label": "1.15x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": false,
+      "value": 11.58,
+      "threshold": 10.0,
+      "label": "11.6x vs 10x"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": true,
+      "value": 6.09,
+      "threshold": 5.0,
+      "label": "6.1% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": true,
+      "value": 14.86,
+      "threshold": 17.9,
+      "label": "Fwd 14.9x vs Trail 17.9x"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": false,
+      "value": 5.18,
+      "threshold": 5.0,
+      "label": "Margin 5.2% / ROE 6.6%"
+    }
+  },
   "metrics": {
-    "pe": 18.14,
-    "sectorPe": 22.61,
-    "pb": 1.16,
-    "evEbitda": 11.68,
-    "fcfYield": 6.01,
-    "forwardPe": 15.06,
-    "dividendYield": 5.36,
+    "pe": 17.9,
+    "sectorPe": 22.85,
+    "pb": 1.15,
+    "evEbitda": 11.58,
+    "fcfYield": 6.09,
+    "forwardPe": 14.86,
+    "dividendYield": 5.44,
     "revenueGrowth": 16.6,
     "profitMargin": 5.18,
     "operatingMargin": 8.98,

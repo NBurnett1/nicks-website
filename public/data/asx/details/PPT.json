@@ -1,8 +1,8 @@
 {
   "ticker": "PPT",
   "name": "PERPETUAL FPO [PPT]",
-  "price": 16.47,
-  "valuationScore": -8.4,
+  "price": 16.3,
+  "valuationScore": -8.6,
   "marketCap": "1.9B",
   "sector": "Financial Services",
   "domain": "perpetual.com.au",
@@ -217,17 +217,63 @@
     },
     {
       "date": "2026-04-12",
-      "price": 16.47
+      "price": 16.3
     }
   ],
+  "testsPassed": 3,
+  "grade": "C",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": null,
+      "value": null,
+      "threshold": null,
+      "label": "Insufficient data"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": true,
+      "value": 1.15,
+      "threshold": 1.5,
+      "label": "1.15x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": true,
+      "value": 8.36,
+      "threshold": 10.0,
+      "label": "8.4x vs 10x"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": true,
+      "value": 13.39,
+      "threshold": 5.0,
+      "label": "13.4% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": null,
+      "value": 9.97,
+      "threshold": null,
+      "label": "Insufficient data"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": false,
+      "value": -1.16,
+      "threshold": 5.0,
+      "label": "Margin -1.2% / ROE -1.0%"
+    }
+  },
   "metrics": {
     "pe": null,
-    "sectorPe": 18.0,
-    "pb": 1.16,
-    "evEbitda": 8.43,
-    "fcfYield": 13.25,
-    "forwardPe": 10.08,
-    "dividendYield": 6.86,
+    "sectorPe": 18.18,
+    "pb": 1.15,
+    "evEbitda": 8.36,
+    "fcfYield": 13.39,
+    "forwardPe": 9.97,
+    "dividendYield": 6.93,
     "revenueGrowth": 1.6,
     "profitMargin": -1.16,
     "operatingMargin": 14.43,

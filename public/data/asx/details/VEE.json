@@ -1,9 +1,9 @@
 {
   "ticker": "VEE",
   "name": "VEEM LTD FPO [VEE]",
-  "price": 0.56,
-  "valuationScore": 6.4,
-  "marketCap": "82M",
+  "price": 0.55,
+  "valuationScore": 6.2,
+  "marketCap": "81M",
   "sector": "Industrials",
   "domain": "veem.com.au",
   "chartData": [
@@ -217,16 +217,62 @@
     },
     {
       "date": "2026-04-12",
-      "price": 0.56
+      "price": 0.55
     }
   ],
+  "testsPassed": 0,
+  "grade": "F",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": null,
+      "value": null,
+      "threshold": null,
+      "label": "Insufficient data"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": false,
+      "value": 1.69,
+      "threshold": 1.5,
+      "label": "1.69x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": false,
+      "value": 32.33,
+      "threshold": 10.0,
+      "label": "32.3x vs 10x"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": false,
+      "value": 4.84,
+      "threshold": 5.0,
+      "label": "4.8% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": null,
+      "value": 71.8,
+      "threshold": null,
+      "label": "Insufficient data"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": false,
+      "value": -29.95,
+      "threshold": 5.0,
+      "label": "Margin -29.9% / ROE -35.0%"
+    }
+  },
   "metrics": {
     "pe": null,
-    "sectorPe": 33.23,
-    "pb": 1.72,
-    "evEbitda": 32.86,
-    "fcfYield": 4.76,
-    "forwardPe": 73.11,
+    "sectorPe": 33.18,
+    "pb": 1.69,
+    "evEbitda": 32.33,
+    "fcfYield": 4.84,
+    "forwardPe": 71.8,
     "dividendYield": 1.57,
     "revenueGrowth": -30.2,
     "profitMargin": -29.95,

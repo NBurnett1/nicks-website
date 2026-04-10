@@ -1,9 +1,9 @@
 {
   "ticker": "PRU",
   "name": "PERSEUS FPO [PRU]",
-  "price": 5.66,
+  "price": 5.59,
   "valuationScore": -3.1,
-  "marketCap": "7.6B",
+  "marketCap": "7.5B",
   "sector": "Basic Materials",
   "domain": "perseusmining.com",
   "chartData": [
@@ -217,17 +217,63 @@
     },
     {
       "date": "2026-04-12",
-      "price": 5.66
+      "price": 5.59
     }
   ],
+  "testsPassed": 3,
+  "grade": "C",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": true,
+      "value": 15.11,
+      "threshold": 41.77,
+      "label": "15.1x vs 41.8x sector"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": false,
+      "value": 2.34,
+      "threshold": 1.5,
+      "label": "2.34x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": false,
+      "value": 10.53,
+      "threshold": 10.0,
+      "label": "10.5x vs 10x"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": false,
+      "value": 1.21,
+      "threshold": 5.0,
+      "label": "1.2% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": true,
+      "value": 9.97,
+      "threshold": 15.11,
+      "label": "Fwd 10.0x vs Trail 15.1x"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": true,
+      "value": 27.94,
+      "threshold": 5.0,
+      "label": "Margin 27.9% / ROE 18.7%"
+    }
+  },
   "metrics": {
-    "pe": 14.89,
-    "sectorPe": 48.39,
-    "pb": 2.37,
-    "evEbitda": 10.67,
-    "fcfYield": 1.2,
-    "forwardPe": 10.09,
-    "dividendYield": 1.77,
+    "pe": 15.11,
+    "sectorPe": 49.14,
+    "pb": 2.34,
+    "evEbitda": 10.53,
+    "fcfYield": 1.21,
+    "forwardPe": 9.97,
+    "dividendYield": 1.79,
     "revenueGrowth": 4.6,
     "profitMargin": 27.94,
     "operatingMargin": 41.53,

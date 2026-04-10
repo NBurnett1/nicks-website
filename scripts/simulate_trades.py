@@ -46,6 +46,9 @@ from datetime import datetime, timezone, timedelta
 import yfinance as yf
 import numpy as np
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from score_stocks import run_valuation_tests, conviction_grade
+
 
 # ---------- Configuration ----------
 STARTING_CAPITAL = 10_000.00
@@ -59,6 +62,15 @@ MAX_HOLD_DAYS = 40             # Max hold for losing positions
 PARTIAL_PROFIT_R = 3.0         # Take partial at 3R
 PARTIAL_SELL_RATIO = 0.50      # Sell 50% at partial profit target
 SWING_LOOKBACK = 5             # Bars to look back for swing detection
+
+# Grade-based portfolio allocation — higher conviction = bigger position
+GRADE_ALLOCATION = {
+    "A": 0.15,   # 15% of portfolio per Grade A stock
+    "B": 0.10,   # 10%
+    "C": 0.06,   #  6%
+    "D": 0.03,   #  3%
+    "F": 0.00,   #  0% — don't trade Grade F
+}
 
 
 # ═══════════════════════════════════════════════════════════
@@ -374,7 +386,9 @@ def get_weekly_data(ticker, suffix=".AX"):
 
 
 def load_candidates(data_dir):
-    """Load undervalued ASX stocks with their mispricing % from reports."""
+    """Load undervalued ASX stocks with conviction grades and metrics.
+    Uses the multi-test grade system from index data. Falls back to reports
+    for fair value when available."""
     candidates = []
     index_path = os.path.join(data_dir, "asx_index.json")
     if not os.path.exists(index_path):
@@ -385,18 +399,33 @@ def load_candidates(data_dir):
 
     for stock in data.get("undervalued", []):
         ticker = stock["ticker"]
-        report_path = os.path.join(data_dir, "reports", f"{ticker}.json")
-        if not os.path.exists(report_path):
+        grade = stock.get("grade", "F")
+        tests_passed = stock.get("testsPassed", 0)
+
+        # Skip Grade F — no conviction
+        if grade == "F":
             continue
 
-        with open(report_path) as f:
-            report = json.load(f)
+        # Try to get fair value from report
+        fair_value = None
+        mispricing = None
+        report_path = os.path.join(data_dir, "reports", f"{ticker}.json")
+        if os.path.exists(report_path):
+            with open(report_path) as f:
+                report = json.load(f)
+            verdict = report.get("report", {}).get("verdict", {})
+            mispricing = verdict.get("mispricing")
+            fair_value = verdict.get("fairValue")
 
-        verdict = report.get("report", {}).get("verdict", {})
-        mispricing = verdict.get("mispricing")
-        fair_value = verdict.get("fairValue")
+        # Fallback: estimate fair value from valuation score
+        price = stock.get("price", 0)
+        if fair_value is None and price > 0:
+            score = stock.get("valuationScore", 0)
+            # Rough estimate: score represents % mispricing direction
+            fair_value = price * (1 + abs(score) / 100 * 0.5)
+            mispricing = -abs(score)
 
-        if mispricing is None or fair_value is None:
+        if fair_value is None or mispricing is None:
             continue
 
         # Filter by market cap (>$500M)
@@ -409,6 +438,14 @@ def load_candidates(data_dir):
         if val < 500_000_000:
             continue
 
+        # Load detail for full test data
+        detail_path = os.path.join(data_dir, "asx", "details", f"{ticker}.json")
+        detail_tests = {}
+        if os.path.exists(detail_path):
+            with open(detail_path) as f:
+                detail = json.load(f)
+            detail_tests = detail.get("valuationTests", {})
+
         candidates.append({
             "ticker": ticker,
             "exchange": "ASX",
@@ -417,11 +454,15 @@ def load_candidates(data_dir):
             "sector": stock.get("sector", ""),
             "mispricing": float(mispricing),
             "fairValue": float(fair_value),
-            "price": stock.get("price", 0),
+            "price": price,
+            "grade": grade,
+            "testsPassed": tests_passed,
+            "valuationTests": detail_tests,
         })
 
-    # Sort by most undervalued
-    candidates.sort(key=lambda c: c["mispricing"])
+    # Sort by grade first (A > B > C > D), then by tests passed
+    grade_order = {"A": 0, "B": 1, "C": 2, "D": 3, "F": 4}
+    candidates.sort(key=lambda c: (grade_order.get(c["grade"], 4), -c["testsPassed"]))
     return candidates
 
 
@@ -429,7 +470,7 @@ def load_candidates(data_dir):
 #  SMC ENTRY ANALYSIS
 # ═══════════════════════════════════════════════════════════
 
-def analyze_smc_entry(ticker, suffix, fair_value, portfolio_value):
+def analyze_smc_entry(ticker, suffix, fair_value, portfolio_value, **kwargs):
     """
     Run full SMC analysis on a stock to determine if it's a valid entry.
     Returns (valid: bool, analysis: dict, stop_price: float, position_size: int)
@@ -562,9 +603,17 @@ def analyze_smc_entry(ticker, suffix, fair_value, portfolio_value):
             "rrRatio": round(rr_ratio, 1),
         }, 0, 0
 
-    # 11. POSITION SIZING — risk 1.5% of portfolio per trade
+    # 11. POSITION SIZING — use grade-based allocation OR risk-based, whichever is smaller
     risk_amount = portfolio_value * RISK_PER_TRADE_PCT
-    shares = int(risk_amount / risk_per_share)
+    shares_risk = int(risk_amount / risk_per_share)
+
+    # Grade-based allocation cap (don't exceed the grade's max allocation)
+    grade_alloc = GRADE_ALLOCATION.get(kwargs.get("grade", "D"), 0.03)
+    max_position_value = portfolio_value * grade_alloc
+    shares_alloc = int(max_position_value / current_price) if current_price > 0 else 0
+
+    # Use the smaller of risk-based and allocation-based sizing
+    shares = min(shares_risk, shares_alloc) if shares_alloc > 0 else shares_risk
     if shares <= 0:
         return False, {"reason": "position too small"}, 0, 0
 
@@ -774,9 +823,10 @@ def check_entries(portfolio, candidates, now):
         if sector_counts.get(sector, 0) >= MAX_SECTOR_POSITIONS:
             continue
 
-        # Run full SMC analysis
+        # Run full SMC analysis with grade for position sizing
         valid, analysis, stop_price, shares = analyze_smc_entry(
-            ticker, c["suffix"], c["fairValue"], portfolio["totalValue"]
+            ticker, c["suffix"], c["fairValue"], portfolio["totalValue"],
+            grade=c.get("grade", "D"),
         )
 
         if not valid:
@@ -799,6 +849,14 @@ def check_entries(portfolio, candidates, now):
 
         risk_per_share = current_price - stop_price
         target_price = c["fairValue"]
+        grade = c.get("grade", "D")
+        alloc_pct = GRADE_ALLOCATION.get(grade, 0.03)
+
+        # Calculate suggested exit price:
+        # Blended: 70% fair value + 30% technical target (entry + R*reward)
+        rr_ratio = analysis.get("rrRatio", 3.0)
+        technical_target = current_price + (risk_per_share * rr_ratio)
+        exit_price = round(0.7 * target_price + 0.3 * technical_target, 2)
 
         position = {
             "ticker": ticker,
@@ -806,14 +864,18 @@ def check_entries(portfolio, candidates, now):
             "name": c["name"],
             "sector": c.get("sector", ""),
             "suffix": c["suffix"],
+            "grade": grade,
+            "allocationPct": round(alloc_pct * 100, 1),
             "entryPrice": round(current_price, 2),
             "currentPrice": round(current_price, 2),
             "targetPrice": round(target_price, 2),
+            "exitPrice": exit_price,
             "stopPrice": round(stop_price, 2),
             "initialStop": round(stop_price, 2),
             "highestPrice": round(current_price, 2),
             "fairValue": c["fairValue"],
             "mispricing": c["mispricing"],
+            "testsPassed": c.get("testsPassed", 0),
             "shares": shares,
             "invested": cost,
             "entryDate": now.isoformat(),
@@ -843,20 +905,25 @@ def check_entries(portfolio, candidates, now):
             "name": c["name"],
             "sector": c.get("sector", ""),
             "side": "BUY",
+            "grade": grade,
+            "allocationPct": round(alloc_pct * 100, 1),
             "entryPrice": round(current_price, 2),
+            "exitPrice": exit_price,
             "shares": shares,
             "invested": cost,
             "targetPrice": round(target_price, 2),
             "stopPrice": round(stop_price, 2),
             "mispricing": c["mispricing"],
+            "testsPassed": c.get("testsPassed", 0),
             "entryDate": now.isoformat(),
             "smc": analysis,
         }
         entries.append(entry_record)
 
         conf_str = "+".join(analysis["confluences"])
-        print(f"    ENTRY {ticker:8s} @ A${current_price:.2f} x {shares} = A${cost:.2f}  "
-              f"[{conf_str}] R:R={analysis['rrRatio']:.1f} Score={analysis['score']}")
+        print(f"    ENTRY {ticker:8s} [Grade {grade}] @ A${current_price:.2f} x {shares} = A${cost:.2f}  "
+              f"({alloc_pct*100:.0f}% alloc) Exit: A${exit_price:.2f}  "
+              f"[{conf_str}] R:R={analysis['rrRatio']:.1f}")
 
     return entries
 

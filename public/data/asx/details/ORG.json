@@ -1,9 +1,9 @@
 {
   "ticker": "ORG",
   "name": "ORIGIN ENE FPO [ORG]",
-  "price": 12.06,
+  "price": 12.35,
   "valuationScore": 8.1,
-  "marketCap": "20.8B",
+  "marketCap": "21.3B",
   "sector": "Energy",
   "domain": "originenergy.com.au",
   "chartData": [
@@ -217,17 +217,63 @@
     },
     {
       "date": "2026-04-12",
-      "price": 12.06
+      "price": 12.35
     }
   ],
+  "testsPassed": 2,
+  "grade": "D",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": false,
+      "value": 20.93,
+      "threshold": 17.79,
+      "label": "20.9x vs 17.8x sector"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": false,
+      "value": 2.18,
+      "threshold": 1.5,
+      "label": "2.18x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": false,
+      "value": 19.03,
+      "threshold": 10.0,
+      "label": "19.0x vs 10x"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": false,
+      "value": 0.89,
+      "threshold": 5.0,
+      "label": "0.9% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": true,
+      "value": 16.86,
+      "threshold": 20.93,
+      "label": "Fwd 16.9x vs Trail 20.9x"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": true,
+      "value": 6.2,
+      "threshold": 5.0,
+      "label": "Margin 6.2% / ROE 10.2%"
+    }
+  },
   "metrics": {
-    "pe": 20.44,
-    "sectorPe": 20.44,
-    "pb": 2.13,
-    "evEbitda": 18.65,
-    "fcfYield": 0.91,
-    "forwardPe": 16.47,
-    "dividendYield": 4.98,
+    "pe": 20.93,
+    "sectorPe": 20.93,
+    "pb": 2.18,
+    "evEbitda": 19.03,
+    "fcfYield": 0.89,
+    "forwardPe": 16.86,
+    "dividendYield": 4.86,
     "revenueGrowth": -9.0,
     "profitMargin": 6.2,
     "operatingMargin": 7.66,

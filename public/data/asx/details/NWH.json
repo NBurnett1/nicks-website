@@ -1,8 +1,8 @@
 {
   "ticker": "NWH",
   "name": "NRWHOLDLTD FPO [NWH]",
-  "price": 6.03,
-  "valuationScore": 3.4,
+  "price": 5.99,
+  "valuationScore": 3.3,
   "marketCap": "2.8B",
   "sector": "Industrials",
   "domain": "nrw.com.au",
@@ -217,17 +217,63 @@
     },
     {
       "date": "2026-04-12",
-      "price": 6.03
+      "price": 5.99
     }
   ],
+  "testsPassed": 2,
+  "grade": "D",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": false,
+      "value": 59.9,
+      "threshold": 28.2,
+      "label": "59.9x vs 28.2x sector"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": false,
+      "value": 4.29,
+      "threshold": 1.5,
+      "label": "4.29x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": false,
+      "value": 12.25,
+      "threshold": 10.0,
+      "label": "12.2x vs 10x"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": true,
+      "value": 8.1,
+      "threshold": 5.0,
+      "label": "8.1% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": true,
+      "value": 14.48,
+      "threshold": 59.9,
+      "label": "Fwd 14.5x vs Trail 59.9x"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": false,
+      "value": 1.36,
+      "threshold": 5.0,
+      "label": "Margin 1.4% / ROE 7.5%"
+    }
+  },
   "metrics": {
-    "pe": 60.3,
-    "sectorPe": 33.23,
-    "pb": 4.32,
-    "evEbitda": 12.32,
-    "fcfYield": 8.04,
-    "forwardPe": 14.57,
-    "dividendYield": 2.82,
+    "pe": 59.9,
+    "sectorPe": 33.18,
+    "pb": 4.29,
+    "evEbitda": 12.25,
+    "fcfYield": 8.1,
+    "forwardPe": 14.48,
+    "dividendYield": 2.84,
     "revenueGrowth": 19.5,
     "profitMargin": 1.36,
     "operatingMargin": 5.41,

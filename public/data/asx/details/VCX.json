@@ -1,9 +1,9 @@
 {
   "ticker": "VCX",
   "name": "VICINITY STAPLED [VCX]",
-  "price": 2.46,
+  "price": 2.48,
   "valuationScore": -0.9,
-  "marketCap": "11.4B",
+  "marketCap": "11.5B",
   "sector": "Real Estate",
   "domain": "vicinity.com.au",
   "chartData": [
@@ -217,17 +217,63 @@
     },
     {
       "date": "2026-04-12",
-      "price": 2.46
+      "price": 2.48
     }
   ],
+  "testsPassed": 4,
+  "grade": "B",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": true,
+      "value": 8.55,
+      "threshold": 10.03,
+      "label": "8.6x vs 10.0x sector"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": true,
+      "value": 0.97,
+      "threshold": 1.5,
+      "label": "0.97x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": false,
+      "value": 18.97,
+      "threshold": 10.0,
+      "label": "19.0x vs 10x"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": true,
+      "value": 5.28,
+      "threshold": 5.0,
+      "label": "5.3% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": false,
+      "value": 15.68,
+      "threshold": 8.55,
+      "label": "Fwd 15.7x vs Trail 8.6x"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": true,
+      "value": 94.93,
+      "threshold": 5.0,
+      "label": "Margin 94.9% / ROE 11.7%"
+    }
+  },
   "metrics": {
-    "pe": 8.48,
-    "sectorPe": 11.76,
-    "pb": 0.96,
-    "evEbitda": 18.87,
-    "fcfYield": 5.32,
-    "forwardPe": 15.55,
-    "dividendYield": 5.04,
+    "pe": 8.55,
+    "sectorPe": 11.8,
+    "pb": 0.97,
+    "evEbitda": 18.97,
+    "fcfYield": 5.28,
+    "forwardPe": 15.68,
+    "dividendYield": 5.0,
     "revenueGrowth": 1.2,
     "profitMargin": 94.93,
     "operatingMargin": 62.76,

@@ -1,8 +1,8 @@
 {
   "ticker": "BWP",
   "name": "BWPPROPGP STAPLED [BWP]",
-  "price": 3.71,
-  "valuationScore": 2.3,
+  "price": 3.7,
+  "valuationScore": 2.2,
   "marketCap": "2.7B",
   "sector": "Real Estate",
   "domain": "bwptrust.com.au",
@@ -217,17 +217,63 @@
     },
     {
       "date": "2026-04-12",
-      "price": 3.71
+      "price": 3.7
     }
   ],
+  "testsPassed": 3,
+  "grade": "C",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": true,
+      "value": 10.0,
+      "threshold": 10.03,
+      "label": "10.0x vs 10.0x sector"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": true,
+      "value": 0.89,
+      "threshold": 1.5,
+      "label": "0.89x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": null,
+      "value": null,
+      "threshold": 10.0,
+      "label": "No EV/EBITDA data"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": false,
+      "value": -0.26,
+      "threshold": 5.0,
+      "label": "-0.3% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": false,
+      "value": 18.83,
+      "threshold": 10.0,
+      "label": "Fwd 18.8x vs Trail 10.0x"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": true,
+      "value": 162.23,
+      "threshold": 5.0,
+      "label": "Margin 162.2% / ROE 11.3%"
+    }
+  },
   "metrics": {
-    "pe": 10.03,
-    "sectorPe": 11.76,
+    "pe": 10.0,
+    "sectorPe": 11.8,
     "pb": 0.89,
     "evEbitda": null,
     "fcfYield": -0.26,
-    "forwardPe": 18.88,
-    "dividendYield": 5.13,
+    "forwardPe": 18.83,
+    "dividendYield": 5.14,
     "revenueGrowth": 3.0,
     "profitMargin": 162.23,
     "operatingMargin": 86.85,

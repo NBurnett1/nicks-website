@@ -2,7 +2,7 @@
   "ticker": "INA",
   "name": "INGENIA STAPLED [INA]",
   "price": 4.06,
-  "valuationScore": -0.7,
+  "valuationScore": -0.8,
   "marketCap": "1.7B",
   "sector": "Real Estate",
   "domain": "ingeniacommunities.com.au",
@@ -220,13 +220,59 @@
       "price": 4.06
     }
   ],
+  "testsPassed": 4,
+  "grade": "B",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": false,
+      "value": 12.3,
+      "threshold": 10.03,
+      "label": "12.3x vs 10.0x sector"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": true,
+      "value": 0.99,
+      "threshold": 1.5,
+      "label": "0.99x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": false,
+      "value": 15.62,
+      "threshold": 10.0,
+      "label": "15.6x vs 10x"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": true,
+      "value": 6.13,
+      "threshold": 5.0,
+      "label": "6.1% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": true,
+      "value": 10.94,
+      "threshold": 12.3,
+      "label": "Fwd 10.9x vs Trail 12.3x"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": true,
+      "value": 25.57,
+      "threshold": 5.0,
+      "label": "Margin 25.6% / ROE 8.5%"
+    }
+  },
   "metrics": {
     "pe": 12.3,
-    "sectorPe": 11.76,
+    "sectorPe": 11.8,
     "pb": 0.99,
     "evEbitda": 15.62,
     "fcfYield": 6.13,
-    "forwardPe": 10.83,
+    "forwardPe": 10.94,
     "dividendYield": 2.27,
     "revenueGrowth": 4.3,
     "profitMargin": 25.57,

@@ -1,9 +1,9 @@
 {
   "ticker": "XRO",
   "name": "XERO FPO [XRO]",
-  "price": 80.28,
-  "valuationScore": -0.1,
-  "marketCap": "13.9B",
+  "price": 73.41,
+  "valuationScore": -1.0,
+  "marketCap": "12.7B",
   "sector": "Technology",
   "domain": "xero.com",
   "chartData": [
@@ -217,16 +217,62 @@
     },
     {
       "date": "2026-04-12",
-      "price": 80.28
+      "price": 73.41
     }
   ],
+  "testsPassed": 1,
+  "grade": "D",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": false,
+      "value": 49.27,
+      "threshold": 36.57,
+      "label": "49.3x vs 36.6x sector"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": false,
+      "value": 3.08,
+      "threshold": 1.5,
+      "label": "3.08x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": false,
+      "value": 21.28,
+      "threshold": 10.0,
+      "label": "21.3x vs 10x"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": false,
+      "value": 4.63,
+      "threshold": 5.0,
+      "label": "4.6% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": false,
+      "value": 60.31,
+      "threshold": 49.27,
+      "label": "Fwd 60.3x vs Trail 49.3x"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": true,
+      "value": 11.63,
+      "threshold": 5.0,
+      "label": "Margin 11.6% / ROE 8.3%"
+    }
+  },
   "metrics": {
-    "pe": 53.88,
-    "sectorPe": 45.96,
-    "pb": 3.37,
-    "evEbitda": 24.1,
-    "fcfYield": 4.24,
-    "forwardPe": 64.5,
+    "pe": 49.27,
+    "sectorPe": 43.03,
+    "pb": 3.08,
+    "evEbitda": 21.28,
+    "fcfYield": 4.63,
+    "forwardPe": 60.31,
     "dividendYield": null,
     "revenueGrowth": 19.9,
     "profitMargin": 11.63,

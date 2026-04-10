@@ -1,9 +1,9 @@
 {
   "ticker": "BXB",
   "name": "BRAMB LTD FPO [BXB]",
-  "price": 23.3,
-  "valuationScore": 5.9,
-  "marketCap": "31.5B",
+  "price": 23.52,
+  "valuationScore": 6.2,
+  "marketCap": "31.8B",
   "sector": "Industrials",
   "domain": "brambles.com",
   "chartData": [
@@ -217,17 +217,63 @@
     },
     {
       "date": "2026-04-12",
-      "price": 23.3
+      "price": 23.52
     }
   ],
+  "testsPassed": 3,
+  "grade": "C",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": true,
+      "value": 24.76,
+      "threshold": 28.2,
+      "label": "24.8x vs 28.2x sector"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": false,
+      "value": 6.47,
+      "threshold": 1.5,
+      "label": "6.47x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": false,
+      "value": 16.73,
+      "threshold": 10.0,
+      "label": "16.7x vs 10x"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": false,
+      "value": 2.24,
+      "threshold": 5.0,
+      "label": "2.2% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": true,
+      "value": 20.66,
+      "threshold": 24.76,
+      "label": "Fwd 20.7x vs Trail 24.8x"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": true,
+      "value": 13.7,
+      "threshold": 5.0,
+      "label": "Margin 13.7% / ROE 28.1%"
+    }
+  },
   "metrics": {
-    "pe": 24.02,
-    "sectorPe": 33.23,
-    "pb": 6.41,
-    "evEbitda": 16.59,
-    "fcfYield": 2.26,
-    "forwardPe": 20.03,
-    "dividendYield": 2.78,
+    "pe": 24.76,
+    "sectorPe": 33.18,
+    "pb": 6.47,
+    "evEbitda": 16.73,
+    "fcfYield": 2.24,
+    "forwardPe": 20.66,
+    "dividendYield": 2.75,
     "revenueGrowth": 5.0,
     "profitMargin": 13.7,
     "operatingMargin": 21.77,

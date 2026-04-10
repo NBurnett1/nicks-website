@@ -1,9 +1,9 @@
 {
   "ticker": "GMG",
   "name": "GOOD GROUP STAPLED [GMG]",
-  "price": 28.1,
-  "valuationScore": 16.6,
-  "marketCap": "57.5B",
+  "price": 27.82,
+  "valuationScore": 16.1,
+  "marketCap": "56.9B",
   "sector": "Real Estate",
   "domain": "goodman.com",
   "chartData": [
@@ -217,17 +217,63 @@
     },
     {
       "date": "2026-04-12",
-      "price": 28.1
+      "price": 27.82
     }
   ],
+  "testsPassed": 2,
+  "grade": "D",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": false,
+      "value": 33.12,
+      "threshold": 10.03,
+      "label": "33.1x vs 10.0x sector"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": false,
+      "value": 2.4,
+      "threshold": 1.5,
+      "label": "2.40x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": false,
+      "value": 32.37,
+      "threshold": 10.0,
+      "label": "32.4x vs 10x"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": true,
+      "value": 5.96,
+      "threshold": 5.0,
+      "label": "6.0% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": true,
+      "value": 19.43,
+      "threshold": 33.12,
+      "label": "Fwd 19.4x vs Trail 33.1x"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": false,
+      "value": 54.55,
+      "threshold": 5.0,
+      "label": "Margin 54.5% / ROE 7.9%"
+    }
+  },
   "metrics": {
-    "pe": 33.45,
-    "sectorPe": 11.76,
-    "pb": 2.42,
-    "evEbitda": 32.69,
-    "fcfYield": 5.9,
-    "forwardPe": 19.63,
-    "dividendYield": 1.07,
+    "pe": 33.12,
+    "sectorPe": 11.8,
+    "pb": 2.4,
+    "evEbitda": 32.37,
+    "fcfYield": 5.96,
+    "forwardPe": 19.43,
+    "dividendYield": 1.08,
     "revenueGrowth": -15.9,
     "profitMargin": 54.55,
     "operatingMargin": 55.9,

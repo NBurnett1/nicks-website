@@ -1,8 +1,8 @@
 {
   "ticker": "AIA",
   "name": "AUCK AIRPT FPO NZX [AIA]",
-  "price": 6.82,
-  "valuationScore": 7.2,
+  "price": 6.85,
+  "valuationScore": 7.3,
   "marketCap": "11.6B",
   "sector": "Industrials",
   "domain": "aucklandairport.co.nz",
@@ -217,17 +217,63 @@
     },
     {
       "date": "2026-04-12",
-      "price": 6.82
+      "price": 6.85
     }
   ],
+  "testsPassed": 1,
+  "grade": "D",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": false,
+      "value": 34.25,
+      "threshold": 28.2,
+      "label": "34.2x vs 28.2x sector"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": true,
+      "value": 1.34,
+      "threshold": 1.5,
+      "label": "1.34x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": false,
+      "value": 19.88,
+      "threshold": 10.0,
+      "label": "19.9x vs 10x"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": false,
+      "value": -4.64,
+      "threshold": 5.0,
+      "label": "-4.6% vs 5%"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": false,
+      "value": 44.05,
+      "threshold": 34.25,
+      "label": "Fwd 44.1x vs Trail 34.2x"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": false,
+      "value": 41.78,
+      "threshold": 5.0,
+      "label": "Margin 41.8% / ROE 4.0%"
+    }
+  },
   "metrics": {
-    "pe": 34.1,
-    "sectorPe": 33.23,
-    "pb": 1.31,
-    "evEbitda": 19.81,
-    "fcfYield": -4.66,
-    "forwardPe": 43.59,
-    "dividendYield": 1.7,
+    "pe": 34.25,
+    "sectorPe": 33.18,
+    "pb": 1.34,
+    "evEbitda": 19.88,
+    "fcfYield": -4.64,
+    "forwardPe": 44.05,
+    "dividendYield": 1.69,
     "revenueGrowth": 6.1,
     "profitMargin": 41.78,
     "operatingMargin": 48.54,

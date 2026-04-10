@@ -1,9 +1,9 @@
 {
   "ticker": "BEN",
   "name": "BEN ADE BK FPO [BEN]",
-  "price": 10.46,
-  "valuationScore": -1.6,
-  "marketCap": "5.9B",
+  "price": 11.34,
+  "valuationScore": -1.5,
+  "marketCap": "6.4B",
   "sector": "Financials",
   "domain": "bendigoadelaide.com.au",
   "chartData": [
@@ -217,17 +217,63 @@
     },
     {
       "date": "2026-04-12",
-      "price": 10.46
+      "price": 11.34
     }
   ],
+  "testsPassed": 1,
+  "grade": "D",
+  "valuationTests": {
+    "peDiscount": {
+      "name": "P/E Discount",
+      "passed": null,
+      "value": null,
+      "threshold": null,
+      "label": "Insufficient data"
+    },
+    "pbBelowBook": {
+      "name": "P/B Below Book",
+      "passed": true,
+      "value": 0.97,
+      "threshold": 1.5,
+      "label": "0.97x vs 1.5x"
+    },
+    "evEbitdaCheap": {
+      "name": "EV/EBITDA Cheap",
+      "passed": null,
+      "value": null,
+      "threshold": 10.0,
+      "label": "No EV/EBITDA data"
+    },
+    "fcfYieldStrong": {
+      "name": "FCF Yield Strong",
+      "passed": null,
+      "value": null,
+      "threshold": 5.0,
+      "label": "No FCF data"
+    },
+    "forwardPeRerate": {
+      "name": "Forward P/E Re-rating",
+      "passed": null,
+      "value": 13.46,
+      "threshold": null,
+      "label": "Insufficient data"
+    },
+    "profitabilityCheck": {
+      "name": "Profitability Check",
+      "passed": false,
+      "value": -4.35,
+      "threshold": 5.0,
+      "label": "Margin -4.3% / ROE -1.2%"
+    }
+  },
   "metrics": {
     "pe": null,
-    "sectorPe": 20.56,
-    "pb": 0.89,
+    "sectorPe": 20.96,
+    "pb": 0.97,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 12.39,
-    "dividendYield": 5.74,
+    "forwardPe": 13.46,
+    "dividendYield": 5.29,
     "revenueGrowth": 0.0,
     "profitMargin": -4.35,
     "operatingMargin": 29.54,
