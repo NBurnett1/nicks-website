@@ -1,40 +1,38 @@
 """
-Nick Knows Best — ASX Trading Engine v3 (SMC Edition)
+Nick Knows Best — ASX Trading Engine v3 (SMC + Allocate Edition)
 
+Two execution modes:
+
+━━━ SMC MODE (--live) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Smart Money Concepts + Valuation confluence trading system.
+All 7 SMC entry conditions must align before a position is opened.
+Best for clean trending setups with high technical confirmation.
 
-Strategy based on:
-  1. Technical Analysis — Market structure (HH/HL/LH/LL), trend identification
-  2. Multi-Timeframe — Weekly bias (trend) + daily entry confirmation
-  3. Market Structure — Break of Structure (BOS), Change of Character (CHoCH)
-  4. Liquidity Sweeps — Equal highs/lows, sweep + reversal patterns
-  5. Fair Value Gaps — Three-candle imbalance zones for optimal entries
-  6. Risk Management — Asymmetric R:R (min 3:1), 1-2% account risk per trade
+━━━ ALLOCATE MODE (--allocate) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Valuation-conviction-first portfolio allocation. No SMC gating.
 
-ENTRY CONDITIONS (ALL must align):
-  1. Undervalued by our valuation model (mispricing < -25%)
-  2. Weekly structure is bullish (HH/HL pattern) — multi-timeframe bias
-  3. Daily structure shows BOS or CHoCH confirming bullish shift
-  4. Recent liquidity sweep of lows (stop hunt) followed by reversal
-  5. Fair Value Gap present as entry zone
-  6. Volume confirms (above average)
-  7. Minimum 3:1 risk-reward ratio to fair value target
+Strategy:
+  • Grade A (5-6 tests) → 15% allocation — high conviction core
+  • Grade B (4 tests)   → 10% allocation — solid conviction
+  • Grade C (3 tests)   →  2% speculative stake (flat)
+  • Grade D (1-2 tests) →  2% speculative stake (flat)
+  • Grade F             →  skip entirely
 
-EXIT:
-  • Stop-loss behind the most recent swing low (structure-based, not fixed %)
-  • Trail stop to previous swing lows as new structure forms
-  • Partial profit at 3R, let remainder ride toward fair value
-  • Full exit at fair value target or on bearish CHoCH
+Technicals are used ONLY for stop-loss placement (behind swing low).
+Exit price = blended: 70% fair value + 30% technical target.
 
-POSITION SIZING:
-  • Risk 1.5% of portfolio value per trade
-  • Position size = risk amount / distance to stop-loss
-  • Max 8 concurrent positions, max 3 per sector
+EXIT (both modes):
+  • Stop-loss behind the most recent swing low (structure-based)
+  • Trail stop as new higher lows form
+  • Partial profit at 3R, remainder rides to fair value
+  • Full exit at fair value target or bearish CHoCH
 
 Usage:
-    python scripts/simulate_trades.py --live        # 30-min live session
-    python scripts/simulate_trades.py --maintain     # Update prices & exits only
-    python scripts/simulate_trades.py --reset        # Fresh start
+    python scripts/simulate_trades.py --live             # 30-min live SMC session
+    python scripts/simulate_trades.py --maintain         # Update prices & exits only
+    python scripts/simulate_trades.py --reset            # Fresh start
+    python scripts/simulate_trades.py --allocate         # Valuation-conviction allocation
+    python scripts/simulate_trades.py --allocate --reset # Reset + allocate immediately
 """
 
 import json
@@ -62,14 +60,26 @@ MAX_HOLD_DAYS = 40             # Max hold for losing positions
 PARTIAL_PROFIT_R = 3.0         # Take partial at 3R
 PARTIAL_SELL_RATIO = 0.50      # Sell 50% at partial profit target
 SWING_LOOKBACK = 5             # Bars to look back for swing detection
+ALLOCATE_DEFAULT_STOP_PCT = 0.06   # 6% fallback stop if no swing low found
+ALLOCATE_SPEC_STAKE = 0.02         # 2% flat stake for Grade C/D speculative tier
+ALLOCATE_TECHNICAL_TARGET_PCT = 0.08  # 8% technical upside assumption for blended exit
 
-# Grade-based portfolio allocation — higher conviction = bigger position
+# Grade-based portfolio allocation — higher conviction = bigger position (SMC mode)
 GRADE_ALLOCATION = {
     "A": 0.15,   # 15% of portfolio per Grade A stock
     "B": 0.10,   # 10%
     "C": 0.06,   #  6%
     "D": 0.03,   #  3%
     "F": 0.00,   #  0% — don't trade Grade F
+}
+
+# Allocate-mode allocation — conviction-grade driven, C/D are speculative
+ALLOCATE_GRADE_ALLOCATION = {
+    "A": 0.15,   # 15% — high conviction core
+    "B": 0.10,   # 10% — solid conviction
+    "C": ALLOCATE_SPEC_STAKE,   # 2% speculative
+    "D": ALLOCATE_SPEC_STAKE,   # 2% speculative
+    "F": 0.00,
 }
 
 # ETF candidates for SMC-only trading (bypass valuation filters)
@@ -707,6 +717,243 @@ def analyze_smc_entry(ticker, suffix, fair_value, portfolio_value, **kwargs):
 
 
 # ═══════════════════════════════════════════════════════════
+#  ALLOCATE MODE — Valuation-conviction entry (no SMC gating)
+# ═══════════════════════════════════════════════════════════
+
+def get_swing_low_stop(ticker, suffix):
+    """
+    Fetch recent daily data and find the most recent swing low for stop placement.
+    Returns stop_price. Falls back to ALLOCATE_DEFAULT_STOP_PCT below current price.
+    """
+    hist, current_price = get_stock_data(ticker, suffix, period="3mo")
+    if hist is None or current_price is None or current_price <= 0:
+        return None, None, None
+
+    highs = hist["High"].values
+    lows = hist["Low"].values
+    closes = hist["Close"].values
+
+    structure = detect_market_structure(highs, lows, closes)
+    swing_lows = structure.get("swingLows", [])
+
+    if swing_lows:
+        # Use the most recent identified swing low with a small buffer
+        stop_price = swing_lows[-1][1] * 0.995
+    else:
+        # Fallback: flat % below current price
+        stop_price = current_price * (1 - ALLOCATE_DEFAULT_STOP_PCT)
+
+    # Hard floor: stop can never be more than 15% below entry (circuit breaker)
+    stop_price = max(stop_price, current_price * 0.85)
+
+    return hist, round(current_price, 2), round(stop_price, 2)
+
+
+def calc_allocate_position(current_price, stop_price, portfolio_value, grade):
+    """
+    Calculate shares and cost for allocate-mode position.
+    Grade A/B: full grade allocation.
+    Grade C/D: flat 2% speculative stake.
+    Returns (shares, cost, alloc_pct).
+    """
+    alloc_pct = ALLOCATE_GRADE_ALLOCATION.get(grade, 0.0)
+    if alloc_pct == 0 or current_price <= 0:
+        return 0, 0.0, 0.0
+
+    target_value = portfolio_value * alloc_pct
+    shares = int(target_value / current_price)
+    cost = round(shares * current_price, 2)
+    return shares, cost, alloc_pct
+
+
+def build_blended_exit(current_price, stop_price, fair_value):
+    """
+    Compute a blended exit price:
+      70% fair value + 30% technical target (entry + ALLOCATE_TECHNICAL_TARGET_PCT)
+    This anchors the exit to fundamental value while acknowledging technical reality.
+    """
+    technical_target = current_price * (1 + ALLOCATE_TECHNICAL_TARGET_PCT)
+    blended = 0.70 * fair_value + 0.30 * technical_target
+    # Never below entry price + 3% (trivial upside would be a bad trade)
+    blended = max(blended, current_price * 1.03)
+    return round(blended, 2)
+
+
+def check_entries_allocate(portfolio, candidates, now):
+    """
+    Allocate-mode entry scan.
+
+    Grade A/B: invest at full grade allocation on valuation conviction.
+      • No SMC gating — valuation grade is the signal.
+      • Stop placed behind the most recent technical swing low.
+      • Max concurrent allocation per grade respected.
+
+    Grade C/D: flat 2% speculative stake each.
+      • Entered as long shots — lower conviction, lower stake.
+      • Same swing-low stop logic.
+
+    Grade F: skipped entirely.
+    """
+    entries = []
+    open_tickers = {p["ticker"] for p in portfolio["openPositions"]}
+    # Don't re-enter recently closed tickers (last 20 trades, not 30)
+    closed_tickers = {t["ticker"] for t in portfolio["tradeHistory"][-20:]}
+
+    # Sector caps still apply to prevent concentration
+    sector_counts = {}
+    for p in portfolio["openPositions"]:
+        s = p.get("sector", "Unknown")
+        sector_counts[s] = sector_counts.get(s, 0) + 1
+
+    # Track total allocated capital (% of portfolio) — safety cap at 95%
+    allocated_pct = sum(
+        p.get("allocationPct", 0) / 100 for p in portfolio["openPositions"]
+    )
+
+    print(f"  Scanning {len(candidates)} candidates for allocate-mode entries...")
+    print(f"  Current allocation: {allocated_pct*100:.1f}% | Cash: A${portfolio['cash']:,.2f}")
+
+    for c in candidates:
+        ticker = c["ticker"]
+        grade = c.get("grade", "F")
+
+        # Skip Grade F entirely
+        if grade == "F":
+            continue
+
+        # Skip ETFs in allocate mode — those are pure SMC plays
+        if c.get("isETF"):
+            continue
+
+        if ticker in open_tickers or ticker in closed_tickers:
+            continue
+
+        # Safety: don't allocate more than 95% of portfolio
+        if allocated_pct >= 0.95:
+            print("    Portfolio fully allocated (>95%). Stopping scan.")
+            break
+
+        sector = c.get("sector", "Unknown")
+        if sector_counts.get(sector, 0) >= MAX_SECTOR_POSITIONS:
+            print(f"    SKIP  {ticker:8s}  sector cap reached ({sector})")
+            continue
+
+        # Get technicals for stop-loss placement only
+        hist, current_price, stop_price = get_swing_low_stop(ticker, c["suffix"])
+        if current_price is None:
+            print(f"    SKIP  {ticker:8s}  no price data")
+            continue
+
+        # Basic sanity: stop must be below entry
+        if stop_price >= current_price:
+            stop_price = current_price * (1 - ALLOCATE_DEFAULT_STOP_PCT)
+
+        risk_per_share = current_price - stop_price
+        fair_value = c["fairValue"]
+
+        # Fair value must still be above current price (don't buy above fair value)
+        if fair_value <= current_price:
+            print(f"    SKIP  {ticker:8s}  already at/above fair value ({fair_value:.2f} vs {current_price:.2f})")
+            continue
+
+        # Calculate position size based on grade
+        shares, cost, alloc_pct = calc_allocate_position(
+            current_price, stop_price, portfolio["totalValue"], grade
+        )
+
+        if shares <= 0 or cost < MIN_TRADE_VALUE:
+            print(f"    SKIP  {ticker:8s}  position too small (${cost:.0f})")
+            continue
+
+        # Check we have enough cash
+        if cost > portfolio["cash"]:
+            # Try to buy as many as we can afford
+            shares = int(portfolio["cash"] / current_price)
+            cost = round(shares * current_price, 2)
+            if shares <= 0 or cost < MIN_TRADE_VALUE:
+                print(f"    SKIP  {ticker:8s}  insufficient cash")
+                continue
+
+        # Blended exit price
+        exit_price = build_blended_exit(current_price, stop_price, fair_value)
+
+        # Determine tier label for logging
+        if grade in ("A", "B"):
+            tier = "CORE"
+        else:
+            tier = "SPEC"
+
+        # Build position record
+        position = {
+            "ticker": ticker,
+            "exchange": "ASX",
+            "name": c["name"],
+            "sector": sector,
+            "suffix": c["suffix"],
+            "grade": grade,
+            "tier": tier,
+            "allocationPct": round(alloc_pct * 100, 1),
+            "entryPrice": round(current_price, 2),
+            "currentPrice": round(current_price, 2),
+            "targetPrice": round(fair_value, 2),
+            "exitPrice": exit_price,
+            "stopPrice": round(stop_price, 2),
+            "initialStop": round(stop_price, 2),
+            "highestPrice": round(current_price, 2),
+            "fairValue": round(fair_value, 2),
+            "mispricing": c["mispricing"],
+            "testsPassed": c.get("testsPassed", 0),
+            "shares": shares,
+            "invested": cost,
+            "entryDate": now.isoformat(),
+            "pnl": 0.0,
+            "pnlPct": 0.0,
+            "rMultiple": 0.0,
+            "riskPerShare": round(risk_per_share, 2),
+            "partialTaken": False,
+            "mode": "allocate",
+            "smc": None,  # No SMC analysis in allocate mode
+        }
+
+        portfolio["openPositions"].append(position)
+        portfolio["cash"] -= cost
+        open_tickers.add(ticker)
+        sector_counts[sector] = sector_counts.get(sector, 0) + 1
+        allocated_pct += alloc_pct
+
+        entry_record = {
+            "ticker": ticker,
+            "exchange": "ASX",
+            "name": c["name"],
+            "sector": sector,
+            "side": "BUY",
+            "grade": grade,
+            "tier": tier,
+            "allocationPct": round(alloc_pct * 100, 1),
+            "entryPrice": round(current_price, 2),
+            "exitPrice": exit_price,
+            "shares": shares,
+            "invested": cost,
+            "targetPrice": round(fair_value, 2),
+            "stopPrice": round(stop_price, 2),
+            "mispricing": c["mispricing"],
+            "testsPassed": c.get("testsPassed", 0),
+            "entryDate": now.isoformat(),
+            "mode": "allocate",
+        }
+        entries.append(entry_record)
+
+        print(
+            f"    ENTRY [{tier}] {ticker:8s} [Grade {grade}] @ A${current_price:.2f} "
+            f"x {shares} = A${cost:.2f}  ({alloc_pct*100:.0f}% alloc)  "
+            f"Stop: A${stop_price:.2f}  Exit: A${exit_price:.2f}  "
+            f"FV: A${fair_value:.2f}  Tests: {c.get('testsPassed', 0)}/6"
+        )
+
+    return entries
+
+
+# ═══════════════════════════════════════════════════════════
 #  EXIT LOGIC
 # ═══════════════════════════════════════════════════════════
 
@@ -1040,18 +1287,21 @@ def update_stats(portfolio):
 # ═══════════════════════════════════════════════════════════
 
 def main():
-    parser = argparse.ArgumentParser(description="Nick Knows Best — ASX Trading Engine v3 (SMC)")
+    parser = argparse.ArgumentParser(description="Nick Knows Best — ASX Trading Engine v3 (SMC + Allocate)")
     parser.add_argument("--reset", action="store_true", help="Reset portfolio to A$10,000")
     parser.add_argument("--live", action="store_true",
-                        help="Live trading session: 30 min, 1-min price tracking")
+                        help="Live trading session: 30 min, 1-min price tracking (SMC mode)")
     parser.add_argument("--maintain", action="store_true",
                         help="Maintain mode: update prices & check exits only")
+    parser.add_argument("--allocate", action="store_true",
+                        help="Allocate mode: invest directly into Grade A/B stocks on valuation "
+                             "conviction; Grade C/D get a flat 2% speculative stake")
     parser.add_argument("--cycles", type=int, default=30,
                         help="Number of 1-min cycles in live mode (default: 30)")
     args = parser.parse_args()
 
-    # Default to maintain mode
-    if not args.live and not args.maintain and not args.reset:
+    # Default to maintain mode if nothing else is specified
+    if not args.live and not args.maintain and not args.reset and not args.allocate:
         args.maintain = True
 
     project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -1137,6 +1387,74 @@ def main():
 
         print(f"\n{'=' * 60}")
         print(f"  🏁 LIVE SESSION COMPLETE — {total_cycles} cycles")
+
+    elif args.allocate:
+        # ═══════════════════════════════════════════
+        #  ALLOCATE MODE — valuation-conviction entry
+        # ═══════════════════════════════════════════
+        print("\n" + "=" * 60)
+        print("  🎯 ALLOCATE MODE — Valuation-Conviction Portfolio")
+        print(f"  Grade A → 15% | Grade B → 10% | Grade C/D → 2% spec")
+        print(f"  Stop-loss: swing low | Exit: 70% FV + 30% technical")
+        print(f"  Session: {now.strftime('%Y-%m-%d %H:%M UTC')}")
+        print("=" * 60)
+
+        # First: check exits on any existing positions
+        print("\n  Checking exits on existing positions...")
+        exits = check_exits(portfolio, now)
+        for exit_trade in exits:
+            portfolio["tradeHistory"].append(exit_trade)
+        if exits:
+            for e in exits:
+                print(f"    🔴 EXIT {e['ticker']} — {e.get('exitReason', 'unknown')}")
+        else:
+            print("    No exits triggered")
+
+        # Refresh open position prices before allocating
+        print("\n  Refreshing open position prices...")
+        for pos in portfolio["openPositions"]:
+            hist, price = get_stock_data(pos["ticker"], pos.get("suffix", ".AX"), period="3mo")
+            if price:
+                pos["currentPrice"] = round(price, 2)
+                pos["pnl"] = round((price - pos["entryPrice"]) * pos["shares"], 2)
+                pos["pnlPct"] = round((price / pos["entryPrice"] - 1) * 100, 2)
+                highest = max(price, pos.get("highestPrice", price))
+                pos["highestPrice"] = round(highest, 2)
+                new_stop = get_structure_stop(pos, hist)
+                pos["stopPrice"] = max(new_stop, pos.get("stopPrice", 0))
+
+        update_stats(portfolio)
+
+        # Now load candidates and run allocate entries
+        print("\n  Loading candidates...")
+        candidates = load_candidates(data_dir)
+        if not candidates:
+            print("  ⚠ No candidates found. Run the data pipeline first.")
+        else:
+            grade_counts = {}
+            for c in candidates:
+                g = c.get("grade", "F")
+                grade_counts[g] = grade_counts.get(g, 0) + 1
+            print(f"  Candidate grades: " + "  ".join(
+                f"{g}:{n}" for g, n in sorted(grade_counts.items())
+            ))
+
+            print("\n  Running allocate-mode entry scan...")
+            entries = check_entries_allocate(portfolio, candidates, now)
+            for entry in entries:
+                portfolio["tradeHistory"].append(entry)
+
+            if not entries:
+                print("\n  No new allocate entries opened.")
+            else:
+                print(f"\n  ✅ Opened {len(entries)} new position(s)")
+
+        update_stats(portfolio)
+        if len(portfolio["tradeHistory"]) > 200:
+            portfolio["tradeHistory"] = portfolio["tradeHistory"][-200:]
+
+        with open(portfolio_path, "w") as f:
+            json.dump(portfolio, f, indent=2)
 
     else:
         # ═══════════════════════════════════════════
