@@ -1,16 +1,12 @@
 {
   "ticker": "NST",
   "name": "NTH STAR FPO [NST]",
-  "price": 24.47,
+  "price": 24.48,
   "valuationScore": 0.6,
   "marketCap": "35.0B",
   "sector": "Materials",
   "domain": "nsrltd.com",
   "chartData": [
-    {
-      "date": "2025-04-13",
-      "price": 20.91
-    },
     {
       "date": "2025-04-20",
       "price": 21.84
@@ -217,7 +213,7 @@
     },
     {
       "date": "2026-04-12",
-      "price": 24.47
+      "price": 24.48
     }
   ],
   "testsPassed": 3,
@@ -226,9 +222,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 20.91,
-      "threshold": 17.78,
-      "label": "20.9x vs 17.8x sector"
+      "value": 20.75,
+      "threshold": 17.63,
+      "label": "20.7x vs 17.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -254,9 +250,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 11.15,
-      "threshold": 20.91,
-      "label": "Fwd 11.1x vs Trail 20.9x"
+      "value": 11.05,
+      "threshold": 20.75,
+      "label": "Fwd 11.0x vs Trail 20.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,12 +263,12 @@
     }
   },
   "metrics": {
-    "pe": 20.91,
-    "sectorPe": 20.91,
+    "pe": 20.75,
+    "sectorPe": 20.75,
     "pb": 2.3,
     "evEbitda": 9.57,
     "fcfYield": 0.82,
-    "forwardPe": 11.15,
+    "forwardPe": 11.05,
     "dividendYield": 2.04,
     "revenueGrowth": 19.0,
     "profitMargin": 22.24,

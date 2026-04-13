@@ -1,16 +1,12 @@
 {
   "ticker": "CPU",
   "name": "CSHARE FPO [CPU]",
-  "price": 29.19,
+  "price": 29.28,
   "valuationScore": 9.0,
   "marketCap": "16.9B",
   "sector": "Financial Services",
   "domain": "computershare.com",
   "chartData": [
-    {
-      "date": "2025-04-13",
-      "price": 35.9
-    },
     {
       "date": "2025-04-20",
       "price": 37.08
@@ -217,7 +213,7 @@
     },
     {
       "date": "2026-04-12",
-      "price": 29.19
+      "price": 29.28
     }
   ],
   "testsPassed": 2,
@@ -226,28 +222,28 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 20.13,
-      "threshold": 15.45,
-      "label": "20.1x vs 15.4x sector"
+      "value": 20.05,
+      "threshold": 15.51,
+      "label": "20.1x vs 15.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 5.2,
+      "value": 5.33,
       "threshold": 1.5,
-      "label": "5.20x vs 1.5x"
+      "label": "5.33x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 16.99,
+      "value": 17.04,
       "threshold": 10.0,
       "label": "17.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.07,
+      "value": 4.06,
       "threshold": 5.0,
       "label": "4.1% vs 5%"
     },
@@ -255,7 +251,7 @@
       "name": "Forward P/E Re-rating",
       "passed": true,
       "value": 14.04,
-      "threshold": 20.13,
+      "threshold": 20.05,
       "label": "Fwd 14.0x vs Trail 20.1x"
     },
     "profitabilityCheck": {
@@ -267,13 +263,13 @@
     }
   },
   "metrics": {
-    "pe": 20.13,
-    "sectorPe": 18.18,
-    "pb": 5.2,
-    "evEbitda": 16.99,
-    "fcfYield": 4.07,
+    "pe": 20.05,
+    "sectorPe": 18.25,
+    "pb": 5.33,
+    "evEbitda": 17.04,
+    "fcfYield": 4.06,
     "forwardPe": 14.04,
-    "dividendYield": 3.77,
+    "dividendYield": 3.76,
     "revenueGrowth": 4.6,
     "profitMargin": 18.81,
     "operatingMargin": 26.79,

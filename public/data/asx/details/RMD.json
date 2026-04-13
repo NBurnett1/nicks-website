@@ -1,16 +1,12 @@
 {
   "ticker": "RMD",
   "name": "RESMED CDI 10:1 [RMD]",
-  "price": 32.68,
-  "valuationScore": -6.3,
-  "marketCap": "47.6B",
+  "price": 32.28,
+  "valuationScore": -6.4,
+  "marketCap": "47.0B",
   "sector": "Healthcare",
   "domain": "resmed.com",
   "chartData": [
-    {
-      "date": "2025-04-13",
-      "price": 34.01
-    },
     {
       "date": "2025-04-20",
       "price": 33.41
@@ -217,7 +213,7 @@
     },
     {
       "date": "2026-04-12",
-      "price": 32.68
+      "price": 32.28
     }
   ],
   "testsPassed": 4,
@@ -226,37 +222,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 22.85,
-      "threshold": 19.43,
-      "label": "22.9x vs 19.4x sector"
+      "value": 22.42,
+      "threshold": 19.2,
+      "label": "22.4x vs 19.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.52,
+      "value": 0.51,
       "threshold": 1.5,
-      "label": "0.52x vs 1.5x"
+      "label": "0.51x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 2.07,
+      "value": 2.04,
       "threshold": 10.0,
-      "label": "2.1x vs 10x"
+      "label": "2.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.98,
+      "value": 3.01,
       "threshold": 5.0,
       "label": "3.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 18.57,
-      "threshold": 22.85,
-      "label": "Fwd 18.6x vs Trail 22.9x"
+      "value": 18.25,
+      "threshold": 22.42,
+      "label": "Fwd 18.3x vs Trail 22.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,13 +263,13 @@
     }
   },
   "metrics": {
-    "pe": 22.85,
-    "sectorPe": 22.85,
-    "pb": 0.52,
-    "evEbitda": 2.07,
-    "fcfYield": 2.98,
-    "forwardPe": 18.57,
-    "dividendYield": 1.06,
+    "pe": 22.42,
+    "sectorPe": 22.58,
+    "pb": 0.51,
+    "evEbitda": 2.04,
+    "fcfYield": 3.01,
+    "forwardPe": 18.25,
+    "dividendYield": 1.08,
     "revenueGrowth": 11.0,
     "profitMargin": 27.53,
     "operatingMargin": 35.16,

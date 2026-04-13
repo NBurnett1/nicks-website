@@ -1,16 +1,12 @@
 {
   "ticker": "BXB",
   "name": "BRAMB LTD FPO [BXB]",
-  "price": 23.52,
-  "valuationScore": 6.2,
-  "marketCap": "31.8B",
+  "price": 23.27,
+  "valuationScore": 6.0,
+  "marketCap": "31.4B",
   "sector": "Industrials",
   "domain": "brambles.com",
   "chartData": [
-    {
-      "date": "2025-04-13",
-      "price": 20.35
-    },
     {
       "date": "2025-04-20",
       "price": 20.07
@@ -217,7 +213,7 @@
     },
     {
       "date": "2026-04-12",
-      "price": 23.52
+      "price": 23.27
     }
   ],
   "testsPassed": 3,
@@ -226,37 +222,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 24.76,
-      "threshold": 28.2,
-      "label": "24.8x vs 28.2x sector"
+      "value": 24.49,
+      "threshold": 27.41,
+      "label": "24.5x vs 27.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 6.47,
+      "value": 6.4,
       "threshold": 1.5,
-      "label": "6.47x vs 1.5x"
+      "label": "6.40x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 16.73,
+      "value": 16.57,
       "threshold": 10.0,
-      "label": "16.7x vs 10x"
+      "label": "16.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.24,
+      "value": 2.26,
       "threshold": 5.0,
-      "label": "2.2% vs 5%"
+      "label": "2.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 20.66,
-      "threshold": 24.76,
-      "label": "Fwd 20.7x vs Trail 24.8x"
+      "value": 20.43,
+      "threshold": 24.49,
+      "label": "Fwd 20.4x vs Trail 24.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,13 +263,13 @@
     }
   },
   "metrics": {
-    "pe": 24.76,
-    "sectorPe": 33.18,
-    "pb": 6.47,
-    "evEbitda": 16.73,
-    "fcfYield": 2.24,
-    "forwardPe": 20.66,
-    "dividendYield": 2.75,
+    "pe": 24.49,
+    "sectorPe": 32.25,
+    "pb": 6.4,
+    "evEbitda": 16.57,
+    "fcfYield": 2.26,
+    "forwardPe": 20.43,
+    "dividendYield": 2.78,
     "revenueGrowth": 5.0,
     "profitMargin": 13.7,
     "operatingMargin": 21.77,

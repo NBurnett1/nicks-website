@@ -1,16 +1,12 @@
 {
   "ticker": "FLT",
   "name": "FLIGHT CTR FPO [FLT]",
-  "price": 11.42,
-  "valuationScore": 0.7,
+  "price": 11.4,
+  "valuationScore": 0.9,
   "marketCap": "2.4B",
   "sector": "Consumer Cyclical",
   "domain": "fctgl.com",
   "chartData": [
-    {
-      "date": "2025-04-13",
-      "price": 12.34
-    },
     {
       "date": "2025-04-20",
       "price": 11.83
@@ -217,7 +213,7 @@
     },
     {
       "date": "2026-04-12",
-      "price": 11.42
+      "price": 11.4
     }
   ],
   "testsPassed": 2,
@@ -226,9 +222,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 22.84,
-      "threshold": 21.34,
-      "label": "22.8x vs 21.3x sector"
+      "value": 22.8,
+      "threshold": 21.21,
+      "label": "22.8x vs 21.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,23 +236,23 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 12.26,
+      "value": 12.24,
       "threshold": 10.0,
-      "label": "12.3x vs 10x"
+      "label": "12.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 10.74,
+      "value": 10.76,
       "threshold": 5.0,
-      "label": "10.7% vs 5%"
+      "label": "10.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 9.06,
-      "threshold": 22.84,
-      "label": "Fwd 9.1x vs Trail 22.8x"
+      "value": 9.05,
+      "threshold": 22.8,
+      "label": "Fwd 9.0x vs Trail 22.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,13 +263,13 @@
     }
   },
   "metrics": {
-    "pe": 22.84,
-    "sectorPe": 25.11,
+    "pe": 22.8,
+    "sectorPe": 24.95,
     "pb": 2.04,
-    "evEbitda": 12.26,
-    "fcfYield": 10.74,
-    "forwardPe": 9.06,
-    "dividendYield": 3.59,
+    "evEbitda": 12.24,
+    "fcfYield": 10.76,
+    "forwardPe": 9.05,
+    "dividendYield": 3.6,
     "revenueGrowth": 6.1,
     "profitMargin": 3.82,
     "operatingMargin": 6.63,

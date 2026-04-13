@@ -1,16 +1,12 @@
 {
   "ticker": "ALL",
   "name": "ARISTOCRAT FPO [ALL]",
-  "price": 47.41,
-  "valuationScore": 3.9,
+  "price": 47.47,
+  "valuationScore": 4.0,
   "marketCap": "28.8B",
   "sector": "Consumer Discretionary",
   "domain": "aristocrat.com",
   "chartData": [
-    {
-      "date": "2025-04-13",
-      "price": 61.93
-    },
     {
       "date": "2025-04-20",
       "price": 61.49
@@ -217,7 +213,7 @@
     },
     {
       "date": "2026-04-12",
-      "price": 47.41
+      "price": 47.47
     }
   ],
   "testsPassed": 2,
@@ -226,36 +222,36 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 25.08,
-      "threshold": 15.48,
-      "label": "25.1x vs 15.5x sector"
+      "value": 25.12,
+      "threshold": 15.38,
+      "label": "25.1x vs 15.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.46,
+      "value": 4.47,
       "threshold": 1.5,
-      "label": "4.46x vs 1.5x"
+      "label": "4.47x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 12.83,
+      "value": 12.84,
       "threshold": 10.0,
       "label": "12.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.38,
+      "value": 4.37,
       "threshold": 5.0,
       "label": "4.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.21,
-      "threshold": 25.08,
+      "value": 16.23,
+      "threshold": 25.12,
       "label": "Fwd 16.2x vs Trail 25.1x"
     },
     "profitabilityCheck": {
@@ -267,12 +263,12 @@
     }
   },
   "metrics": {
-    "pe": 25.08,
-    "sectorPe": 18.22,
-    "pb": 4.46,
-    "evEbitda": 12.83,
-    "fcfYield": 4.38,
-    "forwardPe": 16.21,
+    "pe": 25.12,
+    "sectorPe": 18.09,
+    "pb": 4.47,
+    "evEbitda": 12.84,
+    "fcfYield": 4.37,
+    "forwardPe": 16.23,
     "dividendYield": 1.96,
     "revenueGrowth": -2.1,
     "profitMargin": 26.05,

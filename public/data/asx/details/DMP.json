@@ -1,16 +1,12 @@
 {
   "ticker": "DMP",
   "name": "DOMINOS FPO [DMP]",
-  "price": 17.9,
-  "valuationScore": 4.4,
+  "price": 17.8,
+  "valuationScore": 4.5,
   "marketCap": "1.7B",
   "sector": "Consumer Cyclical",
   "domain": "dominos.com.au",
   "chartData": [
-    {
-      "date": "2025-04-13",
-      "price": 26.38
-    },
     {
       "date": "2025-04-20",
       "price": 25.0
@@ -217,7 +213,7 @@
     },
     {
       "date": "2026-04-12",
-      "price": 17.9
+      "price": 17.8
     }
   ],
   "testsPassed": 2,
@@ -226,37 +222,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 27.97,
-      "threshold": 21.34,
-      "label": "28.0x vs 21.3x sector"
+      "value": 27.81,
+      "threshold": 21.21,
+      "label": "27.8x vs 21.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.48,
+      "value": 2.47,
       "threshold": 1.5,
-      "label": "2.48x vs 1.5x"
+      "label": "2.47x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 14.02,
+      "value": 13.97,
       "threshold": 10.0,
       "label": "14.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 7.22,
+      "value": 7.26,
       "threshold": 5.0,
-      "label": "7.2% vs 5%"
+      "label": "7.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.74,
-      "threshold": 27.97,
-      "label": "Fwd 12.7x vs Trail 28.0x"
+      "value": 12.67,
+      "threshold": 27.81,
+      "label": "Fwd 12.7x vs Trail 27.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,13 +263,13 @@
     }
   },
   "metrics": {
-    "pe": 27.97,
-    "sectorPe": 25.11,
-    "pb": 2.48,
-    "evEbitda": 14.02,
-    "fcfYield": 7.22,
-    "forwardPe": 12.74,
-    "dividendYield": 2.6,
+    "pe": 27.81,
+    "sectorPe": 24.95,
+    "pb": 2.47,
+    "evEbitda": 13.97,
+    "fcfYield": 7.26,
+    "forwardPe": 12.67,
+    "dividendYield": 2.61,
     "revenueGrowth": -5.5,
     "profitMargin": 2.65,
     "operatingMargin": 8.27,
