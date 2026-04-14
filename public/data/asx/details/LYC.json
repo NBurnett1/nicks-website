@@ -1,9 +1,9 @@
 {
   "ticker": "LYC",
   "name": "LYNAS FPO [LYC]",
-  "price": 21.77,
+  "price": 21.49,
   "valuationScore": 60.0,
-  "marketCap": "21.9B",
+  "marketCap": "21.6B",
   "sector": "Basic Materials",
   "domain": "lynasrareearths.com",
   "chartData": [
@@ -214,6 +214,10 @@
     {
       "date": "2026-04-12",
       "price": 21.77
+    },
+    {
+      "date": "2026-04-19",
+      "price": 21.49
     }
   ],
   "testsPassed": 1,
@@ -222,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 272.12,
-      "threshold": 42.59,
-      "label": "272.1x vs 42.6x sector"
+      "value": 268.62,
+      "threshold": 41.58,
+      "label": "268.6x vs 41.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 6.51,
+      "value": 6.43,
       "threshold": 1.5,
-      "label": "6.51x vs 1.5x"
+      "label": "6.43x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 164.46,
+      "value": 162.26,
       "threshold": 10.0,
-      "label": "164.5x vs 10x"
+      "label": "162.3x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -1.39,
+      "value": -1.41,
       "threshold": 5.0,
       "label": "-1.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 31.4,
-      "threshold": 272.12,
-      "label": "Fwd 31.4x vs Trail 272.1x"
+      "value": 31.0,
+      "threshold": 268.62,
+      "label": "Fwd 31.0x vs Trail 268.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -263,12 +267,12 @@
     }
   },
   "metrics": {
-    "pe": 272.12,
-    "sectorPe": 50.11,
-    "pb": 6.51,
-    "evEbitda": 164.46,
-    "fcfYield": -1.39,
-    "forwardPe": 31.4,
+    "pe": 268.62,
+    "sectorPe": 48.91,
+    "pb": 6.43,
+    "evEbitda": 162.26,
+    "fcfYield": -1.41,
+    "forwardPe": 31.0,
     "dividendYield": null,
     "revenueGrowth": 62.7,
     "profitMargin": 11.5,

@@ -1,8 +1,8 @@
 {
   "ticker": "DMP",
   "name": "DOMINOS FPO [DMP]",
-  "price": 17.8,
-  "valuationScore": 4.5,
+  "price": 17.75,
+  "valuationScore": 4.6,
   "marketCap": "1.7B",
   "sector": "Consumer Cyclical",
   "domain": "dominos.com.au",
@@ -214,6 +214,10 @@
     {
       "date": "2026-04-12",
       "price": 17.8
+    },
+    {
+      "date": "2026-04-19",
+      "price": 17.75
     }
   ],
   "testsPassed": 2,
@@ -222,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 27.81,
-      "threshold": 21.21,
-      "label": "27.8x vs 21.2x sector"
+      "value": 27.73,
+      "threshold": 21.03,
+      "label": "27.7x vs 21.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.47,
+      "value": 2.46,
       "threshold": 1.5,
-      "label": "2.47x vs 1.5x"
+      "label": "2.46x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 13.97,
+      "value": 13.95,
       "threshold": 10.0,
-      "label": "14.0x vs 10x"
+      "label": "13.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 7.26,
+      "value": 7.28,
       "threshold": 5.0,
       "label": "7.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.67,
-      "threshold": 27.81,
-      "label": "Fwd 12.7x vs Trail 27.8x"
+      "value": 12.64,
+      "threshold": 27.73,
+      "label": "Fwd 12.6x vs Trail 27.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -263,13 +267,13 @@
     }
   },
   "metrics": {
-    "pe": 27.81,
-    "sectorPe": 24.95,
-    "pb": 2.47,
-    "evEbitda": 13.97,
-    "fcfYield": 7.26,
-    "forwardPe": 12.67,
-    "dividendYield": 2.61,
+    "pe": 27.73,
+    "sectorPe": 24.74,
+    "pb": 2.46,
+    "evEbitda": 13.95,
+    "fcfYield": 7.28,
+    "forwardPe": 12.64,
+    "dividendYield": 2.62,
     "revenueGrowth": -5.5,
     "profitMargin": 2.65,
     "operatingMargin": 8.27,

@@ -1,8 +1,8 @@
 {
   "ticker": "EDV",
   "name": "ENDEAVOUR FPO [EDV]",
-  "price": 3.25,
-  "valuationScore": -7.9,
+  "price": 3.22,
+  "valuationScore": -8.0,
   "marketCap": "5.8B",
   "sector": "Consumer Defensive",
   "domain": "endeavourgroup.com.au",
@@ -214,6 +214,10 @@
     {
       "date": "2026-04-12",
       "price": 3.25
+    },
+    {
+      "date": "2026-04-19",
+      "price": 3.22
     }
   ],
   "testsPassed": 5,
@@ -222,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 15.48,
-      "threshold": 18.65,
-      "label": "15.5x vs 18.6x sector"
+      "value": 15.33,
+      "threshold": 18.87,
+      "label": "15.3x vs 18.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.46,
+      "value": 1.45,
       "threshold": 1.5,
-      "label": "1.46x vs 1.5x"
+      "label": "1.45x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 10.0,
+      "value": 9.95,
       "threshold": 10.0,
-      "label": "10.0x vs 10x"
+      "label": "9.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 9.99,
+      "value": 10.08,
       "threshold": 5.0,
-      "label": "10.0% vs 5%"
+      "label": "10.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 13.97,
-      "threshold": 15.48,
-      "label": "Fwd 14.0x vs Trail 15.5x"
+      "value": 13.84,
+      "threshold": 15.33,
+      "label": "Fwd 13.8x vs Trail 15.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -263,13 +267,13 @@
     }
   },
   "metrics": {
-    "pe": 15.48,
-    "sectorPe": 21.94,
-    "pb": 1.46,
-    "evEbitda": 10.0,
-    "fcfYield": 9.99,
-    "forwardPe": 13.97,
-    "dividendYield": 5.26,
+    "pe": 15.33,
+    "sectorPe": 22.2,
+    "pb": 1.45,
+    "evEbitda": 9.95,
+    "fcfYield": 10.08,
+    "forwardPe": 13.84,
+    "dividendYield": 5.31,
     "revenueGrowth": 0.9,
     "profitMargin": 3.09,
     "operatingMargin": 7.75,

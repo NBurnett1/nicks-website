@@ -1,9 +1,9 @@
 {
   "ticker": "IPH",
   "name": "IPHLIMITED FPO [IPH]",
-  "price": 3.46,
+  "price": 3.42,
   "valuationScore": -11.8,
-  "marketCap": "906M",
+  "marketCap": "895M",
   "sector": "Industrials",
   "domain": "iphltd.com.au",
   "chartData": [
@@ -214,6 +214,10 @@
     {
       "date": "2026-04-12",
       "price": 3.46
+    },
+    {
+      "date": "2026-04-19",
+      "price": 3.42
     }
   ],
   "testsPassed": 6,
@@ -222,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 12.36,
-      "threshold": 27.41,
-      "label": "12.4x vs 27.4x sector"
+      "value": 12.21,
+      "threshold": 26.62,
+      "label": "12.2x vs 26.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.33,
+      "value": 1.32,
       "threshold": 1.5,
-      "label": "1.33x vs 1.5x"
+      "label": "1.32x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 6.95,
+      "value": 6.89,
       "threshold": 10.0,
       "label": "6.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 14.44,
+      "value": 14.61,
       "threshold": 5.0,
-      "label": "14.4% vs 5%"
+      "label": "14.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 7.08,
-      "threshold": 12.36,
-      "label": "Fwd 7.1x vs Trail 12.4x"
+      "value": 7.0,
+      "threshold": 12.21,
+      "label": "Fwd 7.0x vs Trail 12.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -263,13 +267,13 @@
     }
   },
   "metrics": {
-    "pe": 12.36,
-    "sectorPe": 32.25,
-    "pb": 1.33,
-    "evEbitda": 6.95,
-    "fcfYield": 14.44,
-    "forwardPe": 7.08,
-    "dividendYield": 10.98,
+    "pe": 12.21,
+    "sectorPe": 31.32,
+    "pb": 1.32,
+    "evEbitda": 6.89,
+    "fcfYield": 14.61,
+    "forwardPe": 7.0,
+    "dividendYield": 11.11,
     "revenueGrowth": 6.5,
     "profitMargin": 9.98,
     "operatingMargin": 18.74,

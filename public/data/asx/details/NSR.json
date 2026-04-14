@@ -1,7 +1,7 @@
 {
   "ticker": "NSR",
   "name": "NSREIT STAPLED [NSR]",
-  "price": 2.79,
+  "price": 2.78,
   "valuationScore": 60.0,
   "marketCap": "3.9B",
   "sector": "Real Estate",
@@ -214,6 +214,10 @@
     {
       "date": "2026-04-12",
       "price": 2.79
+    },
+    {
+      "date": "2026-04-19",
+      "price": 2.78
     }
   ],
   "testsPassed": 1,
@@ -222,23 +226,23 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 279.0,
-      "threshold": 10.07,
-      "label": "279.0x vs 10.1x sector"
+      "value": 278.0,
+      "threshold": 10.06,
+      "label": "278.0x vs 10.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 10.98,
+      "value": 10.94,
       "threshold": 1.5,
-      "label": "10.98x vs 1.5x"
+      "label": "10.94x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 38.66,
+      "value": 38.6,
       "threshold": 10.0,
-      "label": "38.7x vs 10x"
+      "label": "38.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
@@ -250,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 22.09,
-      "threshold": 279.0,
-      "label": "Fwd 22.1x vs Trail 279.0x"
+      "value": 22.01,
+      "threshold": 278.0,
+      "label": "Fwd 22.0x vs Trail 278.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -263,13 +267,13 @@
     }
   },
   "metrics": {
-    "pe": 279.0,
+    "pe": 278.0,
     "sectorPe": 11.84,
-    "pb": 10.98,
-    "evEbitda": 38.66,
+    "pb": 10.94,
+    "evEbitda": 38.6,
     "fcfYield": 0.96,
-    "forwardPe": 22.09,
-    "dividendYield": 4.3,
+    "forwardPe": 22.01,
+    "dividendYield": 4.32,
     "revenueGrowth": 14.6,
     "profitMargin": 8.4,
     "operatingMargin": 58.3,

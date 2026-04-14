@@ -1,8 +1,8 @@
 {
   "ticker": "MND",
   "name": "MONADEL FPO [MND]",
-  "price": 29.24,
-  "valuationScore": 3.6,
+  "price": 28.82,
+  "valuationScore": 3.7,
   "marketCap": "2.9B",
   "sector": "Industrials",
   "domain": "monadelphous.com.au",
@@ -214,6 +214,10 @@
     {
       "date": "2026-04-12",
       "price": 29.24
+    },
+    {
+      "date": "2026-04-19",
+      "price": 28.82
     }
   ],
   "testsPassed": 2,
@@ -222,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 27.58,
-      "threshold": 27.41,
-      "label": "27.6x vs 27.4x sector"
+      "value": 27.19,
+      "threshold": 26.62,
+      "label": "27.2x vs 26.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 5.33,
+      "value": 5.25,
       "threshold": 1.5,
-      "label": "5.33x vs 1.5x"
+      "label": "5.25x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 16.71,
+      "value": 16.45,
       "threshold": 10.0,
-      "label": "16.7x vs 10x"
+      "label": "16.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.25,
+      "value": 5.32,
       "threshold": 5.0,
-      "label": "5.2% vs 5%"
+      "label": "5.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 23.56,
-      "threshold": 27.58,
-      "label": "Fwd 23.6x vs Trail 27.6x"
+      "value": 23.22,
+      "threshold": 27.19,
+      "label": "Fwd 23.2x vs Trail 27.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -263,13 +267,13 @@
     }
   },
   "metrics": {
-    "pe": 27.58,
-    "sectorPe": 32.25,
-    "pb": 5.33,
-    "evEbitda": 16.71,
-    "fcfYield": 5.25,
-    "forwardPe": 23.56,
-    "dividendYield": 3.35,
+    "pe": 27.19,
+    "sectorPe": 31.32,
+    "pb": 5.25,
+    "evEbitda": 16.45,
+    "fcfYield": 5.32,
+    "forwardPe": 23.22,
+    "dividendYield": 3.4,
     "revenueGrowth": 40.6,
     "profitMargin": 4.11,
     "operatingMargin": 6.05,

@@ -1,8 +1,8 @@
 {
   "ticker": "SDF",
   "name": "STEADFAST FPO [SDF]",
-  "price": 4.27,
-  "valuationScore": -8.0,
+  "price": 4.22,
+  "valuationScore": -8.3,
   "marketCap": "4.7B",
   "sector": "Financial Services",
   "domain": "steadfast.com.au",
@@ -214,6 +214,10 @@
     {
       "date": "2026-04-12",
       "price": 4.27
+    },
+    {
+      "date": "2026-04-19",
+      "price": 4.22
     }
   ],
   "testsPassed": 5,
@@ -222,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 13.34,
-      "threshold": 15.51,
-      "label": "13.3x vs 15.5x sector"
+      "value": 13.19,
+      "threshold": 15.65,
+      "label": "13.2x vs 15.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.04,
+      "value": 2.01,
       "threshold": 1.5,
-      "label": "2.04x vs 1.5x"
+      "label": "2.01x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 7.83,
+      "value": 7.76,
       "threshold": 10.0,
       "label": "7.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 12.26,
+      "value": 12.41,
       "threshold": 5.0,
-      "label": "12.3% vs 5%"
+      "label": "12.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.36,
-      "threshold": 13.34,
-      "label": "Fwd 12.4x vs Trail 13.3x"
+      "value": 12.21,
+      "threshold": 13.19,
+      "label": "Fwd 12.2x vs Trail 13.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -263,13 +267,13 @@
     }
   },
   "metrics": {
-    "pe": 13.34,
-    "sectorPe": 18.25,
-    "pb": 2.04,
-    "evEbitda": 7.83,
-    "fcfYield": 12.26,
-    "forwardPe": 12.36,
-    "dividendYield": 4.66,
+    "pe": 13.19,
+    "sectorPe": 18.41,
+    "pb": 2.01,
+    "evEbitda": 7.76,
+    "fcfYield": 12.41,
+    "forwardPe": 12.21,
+    "dividendYield": 4.72,
     "revenueGrowth": 14.9,
     "profitMargin": 16.13,
     "operatingMargin": 27.58,

@@ -1,9 +1,9 @@
 {
   "ticker": "REA",
   "name": "REA GROUP FPO [REA]",
-  "price": 158.36,
-  "valuationScore": 7.9,
-  "marketCap": "20.8B",
+  "price": 156.04,
+  "valuationScore": 8.0,
+  "marketCap": "20.5B",
   "sector": "Technology",
   "domain": "rea-group.com",
   "chartData": [
@@ -214,6 +214,10 @@
     {
       "date": "2026-04-12",
       "price": 158.36
+    },
+    {
+      "date": "2026-04-19",
+      "price": 156.04
     }
   ],
   "testsPassed": 2,
@@ -222,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 36.49,
-      "threshold": 35.89,
-      "label": "36.5x vs 35.9x sector"
+      "value": 35.95,
+      "threshold": 35.37,
+      "label": "36.0x vs 35.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 10.17,
+      "value": 10.02,
       "threshold": 1.5,
-      "label": "10.17x vs 1.5x"
+      "label": "10.02x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 23.83,
+      "value": 23.47,
       "threshold": 10.0,
-      "label": "23.8x vs 10x"
+      "label": "23.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.3,
+      "value": 2.33,
       "threshold": 5.0,
       "label": "2.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 28.51,
-      "threshold": 36.49,
-      "label": "Fwd 28.5x vs Trail 36.5x"
+      "value": 28.14,
+      "threshold": 35.95,
+      "label": "Fwd 28.1x vs Trail 36.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -263,13 +267,13 @@
     }
   },
   "metrics": {
-    "pe": 36.49,
-    "sectorPe": 42.22,
-    "pb": 10.17,
-    "evEbitda": 23.83,
-    "fcfYield": 2.3,
-    "forwardPe": 28.51,
-    "dividendYield": 1.57,
+    "pe": 35.95,
+    "sectorPe": 41.61,
+    "pb": 10.02,
+    "evEbitda": 23.47,
+    "fcfYield": 2.33,
+    "forwardPe": 28.14,
+    "dividendYield": 1.59,
     "revenueGrowth": 6.1,
     "profitMargin": 29.28,
     "operatingMargin": 47.53,

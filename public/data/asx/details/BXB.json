@@ -1,9 +1,9 @@
 {
   "ticker": "BXB",
   "name": "BRAMB LTD FPO [BXB]",
-  "price": 23.27,
-  "valuationScore": 6.0,
-  "marketCap": "31.4B",
+  "price": 22.82,
+  "valuationScore": 6.2,
+  "marketCap": "30.8B",
   "sector": "Industrials",
   "domain": "brambles.com",
   "chartData": [
@@ -214,6 +214,10 @@
     {
       "date": "2026-04-12",
       "price": 23.27
+    },
+    {
+      "date": "2026-04-19",
+      "price": 22.82
     }
   ],
   "testsPassed": 3,
@@ -222,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 24.49,
-      "threshold": 27.41,
-      "label": "24.5x vs 27.4x sector"
+      "value": 24.02,
+      "threshold": 26.62,
+      "label": "24.0x vs 26.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 6.4,
+      "value": 6.42,
       "threshold": 1.5,
-      "label": "6.40x vs 1.5x"
+      "label": "6.42x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 16.57,
+      "value": 16.27,
       "threshold": 10.0,
-      "label": "16.6x vs 10x"
+      "label": "16.3x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.26,
+      "value": 2.31,
       "threshold": 5.0,
       "label": "2.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 20.43,
-      "threshold": 24.49,
-      "label": "Fwd 20.4x vs Trail 24.5x"
+      "value": 20.04,
+      "threshold": 24.02,
+      "label": "Fwd 20.0x vs Trail 24.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -263,13 +267,13 @@
     }
   },
   "metrics": {
-    "pe": 24.49,
-    "sectorPe": 32.25,
-    "pb": 6.4,
-    "evEbitda": 16.57,
-    "fcfYield": 2.26,
-    "forwardPe": 20.43,
-    "dividendYield": 2.78,
+    "pe": 24.02,
+    "sectorPe": 31.32,
+    "pb": 6.42,
+    "evEbitda": 16.27,
+    "fcfYield": 2.31,
+    "forwardPe": 20.04,
+    "dividendYield": 2.84,
     "revenueGrowth": 5.0,
     "profitMargin": 13.7,
     "operatingMargin": 21.77,

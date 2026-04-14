@@ -1,9 +1,9 @@
 {
   "ticker": "APA",
   "name": "APA GROUP STAPLED [APA]",
-  "price": 9.99,
-  "valuationScore": 18.7,
-  "marketCap": "13.2B",
+  "price": 10.04,
+  "valuationScore": 18.8,
+  "marketCap": "13.3B",
   "sector": "Utilities",
   "domain": "apa.com.au",
   "chartData": [
@@ -214,6 +214,10 @@
     {
       "date": "2026-04-12",
       "price": 9.99
+    },
+    {
+      "date": "2026-04-19",
+      "price": 10.04
     }
   ],
   "testsPassed": 1,
@@ -222,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 83.25,
-      "threshold": 18.65,
-      "label": "83.2x vs 18.6x sector"
+      "value": 83.67,
+      "threshold": 18.87,
+      "label": "83.7x vs 18.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.74,
+      "value": 4.76,
       "threshold": 1.5,
-      "label": "4.74x vs 1.5x"
+      "label": "4.76x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 13.36,
+      "value": 13.4,
       "threshold": 10.0,
       "label": "13.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 1.55,
+      "value": 1.54,
       "threshold": 5.0,
-      "label": "1.6% vs 5%"
+      "label": "1.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 42.9,
-      "threshold": 83.25,
-      "label": "Fwd 42.9x vs Trail 83.2x"
+      "value": 43.11,
+      "threshold": 83.67,
+      "label": "Fwd 43.1x vs Trail 83.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -263,13 +267,13 @@
     }
   },
   "metrics": {
-    "pe": 83.25,
-    "sectorPe": 21.94,
-    "pb": 4.74,
-    "evEbitda": 13.36,
-    "fcfYield": 1.55,
-    "forwardPe": 42.9,
-    "dividendYield": 5.76,
+    "pe": 83.67,
+    "sectorPe": 22.2,
+    "pb": 4.76,
+    "evEbitda": 13.4,
+    "fcfYield": 1.54,
+    "forwardPe": 43.11,
+    "dividendYield": 5.73,
     "revenueGrowth": -0.4,
     "profitMargin": 5.07,
     "operatingMargin": 34.14,

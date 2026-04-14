@@ -1,9 +1,9 @@
 {
   "ticker": "WEB",
   "name": "WEB TRAVEL FPO [WEB]",
-  "price": 2.69,
-  "valuationScore": 41.6,
-  "marketCap": "974M",
+  "price": 2.65,
+  "valuationScore": 41.2,
+  "marketCap": "959M",
   "sector": "Consumer Cyclical",
   "domain": "webtravelgroup.com",
   "chartData": [
@@ -214,6 +214,10 @@
     {
       "date": "2026-04-12",
       "price": 2.69
+    },
+    {
+      "date": "2026-04-19",
+      "price": 2.65
     }
   ],
   "testsPassed": 3,
@@ -222,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 269.0,
-      "threshold": 21.21,
-      "label": "269.0x vs 21.2x sector"
+      "value": 265.0,
+      "threshold": 21.03,
+      "label": "265.0x vs 21.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.62,
+      "value": 1.6,
       "threshold": 1.5,
-      "label": "1.62x vs 1.5x"
+      "label": "1.60x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 7.16,
+      "value": 7.01,
       "threshold": 10.0,
-      "label": "7.2x vs 10x"
+      "label": "7.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 13.33,
+      "value": 13.54,
       "threshold": 5.0,
-      "label": "13.3% vs 5%"
+      "label": "13.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 8.45,
-      "threshold": 269.0,
-      "label": "Fwd 8.4x vs Trail 269.0x"
+      "value": 8.32,
+      "threshold": 265.0,
+      "label": "Fwd 8.3x vs Trail 265.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -263,12 +267,12 @@
     }
   },
   "metrics": {
-    "pe": 269.0,
-    "sectorPe": 24.95,
-    "pb": 1.62,
-    "evEbitda": 7.16,
-    "fcfYield": 13.33,
-    "forwardPe": 8.45,
+    "pe": 265.0,
+    "sectorPe": 24.74,
+    "pb": 1.6,
+    "evEbitda": 7.01,
+    "fcfYield": 13.54,
+    "forwardPe": 8.32,
     "dividendYield": null,
     "revenueGrowth": 20.1,
     "profitMargin": 0.08,

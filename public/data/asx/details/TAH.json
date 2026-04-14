@@ -1,8 +1,8 @@
 {
   "ticker": "TAH",
   "name": "TABCORP FPO [TAH]",
-  "price": 0.98,
-  "valuationScore": 13.8,
+  "price": 0.96,
+  "valuationScore": 13.6,
   "marketCap": "2.2B",
   "sector": "Consumer Cyclical",
   "domain": "tabcorp.com.au",
@@ -214,6 +214,10 @@
     {
       "date": "2026-04-12",
       "price": 0.98
+    },
+    {
+      "date": "2026-04-19",
+      "price": 0.96
     }
   ],
   "testsPassed": 2,
@@ -222,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 98.0,
-      "threshold": 21.21,
-      "label": "98.0x vs 21.2x sector"
+      "value": 96.5,
+      "threshold": 21.03,
+      "label": "96.5x vs 21.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.86,
+      "value": 1.83,
       "threshold": 1.5,
-      "label": "1.86x vs 1.5x"
+      "label": "1.83x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 10.45,
+      "value": 10.32,
       "threshold": 10.0,
-      "label": "10.4x vs 10x"
+      "label": "10.3x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 9.32,
+      "value": 9.46,
       "threshold": 5.0,
-      "label": "9.3% vs 5%"
+      "label": "9.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 24.9,
-      "threshold": 98.0,
-      "label": "Fwd 24.9x vs Trail 98.0x"
+      "value": 24.52,
+      "threshold": 96.5,
+      "label": "Fwd 24.5x vs Trail 96.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -263,13 +267,13 @@
     }
   },
   "metrics": {
-    "pe": 98.0,
-    "sectorPe": 24.95,
-    "pb": 1.86,
-    "evEbitda": 10.45,
-    "fcfYield": 9.32,
-    "forwardPe": 24.9,
-    "dividendYield": 3.06,
+    "pe": 96.5,
+    "sectorPe": 24.74,
+    "pb": 1.83,
+    "evEbitda": 10.32,
+    "fcfYield": 9.46,
+    "forwardPe": 24.52,
+    "dividendYield": 3.11,
     "revenueGrowth": 1.0,
     "profitMargin": 1.25,
     "operatingMargin": 6.75,

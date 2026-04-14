@@ -1,8 +1,8 @@
 {
   "ticker": "SUL",
   "name": "SUPARETAIL FPO [SUL]",
-  "price": 12.56,
-  "valuationScore": -8.3,
+  "price": 12.5,
+  "valuationScore": -8.2,
   "marketCap": "2.8B",
   "sector": "Consumer Discretionary",
   "domain": "superretailgroup.com.au",
@@ -214,6 +214,10 @@
     {
       "date": "2026-04-12",
       "price": 12.56
+    },
+    {
+      "date": "2026-04-19",
+      "price": 12.5
     }
   ],
   "testsPassed": 4,
@@ -222,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 14.6,
-      "threshold": 15.38,
-      "label": "14.6x vs 15.4x sector"
+      "value": 14.53,
+      "threshold": 15.33,
+      "label": "14.5x vs 15.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.23,
+      "value": 2.22,
       "threshold": 1.5,
-      "label": "2.23x vs 1.5x"
+      "label": "2.22x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 9.12,
+      "value": 9.08,
       "threshold": 10.0,
       "label": "9.1x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 14.48,
+      "value": 14.55,
       "threshold": 5.0,
-      "label": "14.5% vs 5%"
+      "label": "14.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 11.44,
-      "threshold": 14.6,
-      "label": "Fwd 11.4x vs Trail 14.6x"
+      "value": 11.39,
+      "threshold": 14.53,
+      "label": "Fwd 11.4x vs Trail 14.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -263,13 +267,13 @@
     }
   },
   "metrics": {
-    "pe": 14.6,
-    "sectorPe": 18.09,
-    "pb": 2.23,
-    "evEbitda": 9.12,
-    "fcfYield": 14.48,
-    "forwardPe": 11.44,
-    "dividendYield": 5.1,
+    "pe": 14.53,
+    "sectorPe": 18.03,
+    "pb": 2.22,
+    "evEbitda": 9.08,
+    "fcfYield": 14.55,
+    "forwardPe": 11.39,
+    "dividendYield": 5.12,
     "revenueGrowth": 4.2,
     "profitMargin": 4.72,
     "operatingMargin": 8.48,

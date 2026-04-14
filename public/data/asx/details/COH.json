@@ -1,8 +1,8 @@
 {
   "ticker": "COH",
   "name": "COCHLEAR FPO [COH]",
-  "price": 172.1,
-  "valuationScore": 12.1,
+  "price": 172.31,
+  "valuationScore": 12.4,
   "marketCap": "11.3B",
   "sector": "Healthcare",
   "domain": "cochlear.com",
@@ -214,6 +214,10 @@
     {
       "date": "2026-04-12",
       "price": 172.1
+    },
+    {
+      "date": "2026-04-19",
+      "price": 172.31
     }
   ],
   "testsPassed": 2,
@@ -222,23 +226,23 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 32.59,
-      "threshold": 19.2,
-      "label": "32.6x vs 19.2x sector"
+      "value": 32.7,
+      "threshold": 19.09,
+      "label": "32.7x vs 19.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 5.81,
+      "value": 5.82,
       "threshold": 1.5,
-      "label": "5.81x vs 1.5x"
+      "label": "5.82x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 20.13,
+      "value": 20.16,
       "threshold": 10.0,
-      "label": "20.1x vs 10x"
+      "label": "20.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
@@ -250,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 24.75,
-      "threshold": 32.59,
-      "label": "Fwd 24.8x vs Trail 32.6x"
+      "value": 24.78,
+      "threshold": 32.7,
+      "label": "Fwd 24.8x vs Trail 32.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -263,12 +267,12 @@
     }
   },
   "metrics": {
-    "pe": 32.59,
-    "sectorPe": 22.58,
-    "pb": 5.81,
-    "evEbitda": 20.13,
+    "pe": 32.7,
+    "sectorPe": 22.45,
+    "pb": 5.82,
+    "evEbitda": 20.16,
     "fcfYield": 0.92,
-    "forwardPe": 24.75,
+    "forwardPe": 24.78,
     "dividendYield": 2.5,
     "revenueGrowth": -0.4,
     "profitMargin": 14.77,

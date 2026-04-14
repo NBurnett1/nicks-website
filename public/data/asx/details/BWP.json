@@ -1,7 +1,7 @@
 {
   "ticker": "BWP",
   "name": "BWPPROPGP STAPLED [BWP]",
-  "price": 3.78,
+  "price": 3.77,
   "valuationScore": 2.3,
   "marketCap": "2.7B",
   "sector": "Real Estate",
@@ -214,6 +214,10 @@
     {
       "date": "2026-04-12",
       "price": 3.78
+    },
+    {
+      "date": "2026-04-19",
+      "price": 3.77
     }
   ],
   "testsPassed": 2,
@@ -222,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 10.22,
-      "threshold": 10.07,
+      "value": 10.19,
+      "threshold": 10.06,
       "label": "10.2x vs 10.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.91,
+      "value": 0.9,
       "threshold": 1.5,
-      "label": "0.91x vs 1.5x"
+      "label": "0.90x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -250,8 +254,8 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 19.23,
-      "threshold": 10.22,
+      "value": 19.18,
+      "threshold": 10.19,
       "label": "Fwd 19.2x vs Trail 10.2x"
     },
     "profitabilityCheck": {
@@ -263,13 +267,13 @@
     }
   },
   "metrics": {
-    "pe": 10.22,
+    "pe": 10.19,
     "sectorPe": 11.84,
-    "pb": 0.91,
+    "pb": 0.9,
     "evEbitda": null,
     "fcfYield": -0.25,
-    "forwardPe": 19.23,
-    "dividendYield": 5.03,
+    "forwardPe": 19.18,
+    "dividendYield": 5.05,
     "revenueGrowth": 3.0,
     "profitMargin": 162.23,
     "operatingMargin": 86.85,

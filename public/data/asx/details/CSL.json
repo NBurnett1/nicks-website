@@ -1,9 +1,9 @@
 {
   "ticker": "CSL",
   "name": "CSL FPO [CSL]",
-  "price": 139.19,
+  "price": 137.29,
   "valuationScore": 0.4,
-  "marketCap": "67.6B",
+  "marketCap": "66.6B",
   "sector": "Healthcare",
   "domain": "csl.com",
   "chartData": [
@@ -214,6 +214,10 @@
     {
       "date": "2026-04-12",
       "price": 139.19
+    },
+    {
+      "date": "2026-04-19",
+      "price": 137.29
     }
   ],
   "testsPassed": 2,
@@ -222,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 15.87,
-      "threshold": 19.2,
-      "label": "15.9x vs 19.2x sector"
+      "value": 15.73,
+      "threshold": 19.09,
+      "label": "15.7x vs 19.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.54,
+      "value": 2.51,
       "threshold": 1.5,
-      "label": "2.54x vs 1.5x"
+      "label": "2.51x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 16.3,
+      "value": 16.11,
       "threshold": 10.0,
-      "label": "16.3x vs 10x"
+      "label": "16.1x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.74,
+      "value": 2.77,
       "threshold": 5.0,
-      "label": "2.7% vs 5%"
+      "label": "2.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 13.3,
-      "threshold": 15.87,
-      "label": "Fwd 13.3x vs Trail 15.9x"
+      "value": 13.11,
+      "threshold": 15.73,
+      "label": "Fwd 13.1x vs Trail 15.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -263,13 +267,13 @@
     }
   },
   "metrics": {
-    "pe": 15.87,
-    "sectorPe": 22.58,
-    "pb": 2.54,
-    "evEbitda": 16.3,
-    "fcfYield": 2.74,
-    "forwardPe": 13.3,
-    "dividendYield": 3.06,
+    "pe": 15.73,
+    "sectorPe": 22.45,
+    "pb": 2.51,
+    "evEbitda": 16.11,
+    "fcfYield": 2.77,
+    "forwardPe": 13.11,
+    "dividendYield": 3.1,
     "revenueGrowth": -1.8,
     "profitMargin": 9.06,
     "operatingMargin": 31.65,
