@@ -1,9 +1,9 @@
 {
   "ticker": "RMD",
   "name": "RESMED CDI 10:1 [RMD]",
-  "price": 32.11,
-  "valuationScore": -6.3,
-  "marketCap": "46.8B",
+  "price": 32.21,
+  "valuationScore": -4.1,
+  "marketCap": "46.9B",
   "sector": "Healthcare",
   "domain": "resmed.com",
   "chartData": [
@@ -217,46 +217,46 @@
     },
     {
       "date": "2026-04-19",
-      "price": 32.11
+      "price": 32.21
     }
   ],
-  "testsPassed": 4,
-  "grade": "B",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 22.45,
-      "threshold": 19.09,
-      "label": "22.5x vs 19.1x sector"
+      "value": 22.37,
+      "threshold": 19.01,
+      "label": "22.4x vs 19.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
-      "passed": true,
-      "value": 0.51,
+      "passed": false,
+      "value": 2.08,
       "threshold": 1.5,
-      "label": "0.51x vs 1.5x"
+      "label": "2.08x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 2.03,
+      "value": 2.04,
       "threshold": 10.0,
       "label": "2.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.03,
+      "value": 3.02,
       "threshold": 5.0,
       "label": "3.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 18.16,
-      "threshold": 22.45,
-      "label": "Fwd 18.2x vs Trail 22.5x"
+      "value": 18.31,
+      "threshold": 22.37,
+      "label": "Fwd 18.3x vs Trail 22.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,12 +267,12 @@
     }
   },
   "metrics": {
-    "pe": 22.45,
-    "sectorPe": 22.45,
-    "pb": 0.51,
-    "evEbitda": 2.03,
-    "fcfYield": 3.03,
-    "forwardPe": 18.16,
+    "pe": 22.37,
+    "sectorPe": 22.37,
+    "pb": 2.08,
+    "evEbitda": 2.04,
+    "fcfYield": 3.02,
+    "forwardPe": 18.31,
     "dividendYield": 1.08,
     "revenueGrowth": 11.0,
     "profitMargin": 27.53,

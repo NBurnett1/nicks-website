@@ -1,7 +1,7 @@
 {
   "ticker": "PME",
   "name": "PROMEDICUS FPO [PME]",
-  "price": 132.38,
+  "price": 132.02,
   "valuationScore": 60.0,
   "marketCap": "13.8B",
   "sector": "Healthcare",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-04-19",
-      "price": 132.38
+      "price": 132.02
     }
   ],
   "testsPassed": 1,
@@ -226,23 +226,23 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 59.1,
-      "threshold": 19.09,
-      "label": "59.1x vs 19.1x sector"
+      "value": 58.94,
+      "threshold": 19.01,
+      "label": "58.9x vs 19.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 35.57,
+      "value": 35.47,
       "threshold": 1.5,
-      "label": "35.57x vs 1.5x"
+      "label": "35.47x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 76.08,
+      "value": 75.87,
       "threshold": 10.0,
-      "label": "76.1x vs 10x"
+      "label": "75.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 69.8,
-      "threshold": 59.1,
-      "label": "Fwd 69.8x vs Trail 59.1x"
+      "value": 70.08,
+      "threshold": 58.94,
+      "label": "Fwd 70.1x vs Trail 58.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,12 +267,12 @@
     }
   },
   "metrics": {
-    "pe": 59.1,
-    "sectorPe": 22.45,
-    "pb": 35.57,
-    "evEbitda": 76.08,
+    "pe": 58.94,
+    "sectorPe": 22.37,
+    "pb": 35.47,
+    "evEbitda": 75.87,
     "fcfYield": 0.74,
-    "forwardPe": 69.8,
+    "forwardPe": 70.08,
     "dividendYield": 0.48,
     "revenueGrowth": 28.4,
     "profitMargin": 97.56,

@@ -1,8 +1,8 @@
 {
   "ticker": "ASX",
   "name": "ASX FPO [ASX]",
-  "price": 58.43,
-  "valuationScore": -15.6,
+  "price": 58.57,
+  "valuationScore": -15.8,
   "marketCap": "11.4B",
   "sector": "Financial Services",
   "domain": "asx.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-04-19",
-      "price": 58.43
+      "price": 58.57
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 21.72,
-      "threshold": 15.65,
-      "label": "21.7x vs 15.7x sector"
+      "value": 21.77,
+      "threshold": 15.75,
+      "label": "21.8x vs 15.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.9,
+      "value": 2.91,
       "threshold": 1.5,
-      "label": "2.90x vs 1.5x"
+      "label": "2.91x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 10.22,
+      "value": 10.26,
       "threshold": 10.0,
-      "label": "10.2x vs 10x"
+      "label": "10.3x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 28.45,
+      "value": 28.38,
       "threshold": 5.0,
       "label": "28.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 21.66,
-      "threshold": 21.72,
-      "label": "Fwd 21.7x vs Trail 21.7x"
+      "value": 21.71,
+      "threshold": 21.77,
+      "label": "Fwd 21.7x vs Trail 21.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,12 +267,12 @@
     }
   },
   "metrics": {
-    "pe": 21.72,
-    "sectorPe": 18.41,
-    "pb": 2.9,
-    "evEbitda": 10.22,
-    "fcfYield": 28.45,
-    "forwardPe": 21.66,
+    "pe": 21.77,
+    "sectorPe": 18.53,
+    "pb": 2.91,
+    "evEbitda": 10.26,
+    "fcfYield": 28.38,
+    "forwardPe": 21.71,
     "dividendYield": 3.48,
     "revenueGrowth": 11.2,
     "profitMargin": 44.36,
