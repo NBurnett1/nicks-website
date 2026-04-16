@@ -1,8 +1,8 @@
 {
   "ticker": "ORI",
   "name": "ORICA FPO [ORI]",
-  "price": 20.79,
-  "valuationScore": -10.6,
+  "price": 20.64,
+  "valuationScore": -10.9,
   "marketCap": "9.6B",
   "sector": "Basic Materials",
   "domain": "orica.com",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-04-19",
-      "price": 20.79
+      "price": 20.64
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 63.0,
-      "threshold": 42.23,
-      "label": "63.0x vs 42.2x sector"
+      "value": 62.55,
+      "threshold": 42.49,
+      "label": "62.5x vs 42.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.33,
+      "value": 2.31,
       "threshold": 1.5,
-      "label": "2.33x vs 1.5x"
+      "label": "2.31x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 9.46,
+      "value": 9.4,
       "threshold": 10.0,
-      "label": "9.5x vs 10x"
+      "label": "9.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.77,
+      "value": 5.82,
       "threshold": 5.0,
       "label": "5.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 15.06,
-      "threshold": 63.0,
-      "label": "Fwd 15.1x vs Trail 63.0x"
+      "value": 14.95,
+      "threshold": 62.55,
+      "label": "Fwd 14.9x vs Trail 62.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,13 +267,13 @@
     }
   },
   "metrics": {
-    "pe": 63.0,
-    "sectorPe": 49.68,
-    "pb": 2.33,
-    "evEbitda": 9.46,
-    "fcfYield": 5.77,
-    "forwardPe": 15.06,
-    "dividendYield": 2.74,
+    "pe": 62.55,
+    "sectorPe": 49.98,
+    "pb": 2.31,
+    "evEbitda": 9.4,
+    "fcfYield": 5.82,
+    "forwardPe": 14.95,
+    "dividendYield": 2.76,
     "revenueGrowth": 5.0,
     "profitMargin": 1.99,
     "operatingMargin": 11.18,
