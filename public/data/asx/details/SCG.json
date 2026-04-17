@@ -1,9 +1,9 @@
 {
   "ticker": "SCG",
   "name": "SCENTRE STAPLED [SCG]",
-  "price": 3.56,
-  "valuationScore": 3.6,
-  "marketCap": "18.6B",
+  "price": 3.52,
+  "valuationScore": 3.5,
+  "marketCap": "18.4B",
   "sector": "Real Estate",
   "domain": "scentregroup.com",
   "chartData": [
@@ -217,25 +217,25 @@
     },
     {
       "date": "2026-04-19",
-      "price": 3.56
+      "price": 3.52
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": false,
-      "value": 10.47,
-      "threshold": 10.21,
-      "label": "10.5x vs 10.2x sector"
+      "passed": true,
+      "value": 10.35,
+      "threshold": 10.38,
+      "label": "10.4x vs 10.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.98,
+      "value": 0.97,
       "threshold": 1.5,
-      "label": "0.98x vs 1.5x"
+      "label": "0.97x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -1.94,
+      "value": -1.96,
       "threshold": 5.0,
-      "label": "-1.9% vs 5%"
+      "label": "-2.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 14.42,
-      "threshold": 10.47,
-      "label": "Fwd 14.4x vs Trail 10.5x"
+      "value": 14.26,
+      "threshold": 10.35,
+      "label": "Fwd 14.3x vs Trail 10.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,13 +267,13 @@
     }
   },
   "metrics": {
-    "pe": 10.47,
-    "sectorPe": 12.01,
-    "pb": 0.98,
+    "pe": 10.35,
+    "sectorPe": 12.22,
+    "pb": 0.97,
     "evEbitda": null,
-    "fcfYield": -1.94,
-    "forwardPe": 14.42,
-    "dividendYield": 4.98,
+    "fcfYield": -1.96,
+    "forwardPe": 14.26,
+    "dividendYield": 5.03,
     "revenueGrowth": 0.8,
     "profitMargin": 66.24,
     "operatingMargin": 66.94,

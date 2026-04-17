@@ -1,9 +1,9 @@
 {
   "ticker": "NST",
   "name": "NTH STAR FPO [NST]",
-  "price": 24.69,
-  "valuationScore": 0.6,
-  "marketCap": "35.3B",
+  "price": 24.3,
+  "valuationScore": 0.3,
+  "marketCap": "34.8B",
   "sector": "Materials",
   "domain": "nsrltd.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-04-19",
-      "price": 24.69
+      "price": 24.3
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 20.92,
-      "threshold": 17.79,
-      "label": "20.9x vs 17.8x sector"
+      "value": 20.59,
+      "threshold": 17.5,
+      "label": "20.6x vs 17.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.32,
+      "value": 2.28,
       "threshold": 1.5,
-      "label": "2.32x vs 1.5x"
+      "label": "2.28x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 9.65,
+      "value": 9.51,
       "threshold": 10.0,
-      "label": "9.7x vs 10x"
+      "label": "9.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 0.81,
+      "value": 0.83,
       "threshold": 5.0,
       "label": "0.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 11.17,
-      "threshold": 20.92,
-      "label": "Fwd 11.2x vs Trail 20.9x"
+      "value": 10.9,
+      "threshold": 20.59,
+      "label": "Fwd 10.9x vs Trail 20.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,13 +267,13 @@
     }
   },
   "metrics": {
-    "pe": 20.92,
-    "sectorPe": 20.92,
-    "pb": 2.32,
-    "evEbitda": 9.65,
-    "fcfYield": 0.81,
-    "forwardPe": 11.17,
-    "dividendYield": 2.03,
+    "pe": 20.59,
+    "sectorPe": 20.59,
+    "pb": 2.28,
+    "evEbitda": 9.51,
+    "fcfYield": 0.83,
+    "forwardPe": 10.9,
+    "dividendYield": 2.06,
     "revenueGrowth": 19.0,
     "profitMargin": 22.24,
     "operatingMargin": 30.47,

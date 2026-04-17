@@ -1,9 +1,9 @@
 {
   "ticker": "AMP",
   "name": "AMP FPO [AMP]",
-  "price": 1.4,
-  "valuationScore": 4.1,
-  "marketCap": "3.5B",
+  "price": 1.45,
+  "valuationScore": 4.5,
+  "marketCap": "3.7B",
   "sector": "Financials",
   "domain": "amp.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-04-19",
-      "price": 1.39
+      "price": 1.45
     }
   ],
   "testsPassed": 2,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 27.9,
-      "threshold": 17.21,
-      "label": "27.9x vs 17.2x sector"
+      "value": 28.9,
+      "threshold": 17.04,
+      "label": "28.9x vs 17.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.94,
+      "value": 0.98,
       "threshold": 1.5,
-      "label": "0.94x vs 1.5x"
+      "label": "0.98x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 18.29,
+      "value": 18.36,
       "threshold": 10.0,
-      "label": "18.3x vs 10x"
+      "label": "18.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.25,
+      "value": 4.1,
       "threshold": 5.0,
-      "label": "4.2% vs 5%"
+      "label": "4.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 11.49,
-      "threshold": 27.9,
-      "label": "Fwd 11.5x vs Trail 27.9x"
+      "value": 11.87,
+      "threshold": 28.9,
+      "label": "Fwd 11.9x vs Trail 28.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,13 +267,13 @@
     }
   },
   "metrics": {
-    "pe": 27.9,
-    "sectorPe": 20.24,
-    "pb": 0.94,
-    "evEbitda": 18.29,
-    "fcfYield": 4.25,
-    "forwardPe": 11.49,
-    "dividendYield": 2.87,
+    "pe": 28.9,
+    "sectorPe": 20.05,
+    "pb": 0.98,
+    "evEbitda": 18.36,
+    "fcfYield": 4.1,
+    "forwardPe": 11.87,
+    "dividendYield": 2.77,
     "revenueGrowth": null,
     "profitMargin": 4.76,
     "operatingMargin": 55.84,
