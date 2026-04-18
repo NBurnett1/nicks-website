@@ -1,16 +1,12 @@
 {
   "ticker": "IFL",
   "name": "INSIGNIA FPO [IFL]",
-  "price": 4.77,
-  "valuationScore": 5.9,
+  "price": 4.8,
+  "valuationScore": 5.7,
   "marketCap": "3.2B",
   "sector": "Financial Services",
   "domain": "insigniafinancial.com.au",
   "chartData": [
-    {
-      "date": "2025-04-13",
-      "price": 3.7
-    },
     {
       "date": "2025-04-20",
       "price": 3.72
@@ -218,6 +214,10 @@
     {
       "date": "2026-04-12",
       "price": 4.77
+    },
+    {
+      "date": "2026-04-19",
+      "price": 4.8
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 28.06,
-      "threshold": 15.45,
-      "label": "28.1x vs 15.4x sector"
+      "value": 28.24,
+      "threshold": 15.96,
+      "label": "28.2x vs 16.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.49,
+      "value": 1.5,
       "threshold": 1.5,
-      "label": "1.49x vs 1.5x"
+      "label": "1.50x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 9.16,
+      "value": 9.21,
       "threshold": 10.0,
       "label": "9.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -1.66,
+      "value": -1.65,
       "threshold": 5.0,
-      "label": "-1.7% vs 5%"
+      "label": "-1.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.24,
-      "threshold": 28.06,
-      "label": "Fwd 12.2x vs Trail 28.1x"
+      "value": 12.32,
+      "threshold": 28.24,
+      "label": "Fwd 12.3x vs Trail 28.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,12 +267,12 @@
     }
   },
   "metrics": {
-    "pe": 28.06,
-    "sectorPe": 18.18,
-    "pb": 1.49,
-    "evEbitda": 9.16,
-    "fcfYield": -1.66,
-    "forwardPe": 12.24,
+    "pe": 28.24,
+    "sectorPe": 18.77,
+    "pb": 1.5,
+    "evEbitda": 9.21,
+    "fcfYield": -1.65,
+    "forwardPe": 12.32,
     "dividendYield": null,
     "revenueGrowth": 7.8,
     "profitMargin": 6.8,

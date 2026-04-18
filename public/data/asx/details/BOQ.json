@@ -1,16 +1,12 @@
 {
   "ticker": "BOQ",
   "name": "BANK QLD FPO [BOQ]",
-  "price": 7.4,
-  "valuationScore": 1.7,
-  "marketCap": "4.9B",
+  "price": 7.27,
+  "valuationScore": 2.0,
+  "marketCap": "4.8B",
   "sector": "Financials",
   "domain": "boq.com.au",
   "chartData": [
-    {
-      "date": "2025-04-13",
-      "price": 6.16
-    },
     {
       "date": "2025-04-20",
       "price": 6.81
@@ -217,7 +213,11 @@
     },
     {
       "date": "2026-04-12",
-      "price": 7.4
+      "price": 7.43
+    },
+    {
+      "date": "2026-04-19",
+      "price": 7.27
     }
   ],
   "testsPassed": 2,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 37.0,
-      "threshold": 17.81,
-      "label": "37.0x vs 17.8x sector"
+      "value": 36.35,
+      "threshold": 17.04,
+      "label": "36.4x vs 17.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.82,
+      "value": 0.81,
       "threshold": 1.5,
-      "label": "0.82x vs 1.5x"
+      "label": "0.81x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.83,
-      "threshold": 37.0,
-      "label": "Fwd 12.8x vs Trail 37.0x"
+      "value": 12.62,
+      "threshold": 36.35,
+      "label": "Fwd 12.6x vs Trail 36.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,13 +267,13 @@
     }
   },
   "metrics": {
-    "pe": 37.0,
-    "sectorPe": 20.96,
-    "pb": 0.82,
+    "pe": 36.35,
+    "sectorPe": 20.05,
+    "pb": 0.81,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 12.83,
-    "dividendYield": 5.14,
+    "forwardPe": 12.62,
+    "dividendYield": 5.23,
     "revenueGrowth": 8.4,
     "profitMargin": 8.07,
     "operatingMargin": 41.11,

@@ -1,16 +1,12 @@
 {
   "ticker": "IPH",
   "name": "IPHLIMITED FPO [IPH]",
-  "price": 3.4,
-  "valuationScore": -12.5,
-  "marketCap": "890M",
+  "price": 3.5,
+  "valuationScore": -11.8,
+  "marketCap": "907M",
   "sector": "Industrials",
   "domain": "iphltd.com.au",
   "chartData": [
-    {
-      "date": "2025-04-13",
-      "price": 4.1
-    },
     {
       "date": "2025-04-20",
       "price": 4.11
@@ -217,7 +213,11 @@
     },
     {
       "date": "2026-04-12",
-      "price": 3.4
+      "price": 3.46
+    },
+    {
+      "date": "2026-04-19",
+      "price": 3.5
     }
   ],
   "testsPassed": 6,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 12.14,
-      "threshold": 28.2,
-      "label": "12.1x vs 28.2x sector"
+      "value": 12.5,
+      "threshold": 25.36,
+      "label": "12.5x vs 25.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.31,
+      "value": 1.35,
       "threshold": 1.5,
-      "label": "1.31x vs 1.5x"
+      "label": "1.35x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 6.86,
+      "value": 7.0,
       "threshold": 10.0,
-      "label": "6.9x vs 10x"
+      "label": "7.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 14.69,
+      "value": 14.42,
       "threshold": 5.0,
-      "label": "14.7% vs 5%"
+      "label": "14.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 6.96,
-      "threshold": 12.14,
-      "label": "Fwd 7.0x vs Trail 12.1x"
+      "value": 7.16,
+      "threshold": 12.5,
+      "label": "Fwd 7.2x vs Trail 12.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,13 +267,13 @@
     }
   },
   "metrics": {
-    "pe": 12.14,
-    "sectorPe": 33.18,
-    "pb": 1.31,
-    "evEbitda": 6.86,
-    "fcfYield": 14.69,
-    "forwardPe": 6.96,
-    "dividendYield": 11.18,
+    "pe": 12.5,
+    "sectorPe": 29.84,
+    "pb": 1.35,
+    "evEbitda": 7.0,
+    "fcfYield": 14.42,
+    "forwardPe": 7.16,
+    "dividendYield": 10.86,
     "revenueGrowth": 6.5,
     "profitMargin": 9.98,
     "operatingMargin": 18.74,

@@ -1,16 +1,12 @@
 {
   "ticker": "SKC",
   "name": "SKYCITY FPO NZX [SKC]",
-  "price": 0.57,
-  "valuationScore": 2.5,
-  "marketCap": "635M",
+  "price": 0.55,
+  "valuationScore": 2.3,
+  "marketCap": "607M",
   "sector": "Consumer Cyclical",
   "domain": "skycityentertainmentgroup.com",
   "chartData": [
-    {
-      "date": "2025-04-13",
-      "price": 1.07
-    },
     {
       "date": "2025-04-20",
       "price": 1.06
@@ -217,7 +213,11 @@
     },
     {
       "date": "2026-04-12",
-      "price": 0.57
+      "price": 0.58
+    },
+    {
+      "date": "2026-04-19",
+      "price": 0.55
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 19.17,
-      "threshold": 21.34,
-      "label": "19.2x vs 21.3x sector"
+      "value": 18.33,
+      "threshold": 21.44,
+      "label": "18.3x vs 21.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.48,
+      "value": 0.47,
       "threshold": 1.5,
-      "label": "0.48x vs 1.5x"
+      "label": "0.47x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 7.74,
+      "value": 7.57,
       "threshold": 10.0,
-      "label": "7.7x vs 10x"
+      "label": "7.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -12.83,
+      "value": -13.42,
       "threshold": 5.0,
-      "label": "-12.8% vs 5%"
+      "label": "-13.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.3,
-      "threshold": 19.17,
-      "label": "Fwd 14.3x vs Trail 19.2x"
+      "value": 13.63,
+      "threshold": 18.33,
+      "label": "Fwd 13.6x vs Trail 18.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,12 +267,12 @@
     }
   },
   "metrics": {
-    "pe": 19.17,
-    "sectorPe": 25.11,
-    "pb": 0.48,
-    "evEbitda": 7.74,
-    "fcfYield": -12.83,
-    "forwardPe": 14.3,
+    "pe": 18.33,
+    "sectorPe": 25.22,
+    "pb": 0.47,
+    "evEbitda": 7.57,
+    "fcfYield": -13.42,
+    "forwardPe": 13.63,
     "dividendYield": null,
     "revenueGrowth": -2.4,
     "profitMargin": 4.33,

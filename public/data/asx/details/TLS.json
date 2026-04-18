@@ -1,16 +1,12 @@
 {
   "ticker": "TLS",
   "name": "TELSTRA FPO [TLS]",
-  "price": 5.41,
-  "valuationScore": 2.3,
-  "marketCap": "60.8B",
+  "price": 5.34,
+  "valuationScore": 2.1,
+  "marketCap": "60.0B",
   "sector": "Telecom",
   "domain": "telstra.com.au",
   "chartData": [
-    {
-      "date": "2025-04-13",
-      "price": 4.28
-    },
     {
       "date": "2025-04-20",
       "price": 4.26
@@ -218,6 +214,10 @@
     {
       "date": "2026-04-12",
       "price": 5.41
+    },
+    {
+      "date": "2026-04-19",
+      "price": 5.34
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 27.05,
-      "threshold": 19.2,
-      "label": "27.1x vs 19.2x sector"
+      "value": 26.7,
+      "threshold": 18.58,
+      "label": "26.7x vs 18.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.61,
+      "value": 4.55,
       "threshold": 1.5,
-      "label": "4.61x vs 1.5x"
+      "label": "4.55x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 11.35,
+      "value": 11.24,
       "threshold": 10.0,
-      "label": "11.4x vs 10x"
+      "label": "11.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 6.41,
+      "value": 6.49,
       "threshold": 5.0,
-      "label": "6.4% vs 5%"
+      "label": "6.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 24.6,
-      "threshold": 27.05,
-      "label": "Fwd 24.6x vs Trail 27.1x"
+      "value": 24.29,
+      "threshold": 26.7,
+      "label": "Fwd 24.3x vs Trail 26.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,13 +267,13 @@
     }
   },
   "metrics": {
-    "pe": 27.05,
-    "sectorPe": 22.59,
-    "pb": 4.61,
-    "evEbitda": 11.35,
-    "fcfYield": 6.41,
-    "forwardPe": 24.6,
-    "dividendYield": 3.88,
+    "pe": 26.7,
+    "sectorPe": 21.86,
+    "pb": 4.55,
+    "evEbitda": 11.24,
+    "fcfYield": 6.49,
+    "forwardPe": 24.29,
+    "dividendYield": 3.93,
     "revenueGrowth": 0.3,
     "profitMargin": 9.8,
     "operatingMargin": 16.51,

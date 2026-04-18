@@ -1,16 +1,12 @@
 {
   "ticker": "REH",
   "name": "REECE FPO [REH]",
-  "price": 14.6,
-  "valuationScore": 2.7,
-  "marketCap": "9.0B",
+  "price": 13.13,
+  "valuationScore": 1.8,
+  "marketCap": "8.1B",
   "sector": "Industrials",
   "domain": "reece.com.au",
   "chartData": [
-    {
-      "date": "2025-04-13",
-      "price": 15.45
-    },
     {
       "date": "2025-04-20",
       "price": 15.19
@@ -217,7 +213,11 @@
     },
     {
       "date": "2026-04-12",
-      "price": 14.6
+      "price": 14.19
+    },
+    {
+      "date": "2026-04-19",
+      "price": 13.13
     }
   ],
   "testsPassed": 1,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 33.18,
-      "threshold": 28.2,
-      "label": "33.2x vs 28.2x sector"
+      "value": 29.84,
+      "threshold": 25.36,
+      "label": "29.8x vs 25.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.45,
+      "value": 2.21,
       "threshold": 1.5,
-      "label": "2.45x vs 1.5x"
+      "label": "2.21x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 18.69,
+      "value": 17.17,
       "threshold": 10.0,
-      "label": "18.7x vs 10x"
+      "label": "17.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.85,
+      "value": 4.28,
       "threshold": 5.0,
-      "label": "3.9% vs 5%"
+      "label": "4.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 26.97,
-      "threshold": 33.18,
-      "label": "Fwd 27.0x vs Trail 33.2x"
+      "value": 24.26,
+      "threshold": 29.84,
+      "label": "Fwd 24.3x vs Trail 29.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,13 +267,13 @@
     }
   },
   "metrics": {
-    "pe": 33.18,
-    "sectorPe": 33.18,
-    "pb": 2.45,
-    "evEbitda": 18.69,
-    "fcfYield": 3.85,
-    "forwardPe": 26.97,
-    "dividendYield": 1.18,
+    "pe": 29.84,
+    "sectorPe": 29.84,
+    "pb": 2.21,
+    "evEbitda": 17.17,
+    "fcfYield": 4.28,
+    "forwardPe": 24.26,
+    "dividendYield": 1.32,
     "revenueGrowth": 5.6,
     "profitMargin": 3.04,
     "operatingMargin": 5.62,

@@ -1,16 +1,12 @@
 {
   "ticker": "WTC",
   "name": "WISETECH FPO [WTC]",
-  "price": 38.62,
-  "valuationScore": 6.1,
-  "marketCap": "13.0B",
+  "price": 44.9,
+  "valuationScore": 7.5,
+  "marketCap": "15.1B",
   "sector": "Technology",
   "domain": "wisetechglobal.com",
   "chartData": [
-    {
-      "date": "2025-04-13",
-      "price": 83.88
-    },
     {
       "date": "2025-04-20",
       "price": 81.73
@@ -217,7 +213,11 @@
     },
     {
       "date": "2026-04-12",
-      "price": 38.62
+      "price": 37.63
+    },
+    {
+      "date": "2026-04-19",
+      "price": 44.9
     }
   ],
   "testsPassed": 2,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 56.79,
-      "threshold": 36.57,
-      "label": "56.8x vs 36.6x sector"
+      "value": 66.03,
+      "threshold": 40.15,
+      "label": "66.0x vs 40.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.9,
+      "value": 5.69,
       "threshold": 1.5,
-      "label": "4.90x vs 1.5x"
+      "label": "5.69x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 34.94,
+      "value": 39.84,
       "threshold": 10.0,
-      "label": "34.9x vs 10x"
+      "label": "39.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.57,
+      "value": 2.21,
       "threshold": 5.0,
-      "label": "2.6% vs 5%"
+      "label": "2.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 25.72,
-      "threshold": 56.79,
-      "label": "Fwd 25.7x vs Trail 56.8x"
+      "value": 30.13,
+      "threshold": 66.03,
+      "label": "Fwd 30.1x vs Trail 66.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,13 +267,13 @@
     }
   },
   "metrics": {
-    "pe": 56.79,
-    "sectorPe": 43.03,
-    "pb": 4.9,
-    "evEbitda": 34.94,
-    "fcfYield": 2.57,
-    "forwardPe": 25.72,
-    "dividendYield": 0.55,
+    "pe": 66.03,
+    "sectorPe": 47.23,
+    "pb": 5.69,
+    "evEbitda": 39.84,
+    "fcfYield": 2.21,
+    "forwardPe": 30.13,
+    "dividendYield": 0.47,
     "revenueGrowth": 76.4,
     "profitMargin": 15.18,
     "operatingMargin": 29.45,
