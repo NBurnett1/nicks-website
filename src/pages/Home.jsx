@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import LiveTicker from '../components/LiveTicker'
-import TradingDashboard from '../components/TradingDashboard'
+import WeeklyPicks from '../components/WeeklyPicks'
+import WeekArchive from '../components/WeekArchive'
 import UndervaluedScreener from '../components/UndervaluedScreener'
 import Disclaimer from '../components/Disclaimer'
 import Footer from '../components/Footer'
@@ -54,29 +55,33 @@ export default function Home() {
         <div className="container">
           <div className="home__hero-badge">
             <span className="home__hero-badge-dot" />
-            ASX Live Trading
+            ASX Weekly Picks
           </div>
           <h1 className="home__hero-title">
-            AI-Powered<br />
-            <span className="home__hero-highlight">ASX Trading.</span>
+            Nick's Weekly<br />
+            <span className="home__hero-highlight">ASX Picks.</span>
           </h1>
           <p className="home__hero-subtitle">
-            Valuation models + momentum confirmation = smarter entries.
-            Watch the portfolio perform in real-time.
+            5 curated stocks every Monday. 4 high-conviction value plays + 1 speculative moonshot.
+            Track the performance week by week.
           </p>
         </div>
       </section>
 
-      {/* Trading Dashboard — the main event */}
+      {/* Weekly Picks — the main event */}
       <div className="container">
-        <TradingDashboard />
+        <WeeklyPicks exchange="ASX" />
       </div>
 
-      {/* Undervalued Screener — multi-test analysis */}
+      {/* Week Archive — track record */}
+      <div className="container">
+        <WeekArchive />
+      </div>
+
+      {/* Undervalued Screener — full research tool */}
       <div className="container">
         <UndervaluedScreener exchange="ASX" />
       </div>
-
 
       <Disclaimer />
       <Footer />

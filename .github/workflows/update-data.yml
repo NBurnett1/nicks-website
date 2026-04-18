@@ -1,21 +1,22 @@
-name: ASX Trading Pipeline
+name: ASX Weekly Picks Pipeline
 
 on:
   schedule:
-    # Live trading session: 10:30am AEST (23:30 UTC previous day) — 30 min live
-    - cron: '30 23 * * 0-4'  # Sun-Thu UTC = Mon-Fri AEST
-    # Maintain run: 4pm AEST (5:00 UTC) — update prices, check exits only
-    - cron: '0 5 * * 1-5'
+    # Weekly: Sunday 8pm AEST (10:00 UTC) — run pipeline + generate new week picks
+    - cron: '0 10 * * 0'
+    # Daily: 5pm AEST (7:00 UTC) Mon-Fri — update prices for active week
+    - cron: '0 7 * * 1-5'
   workflow_dispatch:
     inputs:
       mode:
-        description: 'Trading mode'
+        description: 'Pipeline mode'
         required: true
-        default: 'maintain'
+        default: 'update-prices'
         type: choice
         options:
-          - live
-          - maintain
+          - full-pipeline
+          - update-prices
+          - generate-picks
 
 permissions:
   contents: write
@@ -39,27 +40,21 @@ jobs:
       - name: Install dependencies
         run: pip install -r scripts/requirements.txt
 
-      # --- ASX Valuation Pipeline (runs before live session) ---
+      # --- Sunday: Full pipeline + new week picks ---
       - name: Run ASX valuation pipeline
-        if: github.event.schedule == '30 23 * * 0-4' || github.event.inputs.mode == 'live'
+        if: github.event.schedule == '0 10 * * 0' || github.event.inputs.mode == 'full-pipeline'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/run_pipeline.py --exchange ASX --skip-reports
 
-      # --- Trading Engine ---
-      - name: Determine trading mode
-        id: mode
-        run: |
-          if [[ "${{ github.event.schedule }}" == "30 23 * * 0-4" ]] || [[ "${{ github.event.inputs.mode }}" == "live" ]]; then
-            echo "flag=--live" >> $GITHUB_OUTPUT
-            echo "Trading mode: LIVE (30 min session)"
-          else
-            echo "flag=--maintain" >> $GITHUB_OUTPUT
-            echo "Trading mode: MAINTAIN (prices & exits only)"
-          fi
+      - name: Generate weekly picks
+        if: github.event.schedule == '0 10 * * 0' || github.event.inputs.mode == 'full-pipeline' || github.event.inputs.mode == 'generate-picks'
+        run: python scripts/generate_weekly_picks.py
 
-      - name: Run ASX trading engine
-        run: python scripts/simulate_trades.py ${{ steps.mode.outputs.flag }}
+      # --- Daily: Update prices for active week ---
+      - name: Update weekly prices
+        if: github.event.schedule == '0 7 * * 1-5' || github.event.inputs.mode == 'update-prices' || github.event.inputs.mode == 'full-pipeline'
+        run: python scripts/update_weekly_prices.py
 
       # --- Commit and Push ---
       - name: Commit and push changes
@@ -67,7 +62,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add public/data/
-          git diff --staged --quiet || git commit -m "chore: ASX trading update [$(date -u +%Y-%m-%d' '%H:%M)]
+          git diff --staged --quiet || git commit -m "chore: ASX data update [$(date -u +%Y-%m-%d' '%H:%M)]
 
-          Mode: ${{ steps.mode.outputs.flag }}"
+          Schedule: ${{ github.event.schedule || github.event.inputs.mode }}"
           git push
