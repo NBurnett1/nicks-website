@@ -1,8 +1,8 @@
 {
   "ticker": "ASX",
   "name": "ASX FPO [ASX]",
-  "price": 59.08,
-  "valuationScore": -15.8,
+  "price": 59.04,
+  "valuationScore": -16.5,
   "marketCap": "11.5B",
   "sector": "Financial Services",
   "domain": "asx.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-04-19",
-      "price": 59.08
+      "price": 59.04
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 21.96,
-      "threshold": 15.96,
-      "label": "22.0x vs 16.0x sector"
+      "value": 21.95,
+      "threshold": 16.2,
+      "label": "21.9x vs 16.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.94,
+      "value": 2.93,
       "threshold": 1.5,
-      "label": "2.94x vs 1.5x"
+      "label": "2.93x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 10.41,
+      "value": 10.39,
       "threshold": 10.0,
       "label": "10.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 28.14,
+      "value": 28.16,
       "threshold": 5.0,
-      "label": "28.1% vs 5%"
+      "label": "28.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
       "value": 21.9,
-      "threshold": 21.96,
-      "label": "Fwd 21.9x vs Trail 22.0x"
+      "threshold": 21.95,
+      "label": "Fwd 21.9x vs Trail 21.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,11 +267,11 @@
     }
   },
   "metrics": {
-    "pe": 21.96,
-    "sectorPe": 18.77,
-    "pb": 2.94,
-    "evEbitda": 10.41,
-    "fcfYield": 28.14,
+    "pe": 21.95,
+    "sectorPe": 19.05,
+    "pb": 2.93,
+    "evEbitda": 10.39,
+    "fcfYield": 28.16,
     "forwardPe": 21.9,
     "dividendYield": 3.45,
     "revenueGrowth": 11.2,

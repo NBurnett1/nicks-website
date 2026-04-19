@@ -31,8 +31,8 @@ MIN_MARKET_CAP_SPEC = 30_000_000       # >$30M floor (not total junk)
 VOLUME_SURGE_THRESHOLD = 1.5           # 1.5x 20-day avg volume
 AEST = timezone(timedelta(hours=10))
 
-# Week 1 start date (Monday 14 April 2026)
-EPOCH_START = datetime(2026, 4, 14, tzinfo=AEST)
+# Week 1 start date (Monday 13 April 2026)
+EPOCH_START = datetime(2026, 4, 13, tzinfo=AEST)
 
 
 def parse_market_cap(mc_str):
@@ -312,9 +312,10 @@ def generate_week(week_num, index_data, details_dir, weeks_dir, backfill=False):
     now = datetime.now(AEST)
 
     # Determine status
-    if now < monday:
+    # Sunday before the week starts counts as active (picks are published)
+    if now < monday - timedelta(days=1):
         status = "upcoming"
-    elif now > friday + timedelta(days=2):  # Saturday after week ends
+    elif now > friday + timedelta(days=1):  # Saturday after week ends
         status = "completed"
     else:
         status = "active"

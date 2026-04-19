@@ -1,9 +1,9 @@
 {
   "ticker": "RSG",
   "name": "RESOLUTE FPO [RSG]",
-  "price": 1.43,
-  "valuationScore": -13.6,
-  "marketCap": "3.1B",
+  "price": 1.42,
+  "valuationScore": -13.9,
+  "marketCap": "3.0B",
   "sector": "Basic Materials",
   "domain": "rml.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-04-19",
-      "price": 1.43
+      "price": 1.41
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 17.88,
-      "threshold": 42.43,
-      "label": "17.9x vs 42.4x sector"
+      "value": 17.69,
+      "threshold": 42.63,
+      "label": "17.7x vs 42.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.98,
+      "value": 2.95,
       "threshold": 1.5,
-      "label": "2.98x vs 1.5x"
+      "label": "2.95x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 10.47,
+      "value": 10.36,
       "threshold": 10.0,
-      "label": "10.5x vs 10x"
+      "label": "10.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.92,
+      "value": 5.98,
       "threshold": 5.0,
-      "label": "5.9% vs 5%"
+      "label": "6.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 6.69,
-      "threshold": 17.88,
-      "label": "Fwd 6.7x vs Trail 17.9x"
+      "value": 6.62,
+      "threshold": 17.69,
+      "label": "Fwd 6.6x vs Trail 17.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,12 +267,12 @@
     }
   },
   "metrics": {
-    "pe": 17.88,
-    "sectorPe": 49.91,
-    "pb": 2.98,
-    "evEbitda": 10.47,
-    "fcfYield": 5.92,
-    "forwardPe": 6.69,
+    "pe": 17.69,
+    "sectorPe": 50.16,
+    "pb": 2.95,
+    "evEbitda": 10.36,
+    "fcfYield": 5.98,
+    "forwardPe": 6.62,
     "dividendYield": null,
     "revenueGrowth": -9.0,
     "profitMargin": 14.88,
