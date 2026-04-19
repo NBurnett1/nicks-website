@@ -7,38 +7,24 @@
   "picks": [
     {
       "rank": 1,
-      "ticker": "HVN",
-      "name": "HARVEY FPO [HVN]",
-      "sector": "Consumer Discretionary",
-      "grade": "A",
-      "testsPassed": 5,
-      "entryPrice": 4.57,
-      "currentPrice": 4.57,
+      "ticker": "WOR",
+      "name": "WORLEY FPO [WOR]",
+      "sector": "Energy",
+      "grade": "B",
+      "testsPassed": 4,
+      "entryPrice": 11.82,
+      "currentPrice": 11.82,
       "weekClosePrice": null,
       "pnl": 0.0,
       "pnlPct": 0.0,
-      "marketCap": "5.7B",
-      "thesis": "Strong 5/6 valuation tests passed. trading at a P/E discount to sector. strong 13.3% FCF yield. trading below book value.",
-      "type": "core"
+      "marketCap": "6.1B",
+      "thesis": "Solid 4/6 valuation tests passed. trading at a P/E discount to sector. strong 8.2% FCF yield. forward P/E re-rating expected. Macro: Strong Tailwind for Energy.",
+      "type": "core",
+      "macroBias": 0.8,
+      "macroLabel": "Strong Tailwind"
     },
     {
       "rank": 2,
-      "ticker": "GWA",
-      "name": "GWA GROUP FPO [GWA]",
-      "sector": "Industrials",
-      "grade": "A",
-      "testsPassed": 5,
-      "entryPrice": 2.05,
-      "currentPrice": 2.05,
-      "weekClosePrice": null,
-      "pnl": 0.0,
-      "pnlPct": 0.0,
-      "marketCap": "544M",
-      "thesis": "Strong 5/6 valuation tests passed. trading at a P/E discount to sector. strong 10.5% FCF yield. forward P/E re-rating expected.",
-      "type": "core"
-    },
-    {
-      "rank": 3,
       "ticker": "SDF",
       "name": "STEADFAST FPO [SDF]",
       "sector": "Financial Services",
@@ -50,24 +36,46 @@
       "pnl": 0.0,
       "pnlPct": 0.0,
       "marketCap": "4.8B",
-      "thesis": "Strong 5/6 valuation tests passed. trading at a P/E discount to sector. strong 12.1% FCF yield. forward P/E re-rating expected.",
-      "type": "core"
+      "thesis": "Strong 5/6 valuation tests passed. trading at a P/E discount to sector. strong 12.1% FCF yield. forward P/E re-rating expected. Macro: Slight Tailwind for Financial Services.",
+      "type": "core",
+      "macroBias": 0.2,
+      "macroLabel": "Slight Tailwind"
     },
     {
-      "rank": 4,
-      "ticker": "ORA",
-      "name": "ORORA FPO [ORA]",
-      "sector": "Consumer Cyclical",
-      "grade": "A",
-      "testsPassed": 5,
-      "entryPrice": 1.47,
-      "currentPrice": 1.47,
+      "rank": 3,
+      "ticker": "RSG",
+      "name": "RESOLUTE FPO [RSG]",
+      "sector": "Basic Materials",
+      "grade": "B",
+      "testsPassed": 4,
+      "entryPrice": 1.42,
+      "currentPrice": 1.42,
       "weekClosePrice": null,
       "pnl": 0.0,
       "pnlPct": 0.0,
-      "marketCap": "1.8B",
-      "thesis": "Strong 5/6 valuation tests passed. trading at a P/E discount to sector. strong 11.1% FCF yield. forward P/E re-rating expected.",
-      "type": "core"
+      "marketCap": "3.0B",
+      "thesis": "Solid 4/6 valuation tests passed. trading at a P/E discount to sector. strong 6.0% FCF yield. forward P/E re-rating expected. Macro: Tailwind for Basic Materials.",
+      "type": "core",
+      "macroBias": 0.5,
+      "macroLabel": "Tailwind"
+    },
+    {
+      "rank": 4,
+      "ticker": "MTS",
+      "name": "METCASHLTD FPO [MTS]",
+      "sector": "Consumer Defensive",
+      "grade": "B",
+      "testsPassed": 4,
+      "entryPrice": 2.9,
+      "currentPrice": 2.9,
+      "weekClosePrice": null,
+      "pnl": 0.0,
+      "pnlPct": 0.0,
+      "marketCap": "3.2B",
+      "thesis": "Solid 4/6 valuation tests passed. trading at a P/E discount to sector. strong 14.1% FCF yield. forward P/E re-rating expected. Macro: Tailwind for Consumer Defensive.",
+      "type": "core",
+      "macroBias": 0.4,
+      "macroLabel": "Tailwind"
     },
     {
       "rank": 5,
@@ -82,8 +90,10 @@
       "pnl": 0.0,
       "pnlPct": 0.0,
       "marketCap": "434M",
-      "thesis": "2/6 valuation tests flagged. strong 12.4% FCF yield. trading below book value. Consumer Cyclical sector. Micro-cap speculative play (434M).",
-      "type": "speculative"
+      "thesis": "2/6 valuation tests flagged. strong 12.4% FCF yield. trading below book value. Consumer Cyclical sector. Micro-cap speculative play (434M). Macro: Strong Headwind.",
+      "type": "speculative",
+      "macroBias": -0.6,
+      "macroLabel": "Strong Headwind"
     }
   ],
   "summary": {
@@ -91,5 +101,14 @@
     "winners": 0,
     "losers": 0,
     "flat": 5
+  },
+  "macro": {
+    "headline": "US-Iran ceasefire expiring 22 April — escalation risk high",
+    "themes": [
+      "Energy prices elevated — Strait of Hormuz disruption risk",
+      "Gold as safe haven — central bank buying + geopolitical fear",
+      "Consumer confidence weak — inflationary pressures from energy"
+    ],
+    "source": "fallback"
   }
 }

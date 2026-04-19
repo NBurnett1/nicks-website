@@ -20,6 +20,7 @@ from datetime import datetime, timezone, timedelta
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import yfinance as yf
+from macro_scanner import get_macro_biases, apply_macro_bias, save_macro_context, _find_sector_bias, _bias_label
 
 
 # ── Configuration ──
@@ -114,13 +115,15 @@ def generate_thesis(stock, detail):
     return thesis
 
 
-def select_core_picks(index_data, details_dir, exclude_tickers=None):
-    """Select top 4 core picks: Grade A/B, sector-diversified, $500M+ market cap."""
+def select_core_picks(index_data, details_dir, exclude_tickers=None, sector_biases=None):
+    """Select top 4 core picks: Grade A/B, sector-diversified, $500M+ market cap.
+    Now uses macro sector biases to rank stocks by combined valuation + macro score."""
     exclude_tickers = exclude_tickers or set()
+    sector_biases = sector_biases or {}
     undervalued = index_data.get("undervalued", [])
 
-    # Filter and sort by conviction
-    grade_order = {"A": 5, "B": 4, "C": 3, "D": 2, "F": 1}
+    # Filter candidates
+    grade_base = {"A": 5, "B": 4, "C": 3, "D": 2, "F": 1}
     candidates = []
     for s in undervalued:
         if s["ticker"] in exclude_tickers:
@@ -131,13 +134,24 @@ def select_core_picks(index_data, details_dir, exclude_tickers=None):
         mc = parse_market_cap(s.get("marketCap", "0"))
         if mc < MIN_MARKET_CAP_CORE:
             continue
+
+        # Skip stocks in strongly headwind sectors (bias < -0.5)
+        sector = s.get("sector", "Unknown")
+        bias = _find_sector_bias(sector, sector_biases)
+        if bias <= -0.5 and grade != "A":
+            print(f"    ⛔ Skipping {s['ticker']} — {sector} has strong headwind ({bias:+.1f})")
+            continue
+
+        # Compute combined score: valuation conviction + macro bias
+        val_score = grade_base.get(grade, 0) + (s.get("testsPassed", 0) * 0.5)
+        macro_boost = bias * 3.0  # Scale macro bias to be meaningful
+        combined = val_score + macro_boost
+        s["_combinedScore"] = round(combined, 2)
+        s["_macroBias"] = round(bias, 2)
         candidates.append(s)
 
-    candidates.sort(key=lambda x: (
-        -grade_order.get(x.get("grade", "F"), 0),
-        -x.get("testsPassed", 0),
-        x.get("valuationScore", 0),   # More negative = more undervalued
-    ))
+    # Sort by combined score (valuation + macro), not just valuation
+    candidates.sort(key=lambda x: -x.get("_combinedScore", 0))
 
     # Sector diversification — max 1 per sector
     selected = []
@@ -163,6 +177,11 @@ def select_core_picks(index_data, details_dir, exclude_tickers=None):
     picks = []
     for rank, stock in enumerate(selected[:CORE_PICKS], 1):
         detail = _load_detail(details_dir, stock["ticker"])
+        bias = stock.get("_macroBias", 0)
+        macro_label = _bias_label(bias)
+        thesis = generate_thesis(stock, detail)
+        if bias != 0:
+            thesis = thesis.rstrip(".") + f". Macro: {macro_label} for {stock.get('sector', 'sector')}."
         picks.append({
             "rank": rank,
             "ticker": stock["ticker"],
@@ -176,20 +195,23 @@ def select_core_picks(index_data, details_dir, exclude_tickers=None):
             "pnl": 0.0,
             "pnlPct": 0.0,
             "marketCap": stock.get("marketCap", "—"),
-            "thesis": generate_thesis(stock, detail),
+            "thesis": thesis,
             "type": "core",
+            "macroBias": bias,
+            "macroLabel": macro_label,
         })
 
     return picks
 
 
-def select_speculative_pick(index_data, details_dir, exclude_tickers=None):
+def select_speculative_pick(index_data, details_dir, exclude_tickers=None, sector_biases=None):
     """
     Select 1 speculative penny/micro-cap pick.
     Criteria: <$500M market cap, Grade C+ (at least some tests passed),
-    high volume relative to average, interesting sector.
+    high volume relative to average, macro-aligned sector preferred.
     """
     exclude_tickers = exclude_tickers or set()
+    sector_biases = sector_biases or {}
     undervalued = index_data.get("undervalued", [])
 
     candidates = []
@@ -218,8 +240,12 @@ def select_speculative_pick(index_data, details_dir, exclude_tickers=None):
     if not candidates:
         return None
 
-    # Score candidates: prioritize tests passed + deeper discount
+    # Score candidates: prioritize tests passed + deeper discount + macro tailwind
+    for c in candidates:
+        bias = _find_sector_bias(c.get("sector", ""), sector_biases)
+        c["_specMacro"] = bias
     candidates.sort(key=lambda x: (
+        -x.get("_specMacro", 0),  # Macro-aligned sectors first
         -x.get("testsPassed", 0),
         x.get("valuationScore", 0),
     ))
@@ -255,7 +281,9 @@ def select_speculative_pick(index_data, details_dir, exclude_tickers=None):
         vol_note = f" Volume surge detected ({best['_volRatio']:.1f}x avg)."
 
     thesis = generate_thesis(best, detail)
-    thesis = thesis.rstrip(".") + f". Micro-cap speculative play ({best.get('marketCap', '?')}).{vol_note}"
+    spec_bias = _find_sector_bias(best.get("sector", ""), sector_biases)
+    macro_note = f" Macro: {_bias_label(spec_bias)}." if spec_bias != 0 else ""
+    thesis = thesis.rstrip(".") + f". Micro-cap speculative play ({best.get('marketCap', '?')}).{vol_note}{macro_note}"
 
     return {
         "rank": CORE_PICKS + 1,
@@ -272,6 +300,8 @@ def select_speculative_pick(index_data, details_dir, exclude_tickers=None):
         "marketCap": best.get("marketCap", "—"),
         "thesis": thesis,
         "type": "speculative",
+        "macroBias": round(_find_sector_bias(best.get("sector", ""), sector_biases), 2),
+        "macroLabel": _bias_label(_find_sector_bias(best.get("sector", ""), sector_biases)),
     }
 
 
@@ -307,7 +337,7 @@ def load_previous_picks(weeks_dir, current_week_num):
 
 
 def generate_week(week_num, index_data, details_dir, weeks_dir, backfill=False):
-    """Generate a complete week JSON."""
+    """Generate a complete week JSON with macro/geopolitical overlay."""
     monday, friday = get_week_dates(week_num)
     now = datetime.now(AEST)
 
@@ -323,14 +353,33 @@ def generate_week(week_num, index_data, details_dir, weeks_dir, backfill=False):
     print(f"\n  📅 Week {week_num}: {monday.strftime('%d %b')} – {friday.strftime('%d %b %Y')}")
     print(f"     Status: {status}")
 
+    # ── MACRO SCAN: Get geopolitical/news sector biases ──
+    print(f"  🌍 Running macro/geopolitical scan...")
+    sector_biases, macro_context = get_macro_biases()
+    print(f"     Headline: {macro_context.get('headline', 'N/A')}")
+    print(f"     Source: {macro_context.get('source', 'unknown')}")
+    if macro_context.get('themes'):
+        for theme in macro_context['themes'][:3]:
+            print(f"     • {theme}")
+    # Print sector biases
+    favored = {k: v for k, v in sector_biases.items() if v >= 0.3}
+    avoided = {k: v for k, v in sector_biases.items() if v <= -0.3}
+    if favored:
+        print(f"     ✅ Favored: {', '.join(f'{k} ({v:+.1f})' for k, v in sorted(favored.items(), key=lambda x: -x[1]))}")
+    if avoided:
+        print(f"     ❌ Avoided: {', '.join(f'{k} ({v:+.1f})' for k, v in sorted(avoided.items(), key=lambda x: x[1]))}")
+
+    # Save macro context alongside week data
+    save_macro_context(weeks_dir, week_num, macro_context, sector_biases)
+
     # Load previously picked tickers to exclude repeats
     exclude = load_previous_picks(weeks_dir, week_num)
     if exclude:
         print(f"     Excluding {len(exclude)} previously picked tickers: {', '.join(sorted(exclude))}")
 
-    # Select picks
-    core = select_core_picks(index_data, details_dir, exclude_tickers=exclude)
-    spec = select_speculative_pick(index_data, details_dir, exclude_tickers=exclude | {p['ticker'] for p in core})
+    # Select picks with macro overlay
+    core = select_core_picks(index_data, details_dir, exclude_tickers=exclude, sector_biases=sector_biases)
+    spec = select_speculative_pick(index_data, details_dir, exclude_tickers=exclude | {p['ticker'] for p in core}, sector_biases=sector_biases)
 
     picks = core
     if spec:
@@ -362,6 +411,11 @@ def generate_week(week_num, index_data, details_dir, weeks_dir, backfill=False):
             "losers": losers,
             "flat": len(picks) - winners - losers,
         },
+        "macro": {
+            "headline": macro_context.get("headline", ""),
+            "themes": macro_context.get("themes", [])[:3],
+            "source": macro_context.get("source", "unknown"),
+        },
     }
 
     # Print picks
@@ -378,7 +432,7 @@ def update_weeks_index(weeks_dir):
     """Rebuild the weeks index.json from all weekN.json files."""
     weeks = []
     for f in sorted(os.listdir(weeks_dir)):
-        if f.startswith("week") and f.endswith(".json") and f != "index.json":
+        if f.startswith("week") and f.endswith(".json") and f != "index.json" and "_" not in f:
             path = os.path.join(weeks_dir, f)
             with open(path) as fh:
                 data = json.load(fh)

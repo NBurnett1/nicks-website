@@ -87,6 +87,23 @@ export default function WeeklyPicks({ exchange = 'ASX' }) {
         )}
       </div>
 
+      {/* Macro Context Banner */}
+      {weekData.macro && weekData.macro.headline && (
+        <div className="weekly-picks__macro">
+          <div className="weekly-picks__macro-icon">🌍</div>
+          <div className="weekly-picks__macro-content">
+            <div className="weekly-picks__macro-headline">{weekData.macro.headline}</div>
+            {weekData.macro.themes && weekData.macro.themes.length > 0 && (
+              <div className="weekly-picks__macro-themes">
+                {weekData.macro.themes.map((theme, i) => (
+                  <span key={i} className="weekly-picks__macro-theme">• {theme}</span>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+
       {/* Hero Pick — #1 */}
       {heroPick && (
         <div
@@ -103,7 +120,14 @@ export default function WeeklyPicks({ exchange = 'ASX' }) {
               <div className="weekly-picks__hero-info">
                 <div className="weekly-picks__hero-ticker">{heroPick.ticker}</div>
                 <div className="weekly-picks__hero-name">{heroPick.name}</div>
-                <div className="weekly-picks__hero-sector">{heroPick.sector}</div>
+                <div className="weekly-picks__hero-sector">
+                  {heroPick.sector}
+                  {heroPick.macroLabel && (
+                    <span className={`weekly-picks__macro-pill weekly-picks__macro-pill--${heroPick.macroBias >= 0.3 ? 'tailwind' : heroPick.macroBias <= -0.3 ? 'headwind' : 'neutral'}`}>
+                      {heroPick.macroBias >= 0.3 ? '↑' : heroPick.macroBias <= -0.3 ? '↓' : '→'} {heroPick.macroLabel}
+                    </span>
+                  )}
+                </div>
               </div>
             </div>
             <div className="weekly-picks__hero-right">
@@ -153,7 +177,14 @@ export default function WeeklyPicks({ exchange = 'ASX' }) {
               <div className="weekly-picks__card-info">
                 <div className="weekly-picks__card-ticker">{pick.ticker}</div>
                 <div className="weekly-picks__card-name">{pick.name}</div>
-                <div className="weekly-picks__card-sector">{pick.sector}</div>
+                <div className="weekly-picks__card-sector">
+                  {pick.sector}
+                  {pick.macroLabel && (
+                    <span className={`weekly-picks__macro-pill weekly-picks__macro-pill--${pick.macroBias >= 0.3 ? 'tailwind' : pick.macroBias <= -0.3 ? 'headwind' : 'neutral'}`}>
+                      {pick.macroBias >= 0.3 ? '↑' : pick.macroBias <= -0.3 ? '↓' : '→'} {pick.macroLabel}
+                    </span>
+                  )}
+                </div>
               </div>
             </div>
             <div className="weekly-picks__card-thesis">{pick.thesis}</div>
