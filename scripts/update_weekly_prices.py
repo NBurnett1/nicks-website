@@ -101,7 +101,7 @@ def main():
 
     week_files = sorted([
         f for f in os.listdir(weeks_dir)
-        if f.startswith("week") and f.endswith(".json") and f != "index.json"
+        if f.startswith("week") and f.endswith(".json") and f != "index.json" and "_" not in f
     ])
 
     for wf in week_files:

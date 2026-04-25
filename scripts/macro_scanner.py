@@ -91,12 +91,12 @@ def get_macro_biases(gemini_key=None):
 def _gemini_macro_scan(api_key):
     """Use Gemini to analyze current macro environment and produce sector biases."""
     try:
-        import google.generativeai as genai
+        from google import genai
     except ImportError:
-        print("  ⚠ google-generativeai not installed")
+        print("  ⚠ google-genai not installed. Install with: pip install google-genai")
         return None, None
 
-    genai.configure(api_key=api_key)
+    client = genai.Client(api_key=api_key)
 
     prompt = f"""You are an ASX (Australian Stock Exchange) equity strategist.
 Today is {datetime.now(AEST).strftime('%A %d %B %Y')} (AEST).
@@ -144,8 +144,10 @@ Bias values:
 IMPORTANT: Return ONLY the JSON, no markdown, no explanation."""
 
     try:
-        model = genai.GenerativeModel("gemini-2.0-flash")
-        response = model.generate_content(prompt)
+        response = client.models.generate_content(
+            model="gemini-2.5-flash",
+            contents=prompt,
+        )
         text = response.text.strip()
 
         # Clean markdown fences if present

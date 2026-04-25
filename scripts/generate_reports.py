@@ -1,33 +1,34 @@
 """
 Generate AI equity research reports using Google Gemini 2.5 Flash.
+Migrated to the new google.genai SDK (google-generativeai is deprecated).
 """
 
 import json
 import time
 import os
 import re
-import google.generativeai as genai
+from google import genai
+from google.genai import types
 from config import ANALYST_PROMPT, format_market_cap
 
 
 def setup_gemini():
-    """Configure the Gemini API client."""
+    """Configure the Gemini API client. Returns a genai.Client instance."""
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
         raise ValueError(
             "GEMINI_API_KEY environment variable not set.\n"
             "Get a free key at: https://aistudio.google.com/apikey"
         )
-    genai.configure(api_key=api_key)
-    return genai.GenerativeModel("gemini-2.5-flash")
+    return genai.Client(api_key=api_key)
 
 
-def generate_report(model, stock_data, sector_medians, retry_count=2):
+def generate_report(client, stock_data, sector_medians, retry_count=2):
     """
     Generate a full equity research report for a single stock.
 
     Args:
-        model: Gemini GenerativeModel instance
+        client: genai.Client instance
         stock_data: Dict with stock financial data
         sector_medians: Dict with sector median values
         retry_count: Number of retries on failure
@@ -63,13 +64,14 @@ def generate_report(model, stock_data, sector_medians, retry_count=2):
 
     for attempt in range(retry_count + 1):
         try:
-            response = model.generate_content(
-                prompt,
-                generation_config={
-                    "temperature": 0.3,  # Low temp for analytical consistency
-                    "max_output_tokens": 12288,
-                    "response_mime_type": "application/json",  # Force clean JSON output
-                },
+            response = client.models.generate_content(
+                model="gemini-2.5-flash",
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    temperature=0.3,  # Low temp for analytical consistency
+                    max_output_tokens=12288,
+                    response_mime_type="application/json",  # Force clean JSON output
+                ),
             )
 
             text = response.text.strip()
@@ -101,12 +103,12 @@ def generate_report(model, stock_data, sector_medians, retry_count=2):
     return None
 
 
-def generate_all_reports(model, stocks_df, output_dir, delay=3.0):
+def generate_all_reports(client, stocks_df, output_dir, delay=3.0):
     """
     Generate reports for all stocks in the DataFrame.
 
     Args:
-        model: Gemini model instance
+        client: genai.Client instance
         stocks_df: DataFrame with scored stock data
         output_dir: Directory to save JSON reports
         delay: Seconds between API calls to stay within rate limits
@@ -128,7 +130,7 @@ def generate_all_reports(model, stocks_df, output_dir, delay=3.0):
         }
 
         stock_data = row.to_dict()
-        report = generate_report(model, stock_data, sector_medians)
+        report = generate_report(client, stock_data, sector_medians)
 
         if report:
             # Build full report JSON

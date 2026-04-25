@@ -2,10 +2,14 @@ name: ASX Weekly Picks Pipeline
 
 on:
   schedule:
-    # Weekly: Sunday 8pm AEST (10:00 UTC) — run pipeline + generate new week picks
+    # SUNDAY 8pm AEST (10:00 UTC)
+    # Full cycle: pipeline scan → archive previous week → generate next week picks
     - cron: '0 10 * * 0'
-    # Daily: 5pm AEST (7:00 UTC) Mon-Fri — update prices for active week
+
+    # MON-FRI 5pm AEST (7:00 UTC)
+    # Update current prices for the active week
     - cron: '0 7 * * 1-5'
+
   workflow_dispatch:
     inputs:
       mode:
@@ -40,29 +44,40 @@ jobs:
       - name: Install dependencies
         run: pip install -r scripts/requirements.txt
 
-      # --- Sunday: Full pipeline + new week picks ---
+      # ═══════════════════════════════════════════
+      # SUNDAY: Full pipeline + archive + new picks
+      # ═══════════════════════════════════════════
+
       - name: Run ASX valuation pipeline
         if: github.event.schedule == '0 10 * * 0' || github.event.inputs.mode == 'full-pipeline'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/run_pipeline.py --exchange ASX --skip-reports
 
-      - name: Generate weekly picks
+      - name: Archive previous week + generate new picks
         if: github.event.schedule == '0 10 * * 0' || github.event.inputs.mode == 'full-pipeline' || github.event.inputs.mode == 'generate-picks'
-        run: python scripts/generate_weekly_picks.py
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/generate_weekly_picks.py --sunday
 
-      # --- Daily: Update prices for active week ---
+      # ═══════════════════════════════════════════
+      # MON-FRI: Update prices for active week
+      # ═══════════════════════════════════════════
+
       - name: Update weekly prices
         if: github.event.schedule == '0 7 * * 1-5' || github.event.inputs.mode == 'update-prices' || github.event.inputs.mode == 'full-pipeline'
         run: python scripts/update_weekly_prices.py
 
-      # --- Commit and Push ---
+      # ═══════════════════════════════════════════
+      # COMMIT + PUSH → triggers Vercel auto-deploy
+      # ═══════════════════════════════════════════
+
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add public/data/
-          git diff --staged --quiet || git commit -m "chore: ASX data update [$(date -u +%Y-%m-%d' '%H:%M)]
+          git diff --staged --quiet || git commit -m "chore: ASX data update [$(date -u +%Y-%m-%d %H:%M)]
 
           Schedule: ${{ github.event.schedule || github.event.inputs.mode }}"
           git push

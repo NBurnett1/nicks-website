@@ -137,6 +137,7 @@ def run_pipeline(exchange="ASX", skip_reports=False, top_n=None, limit=None, tic
                 "pe": _safe_float(row.get("pe")),
                 "sectorPe": _safe_float(row.get("sectorPe")),
                 "pb": _safe_float(row.get("pb")),
+                "ps": _safe_float(row.get("ps")),
                 "evEbitda": _safe_float(row.get("evEbitda")),
                 "fcfYield": _safe_float(row.get("fcfYield")),
                 "forwardPe": _safe_float(row.get("forwardPe")),
@@ -213,9 +214,9 @@ def run_pipeline(exchange="ASX", skip_reports=False, top_n=None, limit=None, tic
             from generate_reports import setup_gemini, generate_all_reports
             import pandas as pd
 
-            model = setup_gemini()
+            client = setup_gemini()
             report_stocks = pd.concat([overvalued, undervalued], ignore_index=True)
-            success = generate_all_reports(model, report_stocks, reports_dir, delay=3.0)
+            success = generate_all_reports(client, report_stocks, reports_dir, delay=3.0)
             print(f"\n  ✓ Generated {success} / {len(report_stocks)} reports")
         except ValueError as e:
             print(f"\n  ⚠ Skipping AI reports: {e}")

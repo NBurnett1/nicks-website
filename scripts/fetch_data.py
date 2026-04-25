@@ -67,6 +67,7 @@ def fetch_stock_data(tickers=None, exchange="ASX", batch_size=10, delay=1.0):
                     "pe": info.get("trailingPE"),
                     "forwardPe": info.get("forwardPE"),
                     "pb": info.get("priceToBook"),
+                    "ps": info.get("priceToSalesTrailing12Months"),
                     "evEbitda": info.get("enterpriseToEbitda"),
                     "dividendYield": info.get("dividendYield"),
                     "revenueGrowth": _pct(info.get("revenueGrowth")),

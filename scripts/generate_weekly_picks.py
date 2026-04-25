@@ -15,6 +15,7 @@ import json
 import os
 import sys
 import argparse
+import time
 from datetime import datetime, timezone, timedelta
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -113,6 +114,162 @@ def generate_thesis(stock, detail):
     # Combine
     thesis = ". ".join(parts[:4]) + "."
     return thesis
+
+
+# ── Qualitative Screening (Deep Dive + Short Report) ──
+# Uses Gemini to assess business quality, asymmetry, and bear case risks
+# for candidate picks before they go live.
+
+def _get_gemini_client():
+    """Get a Gemini client, or None if unavailable."""
+    key = os.environ.get("GEMINI_API_KEY")
+    if not key:
+        return None
+    try:
+        from google import genai
+        return genai.Client(api_key=key)
+    except ImportError:
+        return None
+
+
+def qualify_picks(picks, details_dir, sector_biases=None):
+    """
+    Run qualitative screening on candidate picks using Gemini.
+    Combines Deep Dive (business model, moat, catalyst, asymmetry)
+    and Short Report (bear case) into a single prompt per stock.
+
+    Returns picks with added 'qualScore' and 'qualReasoning' fields.
+    Picks that fail the bear case kill switch are marked for rejection.
+    Falls back gracefully when API is unavailable.
+    """
+    client = _get_gemini_client()
+    if client is None:
+        print("  ⚠ Gemini API unavailable — skipping qualitative screening")
+        for p in picks:
+            p["qualScore"] = None
+            p["qualReasoning"] = "Qualitative screening skipped (no API)"
+            p["qualPassed"] = True  # Don't reject without evidence
+        return picks
+
+    print(f"  🧠 Running qualitative screening on {len(picks)} candidates...")
+    screened = []
+
+    for p in picks:
+        ticker = p["ticker"]
+        name = p.get("name", ticker)
+        sector = p.get("sector", "Unknown")
+        grade = p.get("grade", "?")
+        tests = p.get("testsPassed", 0)
+        mcap = p.get("marketCap", "?")
+        price = p.get("entryPrice", 0)
+        pick_type = p.get("type", "core")
+        macro_label = p.get("macroLabel", "Neutral")
+
+        # Load detail metrics if available
+        detail = _load_detail(details_dir, ticker)
+        metrics_context = ""
+        if detail:
+            m = detail.get("metrics", {})
+            metrics_context = f"""
+    Financial Metrics:
+    - P/E: {m.get('pe', 'N/A')}, Forward P/E: {m.get('forwardPe', 'N/A')}
+    - P/B: {m.get('pb', 'N/A')}, EV/EBITDA: {m.get('evEbitda', 'N/A')}
+    - FCF Yield: {m.get('fcfYield', 'N/A')}%, Revenue Growth: {m.get('revenueGrowth', 'N/A')}%
+    - Profit Margin: {m.get('profitMargin', 'N/A')}%, ROE: {m.get('roe', 'N/A')}%
+    - Debt/Equity: {m.get('debtEquity', 'N/A')}%"""
+
+        bias = _find_sector_bias(sector, sector_biases or {})
+        bias_label = _bias_label(bias)
+
+        prompt = f"""You are a senior equity analyst performing due diligence on an ASX stock pick.
+
+Stock: {name} ({ticker}.AX)
+Sector: {sector} | Market Cap: {mcap} | Price: A${price:.2f}
+Valuation Grade: {grade} ({tests}/7 tests passed)
+Pick Type: {pick_type} | Macro Bias: {bias_label} ({bias:+.1f})
+{metrics_context}
+
+Perform TWO analyses and return a JSON object:
+
+1. DEEP DIVE — Assess:
+   - Business Model: How does this company make money? Is it simple to understand?
+   - Moat: Does it have any competitive advantage (brand, patents, switching costs, network effects)?
+   - Catalyst: Any upcoming events in the next 3-6 months that could move the stock?
+   - Asymmetry: Is the downside limited (asset floor, cash backing) while upside is meaningful?
+
+2. SHORT REPORT (bear case) — As a skeptic, identify:
+   - The #1 risk that could cause a 20%+ drawdown
+   - Any customer concentration, accounting concerns, or competitive threats
+   - Whether the "cheapness" is a value trap (cheap for a reason)
+
+Return ONLY this JSON (no markdown):
+{{
+  "businessModel": "1-2 sentence plain English description",
+  "moatStrength": "none|weak|moderate|strong",
+  "catalyst": "Specific upcoming catalyst or 'none identified'",
+  "asymmetry": "favorable|neutral|unfavorable",
+  "bearCase": "The strongest bear case in 1-2 sentences",
+  "bearSeverity": "low|medium|high|critical",
+  "conviction": 1-10,
+  "recommendation": "pass|reject",
+  "reasoning": "1-2 sentence summary of why to pick or reject"
+}}"""
+
+        try:
+            response = client.models.generate_content(
+                model="gemini-2.5-flash",
+                contents=prompt,
+            )
+            text = response.text.strip()
+
+            # Clean markdown fences
+            if text.startswith("```"):
+                text = text.split("\n", 1)[1]
+            if text.endswith("```"):
+                text = text.rsplit("```", 1)[0]
+            text = text.strip()
+
+            result = json.loads(text)
+            conviction = result.get("conviction", 5)
+            recommendation = result.get("recommendation", "pass")
+            bear_severity = result.get("bearSeverity", "medium")
+            asymmetry = result.get("asymmetry", "neutral")
+
+            p["qualScore"] = conviction
+            p["qualReasoning"] = result.get("reasoning", "")
+            p["qualDetail"] = {
+                "businessModel": result.get("businessModel", ""),
+                "moatStrength": result.get("moatStrength", "unknown"),
+                "catalyst": result.get("catalyst", ""),
+                "asymmetry": asymmetry,
+                "bearCase": result.get("bearCase", ""),
+                "bearSeverity": bear_severity,
+            }
+
+            # Kill switch: reject if bear case is critical, or if recommendation is reject
+            # AND asymmetry is unfavorable
+            if recommendation == "reject" and (bear_severity in ("critical", "high") or asymmetry == "unfavorable"):
+                p["qualPassed"] = False
+                icon = "❌"
+            else:
+                p["qualPassed"] = True
+                icon = "✅"
+
+            print(f"    {icon} {ticker}: conviction={conviction}/10, "
+                  f"moat={result.get('moatStrength', '?')}, "
+                  f"asymmetry={asymmetry}, "
+                  f"bear={bear_severity} → {recommendation}")
+
+        except Exception as e:
+            print(f"    ⚠ {ticker}: Screening failed ({str(e)[:80]}) — keeping pick")
+            p["qualScore"] = None
+            p["qualReasoning"] = f"Screening error: {str(e)[:100]}"
+            p["qualPassed"] = True  # Don't reject on API errors
+
+        # Gentle rate limit
+        time.sleep(2)
+
+    return picks
 
 
 def select_core_picks(index_data, details_dir, exclude_tickers=None, sector_biases=None):
@@ -387,6 +544,23 @@ def generate_week(week_num, index_data, details_dir, weeks_dir, backfill=False):
     else:
         print("  ⚠ No speculative pick found")
 
+    # ── QUALITATIVE SCREENING: Deep Dive + Short Report ──
+    # Run Gemini-powered assessment on each pick to check business quality,
+    # asymmetry, and bear case severity. Reject picks that fail.
+    picks = qualify_picks(picks, details_dir, sector_biases=sector_biases)
+
+    # Remove rejected picks and log
+    rejected = [p for p in picks if not p.get("qualPassed", True)]
+    if rejected:
+        print(f"  🚫 Rejected {len(rejected)} picks after qualitative screening:")
+        for r in rejected:
+            print(f"     ✗ {r['ticker']}: {r.get('qualReasoning', 'No reason given')}")
+    picks = [p for p in picks if p.get("qualPassed", True)]
+
+    # Re-rank picks after screening
+    for i, p in enumerate(picks, 1):
+        p["rank"] = i
+
     # Backfill with actual Monday open prices if requested
     if backfill and monday < now:
         print(f"  🔄 Backfilling prices from {monday.strftime('%Y-%m-%d')}...")
@@ -422,7 +596,8 @@ def generate_week(week_num, index_data, details_dir, weeks_dir, backfill=False):
     for p in picks:
         tag = "🔥 SPEC" if p["type"] == "speculative" else f"  #{p['rank']}"
         pnl_str = f"{p['pnlPct']:+.1f}%" if p["pnlPct"] != 0 else "—"
-        print(f"    {tag} {p['ticker']:<6} Grade {p['grade']} ({p['testsPassed']}/6) | "
+        qual_str = f" | Q:{p.get('qualScore', '?')}/10" if p.get('qualScore') is not None else ""
+        print(f"    {tag} {p['ticker']:<6} Grade {p['grade']} ({p['testsPassed']}/7){qual_str} | "
               f"A${p['entryPrice']:.2f} → A${p['currentPrice']:.2f} ({pnl_str})")
 
     return week_data
@@ -476,6 +651,8 @@ def main():
     parser.add_argument("--week", type=int, default=None, help="Week number (auto if omitted)")
     parser.add_argument("--backfill", action="store_true", help="Backfill actual open prices for past weeks")
     parser.add_argument("--all", action="store_true", help="Generate all weeks up to current")
+    parser.add_argument("--sunday", action="store_true",
+                        help="Full Sunday automation: archive previous week + generate next week picks")
     args = parser.parse_args()
 
     project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -500,7 +677,60 @@ def main():
     now = datetime.now(AEST)
     current_week = calculate_week_number(now)
 
-    if args.all:
+    if args.sunday:
+        # ── Full Sunday automation ──
+        # On Sunday, current_week still points to the just-finished week.
+        # We need to: 1) archive current_week with final prices, 2) generate current_week + 1
+        prev_week = current_week
+        next_week = current_week + 1
+
+        # Step 1: Archive the previous week — ONLY backfill prices, don't regenerate picks
+        # This preserves historical accuracy: the picks that were published stay published,
+        # even if the qualitative kill switch would reject them today.
+        prev_path = os.path.join(weeks_dir, f"week{prev_week}.json")
+        if os.path.exists(prev_path):
+            print(f"\n  📦 Archiving Week {prev_week}...")
+            with open(prev_path) as f:
+                week_data = json.load(f)
+            monday, friday = get_week_dates(prev_week)
+            # Backfill actual prices on existing picks
+            backfill_monday_open(week_data.get("picks", []), monday)
+            # Recalculate summary from actual prices
+            picks = week_data.get("picks", [])
+            if picks:
+                avg_pnl = round(sum(p["pnlPct"] for p in picks) / len(picks), 2)
+                winners = sum(1 for p in picks if p["pnlPct"] > 0)
+                losers = sum(1 for p in picks if p["pnlPct"] < 0)
+                week_data["summary"] = {
+                    "avgPnlPct": avg_pnl,
+                    "winners": winners,
+                    "losers": losers,
+                    "flat": len(picks) - winners - losers,
+                }
+            week_data["status"] = "completed"
+            with open(prev_path, "w") as f:
+                json.dump(week_data, f, indent=2, ensure_ascii=False)
+            print(f"  ✓ Week {prev_week} archived as completed")
+        else:
+            # First week ever, or previous week doesn't exist yet — generate it fresh
+            print(f"\n  📦 Generating + archiving Week {prev_week}...")
+            week_data = generate_week(prev_week, index_data, details_dir, weeks_dir, backfill=True)
+            week_data["status"] = "completed"
+            with open(prev_path, "w") as f:
+                json.dump(week_data, f, indent=2, ensure_ascii=False)
+            print(f"  ✓ Week {prev_week} saved as completed")
+
+        # Step 2: Generate next week's fresh picks
+        print(f"\n  🆕 Generating Week {next_week} picks...")
+        week_data = generate_week(next_week, index_data, details_dir, weeks_dir)
+        # Force status to active (will go live Monday)
+        week_data["status"] = "active"
+        week_path = os.path.join(weeks_dir, f"week{next_week}.json")
+        with open(week_path, "w") as f:
+            json.dump(week_data, f, indent=2, ensure_ascii=False)
+        print(f"  ✓ Week {next_week} saved as active")
+
+    elif args.all:
         # Generate all weeks from 1 to current
         for w in range(1, current_week + 1):
             week_data = generate_week(w, index_data, details_dir, weeks_dir, backfill=True)
@@ -525,3 +755,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

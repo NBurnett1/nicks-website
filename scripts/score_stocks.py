@@ -88,7 +88,7 @@ def score_stocks(df):
 
 def run_valuation_tests(row):
     """
-    Run 6 independent valuation tests on a single stock row.
+    Run 7 independent valuation tests on a single stock row.
     Returns a dict of test results, each with:
       { passed: bool|None, value: float|None, threshold: float|None, label: str }
     None for passed means data was insufficient (N/A).
@@ -98,11 +98,13 @@ def run_valuation_tests(row):
     pe = row.get("pe")
     sector_pe = row.get("sectorPe")
     pb = row.get("pb")
+    ps = row.get("ps")
     ev_ebitda = row.get("evEbitda")
     fcf_yield = row.get("fcfYield")
     forward_pe = row.get("forwardPe")
     profit_margin = row.get("profitMargin")
     roe = row.get("roe")
+    revenue_growth = row.get("revenueGrowth")
 
     # Clean values
     def _clean(val):
@@ -119,11 +121,13 @@ def run_valuation_tests(row):
     pe = _clean(pe)
     sector_pe = _clean(sector_pe)
     pb = _clean(pb)
+    ps = _clean(ps)
     ev_ebitda = _clean(ev_ebitda)
     fcf_yield = _clean(fcf_yield)
     forward_pe = _clean(forward_pe)
     profit_margin = _clean(profit_margin)
     roe = _clean(roe)
+    revenue_growth = _clean(revenue_growth)
 
     # Test 1: P/E Discount — P/E must be 15%+ below sector median
     if pe is not None and sector_pe is not None and pe > 0 and sector_pe > 0:
@@ -239,14 +243,36 @@ def run_valuation_tests(row):
             "label": "Insufficient data"
         }
 
+    # Test 7: Value/Growth Score — P/S ÷ revenue growth % (lower = more growth per dollar)
+    # Inspired by revenue PEG: a stock with P/S of 2x and 20% growth scores 0.10 (excellent)
+    # A stock with P/S of 5x and 5% growth scores 1.0 (poor value for growth)
+    if ps is not None and revenue_growth is not None and ps > 0 and revenue_growth > 0:
+        vg_score = round(ps / revenue_growth, 2)
+        threshold = 0.5  # Below 0.5 = you're getting significant growth per valuation dollar
+        tests["valueGrowthScore"] = {
+            "name": "Value/Growth Score",
+            "passed": vg_score < threshold,
+            "value": vg_score,
+            "threshold": threshold,
+            "label": f"P/S {ps:.1f}x ÷ Growth {revenue_growth:.1f}% = {vg_score:.2f}"
+        }
+    else:
+        tests["valueGrowthScore"] = {
+            "name": "Value/Growth Score",
+            "passed": None,
+            "value": None,
+            "threshold": 0.5,
+            "label": "No P/S or growth data"
+        }
+
     return tests
 
 
 def conviction_grade(tests_passed):
-    """Map number of tests passed (0-6) to a letter grade."""
-    if tests_passed >= 5:
+    """Map number of tests passed (0-7) to a letter grade."""
+    if tests_passed >= 6:
         return "A"
-    elif tests_passed == 4:
+    elif tests_passed >= 4:
         return "B"
     elif tests_passed == 3:
         return "C"
