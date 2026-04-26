@@ -8,10 +8,6 @@
   "domain": "insigniafinancial.com.au",
   "chartData": [
     {
-      "date": "2025-04-20",
-      "price": 3.72
-    },
-    {
       "date": "2025-04-27",
       "price": 3.71
     },
@@ -218,6 +214,10 @@
     {
       "date": "2026-04-19",
       "price": 4.79
+    },
+    {
+      "date": "2026-04-26",
+      "price": 4.79
     }
   ],
   "testsPassed": 3,
@@ -227,8 +227,8 @@
       "name": "P/E Discount",
       "passed": false,
       "value": 28.18,
-      "threshold": 16.2,
-      "label": "28.2x vs 16.2x sector"
+      "threshold": 15.84,
+      "label": "28.2x vs 15.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.02,
+      "value": 11.74,
       "threshold": 28.18,
-      "label": "Fwd 12.0x vs Trail 28.2x"
+      "label": "Fwd 11.7x vs Trail 28.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,11 +268,11 @@
   },
   "metrics": {
     "pe": 28.18,
-    "sectorPe": 19.05,
+    "sectorPe": 18.63,
     "pb": 1.5,
     "evEbitda": 9.2,
     "fcfYield": -1.65,
-    "forwardPe": 12.02,
+    "forwardPe": 11.74,
     "dividendYield": null,
     "revenueGrowth": 7.8,
     "profitMargin": 6.8,

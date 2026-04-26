@@ -1,16 +1,12 @@
 {
   "ticker": "JBH",
   "name": "JB HI-FI FPO [JBH]",
-  "price": 76.07,
-  "valuationScore": 0.4,
+  "price": 76.2,
+  "valuationScore": 0.7,
   "marketCap": "8.3B",
   "sector": "Consumer Discretionary",
   "domain": "jbhifi.com.au",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 94.35
-    },
     {
       "date": "2025-04-27",
       "price": 95.99
@@ -218,6 +214,10 @@
     {
       "date": "2026-04-19",
       "price": 76.07
+    },
+    {
+      "date": "2026-04-26",
+      "price": 76.2
     }
   ],
   "testsPassed": 2,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 17.29,
-      "threshold": 15.57,
-      "label": "17.3x vs 15.6x sector"
+      "value": 17.32,
+      "threshold": 15.19,
+      "label": "17.3x vs 15.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,23 +240,23 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 10.8,
+      "value": 10.82,
       "threshold": 10.0,
       "label": "10.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 6.25,
+      "value": 6.24,
       "threshold": 5.0,
       "label": "6.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 15.94,
-      "threshold": 17.29,
-      "label": "Fwd 15.9x vs Trail 17.3x"
+      "value": 15.96,
+      "threshold": 17.32,
+      "label": "Fwd 16.0x vs Trail 17.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,13 +267,13 @@
     }
   },
   "metrics": {
-    "pe": 17.29,
-    "sectorPe": 18.31,
+    "pe": 17.32,
+    "sectorPe": 17.88,
     "pb": 4.96,
-    "evEbitda": 10.8,
-    "fcfYield": 6.25,
-    "forwardPe": 15.94,
-    "dividendYield": 4.14,
+    "evEbitda": 10.82,
+    "fcfYield": 6.24,
+    "forwardPe": 15.96,
+    "dividendYield": 4.13,
     "revenueGrowth": 7.3,
     "profitMargin": 4.4,
     "operatingMargin": 7.41,

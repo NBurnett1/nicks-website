@@ -1,16 +1,12 @@
 {
   "ticker": "IGO",
   "name": "IGOLIMITED FPO [IGO]",
-  "price": 9.25,
+  "price": 7.01,
   "valuationScore": 60.0,
-  "marketCap": "7.0B",
+  "marketCap": "5.3B",
   "sector": "Materials",
   "domain": "igo.com.au",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 3.58
-    },
     {
       "date": "2025-04-27",
       "price": 3.64
@@ -218,6 +214,10 @@
     {
       "date": "2026-04-19",
       "price": 9.25
+    },
+    {
+      "date": "2026-04-26",
+      "price": 7.01
     }
   ],
   "testsPassed": 0,
@@ -233,28 +233,28 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.39,
+      "value": 2.57,
       "threshold": 1.5,
-      "label": "3.39x vs 1.5x"
+      "label": "2.57x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 272.74,
+      "value": 202.79,
       "threshold": 10.0,
-      "label": "272.7x vs 10x"
+      "label": "202.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.42,
+      "value": 3.19,
       "threshold": 5.0,
-      "label": "2.4% vs 5%"
+      "label": "3.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 14.4,
+      "value": 11.01,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -268,11 +268,11 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 20.49,
-    "pb": 3.39,
-    "evEbitda": 272.74,
-    "fcfYield": 2.42,
-    "forwardPe": 14.4,
+    "sectorPe": 20.21,
+    "pb": 2.57,
+    "evEbitda": 202.79,
+    "fcfYield": 3.19,
+    "forwardPe": 11.01,
     "dividendYield": null,
     "revenueGrowth": -31.7,
     "profitMargin": -47.18,

@@ -1,16 +1,12 @@
 {
   "ticker": "BWP",
   "name": "BWPPROPGP STAPLED [BWP]",
-  "price": 3.87,
-  "valuationScore": 2.3,
+  "price": 3.93,
+  "valuationScore": 2.5,
   "marketCap": "2.8B",
   "sector": "Real Estate",
   "domain": "bwptrust.com.au",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 3.36
-    },
     {
       "date": "2025-04-27",
       "price": 3.38
@@ -218,6 +214,10 @@
     {
       "date": "2026-04-19",
       "price": 3.87
+    },
+    {
+      "date": "2026-04-26",
+      "price": 3.93
     }
   ],
   "testsPassed": 2,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 10.46,
-      "threshold": 10.41,
-      "label": "10.5x vs 10.4x sector"
+      "value": 10.62,
+      "threshold": 10.2,
+      "label": "10.6x vs 10.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.93,
+      "value": 0.94,
       "threshold": 1.5,
-      "label": "0.93x vs 1.5x"
+      "label": "0.94x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -0.25,
+      "value": -0.24,
       "threshold": 5.0,
       "label": "-0.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 19.69,
-      "threshold": 10.46,
-      "label": "Fwd 19.7x vs Trail 10.5x"
+      "value": 19.98,
+      "threshold": 10.62,
+      "label": "Fwd 20.0x vs Trail 10.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,13 +267,13 @@
     }
   },
   "metrics": {
-    "pe": 10.46,
-    "sectorPe": 12.24,
-    "pb": 0.93,
+    "pe": 10.62,
+    "sectorPe": 12.0,
+    "pb": 0.94,
     "evEbitda": null,
-    "fcfYield": -0.25,
-    "forwardPe": 19.69,
-    "dividendYield": 4.92,
+    "fcfYield": -0.24,
+    "forwardPe": 19.98,
+    "dividendYield": 4.84,
     "revenueGrowth": 3.0,
     "profitMargin": 162.23,
     "operatingMargin": 86.85,

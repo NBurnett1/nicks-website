@@ -1,16 +1,12 @@
 {
   "ticker": "COH",
   "name": "COCHLEAR FPO [COH]",
-  "price": 168.46,
-  "valuationScore": 11.5,
-  "marketCap": "11.0B",
+  "price": 97.35,
+  "valuationScore": 2.3,
+  "marketCap": "6.4B",
   "sector": "Healthcare",
   "domain": "cochlear.com",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 255.87
-    },
     {
       "date": "2025-04-27",
       "price": 259.42
@@ -218,6 +214,10 @@
     {
       "date": "2026-04-19",
       "price": 168.46
+    },
+    {
+      "date": "2026-04-26",
+      "price": 97.35
     }
   ],
   "testsPassed": 2,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 31.97,
-      "threshold": 19.0,
-      "label": "32.0x vs 19.0x sector"
+      "value": 18.44,
+      "threshold": 17.5,
+      "label": "18.4x vs 17.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 5.69,
+      "value": 3.29,
       "threshold": 1.5,
-      "label": "5.69x vs 1.5x"
+      "label": "3.29x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 19.71,
+      "value": 11.43,
       "threshold": 10.0,
-      "label": "19.7x vs 10x"
+      "label": "11.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 0.94,
+      "value": 1.63,
       "threshold": 5.0,
-      "label": "0.9% vs 5%"
+      "label": "1.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 24.27,
-      "threshold": 31.97,
-      "label": "Fwd 24.3x vs Trail 32.0x"
+      "value": 18.35,
+      "threshold": 18.44,
+      "label": "Fwd 18.4x vs Trail 18.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,13 +267,13 @@
     }
   },
   "metrics": {
-    "pe": 31.97,
-    "sectorPe": 22.35,
-    "pb": 5.69,
-    "evEbitda": 19.71,
-    "fcfYield": 0.94,
-    "forwardPe": 24.27,
-    "dividendYield": 2.55,
+    "pe": 18.44,
+    "sectorPe": 20.58,
+    "pb": 3.29,
+    "evEbitda": 11.43,
+    "fcfYield": 1.63,
+    "forwardPe": 18.35,
+    "dividendYield": 4.42,
     "revenueGrowth": -0.4,
     "profitMargin": 14.77,
     "operatingMargin": 21.62,

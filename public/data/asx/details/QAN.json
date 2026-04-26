@@ -1,16 +1,12 @@
 {
   "ticker": "QAN",
   "name": "QANTAS FPO [QAN]",
-  "price": 9.08,
-  "valuationScore": 9.3,
-  "marketCap": "13.7B",
+  "price": 8.41,
+  "valuationScore": 7.8,
+  "marketCap": "12.7B",
   "sector": "Industrials",
   "domain": "qantas.com",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 8.14
-    },
     {
       "date": "2025-04-27",
       "price": 8.2
@@ -218,6 +214,10 @@
     {
       "date": "2026-04-19",
       "price": 9.08
+    },
+    {
+      "date": "2026-04-26",
+      "price": 8.41
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 8.57,
-      "threshold": 24.55,
-      "label": "8.6x vs 24.6x sector"
+      "value": 7.93,
+      "threshold": 26.45,
+      "label": "7.9x vs 26.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 10.23,
+      "value": 9.47,
       "threshold": 1.5,
-      "label": "10.23x vs 1.5x"
+      "label": "9.47x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 4.63,
+      "value": 4.39,
       "threshold": 10.0,
-      "label": "4.6x vs 10x"
+      "label": "4.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -4.39,
+      "value": -4.74,
       "threshold": 5.0,
-      "label": "-4.4% vs 5%"
+      "label": "-4.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 8.01,
-      "threshold": 8.57,
-      "label": "Fwd 8.0x vs Trail 8.6x"
+      "value": 7.42,
+      "threshold": 7.93,
+      "label": "Fwd 7.4x vs Trail 7.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,13 +267,13 @@
     }
   },
   "metrics": {
-    "pe": 8.57,
-    "sectorPe": 28.89,
-    "pb": 10.23,
-    "evEbitda": 4.63,
-    "fcfYield": -4.39,
-    "forwardPe": 8.01,
-    "dividendYield": 4.36,
+    "pe": 7.93,
+    "sectorPe": 31.11,
+    "pb": 9.47,
+    "evEbitda": 4.39,
+    "fcfYield": -4.74,
+    "forwardPe": 7.42,
+    "dividendYield": 4.71,
     "revenueGrowth": 6.3,
     "profitMargin": 6.53,
     "operatingMargin": 11.4,

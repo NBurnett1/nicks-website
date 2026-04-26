@@ -2,15 +2,11 @@
   "ticker": "AIA",
   "name": "AUCK AIRPT FPO NZX [AIA]",
   "price": 6.73,
-  "valuationScore": 8.0,
+  "valuationScore": 7.3,
   "marketCap": "11.4B",
   "sector": "Industrials",
   "domain": "aucklandairport.co.nz",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 7.36
-    },
     {
       "date": "2025-04-27",
       "price": 7.38
@@ -218,6 +214,10 @@
     {
       "date": "2026-04-19",
       "price": 6.73
+    },
+    {
+      "date": "2026-04-26",
+      "price": 6.73
     }
   ],
   "testsPassed": 1,
@@ -227,8 +227,8 @@
       "name": "P/E Discount",
       "passed": false,
       "value": 33.65,
-      "threshold": 24.55,
-      "label": "33.6x vs 24.6x sector"
+      "threshold": 26.45,
+      "label": "33.6x vs 26.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -254,7 +254,7 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 43.21,
+      "value": 43.18,
       "threshold": 33.65,
       "label": "Fwd 43.2x vs Trail 33.6x"
     },
@@ -268,11 +268,11 @@
   },
   "metrics": {
     "pe": 33.65,
-    "sectorPe": 28.89,
+    "sectorPe": 31.11,
     "pb": 1.31,
     "evEbitda": 19.59,
     "fcfYield": -4.72,
-    "forwardPe": 43.21,
+    "forwardPe": 43.18,
     "dividendYield": 1.72,
     "revenueGrowth": 6.1,
     "profitMargin": 41.78,

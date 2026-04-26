@@ -1,16 +1,12 @@
 {
   "ticker": "NEC",
   "name": "NINE ENT FPO [NEC]",
-  "price": 0.99,
-  "valuationScore": -0.9,
-  "marketCap": "1.6B",
+  "price": 0.94,
+  "valuationScore": -1.3,
+  "marketCap": "1.5B",
   "sector": "Communication Services",
   "domain": "nineforbrands.com.au",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 0.89
-    },
     {
       "date": "2025-04-27",
       "price": 0.91
@@ -218,6 +214,10 @@
     {
       "date": "2026-04-19",
       "price": 0.99
+    },
+    {
+      "date": "2026-04-26",
+      "price": 0.94
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 14.14,
-      "threshold": 12.4,
-      "label": "14.1x vs 12.4x sector"
+      "value": 13.36,
+      "threshold": 12.18,
+      "label": "13.4x vs 12.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.95,
+      "value": 0.9,
       "threshold": 1.5,
-      "label": "0.95x vs 1.5x"
+      "label": "0.90x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 4.54,
+      "value": 4.3,
       "threshold": 10.0,
-      "label": "4.5x vs 10x"
+      "label": "4.3x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 0.21,
+      "value": 0.22,
       "threshold": 5.0,
       "label": "0.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 9.55,
-      "threshold": 14.14,
-      "label": "Fwd 9.6x vs Trail 14.1x"
+      "value": 9.02,
+      "threshold": 13.36,
+      "label": "Fwd 9.0x vs Trail 13.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,13 +267,13 @@
     }
   },
   "metrics": {
-    "pe": 14.14,
-    "sectorPe": 14.58,
-    "pb": 0.95,
-    "evEbitda": 4.54,
-    "fcfYield": 0.21,
-    "forwardPe": 9.55,
-    "dividendYield": 8.59,
+    "pe": 13.36,
+    "sectorPe": 14.33,
+    "pb": 0.9,
+    "evEbitda": 4.3,
+    "fcfYield": 0.22,
+    "forwardPe": 9.02,
+    "dividendYield": 9.09,
     "revenueGrowth": -4.4,
     "profitMargin": 34.84,
     "operatingMargin": 13.72,

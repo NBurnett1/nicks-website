@@ -1,16 +1,12 @@
 {
   "ticker": "CQR",
   "name": "CHRETAILRT ORD UNITS [CQR]",
-  "price": 3.8,
-  "valuationScore": -2.8,
+  "price": 3.86,
+  "valuationScore": -2.7,
   "marketCap": "2.2B",
   "sector": "Real Estate",
   "domain": "charterhall.com.au",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 3.39
-    },
     {
       "date": "2025-04-27",
       "price": 3.46
@@ -218,6 +214,10 @@
     {
       "date": "2026-04-19",
       "price": 3.8
+    },
+    {
+      "date": "2026-04-26",
+      "price": 3.86
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 6.33,
-      "threshold": 10.41,
-      "label": "6.3x vs 10.4x sector"
+      "value": 6.43,
+      "threshold": 10.2,
+      "label": "6.4x vs 10.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.77,
+      "value": 0.79,
       "threshold": 1.5,
-      "label": "0.77x vs 1.5x"
+      "label": "0.79x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.78,
+      "value": 4.7,
       "threshold": 5.0,
-      "label": "4.8% vs 5%"
+      "label": "4.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 13.95,
-      "threshold": 6.33,
-      "label": "Fwd 14.0x vs Trail 6.3x"
+      "value": 14.29,
+      "threshold": 6.43,
+      "label": "Fwd 14.3x vs Trail 6.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,13 +267,13 @@
     }
   },
   "metrics": {
-    "pe": 6.33,
-    "sectorPe": 12.24,
-    "pb": 0.77,
+    "pe": 6.43,
+    "sectorPe": 12.0,
+    "pb": 0.79,
     "evEbitda": null,
-    "fcfYield": 4.78,
-    "forwardPe": 13.95,
-    "dividendYield": 8.29,
+    "fcfYield": 4.7,
+    "forwardPe": 14.29,
+    "dividendYield": 8.16,
     "revenueGrowth": 37.1,
     "profitMargin": 90.43,
     "operatingMargin": 75.74,

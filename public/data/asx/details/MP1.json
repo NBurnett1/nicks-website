@@ -1,16 +1,12 @@
 {
   "ticker": "MP1",
   "name": "MEGAPORT FPO [MP1]",
-  "price": 8.49,
-  "valuationScore": 7.8,
+  "price": 8.89,
+  "valuationScore": 9.4,
   "marketCap": "1.6B",
   "sector": "Technology",
   "domain": "megaport.com",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 10.04
-    },
     {
       "date": "2025-04-27",
       "price": 10.48
@@ -218,10 +214,14 @@
     {
       "date": "2026-04-19",
       "price": 8.49
+    },
+    {
+      "date": "2026-04-26",
+      "price": 8.89
     }
   ],
-  "testsPassed": 1,
-  "grade": "D",
+  "testsPassed": 0,
+  "grade": "F",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -233,28 +233,28 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.02,
+      "value": 3.16,
       "threshold": 1.5,
-      "label": "3.02x vs 1.5x"
+      "label": "3.16x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 83.7,
+      "value": 87.97,
       "threshold": 10.0,
-      "label": "83.7x vs 10x"
+      "label": "88.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": true,
-      "value": 5.18,
+      "passed": false,
+      "value": 4.94,
       "threshold": 5.0,
-      "label": "5.2% vs 5%"
+      "label": "4.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 75.9,
+      "value": 74.06,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -268,11 +268,11 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 47.68,
-    "pb": 3.02,
-    "evEbitda": 83.7,
-    "fcfYield": 5.18,
-    "forwardPe": 75.9,
+    "sectorPe": 47.04,
+    "pb": 3.16,
+    "evEbitda": 87.97,
+    "fcfYield": 4.94,
+    "forwardPe": 74.06,
     "dividendYield": null,
     "revenueGrowth": 26.3,
     "profitMargin": -7.94,

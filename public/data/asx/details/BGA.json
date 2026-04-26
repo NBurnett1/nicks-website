@@ -1,16 +1,12 @@
 {
   "ticker": "BGA",
   "name": "BEGA FPO [BGA]",
-  "price": 5.9,
-  "valuationScore": 23.1,
+  "price": 5.87,
+  "valuationScore": 22.6,
   "marketCap": "1.8B",
   "sector": "Consumer Staples",
   "domain": "begagroup.com.au",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 5.07
-    },
     {
       "date": "2025-04-27",
       "price": 5.21
@@ -218,6 +214,10 @@
     {
       "date": "2026-04-19",
       "price": 5.9
+    },
+    {
+      "date": "2026-04-26",
+      "price": 5.87
     }
   ],
   "testsPassed": 1,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 196.67,
-      "threshold": 27.69,
-      "label": "196.7x vs 27.7x sector"
+      "value": 195.67,
+      "threshold": 28.01,
+      "label": "195.7x vs 28.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.79,
+      "value": 1.78,
       "threshold": 1.5,
-      "label": "1.79x vs 1.5x"
+      "label": "1.78x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 16.81,
+      "value": 16.74,
       "threshold": 10.0,
-      "label": "16.8x vs 10x"
+      "label": "16.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.57,
+      "value": 2.58,
       "threshold": 5.0,
       "label": "2.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 21.28,
-      "threshold": 196.67,
-      "label": "Fwd 21.3x vs Trail 196.7x"
+      "value": 21.17,
+      "threshold": 195.67,
+      "label": "Fwd 21.2x vs Trail 195.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,13 +267,13 @@
     }
   },
   "metrics": {
-    "pe": 196.67,
-    "sectorPe": 32.58,
-    "pb": 1.79,
-    "evEbitda": 16.81,
-    "fcfYield": 2.57,
-    "forwardPe": 21.28,
-    "dividendYield": 2.37,
+    "pe": 195.67,
+    "sectorPe": 32.95,
+    "pb": 1.78,
+    "evEbitda": 16.74,
+    "fcfYield": 2.58,
+    "forwardPe": 21.17,
+    "dividendYield": 2.39,
     "revenueGrowth": 5.0,
     "profitMargin": 0.23,
     "operatingMargin": 4.06,

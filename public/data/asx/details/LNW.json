@@ -1,16 +1,12 @@
 {
   "ticker": "LNW",
   "name": "LIGHT & WO CDI 1:1 [LNW]",
-  "price": 121.5,
+  "price": 121.07,
   "valuationScore": 60.0,
-  "marketCap": "9.8B",
+  "marketCap": "9.3B",
   "sector": "Consumer Cyclical",
   "domain": "lnw.com",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 125.67
-    },
     {
       "date": "2025-04-27",
       "price": 130.5
@@ -218,6 +214,10 @@
     {
       "date": "2026-04-19",
       "price": 121.5
+    },
+    {
+      "date": "2026-04-26",
+      "price": 121.07
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 26.76,
-      "threshold": 21.42,
-      "label": "26.8x vs 21.4x sector"
+      "value": 26.61,
+      "threshold": 20.32,
+      "label": "26.6x vs 20.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 27.22,
+      "value": 27.29,
       "threshold": 1.5,
-      "label": "27.22x vs 1.5x"
+      "label": "27.29x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 12.42,
+      "value": 12.39,
       "threshold": 10.0,
       "label": "12.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.01,
+      "value": 5.26,
       "threshold": 5.0,
-      "label": "5.0% vs 5%"
+      "label": "5.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 9.43,
-      "threshold": 26.76,
-      "label": "Fwd 9.4x vs Trail 26.8x"
+      "value": 9.4,
+      "threshold": 26.61,
+      "label": "Fwd 9.4x vs Trail 26.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,12 +267,12 @@
     }
   },
   "metrics": {
-    "pe": 26.76,
-    "sectorPe": 25.2,
-    "pb": 27.22,
-    "evEbitda": 12.42,
-    "fcfYield": 5.01,
-    "forwardPe": 9.43,
+    "pe": 26.61,
+    "sectorPe": 23.9,
+    "pb": 27.29,
+    "evEbitda": 12.39,
+    "fcfYield": 5.26,
+    "forwardPe": 9.4,
     "dividendYield": null,
     "revenueGrowth": 11.7,
     "profitMargin": 8.33,

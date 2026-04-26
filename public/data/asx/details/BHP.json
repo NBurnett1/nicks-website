@@ -1,16 +1,12 @@
 {
   "ticker": "BHP",
   "name": "BHP GROUP FPO [BHP]",
-  "price": 55.92,
-  "valuationScore": -1.6,
-  "marketCap": "284.1B",
+  "price": 56.1,
+  "valuationScore": -0.9,
+  "marketCap": "285.0B",
   "sector": "Materials",
   "domain": "bhp.com",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 35.02
-    },
     {
       "date": "2025-04-27",
       "price": 36.54
@@ -218,6 +214,10 @@
     {
       "date": "2026-04-19",
       "price": 55.92
+    },
+    {
+      "date": "2026-04-26",
+      "price": 56.1
     }
   ],
   "testsPassed": 2,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 19.9,
-      "threshold": 17.42,
-      "label": "19.9x vs 17.4x sector"
+      "value": 19.96,
+      "threshold": 17.18,
+      "label": "20.0x vs 17.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.0,
+      "value": 4.04,
       "threshold": 1.5,
-      "label": "4.00x vs 1.5x"
+      "label": "4.04x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 11.59,
+      "value": 11.62,
       "threshold": 10.0,
       "label": "11.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.86,
+      "value": 2.85,
       "threshold": 5.0,
       "label": "2.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 15.66,
-      "threshold": 19.9,
-      "label": "Fwd 15.7x vs Trail 19.9x"
+      "value": 15.56,
+      "threshold": 19.96,
+      "label": "Fwd 15.6x vs Trail 20.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,13 +267,13 @@
     }
   },
   "metrics": {
-    "pe": 19.9,
-    "sectorPe": 20.49,
-    "pb": 4.0,
-    "evEbitda": 11.59,
-    "fcfYield": 2.86,
-    "forwardPe": 15.66,
-    "dividendYield": 3.5,
+    "pe": 19.96,
+    "sectorPe": 20.21,
+    "pb": 4.04,
+    "evEbitda": 11.62,
+    "fcfYield": 2.85,
+    "forwardPe": 15.56,
+    "dividendYield": 3.49,
     "revenueGrowth": 10.8,
     "profitMargin": 18.97,
     "operatingMargin": 40.73,

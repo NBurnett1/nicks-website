@@ -1,16 +1,12 @@
 {
   "ticker": "AGL",
   "name": "AGL ENERGY FPO [AGL]",
-  "price": 9.5,
-  "valuationScore": 9.7,
+  "price": 9.53,
+  "valuationScore": 9.8,
   "marketCap": "6.4B",
   "sector": "Utilities",
   "domain": "agl.com.au",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 9.76
-    },
     {
       "date": "2025-04-27",
       "price": 9.88
@@ -218,6 +214,10 @@
     {
       "date": "2026-04-19",
       "price": 9.5
+    },
+    {
+      "date": "2026-04-26",
+      "price": 9.53
     }
   ],
   "testsPassed": 1,
@@ -240,21 +240,21 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 12.04,
+      "value": 12.06,
       "threshold": 10.0,
-      "label": "12.0x vs 10x"
+      "label": "12.1x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -9.22,
+      "value": -9.19,
       "threshold": 5.0,
       "label": "-9.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 10.26,
+      "value": 10.33,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -268,12 +268,12 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 21.86,
+    "sectorPe": 21.2,
     "pb": 1.35,
-    "evEbitda": 12.04,
-    "fcfYield": -9.22,
-    "forwardPe": 10.26,
-    "dividendYield": 5.16,
+    "evEbitda": 12.06,
+    "fcfYield": -9.19,
+    "forwardPe": 10.33,
+    "dividendYield": 5.14,
     "revenueGrowth": -0.9,
     "profitMargin": -1.16,
     "operatingMargin": 4.53,

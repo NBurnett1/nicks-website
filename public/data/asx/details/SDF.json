@@ -1,16 +1,12 @@
 {
   "ticker": "SDF",
   "name": "STEADFAST FPO [SDF]",
-  "price": 4.33,
+  "price": 4.28,
   "valuationScore": -8.4,
   "marketCap": "4.8B",
   "sector": "Financial Services",
   "domain": "steadfast.com.au",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 5.49
-    },
     {
       "date": "2025-04-27",
       "price": 5.57
@@ -218,6 +214,10 @@
     {
       "date": "2026-04-19",
       "price": 4.33
+    },
+    {
+      "date": "2026-04-26",
+      "price": 4.28
     }
   ],
   "testsPassed": 5,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 13.53,
-      "threshold": 16.2,
-      "label": "13.5x vs 16.2x sector"
+      "value": 13.38,
+      "threshold": 15.84,
+      "label": "13.4x vs 15.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.07,
+      "value": 2.04,
       "threshold": 1.5,
-      "label": "2.07x vs 1.5x"
+      "label": "2.04x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 7.91,
+      "value": 7.84,
       "threshold": 10.0,
-      "label": "7.9x vs 10x"
+      "label": "7.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 12.09,
+      "value": 12.23,
       "threshold": 5.0,
-      "label": "12.1% vs 5%"
+      "label": "12.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.53,
-      "threshold": 13.53,
-      "label": "Fwd 12.5x vs Trail 13.5x"
+      "value": 12.39,
+      "threshold": 13.38,
+      "label": "Fwd 12.4x vs Trail 13.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,13 +267,13 @@
     }
   },
   "metrics": {
-    "pe": 13.53,
-    "sectorPe": 19.05,
-    "pb": 2.07,
-    "evEbitda": 7.91,
-    "fcfYield": 12.09,
-    "forwardPe": 12.53,
-    "dividendYield": 4.6,
+    "pe": 13.38,
+    "sectorPe": 18.63,
+    "pb": 2.04,
+    "evEbitda": 7.84,
+    "fcfYield": 12.23,
+    "forwardPe": 12.39,
+    "dividendYield": 4.65,
     "revenueGrowth": 14.9,
     "profitMargin": 16.13,
     "operatingMargin": 27.58,
