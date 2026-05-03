@@ -3,14 +3,10 @@
   "name": "NSREIT STAPLED [NSR]",
   "price": 2.79,
   "valuationScore": 60.0,
-  "marketCap": "3.9B",
+  "marketCap": "4.3B",
   "sector": "Real Estate",
   "domain": "nationalstorage.com.au",
   "chartData": [
-    {
-      "date": "2025-04-27",
-      "price": 2.13
-    },
     {
       "date": "2025-05-04",
       "price": 2.23
@@ -218,6 +214,10 @@
     {
       "date": "2026-04-26",
       "price": 2.79
+    },
+    {
+      "date": "2026-05-03",
+      "price": 2.79
     }
   ],
   "testsPassed": 1,
@@ -227,8 +227,8 @@
       "name": "P/E Discount",
       "passed": false,
       "value": 279.0,
-      "threshold": 10.2,
-      "label": "279.0x vs 10.2x sector"
+      "threshold": 10.06,
+      "label": "279.0x vs 10.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -247,9 +247,9 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 0.96,
+      "value": 0.88,
       "threshold": 5.0,
-      "label": "1.0% vs 5%"
+      "label": "0.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
@@ -268,10 +268,10 @@
   },
   "metrics": {
     "pe": 279.0,
-    "sectorPe": 12.0,
+    "sectorPe": 11.83,
     "pb": 10.98,
     "evEbitda": 38.66,
-    "fcfYield": 0.96,
+    "fcfYield": 0.88,
     "forwardPe": 21.46,
     "dividendYield": 4.3,
     "revenueGrowth": 14.6,

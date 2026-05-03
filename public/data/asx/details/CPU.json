@@ -1,16 +1,12 @@
 {
   "ticker": "CPU",
   "name": "CSHARE FPO [CPU]",
-  "price": 30.05,
-  "valuationScore": 9.3,
-  "marketCap": "17.4B",
+  "price": 30.73,
+  "valuationScore": 9.6,
+  "marketCap": "17.8B",
   "sector": "Financial Services",
   "domain": "computershare.com",
   "chartData": [
-    {
-      "date": "2025-04-27",
-      "price": 38.12
-    },
     {
       "date": "2025-05-04",
       "price": 38.23
@@ -218,6 +214,10 @@
     {
       "date": "2026-04-26",
       "price": 30.05
+    },
+    {
+      "date": "2026-05-03",
+      "price": 30.73
     }
   ],
   "testsPassed": 2,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 21.01,
-      "threshold": 15.84,
-      "label": "21.0x vs 15.8x sector"
+      "value": 21.49,
+      "threshold": 16.34,
+      "label": "21.5x vs 16.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 5.55,
+      "value": 5.65,
       "threshold": 1.5,
-      "label": "5.55x vs 1.5x"
+      "label": "5.65x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 17.47,
+      "value": 17.85,
       "threshold": 10.0,
-      "label": "17.5x vs 10x"
+      "label": "17.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.95,
+      "value": 3.87,
       "threshold": 5.0,
-      "label": "4.0% vs 5%"
+      "label": "3.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.5,
-      "threshold": 21.01,
-      "label": "Fwd 14.5x vs Trail 21.0x"
+      "value": 14.74,
+      "threshold": 21.49,
+      "label": "Fwd 14.7x vs Trail 21.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,13 +267,13 @@
     }
   },
   "metrics": {
-    "pe": 21.01,
-    "sectorPe": 18.63,
-    "pb": 5.55,
-    "evEbitda": 17.47,
-    "fcfYield": 3.95,
-    "forwardPe": 14.5,
-    "dividendYield": 3.66,
+    "pe": 21.49,
+    "sectorPe": 19.22,
+    "pb": 5.65,
+    "evEbitda": 17.85,
+    "fcfYield": 3.87,
+    "forwardPe": 14.74,
+    "dividendYield": 3.58,
     "revenueGrowth": 4.6,
     "profitMargin": 18.81,
     "operatingMargin": 26.79,

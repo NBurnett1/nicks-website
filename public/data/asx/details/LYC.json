@@ -1,16 +1,12 @@
 {
   "ticker": "LYC",
   "name": "LYNAS FPO [LYC]",
-  "price": 18.22,
+  "price": 19.14,
   "valuationScore": 60.0,
-  "marketCap": "18.3B",
+  "marketCap": "19.3B",
   "sector": "Basic Materials",
   "domain": "lynasrareearths.com",
   "chartData": [
-    {
-      "date": "2025-04-27",
-      "price": 8.29
-    },
     {
       "date": "2025-05-04",
       "price": 8.21
@@ -218,6 +214,10 @@
     {
       "date": "2026-04-26",
       "price": 18.22
+    },
+    {
+      "date": "2026-05-03",
+      "price": 19.14
     }
   ],
   "testsPassed": 1,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 227.75,
-      "threshold": 43.93,
-      "label": "227.8x vs 43.9x sector"
+      "value": 239.25,
+      "threshold": 44.74,
+      "label": "239.2x vs 44.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 5.45,
+      "value": 5.73,
       "threshold": 1.5,
-      "label": "5.45x vs 1.5x"
+      "label": "5.73x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 136.6,
+      "value": 143.82,
       "threshold": 10.0,
-      "label": "136.6x vs 10x"
+      "label": "143.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -1.66,
+      "value": -1.58,
       "threshold": 5.0,
-      "label": "-1.7% vs 5%"
+      "label": "-1.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 27.03,
-      "threshold": 227.75,
-      "label": "Fwd 27.0x vs Trail 227.8x"
+      "value": 28.61,
+      "threshold": 239.25,
+      "label": "Fwd 28.6x vs Trail 239.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,12 +267,12 @@
     }
   },
   "metrics": {
-    "pe": 227.75,
-    "sectorPe": 51.68,
-    "pb": 5.45,
-    "evEbitda": 136.6,
-    "fcfYield": -1.66,
-    "forwardPe": 27.03,
+    "pe": 239.25,
+    "sectorPe": 52.63,
+    "pb": 5.73,
+    "evEbitda": 143.82,
+    "fcfYield": -1.58,
+    "forwardPe": 28.61,
     "dividendYield": null,
     "revenueGrowth": 62.7,
     "profitMargin": 11.5,

@@ -1,16 +1,12 @@
 {
   "ticker": "RIO",
   "name": "RIO TINTO FPO [RIO]",
-  "price": 171.59,
-  "valuationScore": 3.0,
-  "marketCap": "279.0B",
+  "price": 171.97,
+  "valuationScore": 3.2,
+  "marketCap": "279.6B",
   "sector": "Materials",
   "domain": "riotinto.com",
   "chartData": [
-    {
-      "date": "2025-04-27",
-      "price": 110.21
-    },
     {
       "date": "2025-05-04",
       "price": 111.88
@@ -218,6 +214,10 @@
     {
       "date": "2026-04-26",
       "price": 171.59
+    },
+    {
+      "date": "2026-05-03",
+      "price": 171.97
     }
   ],
   "testsPassed": 2,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 20.21,
-      "threshold": 17.18,
-      "label": "20.2x vs 17.2x sector"
+      "value": 20.33,
+      "threshold": 17.28,
+      "label": "20.3x vs 17.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,7 +240,7 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 14.69,
+      "value": 14.72,
       "threshold": 10.0,
       "label": "14.7x vs 10x"
     },
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.54,
-      "threshold": 20.21,
-      "label": "Fwd 14.5x vs Trail 20.2x"
+      "value": 14.47,
+      "threshold": 20.33,
+      "label": "Fwd 14.5x vs Trail 20.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,12 +267,12 @@
     }
   },
   "metrics": {
-    "pe": 20.21,
-    "sectorPe": 20.21,
+    "pe": 20.33,
+    "sectorPe": 20.33,
     "pb": 3.22,
-    "evEbitda": 14.69,
+    "evEbitda": 14.72,
     "fcfYield": 1.25,
-    "forwardPe": 14.54,
+    "forwardPe": 14.47,
     "dividendYield": 3.43,
     "revenueGrowth": 14.6,
     "profitMargin": 17.29,

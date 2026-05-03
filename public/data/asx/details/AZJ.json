@@ -1,16 +1,12 @@
 {
   "ticker": "AZJ",
   "name": "AURIZON FPO [AZJ]",
-  "price": 4.18,
-  "valuationScore": -3.7,
-  "marketCap": "7.0B",
+  "price": 4.27,
+  "valuationScore": -3.6,
+  "marketCap": "7.2B",
   "sector": "Industrials",
   "domain": "aurizon.com.au",
   "chartData": [
-    {
-      "date": "2025-04-27",
-      "price": 2.94
-    },
     {
       "date": "2025-05-04",
       "price": 2.94
@@ -218,45 +214,49 @@
     {
       "date": "2026-04-26",
       "price": 4.18
+    },
+    {
+      "date": "2026-05-03",
+      "price": 4.27
     }
   ],
-  "testsPassed": 4,
-  "grade": "B",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 23.22,
-      "threshold": 26.45,
-      "label": "23.2x vs 26.4x sector"
+      "value": 23.72,
+      "threshold": 26.28,
+      "label": "23.7x vs 26.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.73,
+      "value": 1.77,
       "threshold": 1.5,
-      "label": "1.73x vs 1.5x"
+      "label": "1.77x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 8.17,
+      "value": 8.27,
       "threshold": 10.0,
-      "label": "8.2x vs 10x"
+      "label": "8.3x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": true,
-      "value": 5.08,
+      "passed": false,
+      "value": 4.97,
       "threshold": 5.0,
-      "label": "5.1% vs 5%"
+      "label": "5.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.89,
-      "threshold": 23.22,
-      "label": "Fwd 14.9x vs Trail 23.2x"
+      "value": 15.23,
+      "threshold": 23.72,
+      "label": "Fwd 15.2x vs Trail 23.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,13 +267,13 @@
     }
   },
   "metrics": {
-    "pe": 23.22,
-    "sectorPe": 31.11,
-    "pb": 1.73,
-    "evEbitda": 8.17,
-    "fcfYield": 5.08,
-    "forwardPe": 14.89,
-    "dividendYield": 4.55,
+    "pe": 23.72,
+    "sectorPe": 30.92,
+    "pb": 1.77,
+    "evEbitda": 8.27,
+    "fcfYield": 4.97,
+    "forwardPe": 15.23,
+    "dividendYield": 4.45,
     "revenueGrowth": 2.1,
     "profitMargin": 7.63,
     "operatingMargin": 24.91,

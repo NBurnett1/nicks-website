@@ -2,15 +2,11 @@
   "ticker": "ALQ",
   "name": "ALS FPO [ALQ]",
   "price": 21.36,
-  "valuationScore": 9.8,
+  "valuationScore": 9.6,
   "marketCap": "10.8B",
   "sector": "Industrials",
   "domain": "alsglobal.com",
   "chartData": [
-    {
-      "date": "2025-04-27",
-      "price": 15.43
-    },
     {
       "date": "2025-05-04",
       "price": 16.93
@@ -218,6 +214,10 @@
     {
       "date": "2026-04-26",
       "price": 21.36
+    },
+    {
+      "date": "2026-05-03",
+      "price": 21.36
     }
   ],
   "testsPassed": 2,
@@ -227,8 +227,8 @@
       "name": "P/E Discount",
       "passed": false,
       "value": 38.84,
-      "threshold": 26.45,
-      "label": "38.8x vs 26.4x sector"
+      "threshold": 26.28,
+      "label": "38.8x vs 26.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -268,7 +268,7 @@
   },
   "metrics": {
     "pe": 38.84,
-    "sectorPe": 31.11,
+    "sectorPe": 30.92,
     "pb": 6.35,
     "evEbitda": 18.56,
     "fcfYield": 1.81,

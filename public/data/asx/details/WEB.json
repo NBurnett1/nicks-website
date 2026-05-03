@@ -1,16 +1,12 @@
 {
   "ticker": "WEB",
   "name": "WEB TRAVEL FPO [WEB]",
-  "price": 2.76,
-  "valuationScore": 44.9,
-  "marketCap": "999M",
+  "price": 2.68,
+  "valuationScore": 45.2,
+  "marketCap": "970M",
   "sector": "Consumer Cyclical",
   "domain": "webtravelgroup.com",
   "chartData": [
-    {
-      "date": "2025-04-27",
-      "price": 4.19
-    },
     {
       "date": "2025-05-04",
       "price": 4.16
@@ -218,6 +214,10 @@
     {
       "date": "2026-04-26",
       "price": 2.76
+    },
+    {
+      "date": "2026-05-03",
+      "price": 2.68
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 276.0,
-      "threshold": 20.32,
-      "label": "276.0x vs 20.3x sector"
+      "value": 268.0,
+      "threshold": 19.36,
+      "label": "268.0x vs 19.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.66,
+      "value": 1.61,
       "threshold": 1.5,
-      "label": "1.66x vs 1.5x"
+      "label": "1.61x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 7.41,
+      "value": 7.12,
       "threshold": 10.0,
-      "label": "7.4x vs 10x"
+      "label": "7.1x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 13.0,
+      "value": 13.38,
       "threshold": 5.0,
-      "label": "13.0% vs 5%"
+      "label": "13.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 8.76,
-      "threshold": 276.0,
-      "label": "Fwd 8.8x vs Trail 276.0x"
+      "value": 8.79,
+      "threshold": 268.0,
+      "label": "Fwd 8.8x vs Trail 268.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,12 +267,12 @@
     }
   },
   "metrics": {
-    "pe": 276.0,
-    "sectorPe": 23.9,
-    "pb": 1.66,
-    "evEbitda": 7.41,
-    "fcfYield": 13.0,
-    "forwardPe": 8.76,
+    "pe": 268.0,
+    "sectorPe": 22.78,
+    "pb": 1.61,
+    "evEbitda": 7.12,
+    "fcfYield": 13.38,
+    "forwardPe": 8.79,
     "dividendYield": null,
     "revenueGrowth": 20.1,
     "profitMargin": 0.08,

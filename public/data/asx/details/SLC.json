@@ -1,16 +1,12 @@
 {
   "ticker": "SLC",
   "name": "SUPERLOOP FPO [SLC]",
-  "price": 3.41,
-  "valuationScore": 43.7,
+  "price": 3.4,
+  "valuationScore": 43.9,
   "marketCap": "1.8B",
   "sector": "Communication Services",
   "domain": "superloop.com",
   "chartData": [
-    {
-      "date": "2025-04-27",
-      "price": 2.39
-    },
     {
       "date": "2025-05-04",
       "price": 2.59
@@ -218,6 +214,10 @@
     {
       "date": "2026-04-26",
       "price": 3.41
+    },
+    {
+      "date": "2026-05-03",
+      "price": 3.4
     }
   ],
   "testsPassed": 1,
@@ -226,21 +226,21 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 113.67,
-      "threshold": 12.18,
-      "label": "113.7x vs 12.2x sector"
+      "value": 113.33,
+      "threshold": 12.08,
+      "label": "113.3x vs 12.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.28,
+      "value": 4.27,
       "threshold": 1.5,
-      "label": "4.28x vs 1.5x"
+      "label": "4.27x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 22.64,
+      "value": 22.58,
       "threshold": 10.0,
       "label": "22.6x vs 10x"
     },
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 34.22,
-      "threshold": 113.67,
-      "label": "Fwd 34.2x vs Trail 113.7x"
+      "value": 34.12,
+      "threshold": 113.33,
+      "label": "Fwd 34.1x vs Trail 113.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,12 +267,12 @@
     }
   },
   "metrics": {
-    "pe": 113.67,
-    "sectorPe": 14.33,
-    "pb": 4.28,
-    "evEbitda": 22.64,
+    "pe": 113.33,
+    "sectorPe": 14.21,
+    "pb": 4.27,
+    "evEbitda": 22.58,
     "fcfYield": 2.02,
-    "forwardPe": 34.22,
+    "forwardPe": 34.12,
     "dividendYield": null,
     "revenueGrowth": 23.3,
     "profitMargin": 2.32,

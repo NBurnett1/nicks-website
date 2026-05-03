@@ -1,16 +1,12 @@
 {
   "ticker": "RRL",
   "name": "REGIS FPO [RRL]",
-  "price": 7.35,
-  "valuationScore": -31.1,
-  "marketCap": "5.6B",
+  "price": 7.06,
+  "valuationScore": -31.7,
+  "marketCap": "5.3B",
   "sector": "Basic Materials",
   "domain": "regisresources.com.au",
   "chartData": [
-    {
-      "date": "2025-04-27",
-      "price": 4.46
-    },
     {
       "date": "2025-05-04",
       "price": 4.34
@@ -218,6 +214,10 @@
     {
       "date": "2026-04-26",
       "price": 7.35
+    },
+    {
+      "date": "2026-05-03",
+      "price": 7.06
     }
   ],
   "testsPassed": 5,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 11.48,
-      "threshold": 43.93,
-      "label": "11.5x vs 43.9x sector"
+      "value": 11.03,
+      "threshold": 44.74,
+      "label": "11.0x vs 44.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.93,
+      "value": 2.81,
       "threshold": 1.5,
-      "label": "2.93x vs 1.5x"
+      "label": "2.81x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 4.71,
+      "value": 4.5,
       "threshold": 10.0,
-      "label": "4.7x vs 10x"
+      "label": "4.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 11.74,
+      "value": 12.23,
       "threshold": 5.0,
-      "label": "11.7% vs 5%"
+      "label": "12.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 5.3,
-      "threshold": 11.48,
-      "label": "Fwd 5.3x vs Trail 11.5x"
+      "value": 5.04,
+      "threshold": 11.03,
+      "label": "Fwd 5.0x vs Trail 11.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,13 +267,13 @@
     }
   },
   "metrics": {
-    "pe": 11.48,
-    "sectorPe": 51.68,
-    "pb": 2.93,
-    "evEbitda": 4.71,
-    "fcfYield": 11.74,
-    "forwardPe": 5.3,
-    "dividendYield": 2.72,
+    "pe": 11.03,
+    "sectorPe": 52.63,
+    "pb": 2.81,
+    "evEbitda": 4.5,
+    "fcfYield": 12.23,
+    "forwardPe": 5.04,
+    "dividendYield": 2.83,
     "revenueGrowth": 40.0,
     "profitMargin": 24.95,
     "operatingMargin": 41.36,
