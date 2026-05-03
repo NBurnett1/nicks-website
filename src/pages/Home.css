@@ -296,3 +296,151 @@
   font-weight: 900;
   font-size: var(--text-xs);
 }
+
+/* ── Share Bar ── */
+.home__share {
+  position: relative;
+  z-index: 10;
+  padding: var(--space-md) 0;
+}
+
+.home__share-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+}
+
+.home__share-label {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.home__share-buttons {
+  display: flex;
+  gap: var(--space-xs);
+}
+
+.home__share-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all var(--duration-fast) ease;
+  text-decoration: none;
+  font-size: var(--text-sm);
+}
+
+.home__share-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--border-light);
+  color: var(--text-primary);
+  transform: translateY(-1px);
+}
+
+.home__share-btn--x:hover { color: #f1f5f9; }
+.home__share-btn--reddit:hover { color: #ff4500; }
+
+/* ── Broker Referrals ── */
+.home__brokers {
+  position: relative;
+  z-index: 10;
+  padding: var(--space-xl) 0;
+}
+
+.home__brokers-header {
+  text-align: center;
+  margin-bottom: var(--space-lg);
+}
+
+.home__brokers-title {
+  font-size: var(--text-xl);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.home__brokers-subtitle {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.home__brokers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+.home__broker-card {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-lg);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  text-decoration: none;
+  transition: all var(--duration-fast) ease;
+}
+
+.home__broker-card:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: var(--green-400);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.08);
+}
+
+.home__broker-name {
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.home__broker-desc {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  line-height: 1.5;
+  flex: 1;
+  margin-bottom: var(--space-md);
+}
+
+.home__broker-cta {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--green-400);
+  transition: color var(--duration-fast) ease;
+}
+
+.home__broker-card:hover .home__broker-cta {
+  color: #5eead4;
+}
+
+.home__brokers-disclaimer {
+  text-align: center;
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  margin-top: var(--space-md);
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .home__brokers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home__share-bar {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+}
