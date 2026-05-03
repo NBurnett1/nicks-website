@@ -2,19 +2,11 @@
   "ticker": "SYR",
   "name": "SYRAH RES FPO [SYR]",
   "price": 0.12,
-  "valuationScore": 38.3,
-  "marketCap": "206M",
+  "valuationScore": 27.1,
+  "marketCap": "265M",
   "sector": "Basic Materials",
   "domain": "syrahresources.com.au",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 0.23
-    },
-    {
-      "date": "2025-04-27",
-      "price": 0.25
-    },
     {
       "date": "2025-05-04",
       "price": 0.25
@@ -218,10 +210,18 @@
     {
       "date": "2026-04-19",
       "price": 0.12
+    },
+    {
+      "date": "2026-04-26",
+      "price": 0.12
+    },
+    {
+      "date": "2026-05-03",
+      "price": 0.12
     }
   ],
-  "testsPassed": 1,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -247,14 +247,14 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -18.07,
+      "value": -14.06,
       "threshold": 5.0,
-      "label": "-18.1% vs 5%"
+      "label": "-14.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": -5.11,
+      "value": -4.91,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -264,15 +264,30 @@
       "value": 0.0,
       "threshold": 5.0,
       "label": "Margin 0.0% / ROE -28.4%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": true,
+      "value": 0.05,
+      "threshold": 0.5,
+      "label": "P/S 7.9x ÷ Growth 151.5% = 0.05"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": true,
+      "value": 151.5,
+      "threshold": -5.0,
+      "label": "151.5% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 50.16,
+    "sectorPe": 52.63,
     "pb": 0.33,
-    "evEbitda": -5.58,
-    "fcfYield": -18.07,
-    "forwardPe": -5.11,
+    "ps": 7.94,
+    "evEbitda": -5.49,
+    "fcfYield": -14.06,
+    "forwardPe": -4.91,
     "dividendYield": null,
     "revenueGrowth": 151.5,
     "profitMargin": 0.0,

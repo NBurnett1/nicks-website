@@ -80,6 +80,138 @@
   font-weight: 600;
 }
 
+/* ── Equity Curve ── */
+.week-archive__equity {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md) var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.week-archive__equity-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-sm);
+}
+
+.week-archive__equity-title {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.week-archive__equity-value {
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  font-weight: 800;
+}
+
+.week-archive__equity-chart {
+  height: 80px;
+  margin-bottom: 4px;
+}
+
+.week-archive__equity-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.week-archive__equity-labels {
+  display: flex;
+  justify-content: space-between;
+}
+
+.week-archive__equity-label {
+  font-size: 0.6rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+/* ── Performance Attribution ── */
+.week-archive__attrib {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md) var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.week-archive__attrib-title {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-md);
+}
+
+.week-archive__attrib-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+}
+
+.week-archive__attrib-label {
+  font-size: 0.6rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+  display: block;
+}
+
+.week-archive__attrib-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.week-archive__attrib-bar-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.week-archive__attrib-bar-label {
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+  font-weight: 600;
+  min-width: 60px;
+  flex-shrink: 0;
+}
+
+.week-archive__attrib-bar-track {
+  flex: 1;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.week-archive__attrib-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.6s var(--ease-out);
+}
+
+.week-archive__attrib-bar-fill--positive {
+  background: var(--green-400);
+}
+
+.week-archive__attrib-bar-fill--negative {
+  background: var(--red-400);
+}
+
+.week-archive__attrib-bar-value {
+  font-family: var(--font-heading);
+  font-size: var(--text-xs);
+  font-weight: 800;
+  min-width: 48px;
+  text-align: right;
+}
+
 /* ── Week Accordion ── */
 .week-archive__weeks {
   display: flex;

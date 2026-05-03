@@ -37,6 +37,12 @@ def update_week_prices(week_path):
     picks = week_data.get("picks", [])
     updated = False
 
+    # Stop-loss thresholds
+    STOP_LOSS_PCT = -7.0     # Hard stop: exit if down 7% from entry
+    TRAILING_STOP_PCT = 5.0  # Trailing: if stock was up 5%+, protect gains at +1%
+
+    alerts = []
+
     for pick in picks:
         ticker = pick["ticker"]
         try:
@@ -57,18 +63,49 @@ def update_week_prices(week_path):
                 if hist is not None and not hist.empty:
                     pick["currentPrice"] = round(float(hist["Close"].iloc[-1]), 2)
 
+                    # Track peak price for trailing stop
+                    peak = pick.get("peakPrice", pick["entryPrice"])
+                    if pick["currentPrice"] > peak:
+                        pick["peakPrice"] = pick["currentPrice"]
+
             # Calculate P&L
             if pick["entryPrice"] > 0:
                 pnl = pick["currentPrice"] - pick["entryPrice"]
                 pick["pnl"] = round(pnl, 2)
                 pick["pnlPct"] = round((pnl / pick["entryPrice"]) * 100, 2)
 
+            # ── Stop-loss checks (only for active weeks) ──
+            if week_data["status"] != "completed" and not pick.get("stopTriggered"):
+                peak = pick.get("peakPrice", pick["entryPrice"])
+                peak_pct = ((peak - pick["entryPrice"]) / pick["entryPrice"]) * 100 if pick["entryPrice"] > 0 else 0
+
+                # Hard stop-loss
+                if pick["pnlPct"] <= STOP_LOSS_PCT:
+                    pick["stopTriggered"] = "STOP_LOSS"
+                    pick["stopReason"] = f"Hard stop triggered at {pick['pnlPct']:+.1f}% (limit: {STOP_LOSS_PCT}%)"
+                    alerts.append(f"🛑 {ticker} STOP LOSS: {pick['pnlPct']:+.1f}%")
+
+                # Trailing stop: if we were up 5%+, don't let it fall below +1%
+                elif peak_pct >= TRAILING_STOP_PCT and pick["pnlPct"] < 1.0:
+                    pick["stopTriggered"] = "TRAILING_STOP"
+                    pick["stopReason"] = f"Trailing stop: peaked at {peak_pct:+.1f}%, now {pick['pnlPct']:+.1f}%"
+                    alerts.append(f"📉 {ticker} TRAILING STOP: peaked {peak_pct:+.1f}%, now {pick['pnlPct']:+.1f}%")
+
             updated = True
+            stop_flag = " ⛔" if pick.get("stopTriggered") else ""
             status_icon = "✓" if pick["pnlPct"] >= 0 else "✗"
-            print(f"    {status_icon} {ticker}: A${pick['entryPrice']:.2f} → A${pick['currentPrice']:.2f} ({pick['pnlPct']:+.1f}%)")
+            print(f"    {status_icon} {ticker}: A${pick['entryPrice']:.2f} → A${pick['currentPrice']:.2f} ({pick['pnlPct']:+.1f}%){stop_flag}")
 
         except Exception as e:
             print(f"    ⚠ {ticker}: {e}")
+
+    # Print alerts
+    if alerts:
+        print(f"\n    {'='*40}")
+        print(f"    ⚠ STOP-LOSS ALERTS:")
+        for a in alerts:
+            print(f"      {a}")
+        print(f"    {'='*40}")
 
     # Update summary
     if picks:
@@ -78,6 +115,7 @@ def update_week_prices(week_path):
         week_data["summary"]["winners"] = sum(1 for p in picks if p["pnlPct"] > 0)
         week_data["summary"]["losers"] = sum(1 for p in picks if p["pnlPct"] < 0)
         week_data["summary"]["flat"] = len(picks) - week_data["summary"]["winners"] - week_data["summary"]["losers"]
+        week_data["summary"]["stopsTriggered"] = sum(1 for p in picks if p.get("stopTriggered"))
 
     if updated:
         with open(week_path, "w") as f:

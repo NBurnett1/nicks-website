@@ -174,7 +174,7 @@ export default function UndervaluedScreener({ exchange = 'ASX' }) {
           <span className="screener__icon">🔬</span>
           <div>
             <h2 className="screener__title">Undervalued Screener</h2>
-            <p className="screener__subtitle">6 independent valuation tests · {stats.total} stocks analysed</p>
+            <p className="screener__subtitle">8 independent valuation tests · {stats.total} stocks analysed</p>
           </div>
         </div>
 
@@ -311,7 +311,7 @@ export default function UndervaluedScreener({ exchange = 'ASX' }) {
                 {grade}
               </div>
               <div className="screener__tests-count">
-                {stock.testsPassed || 0}/6
+                {stock.testsPassed || 0}/8
               </div>
               <div className="screener__grade-label">
                 {GRADE_LABELS[grade]}

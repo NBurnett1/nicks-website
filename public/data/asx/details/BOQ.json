@@ -1,20 +1,12 @@
 {
   "ticker": "BOQ",
   "name": "BANK QLD FPO [BOQ]",
-  "price": 7.31,
-  "valuationScore": 2.0,
-  "marketCap": "4.8B",
+  "price": 6.65,
+  "valuationScore": 3.7,
+  "marketCap": "4.4B",
   "sector": "Financials",
   "domain": "boq.com.au",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 6.81
-    },
-    {
-      "date": "2025-04-27",
-      "price": 7.01
-    },
     {
       "date": "2025-05-04",
       "price": 7.28
@@ -218,24 +210,32 @@
     {
       "date": "2026-04-19",
       "price": 7.31
+    },
+    {
+      "date": "2026-04-26",
+      "price": 6.68
+    },
+    {
+      "date": "2026-05-03",
+      "price": 6.65
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 36.55,
-      "threshold": 17.03,
-      "label": "36.5x vs 17.0x sector"
+      "value": 44.33,
+      "threshold": 16.94,
+      "label": "44.3x vs 16.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.81,
+      "value": 0.74,
       "threshold": 1.5,
-      "label": "0.81x vs 1.5x"
+      "label": "0.74x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,30 +254,45 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.7,
-      "threshold": 36.55,
-      "label": "Fwd 12.7x vs Trail 36.5x"
+      "value": 12.13,
+      "threshold": 44.33,
+      "label": "Fwd 12.1x vs Trail 44.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": false,
-      "value": 8.07,
+      "value": 5.89,
       "threshold": 5.0,
-      "label": "Margin 8.1% / ROE 2.2%"
+      "label": "Margin 5.9% / ROE 1.6%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": false,
+      "value": 1.31,
+      "threshold": 0.5,
+      "label": "P/S 2.6x ÷ Growth 2.0% = 1.31"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": true,
+      "value": 2.0,
+      "threshold": -5.0,
+      "label": "2.0% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 36.55,
-    "sectorPe": 20.04,
-    "pb": 0.81,
+    "pe": 44.33,
+    "sectorPe": 19.93,
+    "pb": 0.74,
+    "ps": 2.63,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 12.7,
-    "dividendYield": 5.2,
-    "revenueGrowth": 8.4,
-    "profitMargin": 8.07,
-    "operatingMargin": 41.11,
-    "roe": 2.23,
+    "forwardPe": 12.13,
+    "dividendYield": 6.02,
+    "revenueGrowth": 2.0,
+    "profitMargin": 5.89,
+    "operatingMargin": 25.77,
+    "roe": 1.64,
     "debtEquity": null
   }
 }

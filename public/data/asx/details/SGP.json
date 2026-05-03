@@ -1,20 +1,12 @@
 {
   "ticker": "SGP",
   "name": "STOCKLAND. STAPLED [SGP]",
-  "price": 4.32,
-  "valuationScore": -0.9,
-  "marketCap": "10.5B",
+  "price": 4.05,
+  "valuationScore": -1.3,
+  "marketCap": "9.8B",
   "sector": "Real Estate",
   "domain": "stockland.com.au",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 4.95
-    },
-    {
-      "date": "2025-04-27",
-      "price": 5.08
-    },
     {
       "date": "2025-05-04",
       "price": 5.3
@@ -218,45 +210,53 @@
     {
       "date": "2026-04-19",
       "price": 4.32
+    },
+    {
+      "date": "2026-04-26",
+      "price": 4.19
+    },
+    {
+      "date": "2026-05-03",
+      "price": 4.05
     }
   ],
-  "testsPassed": 4,
-  "grade": "B",
+  "testsPassed": 6,
+  "grade": "A",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 12.0,
-      "threshold": 10.41,
-      "label": "12.0x vs 10.4x sector"
+      "value": 11.25,
+      "threshold": 10.06,
+      "label": "11.2x vs 10.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.01,
+      "value": 0.94,
       "threshold": 1.5,
-      "label": "1.01x vs 1.5x"
+      "label": "0.94x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 17.92,
+      "value": 17.18,
       "threshold": 10.0,
-      "label": "17.9x vs 10x"
+      "label": "17.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 6.16,
+      "value": 6.57,
       "threshold": 5.0,
-      "label": "6.2% vs 5%"
+      "label": "6.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 11.58,
-      "threshold": 12.0,
-      "label": "Fwd 11.6x vs Trail 12.0x"
+      "value": 11.19,
+      "threshold": 11.25,
+      "label": "Fwd 11.2x vs Trail 11.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,16 +264,31 @@
       "value": 24.82,
       "threshold": 5.0,
       "label": "Margin 24.8% / ROE 8.6%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": true,
+      "value": 0.09,
+      "threshold": 0.5,
+      "label": "P/S 2.8x ÷ Growth 30.6% = 0.09"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": true,
+      "value": 30.6,
+      "threshold": -5.0,
+      "label": "30.6% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 12.0,
-    "sectorPe": 12.24,
-    "pb": 1.01,
-    "evEbitda": 17.92,
-    "fcfYield": 6.16,
-    "forwardPe": 11.58,
-    "dividendYield": 6.06,
+    "pe": 11.25,
+    "sectorPe": 11.83,
+    "pb": 0.94,
+    "ps": 2.8,
+    "evEbitda": 17.18,
+    "fcfYield": 6.57,
+    "forwardPe": 11.19,
+    "dividendYield": 6.47,
     "revenueGrowth": 30.6,
     "profitMargin": 24.82,
     "operatingMargin": 21.64,

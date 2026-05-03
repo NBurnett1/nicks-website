@@ -2,19 +2,11 @@
   "ticker": "SLC",
   "name": "SUPERLOOP FPO [SLC]",
   "price": 3.4,
-  "valuationScore": 42.6,
+  "valuationScore": 43.9,
   "marketCap": "1.8B",
   "sector": "Communication Services",
   "domain": "superloop.com",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 2.29
-    },
-    {
-      "date": "2025-04-27",
-      "price": 2.39
-    },
     {
       "date": "2025-05-04",
       "price": 2.59
@@ -218,17 +210,25 @@
     {
       "date": "2026-04-19",
       "price": 3.4
+    },
+    {
+      "date": "2026-04-26",
+      "price": 3.41
+    },
+    {
+      "date": "2026-05-03",
+      "price": 3.4
     }
   ],
-  "testsPassed": 1,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
       "value": 113.33,
-      "threshold": 12.4,
-      "label": "113.3x vs 12.4x sector"
+      "threshold": 12.08,
+      "label": "113.3x vs 12.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -264,12 +264,27 @@
       "value": 2.32,
       "threshold": 5.0,
       "label": "Margin 2.3% / ROE 3.6%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": true,
+      "value": 0.12,
+      "threshold": 0.5,
+      "label": "P/S 2.9x ÷ Growth 23.3% = 0.12"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": true,
+      "value": 23.3,
+      "threshold": -5.0,
+      "label": "23.3% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": 113.33,
-    "sectorPe": 14.58,
+    "sectorPe": 14.21,
     "pb": 4.27,
+    "ps": 2.89,
     "evEbitda": 22.58,
     "fcfYield": 2.02,
     "forwardPe": 34.12,

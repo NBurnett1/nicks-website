@@ -1,20 +1,12 @@
 {
   "ticker": "GDI",
   "name": "GDI PROP STAPLED [GDI]",
-  "price": 0.59,
-  "valuationScore": 48.7,
-  "marketCap": "321M",
+  "price": 0.61,
+  "valuationScore": 50.5,
+  "marketCap": "329M",
   "sector": "Real Estate",
   "domain": "gdi.com.au",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 0.58
-    },
-    {
-      "date": "2025-04-27",
-      "price": 0.61
-    },
     {
       "date": "2025-05-04",
       "price": 0.63
@@ -218,45 +210,53 @@
     {
       "date": "2026-04-19",
       "price": 0.6
+    },
+    {
+      "date": "2026-04-26",
+      "price": 0.6
+    },
+    {
+      "date": "2026-05-03",
+      "price": 0.61
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 8.5,
-      "threshold": 10.41,
-      "label": "8.5x vs 10.4x sector"
+      "value": 8.71,
+      "threshold": 10.06,
+      "label": "8.7x vs 10.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 12.14,
+      "value": 12.45,
       "threshold": 1.5,
-      "label": "12.14x vs 1.5x"
+      "label": "12.45x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 27.94,
+      "value": 28.1,
       "threshold": 10.0,
-      "label": "27.9x vs 10x"
+      "label": "28.1x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -16.77,
+      "value": -16.36,
       "threshold": 5.0,
-      "label": "-16.8% vs 5%"
+      "label": "-16.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 7.26,
-      "threshold": 8.5,
-      "label": "Fwd 7.3x vs Trail 8.5x"
+      "value": 7.44,
+      "threshold": 8.71,
+      "label": "Fwd 7.4x vs Trail 8.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,16 +264,31 @@
       "value": 1.91,
       "threshold": 5.0,
       "label": "Margin 1.9% / ROE 5.3%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": false,
+      "value": 1.07,
+      "threshold": 0.5,
+      "label": "P/S 3.7x ÷ Growth 3.5% = 1.07"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": true,
+      "value": 3.5,
+      "threshold": -5.0,
+      "label": "3.5% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 8.5,
-    "sectorPe": 12.24,
-    "pb": 12.14,
-    "evEbitda": 27.94,
-    "fcfYield": -16.77,
-    "forwardPe": 7.26,
-    "dividendYield": 8.4,
+    "pe": 8.71,
+    "sectorPe": 11.83,
+    "pb": 12.45,
+    "ps": 3.73,
+    "evEbitda": 28.1,
+    "fcfYield": -16.36,
+    "forwardPe": 7.44,
+    "dividendYield": 8.2,
     "revenueGrowth": 3.5,
     "profitMargin": 1.91,
     "operatingMargin": 57.97,

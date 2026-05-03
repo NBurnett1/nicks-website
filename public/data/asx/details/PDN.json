@@ -1,20 +1,12 @@
 {
   "ticker": "PDN",
   "name": "PALADIN FPO [PDN]",
-  "price": 14.54,
+  "price": 11.97,
   "valuationScore": 60.0,
-  "marketCap": "6.5B",
+  "marketCap": "5.4B",
   "sector": "Energy",
   "domain": "paladinenergy.com.au",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 4.55
-    },
-    {
-      "date": "2025-04-27",
-      "price": 5.56
-    },
     {
       "date": "2025-05-04",
       "price": 6.22
@@ -218,10 +210,18 @@
     {
       "date": "2026-04-19",
       "price": 14.54
+    },
+    {
+      "date": "2026-04-26",
+      "price": 12.61
+    },
+    {
+      "date": "2026-05-03",
+      "price": 11.97
     }
   ],
-  "testsPassed": 0,
-  "grade": "F",
+  "testsPassed": 2,
+  "grade": "D",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -233,28 +233,28 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.0,
+      "value": 3.29,
       "threshold": 1.5,
-      "label": "4.00x vs 1.5x"
+      "label": "3.29x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 203.31,
+      "value": 166.21,
       "threshold": 10.0,
-      "label": "203.3x vs 10x"
+      "label": "166.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -1.1,
+      "value": -1.34,
       "threshold": 5.0,
-      "label": "-1.1% vs 5%"
+      "label": "-1.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 46.2,
+      "value": 42.61,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -264,15 +264,30 @@
       "value": -16.42,
       "threshold": 5.0,
       "label": "Margin -16.4% / ROE -7.2%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": true,
+      "value": 0.11,
+      "threshold": 0.5,
+      "label": "P/S 22.5x ÷ Growth 206.0% = 0.11"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": true,
+      "value": 206.0,
+      "threshold": -5.0,
+      "label": "206.0% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 21.14,
-    "pb": 4.0,
-    "evEbitda": 203.31,
-    "fcfYield": -1.1,
-    "forwardPe": 46.2,
+    "sectorPe": 20.46,
+    "pb": 3.29,
+    "ps": 22.53,
+    "evEbitda": 166.21,
+    "fcfYield": -1.34,
+    "forwardPe": 42.61,
     "dividendYield": null,
     "revenueGrowth": 206.0,
     "profitMargin": -16.42,

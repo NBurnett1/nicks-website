@@ -1,20 +1,12 @@
 {
   "ticker": "PLS",
   "name": "PLSGROUP FPO [PLS]",
-  "price": 6.04,
-  "valuationScore": 48.7,
-  "marketCap": "19.5B",
+  "price": 6.14,
+  "valuationScore": 53.0,
+  "marketCap": "19.8B",
   "sector": "Basic Materials",
   "domain": "pls.com",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 1.43
-    },
-    {
-      "date": "2025-04-27",
-      "price": 1.49
-    },
     {
       "date": "2025-05-04",
       "price": 1.48
@@ -218,10 +210,18 @@
     {
       "date": "2026-04-19",
       "price": 6.04
+    },
+    {
+      "date": "2026-04-26",
+      "price": 5.77
+    },
+    {
+      "date": "2026-05-03",
+      "price": 6.14
     }
   ],
-  "testsPassed": 0,
-  "grade": "F",
+  "testsPassed": 2,
+  "grade": "D",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -233,28 +233,28 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 5.45,
+      "value": 5.54,
       "threshold": 1.5,
-      "label": "5.45x vs 1.5x"
+      "label": "5.54x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 103.29,
+      "value": 105.02,
       "threshold": 10.0,
-      "label": "103.3x vs 10x"
+      "label": "105.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -0.48,
+      "value": -0.47,
       "threshold": 5.0,
       "label": "-0.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 28.57,
+      "value": 23.6,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -264,15 +264,30 @@
       "value": -9.67,
       "threshold": 5.0,
       "label": "Margin -9.7% / ROE -2.8%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": true,
+      "value": 0.44,
+      "threshold": 0.5,
+      "label": "P/S 20.4x ÷ Growth 46.6% = 0.44"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": true,
+      "value": 46.6,
+      "threshold": -5.0,
+      "label": "46.6% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 50.16,
-    "pb": 5.45,
-    "evEbitda": 103.29,
-    "fcfYield": -0.48,
-    "forwardPe": 28.57,
+    "sectorPe": 52.63,
+    "pb": 5.54,
+    "ps": 20.44,
+    "evEbitda": 105.02,
+    "fcfYield": -0.47,
+    "forwardPe": 23.6,
     "dividendYield": null,
     "revenueGrowth": 46.6,
     "profitMargin": -9.67,

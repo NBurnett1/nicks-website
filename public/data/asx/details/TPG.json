@@ -1,20 +1,12 @@
 {
   "ticker": "TPG",
   "name": "TPGLIMITED FPO [TPG]",
-  "price": 4.32,
-  "valuationScore": 15.8,
-  "marketCap": "8.5B",
+  "price": 4.2,
+  "valuationScore": 17.7,
+  "marketCap": "8.2B",
   "sector": "Telecom",
   "domain": "tpgtelecom.com.au",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 4.67
-    },
-    {
-      "date": "2025-04-27",
-      "price": 4.76
-    },
     {
       "date": "2025-05-04",
       "price": 4.93
@@ -218,45 +210,53 @@
     {
       "date": "2026-04-19",
       "price": 4.32
+    },
+    {
+      "date": "2026-04-26",
+      "price": 4.34
+    },
+    {
+      "date": "2026-05-03",
+      "price": 4.2
     }
   ],
-  "testsPassed": 4,
-  "grade": "B",
+  "testsPassed": 6,
+  "grade": "A",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 144.0,
-      "threshold": 18.58,
-      "label": "144.0x vs 18.6x sector"
+      "value": 140.0,
+      "threshold": 17.39,
+      "label": "140.0x vs 17.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.97,
+      "value": 0.95,
       "threshold": 1.5,
-      "label": "0.97x vs 1.5x"
+      "label": "0.95x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 9.68,
+      "value": 9.5,
       "threshold": 10.0,
-      "label": "9.7x vs 10x"
+      "label": "9.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 11.32,
+      "value": 11.65,
       "threshold": 5.0,
-      "label": "11.3% vs 5%"
+      "label": "11.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 49.04,
-      "threshold": 144.0,
-      "label": "Fwd 49.0x vs Trail 144.0x"
+      "value": 48.7,
+      "threshold": 140.0,
+      "label": "Fwd 48.7x vs Trail 140.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,16 +264,31 @@
       "value": 9.13,
       "threshold": 5.0,
       "label": "Margin 9.1% / ROE 0.5%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": true,
+      "value": 0.43,
+      "threshold": 0.5,
+      "label": "P/S 1.6x ÷ Growth 3.8% = 0.43"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": true,
+      "value": 3.8,
+      "threshold": -5.0,
+      "label": "3.8% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 144.0,
-    "sectorPe": 21.86,
-    "pb": 0.97,
-    "evEbitda": 9.68,
-    "fcfYield": 11.32,
-    "forwardPe": 49.04,
-    "dividendYield": 4.17,
+    "pe": 140.0,
+    "sectorPe": 20.46,
+    "pb": 0.95,
+    "ps": 1.63,
+    "evEbitda": 9.5,
+    "fcfYield": 11.65,
+    "forwardPe": 48.7,
+    "dividendYield": 4.29,
     "revenueGrowth": 3.8,
     "profitMargin": 9.13,
     "operatingMargin": 7.69,

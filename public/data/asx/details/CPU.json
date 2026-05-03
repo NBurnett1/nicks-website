@@ -1,20 +1,12 @@
 {
   "ticker": "CPU",
   "name": "CSHARE FPO [CPU]",
-  "price": 30.79,
-  "valuationScore": 9.9,
+  "price": 30.73,
+  "valuationScore": 9.6,
   "marketCap": "17.8B",
   "sector": "Financial Services",
   "domain": "computershare.com",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 37.08
-    },
-    {
-      "date": "2025-04-27",
-      "price": 38.12
-    },
     {
       "date": "2025-05-04",
       "price": 38.23
@@ -218,45 +210,53 @@
     {
       "date": "2026-04-19",
       "price": 30.79
+    },
+    {
+      "date": "2026-04-26",
+      "price": 30.05
+    },
+    {
+      "date": "2026-05-03",
+      "price": 30.73
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 21.53,
-      "threshold": 16.2,
-      "label": "21.5x vs 16.2x sector"
+      "value": 21.49,
+      "threshold": 16.34,
+      "label": "21.5x vs 16.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 5.69,
+      "value": 5.65,
       "threshold": 1.5,
-      "label": "5.69x vs 1.5x"
+      "label": "5.65x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 17.88,
+      "value": 17.85,
       "threshold": 10.0,
       "label": "17.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.86,
+      "value": 3.87,
       "threshold": 5.0,
       "label": "3.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.96,
-      "threshold": 21.53,
-      "label": "Fwd 15.0x vs Trail 21.5x"
+      "value": 14.74,
+      "threshold": 21.49,
+      "label": "Fwd 14.7x vs Trail 21.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,16 +264,31 @@
       "value": 18.81,
       "threshold": 5.0,
       "label": "Margin 18.8% / ROE 28.7%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": false,
+      "value": 1.21,
+      "threshold": 0.5,
+      "label": "P/S 5.6x ÷ Growth 4.6% = 1.21"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": true,
+      "value": 4.6,
+      "threshold": -5.0,
+      "label": "4.6% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 21.53,
-    "sectorPe": 19.05,
-    "pb": 5.69,
-    "evEbitda": 17.88,
-    "fcfYield": 3.86,
-    "forwardPe": 14.96,
-    "dividendYield": 3.57,
+    "pe": 21.49,
+    "sectorPe": 19.22,
+    "pb": 5.65,
+    "ps": 5.57,
+    "evEbitda": 17.85,
+    "fcfYield": 3.87,
+    "forwardPe": 14.74,
+    "dividendYield": 3.58,
     "revenueGrowth": 4.6,
     "profitMargin": 18.81,
     "operatingMargin": 26.79,

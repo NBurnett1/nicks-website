@@ -2,19 +2,11 @@
   "ticker": "SGR",
   "name": "STAR ENT FPO [SGR]",
   "price": 0.12,
-  "valuationScore": 3.8,
+  "valuationScore": 4.9,
   "marketCap": "763M",
   "sector": "Consumer Cyclical",
   "domain": "starentertainmentgroup.com.au",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 0.1
-    },
-    {
-      "date": "2025-04-27",
-      "price": 0.1
-    },
     {
       "date": "2025-05-04",
       "price": 0.1
@@ -218,9 +210,17 @@
     {
       "date": "2026-04-19",
       "price": 0.12
+    },
+    {
+      "date": "2026-04-26",
+      "price": 0.12
+    },
+    {
+      "date": "2026-05-03",
+      "price": 0.12
     }
   ],
-  "testsPassed": 1,
+  "testsPassed": 2,
   "grade": "D",
   "valuationTests": {
     "peDiscount": {
@@ -254,7 +254,7 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": -7.23,
+      "value": -8.99,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -264,15 +264,30 @@
       "value": -17.68,
       "threshold": 5.0,
       "label": "Margin -17.7% / ROE -42.5%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": false,
+      "value": -4.1,
+      "threshold": 0.5,
+      "label": "FAIL — Revenue declining -4.1%"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": true,
+      "value": -4.1,
+      "threshold": -5.0,
+      "label": "-4.1% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 25.2,
+    "sectorPe": 22.78,
     "pb": 1.32,
+    "ps": 0.57,
     "evEbitda": -4.85,
     "fcfYield": -21.73,
-    "forwardPe": -7.23,
+    "forwardPe": -8.99,
     "dividendYield": null,
     "revenueGrowth": -4.1,
     "profitMargin": -17.68,

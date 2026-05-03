@@ -1,5 +1,8 @@
 import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
+import InteractiveChart from '../components/InteractiveChart'
+import ReportView from '../components/ReportView'
+import StockLogo from '../components/StockLogo'
 import Disclaimer from '../components/Disclaimer'
 import Footer from '../components/Footer'
 import './StockDetail.css'
@@ -19,6 +22,22 @@ const TEST_ORDER = [
   'fcfYieldStrong',
   'forwardPeRerate',
   'profitabilityCheck',
+  'valueGrowthScore',
+  'revenueTrend',
+]
+
+const METRIC_DEFS = [
+  { key: 'pe',             label: 'P/E Ratio',       fmt: (v) => v != null ? v.toFixed(1) : '—', good: (v) => v > 0 && v < 20 },
+  { key: 'pb',             label: 'P/B Ratio',       fmt: (v) => v != null ? v.toFixed(2) : '—', good: (v) => v > 0 && v < 1.5 },
+  { key: 'evEbitda',       label: 'EV/EBITDA',       fmt: (v) => v != null ? v.toFixed(1) + 'x' : '—', good: (v) => v > 0 && v < 12 },
+  { key: 'fcfYield',       label: 'FCF Yield',       fmt: (v) => v != null ? v.toFixed(1) + '%' : '—', good: (v) => v > 5 },
+  { key: 'dividendYield',  label: 'Div Yield',       fmt: (v) => v != null ? v.toFixed(1) + '%' : '—', good: (v) => v > 3 },
+  { key: 'forwardPe',      label: 'Forward P/E',     fmt: (v) => v != null ? v.toFixed(1) : '—', good: (v) => v > 0 && v < 15 },
+  { key: 'profitMargin',   label: 'Profit Margin',   fmt: (v) => v != null ? v.toFixed(1) + '%' : '—', good: (v) => v > 5 },
+  { key: 'operatingMargin',label: 'Op. Margin',      fmt: (v) => v != null ? v.toFixed(1) + '%' : '—', good: (v) => v > 10 },
+  { key: 'roe',            label: 'ROE',             fmt: (v) => v != null ? v.toFixed(1) + '%' : '—', good: (v) => v > 10 },
+  { key: 'debtEquity',     label: 'Debt/Equity',     fmt: (v) => v != null ? v.toFixed(0) + '%' : '—', good: (v) => v < 50 },
+  { key: 'revenueGrowth',  label: 'Rev Growth',      fmt: (v) => v != null ? (v > 0 ? '+' : '') + v.toFixed(1) + '%' : '—', good: (v) => v > 0 },
 ]
 
 export default function StockDetail() {
@@ -31,7 +50,6 @@ export default function StockDetail() {
   useEffect(() => {
     window.scrollTo(0, 0)
 
-    // Try to load from multiple exchange indexes
     const exchanges = ['asx', 'nyse', 'nasdaq']
     let found = false
 
@@ -46,8 +64,6 @@ export default function StockDetail() {
             if (match) {
               found = true
               setStock(match)
-
-              // Load detail file
               fetch(`/data/${ex}/details/${ticker}.json`)
                 .then(res => res.ok ? res.json() : null)
                 .then(d => setDetail(d))
@@ -87,8 +103,11 @@ export default function StockDetail() {
 
   const isUndervalued = stock.valuationScore < 0
   const tests = detail?.valuationTests || {}
+  const metrics = detail?.metrics || {}
   const grade = detail?.grade || stock.grade || null
   const testsPassed = detail?.testsPassed ?? stock.testsPassed ?? null
+  const chartData = detail?.chartData || []
+  const report = detail?.report || null
 
   return (
     <div className="stock-detail" id="stock-detail-page">
@@ -101,25 +120,31 @@ export default function StockDetail() {
         </button>
       </div>
 
+      {/* ── Hero Header ── */}
       <header className={`stock-detail__header stock-detail__header--${isUndervalued ? 'undervalued' : 'overvalued'}`}>
         <div className="container">
           <div className="stock-detail__header-content">
             <div className="stock-detail__header-left">
               <div className="stock-detail__ticker-row">
-                <h1 className="stock-detail__ticker">{stock.ticker}</h1>
-                <span className={`badge badge--${isUndervalued ? 'green' : 'red'}`}>
-                  {isUndervalued ? '▼ Undervalued' : '▲ Overvalued'}
-                </span>
-                {grade && (
-                  <span className={`stock-detail__grade-badge stock-detail__grade-badge--${grade}`}>
-                    Grade {grade}
-                  </span>
-                )}
-              </div>
-              <p className="stock-detail__name">{stock.name}</p>
-              <div className="stock-detail__meta-tags">
-                <span className="badge badge--blue">{stock.sector}</span>
-                <span className="stock-detail__mcap">Market Cap: {stock.marketCap}</span>
+                <StockLogo ticker={stock.ticker} name={stock.name} className="stock-detail__logo" />
+                <div>
+                  <div className="stock-detail__ticker-badges">
+                    <h1 className="stock-detail__ticker">{stock.ticker}</h1>
+                    <span className={`badge badge--${isUndervalued ? 'green' : 'red'}`}>
+                      {isUndervalued ? '▼ Undervalued' : '▲ Overvalued'}
+                    </span>
+                    {grade && (
+                      <span className={`stock-detail__grade-badge stock-detail__grade-badge--${grade}`}>
+                        Grade {grade}
+                      </span>
+                    )}
+                  </div>
+                  <p className="stock-detail__name">{stock.name}</p>
+                  <div className="stock-detail__meta-tags">
+                    <span className="badge badge--blue">{stock.sector}</span>
+                    <span className="stock-detail__mcap">MCap: {stock.marketCap}</span>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -134,12 +159,64 @@ export default function StockDetail() {
                   {stock.valuationScore > 0 ? '+' : ''}{stock.valuationScore.toFixed(1)}
                 </span>
               </div>
+              {testsPassed !== null && (
+                <div className="stock-detail__price-block">
+                  <span className="stock-detail__current-label">Tests Passed</span>
+                  <span className="stock-detail__tests-score">{testsPassed}/8</span>
+                </div>
+              )}
             </div>
           </div>
         </div>
       </header>
 
-      {/* Valuation Tests Breakdown */}
+      {/* ── Price Chart ── */}
+      {chartData.length > 2 && (
+        <section className="stock-detail__chart-section">
+          <div className="container">
+            <InteractiveChart data={chartData} isOvervalued={!isUndervalued} />
+          </div>
+        </section>
+      )}
+
+      {/* ── Key Metrics Dashboard ── */}
+      {Object.keys(metrics).length > 0 && (
+        <section className="stock-detail__metrics-section">
+          <div className="container">
+            <div className="stock-detail__metrics-card">
+              <div className="stock-detail__metrics-header">
+                <span className="stock-detail__metrics-icon">📊</span>
+                <h2 className="stock-detail__metrics-title">Key Metrics</h2>
+              </div>
+              <div className="stock-detail__metrics-grid">
+                {METRIC_DEFS.map(({ key, label, fmt, good }) => {
+                  const val = metrics[key]
+                  if (val == null) return null
+                  const isGood = good(val)
+                  return (
+                    <div key={key} className="stock-detail__metric">
+                      <span className="stock-detail__metric-label">{label}</span>
+                      <span className={`stock-detail__metric-value ${isGood ? 'stock-detail__metric-value--good' : 'stock-detail__metric-value--weak'}`}>
+                        {fmt(val)}
+                      </span>
+                    </div>
+                  )
+                })}
+              </div>
+              {metrics.sectorPe && (
+                <div className="stock-detail__sector-context">
+                  Sector avg P/E: {metrics.sectorPe.toFixed(1)} · This stock: {metrics.pe?.toFixed(1) ?? '—'}
+                  {metrics.pe && metrics.sectorPe && metrics.pe < metrics.sectorPe && (
+                    <span className="stock-detail__sector-discount"> ({((1 - metrics.pe / metrics.sectorPe) * 100).toFixed(0)}% discount)</span>
+                  )}
+                </div>
+              )}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ── Valuation Tests Breakdown ── */}
       {Object.keys(tests).length > 0 && (
         <section className="stock-detail__tests-section">
           <div className="container">
@@ -150,7 +227,7 @@ export default function StockDetail() {
                   <div>
                     <h2 className="stock-detail__tests-title">Valuation Test Results</h2>
                     <p className="stock-detail__tests-subtitle">
-                      {testsPassed !== null ? `${testsPassed}/6 tests passed` : '6 tests run'} · {grade ? GRADE_LABELS[grade] : 'Grading...'}
+                      {testsPassed !== null ? `${testsPassed}/8 tests passed` : '8 tests run'} · {grade ? GRADE_LABELS[grade] : 'Grading...'}
                     </p>
                   </div>
                 </div>
@@ -194,9 +271,17 @@ export default function StockDetail() {
         </section>
       )}
 
+      {/* ── AI Research Report ── */}
+      {report && (
+        <section className="stock-detail__report-section">
+          <div className="container">
+            <ReportView report={report} />
+          </div>
+        </section>
+      )}
+
       <Disclaimer />
       <Footer />
     </div>
   )
 }
-

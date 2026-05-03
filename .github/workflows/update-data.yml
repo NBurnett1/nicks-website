@@ -60,13 +60,21 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/generate_weekly_picks.py --sunday
 
+      - name: Scan news & market alerts
+        if: github.event.schedule == '0 10 * * 0' || github.event.inputs.mode == 'full-pipeline'
+        run: python scripts/fetch_alerts.py
+
       # ═══════════════════════════════════════════
-      # MON-FRI: Update prices for active week
+      # MON-FRI: Update prices + alerts for active week
       # ═══════════════════════════════════════════
 
       - name: Update weekly prices
         if: github.event.schedule == '0 7 * * 1-5' || github.event.inputs.mode == 'update-prices' || github.event.inputs.mode == 'full-pipeline'
         run: python scripts/update_weekly_prices.py
+
+      - name: Scan news & market alerts (daily)
+        if: github.event.schedule == '0 7 * * 1-5' || github.event.inputs.mode == 'update-prices'
+        run: python scripts/fetch_alerts.py
 
       # ═══════════════════════════════════════════
       # COMMIT + PUSH → triggers Vercel auto-deploy

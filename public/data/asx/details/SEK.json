@@ -1,20 +1,12 @@
 {
   "ticker": "SEK",
   "name": "SEEK FPO [SEK]",
-  "price": 15.47,
-  "valuationScore": -0.9,
-  "marketCap": "5.5B",
+  "price": 13.84,
+  "valuationScore": -1.5,
+  "marketCap": "4.9B",
   "sector": "Technology",
   "domain": "seek.com.au",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 19.82
-    },
-    {
-      "date": "2025-04-27",
-      "price": 20.48
-    },
     {
       "date": "2025-05-04",
       "price": 20.76
@@ -218,10 +210,18 @@
     {
       "date": "2026-04-19",
       "price": 15.47
+    },
+    {
+      "date": "2026-04-26",
+      "price": 14.66
+    },
+    {
+      "date": "2026-05-03",
+      "price": 13.84
     }
   ],
-  "testsPassed": 0,
-  "grade": "F",
+  "testsPassed": 2,
+  "grade": "D",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -233,28 +233,28 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.32,
+      "value": 2.07,
       "threshold": 1.5,
-      "label": "2.32x vs 1.5x"
+      "label": "2.07x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 25.36,
+      "value": 23.15,
       "threshold": 10.0,
-      "label": "25.4x vs 10x"
+      "label": "23.1x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.96,
+      "value": 3.31,
       "threshold": 5.0,
-      "label": "3.0% vs 5%"
+      "label": "3.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 21.97,
+      "value": 19.95,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -264,16 +264,31 @@
       "value": -12.27,
       "threshold": 5.0,
       "label": "Margin -12.3% / ROE -3.1%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": true,
+      "value": 0.2,
+      "threshold": 0.5,
+      "label": "P/S 4.1x ÷ Growth 20.6% = 0.20"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": true,
+      "value": 20.6,
+      "threshold": -5.0,
+      "label": "20.6% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 47.68,
-    "pb": 2.32,
-    "evEbitda": 25.36,
-    "fcfYield": 2.96,
-    "forwardPe": 21.97,
-    "dividendYield": 3.17,
+    "sectorPe": 46.66,
+    "pb": 2.07,
+    "ps": 4.09,
+    "evEbitda": 23.15,
+    "fcfYield": 3.31,
+    "forwardPe": 19.95,
+    "dividendYield": 3.54,
     "revenueGrowth": 20.6,
     "profitMargin": -12.27,
     "operatingMargin": 25.25,

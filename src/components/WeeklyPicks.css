@@ -540,6 +540,18 @@
   color: var(--red-400);
 }
 
+/* ── Stop-loss badge ── */
+.weekly-picks__stop-badge {
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: var(--red-400);
+  background: rgba(239, 68, 68, 0.12);
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
 /* ── Responsive ── */
 @media (max-width: 768px) {
   .weekly-picks__header {

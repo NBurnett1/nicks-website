@@ -1,20 +1,12 @@
 {
   "ticker": "APX",
   "name": "APPEN FPO [APX]",
-  "price": 1.59,
-  "valuationScore": -9.6,
-  "marketCap": "426M",
+  "price": 1.2,
+  "valuationScore": -10.2,
+  "marketCap": "320M",
   "sector": "Technology",
   "domain": "appen.com",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 0.8
-    },
-    {
-      "date": "2025-04-27",
-      "price": 0.89
-    },
     {
       "date": "2025-05-04",
       "price": 0.77
@@ -218,10 +210,18 @@
     {
       "date": "2026-04-19",
       "price": 1.59
+    },
+    {
+      "date": "2026-04-26",
+      "price": 1.55
+    },
+    {
+      "date": "2026-05-03",
+      "price": 1.2
     }
   ],
-  "testsPassed": 0,
-  "grade": "F",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -233,9 +233,9 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.09,
+      "value": 2.39,
       "threshold": 1.5,
-      "label": "3.09x vs 1.5x"
+      "label": "2.39x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -246,15 +246,15 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 4.23,
+      "passed": true,
+      "value": 5.63,
       "threshold": 5.0,
-      "label": "4.2% vs 5%"
+      "label": "5.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 16.48,
+      "value": 13.9,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -264,15 +264,30 @@
       "value": -9.38,
       "threshold": 5.0,
       "label": "Margin -9.4% / ROE -20.9%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": true,
+      "value": 0.21,
+      "threshold": 0.5,
+      "label": "P/S 1.4x ÷ Growth 6.7% = 0.21"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": true,
+      "value": 6.7,
+      "threshold": -5.0,
+      "label": "6.7% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 47.68,
-    "pb": 3.09,
-    "evEbitda": -21.48,
-    "fcfYield": 4.23,
-    "forwardPe": 16.48,
+    "sectorPe": 46.66,
+    "pb": 2.39,
+    "ps": 1.38,
+    "evEbitda": -15.42,
+    "fcfYield": 5.63,
+    "forwardPe": 13.9,
     "dividendYield": null,
     "revenueGrowth": 6.7,
     "profitMargin": -9.38,

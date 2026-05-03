@@ -1,20 +1,12 @@
 {
   "ticker": "INA",
   "name": "INGENIA STAPLED [INA]",
-  "price": 4.12,
-  "valuationScore": -1.2,
-  "marketCap": "1.7B",
+  "price": 4.03,
+  "valuationScore": -1.0,
+  "marketCap": "1.6B",
   "sector": "Real Estate",
   "domain": "ingeniacommunities.com.au",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 5.33
-    },
-    {
-      "date": "2025-04-27",
-      "price": 5.33
-    },
     {
       "date": "2025-05-04",
       "price": 5.61
@@ -218,45 +210,53 @@
     {
       "date": "2026-04-19",
       "price": 4.12
+    },
+    {
+      "date": "2026-04-26",
+      "price": 4.08
+    },
+    {
+      "date": "2026-05-03",
+      "price": 4.03
     }
   ],
-  "testsPassed": 4,
+  "testsPassed": 5,
   "grade": "B",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 12.48,
-      "threshold": 10.41,
-      "label": "12.5x vs 10.4x sector"
+      "value": 12.21,
+      "threshold": 10.06,
+      "label": "12.2x vs 10.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.0,
+      "value": 0.98,
       "threshold": 1.5,
-      "label": "1.00x vs 1.5x"
+      "label": "0.98x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 15.77,
+      "value": 15.55,
       "threshold": 10.0,
-      "label": "15.8x vs 10x"
+      "label": "15.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 6.04,
+      "value": 6.18,
       "threshold": 5.0,
-      "label": "6.0% vs 5%"
+      "label": "6.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 11.13,
-      "threshold": 12.48,
-      "label": "Fwd 11.1x vs Trail 12.5x"
+      "value": 10.92,
+      "threshold": 12.21,
+      "label": "Fwd 10.9x vs Trail 12.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,16 +264,31 @@
       "value": 25.57,
       "threshold": 5.0,
       "label": "Margin 25.6% / ROE 8.5%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": false,
+      "value": 0.71,
+      "threshold": 0.5,
+      "label": "P/S 3.0x ÷ Growth 4.3% = 0.71"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": true,
+      "value": 4.3,
+      "threshold": -5.0,
+      "label": "4.3% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 12.48,
-    "sectorPe": 12.24,
-    "pb": 1.0,
-    "evEbitda": 15.77,
-    "fcfYield": 6.04,
-    "forwardPe": 11.13,
-    "dividendYield": 2.23,
+    "pe": 12.21,
+    "sectorPe": 11.83,
+    "pb": 0.98,
+    "ps": 3.04,
+    "evEbitda": 15.55,
+    "fcfYield": 6.18,
+    "forwardPe": 10.92,
+    "dividendYield": 2.28,
     "revenueGrowth": 4.3,
     "profitMargin": 25.57,
     "operatingMargin": 31.04,

@@ -1,20 +1,12 @@
 {
   "ticker": "SCG",
   "name": "SCENTRE STAPLED [SCG]",
-  "price": 3.53,
-  "valuationScore": 3.5,
-  "marketCap": "18.4B",
+  "price": 3.77,
+  "valuationScore": 4.1,
+  "marketCap": "19.7B",
   "sector": "Real Estate",
   "domain": "scentregroup.com",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 3.29
-    },
-    {
-      "date": "2025-04-27",
-      "price": 3.36
-    },
     {
       "date": "2025-05-04",
       "price": 3.46
@@ -218,6 +210,14 @@
     {
       "date": "2026-04-19",
       "price": 3.53
+    },
+    {
+      "date": "2026-04-26",
+      "price": 3.69
+    },
+    {
+      "date": "2026-05-03",
+      "price": 3.77
     }
   ],
   "testsPassed": 3,
@@ -225,17 +225,17 @@
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": true,
-      "value": 10.38,
-      "threshold": 10.41,
-      "label": "10.4x vs 10.4x sector"
+      "passed": false,
+      "value": 11.09,
+      "threshold": 10.06,
+      "label": "11.1x vs 10.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.97,
+      "value": 1.04,
       "threshold": 1.5,
-      "label": "0.97x vs 1.5x"
+      "label": "1.04x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -1.95,
+      "value": -1.83,
       "threshold": 5.0,
-      "label": "-1.9% vs 5%"
+      "label": "-1.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 14.3,
-      "threshold": 10.38,
-      "label": "Fwd 14.3x vs Trail 10.4x"
+      "value": 15.31,
+      "threshold": 11.09,
+      "label": "Fwd 15.3x vs Trail 11.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,16 +264,31 @@
       "value": 66.24,
       "threshold": 5.0,
       "label": "Margin 66.2% / ROE 9.6%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": false,
+      "value": 9.17,
+      "threshold": 0.5,
+      "label": "P/S 7.3x ÷ Growth 0.8% = 9.17"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": true,
+      "value": 0.8,
+      "threshold": -5.0,
+      "label": "0.8% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 10.38,
-    "sectorPe": 12.24,
-    "pb": 0.97,
+    "pe": 11.09,
+    "sectorPe": 11.83,
+    "pb": 1.04,
+    "ps": 7.33,
     "evEbitda": null,
-    "fcfYield": -1.95,
-    "forwardPe": 14.3,
-    "dividendYield": 5.02,
+    "fcfYield": -1.83,
+    "forwardPe": 15.31,
+    "dividendYield": 4.7,
     "revenueGrowth": 0.8,
     "profitMargin": 66.24,
     "operatingMargin": 66.94,

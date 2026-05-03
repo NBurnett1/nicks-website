@@ -1,20 +1,12 @@
 {
   "ticker": "ORG",
   "name": "ORIGIN ENE FPO [ORG]",
-  "price": 12.47,
-  "valuationScore": 8.5,
-  "marketCap": "21.5B",
+  "price": 12.07,
+  "valuationScore": 7.5,
+  "marketCap": "20.8B",
   "sector": "Energy",
   "domain": "originenergy.com.au",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 9.69
-    },
-    {
-      "date": "2025-04-27",
-      "price": 9.83
-    },
     {
       "date": "2025-05-04",
       "price": 10.34
@@ -218,6 +210,14 @@
     {
       "date": "2026-04-19",
       "price": 12.47
+    },
+    {
+      "date": "2026-04-26",
+      "price": 12.77
+    },
+    {
+      "date": "2026-05-03",
+      "price": 12.07
     }
   ],
   "testsPassed": 2,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 21.14,
-      "threshold": 17.97,
-      "label": "21.1x vs 18.0x sector"
+      "value": 20.46,
+      "threshold": 17.39,
+      "label": "20.5x vs 17.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.2,
+      "value": 2.13,
       "threshold": 1.5,
-      "label": "2.20x vs 1.5x"
+      "label": "2.13x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 19.18,
+      "value": 18.66,
       "threshold": 10.0,
-      "label": "19.2x vs 10x"
+      "label": "18.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 0.88,
+      "value": 0.91,
       "threshold": 5.0,
       "label": "0.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.26,
-      "threshold": 21.14,
-      "label": "Fwd 16.3x vs Trail 21.1x"
+      "value": 16.21,
+      "threshold": 20.46,
+      "label": "Fwd 16.2x vs Trail 20.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,16 +264,31 @@
       "value": 6.2,
       "threshold": 5.0,
       "label": "Margin 6.2% / ROE 10.2%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": false,
+      "value": -9.0,
+      "threshold": 0.5,
+      "label": "FAIL — Revenue declining -9.0%"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": false,
+      "value": -9.0,
+      "threshold": -5.0,
+      "label": "-9.0% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 21.14,
-    "sectorPe": 21.14,
-    "pb": 2.2,
-    "evEbitda": 19.18,
-    "fcfYield": 0.88,
-    "forwardPe": 16.26,
-    "dividendYield": 4.81,
+    "pe": 20.46,
+    "sectorPe": 20.46,
+    "pb": 2.13,
+    "ps": 1.26,
+    "evEbitda": 18.66,
+    "fcfYield": 0.91,
+    "forwardPe": 16.21,
+    "dividendYield": 4.97,
     "revenueGrowth": -9.0,
     "profitMargin": 6.2,
     "operatingMargin": 7.66,

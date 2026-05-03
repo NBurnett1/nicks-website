@@ -2,19 +2,11 @@
   "ticker": "IFL",
   "name": "INSIGNIA FPO [IFL]",
   "price": 4.79,
-  "valuationScore": 5.6,
+  "valuationScore": 5.5,
   "marketCap": "3.2B",
   "sector": "Financial Services",
   "domain": "insigniafinancial.com.au",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 3.72
-    },
-    {
-      "date": "2025-04-27",
-      "price": 3.71
-    },
     {
       "date": "2025-05-04",
       "price": 3.79
@@ -218,17 +210,25 @@
     {
       "date": "2026-04-19",
       "price": 4.79
+    },
+    {
+      "date": "2026-04-26",
+      "price": 4.79
+    },
+    {
+      "date": "2026-05-03",
+      "price": 4.79
     }
   ],
-  "testsPassed": 3,
-  "grade": "C",
+  "testsPassed": 5,
+  "grade": "B",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
       "value": 28.18,
-      "threshold": 16.2,
-      "label": "28.2x vs 16.2x sector"
+      "threshold": 16.34,
+      "label": "28.2x vs 16.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.02,
+      "value": 11.8,
       "threshold": 28.18,
-      "label": "Fwd 12.0x vs Trail 28.2x"
+      "label": "Fwd 11.8x vs Trail 28.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,15 +264,30 @@
       "value": 6.8,
       "threshold": 5.0,
       "label": "Margin 6.8% / ROE 5.4%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": true,
+      "value": 0.25,
+      "threshold": 0.5,
+      "label": "P/S 2.0x ÷ Growth 7.8% = 0.25"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": true,
+      "value": 7.8,
+      "threshold": -5.0,
+      "label": "7.8% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": 28.18,
-    "sectorPe": 19.05,
+    "sectorPe": 19.22,
     "pb": 1.5,
+    "ps": 1.96,
     "evEbitda": 9.2,
     "fcfYield": -1.65,
-    "forwardPe": 12.02,
+    "forwardPe": 11.8,
     "dividendYield": null,
     "revenueGrowth": 7.8,
     "profitMargin": 6.8,

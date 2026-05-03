@@ -1,20 +1,12 @@
 {
   "ticker": "PPE",
   "name": "PEOPLEINFR FPO [PPE]",
-  "price": 0.62,
-  "valuationScore": -28.9,
-  "marketCap": "68M",
+  "price": 0.59,
+  "valuationScore": -28.1,
+  "marketCap": "65M",
   "sector": "Industrials",
   "domain": "peoplein.com.au",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 0.77
-    },
-    {
-      "date": "2025-04-27",
-      "price": 0.79
-    },
     {
       "date": "2025-05-04",
       "price": 0.75
@@ -218,6 +210,14 @@
     {
       "date": "2026-04-19",
       "price": 0.62
+    },
+    {
+      "date": "2026-04-26",
+      "price": 0.61
+    },
+    {
+      "date": "2026-05-03",
+      "price": 0.59
     }
   ],
   "testsPassed": 3,
@@ -233,28 +233,28 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.56,
+      "value": 0.53,
       "threshold": 1.5,
-      "label": "0.56x vs 1.5x"
+      "label": "0.53x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 4.72,
+      "value": 4.56,
       "threshold": 10.0,
-      "label": "4.7x vs 10x"
+      "label": "4.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 40.68,
+      "value": 42.75,
       "threshold": 5.0,
-      "label": "40.7% vs 5%"
+      "label": "42.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 7.94,
+      "value": 7.56,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -264,15 +264,30 @@
       "value": -3.42,
       "threshold": 5.0,
       "label": "Margin -3.4% / ROE -3.2%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": false,
+      "value": -8.2,
+      "threshold": 0.5,
+      "label": "FAIL — Revenue declining -8.2%"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": false,
+      "value": -8.2,
+      "threshold": -5.0,
+      "label": "-8.2% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 28.89,
-    "pb": 0.56,
-    "evEbitda": 4.72,
-    "fcfYield": 40.68,
-    "forwardPe": 7.94,
+    "sectorPe": 30.92,
+    "pb": 0.53,
+    "ps": 0.06,
+    "evEbitda": 4.56,
+    "fcfYield": 42.75,
+    "forwardPe": 7.56,
     "dividendYield": null,
     "revenueGrowth": -8.2,
     "profitMargin": -3.42,

@@ -246,16 +246,27 @@ def run_valuation_tests(row):
     # Test 7: Value/Growth Score — P/S ÷ revenue growth % (lower = more growth per dollar)
     # Inspired by revenue PEG: a stock with P/S of 2x and 20% growth scores 0.10 (excellent)
     # A stock with P/S of 5x and 5% growth scores 1.0 (poor value for growth)
-    if ps is not None and revenue_growth is not None and ps > 0 and revenue_growth > 0:
-        vg_score = round(ps / revenue_growth, 2)
-        threshold = 0.5  # Below 0.5 = you're getting significant growth per valuation dollar
-        tests["valueGrowthScore"] = {
-            "name": "Value/Growth Score",
-            "passed": vg_score < threshold,
-            "value": vg_score,
-            "threshold": threshold,
-            "label": f"P/S {ps:.1f}x ÷ Growth {revenue_growth:.1f}% = {vg_score:.2f}"
-        }
+    # IMPORTANT: Negative revenue growth = automatic FAIL (shrinking business)
+    if ps is not None and revenue_growth is not None and ps > 0:
+        if revenue_growth <= 0:
+            # Shrinking revenue = fail. Don't reward declining businesses.
+            tests["valueGrowthScore"] = {
+                "name": "Value/Growth Score",
+                "passed": False,
+                "value": round(revenue_growth, 2),
+                "threshold": 0.5,
+                "label": f"FAIL — Revenue declining {revenue_growth:.1f}%"
+            }
+        else:
+            vg_score = round(ps / revenue_growth, 2)
+            threshold = 0.5  # Below 0.5 = you're getting significant growth per valuation dollar
+            tests["valueGrowthScore"] = {
+                "name": "Value/Growth Score",
+                "passed": vg_score < threshold,
+                "value": vg_score,
+                "threshold": threshold,
+                "label": f"P/S {ps:.1f}x ÷ Growth {revenue_growth:.1f}% = {vg_score:.2f}"
+            }
     else:
         tests["valueGrowthScore"] = {
             "name": "Value/Growth Score",
@@ -265,16 +276,37 @@ def run_valuation_tests(row):
             "label": "No P/S or growth data"
         }
 
+    # Test 8: Revenue Trend — fail if revenue is shrinking more than 5%
+    # This is a hard red flag: structurally declining businesses are value traps.
+    if revenue_growth is not None:
+        threshold = -5.0
+        tests["revenueTrend"] = {
+            "name": "Revenue Trend",
+            "passed": revenue_growth > threshold,
+            "value": round(revenue_growth, 2),
+            "threshold": threshold,
+            "label": f"{revenue_growth:.1f}% growth (floor: {threshold:.0f}%)"
+        }
+    else:
+        tests["revenueTrend"] = {
+            "name": "Revenue Trend",
+            "passed": None,
+            "value": None,
+            "threshold": -5.0,
+            "label": "No revenue data"
+        }
+
     return tests
 
 
 def conviction_grade(tests_passed):
-    """Map number of tests passed (0-7) to a letter grade."""
+    """Map number of tests passed (0-8) to a letter grade.
+    Tightened thresholds: B requires 5+ (was 4+) to avoid grade inflation."""
     if tests_passed >= 6:
         return "A"
-    elif tests_passed >= 4:
+    elif tests_passed >= 5:
         return "B"
-    elif tests_passed == 3:
+    elif tests_passed >= 3:
         return "C"
     elif tests_passed >= 1:
         return "D"

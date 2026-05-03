@@ -1,20 +1,12 @@
 {
   "ticker": "BXB",
   "name": "BRAMB LTD FPO [BXB]",
-  "price": 22.39,
-  "valuationScore": 6.6,
-  "marketCap": "30.2B",
+  "price": 22.93,
+  "valuationScore": 6.7,
+  "marketCap": "30.9B",
   "sector": "Industrials",
   "domain": "brambles.com",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 20.07
-    },
-    {
-      "date": "2025-04-27",
-      "price": 20.33
-    },
     {
       "date": "2025-05-04",
       "price": 20.25
@@ -218,45 +210,53 @@
     {
       "date": "2026-04-19",
       "price": 22.39
+    },
+    {
+      "date": "2026-04-26",
+      "price": 22.02
+    },
+    {
+      "date": "2026-05-03",
+      "price": 22.93
     }
   ],
-  "testsPassed": 3,
+  "testsPassed": 4,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 23.82,
-      "threshold": 24.55,
-      "label": "23.8x vs 24.6x sector"
+      "value": 24.66,
+      "threshold": 26.28,
+      "label": "24.7x vs 26.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 6.35,
+      "value": 6.55,
       "threshold": 1.5,
-      "label": "6.35x vs 1.5x"
+      "label": "6.55x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 15.99,
+      "value": 16.35,
       "threshold": 10.0,
-      "label": "16.0x vs 10x"
+      "label": "16.3x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.35,
+      "value": 2.3,
       "threshold": 5.0,
-      "label": "2.4% vs 5%"
+      "label": "2.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 19.91,
-      "threshold": 23.82,
-      "label": "Fwd 19.9x vs Trail 23.8x"
+      "value": 20.43,
+      "threshold": 24.66,
+      "label": "Fwd 20.4x vs Trail 24.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,16 +264,31 @@
       "value": 13.7,
       "threshold": 5.0,
       "label": "Margin 13.7% / ROE 28.1%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": false,
+      "value": 0.88,
+      "threshold": 0.5,
+      "label": "P/S 4.4x ÷ Growth 5.0% = 0.88"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": true,
+      "value": 5.0,
+      "threshold": -5.0,
+      "label": "5.0% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 23.82,
-    "sectorPe": 28.89,
-    "pb": 6.35,
-    "evEbitda": 15.99,
-    "fcfYield": 2.35,
-    "forwardPe": 19.91,
-    "dividendYield": 2.89,
+    "pe": 24.66,
+    "sectorPe": 30.92,
+    "pb": 6.55,
+    "ps": 4.41,
+    "evEbitda": 16.35,
+    "fcfYield": 2.3,
+    "forwardPe": 20.43,
+    "dividendYield": 2.82,
     "revenueGrowth": 5.0,
     "profitMargin": 13.7,
     "operatingMargin": 21.77,

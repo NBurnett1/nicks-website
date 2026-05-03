@@ -1,20 +1,12 @@
 {
   "ticker": "BAP",
   "name": "BAPCOR LTD FPO [BAP]",
-  "price": 0.65,
-  "valuationScore": -2.2,
-  "marketCap": "434M",
+  "price": 0.57,
+  "valuationScore": -3.7,
+  "marketCap": "387M",
   "sector": "Consumer Cyclical",
   "domain": "bapcor.com.au",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 4.59
-    },
-    {
-      "date": "2025-04-27",
-      "price": 4.84
-    },
     {
       "date": "2025-05-04",
       "price": 5.1
@@ -218,10 +210,18 @@
     {
       "date": "2026-04-19",
       "price": 0.64
+    },
+    {
+      "date": "2026-04-26",
+      "price": 0.56
+    },
+    {
+      "date": "2026-05-03",
+      "price": 0.57
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -233,28 +233,28 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.31,
+      "value": 0.28,
       "threshold": 1.5,
-      "label": "0.31x vs 1.5x"
+      "label": "0.28x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 15.07,
+      "value": 14.64,
       "threshold": 10.0,
-      "label": "15.1x vs 10x"
+      "label": "14.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 12.45,
+      "value": 13.97,
       "threshold": 5.0,
-      "label": "12.4% vs 5%"
+      "label": "14.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 13.33,
+      "value": 12.33,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -264,16 +264,31 @@
       "value": -5.96,
       "threshold": 5.0,
       "label": "Margin -6.0% / ROE -14.1%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": false,
+      "value": -3.9,
+      "threshold": 0.5,
+      "label": "FAIL — Revenue declining -3.9%"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": true,
+      "value": -3.9,
+      "threshold": -5.0,
+      "label": "-3.9% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 25.2,
-    "pb": 0.31,
-    "evEbitda": 15.07,
-    "fcfYield": 12.45,
-    "forwardPe": 13.33,
-    "dividendYield": 12.36,
+    "sectorPe": 22.78,
+    "pb": 0.28,
+    "ps": 0.2,
+    "evEbitda": 14.64,
+    "fcfYield": 13.97,
+    "forwardPe": 12.33,
+    "dividendYield": 13.86,
     "revenueGrowth": -3.9,
     "profitMargin": -5.96,
     "operatingMargin": 1.59,

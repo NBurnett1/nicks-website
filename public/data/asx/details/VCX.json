@@ -2,19 +2,11 @@
   "ticker": "VCX",
   "name": "VICINITY STAPLED [VCX]",
   "price": 2.54,
-  "valuationScore": -1.1,
+  "valuationScore": -0.7,
   "marketCap": "11.8B",
   "sector": "Real Estate",
   "domain": "vicinity.com.au",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 2.15
-    },
-    {
-      "date": "2025-04-27",
-      "price": 2.22
-    },
     {
       "date": "2025-05-04",
       "price": 2.26
@@ -218,17 +210,25 @@
     {
       "date": "2026-04-19",
       "price": 2.54
+    },
+    {
+      "date": "2026-04-26",
+      "price": 2.56
+    },
+    {
+      "date": "2026-05-03",
+      "price": 2.54
     }
   ],
-  "testsPassed": 4,
+  "testsPassed": 5,
   "grade": "B",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
       "value": 8.76,
-      "threshold": 10.41,
-      "label": "8.8x vs 10.4x sector"
+      "threshold": 10.06,
+      "label": "8.8x vs 10.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -254,7 +254,7 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 16.06,
+      "value": 16.07,
       "threshold": 8.76,
       "label": "Fwd 16.1x vs Trail 8.8x"
     },
@@ -264,15 +264,30 @@
       "value": 94.93,
       "threshold": 5.0,
       "label": "Margin 94.9% / ROE 11.7%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": false,
+      "value": 7.08,
+      "threshold": 0.5,
+      "label": "P/S 8.5x ÷ Growth 1.2% = 7.08"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": true,
+      "value": 1.2,
+      "threshold": -5.0,
+      "label": "1.2% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": 8.76,
-    "sectorPe": 12.24,
+    "sectorPe": 11.83,
     "pb": 0.99,
+    "ps": 8.49,
     "evEbitda": 19.3,
     "fcfYield": 5.15,
-    "forwardPe": 16.06,
+    "forwardPe": 16.07,
     "dividendYield": 4.88,
     "revenueGrowth": 1.2,
     "profitMargin": 94.93,

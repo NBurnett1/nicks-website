@@ -1,20 +1,12 @@
 {
   "ticker": "RHC",
   "name": "RAMSAY FPO [RHC]",
-  "price": 41.21,
-  "valuationScore": -3.1,
-  "marketCap": "9.5B",
+  "price": 38.27,
+  "valuationScore": -3.0,
+  "marketCap": "8.8B",
   "sector": "Healthcare",
   "domain": "ramsayhealth.com",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 32.68
-    },
-    {
-      "date": "2025-04-27",
-      "price": 32.5
-    },
     {
       "date": "2025-05-04",
       "price": 33.56
@@ -218,45 +210,53 @@
     {
       "date": "2026-04-19",
       "price": 41.21
+    },
+    {
+      "date": "2026-04-26",
+      "price": 39.99
+    },
+    {
+      "date": "2026-05-03",
+      "price": 38.27
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 4,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 32.71,
-      "threshold": 19.0,
-      "label": "32.7x vs 19.0x sector"
+      "value": 30.37,
+      "threshold": 16.96,
+      "label": "30.4x vs 17.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.98,
+      "value": 1.84,
       "threshold": 1.5,
-      "label": "1.98x vs 1.5x"
+      "label": "1.84x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 13.15,
+      "value": 12.74,
       "threshold": 10.0,
-      "label": "13.1x vs 10x"
+      "label": "12.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 7.92,
+      "value": 8.53,
       "threshold": 5.0,
-      "label": "7.9% vs 5%"
+      "label": "8.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 24.94,
-      "threshold": 32.71,
-      "label": "Fwd 24.9x vs Trail 32.7x"
+      "value": 22.96,
+      "threshold": 30.37,
+      "label": "Fwd 23.0x vs Trail 30.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,16 +264,31 @@
       "value": 1.55,
       "threshold": 5.0,
       "label": "Margin 1.6% / ROE 5.1%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": true,
+      "value": 0.05,
+      "threshold": 0.5,
+      "label": "P/S 0.5x ÷ Growth 9.7% = 0.05"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": true,
+      "value": 9.7,
+      "threshold": -5.0,
+      "label": "9.7% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 32.71,
-    "sectorPe": 22.35,
-    "pb": 1.98,
-    "evEbitda": 13.15,
-    "fcfYield": 7.92,
-    "forwardPe": 24.94,
-    "dividendYield": 2.06,
+    "pe": 30.37,
+    "sectorPe": 19.95,
+    "pb": 1.84,
+    "ps": 0.47,
+    "evEbitda": 12.74,
+    "fcfYield": 8.53,
+    "forwardPe": 22.96,
+    "dividendYield": 2.22,
     "revenueGrowth": 9.7,
     "profitMargin": 1.55,
     "operatingMargin": 5.59,

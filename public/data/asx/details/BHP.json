@@ -1,20 +1,12 @@
 {
   "ticker": "BHP",
   "name": "BHP GROUP FPO [BHP]",
-  "price": 55.92,
-  "valuationScore": -1.6,
-  "marketCap": "284.1B",
+  "price": 54.94,
+  "valuationScore": -1.2,
+  "marketCap": "279.1B",
   "sector": "Materials",
   "domain": "bhp.com",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 35.02
-    },
-    {
-      "date": "2025-04-27",
-      "price": 36.54
-    },
     {
       "date": "2025-05-04",
       "price": 36.56
@@ -218,45 +210,53 @@
     {
       "date": "2026-04-19",
       "price": 55.92
+    },
+    {
+      "date": "2026-04-26",
+      "price": 56.1
+    },
+    {
+      "date": "2026-05-03",
+      "price": 54.94
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 4,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 19.9,
-      "threshold": 17.42,
-      "label": "19.9x vs 17.4x sector"
+      "value": 19.62,
+      "threshold": 17.28,
+      "label": "19.6x vs 17.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.0,
+      "value": 3.98,
       "threshold": 1.5,
-      "label": "4.00x vs 1.5x"
+      "label": "3.98x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 11.59,
+      "value": 11.4,
       "threshold": 10.0,
-      "label": "11.6x vs 10x"
+      "label": "11.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.86,
+      "value": 2.92,
       "threshold": 5.0,
       "label": "2.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 15.66,
-      "threshold": 19.9,
-      "label": "Fwd 15.7x vs Trail 19.9x"
+      "value": 15.28,
+      "threshold": 19.62,
+      "label": "Fwd 15.3x vs Trail 19.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,16 +264,31 @@
       "value": 18.97,
       "threshold": 5.0,
       "label": "Margin 19.0% / ROE 24.7%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": true,
+      "value": 0.48,
+      "threshold": 0.5,
+      "label": "P/S 5.2x ÷ Growth 10.8% = 0.48"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": true,
+      "value": 10.8,
+      "threshold": -5.0,
+      "label": "10.8% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 19.9,
-    "sectorPe": 20.49,
-    "pb": 4.0,
-    "evEbitda": 11.59,
-    "fcfYield": 2.86,
-    "forwardPe": 15.66,
-    "dividendYield": 3.5,
+    "pe": 19.62,
+    "sectorPe": 20.33,
+    "pb": 3.98,
+    "ps": 5.17,
+    "evEbitda": 11.4,
+    "fcfYield": 2.92,
+    "forwardPe": 15.28,
+    "dividendYield": 3.56,
     "revenueGrowth": 10.8,
     "profitMargin": 18.97,
     "operatingMargin": 40.73,

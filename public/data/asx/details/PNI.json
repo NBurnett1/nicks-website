@@ -1,20 +1,12 @@
 {
   "ticker": "PNI",
   "name": "PINNACLE FPO [PNI]",
-  "price": 17.09,
+  "price": 14.88,
   "valuationScore": 60.0,
-  "marketCap": "3.9B",
+  "marketCap": "3.6B",
   "sector": "Financial Services",
   "domain": "pinnacleinvestment.com",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 15.68
-    },
-    {
-      "date": "2025-04-27",
-      "price": 16.63
-    },
     {
       "date": "2025-05-04",
       "price": 17.9
@@ -218,45 +210,53 @@
     {
       "date": "2026-04-19",
       "price": 17.09
+    },
+    {
+      "date": "2026-04-26",
+      "price": 15.97
+    },
+    {
+      "date": "2026-05-03",
+      "price": 14.88
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 30.52,
-      "threshold": 16.2,
-      "label": "30.5x vs 16.2x sector"
+      "value": 26.57,
+      "threshold": 16.34,
+      "label": "26.6x vs 16.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.07,
+      "value": 3.54,
       "threshold": 1.5,
-      "label": "4.07x vs 1.5x"
+      "label": "3.54x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 145.53,
+      "value": 124.93,
       "threshold": 10.0,
-      "label": "145.5x vs 10x"
+      "label": "124.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -0.08,
+      "value": -0.09,
       "threshold": 5.0,
       "label": "-0.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 19.96,
-      "threshold": 30.52,
-      "label": "Fwd 20.0x vs Trail 30.5x"
+      "value": 17.38,
+      "threshold": 26.57,
+      "label": "Fwd 17.4x vs Trail 26.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,16 +264,31 @@
       "value": 150.25,
       "threshold": 5.0,
       "label": "Margin 150.2% / ROE 13.5%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": false,
+      "value": 0.64,
+      "threshold": 0.5,
+      "label": "P/S 42.5x ÷ Growth 66.6% = 0.64"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": true,
+      "value": 66.6,
+      "threshold": -5.0,
+      "label": "66.6% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 30.52,
-    "sectorPe": 19.05,
-    "pb": 4.07,
-    "evEbitda": 145.53,
-    "fcfYield": -0.08,
-    "forwardPe": 19.96,
-    "dividendYield": 3.28,
+    "pe": 26.57,
+    "sectorPe": 19.22,
+    "pb": 3.54,
+    "ps": 42.46,
+    "evEbitda": 124.93,
+    "fcfYield": -0.09,
+    "forwardPe": 17.38,
+    "dividendYield": 3.76,
     "revenueGrowth": 66.6,
     "profitMargin": 150.25,
     "operatingMargin": 25.21,

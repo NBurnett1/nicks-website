@@ -132,7 +132,7 @@ export default function WeeklyPicks({ exchange = 'ASX' }) {
             </div>
             <div className="weekly-picks__hero-right">
               <div className={`weekly-picks__grade weekly-picks__grade--${heroPick.grade}`}>{heroPick.grade}</div>
-              <div className="weekly-picks__hero-tests">{heroPick.testsPassed}/6 tests</div>
+              <div className="weekly-picks__hero-tests">{heroPick.testsPassed}/8 tests</div>
             </div>
           </div>
           <div className="weekly-picks__hero-thesis">{heroPick.thesis}</div>
@@ -193,6 +193,11 @@ export default function WeeklyPicks({ exchange = 'ASX' }) {
               <span className={`weekly-picks__card-pnl ${pick.pnlPct > 0 ? 'weekly-picks__card-pnl--positive' : pick.pnlPct < 0 ? 'weekly-picks__card-pnl--negative' : ''}`}>
                 {pick.pnlPct !== 0 ? `${pick.pnlPct > 0 ? '+' : ''}${pick.pnlPct.toFixed(1)}%` : '—'}
               </span>
+              {pick.stopTriggered && (
+                <span className="weekly-picks__stop-badge" title={pick.stopReason}>
+                  🛑 {pick.stopTriggered === 'STOP_LOSS' ? 'Stopped' : 'Trailed'}
+                </span>
+              )}
             </div>
           </div>
         ))}

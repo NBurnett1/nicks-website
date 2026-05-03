@@ -1,20 +1,12 @@
 {
   "ticker": "IMD",
   "name": "IMDEX FPO [IMD]",
-  "price": 4.02,
-  "valuationScore": 6.7,
+  "price": 4.09,
+  "valuationScore": 6.4,
   "marketCap": "2.1B",
   "sector": "Industrials",
   "domain": "imdex.com",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 2.76
-    },
-    {
-      "date": "2025-04-27",
-      "price": 2.81
-    },
     {
       "date": "2025-05-04",
       "price": 2.98
@@ -218,45 +210,53 @@
     {
       "date": "2026-04-19",
       "price": 4.02
+    },
+    {
+      "date": "2026-04-26",
+      "price": 4.06
+    },
+    {
+      "date": "2026-05-03",
+      "price": 4.09
     }
   ],
-  "testsPassed": 1,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 44.67,
-      "threshold": 24.55,
-      "label": "44.7x vs 24.6x sector"
+      "value": 45.44,
+      "threshold": 26.28,
+      "label": "45.4x vs 26.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.15,
+      "value": 3.21,
       "threshold": 1.5,
-      "label": "3.15x vs 1.5x"
+      "label": "3.21x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 18.34,
+      "value": 18.65,
       "threshold": 10.0,
-      "label": "18.3x vs 10x"
+      "label": "18.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.56,
+      "value": 2.51,
       "threshold": 5.0,
-      "label": "2.6% vs 5%"
+      "label": "2.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 27.53,
-      "threshold": 44.67,
-      "label": "Fwd 27.5x vs Trail 44.7x"
+      "value": 28.01,
+      "threshold": 45.44,
+      "label": "Fwd 28.0x vs Trail 45.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,16 +264,31 @@
       "value": 10.81,
       "threshold": 5.0,
       "label": "Margin 10.8% / ROE 8.0%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": true,
+      "value": 0.28,
+      "threshold": 0.5,
+      "label": "P/S 4.5x ÷ Growth 16.3% = 0.28"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": true,
+      "value": 16.3,
+      "threshold": -5.0,
+      "label": "16.3% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 44.67,
-    "sectorPe": 28.89,
-    "pb": 3.15,
-    "evEbitda": 18.34,
-    "fcfYield": 2.56,
-    "forwardPe": 27.53,
-    "dividendYield": 0.68,
+    "pe": 45.44,
+    "sectorPe": 30.92,
+    "pb": 3.21,
+    "ps": 4.49,
+    "evEbitda": 18.65,
+    "fcfYield": 2.51,
+    "forwardPe": 28.01,
+    "dividendYield": 0.67,
     "revenueGrowth": 16.3,
     "profitMargin": 10.81,
     "operatingMargin": 17.87,

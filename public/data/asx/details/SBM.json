@@ -1,20 +1,12 @@
 {
   "ticker": "SBM",
   "name": "ST.BARBARA FPO [SBM]",
-  "price": 0.69,
-  "valuationScore": 38.4,
-  "marketCap": "829M",
+  "price": 0.61,
+  "valuationScore": 38.6,
+  "marketCap": "744M",
   "sector": "Basic Materials",
   "domain": "stbarbara.com.au",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 0.26
-    },
-    {
-      "date": "2025-04-27",
-      "price": 0.29
-    },
     {
       "date": "2025-05-04",
       "price": 0.31
@@ -218,10 +210,18 @@
     {
       "date": "2026-04-19",
       "price": 0.69
+    },
+    {
+      "date": "2026-04-26",
+      "price": 0.65
+    },
+    {
+      "date": "2026-05-03",
+      "price": 0.62
     }
   ],
-  "testsPassed": 0,
-  "grade": "F",
+  "testsPassed": 2,
+  "grade": "D",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -233,28 +233,28 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.91,
+      "value": 1.71,
       "threshold": 1.5,
-      "label": "1.91x vs 1.5x"
+      "label": "1.71x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 50.94,
+      "value": 45.24,
       "threshold": 10.0,
-      "label": "50.9x vs 10x"
+      "label": "45.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -7.36,
+      "value": -8.2,
       "threshold": 5.0,
-      "label": "-7.4% vs 5%"
+      "label": "-8.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 13.56,
+      "value": 10.08,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -264,15 +264,30 @@
       "value": -18.42,
       "threshold": 5.0,
       "label": "Margin -18.4% / ROE -1.5%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": true,
+      "value": 0.09,
+      "threshold": 0.5,
+      "label": "P/S 3.0x ÷ Growth 32.4% = 0.09"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": true,
+      "value": 32.4,
+      "threshold": -5.0,
+      "label": "32.4% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 50.16,
-    "pb": 1.91,
-    "evEbitda": 50.94,
-    "fcfYield": -7.36,
-    "forwardPe": 13.56,
+    "sectorPe": 52.63,
+    "pb": 1.71,
+    "ps": 3.01,
+    "evEbitda": 45.24,
+    "fcfYield": -8.2,
+    "forwardPe": 10.08,
     "dividendYield": null,
     "revenueGrowth": 32.4,
     "profitMargin": -18.42,

@@ -1,20 +1,12 @@
 {
   "ticker": "BWP",
   "name": "BWPPROPGP STAPLED [BWP]",
-  "price": 3.87,
-  "valuationScore": 2.3,
-  "marketCap": "2.8B",
+  "price": 3.94,
+  "valuationScore": 2.6,
+  "marketCap": "2.9B",
   "sector": "Real Estate",
   "domain": "bwptrust.com.au",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 3.36
-    },
-    {
-      "date": "2025-04-27",
-      "price": 3.38
-    },
     {
       "date": "2025-05-04",
       "price": 3.46
@@ -218,24 +210,32 @@
     {
       "date": "2026-04-19",
       "price": 3.87
+    },
+    {
+      "date": "2026-04-26",
+      "price": 3.93
+    },
+    {
+      "date": "2026-05-03",
+      "price": 3.94
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 10.46,
-      "threshold": 10.41,
-      "label": "10.5x vs 10.4x sector"
+      "value": 10.65,
+      "threshold": 10.06,
+      "label": "10.6x vs 10.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.93,
+      "value": 0.94,
       "threshold": 1.5,
-      "label": "0.93x vs 1.5x"
+      "label": "0.94x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -0.25,
+      "value": -0.24,
       "threshold": 5.0,
       "label": "-0.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 19.69,
-      "threshold": 10.46,
-      "label": "Fwd 19.7x vs Trail 10.5x"
+      "value": 20.03,
+      "threshold": 10.65,
+      "label": "Fwd 20.0x vs Trail 10.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,16 +264,31 @@
       "value": 162.23,
       "threshold": 5.0,
       "label": "Margin 162.2% / ROE 11.3%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": false,
+      "value": 4.61,
+      "threshold": 0.5,
+      "label": "P/S 13.8x ÷ Growth 3.0% = 4.61"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": true,
+      "value": 3.0,
+      "threshold": -5.0,
+      "label": "3.0% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 10.46,
-    "sectorPe": 12.24,
-    "pb": 0.93,
+    "pe": 10.65,
+    "sectorPe": 11.83,
+    "pb": 0.94,
+    "ps": 13.84,
     "evEbitda": null,
-    "fcfYield": -0.25,
-    "forwardPe": 19.69,
-    "dividendYield": 4.92,
+    "fcfYield": -0.24,
+    "forwardPe": 20.03,
+    "dividendYield": 4.83,
     "revenueGrowth": 3.0,
     "profitMargin": 162.23,
     "operatingMargin": 86.85,

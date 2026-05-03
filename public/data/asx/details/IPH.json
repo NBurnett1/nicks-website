@@ -1,20 +1,12 @@
 {
   "ticker": "IPH",
   "name": "IPHLIMITED FPO [IPH]",
-  "price": 3.49,
-  "valuationScore": -12.4,
-  "marketCap": "904M",
+  "price": 3.73,
+  "valuationScore": -11.0,
+  "marketCap": "966M",
   "sector": "Industrials",
   "domain": "iphltd.com.au",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 4.11
-    },
-    {
-      "date": "2025-04-27",
-      "price": 4.1
-    },
     {
       "date": "2025-05-04",
       "price": 4.23
@@ -218,45 +210,53 @@
     {
       "date": "2026-04-19",
       "price": 3.49
+    },
+    {
+      "date": "2026-04-26",
+      "price": 3.56
+    },
+    {
+      "date": "2026-05-03",
+      "price": 3.73
     }
   ],
-  "testsPassed": 6,
+  "testsPassed": 8,
   "grade": "A",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 12.46,
-      "threshold": 24.55,
-      "label": "12.5x vs 24.6x sector"
+      "value": 13.32,
+      "threshold": 26.28,
+      "label": "13.3x vs 26.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.34,
+      "value": 1.44,
       "threshold": 1.5,
-      "label": "1.34x vs 1.5x"
+      "label": "1.44x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 6.99,
+      "value": 7.33,
       "threshold": 10.0,
-      "label": "7.0x vs 10x"
+      "label": "7.3x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 14.46,
+      "value": 13.53,
       "threshold": 5.0,
-      "label": "14.5% vs 5%"
+      "label": "13.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 7.14,
-      "threshold": 12.46,
-      "label": "Fwd 7.1x vs Trail 12.5x"
+      "value": 7.63,
+      "threshold": 13.32,
+      "label": "Fwd 7.6x vs Trail 13.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,16 +264,31 @@
       "value": 9.98,
       "threshold": 5.0,
       "label": "Margin 10.0% / ROE 10.0%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": true,
+      "value": 0.2,
+      "threshold": 0.5,
+      "label": "P/S 1.3x ÷ Growth 6.5% = 0.20"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": true,
+      "value": 6.5,
+      "threshold": -5.0,
+      "label": "6.5% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 12.46,
-    "sectorPe": 28.89,
-    "pb": 1.34,
-    "evEbitda": 6.99,
-    "fcfYield": 14.46,
-    "forwardPe": 7.14,
-    "dividendYield": 10.89,
+    "pe": 13.32,
+    "sectorPe": 30.92,
+    "pb": 1.44,
+    "ps": 1.33,
+    "evEbitda": 7.33,
+    "fcfYield": 13.53,
+    "forwardPe": 7.63,
+    "dividendYield": 10.19,
     "revenueGrowth": 6.5,
     "profitMargin": 9.98,
     "operatingMargin": 18.74,

@@ -1,20 +1,12 @@
 {
   "ticker": "QAN",
   "name": "QANTAS FPO [QAN]",
-  "price": 9.08,
-  "valuationScore": 9.3,
-  "marketCap": "13.7B",
+  "price": 8.48,
+  "valuationScore": 8.0,
+  "marketCap": "12.8B",
   "sector": "Industrials",
   "domain": "qantas.com",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 8.14
-    },
-    {
-      "date": "2025-04-27",
-      "price": 8.2
-    },
     {
       "date": "2025-05-04",
       "price": 8.64
@@ -218,45 +210,53 @@
     {
       "date": "2026-04-19",
       "price": 9.08
+    },
+    {
+      "date": "2026-04-26",
+      "price": 8.41
+    },
+    {
+      "date": "2026-05-03",
+      "price": 8.48
     }
   ],
-  "testsPassed": 4,
-  "grade": "B",
+  "testsPassed": 6,
+  "grade": "A",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 8.57,
-      "threshold": 24.55,
-      "label": "8.6x vs 24.6x sector"
+      "value": 8.0,
+      "threshold": 26.28,
+      "label": "8.0x vs 26.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 10.23,
+      "value": 9.55,
       "threshold": 1.5,
-      "label": "10.23x vs 1.5x"
+      "label": "9.55x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 4.63,
+      "value": 4.42,
       "threshold": 10.0,
-      "label": "4.6x vs 10x"
+      "label": "4.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -4.39,
+      "value": -4.7,
       "threshold": 5.0,
-      "label": "-4.4% vs 5%"
+      "label": "-4.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 8.01,
-      "threshold": 8.57,
-      "label": "Fwd 8.0x vs Trail 8.6x"
+      "value": 7.7,
+      "threshold": 8.0,
+      "label": "Fwd 7.7x vs Trail 8.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,16 +264,31 @@
       "value": 6.53,
       "threshold": 5.0,
       "label": "Margin 6.5% / ROE 153.6%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": true,
+      "value": 0.08,
+      "threshold": 0.5,
+      "label": "P/S 0.5x ÷ Growth 6.3% = 0.08"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": true,
+      "value": 6.3,
+      "threshold": -5.0,
+      "label": "6.3% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 8.57,
-    "sectorPe": 28.89,
-    "pb": 10.23,
-    "evEbitda": 4.63,
-    "fcfYield": -4.39,
-    "forwardPe": 8.01,
-    "dividendYield": 4.36,
+    "pe": 8.0,
+    "sectorPe": 30.92,
+    "pb": 9.55,
+    "ps": 0.52,
+    "evEbitda": 4.42,
+    "fcfYield": -4.7,
+    "forwardPe": 7.7,
+    "dividendYield": 4.67,
     "revenueGrowth": 6.3,
     "profitMargin": 6.53,
     "operatingMargin": 11.4,

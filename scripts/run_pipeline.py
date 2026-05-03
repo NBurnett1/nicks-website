@@ -68,7 +68,7 @@ def run_pipeline(exchange="ASX", skip_reports=False, top_n=None, limit=None, tic
     df = score_stocks(df)
     df["marketCapFormatted"] = df["marketCap"].apply(format_market_cap)
 
-    # Run the 6 valuation tests on every stock
+    # Run the 8 valuation tests on every stock
     print("\n🧪 Step 3b: Running valuation tests...\n")
     test_results = []
     for _, row in df.iterrows():

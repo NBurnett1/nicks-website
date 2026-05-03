@@ -1,20 +1,12 @@
 {
   "ticker": "ASG",
   "name": "AUTOSPORTS FPO [ASG]",
-  "price": 2.4,
-  "valuationScore": 5.7,
-  "marketCap": "511M",
+  "price": 2.46,
+  "valuationScore": 6.6,
+  "marketCap": "524M",
   "sector": "Consumer Cyclical",
   "domain": "autosportsgroup.com.au",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 1.68
-    },
-    {
-      "date": "2025-04-27",
-      "price": 1.78
-    },
     {
       "date": "2025-05-04",
       "price": 1.98
@@ -218,45 +210,53 @@
     {
       "date": "2026-04-19",
       "price": 2.4
+    },
+    {
+      "date": "2026-04-26",
+      "price": 2.4
+    },
+    {
+      "date": "2026-05-03",
+      "price": 2.46
     }
   ],
-  "testsPassed": 3,
-  "grade": "C",
+  "testsPassed": 5,
+  "grade": "B",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 10.91,
-      "threshold": 21.42,
-      "label": "10.9x vs 21.4x sector"
+      "value": 11.18,
+      "threshold": 19.36,
+      "label": "11.2x vs 19.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.94,
+      "value": 0.96,
       "threshold": 1.5,
-      "label": "0.94x vs 1.5x"
+      "label": "0.96x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 11.94,
+      "value": 12.02,
       "threshold": 10.0,
-      "label": "11.9x vs 10x"
+      "label": "12.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -18.47,
+      "value": -17.7,
       "threshold": 5.0,
-      "label": "-18.5% vs 5%"
+      "label": "-17.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 8.03,
-      "threshold": 10.91,
-      "label": "Fwd 8.0x vs Trail 10.9x"
+      "value": 7.19,
+      "threshold": 11.18,
+      "label": "Fwd 7.2x vs Trail 11.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,16 +264,31 @@
       "value": 1.46,
       "threshold": 5.0,
       "label": "Margin 1.5% / ROE 8.7%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": true,
+      "value": 0.02,
+      "threshold": 0.5,
+      "label": "P/S 0.2x ÷ Growth 10.9% = 0.02"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": true,
+      "value": 10.9,
+      "threshold": -5.0,
+      "label": "10.9% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 10.91,
-    "sectorPe": 25.2,
-    "pb": 0.94,
-    "evEbitda": 11.94,
-    "fcfYield": -18.47,
-    "forwardPe": 8.03,
-    "dividendYield": 4.17,
+    "pe": 11.18,
+    "sectorPe": 22.78,
+    "pb": 0.96,
+    "ps": 0.17,
+    "evEbitda": 12.02,
+    "fcfYield": -17.7,
+    "forwardPe": 7.19,
+    "dividendYield": 4.07,
     "revenueGrowth": 10.9,
     "profitMargin": 1.46,
     "operatingMargin": 4.24,

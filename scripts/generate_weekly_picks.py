@@ -81,14 +81,14 @@ def generate_thesis(stock, detail):
     parts = []
 
     # Grade summary
-    if tests == 6:
-        parts.append("Perfect 6/6 valuation test score")
+    if tests >= 7:
+        parts.append(f"Perfect {tests}/8 valuation test score")
     elif tests >= 5:
-        parts.append(f"Strong {tests}/6 valuation tests passed")
-    elif tests >= 4:
-        parts.append(f"Solid {tests}/6 valuation tests passed")
+        parts.append(f"Strong {tests}/8 valuation tests passed")
+    elif tests >= 3:
+        parts.append(f"Solid {tests}/8 valuation tests passed")
     else:
-        parts.append(f"{tests}/6 valuation tests flagged")
+        parts.append(f"{tests}/8 valuation tests flagged")
 
     # Key metric highlights from detail
     if detail:
@@ -185,7 +185,7 @@ def qualify_picks(picks, details_dir, sector_biases=None):
 
 Stock: {name} ({ticker}.AX)
 Sector: {sector} | Market Cap: {mcap} | Price: A${price:.2f}
-Valuation Grade: {grade} ({tests}/7 tests passed)
+Valuation Grade: {grade} ({tests}/8 tests passed)
 Pick Type: {pick_type} | Macro Bias: {bias_label} ({bias:+.1f})
 {metrics_context}
 
@@ -246,10 +246,20 @@ Return ONLY this JSON (no markdown):
                 "bearSeverity": bear_severity,
             }
 
-            # Kill switch: reject if bear case is critical, or if recommendation is reject
-            # AND asymmetry is unfavorable
-            if recommendation == "reject" and (bear_severity in ("critical", "high") or asymmetry == "unfavorable"):
+            # Kill switch: reject if ANY of these red flags trigger independently
+            reject_reasons = []
+            if bear_severity == "critical":
+                reject_reasons.append("critical bear severity")
+            if recommendation == "reject":
+                reject_reasons.append("Gemini recommends reject")
+            if conviction < 4:
+                reject_reasons.append(f"low conviction ({conviction}/10)")
+            if result.get("moatStrength") == "none" and asymmetry == "unfavorable":
+                reject_reasons.append("no moat + unfavorable asymmetry")
+
+            if reject_reasons:
                 p["qualPassed"] = False
+                p["qualReasoning"] = f"REJECTED: {'; '.join(reject_reasons)}. {result.get('reasoning', '')}"
                 icon = "❌"
             else:
                 p["qualPassed"] = True
@@ -274,7 +284,8 @@ Return ONLY this JSON (no markdown):
 
 def select_core_picks(index_data, details_dir, exclude_tickers=None, sector_biases=None):
     """Select top 4 core picks: Grade A/B, sector-diversified, $500M+ market cap.
-    Now uses macro sector biases to rank stocks by combined valuation + macro score."""
+    Filters: profitability gate, leverage cap, macro headwind rejection.
+    Uses macro sector biases to rank stocks by combined valuation + macro score."""
     exclude_tickers = exclude_tickers or set()
     sector_biases = sector_biases or {}
     undervalued = index_data.get("undervalued", [])
@@ -298,6 +309,33 @@ def select_core_picks(index_data, details_dir, exclude_tickers=None, sector_bias
         if bias <= -0.5 and grade != "A":
             print(f"    ⛔ Skipping {s['ticker']} — {sector} has strong headwind ({bias:+.1f})")
             continue
+
+        # ── Profitability & leverage gate (load detail metrics) ──
+        detail = _load_detail(details_dir, s["ticker"])
+        if detail:
+            m = detail.get("metrics", {})
+            pm = m.get("profitMargin")
+            roe = m.get("roe")
+            de = m.get("debtEquity")
+            rev_growth = m.get("revenueGrowth")
+
+            # Reject negative profitability
+            if pm is not None and pm <= 0:
+                print(f"    ⛔ Skipping {s['ticker']} — negative profit margin ({pm:.1f}%)")
+                continue
+            if roe is not None and roe <= 0:
+                print(f"    ⛔ Skipping {s['ticker']} — negative ROE ({roe:.1f}%)")
+                continue
+
+            # Reject highly leveraged (D/E > 100%)
+            if de is not None and de > 100:
+                print(f"    ⛔ Skipping {s['ticker']} — high leverage D/E {de:.0f}%")
+                continue
+
+            # Reject severe revenue decline (> -10%)
+            if rev_growth is not None and rev_growth < -10:
+                print(f"    ⛔ Skipping {s['ticker']} — severe revenue decline ({rev_growth:.1f}%)")
+                continue
 
         # Compute combined score: valuation conviction + macro bias
         val_score = grade_base.get(grade, 0) + (s.get("testsPassed", 0) * 0.5)
@@ -364,8 +402,9 @@ def select_core_picks(index_data, details_dir, exclude_tickers=None, sector_bias
 def select_speculative_pick(index_data, details_dir, exclude_tickers=None, sector_biases=None):
     """
     Select 1 speculative penny/micro-cap pick.
-    Criteria: <$500M market cap, Grade C+ (at least some tests passed),
-    high volume relative to average, macro-aligned sector preferred.
+    Criteria: <$500M market cap, Grade C+ (3+ tests), macro-aligned,
+    must have either positive revenue growth OR positive profit margin.
+    Returns None if no quality candidate exists (better no pick than a bad one).
     """
     exclude_tickers = exclude_tickers or set()
     sector_biases = sector_biases or {}
@@ -379,20 +418,33 @@ def select_speculative_pick(index_data, details_dir, exclude_tickers=None, secto
         if mc >= MAX_MARKET_CAP_SPEC or mc < MIN_MARKET_CAP_SPEC:
             continue
         grade = s.get("grade", "F")
-        if grade == "F":
+        if grade in ("F", "D"):  # Require Grade C+ (was D+)
             continue
         tests = s.get("testsPassed", 0)
-        if tests < 2:
+        if tests < 3:
             continue
-        candidates.append(s)
 
-    if not candidates:
-        # Fallback: pick the smallest-cap Grade A/B stock
-        grade_order = {"A": 5, "B": 4, "C": 3, "D": 2, "F": 1}
-        all_under = [s for s in undervalued if s.get("grade", "F") in ("A", "B", "C")]
-        all_under.sort(key=lambda x: parse_market_cap(x.get("marketCap", "0")))
-        if all_under:
-            candidates = [all_under[0]]
+        # Reject spec picks in headwind sectors (bias <= -0.3)
+        sector = s.get("sector", "Unknown")
+        bias = _find_sector_bias(sector, sector_biases)
+        if bias <= -0.3:
+            print(f"    ⛔ Spec skip {s['ticker']} — {sector} headwind ({bias:+.1f})")
+            continue
+
+        # Fundamental quality check from detail data
+        detail = _load_detail(details_dir, s["ticker"])
+        if detail:
+            m = detail.get("metrics", {})
+            pm = m.get("profitMargin")
+            rev_growth = m.get("revenueGrowth")
+            # Must have at least one positive: revenue growth OR profit margin
+            has_positive_margin = pm is not None and pm > 0
+            has_positive_growth = rev_growth is not None and rev_growth > 0
+            if not has_positive_margin and not has_positive_growth:
+                print(f"    ⛔ Spec skip {s['ticker']} — negative margin AND negative growth")
+                continue
+
+        candidates.append(s)
 
     if not candidates:
         return None
@@ -480,16 +532,21 @@ def backfill_monday_open(picks, date):
             print(f"    ⚠ Backfill failed for {ticker}: {e}")
 
 
-def load_previous_picks(weeks_dir, current_week_num):
-    """Load all tickers that were picked in previous weeks to avoid repeats."""
+def load_previous_picks(weeks_dir, current_week_num, cooloff_weeks=4):
+    """Load tickers picked in the last N weeks to enforce a cooling-off period.
+    A stock can't be re-picked until cooloff_weeks after its last appearance."""
     used = set()
-    for w in range(1, current_week_num):
+    # Only look back cooloff_weeks (not all history) to allow eventual re-picks
+    start_week = max(1, current_week_num - cooloff_weeks)
+    for w in range(start_week, current_week_num):
         path = os.path.join(weeks_dir, f"week{w}.json")
         if os.path.exists(path):
             with open(path) as f:
                 data = json.load(f)
             for pick in data.get("picks", []):
                 used.add(pick["ticker"])
+    if used:
+        print(f"  🔒 Cooling-off exclusion ({cooloff_weeks}wk): {', '.join(sorted(used))}")
     return used
 
 
@@ -597,7 +654,7 @@ def generate_week(week_num, index_data, details_dir, weeks_dir, backfill=False):
         tag = "🔥 SPEC" if p["type"] == "speculative" else f"  #{p['rank']}"
         pnl_str = f"{p['pnlPct']:+.1f}%" if p["pnlPct"] != 0 else "—"
         qual_str = f" | Q:{p.get('qualScore', '?')}/10" if p.get('qualScore') is not None else ""
-        print(f"    {tag} {p['ticker']:<6} Grade {p['grade']} ({p['testsPassed']}/7){qual_str} | "
+        print(f"    {tag} {p['ticker']:<6} Grade {p['grade']} ({p['testsPassed']}/8){qual_str} | "
               f"A${p['entryPrice']:.2f} → A${p['currentPrice']:.2f} ({pnl_str})")
 
     return week_data

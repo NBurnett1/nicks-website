@@ -1,20 +1,12 @@
 {
   "ticker": "PPT",
   "name": "PERPETUAL FPO [PPT]",
-  "price": 16.47,
-  "valuationScore": -9.0,
+  "price": 16.65,
+  "valuationScore": -8.9,
   "marketCap": "1.9B",
   "sector": "Financial Services",
   "domain": "perpetual.com.au",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 14.6
-    },
-    {
-      "date": "2025-04-27",
-      "price": 14.79
-    },
     {
       "date": "2025-05-04",
       "price": 15.59
@@ -218,9 +210,17 @@
     {
       "date": "2026-04-19",
       "price": 16.47
+    },
+    {
+      "date": "2026-04-26",
+      "price": 16.35
+    },
+    {
+      "date": "2026-05-03",
+      "price": 16.65
     }
   ],
-  "testsPassed": 3,
+  "testsPassed": 4,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
@@ -233,28 +233,28 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.16,
+      "value": 1.17,
       "threshold": 1.5,
-      "label": "1.16x vs 1.5x"
+      "label": "1.17x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 8.43,
+      "value": 8.5,
       "threshold": 10.0,
-      "label": "8.4x vs 10x"
+      "label": "8.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 13.24,
+      "value": 13.09,
       "threshold": 5.0,
-      "label": "13.2% vs 5%"
+      "label": "13.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 10.08,
+      "value": 10.41,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -264,16 +264,31 @@
       "value": -1.16,
       "threshold": 5.0,
       "label": "Margin -1.2% / ROE -1.0%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": false,
+      "value": 0.86,
+      "threshold": 0.5,
+      "label": "P/S 1.4x ÷ Growth 1.6% = 0.86"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": true,
+      "value": 1.6,
+      "threshold": -5.0,
+      "label": "1.6% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 19.05,
-    "pb": 1.16,
-    "evEbitda": 8.43,
-    "fcfYield": 13.24,
-    "forwardPe": 10.08,
-    "dividendYield": 6.86,
+    "sectorPe": 19.22,
+    "pb": 1.17,
+    "ps": 1.37,
+    "evEbitda": 8.5,
+    "fcfYield": 13.09,
+    "forwardPe": 10.41,
+    "dividendYield": 6.79,
     "revenueGrowth": 1.6,
     "profitMargin": -1.16,
     "operatingMargin": 14.43,

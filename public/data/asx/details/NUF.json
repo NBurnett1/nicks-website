@@ -1,20 +1,12 @@
 {
   "ticker": "NUF",
   "name": "NUFARM FPO [NUF]",
-  "price": 2.41,
-  "valuationScore": -11.9,
-  "marketCap": "926M",
+  "price": 2.49,
+  "valuationScore": -10.8,
+  "marketCap": "957M",
   "sector": "Basic Materials",
   "domain": "nufarm.com",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 3.81
-    },
-    {
-      "date": "2025-04-27",
-      "price": 3.88
-    },
     {
       "date": "2025-05-04",
       "price": 3.86
@@ -218,6 +210,14 @@
     {
       "date": "2026-04-19",
       "price": 2.41
+    },
+    {
+      "date": "2026-04-26",
+      "price": 2.34
+    },
+    {
+      "date": "2026-05-03",
+      "price": 2.49
     }
   ],
   "testsPassed": 2,
@@ -233,28 +233,28 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.5,
+      "value": 0.51,
       "threshold": 1.5,
-      "label": "0.50x vs 1.5x"
+      "label": "0.51x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 9.13,
+      "value": 9.29,
       "threshold": 10.0,
-      "label": "9.1x vs 10x"
+      "label": "9.3x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.86,
+      "value": 4.7,
       "threshold": 5.0,
-      "label": "4.9% vs 5%"
+      "label": "4.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 13.71,
+      "value": 14.17,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -264,15 +264,30 @@
       "value": -4.8,
       "threshold": 5.0,
       "label": "Margin -4.8% / ROE -7.7%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": null,
+      "value": null,
+      "threshold": 0.5,
+      "label": "No P/S or growth data"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": null,
+      "value": null,
+      "threshold": -5.0,
+      "label": "No revenue data"
     }
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 50.16,
-    "pb": 0.5,
-    "evEbitda": 9.13,
-    "fcfYield": 4.86,
-    "forwardPe": 13.71,
+    "sectorPe": 52.63,
+    "pb": 0.51,
+    "ps": 0.28,
+    "evEbitda": 9.29,
+    "fcfYield": 4.7,
+    "forwardPe": 14.17,
     "dividendYield": null,
     "revenueGrowth": null,
     "profitMargin": -4.8,

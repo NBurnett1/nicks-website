@@ -1,20 +1,12 @@
 {
   "ticker": "CCX",
   "name": "CITYCHIC FPO [CCX]",
-  "price": 0.07,
-  "valuationScore": -12.5,
-  "marketCap": "25M",
+  "price": 0.06,
+  "valuationScore": -18.7,
+  "marketCap": "21M",
   "sector": "Consumer Cyclical",
   "domain": "citychiccollective.com.au",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 0.09
-    },
-    {
-      "date": "2025-04-27",
-      "price": 0.09
-    },
     {
       "date": "2025-05-04",
       "price": 0.08
@@ -218,10 +210,18 @@
     {
       "date": "2026-04-19",
       "price": 0.06
+    },
+    {
+      "date": "2026-04-26",
+      "price": 0.06
+    },
+    {
+      "date": "2026-05-03",
+      "price": 0.05
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -233,28 +233,28 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.87,
+      "value": 0.71,
       "threshold": 1.5,
-      "label": "0.87x vs 1.5x"
+      "label": "0.71x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 13.63,
+      "value": 12.6,
       "threshold": 10.0,
-      "label": "13.6x vs 10x"
+      "label": "12.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 45.8,
+      "value": 54.13,
       "threshold": 5.0,
-      "label": "45.8% vs 5%"
+      "label": "54.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 3.25,
+      "value": 2.75,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -264,15 +264,30 @@
       "value": -4.14,
       "threshold": 5.0,
       "label": "Margin -4.1% / ROE -16.7%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": false,
+      "value": -0.4,
+      "threshold": 0.5,
+      "label": "FAIL — Revenue declining -0.4%"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": true,
+      "value": -0.4,
+      "threshold": -5.0,
+      "label": "-0.4% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 25.2,
-    "pb": 0.87,
-    "evEbitda": 13.63,
-    "fcfYield": 45.8,
-    "forwardPe": 3.25,
+    "sectorPe": 22.78,
+    "pb": 0.71,
+    "ps": 0.16,
+    "evEbitda": 12.6,
+    "fcfYield": 54.13,
+    "forwardPe": 2.75,
     "dividendYield": null,
     "revenueGrowth": -0.4,
     "profitMargin": -4.14,

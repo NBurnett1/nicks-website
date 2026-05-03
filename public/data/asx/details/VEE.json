@@ -1,20 +1,12 @@
 {
   "ticker": "VEE",
   "name": "VEEM LTD FPO [VEE]",
-  "price": 0.58,
-  "valuationScore": 7.0,
-  "marketCap": "86M",
+  "price": 0.49,
+  "valuationScore": 4.2,
+  "marketCap": "73M",
   "sector": "Industrials",
   "domain": "veem.com.au",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 0.9
-    },
-    {
-      "date": "2025-04-27",
-      "price": 0.94
-    },
     {
       "date": "2025-05-04",
       "price": 0.92
@@ -218,10 +210,18 @@
     {
       "date": "2026-04-19",
       "price": 0.58
+    },
+    {
+      "date": "2026-04-26",
+      "price": 0.53
+    },
+    {
+      "date": "2026-05-03",
+      "price": 0.5
     }
   ],
-  "testsPassed": 0,
-  "grade": "F",
+  "testsPassed": 1,
+  "grade": "D",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -233,28 +233,28 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.79,
+      "value": 1.52,
       "threshold": 1.5,
-      "label": "1.79x vs 1.5x"
+      "label": "1.52x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 34.19,
+      "value": 29.41,
       "threshold": 10.0,
-      "label": "34.2x vs 10x"
+      "label": "29.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 4.55,
+      "passed": true,
+      "value": 5.38,
       "threshold": 5.0,
-      "label": "4.5% vs 5%"
+      "label": "5.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 76.37,
+      "value": 64.62,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -264,15 +264,30 @@
       "value": -29.95,
       "threshold": 5.0,
       "label": "Margin -29.9% / ROE -35.0%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": false,
+      "value": -30.2,
+      "threshold": 0.5,
+      "label": "FAIL — Revenue declining -30.2%"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": false,
+      "value": -30.2,
+      "threshold": -5.0,
+      "label": "-30.2% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 28.89,
-    "pb": 1.79,
-    "evEbitda": 34.19,
-    "fcfYield": 4.55,
-    "forwardPe": 76.37,
+    "sectorPe": 30.92,
+    "pb": 1.52,
+    "ps": 1.24,
+    "evEbitda": 29.41,
+    "fcfYield": 5.38,
+    "forwardPe": 64.62,
     "dividendYield": 1.57,
     "revenueGrowth": -30.2,
     "profitMargin": -29.95,

@@ -1,20 +1,12 @@
 {
   "ticker": "ORA",
   "name": "ORORA FPO [ORA]",
-  "price": 1.47,
-  "valuationScore": -6.4,
-  "marketCap": "1.8B",
+  "price": 1.38,
+  "valuationScore": -7.3,
+  "marketCap": "1.7B",
   "sector": "Consumer Cyclical",
   "domain": "ororagroup.com",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 1.68
-    },
-    {
-      "date": "2025-04-27",
-      "price": 1.71
-    },
     {
       "date": "2025-05-04",
       "price": 1.75
@@ -218,45 +210,53 @@
     {
       "date": "2026-04-19",
       "price": 1.47
+    },
+    {
+      "date": "2026-04-26",
+      "price": 1.42
+    },
+    {
+      "date": "2026-05-03",
+      "price": 1.38
     }
   ],
-  "testsPassed": 5,
+  "testsPassed": 7,
   "grade": "A",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 14.65,
-      "threshold": 21.42,
-      "label": "14.7x vs 21.4x sector"
+      "value": 13.75,
+      "threshold": 19.36,
+      "label": "13.8x vs 19.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.65,
+      "value": 0.61,
       "threshold": 1.5,
-      "label": "0.65x vs 1.5x"
+      "label": "0.61x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 5.81,
+      "value": 5.54,
       "threshold": 10.0,
-      "label": "5.8x vs 10x"
+      "label": "5.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 11.1,
+      "value": 11.83,
       "threshold": 5.0,
-      "label": "11.1% vs 5%"
+      "label": "11.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 11.72,
-      "threshold": 14.65,
-      "label": "Fwd 11.7x vs Trail 14.7x"
+      "value": 11.0,
+      "threshold": 13.75,
+      "label": "Fwd 11.0x vs Trail 13.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,16 +264,31 @@
       "value": 5.68,
       "threshold": 5.0,
       "label": "Margin 5.7% / ROE 4.3%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": true,
+      "value": 0.08,
+      "threshold": 0.5,
+      "label": "P/S 0.8x ÷ Growth 9.7% = 0.08"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": true,
+      "value": 9.7,
+      "threshold": -5.0,
+      "label": "9.7% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 14.65,
-    "sectorPe": 25.2,
-    "pb": 0.65,
-    "evEbitda": 5.81,
-    "fcfYield": 11.1,
-    "forwardPe": 11.72,
-    "dividendYield": 6.83,
+    "pe": 13.75,
+    "sectorPe": 22.78,
+    "pb": 0.61,
+    "ps": 0.77,
+    "evEbitda": 5.54,
+    "fcfYield": 11.83,
+    "forwardPe": 11.0,
+    "dividendYield": 7.27,
     "revenueGrowth": 9.7,
     "profitMargin": 5.68,
     "operatingMargin": 11.63,

@@ -1,20 +1,12 @@
 {
   "ticker": "AUB",
   "name": "AUB GROUP FPO [AUB]",
-  "price": 25.07,
-  "valuationScore": 1.0,
+  "price": 25.5,
+  "valuationScore": 1.2,
   "marketCap": "3.3B",
   "sector": "Financial Services",
   "domain": "aubgroup.com.au",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 30.31
-    },
-    {
-      "date": "2025-04-27",
-      "price": 30.79
-    },
     {
       "date": "2025-05-04",
       "price": 30.95
@@ -218,45 +210,53 @@
     {
       "date": "2026-04-19",
       "price": 25.07
+    },
+    {
+      "date": "2026-04-26",
+      "price": 25.66
+    },
+    {
+      "date": "2026-05-03",
+      "price": 25.5
     }
   ],
-  "testsPassed": 3,
-  "grade": "C",
+  "testsPassed": 5,
+  "grade": "B",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 15.57,
-      "threshold": 16.2,
-      "label": "15.6x vs 16.2x sector"
+      "value": 15.84,
+      "threshold": 16.34,
+      "label": "15.8x vs 16.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.12,
+      "value": 2.15,
       "threshold": 1.5,
-      "label": "2.12x vs 1.5x"
+      "label": "2.15x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 11.57,
+      "value": 11.71,
       "threshold": 10.0,
-      "label": "11.6x vs 10x"
+      "label": "11.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.96,
+      "value": 2.91,
       "threshold": 5.0,
-      "label": "3.0% vs 5%"
+      "label": "2.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.55,
-      "threshold": 15.57,
-      "label": "Fwd 12.5x vs Trail 15.6x"
+      "value": 12.79,
+      "threshold": 15.84,
+      "label": "Fwd 12.8x vs Trail 15.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,16 +264,31 @@
       "value": 15.65,
       "threshold": 5.0,
       "label": "Margin 15.7% / ROE 12.4%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": true,
+      "value": 0.44,
+      "threshold": 0.5,
+      "label": "P/S 2.8x ÷ Growth 6.3% = 0.44"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": true,
+      "value": 6.3,
+      "threshold": -5.0,
+      "label": "6.3% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 15.57,
-    "sectorPe": 19.05,
-    "pb": 2.12,
-    "evEbitda": 11.57,
-    "fcfYield": 2.96,
-    "forwardPe": 12.55,
-    "dividendYield": 3.71,
+    "pe": 15.84,
+    "sectorPe": 19.22,
+    "pb": 2.15,
+    "ps": 2.76,
+    "evEbitda": 11.71,
+    "fcfYield": 2.91,
+    "forwardPe": 12.79,
+    "dividendYield": 3.65,
     "revenueGrowth": 6.3,
     "profitMargin": 15.65,
     "operatingMargin": 23.67,

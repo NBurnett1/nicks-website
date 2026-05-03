@@ -1,20 +1,12 @@
 {
   "ticker": "MND",
   "name": "MONADEL FPO [MND]",
-  "price": 28.33,
-  "valuationScore": 3.7,
-  "marketCap": "2.8B",
+  "price": 29.05,
+  "valuationScore": 3.9,
+  "marketCap": "2.9B",
   "sector": "Industrials",
   "domain": "monadelphous.com.au",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 14.71
-    },
-    {
-      "date": "2025-04-27",
-      "price": 14.77
-    },
     {
       "date": "2025-05-04",
       "price": 15.5
@@ -218,45 +210,53 @@
     {
       "date": "2026-04-19",
       "price": 28.33
+    },
+    {
+      "date": "2026-04-26",
+      "price": 28.9
+    },
+    {
+      "date": "2026-05-03",
+      "price": 29.05
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 4,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 26.73,
-      "threshold": 24.55,
-      "label": "26.7x vs 24.6x sector"
+      "value": 27.41,
+      "threshold": 26.28,
+      "label": "27.4x vs 26.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 5.16,
+      "value": 5.29,
       "threshold": 1.5,
-      "label": "5.16x vs 1.5x"
+      "label": "5.29x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 16.14,
+      "value": 16.59,
       "threshold": 10.0,
-      "label": "16.1x vs 10x"
+      "label": "16.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.41,
+      "value": 5.28,
       "threshold": 5.0,
-      "label": "5.4% vs 5%"
+      "label": "5.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 22.82,
-      "threshold": 26.73,
-      "label": "Fwd 22.8x vs Trail 26.7x"
+      "value": 23.4,
+      "threshold": 27.41,
+      "label": "Fwd 23.4x vs Trail 27.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,16 +264,31 @@
       "value": 4.11,
       "threshold": 5.0,
       "label": "Margin 4.1% / ROE 20.5%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": true,
+      "value": 0.03,
+      "threshold": 0.5,
+      "label": "P/S 1.1x ÷ Growth 40.6% = 0.03"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": true,
+      "value": 40.6,
+      "threshold": -5.0,
+      "label": "40.6% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 26.73,
-    "sectorPe": 28.89,
-    "pb": 5.16,
-    "evEbitda": 16.14,
-    "fcfYield": 5.41,
-    "forwardPe": 22.82,
-    "dividendYield": 3.46,
+    "pe": 27.41,
+    "sectorPe": 30.92,
+    "pb": 5.29,
+    "ps": 1.13,
+    "evEbitda": 16.59,
+    "fcfYield": 5.28,
+    "forwardPe": 23.4,
+    "dividendYield": 3.37,
     "revenueGrowth": 40.6,
     "profitMargin": 4.11,
     "operatingMargin": 6.05,

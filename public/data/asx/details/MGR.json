@@ -1,20 +1,12 @@
 {
   "ticker": "MGR",
   "name": "MIRVAC GRP STAPLED [MGR]",
-  "price": 1.78,
-  "valuationScore": -4.2,
-  "marketCap": "7.0B",
+  "price": 1.71,
+  "valuationScore": -4.4,
+  "marketCap": "6.7B",
   "sector": "Real Estate",
   "domain": "mirvac.com",
   "chartData": [
-    {
-      "date": "2025-04-20",
-      "price": 2.08
-    },
-    {
-      "date": "2025-04-27",
-      "price": 2.11
-    },
     {
       "date": "2025-05-04",
       "price": 2.2
@@ -218,45 +210,53 @@
     {
       "date": "2026-04-19",
       "price": 1.78
+    },
+    {
+      "date": "2026-04-26",
+      "price": 1.73
+    },
+    {
+      "date": "2026-05-03",
+      "price": 1.71
     }
   ],
-  "testsPassed": 3,
-  "grade": "C",
+  "testsPassed": 5,
+  "grade": "B",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 17.8,
-      "threshold": 10.41,
-      "label": "17.8x vs 10.4x sector"
+      "value": 17.05,
+      "threshold": 10.06,
+      "label": "17.1x vs 10.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.76,
+      "value": 0.73,
       "threshold": 1.5,
-      "label": "0.76x vs 1.5x"
+      "label": "0.73x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 14.62,
+      "value": 14.23,
       "threshold": 10.0,
-      "label": "14.6x vs 10x"
+      "label": "14.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 12.28,
+      "value": 12.82,
       "threshold": 5.0,
-      "label": "12.3% vs 5%"
+      "label": "12.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 13.08,
-      "threshold": 17.8,
-      "label": "Fwd 13.1x vs Trail 17.8x"
+      "value": 12.81,
+      "threshold": 17.05,
+      "label": "Fwd 12.8x vs Trail 17.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,16 +264,31 @@
       "value": 13.17,
       "threshold": 5.0,
       "label": "Margin 13.2% / ROE 4.2%"
+    },
+    "valueGrowthScore": {
+      "name": "Value/Growth Score",
+      "passed": true,
+      "value": 0.11,
+      "threshold": 0.5,
+      "label": "P/S 2.3x ÷ Growth 21.7% = 0.11"
+    },
+    "revenueTrend": {
+      "name": "Revenue Trend",
+      "passed": true,
+      "value": 21.7,
+      "threshold": -5.0,
+      "label": "21.7% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 17.8,
-    "sectorPe": 12.24,
-    "pb": 0.76,
-    "evEbitda": 14.62,
-    "fcfYield": 12.28,
-    "forwardPe": 13.08,
-    "dividendYield": 5.17,
+    "pe": 17.05,
+    "sectorPe": 11.83,
+    "pb": 0.73,
+    "ps": 2.3,
+    "evEbitda": 14.23,
+    "fcfYield": 12.82,
+    "forwardPe": 12.81,
+    "dividendYield": 5.4,
     "revenueGrowth": 21.7,
     "profitMargin": 13.17,
     "operatingMargin": 26.4,
