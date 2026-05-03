@@ -1,34 +1,81 @@
 #!/usr/bin/env python3
 """
 Send weekly picks email to all subscribers.
-Reads subscribers from subscribers.json and sends a formatted HTML email
-with the current week's picks via Gmail SMTP.
+Reads ENCRYPTED subscribers from subscribers.json and decrypts them,
+then sends a formatted HTML email with the current week's picks via Gmail SMTP.
 
 Required environment variables:
-  GMAIL_USER        — Gmail address (e.g. nick@gmail.com)
+  GMAIL_USER         — Gmail address (e.g. nick@gmail.com)
   GMAIL_APP_PASSWORD — Gmail App Password (NOT your regular password)
+  ENCRYPT_KEY        — Shared encryption key (same as Vercel env var)
 
 Run: python scripts/send_weekly_email.py
 """
 
 import json
 import os
+import hashlib
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from datetime import datetime
 
 
+def decrypt_email(encrypted_str, key_str):
+    """Decrypt an AES-256-GCM encrypted email."""
+    from cryptography.hazmat.primitives.ciphers.aead import AESGCM
+
+    key = hashlib.sha256(key_str.encode()).digest()
+    parts = encrypted_str.split(':')
+    if len(parts) != 3:
+        return None
+
+    iv = bytes.fromhex(parts[0])
+    ciphertext = bytes.fromhex(parts[1])
+    tag = bytes.fromhex(parts[2])
+
+    aesgcm = AESGCM(key)
+    # GCM expects ciphertext + tag concatenated
+    plaintext = aesgcm.decrypt(iv, ciphertext + tag, None)
+    return plaintext.decode('utf-8')
+
+
 def load_subscribers():
-    """Load subscriber list from repo."""
+    """Load and decrypt subscriber list from repo."""
+    encrypt_key = os.environ.get('ENCRYPT_KEY')
     path = os.path.join(os.path.dirname(__file__), '..', 'subscribers.json')
+
     if not os.path.exists(path):
         print("  ⚠ No subscribers.json found")
         return []
+
     with open(path) as f:
         data = json.load(f)
-    emails = data.get('emails', [])
-    print(f"  📧 {len(emails)} subscribers loaded")
+
+    entries = data.get('entries', [])
+    if not entries:
+        # Fallback: try old plaintext format
+        emails = data.get('emails', [])
+        if emails:
+            print(f"  📧 {len(emails)} subscribers loaded (plaintext fallback)")
+            return emails
+        print("  ⚠ No subscribers found")
+        return []
+
+    if not encrypt_key:
+        print("  ⚠ ENCRYPT_KEY not set — cannot decrypt subscribers")
+        return []
+
+    emails = []
+    for entry in entries:
+        try:
+            email = decrypt_email(entry['data'], encrypt_key)
+            if email:
+                emails.append(email)
+        except Exception as e:
+            print(f"  ⚠ Failed to decrypt entry: {e}")
+
+    print(f"  📧 {len(emails)} subscribers decrypted")
     return emails
 
 

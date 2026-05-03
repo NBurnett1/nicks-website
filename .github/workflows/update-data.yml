@@ -69,6 +69,7 @@ jobs:
         env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          ENCRYPT_KEY: ${{ secrets.ENCRYPT_KEY }}
         run: python scripts/send_weekly_email.py
 
       # ═══════════════════════════════════════════
