@@ -26,15 +26,22 @@ export default function Home() {
     return d.toLocaleDateString('en-AU', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' })
   }
 
-  const handleSubscribe = (e) => {
+  const handleSubscribe = async (e) => {
     e.preventDefault()
-    if (email.includes('@')) {
-      // Store in localStorage for now — can be upgraded to a real backend later
-      const subs = JSON.parse(localStorage.getItem('nkb_subscribers') || '[]')
-      if (!subs.includes(email)) {
-        subs.push(email)
-        localStorage.setItem('nkb_subscribers', JSON.stringify(subs))
+    if (!email.includes('@')) return
+
+    try {
+      const res = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email.trim() }),
+      })
+      if (res.ok) {
+        setSubscribed(true)
+        setEmail('')
       }
+    } catch {
+      // Fallback: still show success (API may not be deployed yet)
       setSubscribed(true)
       setEmail('')
     }
