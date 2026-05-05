@@ -18,7 +18,7 @@ export default function WeekArchive() {
   }, [])
 
   useEffect(() => {
-    fetch('/data/weeks/index.json')
+    fetch('/data/cycles/index.json')
       .then(res => res.ok ? res.json() : null)
       .then(data => {
         if (data) setWeeksIndex(data)
@@ -26,12 +26,12 @@ export default function WeekArchive() {
       .catch(() => {})
   }, [])
 
-  const loadWeekDetail = (weekNum) => {
-    if (weekDetails[weekNum]) return
-    fetch(`/data/weeks/week${weekNum}.json`)
+  const loadWeekDetail = (cycleNum) => {
+    if (weekDetails[cycleNum]) return
+    fetch(`/data/cycles/cycle${cycleNum}.json`)
       .then(res => res.ok ? res.json() : null)
       .then(data => {
-        if (data) setWeekDetails(prev => ({ ...prev, [weekNum]: data }))
+        if (data) setWeekDetails(prev => ({ ...prev, [cycleNum]: data }))
       })
       .catch(() => {})
   }
@@ -45,12 +45,12 @@ export default function WeekArchive() {
     }
   }
 
-  if (!weeksIndex?.weeks?.length) return null
+  if (!weeksIndex?.cycles?.length) return null
 
-  // Only show completed or active past weeks (not upcoming, not current active)
-  const pastWeeks = weeksIndex.weeks
-    .filter(w => w.status === 'completed' || w.status === 'active')
-    .sort((a, b) => b.week - a.week)
+  // Only show completed or active past cycles
+  const pastWeeks = weeksIndex.cycles
+    .filter(c => c.status === 'completed' || c.status === 'active')
+    .sort((a, b) => b.cycle - a.cycle)
 
   if (pastWeeks.length === 0) return null
 
@@ -62,13 +62,13 @@ export default function WeekArchive() {
   const winRate = totalPicks > 0 ? ((totalWinners / totalPicks) * 100).toFixed(0) : '—'
 
   // Build equity curve: $10K compounding weekly returns
-  const sortedWeeks = [...pastWeeks].sort((a, b) => a.week - b.week)
+  const sortedWeeks = [...pastWeeks].sort((a, b) => a.cycle - b.cycle)
   const startingCapital = 10000
   const equityPoints = [{ week: 0, value: startingCapital, label: 'Start' }]
   let runningValue = startingCapital
-  sortedWeeks.forEach(w => {
-    runningValue = runningValue * (1 + (w.avgPnlPct || 0) / 100)
-    equityPoints.push({ week: w.week, value: Math.round(runningValue), label: `W${w.week}` })
+  sortedWeeks.forEach(c => {
+    runningValue = runningValue * (1 + (c.avgPnlPct || 0) / 100)
+    equityPoints.push({ week: c.cycle, value: Math.round(runningValue), label: `C${c.cycle}` })
   })
 
   // SVG path for equity curve
@@ -98,7 +98,7 @@ export default function WeekArchive() {
           <span className="week-archive__icon">📁</span>
           <div>
             <h2 className="week-archive__title">Track Record</h2>
-            <p className="week-archive__subtitle">{pastWeeks.length} weeks completed · {totalPicks} picks</p>
+            <p className="week-archive__subtitle">{pastWeeks.length} cycles completed · {totalPicks} picks</p>
           </div>
         </div>
       </div>
@@ -220,17 +220,17 @@ export default function WeekArchive() {
       {/* Week Accordion */}
       <div className="week-archive__weeks">
         {pastWeeks.map(week => {
-          const isExpanded = expandedWeek === week.week
-          const detail = weekDetails[week.week]
+          const isExpanded = expandedWeek === week.cycle
+          const detail = weekDetails[week.cycle]
 
           return (
-            <div key={week.week} className={`week-archive__week ${isExpanded ? 'week-archive__week--expanded' : ''}`}>
+            <div key={week.cycle} className={`week-archive__week ${isExpanded ? 'week-archive__week--expanded' : ''}`}>
               <button
                 className="week-archive__week-header"
-                onClick={() => toggleWeek(week.week)}
+                onClick={() => toggleWeek(week.cycle)}
               >
                 <div className="week-archive__week-left">
-                  <span className="week-archive__week-num">Week {week.week}</span>
+                  <span className="week-archive__week-num">Cycle {week.cycle}</span>
                   <span className="week-archive__week-dates">{week.dateRange}</span>
                 </div>
                 <div className="week-archive__week-right">

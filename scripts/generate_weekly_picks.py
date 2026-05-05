@@ -1,14 +1,14 @@
 """
-Nick Knows Best — Weekly Picks Generator
+Nick Knows Best — Monthly Conviction Picks Generator
 
-Selects 5 ASX stocks each week:
-  • 4 "Core" picks — Grade A/B, sector-diversified, $500M+ market cap
-  • 1 "Speculative" pick — small/micro-cap with high conviction score + volume surge
+Selects 3 high-conviction ASX stocks each 4-week cycle:
+  • 3 "Core" picks — Grade A/B, sector-diversified, $500M+ market cap
+  • Held for 4 weeks with stop-loss protection
 
 Usage:
-    python scripts/generate_weekly_picks.py                     # Auto-detect week number
-    python scripts/generate_weekly_picks.py --week 2            # Force week number
-    python scripts/generate_weekly_picks.py --week 1 --backfill # Backfill with Mon open prices
+    python scripts/generate_weekly_picks.py                      # Auto-detect cycle
+    python scripts/generate_weekly_picks.py --cycle 2            # Force cycle number
+    python scripts/generate_weekly_picks.py --cycle 1 --backfill # Backfill with Mon open prices
 """
 
 import json
@@ -25,16 +25,13 @@ from macro_scanner import get_macro_biases, apply_macro_bias, save_macro_context
 
 
 # ── Configuration ──
-CORE_PICKS = 4
-SPEC_PICKS = 1
+CORE_PICKS = 3                          # Fewer, higher-conviction picks
+HOLD_WEEKS = 4                          # 4-week holding period per cycle
 MIN_MARKET_CAP_CORE = 500_000_000      # $500M for core picks
-MAX_MARKET_CAP_SPEC = 500_000_000      # <$500M for speculative
-MIN_MARKET_CAP_SPEC = 30_000_000       # >$30M floor (not total junk)
-VOLUME_SURGE_THRESHOLD = 1.5           # 1.5x 20-day avg volume
 AEST = timezone(timedelta(hours=10))
 
-# Week 1 start date (Monday 13 April 2026)
-EPOCH_START = datetime(2026, 4, 13, tzinfo=AEST)
+# Cycle 1 start date (Monday 4 May 2026)
+EPOCH_START = datetime(2026, 5, 4, tzinfo=AEST)
 
 
 def parse_market_cap(mc_str):
@@ -55,18 +52,28 @@ def parse_market_cap(mc_str):
         return 0
 
 
-def calculate_week_number(now=None):
-    """Calculate current week number from epoch start."""
+def calculate_cycle_number(now=None):
+    """Calculate current cycle number from epoch start. Each cycle = 4 weeks."""
     if now is None:
         now = datetime.now(AEST)
     delta = now - EPOCH_START
-    return max(1, delta.days // 7 + 1)
+    return max(1, delta.days // (7 * HOLD_WEEKS) + 1)
 
 
-def get_week_dates(week_num):
-    """Get the Monday–Friday date range for a given week number."""
-    monday = EPOCH_START + timedelta(weeks=week_num - 1)
-    friday = monday + timedelta(days=4)
+def is_cycle_boundary(now=None):
+    """Check if today is the Sunday before a new cycle starts."""
+    if now is None:
+        now = datetime.now(AEST)
+    delta = now - EPOCH_START
+    days_into_cycle = delta.days % (7 * HOLD_WEEKS)
+    # Sunday before a new cycle: days_into_cycle is -1 or 27 (last day of cycle)
+    return days_into_cycle >= (7 * HOLD_WEEKS - 1) or delta.days < 0
+
+
+def get_cycle_dates(cycle_num):
+    """Get the Monday start → Friday end date range for a 4-week cycle."""
+    monday = EPOCH_START + timedelta(weeks=(cycle_num - 1) * HOLD_WEEKS)
+    friday = monday + timedelta(weeks=HOLD_WEEKS) - timedelta(days=3)  # Friday of week 4
     return monday, friday
 
 
@@ -116,6 +123,39 @@ def generate_thesis(stock, detail):
     return thesis
 
 
+def check_price_trend(detail):
+    """Check if stock is in acceptable price trend using chart data.
+    Returns (passed: bool, reason: str, momentum_score: float).
+    Rejects stocks in sustained downtrends to avoid falling knives."""
+    chart = detail.get("chartData", [])
+    if len(chart) < 12:
+        return True, "insufficient chart data", 0.0
+
+    current_price = chart[-1].get("price", 0)
+    if current_price <= 0:
+        return False, "invalid current price", 0.0
+
+    # 3-month change (roughly 12 weekly data points)
+    price_3m_ago = chart[-12].get("price", current_price)
+    change_3m = ((current_price - price_3m_ago) / price_3m_ago * 100) if price_3m_ago > 0 else 0
+
+    # 20-week SMA (or as many points as available)
+    sma_window = min(20, len(chart))
+    sma_20w = sum(p.get("price", 0) for p in chart[-sma_window:]) / sma_window
+
+    # Momentum score for ranking: normalized to roughly -1 to +1
+    momentum = round(change_3m / 20, 2)
+    momentum = max(-1.0, min(1.0, momentum))
+
+    if change_3m < -15:
+        return False, f"3-month decline {change_3m:.1f}%", momentum
+    if sma_20w > 0 and current_price < sma_20w * 0.95:
+        pct_below = ((sma_20w - current_price) / sma_20w) * 100
+        return False, f"price {pct_below:.1f}% below 20-week SMA", momentum
+
+    return True, "trend OK", momentum
+
+
 # ── Qualitative Screening (Deep Dive + Short Report) ──
 # Uses Gemini to assess business quality, asymmetry, and bear case risks
 # for candidate picks before they go live.
@@ -145,11 +185,12 @@ def qualify_picks(picks, details_dir, sector_biases=None):
     client = _get_gemini_client()
     if client is None:
         print("  ⚠ Gemini API unavailable — skipping qualitative screening")
+        print("  ⚠ Capping to 3 picks max without qualitative validation")
         for p in picks:
             p["qualScore"] = None
             p["qualReasoning"] = "Qualitative screening skipped (no API)"
-            p["qualPassed"] = True  # Don't reject without evidence
-        return picks
+            p["qualPassed"] = True
+        return picks[:3]  # Reduce exposure when we can't validate quality
 
     print(f"  🧠 Running qualitative screening on {len(picks)} candidates...")
     screened = []
@@ -303,10 +344,10 @@ def select_core_picks(index_data, details_dir, exclude_tickers=None, sector_bias
         if mc < MIN_MARKET_CAP_CORE:
             continue
 
-        # Skip stocks in strongly headwind sectors (bias < -0.5)
+        # Skip stocks in strongly headwind sectors (bias < -0.5) — no grade exemptions
         sector = s.get("sector", "Unknown")
         bias = _find_sector_bias(sector, sector_biases)
-        if bias <= -0.5 and grade != "A":
+        if bias <= -0.5:
             print(f"    ⛔ Skipping {s['ticker']} — {sector} has strong headwind ({bias:+.1f})")
             continue
 
@@ -319,12 +360,12 @@ def select_core_picks(index_data, details_dir, exclude_tickers=None, sector_bias
             de = m.get("debtEquity")
             rev_growth = m.get("revenueGrowth")
 
-            # Reject negative profitability
-            if pm is not None and pm <= 0:
-                print(f"    ⛔ Skipping {s['ticker']} — negative profit margin ({pm:.1f}%)")
+            # Reject weak profitability (hardened: min 3% margin, 5% ROE)
+            if pm is not None and pm < 3:
+                print(f"    ⛔ Skipping {s['ticker']} — weak profit margin ({pm:.1f}%, need 3%+)")
                 continue
-            if roe is not None and roe <= 0:
-                print(f"    ⛔ Skipping {s['ticker']} — negative ROE ({roe:.1f}%)")
+            if roe is not None and roe < 5:
+                print(f"    ⛔ Skipping {s['ticker']} — weak ROE ({roe:.1f}%, need 5%+)")
                 continue
 
             # Reject highly leveraged (D/E > 100%)
@@ -337,12 +378,25 @@ def select_core_picks(index_data, details_dir, exclude_tickers=None, sector_bias
                 print(f"    ⛔ Skipping {s['ticker']} — severe revenue decline ({rev_growth:.1f}%)")
                 continue
 
-        # Compute combined score: valuation conviction + macro bias
+        # ── Price-trend filter: reject falling knives ──
+        detail = _load_detail(details_dir, s["ticker"]) if not detail else detail
+        if detail:
+            trend_ok, trend_reason, momentum = check_price_trend(detail)
+            if not trend_ok:
+                print(f"    ⛔ Skipping {s['ticker']} — {trend_reason}")
+                continue
+        else:
+            momentum = 0.0
+
+        # Compute combined score: valuation + macro + momentum
         val_score = grade_base.get(grade, 0) + (s.get("testsPassed", 0) * 0.5)
-        macro_boost = bias * 3.0  # Scale macro bias to be meaningful
-        combined = val_score + macro_boost
+        # Heavier penalty for headwinds than reward for tailwinds
+        macro_boost = bias * 3.0 if bias >= 0 else bias * 5.0
+        momentum_boost = momentum * 2.0  # Prefer stocks in uptrends
+        combined = val_score + macro_boost + momentum_boost
         s["_combinedScore"] = round(combined, 2)
         s["_macroBias"] = round(bias, 2)
+        s["_momentum"] = momentum
         candidates.append(s)
 
     # Sort by combined score (valuation + macro), not just valuation
@@ -532,39 +586,37 @@ def backfill_monday_open(picks, date):
             print(f"    ⚠ Backfill failed for {ticker}: {e}")
 
 
-def load_previous_picks(weeks_dir, current_week_num, cooloff_weeks=4):
-    """Load tickers picked in the last N weeks to enforce a cooling-off period.
-    A stock can't be re-picked until cooloff_weeks after its last appearance."""
+def load_previous_picks(cycles_dir, current_cycle_num, cooloff_cycles=2):
+    """Load tickers picked in the last N cycles to enforce a cooling-off period.
+    A stock can't be re-picked until cooloff_cycles after its last appearance."""
     used = set()
-    # Only look back cooloff_weeks (not all history) to allow eventual re-picks
-    start_week = max(1, current_week_num - cooloff_weeks)
-    for w in range(start_week, current_week_num):
-        path = os.path.join(weeks_dir, f"week{w}.json")
+    start_cycle = max(1, current_cycle_num - cooloff_cycles)
+    for c in range(start_cycle, current_cycle_num):
+        path = os.path.join(cycles_dir, f"cycle{c}.json")
         if os.path.exists(path):
             with open(path) as f:
                 data = json.load(f)
             for pick in data.get("picks", []):
                 used.add(pick["ticker"])
     if used:
-        print(f"  🔒 Cooling-off exclusion ({cooloff_weeks}wk): {', '.join(sorted(used))}")
+        print(f"  🔒 Cooling-off exclusion ({cooloff_cycles} cycles): {', '.join(sorted(used))}")
     return used
 
 
-def generate_week(week_num, index_data, details_dir, weeks_dir, backfill=False):
-    """Generate a complete week JSON with macro/geopolitical overlay."""
-    monday, friday = get_week_dates(week_num)
+def generate_cycle(cycle_num, index_data, details_dir, cycles_dir, backfill=False):
+    """Generate a complete cycle JSON with macro/geopolitical overlay (4-week hold)."""
+    monday, friday = get_cycle_dates(cycle_num)
     now = datetime.now(AEST)
 
     # Determine status
-    # Sunday before the week starts counts as active (picks are published)
     if now < monday - timedelta(days=1):
         status = "upcoming"
-    elif now > friday + timedelta(days=1):  # Saturday after week ends
+    elif now > friday + timedelta(days=1):
         status = "completed"
     else:
         status = "active"
 
-    print(f"\n  📅 Week {week_num}: {monday.strftime('%d %b')} – {friday.strftime('%d %b %Y')}")
+    print(f"\n  📅 Cycle {cycle_num}: {monday.strftime('%d %b')} – {friday.strftime('%d %b %Y')} (4-week hold)")
     print(f"     Status: {status}")
 
     # ── MACRO SCAN: Get geopolitical/news sector biases ──
@@ -575,7 +627,6 @@ def generate_week(week_num, index_data, details_dir, weeks_dir, backfill=False):
     if macro_context.get('themes'):
         for theme in macro_context['themes'][:3]:
             print(f"     • {theme}")
-    # Print sector biases
     favored = {k: v for k, v in sector_biases.items() if v >= 0.3}
     avoided = {k: v for k, v in sector_biases.items() if v <= -0.3}
     if favored:
@@ -583,30 +634,23 @@ def generate_week(week_num, index_data, details_dir, weeks_dir, backfill=False):
     if avoided:
         print(f"     ❌ Avoided: {', '.join(f'{k} ({v:+.1f})' for k, v in sorted(avoided.items(), key=lambda x: x[1]))}")
 
-    # Save macro context alongside week data
-    save_macro_context(weeks_dir, week_num, macro_context, sector_biases)
+    # Save macro context
+    save_macro_context(cycles_dir, cycle_num, macro_context, sector_biases)
 
-    # Load previously picked tickers to exclude repeats
-    exclude = load_previous_picks(weeks_dir, week_num)
+    # Load previously picked tickers
+    exclude = load_previous_picks(cycles_dir, cycle_num)
     if exclude:
         print(f"     Excluding {len(exclude)} previously picked tickers: {', '.join(sorted(exclude))}")
 
     # Select picks with macro overlay
     core = select_core_picks(index_data, details_dir, exclude_tickers=exclude, sector_biases=sector_biases)
-    spec = select_speculative_pick(index_data, details_dir, exclude_tickers=exclude | {p['ticker'] for p in core}, sector_biases=sector_biases)
 
     picks = core
-    if spec:
-        picks.append(spec)
-    else:
-        print("  ⚠ No speculative pick found")
 
-    # ── QUALITATIVE SCREENING: Deep Dive + Short Report ──
-    # Run Gemini-powered assessment on each pick to check business quality,
-    # asymmetry, and bear case severity. Reject picks that fail.
+    # ── QUALITATIVE SCREENING ──
     picks = qualify_picks(picks, details_dir, sector_biases=sector_biases)
 
-    # Remove rejected picks and log
+    # Remove rejected picks
     rejected = [p for p in picks if not p.get("qualPassed", True)]
     if rejected:
         print(f"  🚫 Rejected {len(rejected)} picks after qualitative screening:")
@@ -614,7 +658,7 @@ def generate_week(week_num, index_data, details_dir, weeks_dir, backfill=False):
             print(f"     ✗ {r['ticker']}: {r.get('qualReasoning', 'No reason given')}")
     picks = [p for p in picks if p.get("qualPassed", True)]
 
-    # Re-rank picks after screening
+    # Re-rank
     for i, p in enumerate(picks, 1):
         p["rank"] = i
 
@@ -624,16 +668,16 @@ def generate_week(week_num, index_data, details_dir, weeks_dir, backfill=False):
         backfill_monday_open(picks, monday)
 
     # Calculate summary
-    total_pnl = sum(p["pnl"] for p in picks)
     avg_pnl_pct = sum(p["pnlPct"] for p in picks) / len(picks) if picks else 0
     winners = sum(1 for p in picks if p["pnlPct"] > 0)
     losers = sum(1 for p in picks if p["pnlPct"] < 0)
 
-    week_data = {
-        "week": week_num,
+    cycle_data = {
+        "cycle": cycle_num,
         "dateRange": f"{monday.strftime('%d %b')} – {friday.strftime('%d %b %Y')}",
         "startDate": monday.strftime("%Y-%m-%d"),
         "endDate": friday.strftime("%Y-%m-%d"),
+        "holdWeeks": HOLD_WEEKS,
         "status": status,
         "picks": picks,
         "summary": {
@@ -651,47 +695,52 @@ def generate_week(week_num, index_data, details_dir, weeks_dir, backfill=False):
 
     # Print picks
     for p in picks:
-        tag = "🔥 SPEC" if p["type"] == "speculative" else f"  #{p['rank']}"
         pnl_str = f"{p['pnlPct']:+.1f}%" if p["pnlPct"] != 0 else "—"
         qual_str = f" | Q:{p.get('qualScore', '?')}/10" if p.get('qualScore') is not None else ""
-        print(f"    {tag} {p['ticker']:<6} Grade {p['grade']} ({p['testsPassed']}/8){qual_str} | "
+        print(f"    #{p['rank']} {p['ticker']:<6} Grade {p['grade']} ({p['testsPassed']}/8){qual_str} | "
               f"A${p['entryPrice']:.2f} → A${p['currentPrice']:.2f} ({pnl_str})")
 
-    return week_data
+    return cycle_data
 
 
-def update_weeks_index(weeks_dir):
-    """Rebuild the weeks index.json from all weekN.json files."""
-    weeks = []
-    for f in sorted(os.listdir(weeks_dir)):
-        if f.startswith("week") and f.endswith(".json") and f != "index.json" and "_" not in f:
-            path = os.path.join(weeks_dir, f)
+def update_cycles_index(cycles_dir):
+    """Rebuild the cycles index.json from all cycleN.json files."""
+    cycles = []
+    for f in sorted(os.listdir(cycles_dir)):
+        if f.startswith("cycle") and f.endswith(".json") and f != "index.json" and "_" not in f:
+            path = os.path.join(cycles_dir, f)
             with open(path) as fh:
                 data = json.load(fh)
-            weeks.append({
-                "week": data["week"],
+            cycles.append({
+                "cycle": data["cycle"],
                 "dateRange": data["dateRange"],
                 "startDate": data["startDate"],
                 "endDate": data["endDate"],
+                "holdWeeks": data.get("holdWeeks", HOLD_WEEKS),
                 "status": data["status"],
                 "avgPnlPct": data["summary"]["avgPnlPct"],
                 "winners": data["summary"]["winners"],
                 "losers": data["summary"]["losers"],
             })
 
-    weeks.sort(key=lambda w: w["week"])
-    current = max((w["week"] for w in weeks if w["status"] == "active"), default=weeks[-1]["week"] if weeks else 1)
+    cycles.sort(key=lambda c: c["cycle"])
+    current = max((c["cycle"] for c in cycles if c["status"] == "active"), default=cycles[-1]["cycle"] if cycles else 1)
 
     index = {
-        "currentWeek": current,
-        "totalWeeks": len(weeks),
-        "weeks": weeks,
+        "currentCycle": current,
+        "totalCycles": len(cycles),
+        "holdWeeks": HOLD_WEEKS,
+        "cycles": cycles,
     }
 
-    index_path = os.path.join(weeks_dir, "index.json")
+    index_path = os.path.join(cycles_dir, "index.json")
     with open(index_path, "w") as f:
         json.dump(index, f, indent=2, ensure_ascii=False)
-    print(f"\n  ✓ Index updated: {len(weeks)} weeks, current = Week {current}")
+    print(f"\n  ✓ Index updated: {len(cycles)} cycles, current = Cycle {current}")
+
+
+# Keep backward-compatible alias for update_weekly_prices.py import
+update_weeks_index = update_cycles_index
 
 
 def _load_detail(details_dir, ticker):
@@ -704,19 +753,19 @@ def _load_detail(details_dir, ticker):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Generate weekly stock picks")
-    parser.add_argument("--week", type=int, default=None, help="Week number (auto if omitted)")
-    parser.add_argument("--backfill", action="store_true", help="Backfill actual open prices for past weeks")
-    parser.add_argument("--all", action="store_true", help="Generate all weeks up to current")
+    parser = argparse.ArgumentParser(description="Generate monthly conviction picks")
+    parser.add_argument("--cycle", type=int, default=None, help="Cycle number (auto if omitted)")
+    parser.add_argument("--backfill", action="store_true", help="Backfill actual open prices for past cycles")
+    parser.add_argument("--all", action="store_true", help="Generate all cycles up to current")
     parser.add_argument("--sunday", action="store_true",
-                        help="Full Sunday automation: archive previous week + generate next week picks")
+                        help="Sunday automation: archive previous cycle + generate next cycle if at boundary")
     args = parser.parse_args()
 
     project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     data_dir = os.path.join(project_root, "public", "data")
-    weeks_dir = os.path.join(data_dir, "weeks")
+    cycles_dir = os.path.join(data_dir, "cycles")
     details_dir = os.path.join(data_dir, "asx", "details")
-    os.makedirs(weeks_dir, exist_ok=True)
+    os.makedirs(cycles_dir, exist_ok=True)
 
     # Load index data
     index_path = os.path.join(data_dir, "asx_index.json")
@@ -728,87 +777,88 @@ def main():
         index_data = json.load(f)
 
     print("=" * 60)
-    print("  NICK KNOWS BEST — Weekly Picks Generator")
+    print("  NICK KNOWS BEST — Monthly Conviction Picks Generator")
     print("=" * 60)
 
     now = datetime.now(AEST)
-    current_week = calculate_week_number(now)
+    current_cycle = calculate_cycle_number(now)
 
     if args.sunday:
-        # ── Full Sunday automation ──
-        # On Sunday, current_week still points to the just-finished week.
-        # We need to: 1) archive current_week with final prices, 2) generate current_week + 1
-        prev_week = current_week
-        next_week = current_week + 1
+        # ── Sunday automation ──
+        # Only generate new picks at cycle boundaries (every 4 weeks).
+        # On non-boundary Sundays, just log and exit (prices updated separately).
+        if not is_cycle_boundary(now):
+            print(f"\n  📅 Mid-cycle (Cycle {current_cycle}) — no new picks needed.")
+            print(f"     Prices are updated daily by update_weekly_prices.py")
+            update_cycles_index(cycles_dir)
+            print("\n" + "=" * 60)
+            print("  ✅ SUNDAY CHECK COMPLETE (mid-cycle)")
+            print("=" * 60)
+            return
 
-        # Step 1: Archive the previous week — ONLY backfill prices, don't regenerate picks
-        # This preserves historical accuracy: the picks that were published stay published,
-        # even if the qualitative kill switch would reject them today.
-        prev_path = os.path.join(weeks_dir, f"week{prev_week}.json")
+        prev_cycle = current_cycle
+        next_cycle = current_cycle + 1
+
+        # Step 1: Archive the previous cycle
+        prev_path = os.path.join(cycles_dir, f"cycle{prev_cycle}.json")
         if os.path.exists(prev_path):
-            print(f"\n  📦 Archiving Week {prev_week}...")
+            print(f"\n  📦 Archiving Cycle {prev_cycle}...")
             with open(prev_path) as f:
-                week_data = json.load(f)
-            monday, friday = get_week_dates(prev_week)
-            # Backfill actual prices on existing picks
-            backfill_monday_open(week_data.get("picks", []), monday)
-            # Recalculate summary from actual prices
-            picks = week_data.get("picks", [])
+                cycle_data = json.load(f)
+            monday, friday = get_cycle_dates(prev_cycle)
+            backfill_monday_open(cycle_data.get("picks", []), monday)
+            picks = cycle_data.get("picks", [])
             if picks:
                 avg_pnl = round(sum(p["pnlPct"] for p in picks) / len(picks), 2)
                 winners = sum(1 for p in picks if p["pnlPct"] > 0)
                 losers = sum(1 for p in picks if p["pnlPct"] < 0)
-                week_data["summary"] = {
+                cycle_data["summary"] = {
                     "avgPnlPct": avg_pnl,
                     "winners": winners,
                     "losers": losers,
                     "flat": len(picks) - winners - losers,
                 }
-            week_data["status"] = "completed"
+            cycle_data["status"] = "completed"
             with open(prev_path, "w") as f:
-                json.dump(week_data, f, indent=2, ensure_ascii=False)
-            print(f"  ✓ Week {prev_week} archived as completed")
+                json.dump(cycle_data, f, indent=2, ensure_ascii=False)
+            print(f"  ✓ Cycle {prev_cycle} archived as completed")
         else:
-            # First week ever, or previous week doesn't exist yet — generate it fresh
-            print(f"\n  📦 Generating + archiving Week {prev_week}...")
-            week_data = generate_week(prev_week, index_data, details_dir, weeks_dir, backfill=True)
-            week_data["status"] = "completed"
+            print(f"\n  📦 Generating + archiving Cycle {prev_cycle}...")
+            cycle_data = generate_cycle(prev_cycle, index_data, details_dir, cycles_dir, backfill=True)
+            cycle_data["status"] = "completed"
             with open(prev_path, "w") as f:
-                json.dump(week_data, f, indent=2, ensure_ascii=False)
-            print(f"  ✓ Week {prev_week} saved as completed")
+                json.dump(cycle_data, f, indent=2, ensure_ascii=False)
+            print(f"  ✓ Cycle {prev_cycle} saved as completed")
 
-        # Step 2: Generate next week's fresh picks
-        print(f"\n  🆕 Generating Week {next_week} picks...")
-        week_data = generate_week(next_week, index_data, details_dir, weeks_dir)
-        # Force status to active (will go live Monday)
-        week_data["status"] = "active"
-        week_path = os.path.join(weeks_dir, f"week{next_week}.json")
-        with open(week_path, "w") as f:
-            json.dump(week_data, f, indent=2, ensure_ascii=False)
-        print(f"  ✓ Week {next_week} saved as active")
+        # Step 2: Generate next cycle's fresh picks
+        print(f"\n  🆕 Generating Cycle {next_cycle} picks...")
+        cycle_data = generate_cycle(next_cycle, index_data, details_dir, cycles_dir)
+        cycle_data["status"] = "active"
+        cycle_path = os.path.join(cycles_dir, f"cycle{next_cycle}.json")
+        with open(cycle_path, "w") as f:
+            json.dump(cycle_data, f, indent=2, ensure_ascii=False)
+        print(f"  ✓ Cycle {next_cycle} saved as active")
 
     elif args.all:
-        # Generate all weeks from 1 to current
-        for w in range(1, current_week + 1):
-            week_data = generate_week(w, index_data, details_dir, weeks_dir, backfill=True)
-            week_path = os.path.join(weeks_dir, f"week{w}.json")
-            with open(week_path, "w") as f:
-                json.dump(week_data, f, indent=2, ensure_ascii=False)
-            print(f"  ✓ Saved {week_path}")
+        for c in range(1, current_cycle + 1):
+            cycle_data = generate_cycle(c, index_data, details_dir, cycles_dir, backfill=True)
+            cycle_path = os.path.join(cycles_dir, f"cycle{c}.json")
+            with open(cycle_path, "w") as f:
+                json.dump(cycle_data, f, indent=2, ensure_ascii=False)
+            print(f"  ✓ Saved {cycle_path}")
     else:
-        week_num = args.week or current_week
-        week_data = generate_week(week_num, index_data, details_dir, weeks_dir, backfill=args.backfill)
-        week_path = os.path.join(weeks_dir, f"week{week_num}.json")
-        with open(week_path, "w") as f:
-            json.dump(week_data, f, indent=2, ensure_ascii=False)
-        print(f"\n  ✓ Saved {week_path}")
+        cycle_num = args.cycle or current_cycle
+        cycle_data = generate_cycle(cycle_num, index_data, details_dir, cycles_dir, backfill=args.backfill)
+        cycle_path = os.path.join(cycles_dir, f"cycle{cycle_num}.json")
+        with open(cycle_path, "w") as f:
+            json.dump(cycle_data, f, indent=2, ensure_ascii=False)
+        print(f"\n  ✓ Saved {cycle_path}")
 
-    update_weeks_index(weeks_dir)
+    update_cycles_index(cycles_dir)
 
     print("\n" + "=" * 60)
-    print("  ✅ WEEKLY PICKS GENERATED")
+    print("  ✅ MONTHLY CONVICTION PICKS GENERATED")
     print("=" * 60)
-
 
 if __name__ == "__main__":
     main()

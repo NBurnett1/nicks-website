@@ -245,16 +245,17 @@ def _bias_label(bias):
         return "Strong Headwind"
 
 
-def save_macro_context(weeks_dir, week_num, context, biases):
-    """Save macro analysis alongside the week data for transparency."""
+def save_macro_context(cycles_dir, cycle_num, context, biases):
+    """Save macro analysis alongside the cycle data for transparency."""
     macro_data = {
-        "week": week_num,
+        "cycle": cycle_num,
         "macro": context,
         "sectorBiases": biases,
         "savedAt": datetime.now(AEST).isoformat(),
     }
 
-    path = os.path.join(weeks_dir, f"week{week_num}_macro.json")
+    path = os.path.join(cycles_dir, f"cycle{cycle_num}_macro.json")
     with open(path, "w") as f:
         json.dump(macro_data, f, indent=2, ensure_ascii=False)
     return path
+

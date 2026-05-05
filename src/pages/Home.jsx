@@ -3,6 +3,8 @@ import LiveTicker from '../components/LiveTicker'
 import WeeklyPicks from '../components/WeeklyPicks'
 import WeekArchive from '../components/WeekArchive'
 import AlertsFeed from '../components/AlertsFeed'
+import TopStories from '../components/TopStories'
+import GlobalNewsFeed from '../components/GlobalNewsFeed'
 import UndervaluedScreener from '../components/UndervaluedScreener'
 import Disclaimer from '../components/Disclaimer'
 import Footer from '../components/Footer'
@@ -79,15 +81,15 @@ export default function Home() {
         <div className="container">
           <div className="home__hero-badge">
             <span className="home__hero-badge-dot" />
-            ASX Weekly Picks
+            ASX Monthly Conviction Picks
           </div>
           <h1 className="home__hero-title">
-            Nick's Weekly<br />
+            Nick's Monthly<br />
             <span className="home__hero-highlight">ASX Picks.</span>
           </h1>
           <p className="home__hero-subtitle">
-            5 curated stocks every Monday. 4 high-conviction value plays + 1 speculative moonshot.
-            Track the performance week by week.
+            3 high-conviction value plays every 4 weeks. Held for a full month with stop-loss protection.
+            Track the performance cycle by cycle.
           </p>
         </div>
       </section>
@@ -101,10 +103,10 @@ export default function Home() {
       <section className="home__share">
         <div className="container">
           <div className="home__share-bar">
-            <span className="home__share-label">Share this week's picks</span>
+            <span className="home__share-label">Share this cycle's picks</span>
             <div className="home__share-buttons">
               <a
-                href={`https://twitter.com/intent/tweet?text=${encodeURIComponent("Check out this week's ASX picks on Nick Knows Best — free weekly stock research 📈")}&url=${encodeURIComponent('https://asx-valuations.vercel.app')}`}
+                href={`https://twitter.com/intent/tweet?text=${encodeURIComponent("Check out the latest ASX picks on Nick Knows Best — free monthly conviction research 📈")}&url=${encodeURIComponent('https://asx-valuations.vercel.app')}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="home__share-btn home__share-btn--x"
@@ -113,7 +115,7 @@ export default function Home() {
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
               </a>
               <a
-                href={`https://www.reddit.com/submit?url=${encodeURIComponent('https://asx-valuations.vercel.app')}&title=${encodeURIComponent("Nick Knows Best — Free weekly ASX stock picks with valuation grading")}`}
+                href={`https://www.reddit.com/submit?url=${encodeURIComponent('https://asx-valuations.vercel.app')}&title=${encodeURIComponent("Nick Knows Best — Free monthly ASX conviction picks with valuation grading")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="home__share-btn home__share-btn--reddit"
@@ -138,9 +140,19 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Top Stories Today — editorial summaries */}
+      <div className="container">
+        <TopStories />
+      </div>
+
       {/* Market Intelligence — alerts & news */}
       <div className="container">
         <AlertsFeed />
+      </div>
+
+      {/* Global Financial News */}
+      <div className="container">
+        <GlobalNewsFeed variant="full" />
       </div>
 
       {/* Week Archive — track record */}
@@ -155,9 +167,9 @@ export default function Home() {
             <div className="home__subscribe-content">
               <span className="home__subscribe-icon">🔔</span>
               <div>
-                <h2 className="home__subscribe-title">Get Weekly Picks in Your Inbox</h2>
+                <h2 className="home__subscribe-title">Get Picks in Your Inbox</h2>
                 <p className="home__subscribe-text">
-                  New picks drop every Monday at 10am AEST. Join to get notified + stop-loss alerts.
+                  New picks drop every 4 weeks. Join to get notified + daily stop-loss alerts.
                 </p>
               </div>
             </div>

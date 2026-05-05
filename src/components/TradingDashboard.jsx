@@ -27,20 +27,22 @@ export default function TradingDashboard() {
       startingCapital: portfolio.startingCapital ?? 10000,
       pnl: portfolio.totalPnL ?? 0,
       pnlPct: portfolio.totalPnLPct ?? 0,
-      cash: portfolio.cash ?? 0,
-      openCount: (portfolio.openPositions || []).length,
       winRate: portfolio.winRate ?? 0,
       totalTrades: portfolio.totalTrades ?? 0,
       wins: portfolio.wins ?? 0,
       losses: portfolio.losses ?? 0,
+      flat: portfolio.flat ?? 0,
       bestTrade: portfolio.bestTrade,
       worstTrade: portfolio.worstTrade,
       avgWin: portfolio.avgWin ?? 0,
       avgLoss: portfolio.avgLoss ?? 0,
+      currentCycle: portfolio.currentCycle ?? 0,
+      completedCycles: portfolio.completedCycles ?? 0,
+      totalCycles: portfolio.totalCycles ?? 0,
     }
   }, [portfolio])
 
-  // Equity curve SVG
+  // Equity curve SVG from weekly returns
   const equityCurve = useMemo(() => {
     if (!portfolio?.equityCurve?.length || portfolio.equityCurve.length < 2) return null
     const points = portfolio.equityCurve
@@ -62,19 +64,19 @@ export default function TradingDashboard() {
     const baselineY = height - ((portfolio.startingCapital - minVal) / range) * height
     const isPositive = values[values.length - 1] >= portfolio.startingCapital
 
-    return { linePath, areaPath, baselineY, isPositive }
+    return { linePath, areaPath, baselineY, isPositive, labels: points }
   }, [portfolio])
 
   const openPositions = portfolio?.openPositions || []
 
-  // Trade history — most recent first, sells only for display
+  // Trade history — most recent first
   const tradeHistory = useMemo(() => {
     if (!portfolio?.tradeHistory) return []
-    return [...portfolio.tradeHistory]
-      .filter(t => t.side === 'SELL')
-      .reverse()
-      .slice(0, 15)
+    return [...portfolio.tradeHistory].reverse().slice(0, 20)
   }, [portfolio])
+
+  // Weekly returns
+  const cycleReturns = portfolio?.cycleReturns || []
 
   const fmt = (val, prefix = 'A$') => {
     if (val == null) return '—'
@@ -89,32 +91,10 @@ export default function TradingDashboard() {
     return d.toLocaleDateString('en-AU', { day: 'numeric', month: 'short' })
   }
 
-  const pctToTarget = (pos) => {
-    if (!pos.targetPrice || !pos.entryPrice) return 0
-    const totalGap = pos.targetPrice - pos.entryPrice
-    const currentGap = (pos.currentPrice || pos.entryPrice) - pos.entryPrice
-    if (totalGap <= 0) return 0
-    return Math.min(Math.max((currentGap / totalGap) * 100, -20), 100)
-  }
-
-  const exitReasonClass = (reason) => {
-    if (!reason) return ''
-    if (reason.includes('PROFIT') || reason.includes('TARGET')) return 'trade-row__reason--take-profit'
-    if (reason.includes('STOP')) return 'trade-row__reason--stop-loss'
-    if (reason.includes('TRAIL')) return 'trade-row__reason--trailing'
-    if (reason.includes('CHoCH')) return 'trade-row__reason--choch'
-    return 'trade-row__reason--time-exit'
-  }
-
-  const confluenceEmoji = (c) => {
-    const map = { STRUCTURE: '📐', BOS: '💥', CHoCH: '🔄', SWEEP: '🧹', FVG: '📊', OB: '🧱', VOL: '📈', RSI: '⚡' }
-    return map[c] || '✓'
-  }
-
   if (loading) {
     return (
       <div className="trading-dashboard">
-        <div className="trading-loading">Loading trading data…</div>
+        <div className="trading-loading">Loading portfolio data…</div>
       </div>
     )
   }
@@ -126,15 +106,17 @@ export default function TradingDashboard() {
       {/* Header */}
       <div className="trading-dashboard__header">
         <div className="trading-dashboard__title-group">
-          <div className="trading-dashboard__icon">📊</div>
+          <div className="trading-dashboard__icon">💰</div>
           <div>
-            <h2 className="trading-dashboard__title">Live Portfolio</h2>
-            <p className="trading-dashboard__subtitle" style={{ fontSize: '0.7rem', opacity: 0.6 }}>SMC v3 · 
-              Paper trading · Updated {fmtDate(portfolio.lastUpdated)}
+            <h2 className="trading-dashboard__title">Monthly Conviction Portfolio</h2>
+            <p className="trading-dashboard__subtitle" style={{ fontSize: '0.7rem', opacity: 0.6 }}>
+              Equal-weight · 4-week holds · Stop-loss protected · Updated {fmtDate(portfolio.lastUpdated)}
             </p>
           </div>
         </div>
-        <div className="trading-dashboard__badge">Paper Trading</div>
+        <div className="trading-dashboard__badge">
+          Cycle {stats.currentCycle} {stats.completedCycles > 0 ? `· ${stats.completedCycles} completed` : '· Active'}
+        </div>
       </div>
 
       {/* Stats Grid */}
@@ -150,22 +132,22 @@ export default function TradingDashboard() {
         </div>
 
         <div className="trading-stat trading-stat--neutral">
-          <div className="trading-stat__label">Cash Available</div>
+          <div className="trading-stat__label">Starting Capital</div>
           <div className="trading-stat__value trading-stat__value--neutral">
-            A${stats.cash.toLocaleString('en-AU', { minimumFractionDigits: 2 })}
+            A${stats.startingCapital.toLocaleString('en-AU', { minimumFractionDigits: 2 })}
           </div>
           <div className="trading-stat__delta" style={{ color: 'var(--text-muted)' }}>
-            {((stats.cash / stats.totalValue) * 100).toFixed(0)}% of portfolio
+            $2,500 per pick (equal-weight)
           </div>
         </div>
 
         <div className="trading-stat trading-stat--amber">
-          <div className="trading-stat__label">Positions</div>
+          <div className="trading-stat__label">Active Positions</div>
           <div className="trading-stat__value trading-stat__value--neutral">
-            {stats.openCount}<span className="trading-stat__value-sub"> / 8</span>
+            {openPositions.length}<span className="trading-stat__value-sub"> picks</span>
           </div>
           <div className="trading-stat__delta" style={{ color: 'var(--text-muted)' }}>
-            slots filled
+            Week {Math.ceil((new Date() - new Date(portfolio.startDate)) / (7 * 24 * 60 * 60 * 1000)) || 1} of Cycle {stats.currentCycle}
           </div>
         </div>
 
@@ -175,7 +157,9 @@ export default function TradingDashboard() {
             {stats.totalTrades > 0 ? `${stats.winRate.toFixed(0)}%` : '—'}
           </div>
           <div className="trading-stat__delta" style={{ color: 'var(--text-muted)' }}>
-            {stats.wins}W / {stats.losses}L · {stats.totalTrades} closed
+            {stats.totalTrades > 0
+              ? `${stats.wins}W / ${stats.losses}L / ${stats.flat}F · ${stats.totalTrades} closed`
+              : 'No completed cycles yet'}
           </div>
         </div>
       </div>
@@ -206,6 +190,16 @@ export default function TradingDashboard() {
               <path d={equityCurve.linePath} className={`equity-curve__line ${equityCurve.isPositive ? 'equity-curve__line--positive' : 'equity-curve__line--negative'}`} />
             </svg>
           </div>
+          {/* Weekly return labels */}
+          {cycleReturns.length > 0 && (
+            <div className="equity-curve__labels">
+              {cycleReturns.map(cr => (
+                <span key={cr.cycle} className={`equity-curve__label ${cr.returnPct >= 0 ? 'equity-curve__label--positive' : 'equity-curve__label--negative'}`}>
+                  C{cr.cycle}: {cr.returnPct >= 0 ? '+' : ''}{cr.returnPct.toFixed(1)}%
+                </span>
+              ))}
+            </div>
+          )}
         </div>
       )}
 
@@ -214,105 +208,94 @@ export default function TradingDashboard() {
         {/* Open Positions */}
         <div className="trading-section">
           <div className="trading-section__header">
-            <span className="trading-section__title">🟢 Open Positions</span>
+            <span className="trading-section__title">🟢 Active Positions</span>
             <span className="trading-section__count">{openPositions.length}</span>
           </div>
 
           {openPositions.length === 0 ? (
             <div className="trading-empty">
-              <div className="trading-empty__icon">🔍</div>
-              <p>Scanning for SMC-confirmed entries…</p>
-              <p style={{ fontSize: '0.75rem', opacity: 0.5, marginTop: '4px' }}>Requires: weekly bullish + daily BOS/CHoCH + sweep + FVG + 3:1 R:R</p>
+              <div className="trading-empty__icon">📅</div>
+              <p>No active positions — waiting for next cycle's picks</p>
             </div>
           ) : (
-            openPositions.map(pos => {
-              const progress = pctToTarget(pos)
-              return (
-                <div
-                  key={pos.ticker}
-                  className="position-row"
-                  onClick={() => navigate(`/stock/${pos.ticker}`)}
-                >
-                  <div className="position-row__info">
-                    <div className="position-row__ticker">{pos.ticker}</div>
-                    <div className="position-row__name">{pos.name}</div>
+            openPositions.map(pos => (
+              <div
+                key={pos.ticker}
+                className="position-row"
+                onClick={() => navigate(`/stock/${pos.ticker}`)}
+              >
+                <div className="position-row__info">
+                  <div className="position-row__ticker">
+                    {pos.ticker}
+                    <span className={`position-row__grade position-row__grade--${pos.grade?.toLowerCase()}`}>
+                      {pos.grade}
+                    </span>
                   </div>
+                  <div className="position-row__name">{pos.name}</div>
+                </div>
 
-                  <div className="position-row__progress-col">
-                    <div className="position-row__prices">
-                      <span className="position-row__entry">A${pos.entryPrice.toFixed(2)}</span>
-                      <span className="position-row__arrow">→</span>
-                      <span className="position-row__target">A${pos.targetPrice?.toFixed(2)}</span>
-                    </div>
-                    <div className="position-row__progress-bar">
-                      <div
-                        className={`position-row__progress-fill ${progress >= 0 ? 'position-row__progress-fill--positive' : 'position-row__progress-fill--negative'}`}
-                        style={{ width: `${Math.abs(Math.min(progress, 100))}%` }}
-                      />
-                    </div>
-                    <div className="position-row__stop">
-                      Stop: A${pos.stopPrice?.toFixed(2) || '—'}
-                      {pos.smc?.confluences && (
-                        <span className="position-row__confluences">
-                          {pos.smc.confluences.map(c => (
-                            <span key={c} className="position-row__confluence-badge" title={c}>
-                              {confluenceEmoji(c)}
-                            </span>
-                          ))}
-                        </span>
-                      )}
-                    </div>
+                <div className="position-row__progress-col">
+                  <div className="position-row__prices">
+                    <span className="position-row__entry">A${pos.entryPrice.toFixed(2)}</span>
+                    <span className="position-row__arrow">→</span>
+                    <span className={pos.exitPrice >= pos.entryPrice ? 'position-row__target' : 'position-row__entry'}>
+                      A${pos.exitPrice.toFixed(2)}
+                    </span>
                   </div>
-
-                  <div className="position-row__pnl">
-                    <div className={`position-row__pnl-value ${pos.pnl >= 0 ? 'position-row__pnl-value--positive' : 'position-row__pnl-value--negative'}`}>
-                      {fmt(pos.pnl)}
-                    </div>
-                    <div className={`position-row__pnl-pct ${pos.pnlPct >= 0 ? 'position-row__pnl-value--positive' : 'position-row__pnl-value--negative'}`}>
-                      {pos.pnlPct >= 0 ? '+' : ''}{pos.pnlPct?.toFixed(1) ?? '0.0'}%
-                      {pos.rMultiple != null && (
-                        <span className="position-row__r-multiple">
-                          {pos.rMultiple >= 0 ? '+' : ''}{pos.rMultiple}R
-                        </span>
-                      )}
-                    </div>
-                    <div className="position-row__shares">{pos.shares} shares</div>
+                  <div className="position-row__alloc-bar">
+                    <div
+                      className={`position-row__alloc-fill ${pos.pnl >= 0 ? 'position-row__progress-fill--positive' : 'position-row__progress-fill--negative'}`}
+                      style={{ width: `${Math.min(Math.abs(pos.pnlPct) * 10, 100)}%` }}
+                    />
+                  </div>
+                  <div className="position-row__stop">
+                    {pos.shares} shares · A${pos.allocation.toLocaleString('en-AU', { minimumFractionDigits: 0 })} allocated
                   </div>
                 </div>
-              )
-            })
+
+                <div className="position-row__pnl">
+                  <div className={`position-row__pnl-value ${pos.pnl >= 0 ? 'position-row__pnl-value--positive' : 'position-row__pnl-value--negative'}`}>
+                    {fmt(pos.pnl)}
+                  </div>
+                  <div className={`position-row__pnl-pct ${pos.pnlPct >= 0 ? 'position-row__pnl-value--positive' : 'position-row__pnl-value--negative'}`}>
+                    {pos.pnlPct >= 0 ? '+' : ''}{pos.pnlPct.toFixed(1)}%
+                  </div>
+                  <div className="position-row__shares">{pos.type === 'speculative' ? '🔥 Spec' : 'Core'}</div>
+                </div>
+              </div>
+            ))
           )}
         </div>
 
-        {/* Trade History */}
+        {/* Closed Trades / Weekly History */}
         <div className="trading-section">
           <div className="trading-section__header">
-            <span className="trading-section__title">📋 Closed Trades</span>
-            <span className="trading-section__count">{tradeHistory.length}</span>
+            <span className="trading-section__title">📋 Completed Cycles</span>
+            <span className="trading-section__count">{stats.completedCycles}</span>
           </div>
 
-          {tradeHistory.length === 0 ? (
+          {tradeHistory.length === 0 && stats.completedCycles === 0 ? (
             <div className="trading-empty">
               <div className="trading-empty__icon">⏳</div>
-              <p>No closed trades yet — positions are still open</p>
+              <p>No completed cycles yet</p>
+              <p style={{ fontSize: '0.75rem', opacity: 0.5, marginTop: '4px' }}>
+                Positions close after the 4-week holding period
+              </p>
             </div>
           ) : (
             tradeHistory.map((trade, i) => (
-              <div key={`${trade.ticker}-${trade.exitDate}-${i}`} className="trade-row">
+              <div key={`${trade.ticker}-${trade.week}-${i}`} className="trade-row">
                 <div className="trade-row__info">
                   <span className="trade-row__ticker">{trade.ticker}</span>
-                  <span className="trade-row__date">{fmtDate(trade.exitDate)} · {trade.holdDays}d</span>
-                </div>
-                {trade.exitReason && (
-                  <span className={`trade-row__reason ${exitReasonClass(trade.exitReason)}`}>
-                    {trade.exitReason}
+                  <span className="trade-row__date">
+                    Cycle {trade.cycle} · {trade.dateRange}
                   </span>
-                )}
+                </div>
+                <span className="trade-row__grade-tag">
+                  Grade {trade.grade}
+                </span>
                 <span className={`trade-row__pnl ${trade.pnl > 0 ? 'trade-row__pnl--positive' : trade.pnl < 0 ? 'trade-row__pnl--negative' : 'trade-row__pnl--neutral'}`}>
-                  {fmt(trade.pnl)} ({trade.pnlPct > 0 ? '+' : ''}{trade.pnlPct?.toFixed(1)}%)
-                  {trade.rMultiple != null && (
-                    <span className="trade-row__r-tag">{trade.rMultiple >= 0 ? '+' : ''}{trade.rMultiple}R</span>
-                  )}
+                  {fmt(trade.pnl)} ({trade.pnlPct > 0 ? '+' : ''}{trade.pnlPct.toFixed(1)}%)
                 </span>
               </div>
             ))
@@ -322,7 +305,8 @@ export default function TradingDashboard() {
 
       {/* Disclaimer */}
       <div className="trading-disclaimer">
-        ⚠️ Paper trading only — no real money invested. Past simulated performance does not guarantee future results.
+        ⚠️ Paper trading only — no real money invested. Equal-weight 4-week conviction strategy.
+        Past simulated performance does not guarantee future results.
       </div>
     </div>
   )

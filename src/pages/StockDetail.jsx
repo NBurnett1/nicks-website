@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom'
 import InteractiveChart from '../components/InteractiveChart'
 import ReportView from '../components/ReportView'
 import StockLogo from '../components/StockLogo'
+import GlobalNewsFeed from '../components/GlobalNewsFeed'
 import Disclaimer from '../components/Disclaimer'
 import Footer from '../components/Footer'
 import './StockDetail.css'
@@ -279,6 +280,13 @@ export default function StockDetail() {
           </div>
         </section>
       )}
+
+      {/* Global Market News */}
+      <section className="stock-detail__news-section">
+        <div className="container">
+          <GlobalNewsFeed variant="compact" />
+        </div>
+      </section>
 
       <Disclaimer />
       <Footer />

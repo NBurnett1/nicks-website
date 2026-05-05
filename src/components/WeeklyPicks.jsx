@@ -17,16 +17,16 @@ export default function WeeklyPicks({ exchange = 'ASX' }) {
   const navigate = useNavigate()
 
   useEffect(() => {
-    // Load week index to find current/latest week
-    fetch('/data/weeks/index.json')
+    // Load cycle index to find current/latest cycle
+    fetch('/data/cycles/index.json')
       .then(res => res.ok ? res.json() : null)
       .then(index => {
-        if (!index?.weeks?.length) { setLoading(false); return }
-        // Find the active or latest week
-        const active = index.weeks.find(w => w.status === 'active')
-        const latest = index.weeks[index.weeks.length - 1]
+        if (!index?.cycles?.length) { setLoading(false); return }
+        // Find the active or latest cycle
+        const active = index.cycles.find(c => c.status === 'active')
+        const latest = index.cycles[index.cycles.length - 1]
         const target = active || latest
-        return fetch(`/data/weeks/week${target.week}.json`)
+        return fetch(`/data/cycles/cycle${target.cycle}.json`)
       })
       .then(res => res?.ok ? res.json() : null)
       .then(data => {
@@ -54,10 +54,13 @@ export default function WeeklyPicks({ exchange = 'ASX' }) {
   if (!weekData) return null
 
   const corePicks = weekData.picks.filter(p => p.type === 'core')
-  const specPick = weekData.picks.find(p => p.type === 'speculative')
   const heroPick = corePicks[0]
   const remainingCore = corePicks.slice(1)
   const isActive = weekData.status === 'active' || weekData.status === 'upcoming'
+
+  // Calculate days remaining in hold period
+  const endDate = weekData.endDate ? new Date(weekData.endDate) : null
+  const daysRemaining = endDate ? Math.max(0, Math.ceil((endDate - new Date()) / (1000 * 60 * 60 * 24))) : null
 
   return (
     <div className="weekly-picks" id="weekly-picks">
@@ -65,15 +68,18 @@ export default function WeeklyPicks({ exchange = 'ASX' }) {
       <div className="weekly-picks__header">
         <div className="weekly-picks__title-group">
           <div className="weekly-picks__week-badge">
-            <span className="weekly-picks__week-num">Week {weekData.week}</span>
+            <span className="weekly-picks__week-num">Cycle {weekData.cycle}</span>
             <span className={`weekly-picks__status weekly-picks__status--${weekData.status}`}>
               {weekData.status === 'active' ? '● Live' : weekData.status === 'upcoming' ? '◉ Monday' : '✓ Complete'}
             </span>
           </div>
           <div>
-            <h2 className="weekly-picks__title">This Week's Picks</h2>
+            <h2 className="weekly-picks__title">Current Picks</h2>
             <p className="weekly-picks__subtitle">
-              {weekData.dateRange} · {weekData.picks.length} stocks selected
+              {weekData.dateRange} · {weekData.picks.length} stocks · 4-week hold
+              {daysRemaining !== null && isActive && (
+                <span className="weekly-picks__days-remaining"> · {daysRemaining}d remaining</span>
+              )}
             </p>
           </div>
         </div>
@@ -201,35 +207,6 @@ export default function WeeklyPicks({ exchange = 'ASX' }) {
             </div>
           </div>
         ))}
-
-        {/* Speculative Pick — distinct styling */}
-        {specPick && (
-          <div
-            className="weekly-picks__card weekly-picks__card--spec"
-            onClick={() => handleClick(specPick.ticker)}
-            style={{ animationDelay: `${(remainingCore.length + 1) * 0.1}s` }}
-          >
-            <div className="weekly-picks__card-header">
-              <div className="weekly-picks__spec-badge">🔥 Speculative</div>
-              <div className={`weekly-picks__grade weekly-picks__grade--${specPick.grade}`}>{specPick.grade}</div>
-            </div>
-            <div className="weekly-picks__card-body">
-              <StockLogo ticker={specPick.ticker} name={specPick.name} className="weekly-picks__card-logo" />
-              <div className="weekly-picks__card-info">
-                <div className="weekly-picks__card-ticker">{specPick.ticker}</div>
-                <div className="weekly-picks__card-name">{specPick.name}</div>
-                <div className="weekly-picks__card-sector">{specPick.sector} · {specPick.marketCap}</div>
-              </div>
-            </div>
-            <div className="weekly-picks__card-thesis">{specPick.thesis}</div>
-            <div className="weekly-picks__card-footer">
-              <span className="weekly-picks__card-price">A${specPick.entryPrice.toFixed(2)}</span>
-              <span className={`weekly-picks__card-pnl ${specPick.pnlPct > 0 ? 'weekly-picks__card-pnl--positive' : specPick.pnlPct < 0 ? 'weekly-picks__card-pnl--negative' : ''}`}>
-                {specPick.pnlPct !== 0 ? `${specPick.pnlPct > 0 ? '+' : ''}${specPick.pnlPct.toFixed(1)}%` : '—'}
-              </span>
-            </div>
-          </div>
-        )}
       </div>
     </div>
   )

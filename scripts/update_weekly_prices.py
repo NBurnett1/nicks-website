@@ -1,11 +1,11 @@
 """
-Nick Knows Best — Weekly Prices Updater
+Nick Knows Best — Price Updater
 
-Updates current prices for all active week picks.
-Marks weeks as "completed" when Friday has passed.
+Updates current prices for all active cycle picks.
+Marks cycles as "completed" when the 4-week holding period has passed.
 
 Usage:
-    python scripts/update_weekly_prices.py          # Update all active weeks
+    python scripts/update_weekly_prices.py          # Update all active cycles
 """
 
 import json
@@ -19,22 +19,22 @@ import yfinance as yf
 AEST = timezone(timedelta(hours=10))
 
 
-def update_week_prices(week_path):
-    """Update prices for all picks in a week file."""
-    with open(week_path) as f:
-        week_data = json.load(f)
+def update_cycle_prices(cycle_path):
+    """Update prices for all picks in a cycle file."""
+    with open(cycle_path) as f:
+        cycle_data = json.load(f)
 
-    if week_data.get("status") == "completed":
-        return False  # Skip completed weeks
+    if cycle_data.get("status") == "completed":
+        return False  # Skip completed cycles
 
     now = datetime.now(AEST)
-    end_date = datetime.strptime(week_data["endDate"], "%Y-%m-%d").replace(tzinfo=AEST)
+    end_date = datetime.strptime(cycle_data["endDate"], "%Y-%m-%d").replace(tzinfo=AEST)
 
-    # If we're past Saturday after the week ended, mark as completed
+    # If we're past Saturday after the cycle ended, mark as completed
     if now > end_date + timedelta(days=1):
-        week_data["status"] = "completed"
+        cycle_data["status"] = "completed"
 
-    picks = week_data.get("picks", [])
+    picks = cycle_data.get("picks", [])
     updated = False
 
     # Stop-loss thresholds
@@ -48,10 +48,10 @@ def update_week_prices(week_path):
         try:
             t = yf.Ticker(f"{ticker}.AX")
 
-            if week_data["status"] == "completed":
-                # Get the Friday close price
+            if cycle_data["status"] == "completed":
+                # Get the final Friday close price
                 hist = t.history(
-                    start=week_data["startDate"],
+                    start=cycle_data["startDate"],
                     end=(end_date + timedelta(days=1)).strftime("%Y-%m-%d")
                 )
                 if hist is not None and not hist.empty:
@@ -74,8 +74,8 @@ def update_week_prices(week_path):
                 pick["pnl"] = round(pnl, 2)
                 pick["pnlPct"] = round((pnl / pick["entryPrice"]) * 100, 2)
 
-            # ── Stop-loss checks (only for active weeks) ──
-            if week_data["status"] != "completed" and not pick.get("stopTriggered"):
+            # ── Stop-loss checks (only for active cycles) ──
+            if cycle_data["status"] != "completed" and not pick.get("stopTriggered"):
                 peak = pick.get("peakPrice", pick["entryPrice"])
                 peak_pct = ((peak - pick["entryPrice"]) / pick["entryPrice"]) * 100 if pick["entryPrice"] > 0 else 0
 
@@ -109,55 +109,63 @@ def update_week_prices(week_path):
 
     # Update summary
     if picks:
-        week_data["summary"]["avgPnlPct"] = round(
+        cycle_data["summary"]["avgPnlPct"] = round(
             sum(p["pnlPct"] for p in picks) / len(picks), 2
         )
-        week_data["summary"]["winners"] = sum(1 for p in picks if p["pnlPct"] > 0)
-        week_data["summary"]["losers"] = sum(1 for p in picks if p["pnlPct"] < 0)
-        week_data["summary"]["flat"] = len(picks) - week_data["summary"]["winners"] - week_data["summary"]["losers"]
-        week_data["summary"]["stopsTriggered"] = sum(1 for p in picks if p.get("stopTriggered"))
+        cycle_data["summary"]["winners"] = sum(1 for p in picks if p["pnlPct"] > 0)
+        cycle_data["summary"]["losers"] = sum(1 for p in picks if p["pnlPct"] < 0)
+        cycle_data["summary"]["flat"] = len(picks) - cycle_data["summary"]["winners"] - cycle_data["summary"]["losers"]
+        cycle_data["summary"]["stopsTriggered"] = sum(1 for p in picks if p.get("stopTriggered"))
 
     if updated:
-        with open(week_path, "w") as f:
-            json.dump(week_data, f, indent=2, ensure_ascii=False)
+        with open(cycle_path, "w") as f:
+            json.dump(cycle_data, f, indent=2, ensure_ascii=False)
 
     return updated
 
 
 def main():
     project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    weeks_dir = os.path.join(project_root, "public", "data", "weeks")
+    cycles_dir = os.path.join(project_root, "public", "data", "cycles")
 
-    if not os.path.exists(weeks_dir):
-        print("❌ No weeks directory found.")
+    if not os.path.exists(cycles_dir):
+        print("❌ No cycles directory found.")
         sys.exit(1)
 
     print("=" * 60)
-    print("  NICK KNOWS BEST — Weekly Price Updater")
+    print("  NICK KNOWS BEST — Price Updater")
     print(f"  {datetime.now(AEST).strftime('%A %d %B %Y, %I:%M %p AEST')}")
     print("=" * 60)
 
-    week_files = sorted([
-        f for f in os.listdir(weeks_dir)
-        if f.startswith("week") and f.endswith(".json") and f != "index.json" and "_" not in f
+    cycle_files = sorted([
+        f for f in os.listdir(cycles_dir)
+        if f.startswith("cycle") and f.endswith(".json") and f != "index.json" and "_" not in f
     ])
 
-    for wf in week_files:
-        path = os.path.join(weeks_dir, wf)
+    for cf in cycle_files:
+        path = os.path.join(cycles_dir, cf)
         with open(path) as f:
             data = json.load(f)
         status = data.get("status", "?")
-        print(f"\n  📅 {wf} ({data.get('dateRange', '?')}) — {status}")
+        print(f"\n  📅 {cf} ({data.get('dateRange', '?')}) — {status}")
 
         if status == "completed":
             print("    ⏭ Skipping (completed)")
             continue
 
-        update_week_prices(path)
+        update_cycle_prices(path)
 
     # Rebuild index
-    from generate_weekly_picks import update_weeks_index
-    update_weeks_index(weeks_dir)
+    from generate_weekly_picks import update_cycles_index
+    update_cycles_index(cycles_dir)
+
+    # Rebuild portfolio from updated cycle data
+    print("\n  📊 Rebuilding portfolio...")
+    from weekly_portfolio import rebuild_portfolio
+    data_dir = os.path.join(project_root, "public", "data")
+    portfolio = rebuild_portfolio(cycles_dir, data_dir)
+    pnl_sign = "+" if portfolio["totalPnL"] >= 0 else ""
+    print(f"  💰 Portfolio: A${portfolio['totalValue']:,.2f} ({pnl_sign}{portfolio['totalPnLPct']:.1f}%)")
 
     print("\n" + "=" * 60)
     print("  ✅ PRICE UPDATE COMPLETE")

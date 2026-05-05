@@ -231,6 +231,96 @@
   stroke-dasharray: 4 4;
 }
 
+.equity-curve__labels {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  margin-top: var(--space-sm);
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.equity-curve__label {
+  font-size: 10px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.02em;
+}
+
+.equity-curve__label--positive {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--green-400);
+}
+
+.equity-curve__label--negative {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--red-400);
+}
+
+/* Grade badge */
+.position-row__grade {
+  display: inline-block;
+  font-size: 9px;
+  font-weight: 800;
+  padding: 1px 5px;
+  border-radius: var(--radius-sm);
+  margin-left: 6px;
+  letter-spacing: 0.05em;
+  vertical-align: middle;
+}
+
+.position-row__grade--a {
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--green-400);
+}
+
+.position-row__grade--b {
+  background: rgba(59, 130, 246, 0.15);
+  color: var(--blue-400);
+}
+
+.position-row__grade--c {
+  background: rgba(251, 191, 36, 0.15);
+  color: var(--amber-400);
+}
+
+.position-row__grade--d,
+.position-row__grade--f {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--red-400);
+}
+
+/* Allocation bar (reuses progress bar layout) */
+.position-row__alloc-bar {
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+}
+
+.position-row__alloc-fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.5s var(--ease-out);
+  min-width: 2px;
+}
+
+/* Trade row grade tag */
+.trade-row__grade-tag {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+  white-space: nowrap;
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--blue-400);
+}
+
 /* ============ Sections ============ */
 .trading-sections {
   display: grid;
