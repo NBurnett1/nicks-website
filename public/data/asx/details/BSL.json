@@ -1,16 +1,12 @@
 {
   "ticker": "BSL",
   "name": "BLUESCOPE FPO [BSL]",
-  "price": 30.0,
-  "valuationScore": 0.4,
-  "marketCap": "13.1B",
+  "price": 30.13,
+  "valuationScore": 1.6,
+  "marketCap": "13.2B",
   "sector": "Basic Materials",
   "domain": "bluescope.com",
   "chartData": [
-    {
-      "date": "2025-05-04",
-      "price": 22.33
-    },
     {
       "date": "2025-05-11",
       "price": 21.51
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-03",
       "price": 30.0
+    },
+    {
+      "date": "2026-05-10",
+      "price": 30.13
     }
   ],
   "testsPassed": 5,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 52.63,
-      "threshold": 44.74,
-      "label": "52.6x vs 44.7x sector"
+      "value": 52.86,
+      "threshold": 36.22,
+      "label": "52.9x vs 36.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,23 +240,23 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 8.99,
+      "value": 9.03,
       "threshold": 10.0,
       "label": "9.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 0.37,
+      "value": 0.36,
       "threshold": 5.0,
       "label": "0.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.56,
-      "threshold": 52.63,
-      "label": "Fwd 14.6x vs Trail 52.6x"
+      "value": 14.62,
+      "threshold": 52.86,
+      "label": "Fwd 14.6x vs Trail 52.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 52.63,
-    "sectorPe": 52.63,
+    "pe": 52.86,
+    "sectorPe": 42.61,
     "pb": 1.22,
     "ps": 0.79,
-    "evEbitda": 8.99,
-    "fcfYield": 0.37,
-    "forwardPe": 14.56,
-    "dividendYield": 3.17,
+    "evEbitda": 9.03,
+    "fcfYield": 0.36,
+    "forwardPe": 14.62,
+    "dividendYield": 3.15,
     "revenueGrowth": 4.0,
     "profitMargin": 1.78,
     "operatingMargin": 6.27,

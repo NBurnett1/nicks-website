@@ -1,16 +1,12 @@
 {
   "ticker": "HVN",
   "name": "HARVEY FPO [HVN]",
-  "price": 4.49,
-  "valuationScore": -9.5,
+  "price": 4.48,
+  "valuationScore": -9.2,
   "marketCap": "5.6B",
   "sector": "Consumer Discretionary",
   "domain": "harveynormanholdings.com.au",
   "chartData": [
-    {
-      "date": "2025-05-04",
-      "price": 5.05
-    },
     {
       "date": "2025-05-11",
       "price": 5.15
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-03",
       "price": 4.49
+    },
+    {
+      "date": "2026-05-10",
+      "price": 4.48
     }
   ],
   "testsPassed": 7,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 9.98,
-      "threshold": 14.97,
-      "label": "10.0x vs 15.0x sector"
+      "value": 9.96,
+      "threshold": 14.49,
+      "label": "10.0x vs 14.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,22 +240,22 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 8.75,
+      "value": 8.74,
       "threshold": 10.0,
-      "label": "8.8x vs 10x"
+      "label": "8.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 13.51,
+      "value": 13.54,
       "threshold": 5.0,
       "label": "13.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 11.54,
-      "threshold": 9.98,
+      "value": 11.51,
+      "threshold": 9.96,
       "label": "Fwd 11.5x vs Trail 10.0x"
     },
     "profitabilityCheck": {
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 9.98,
-    "sectorPe": 17.61,
+    "pe": 9.96,
+    "sectorPe": 17.05,
     "pb": 1.14,
     "ps": 1.81,
-    "evEbitda": 8.75,
-    "fcfYield": 13.51,
-    "forwardPe": 11.54,
-    "dividendYield": 6.46,
+    "evEbitda": 8.74,
+    "fcfYield": 13.54,
+    "forwardPe": 11.51,
+    "dividendYield": 6.47,
     "revenueGrowth": 11.6,
     "profitMargin": 18.12,
     "operatingMargin": 26.54,

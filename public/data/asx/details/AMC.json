@@ -1,16 +1,12 @@
 {
   "ticker": "AMC",
   "name": "AMCOR PLC CDI 1:1 [AMC]",
-  "price": 53.47,
-  "valuationScore": 0.9,
-  "marketCap": "24.7B",
+  "price": 54.86,
+  "valuationScore": 3.2,
+  "marketCap": "25.4B",
   "sector": "Materials",
   "domain": "amcor.com",
   "chartData": [
-    {
-      "date": "2025-05-04",
-      "price": 67.17
-    },
     {
       "date": "2025-05-11",
       "price": 67.5
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-03",
       "price": 53.47
+    },
+    {
+      "date": "2026-05-10",
+      "price": 54.86
     }
   ],
   "testsPassed": 3,
@@ -226,73 +226,73 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 28.9,
-      "threshold": 17.28,
-      "label": "28.9x vs 17.3x sector"
+      "value": 31.9,
+      "threshold": 18.04,
+      "label": "31.9x vs 18.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.53,
+      "value": 1.57,
       "threshold": 1.5,
-      "label": "1.53x vs 1.5x"
+      "label": "1.57x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 13.99,
+      "value": 12.66,
       "threshold": 10.0,
-      "label": "14.0x vs 10x"
+      "label": "12.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 1.81,
+      "value": 0.59,
       "threshold": 5.0,
-      "label": "1.8% vs 5%"
+      "label": "0.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 8.61,
-      "threshold": 28.9,
-      "label": "Fwd 8.6x vs Trail 28.9x"
+      "value": 9.22,
+      "threshold": 31.9,
+      "label": "Fwd 9.2x vs Trail 31.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": false,
-      "value": 3.04,
+      "value": 3.06,
       "threshold": 5.0,
-      "label": "Margin 3.0% / ROE 7.7%"
+      "label": "Margin 3.1% / ROE 8.7%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.02,
+      "value": 0.01,
       "threshold": 0.5,
-      "label": "P/S 1.3x ÷ Growth 68.1% = 0.02"
+      "label": "P/S 1.1x ÷ Growth 77.4% = 0.01"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": true,
-      "value": 68.1,
+      "value": 77.4,
       "threshold": -5.0,
-      "label": "68.1% growth (floor: -5%)"
+      "label": "77.4% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 28.9,
-    "sectorPe": 20.33,
-    "pb": 1.53,
-    "ps": 1.26,
-    "evEbitda": 13.99,
-    "fcfYield": 1.81,
-    "forwardPe": 8.61,
-    "dividendYield": 7.29,
-    "revenueGrowth": 68.1,
-    "profitMargin": 3.04,
-    "operatingMargin": 8.29,
-    "roe": 7.73,
-    "debtEquity": 138.73
+    "pe": 31.9,
+    "sectorPe": 21.23,
+    "pb": 1.57,
+    "ps": 1.14,
+    "evEbitda": 12.66,
+    "fcfYield": 0.59,
+    "forwardPe": 9.22,
+    "dividendYield": 6.94,
+    "revenueGrowth": 77.4,
+    "profitMargin": 3.06,
+    "operatingMargin": 8.59,
+    "roe": 8.74,
+    "debtEquity": 143.74
   }
 }

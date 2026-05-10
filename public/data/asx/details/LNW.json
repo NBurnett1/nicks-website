@@ -1,16 +1,12 @@
 {
   "ticker": "LNW",
   "name": "LIGHT & WO CDI 1:1 [LNW]",
-  "price": 114.66,
-  "valuationScore": 57.0,
-  "marketCap": "8.8B",
+  "price": 114.64,
+  "valuationScore": 60.0,
+  "marketCap": "9.0B",
   "sector": "Consumer Cyclical",
   "domain": "lnw.com",
   "chartData": [
-    {
-      "date": "2025-05-04",
-      "price": 139.26
-    },
     {
       "date": "2025-05-11",
       "price": 126.35
@@ -218,81 +214,85 @@
     {
       "date": "2026-05-03",
       "price": 114.66
+    },
+    {
+      "date": "2026-05-10",
+      "price": 114.64
     }
   ],
-  "testsPassed": 5,
-  "grade": "B",
+  "testsPassed": 4,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 25.26,
-      "threshold": 19.36,
-      "label": "25.3x vs 19.4x sector"
+      "value": 27.83,
+      "threshold": 19.81,
+      "label": "27.8x vs 19.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 25.85,
+      "value": 25.84,
       "threshold": 1.5,
-      "label": "25.85x vs 1.5x"
+      "label": "25.84x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 11.96,
+      "value": 12.04,
       "threshold": 10.0,
       "label": "12.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.56,
+      "value": 5.11,
       "threshold": 5.0,
-      "label": "5.6% vs 5%"
+      "label": "5.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 8.87,
-      "threshold": 25.26,
-      "label": "Fwd 8.9x vs Trail 25.3x"
+      "value": 9.13,
+      "threshold": 27.83,
+      "label": "Fwd 9.1x vs Trail 27.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": true,
-      "value": 8.33,
+      "value": 7.39,
       "threshold": 5.0,
-      "label": "Margin 8.3% / ROE 62.7%"
+      "label": "Margin 7.4% / ROE 52.9%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": true,
-      "value": 0.23,
+      "passed": false,
+      "value": 1.29,
       "threshold": 0.5,
-      "label": "P/S 2.7x ÷ Growth 11.7% = 0.23"
+      "label": "P/S 2.7x ÷ Growth 2.1% = 1.29"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": true,
-      "value": 11.7,
+      "value": 2.1,
       "threshold": -5.0,
-      "label": "11.7% growth (floor: -5%)"
+      "label": "2.1% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 25.26,
-    "sectorPe": 22.78,
-    "pb": 25.85,
-    "ps": 2.67,
-    "evEbitda": 11.96,
-    "fcfYield": 5.56,
-    "forwardPe": 8.87,
+    "pe": 27.83,
+    "sectorPe": 23.3,
+    "pb": 25.84,
+    "ps": 2.71,
+    "evEbitda": 12.04,
+    "fcfYield": 5.11,
+    "forwardPe": 9.13,
     "dividendYield": null,
-    "revenueGrowth": 11.7,
-    "profitMargin": 8.33,
-    "operatingMargin": 29.1,
-    "roe": 62.66,
-    "debtEquity": 2126.53
+    "revenueGrowth": 2.1,
+    "profitMargin": 7.39,
+    "operatingMargin": 23.29,
+    "roe": 52.85,
+    "debtEquity": 1667.52
   }
 }

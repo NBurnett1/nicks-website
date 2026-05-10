@@ -1,16 +1,12 @@
 {
   "ticker": "PLS",
   "name": "PLSGROUP FPO [PLS]",
-  "price": 6.14,
-  "valuationScore": 53.0,
-  "marketCap": "19.8B",
+  "price": 6.26,
+  "valuationScore": 55.1,
+  "marketCap": "20.2B",
   "sector": "Basic Materials",
   "domain": "pls.com",
   "chartData": [
-    {
-      "date": "2025-05-04",
-      "price": 1.48
-    },
     {
       "date": "2025-05-11",
       "price": 1.47
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-03",
       "price": 6.14
+    },
+    {
+      "date": "2026-05-10",
+      "price": 6.26
     }
   ],
   "testsPassed": 2,
@@ -233,16 +233,16 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 5.54,
+      "value": 5.64,
       "threshold": 1.5,
-      "label": "5.54x vs 1.5x"
+      "label": "5.64x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 105.02,
+      "value": 107.1,
       "threshold": 10.0,
-      "label": "105.0x vs 10x"
+      "label": "107.1x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
@@ -254,7 +254,7 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 23.6,
+      "value": 23.78,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.44,
+      "value": 0.45,
       "threshold": 0.5,
-      "label": "P/S 20.4x ÷ Growth 46.6% = 0.44"
+      "label": "P/S 20.8x ÷ Growth 46.6% = 0.45"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 52.63,
-    "pb": 5.54,
-    "ps": 20.44,
-    "evEbitda": 105.02,
+    "sectorPe": 42.61,
+    "pb": 5.64,
+    "ps": 20.84,
+    "evEbitda": 107.1,
     "fcfYield": -0.47,
-    "forwardPe": 23.6,
+    "forwardPe": 23.78,
     "dividendYield": null,
     "revenueGrowth": 46.6,
     "profitMargin": -9.67,

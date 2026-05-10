@@ -1,16 +1,12 @@
 {
   "ticker": "PDN",
   "name": "PALADIN FPO [PDN]",
-  "price": 11.97,
+  "price": 12.49,
   "valuationScore": 60.0,
-  "marketCap": "5.4B",
+  "marketCap": "5.6B",
   "sector": "Energy",
   "domain": "paladinenergy.com.au",
   "chartData": [
-    {
-      "date": "2025-05-04",
-      "price": 6.22
-    },
     {
       "date": "2025-05-11",
       "price": 6.37
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-03",
       "price": 11.97
+    },
+    {
+      "date": "2026-05-10",
+      "price": 12.49
     }
   ],
   "testsPassed": 2,
@@ -233,28 +233,28 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.29,
+      "value": 3.44,
       "threshold": 1.5,
-      "label": "3.29x vs 1.5x"
+      "label": "3.44x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 166.21,
+      "value": 173.71,
       "threshold": 10.0,
-      "label": "166.2x vs 10x"
+      "label": "173.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -1.34,
+      "value": -1.28,
       "threshold": 5.0,
       "label": "-1.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 42.61,
+      "value": 44.76,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.11,
       "threshold": 0.5,
-      "label": "P/S 22.5x ÷ Growth 206.0% = 0.11"
+      "label": "P/S 23.5x ÷ Growth 206.0% = 0.11"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 20.46,
-    "pb": 3.29,
-    "ps": 22.53,
-    "evEbitda": 166.21,
-    "fcfYield": -1.34,
-    "forwardPe": 42.61,
+    "sectorPe": 19.29,
+    "pb": 3.44,
+    "ps": 23.51,
+    "evEbitda": 173.71,
+    "fcfYield": -1.28,
+    "forwardPe": 44.76,
     "dividendYield": null,
     "revenueGrowth": 206.0,
     "profitMargin": -16.42,

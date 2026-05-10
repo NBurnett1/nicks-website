@@ -1,16 +1,12 @@
 {
   "ticker": "PPE",
   "name": "PEOPLEINFR FPO [PPE]",
-  "price": 0.59,
-  "valuationScore": -28.1,
-  "marketCap": "65M",
+  "price": 0.57,
+  "valuationScore": -29.9,
+  "marketCap": "62M",
   "sector": "Industrials",
   "domain": "peoplein.com.au",
   "chartData": [
-    {
-      "date": "2025-05-04",
-      "price": 0.75
-    },
     {
       "date": "2025-05-11",
       "price": 0.75
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-03",
       "price": 0.59
+    },
+    {
+      "date": "2026-05-10",
+      "price": 0.57
     }
   ],
   "testsPassed": 3,
@@ -233,28 +233,28 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.53,
+      "value": 0.52,
       "threshold": 1.5,
-      "label": "0.53x vs 1.5x"
+      "label": "0.52x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 4.56,
+      "value": 4.46,
       "threshold": 10.0,
-      "label": "4.6x vs 10x"
+      "label": "4.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 42.75,
+      "value": 44.25,
       "threshold": 5.0,
-      "label": "42.8% vs 5%"
+      "label": "44.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 7.56,
+      "value": 7.3,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 30.92,
-    "pb": 0.53,
+    "sectorPe": 30.7,
+    "pb": 0.52,
     "ps": 0.06,
-    "evEbitda": 4.56,
-    "fcfYield": 42.75,
-    "forwardPe": 7.56,
+    "evEbitda": 4.46,
+    "fcfYield": 44.25,
+    "forwardPe": 7.3,
     "dividendYield": null,
     "revenueGrowth": -8.2,
     "profitMargin": -3.42,

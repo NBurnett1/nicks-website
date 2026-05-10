@@ -1,16 +1,12 @@
 {
   "ticker": "ORI",
   "name": "ORICA FPO [ORI]",
-  "price": 21.18,
-  "valuationScore": -9.6,
-  "marketCap": "9.8B",
+  "price": 21.73,
+  "valuationScore": -16.2,
+  "marketCap": "10.1B",
   "sector": "Basic Materials",
   "domain": "orica.com",
   "chartData": [
-    {
-      "date": "2025-05-04",
-      "price": 16.28
-    },
     {
       "date": "2025-05-11",
       "price": 17.8
@@ -218,81 +214,85 @@
     {
       "date": "2026-05-03",
       "price": 21.18
+    },
+    {
+      "date": "2026-05-10",
+      "price": 21.73
     }
   ],
-  "testsPassed": 5,
-  "grade": "B",
+  "testsPassed": 4,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 64.18,
-      "threshold": 44.74,
-      "label": "64.2x vs 44.7x sector"
+      "value": 42.61,
+      "threshold": 36.22,
+      "label": "42.6x vs 36.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.37,
+      "value": 2.7,
       "threshold": 1.5,
-      "label": "2.37x vs 1.5x"
+      "label": "2.70x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 9.6,
+      "value": 9.19,
       "threshold": 10.0,
-      "label": "9.6x vs 10x"
+      "label": "9.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.67,
+      "value": 7.99,
       "threshold": 5.0,
-      "label": "5.7% vs 5%"
+      "label": "8.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 15.4,
-      "threshold": 64.18,
-      "label": "Fwd 15.4x vs Trail 64.2x"
+      "value": 15.84,
+      "threshold": 42.61,
+      "label": "Fwd 15.8x vs Trail 42.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": false,
-      "value": 1.99,
+      "value": 3.09,
       "threshold": 5.0,
-      "label": "Margin 2.0% / ROE 4.3%"
+      "label": "Margin 3.1% / ROE 6.6%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": true,
-      "value": 0.24,
+      "passed": false,
+      "value": -1.7,
       "threshold": 0.5,
-      "label": "P/S 1.2x ÷ Growth 5.0% = 0.24"
+      "label": "FAIL — Revenue declining -1.7%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": true,
-      "value": 5.0,
+      "value": -1.7,
       "threshold": -5.0,
-      "label": "5.0% growth (floor: -5%)"
+      "label": "-1.7% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 64.18,
-    "sectorPe": 52.63,
-    "pb": 2.37,
-    "ps": 1.2,
-    "evEbitda": 9.6,
-    "fcfYield": 5.67,
-    "forwardPe": 15.4,
-    "dividendYield": 2.69,
-    "revenueGrowth": 5.0,
-    "profitMargin": 1.99,
-    "operatingMargin": 11.18,
-    "roe": 4.3,
-    "debtEquity": 70.61
+    "pe": 42.61,
+    "sectorPe": 42.61,
+    "pb": 2.7,
+    "ps": 1.24,
+    "evEbitda": 9.19,
+    "fcfYield": 7.99,
+    "forwardPe": 15.84,
+    "dividendYield": 2.78,
+    "revenueGrowth": -1.7,
+    "profitMargin": 3.09,
+    "operatingMargin": 4.86,
+    "roe": 6.61,
+    "debtEquity": 84.85
   }
 }

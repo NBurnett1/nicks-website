@@ -8,10 +8,6 @@
   "domain": "nationalstorage.com.au",
   "chartData": [
     {
-      "date": "2025-05-04",
-      "price": 2.23
-    },
-    {
       "date": "2025-05-11",
       "price": 2.25
     },
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-03",
       "price": 2.79
+    },
+    {
+      "date": "2026-05-10",
+      "price": 2.79
     }
   ],
   "testsPassed": 2,
@@ -227,8 +227,8 @@
       "name": "P/E Discount",
       "passed": false,
       "value": 279.0,
-      "threshold": 10.06,
-      "label": "279.0x vs 10.1x sector"
+      "threshold": 9.69,
+      "label": "279.0x vs 9.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -282,7 +282,7 @@
   },
   "metrics": {
     "pe": 279.0,
-    "sectorPe": 11.83,
+    "sectorPe": 11.4,
     "pb": 10.98,
     "ps": 10.2,
     "evEbitda": 38.66,

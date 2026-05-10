@@ -1,16 +1,12 @@
 {
   "ticker": "WOR",
   "name": "WORLEY FPO [WOR]",
-  "price": 12.07,
-  "valuationScore": -7.4,
-  "marketCap": "6.1B",
+  "price": 12.15,
+  "valuationScore": -5.7,
+  "marketCap": "6.2B",
   "sector": "Energy",
   "domain": "worley.com",
   "chartData": [
-    {
-      "date": "2025-05-04",
-      "price": 11.88
-    },
     {
       "date": "2025-05-11",
       "price": 12.08
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-03",
       "price": 12.07
+    },
+    {
+      "date": "2026-05-10",
+      "price": 12.15
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 18.29,
-      "threshold": 17.39,
-      "label": "18.3x vs 17.4x sector"
+      "value": 18.41,
+      "threshold": 16.39,
+      "label": "18.4x vs 16.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.14,
+      "value": 1.15,
       "threshold": 1.5,
-      "label": "1.14x vs 1.5x"
+      "label": "1.15x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 10.46,
+      "value": 10.52,
       "threshold": 10.0,
       "label": "10.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 8.14,
+      "value": 8.08,
       "threshold": 5.0,
       "label": "8.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.45,
-      "threshold": 18.29,
-      "label": "Fwd 12.4x vs Trail 18.3x"
+      "value": 12.53,
+      "threshold": 18.41,
+      "label": "Fwd 12.5x vs Trail 18.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 18.29,
-    "sectorPe": 20.46,
-    "pb": 1.14,
+    "pe": 18.41,
+    "sectorPe": 19.29,
+    "pb": 1.15,
     "ps": 0.55,
-    "evEbitda": 10.46,
-    "fcfYield": 8.14,
-    "forwardPe": 12.45,
-    "dividendYield": 4.14,
+    "evEbitda": 10.52,
+    "fcfYield": 8.08,
+    "forwardPe": 12.53,
+    "dividendYield": 4.12,
     "revenueGrowth": -1.6,
     "profitMargin": 3.1,
     "operatingMargin": 3.71,

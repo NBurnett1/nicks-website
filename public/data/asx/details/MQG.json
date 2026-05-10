@@ -1,16 +1,12 @@
 {
   "ticker": "MQG",
   "name": "MACQ GROUP FPO [MQG]",
-  "price": 238.19,
-  "valuationScore": 2.2,
-  "marketCap": "90.8B",
+  "price": 239.23,
+  "valuationScore": 2.4,
+  "marketCap": "91.2B",
   "sector": "Financials",
   "domain": "macquarie.com",
   "chartData": [
-    {
-      "date": "2025-05-04",
-      "price": 191.6
-    },
     {
       "date": "2025-05-11",
       "price": 196.77
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-03",
       "price": 238.19
+    },
+    {
+      "date": "2026-05-10",
+      "price": 239.23
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 24.53,
-      "threshold": 16.94,
-      "label": "24.5x vs 16.9x sector"
+      "value": 24.64,
+      "threshold": 16.68,
+      "label": "24.6x vs 16.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.52,
+      "value": 2.53,
       "threshold": 1.5,
-      "label": "2.52x vs 1.5x"
+      "label": "2.53x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 19.4,
-      "threshold": 24.53,
-      "label": "Fwd 19.4x vs Trail 24.5x"
+      "value": 19.48,
+      "threshold": 24.64,
+      "label": "Fwd 19.5x vs Trail 24.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 24.53,
-    "sectorPe": 19.93,
-    "pb": 2.52,
-    "ps": 5.1,
+    "pe": 24.64,
+    "sectorPe": 19.62,
+    "pb": 2.53,
+    "ps": 5.13,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 19.4,
+    "forwardPe": 19.48,
     "dividendYield": 3.43,
     "revenueGrowth": 5.8,
     "profitMargin": 21.12,
