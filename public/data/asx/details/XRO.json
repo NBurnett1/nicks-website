@@ -1,16 +1,12 @@
 {
   "ticker": "XRO",
   "name": "XERO FPO [XRO]",
-  "price": 83.56,
-  "valuationScore": -0.2,
-  "marketCap": "14.5B",
+  "price": 79.67,
+  "valuationScore": 2.9,
+  "marketCap": "13.8B",
   "sector": "Technology",
   "domain": "xero.com",
   "chartData": [
-    {
-      "date": "2025-05-11",
-      "price": 172.41
-    },
     {
       "date": "2025-05-18",
       "price": 180.02
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-10",
       "price": 83.56
+    },
+    {
+      "date": "2026-05-17",
+      "price": 79.67
     }
   ],
   "testsPassed": 3,
@@ -226,73 +226,73 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 55.71,
-      "threshold": 41.04,
-      "label": "55.7x vs 41.0x sector"
+      "value": 53.47,
+      "threshold": 38.59,
+      "label": "53.5x vs 38.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.51,
+      "value": 3.35,
       "threshold": 1.5,
-      "label": "3.51x vs 1.5x"
+      "label": "3.35x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 25.45,
+      "value": 35.06,
       "threshold": 10.0,
-      "label": "25.4x vs 10x"
+      "label": "35.1x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.07,
+      "value": 1.6,
       "threshold": 5.0,
-      "label": "4.1% vs 5%"
+      "label": "1.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
-      "passed": false,
-      "value": 68.58,
-      "threshold": 55.71,
-      "label": "Fwd 68.6x vs Trail 55.7x"
+      "passed": true,
+      "value": 40.71,
+      "threshold": 53.47,
+      "label": "Fwd 40.7x vs Trail 53.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
-      "passed": true,
-      "value": 11.63,
+      "passed": false,
+      "value": 6.08,
       "threshold": 5.0,
-      "label": "Margin 11.6% / ROE 8.3%"
+      "label": "Margin 6.1% / ROE 4.4%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.32,
+      "value": 0.12,
       "threshold": 0.5,
-      "label": "P/S 6.3x ÷ Growth 19.9% = 0.32"
+      "label": "P/S 5.0x ÷ Growth 40.8% = 0.12"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": true,
-      "value": 19.9,
+      "value": 40.8,
       "threshold": -5.0,
-      "label": "19.9% growth (floor: -5%)"
+      "label": "40.8% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 55.71,
-    "sectorPe": 48.28,
-    "pb": 3.51,
-    "ps": 6.3,
-    "evEbitda": 25.45,
-    "fcfYield": 4.07,
-    "forwardPe": 68.58,
+    "pe": 53.47,
+    "sectorPe": 45.4,
+    "pb": 3.35,
+    "ps": 5.02,
+    "evEbitda": 35.06,
+    "fcfYield": 1.6,
+    "forwardPe": 40.71,
     "dividendYield": null,
-    "revenueGrowth": 19.9,
-    "profitMargin": 11.63,
-    "operatingMargin": 15.72,
-    "roe": 8.29,
-    "debtEquity": 29.52
+    "revenueGrowth": 40.8,
+    "profitMargin": 6.08,
+    "operatingMargin": 11.48,
+    "roe": 4.41,
+    "debtEquity": 39.33
   }
 }

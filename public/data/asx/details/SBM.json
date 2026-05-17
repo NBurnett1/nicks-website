@@ -1,16 +1,12 @@
 {
   "ticker": "SBM",
   "name": "ST.BARBARA FPO [SBM]",
-  "price": 0.65,
-  "valuationScore": 39.7,
-  "marketCap": "780M",
+  "price": 0.67,
+  "valuationScore": 39.6,
+  "marketCap": "811M",
   "sector": "Basic Materials",
   "domain": "stbarbara.com.au",
   "chartData": [
-    {
-      "date": "2025-05-11",
-      "price": 0.32
-    },
     {
       "date": "2025-05-18",
       "price": 0.29
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-10",
       "price": 0.64
+    },
+    {
+      "date": "2026-05-17",
+      "price": 0.67
     }
   ],
   "testsPassed": 2,
@@ -233,28 +233,28 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.8,
+      "value": 1.87,
       "threshold": 1.5,
-      "label": "1.80x vs 1.5x"
+      "label": "1.87x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 47.69,
+      "value": 49.72,
       "threshold": 10.0,
-      "label": "47.7x vs 10x"
+      "label": "49.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -7.82,
+      "value": -7.52,
       "threshold": 5.0,
-      "label": "-7.8% vs 5%"
+      "label": "-7.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 1.57,
+      "value": 1.63,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.1,
       "threshold": 0.5,
-      "label": "P/S 3.2x ÷ Growth 32.4% = 0.10"
+      "label": "P/S 3.3x ÷ Growth 32.4% = 0.10"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 42.61,
-    "pb": 1.8,
-    "ps": 3.16,
-    "evEbitda": 47.69,
-    "fcfYield": -7.82,
-    "forwardPe": 1.57,
+    "sectorPe": 45.18,
+    "pb": 1.87,
+    "ps": 3.28,
+    "evEbitda": 49.72,
+    "fcfYield": -7.52,
+    "forwardPe": 1.63,
     "dividendYield": null,
     "revenueGrowth": 32.4,
     "profitMargin": -18.42,

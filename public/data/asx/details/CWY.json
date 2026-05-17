@@ -2,15 +2,11 @@
   "ticker": "CWY",
   "name": "CLEANAWAY FPO [CWY]",
   "price": 2.25,
-  "valuationScore": 1.9,
+  "valuationScore": 1.7,
   "marketCap": "5.0B",
   "sector": "Industrials",
   "domain": "cleanaway.com.au",
   "chartData": [
-    {
-      "date": "2025-05-11",
-      "price": 2.62
-    },
     {
       "date": "2025-05-18",
       "price": 2.63
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-10",
       "price": 2.25
+    },
+    {
+      "date": "2026-05-17",
+      "price": 2.25
     }
   ],
   "testsPassed": 3,
@@ -227,8 +227,8 @@
       "name": "P/E Discount",
       "passed": false,
       "value": 45.0,
-      "threshold": 26.1,
-      "label": "45.0x vs 26.1x sector"
+      "threshold": 25.71,
+      "label": "45.0x vs 25.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 18.68,
+      "value": 18.8,
       "threshold": 45.0,
-      "label": "Fwd 18.7x vs Trail 45.0x"
+      "label": "Fwd 18.8x vs Trail 45.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": 45.0,
-    "sectorPe": 30.7,
+    "sectorPe": 30.25,
     "pb": 1.66,
     "ps": 1.23,
     "evEbitda": 11.76,
     "fcfYield": 2.17,
-    "forwardPe": 18.68,
+    "forwardPe": 18.8,
     "dividendYield": 2.91,
     "revenueGrowth": 13.7,
     "profitMargin": 2.94,

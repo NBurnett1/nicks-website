@@ -1,16 +1,12 @@
 {
   "ticker": "RIO",
   "name": "RIO TINTO FPO [RIO]",
-  "price": 178.72,
-  "valuationScore": 2.8,
-  "marketCap": "290.6B",
+  "price": 185.75,
+  "valuationScore": 3.5,
+  "marketCap": "302.1B",
   "sector": "Materials",
   "domain": "riotinto.com",
   "chartData": [
-    {
-      "date": "2025-05-11",
-      "price": 110.27
-    },
     {
       "date": "2025-05-18",
       "price": 116.09
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-10",
       "price": 178.72
+    },
+    {
+      "date": "2026-05-17",
+      "price": 185.75
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 21.23,
-      "threshold": 18.04,
-      "label": "21.2x vs 18.0x sector"
+      "value": 22.09,
+      "threshold": 18.77,
+      "label": "22.1x vs 18.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.35,
+      "value": 3.48,
       "threshold": 1.5,
-      "label": "3.35x vs 1.5x"
+      "label": "3.48x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 15.26,
+      "value": 15.82,
       "threshold": 10.0,
-      "label": "15.3x vs 10x"
+      "label": "15.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 1.2,
+      "value": 1.16,
       "threshold": 5.0,
       "label": "1.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 15.22,
-      "threshold": 21.23,
-      "label": "Fwd 15.2x vs Trail 21.2x"
+      "value": 15.71,
+      "threshold": 22.09,
+      "label": "Fwd 15.7x vs Trail 22.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.35,
+      "value": 0.36,
       "threshold": 0.5,
-      "label": "P/S 5.0x ÷ Growth 14.6% = 0.35"
+      "label": "P/S 5.2x ÷ Growth 14.6% = 0.36"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 21.23,
-    "sectorPe": 21.23,
-    "pb": 3.35,
-    "ps": 5.04,
-    "evEbitda": 15.26,
-    "fcfYield": 1.2,
-    "forwardPe": 15.22,
-    "dividendYield": 3.3,
+    "pe": 22.09,
+    "sectorPe": 22.09,
+    "pb": 3.48,
+    "ps": 5.24,
+    "evEbitda": 15.82,
+    "fcfYield": 1.16,
+    "forwardPe": 15.71,
+    "dividendYield": 3.17,
     "revenueGrowth": 14.6,
     "profitMargin": 17.29,
     "operatingMargin": 25.32,

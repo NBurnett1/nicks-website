@@ -1,16 +1,12 @@
 {
   "ticker": "TCL",
   "name": "TRANSURBAN STAPLED [TCL]",
-  "price": 14.42,
-  "valuationScore": 19.3,
-  "marketCap": "45.0B",
+  "price": 14.6,
+  "valuationScore": 19.2,
+  "marketCap": "45.6B",
   "sector": "Industrials",
   "domain": "transurban.com",
   "chartData": [
-    {
-      "date": "2025-05-11",
-      "price": 13.69
-    },
     {
       "date": "2025-05-18",
       "price": 13.47
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-10",
       "price": 14.42
+    },
+    {
+      "date": "2026-05-17",
+      "price": 14.6
     }
   ],
   "testsPassed": 2,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 96.13,
-      "threshold": 26.1,
-      "label": "96.1x vs 26.1x sector"
+      "value": 97.33,
+      "threshold": 25.71,
+      "label": "97.3x vs 25.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 5.11,
+      "value": 5.17,
       "threshold": 1.5,
-      "label": "5.11x vs 1.5x"
+      "label": "5.17x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 28.63,
+      "value": 29.01,
       "threshold": 10.0,
-      "label": "28.6x vs 10x"
+      "label": "29.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 1.27,
+      "value": 1.25,
       "threshold": 5.0,
-      "label": "1.3% vs 5%"
+      "label": "1.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 62.17,
-      "threshold": 96.13,
-      "label": "Fwd 62.2x vs Trail 96.1x"
+      "value": 51.67,
+      "threshold": 97.33,
+      "label": "Fwd 51.7x vs Trail 97.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 1.4,
+      "value": 1.42,
       "threshold": 0.5,
-      "label": "P/S 11.5x ÷ Growth 8.2% = 1.40"
+      "label": "P/S 11.6x ÷ Growth 8.2% = 1.42"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,18 +281,18 @@
     }
   },
   "metrics": {
-    "pe": 96.13,
-    "sectorPe": 30.7,
-    "pb": 5.11,
-    "ps": 11.48,
-    "evEbitda": 28.63,
-    "fcfYield": 1.27,
-    "forwardPe": 62.17,
-    "dividendYield": 4.72,
+    "pe": 97.33,
+    "sectorPe": 30.25,
+    "pb": 5.17,
+    "ps": 11.62,
+    "evEbitda": 29.01,
+    "fcfYield": 1.25,
+    "forwardPe": 51.67,
+    "dividendYield": 4.66,
     "revenueGrowth": 8.2,
     "profitMargin": 12.19,
     "operatingMargin": 35.6,
     "roe": 5.36,
-    "debtEquity": 225.12
+    "debtEquity": 228.43
   }
 }

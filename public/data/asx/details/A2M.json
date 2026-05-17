@@ -1,16 +1,12 @@
 {
   "ticker": "A2M",
   "name": "A2 MILK FPO NZ [A2M]",
-  "price": 6.54,
-  "valuationScore": 2.2,
-  "marketCap": "4.7B",
+  "price": 6.13,
+  "valuationScore": -0.2,
+  "marketCap": "4.4B",
   "sector": "Consumer Staples",
   "domain": "thea2milkcompany.com",
   "chartData": [
-    {
-      "date": "2025-05-11",
-      "price": 8.24
-    },
     {
       "date": "2025-05-18",
       "price": 8.21
@@ -218,45 +214,49 @@
     {
       "date": "2026-05-10",
       "price": 6.54
+    },
+    {
+      "date": "2026-05-17",
+      "price": 6.13
     }
   ],
-  "testsPassed": 5,
-  "grade": "B",
+  "testsPassed": 4,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": true,
-      "value": 26.16,
-      "threshold": 26.5,
-      "label": "26.2x vs 26.5x sector"
+      "passed": false,
+      "value": 24.52,
+      "threshold": 23.94,
+      "label": "24.5x vs 23.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.16,
+      "value": 3.9,
       "threshold": 1.5,
-      "label": "4.16x vs 1.5x"
+      "label": "3.90x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 13.61,
+      "value": 12.56,
       "threshold": 10.0,
-      "label": "13.6x vs 10x"
+      "label": "12.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.32,
+      "value": 3.54,
       "threshold": 5.0,
-      "label": "3.3% vs 5%"
+      "label": "3.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 23.06,
-      "threshold": 26.16,
-      "label": "Fwd 23.1x vs Trail 26.2x"
+      "value": 21.6,
+      "threshold": 24.52,
+      "label": "Fwd 21.6x vs Trail 24.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.12,
       "threshold": 0.5,
-      "label": "P/S 2.3x ÷ Growth 18.8% = 0.12"
+      "label": "P/S 2.2x ÷ Growth 18.8% = 0.12"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 26.16,
-    "sectorPe": 31.17,
-    "pb": 4.16,
-    "ps": 2.31,
-    "evEbitda": 13.61,
-    "fcfYield": 3.32,
-    "forwardPe": 23.06,
-    "dividendYield": 2.57,
+    "pe": 24.52,
+    "sectorPe": 28.16,
+    "pb": 3.9,
+    "ps": 2.16,
+    "evEbitda": 12.56,
+    "fcfYield": 3.54,
+    "forwardPe": 21.6,
+    "dividendYield": 2.75,
     "revenueGrowth": 18.8,
     "profitMargin": 5.94,
     "operatingMargin": 14.74,

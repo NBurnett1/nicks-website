@@ -1,16 +1,12 @@
 {
   "ticker": "BWP",
   "name": "BWPPROPGP STAPLED [BWP]",
-  "price": 3.86,
+  "price": 3.81,
   "valuationScore": 2.7,
   "marketCap": "2.8B",
   "sector": "Real Estate",
   "domain": "bwptrust.com.au",
   "chartData": [
-    {
-      "date": "2025-05-11",
-      "price": 3.52
-    },
     {
       "date": "2025-05-18",
       "price": 3.43
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-10",
       "price": 3.86
+    },
+    {
+      "date": "2026-05-17",
+      "price": 3.81
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 10.43,
-      "threshold": 9.69,
-      "label": "10.4x vs 9.7x sector"
+      "value": 10.3,
+      "threshold": 9.7,
+      "label": "10.3x vs 9.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.92,
+      "value": 0.91,
       "threshold": 1.5,
-      "label": "0.92x vs 1.5x"
+      "label": "0.91x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 19.68,
-      "threshold": 10.43,
-      "label": "Fwd 19.7x vs Trail 10.4x"
+      "value": 19.42,
+      "threshold": 10.3,
+      "label": "Fwd 19.4x vs Trail 10.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 4.54,
+      "value": 4.48,
       "threshold": 0.5,
-      "label": "P/S 13.6x ÷ Growth 3.0% = 4.54"
+      "label": "P/S 13.4x ÷ Growth 3.0% = 4.48"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 10.43,
-    "sectorPe": 11.4,
-    "pb": 0.92,
-    "ps": 13.61,
+    "pe": 10.3,
+    "sectorPe": 11.41,
+    "pb": 0.91,
+    "ps": 13.43,
     "evEbitda": null,
     "fcfYield": -0.25,
-    "forwardPe": 19.68,
-    "dividendYield": 4.91,
+    "forwardPe": 19.42,
+    "dividendYield": 4.98,
     "revenueGrowth": 3.0,
     "profitMargin": 162.23,
     "operatingMargin": 86.85,
