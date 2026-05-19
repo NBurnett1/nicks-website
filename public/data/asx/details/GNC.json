@@ -1,16 +1,12 @@
 {
   "ticker": "GNC",
   "name": "GRAINCORP FPO [GNC]",
-  "price": 5.21,
-  "valuationScore": 5.3,
-  "marketCap": "1.2B",
+  "price": 4.89,
+  "valuationScore": 4.7,
+  "marketCap": "1.1B",
   "sector": "Consumer Staples",
   "domain": "graincorp.com.au",
   "chartData": [
-    {
-      "date": "2025-05-18",
-      "price": 7.41
-    },
     {
       "date": "2025-05-25",
       "price": 7.21
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-17",
       "price": 5.21
+    },
+    {
+      "date": "2026-05-24",
+      "price": 4.89
     }
   ],
   "testsPassed": 2,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 28.94,
-      "threshold": 23.94,
-      "label": "28.9x vs 23.9x sector"
+      "value": 27.17,
+      "threshold": 23.56,
+      "label": "27.2x vs 23.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.85,
+      "value": 0.79,
       "threshold": 1.5,
-      "label": "0.85x vs 1.5x"
+      "label": "0.79x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 36.67,
+      "value": 35.85,
       "threshold": 10.0,
-      "label": "36.7x vs 10x"
+      "label": "35.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.83,
+      "value": 3.01,
       "threshold": 5.0,
-      "label": "2.8% vs 5%"
+      "label": "3.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 25.11,
-      "threshold": 28.94,
-      "label": "Fwd 25.1x vs Trail 28.9x"
+      "value": 23.57,
+      "threshold": 27.17,
+      "label": "Fwd 23.6x vs Trail 27.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 28.94,
-    "sectorPe": 28.16,
-    "pb": 0.85,
-    "ps": 0.16,
-    "evEbitda": 36.67,
-    "fcfYield": 2.83,
-    "forwardPe": 25.11,
-    "dividendYield": 5.37,
+    "pe": 27.17,
+    "sectorPe": 27.71,
+    "pb": 0.79,
+    "ps": 0.15,
+    "evEbitda": 35.85,
+    "fcfYield": 3.01,
+    "forwardPe": 23.57,
+    "dividendYield": 5.68,
     "revenueGrowth": -5.1,
     "profitMargin": -0.19,
     "operatingMargin": 0.49,

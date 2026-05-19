@@ -1,16 +1,12 @@
 {
   "ticker": "JHX",
   "name": "J HARDIE CDI 1:1 [JHX]",
-  "price": 26.94,
-  "valuationScore": 5.1,
+  "price": 26.81,
+  "valuationScore": 4.9,
   "marketCap": "15.6B",
   "sector": "Basic Materials",
   "domain": "jameshardie.com",
   "chartData": [
-    {
-      "date": "2025-05-18",
-      "price": 38.4
-    },
     {
       "date": "2025-05-25",
       "price": 36.51
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-17",
       "price": 26.94
+    },
+    {
+      "date": "2026-05-24",
+      "price": 26.81
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 81.64,
-      "threshold": 38.4,
-      "label": "81.6x vs 38.4x sector"
+      "value": 78.85,
+      "threshold": 38.65,
+      "label": "78.9x vs 38.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.74,
+      "value": 1.73,
       "threshold": 1.5,
-      "label": "1.74x vs 1.5x"
+      "label": "1.73x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 18.26,
+      "value": 17.78,
       "threshold": 10.0,
-      "label": "18.3x vs 10x"
+      "label": "17.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 1.92,
+      "value": 1.93,
       "threshold": 5.0,
       "label": "1.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 15.62,
-      "threshold": 81.64,
-      "label": "Fwd 15.6x vs Trail 81.6x"
+      "value": 15.5,
+      "threshold": 78.85,
+      "label": "Fwd 15.5x vs Trail 78.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 81.64,
-    "sectorPe": 45.18,
-    "pb": 1.74,
-    "ps": 3.55,
-    "evEbitda": 18.26,
-    "fcfYield": 1.92,
-    "forwardPe": 15.62,
+    "pe": 78.85,
+    "sectorPe": 45.47,
+    "pb": 1.73,
+    "ps": 3.53,
+    "evEbitda": 17.78,
+    "fcfYield": 1.93,
+    "forwardPe": 15.5,
     "dividendYield": null,
     "revenueGrowth": 30.1,
     "profitMargin": 2.71,

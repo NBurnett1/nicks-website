@@ -87,15 +87,17 @@ def generate_thesis(stock, detail):
 
     parts = []
 
-    # Grade summary
-    if tests >= 7:
-        parts.append(f"Perfect {tests}/8 valuation test score")
+    # Grade summary — labels must match actual test count
+    if tests == 8:
+        parts.append("Perfect 8/8 valuation test score")
+    elif tests >= 7:
+        parts.append(f"Excellent {tests}/8 valuation tests passed")
     elif tests >= 5:
         parts.append(f"Strong {tests}/8 valuation tests passed")
     elif tests >= 3:
         parts.append(f"Solid {tests}/8 valuation tests passed")
     else:
-        parts.append(f"{tests}/8 valuation tests flagged")
+        parts.append(f"Only {tests}/8 valuation tests passed")
 
     # Key metric highlights from detail
     if detail:
@@ -156,6 +158,98 @@ def check_price_trend(detail):
     return True, "trend OK", momentum
 
 
+def check_relative_strength(ticker, period="3mo"):
+    """Check stock's relative strength vs ASX200 (XJO).
+    Returns (passed: bool, reason: str, rs_score: float).
+    Rejects stocks underperforming the index by more than 5%."""
+    try:
+        stock = yf.Ticker(f"{ticker}.AX")
+        index = yf.Ticker("^AXJO")
+        stock_hist = stock.history(period=period)
+        index_hist = index.history(period=period)
+
+        if stock_hist is None or stock_hist.empty or len(stock_hist) < 10:
+            return True, "insufficient stock data", 0.0
+        if index_hist is None or index_hist.empty or len(index_hist) < 10:
+            return True, "insufficient index data", 0.0
+
+        stock_return = (float(stock_hist["Close"].iloc[-1]) - float(stock_hist["Close"].iloc[0])) / float(stock_hist["Close"].iloc[0]) * 100
+        index_return = (float(index_hist["Close"].iloc[-1]) - float(index_hist["Close"].iloc[0])) / float(index_hist["Close"].iloc[0]) * 100
+
+        relative_strength = stock_return - index_return
+
+        if relative_strength < -5.0:
+            return False, f"underperforming ASX200 by {abs(relative_strength):.1f}% (stock {stock_return:+.1f}% vs index {index_return:+.1f}%)", round(relative_strength / 10, 2)
+
+        return True, f"RS {relative_strength:+.1f}% vs ASX200", round(relative_strength / 10, 2)
+    except Exception as e:
+        return True, f"RS check failed: {str(e)[:50]}", 0.0
+
+
+def check_volume_liquidity(ticker, min_avg_volume=200_000):
+    """Check if stock has sufficient daily trading volume.
+    Returns (passed: bool, avg_volume: float).
+    Rejects stocks with average daily volume below threshold."""
+    try:
+        t = yf.Ticker(f"{ticker}.AX")
+        hist = t.history(period="1mo")
+        if hist is None or hist.empty or len(hist) < 5:
+            return True, 0  # Pass on insufficient data
+        avg_vol = float(hist["Volume"].mean())
+        if avg_vol < min_avg_volume:
+            return False, avg_vol
+        return True, avg_vol
+    except Exception:
+        return True, 0
+
+
+# ── Earnings Calendar Check ──
+# Flags stocks reporting earnings during the 4-week holding period
+
+def check_earnings_calendar(ticker, hold_end_date):
+    """Check if a stock has earnings scheduled within the holding period.
+    Returns (has_earnings: bool, earnings_date: str or None).
+    Uses yfinance calendar data when available."""
+    try:
+        t = yf.Ticker(f"{ticker}.AX")
+        cal = t.calendar
+        if cal is None or cal.empty:
+            return False, None
+
+        # yfinance returns earnings date in various formats
+        earnings_date = None
+        if isinstance(cal, dict):
+            ed = cal.get("Earnings Date")
+            if ed:
+                earnings_date = ed[0] if isinstance(ed, list) else ed
+        else:
+            # DataFrame format
+            if "Earnings Date" in cal.index:
+                earnings_date = cal.loc["Earnings Date"].iloc[0] if len(cal.columns) > 0 else None
+
+        if earnings_date is None:
+            return False, None
+
+        # Parse and compare
+        from datetime import datetime as dt
+        if isinstance(earnings_date, str):
+            try:
+                ed = dt.strptime(earnings_date, "%Y-%m-%d").replace(tzinfo=AEST)
+            except ValueError:
+                return False, None
+        elif hasattr(earnings_date, 'date'):
+            ed = earnings_date
+        else:
+            return False, None
+
+        now = datetime.now(AEST)
+        if now <= ed <= hold_end_date:
+            return True, str(ed)[:10]
+        return False, None
+    except Exception:
+        return False, None
+
+
 # ── Qualitative Screening (Deep Dive + Short Report) ──
 # Uses Gemini to assess business quality, asymmetry, and bear case risks
 # for candidate picks before they go live.
@@ -185,14 +279,14 @@ def qualify_picks(picks, details_dir, sector_biases=None):
     client = _get_gemini_client()
     if client is None:
         print("  ⚠ Gemini API unavailable — skipping qualitative screening")
-        print("  ⚠ Capping to 3 picks max without qualitative validation")
+        print("  ⚠ HARD CAP: 2 picks max without qualitative validation (reduced risk)")
         for p in picks:
             p["qualScore"] = None
-            p["qualReasoning"] = "Qualitative screening skipped (no API)"
+            p["qualReasoning"] = "⚠ UNVALIDATED: Qualitative screening skipped (no API key)"
             p["qualPassed"] = True
-        return picks[:3]  # Reduce exposure when we can't validate quality
+        return picks[:2]  # Reduced from 3 → 2: less exposure without AI validation
 
-    print(f"  🧠 Running qualitative screening on {len(picks)} candidates...")
+    print(f"  🧠 Running adversarial qualitative screening on {len(picks)} candidates...")
     screened = []
 
     for p in picks:
@@ -222,39 +316,51 @@ def qualify_picks(picks, details_dir, sector_biases=None):
         bias = _find_sector_bias(sector, sector_biases or {})
         bias_label = _bias_label(bias)
 
-        prompt = f"""You are a senior equity analyst performing due diligence on an ASX stock pick.
+        prompt = f"""You are a ruthlessly honest portfolio manager. Your job is to CHALLENGE this stock pick, not confirm it.
+Your default stance is REJECT. Only pass stocks you would genuinely invest your own savings in for 4 weeks.
 
 Stock: {name} ({ticker}.AX)
 Sector: {sector} | Market Cap: {mcap} | Price: A${price:.2f}
-Valuation Grade: {grade} ({tests}/8 tests passed)
-Pick Type: {pick_type} | Macro Bias: {bias_label} ({bias:+.1f})
+Valuation Grade: {grade} ({tests}/8 quantitative tests passed)
+Holding Period: 4 weeks | Macro Bias: {bias_label} ({bias:+.1f})
 {metrics_context}
 
-Perform TWO analyses and return a JSON object:
+Answer these questions HONESTLY:
 
-1. DEEP DIVE — Assess:
-   - Business Model: How does this company make money? Is it simple to understand?
-   - Moat: Does it have any competitive advantage (brand, patents, switching costs, network effects)?
-   - Catalyst: Any upcoming events in the next 3-6 months that could move the stock?
-   - Asymmetry: Is the downside limited (asset floor, cash backing) while upside is meaningful?
+1. VALUE TRAP TEST: Is this stock cheap BECAUSE of a structural problem (declining industry,
+   losing market share, management issues, regulatory risk)? Cheap alone is NOT a reason to buy.
 
-2. SHORT REPORT (bear case) — As a skeptic, identify:
-   - The #1 risk that could cause a 20%+ drawdown
-   - Any customer concentration, accounting concerns, or competitive threats
-   - Whether the "cheapness" is a value trap (cheap for a reason)
+2. CATALYST TEST: What specific event in the next 4 weeks could move this stock UP?
+   If the answer is "nothing specific" — that's a strong reason to reject.
+
+3. KILL SHOT: What is the single most likely scenario that causes a 10%+ loss in 4 weeks?
+   Be specific (earnings miss, sector rotation, macro shock, liquidity dry-up).
+
+4. PERSONAL MONEY TEST: Would you put A$10,000 of your own savings into this stock today
+   for exactly 4 weeks? If not, why not?
+
+5. RELATIVE VALUE: Are there obviously better opportunities in the same sector or market
+   right now? If yes, this stock should be rejected.
 
 Return ONLY this JSON (no markdown):
 {{
-  "businessModel": "1-2 sentence plain English description",
+  "isValueTrap": true/false,
+  "valueTrapReason": "Why it is or isn't a value trap",
+  "catalyst": "Specific 4-week catalyst or 'none identified'",
+  "killShot": "The most likely way this trade loses 10%+ in 4 weeks",
+  "wouldInvestOwnMoney": true/false,
+  "whyNotOwnMoney": "Honest reason if you wouldn't invest own money (or 'N/A')",
+  "betterAlternativeExists": true/false,
   "moatStrength": "none|weak|moderate|strong",
-  "catalyst": "Specific upcoming catalyst or 'none identified'",
   "asymmetry": "favorable|neutral|unfavorable",
-  "bearCase": "The strongest bear case in 1-2 sentences",
   "bearSeverity": "low|medium|high|critical",
   "conviction": 1-10,
   "recommendation": "pass|reject",
-  "reasoning": "1-2 sentence summary of why to pick or reject"
-}}"""
+  "reasoning": "2-3 sentence brutally honest assessment"
+}}
+
+CRITICAL: A conviction score of 7+ means you would GENUINELY bet your own money.
+Anything below 7 should be "reject". Do NOT be generous — most stocks should fail this screen."""
 
         try:
             response = client.models.generate_content(
@@ -275,28 +381,40 @@ Return ONLY this JSON (no markdown):
             recommendation = result.get("recommendation", "pass")
             bear_severity = result.get("bearSeverity", "medium")
             asymmetry = result.get("asymmetry", "neutral")
+            is_value_trap = result.get("isValueTrap", False)
+            would_invest = result.get("wouldInvestOwnMoney", False)
 
             p["qualScore"] = conviction
             p["qualReasoning"] = result.get("reasoning", "")
             p["qualDetail"] = {
-                "businessModel": result.get("businessModel", ""),
+                "businessModel": result.get("valueTrapReason", ""),
                 "moatStrength": result.get("moatStrength", "unknown"),
                 "catalyst": result.get("catalyst", ""),
+                "killShot": result.get("killShot", ""),
                 "asymmetry": asymmetry,
-                "bearCase": result.get("bearCase", ""),
+                "bearCase": result.get("killShot", ""),
                 "bearSeverity": bear_severity,
+                "isValueTrap": is_value_trap,
+                "wouldInvestOwnMoney": would_invest,
             }
 
             # Kill switch: reject if ANY of these red flags trigger independently
+            # Thresholds TIGHTENED from Cycle 1 post-mortem
             reject_reasons = []
-            if bear_severity == "critical":
-                reject_reasons.append("critical bear severity")
+            if bear_severity in ("critical", "high"):
+                reject_reasons.append(f"{bear_severity} bear severity")
             if recommendation == "reject":
-                reject_reasons.append("Gemini recommends reject")
-            if conviction < 4:
-                reject_reasons.append(f"low conviction ({conviction}/10)")
+                reject_reasons.append("AI recommends reject")
+            if conviction < 7:
+                reject_reasons.append(f"conviction {conviction}/10 (need 7+)")
+            if is_value_trap:
+                reject_reasons.append("identified as value trap")
+            if not would_invest:
+                reject_reasons.append("wouldn't invest own money")
             if result.get("moatStrength") == "none" and asymmetry == "unfavorable":
                 reject_reasons.append("no moat + unfavorable asymmetry")
+            if result.get("betterAlternativeExists"):
+                reject_reasons.append("better alternatives exist")
 
             if reject_reasons:
                 p["qualPassed"] = False
@@ -308,14 +426,15 @@ Return ONLY this JSON (no markdown):
 
             print(f"    {icon} {ticker}: conviction={conviction}/10, "
                   f"moat={result.get('moatStrength', '?')}, "
-                  f"asymmetry={asymmetry}, "
+                  f"trap={'YES' if is_value_trap else 'no'}, "
+                  f"own_money={'YES' if would_invest else 'NO'}, "
                   f"bear={bear_severity} → {recommendation}")
 
         except Exception as e:
-            print(f"    ⚠ {ticker}: Screening failed ({str(e)[:80]}) — keeping pick")
+            print(f"    ⚠ {ticker}: Screening failed ({str(e)[:80]}) — marking unvalidated")
             p["qualScore"] = None
-            p["qualReasoning"] = f"Screening error: {str(e)[:100]}"
-            p["qualPassed"] = True  # Don't reject on API errors
+            p["qualReasoning"] = f"⚠ UNVALIDATED: Screening error: {str(e)[:100]}"
+            p["qualPassed"] = True  # Don't reject on API errors, but flag it
 
         # Gentle rate limit
         time.sleep(2)
@@ -323,10 +442,10 @@ Return ONLY this JSON (no markdown):
     return picks
 
 
-def select_core_picks(index_data, details_dir, exclude_tickers=None, sector_biases=None):
-    """Select top 4 core picks: Grade A/B, sector-diversified, $500M+ market cap.
-    Filters: profitability gate, leverage cap, macro headwind rejection.
-    Uses macro sector biases to rank stocks by combined valuation + macro score."""
+def select_core_picks(index_data, details_dir, exclude_tickers=None, sector_biases=None, hold_end_date=None):
+    """Select top 3 core picks: Grade A/B, sector-diversified, $500M+ market cap.
+    Filters: profitability gate, leverage cap, macro headwind rejection, liquidity.
+    Uses macro sector biases to rank stocks by combined valuation + macro + quality score."""
     exclude_tickers = exclude_tickers or set()
     sector_biases = sector_biases or {}
     undervalued = index_data.get("undervalued", [])
@@ -344,11 +463,12 @@ def select_core_picks(index_data, details_dir, exclude_tickers=None, sector_bias
         if mc < MIN_MARKET_CAP_CORE:
             continue
 
-        # Skip stocks in strongly headwind sectors (bias < -0.5) — no grade exemptions
+        # Skip stocks in ANY headwind sector (bias <= -0.3) — tightened from -0.5
+        # A 4-week conviction hold should never fight macro headwinds
         sector = s.get("sector", "Unknown")
         bias = _find_sector_bias(sector, sector_biases)
-        if bias <= -0.5:
-            print(f"    ⛔ Skipping {s['ticker']} — {sector} has strong headwind ({bias:+.1f})")
+        if bias <= -0.3:
+            print(f"    ⛔ Skipping {s['ticker']} — {sector} has headwind ({bias:+.1f})")
             continue
 
         # ── Profitability & leverage gate (load detail metrics) ──
@@ -388,15 +508,50 @@ def select_core_picks(index_data, details_dir, exclude_tickers=None, sector_bias
         else:
             momentum = 0.0
 
-        # Compute combined score: valuation + macro + momentum
+        # ── Relative strength vs ASX200: reject value traps ──
+        rs_ok, rs_reason, rs_score = check_relative_strength(s["ticker"])
+        if not rs_ok:
+            print(f"    ⛔ Skipping {s['ticker']} — {rs_reason}")
+            continue
+
+        # ── Volume/liquidity gate: reject illiquid stocks ──
+        vol_ok, avg_vol = check_volume_liquidity(s["ticker"])
+        if not vol_ok:
+            print(f"    ⛔ Skipping {s['ticker']} — illiquid (avg vol {avg_vol:,.0f}, need 200k+)")
+            continue
+
+        # ── Quality score: reward margin expansion + revenue growth ──
+        quality_bonus = 0.0
+        if detail:
+            m = detail.get("metrics", {})
+            pm = m.get("profitMargin")
+            rev_growth = m.get("revenueGrowth")
+            roe = m.get("roe")
+            # Reward growing, profitable businesses
+            if rev_growth is not None and rev_growth > 5:
+                quality_bonus += 1.5  # Growing revenue
+            if pm is not None and pm > 10:
+                quality_bonus += 1.0  # Strong margins
+            if roe is not None and roe > 15:
+                quality_bonus += 1.0  # High return on equity
+            # Penalize declining or low-quality businesses
+            if rev_growth is not None and rev_growth < 0:
+                quality_bonus -= 2.0  # Shrinking revenue = danger
+            if pm is not None and pm < 5:
+                quality_bonus -= 1.0  # Thin margins
+
+        # Compute combined score: valuation + macro + momentum + quality + relative strength
         val_score = grade_base.get(grade, 0) + (s.get("testsPassed", 0) * 0.5)
         # Heavier penalty for headwinds than reward for tailwinds
         macro_boost = bias * 3.0 if bias >= 0 else bias * 5.0
         momentum_boost = momentum * 2.0  # Prefer stocks in uptrends
-        combined = val_score + macro_boost + momentum_boost
+        rs_boost = rs_score * 2.0  # Reward stocks outperforming ASX200
+        combined = val_score + macro_boost + momentum_boost + quality_bonus + rs_boost
         s["_combinedScore"] = round(combined, 2)
         s["_macroBias"] = round(bias, 2)
         s["_momentum"] = momentum
+        s["_qualityBonus"] = round(quality_bonus, 2)
+        s["_rsScore"] = round(rs_score, 2)
         candidates.append(s)
 
     # Sort by combined score (valuation + macro), not just valuation
@@ -422,7 +577,7 @@ def select_core_picks(index_data, details_dir, exclude_tickers=None, sector_bias
                 if len(selected) >= CORE_PICKS:
                     break
 
-    # Load details for thesis generation
+    # Load details for thesis generation + earnings calendar check
     picks = []
     for rank, stock in enumerate(selected[:CORE_PICKS], 1):
         detail = _load_detail(details_dir, stock["ticker"])
@@ -431,6 +586,16 @@ def select_core_picks(index_data, details_dir, exclude_tickers=None, sector_bias
         thesis = generate_thesis(stock, detail)
         if bias != 0:
             thesis = thesis.rstrip(".") + f". Macro: {macro_label} for {stock.get('sector', 'sector')}."
+
+        # Check earnings calendar
+        earnings_warning = ""
+        if hold_end_date:
+            has_earnings, earnings_date = check_earnings_calendar(stock["ticker"], hold_end_date)
+            if has_earnings:
+                earnings_warning = f" ⚠️ Earnings due {earnings_date} — binary event risk."
+                thesis = thesis.rstrip(".") + f".{earnings_warning}"
+                print(f"    📅 {stock['ticker']} has earnings on {earnings_date} during hold period")
+
         picks.append({
             "rank": rank,
             "ticker": stock["ticker"],
@@ -448,6 +613,7 @@ def select_core_picks(index_data, details_dir, exclude_tickers=None, sector_bias
             "type": "core",
             "macroBias": bias,
             "macroLabel": macro_label,
+            "hasEarnings": bool(earnings_warning),
         })
 
     return picks
@@ -642,8 +808,8 @@ def generate_cycle(cycle_num, index_data, details_dir, cycles_dir, backfill=Fals
     if exclude:
         print(f"     Excluding {len(exclude)} previously picked tickers: {', '.join(sorted(exclude))}")
 
-    # Select picks with macro overlay
-    core = select_core_picks(index_data, details_dir, exclude_tickers=exclude, sector_biases=sector_biases)
+    # Select picks with macro overlay + earnings awareness
+    core = select_core_picks(index_data, details_dir, exclude_tickers=exclude, sector_biases=sector_biases, hold_end_date=friday)
 
     picks = core
 

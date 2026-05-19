@@ -1,16 +1,12 @@
 {
   "ticker": "PDN",
   "name": "PALADIN FPO [PDN]",
-  "price": 10.65,
-  "valuationScore": 42.1,
-  "marketCap": "4.8B",
+  "price": 10.57,
+  "valuationScore": 40.3,
+  "marketCap": "4.7B",
   "sector": "Energy",
   "domain": "paladinenergy.com.au",
   "chartData": [
-    {
-      "date": "2025-05-18",
-      "price": 5.9
-    },
     {
       "date": "2025-05-25",
       "price": 5.77
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-17",
       "price": 10.65
+    },
+    {
+      "date": "2026-05-24",
+      "price": 10.57
     }
   ],
   "testsPassed": 1,
@@ -233,28 +233,28 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.93,
+      "value": 2.91,
       "threshold": 1.5,
-      "label": "2.93x vs 1.5x"
+      "label": "2.91x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 87.78,
+      "value": 85.49,
       "threshold": 10.0,
-      "label": "87.8x vs 10x"
+      "label": "85.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -2.34,
+      "value": -2.36,
       "threshold": 5.0,
-      "label": "-2.3% vs 5%"
+      "label": "-2.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 44.2,
+      "value": 42.53,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 1.2,
+      "value": 1.19,
       "threshold": 0.5,
-      "label": "P/S 19.3x ÷ Growth 16.0% = 1.20"
+      "label": "P/S 19.1x ÷ Growth 16.0% = 1.19"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 19.47,
-    "pb": 2.93,
-    "ps": 19.26,
-    "evEbitda": 87.78,
-    "fcfYield": -2.34,
-    "forwardPe": 44.2,
+    "sectorPe": 19.58,
+    "pb": 2.91,
+    "ps": 19.11,
+    "evEbitda": 85.49,
+    "fcfYield": -2.36,
+    "forwardPe": 42.53,
     "dividendYield": null,
     "revenueGrowth": 16.0,
     "profitMargin": -5.2,

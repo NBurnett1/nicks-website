@@ -1,16 +1,12 @@
 {
   "ticker": "BHP",
   "name": "BHP GROUP FPO [BHP]",
-  "price": 60.46,
-  "valuationScore": -0.8,
-  "marketCap": "307.2B",
+  "price": 58.31,
+  "valuationScore": -1.0,
+  "marketCap": "296.3B",
   "sector": "Materials",
   "domain": "bhp.com",
   "chartData": [
-    {
-      "date": "2025-05-18",
-      "price": 38.13
-    },
     {
       "date": "2025-05-25",
       "price": 36.82
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-17",
       "price": 60.46
+    },
+    {
+      "date": "2026-05-24",
+      "price": 58.31
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 21.75,
-      "threshold": 18.77,
-      "label": "21.7x vs 18.8x sector"
+      "value": 20.68,
+      "threshold": 17.78,
+      "label": "20.7x vs 17.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.42,
+      "value": 4.26,
       "threshold": 1.5,
-      "label": "4.42x vs 1.5x"
+      "label": "4.26x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 12.46,
+      "value": 12.14,
       "threshold": 10.0,
-      "label": "12.5x vs 10x"
+      "label": "12.1x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.65,
+      "value": 2.75,
       "threshold": 5.0,
-      "label": "2.6% vs 5%"
+      "label": "2.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 17.08,
-      "threshold": 21.75,
-      "label": "Fwd 17.1x vs Trail 21.7x"
+      "value": 16.19,
+      "threshold": 20.68,
+      "label": "Fwd 16.2x vs Trail 20.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.53,
+      "value": 0.51,
       "threshold": 0.5,
-      "label": "P/S 5.7x ÷ Growth 10.8% = 0.53"
+      "label": "P/S 5.5x ÷ Growth 10.8% = 0.51"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 21.75,
-    "sectorPe": 22.09,
-    "pb": 4.42,
-    "ps": 5.69,
-    "evEbitda": 12.46,
-    "fcfYield": 2.65,
-    "forwardPe": 17.08,
-    "dividendYield": 3.24,
+    "pe": 20.68,
+    "sectorPe": 20.92,
+    "pb": 4.26,
+    "ps": 5.49,
+    "evEbitda": 12.14,
+    "fcfYield": 2.75,
+    "forwardPe": 16.19,
+    "dividendYield": 3.33,
     "revenueGrowth": 10.8,
     "profitMargin": 18.97,
     "operatingMargin": 40.73,

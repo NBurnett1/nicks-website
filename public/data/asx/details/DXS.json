@@ -1,16 +1,12 @@
 {
   "ticker": "DXS",
   "name": "DEXUS STAPLED [DXS]",
-  "price": 6.01,
-  "valuationScore": -7.4,
-  "marketCap": "6.4B",
+  "price": 6.09,
+  "valuationScore": -6.7,
+  "marketCap": "6.5B",
   "sector": "Real Estate",
   "domain": "dexus.com",
   "chartData": [
-    {
-      "date": "2025-05-18",
-      "price": 6.85
-    },
     {
       "date": "2025-05-25",
       "price": 6.66
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-17",
       "price": 6.01
+    },
+    {
+      "date": "2026-05-24",
+      "price": 6.09
     }
   ],
   "testsPassed": 5,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 13.07,
-      "threshold": 9.7,
-      "label": "13.1x vs 9.7x sector"
+      "value": 13.24,
+      "threshold": 9.63,
+      "label": "13.2x vs 9.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.67,
+      "value": 0.68,
       "threshold": 1.5,
-      "label": "0.67x vs 1.5x"
+      "label": "0.68x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 12.5,
+      "value": 12.45,
       "threshold": 10.0,
       "label": "12.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 14.28,
+      "value": 14.09,
       "threshold": 5.0,
-      "label": "14.3% vs 5%"
+      "label": "14.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 9.85,
-      "threshold": 13.07,
-      "label": "Fwd 9.9x vs Trail 13.1x"
+      "value": 9.98,
+      "threshold": 13.24,
+      "label": "Fwd 10.0x vs Trail 13.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 13.07,
-    "sectorPe": 11.41,
-    "pb": 0.67,
-    "ps": 4.57,
-    "evEbitda": 12.5,
-    "fcfYield": 14.28,
-    "forwardPe": 9.85,
-    "dividendYield": 6.21,
+    "pe": 13.24,
+    "sectorPe": 11.33,
+    "pb": 0.68,
+    "ps": 4.63,
+    "evEbitda": 12.45,
+    "fcfYield": 14.09,
+    "forwardPe": 9.98,
+    "dividendYield": 6.25,
     "revenueGrowth": 22.7,
     "profitMargin": 38.96,
     "operatingMargin": 67.2,

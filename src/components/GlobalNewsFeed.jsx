@@ -165,7 +165,10 @@ export default function GlobalNewsFeed({ variant = 'full', maxArticles, classNam
       if (cachedRes.ok) {
         const cached = await cachedRes.json()
         if (cached.feedArticles?.length > 0) {
-          setArticles(cached.feedArticles)
+          // Sort by pubDate descending (most recent first)
+          const sorted = [...cached.feedArticles]
+            .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate))
+          setArticles(sorted)
           setLoading(false)
           // Don't return — still try live fetch to get newer data
         }

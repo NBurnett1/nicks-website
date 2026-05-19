@@ -1,16 +1,12 @@
 {
   "ticker": "RHC",
   "name": "RAMSAY FPO [RHC]",
-  "price": 37.56,
-  "valuationScore": -2.0,
-  "marketCap": "8.7B",
+  "price": 38.34,
+  "valuationScore": -1.7,
+  "marketCap": "8.9B",
   "sector": "Healthcare",
   "domain": "ramsayhealth.com",
   "chartData": [
-    {
-      "date": "2025-05-18",
-      "price": 35.33
-    },
     {
       "date": "2025-05-25",
       "price": 35.37
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-17",
       "price": 37.56
+    },
+    {
+      "date": "2026-05-24",
+      "price": 38.34
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 29.81,
-      "threshold": 16.84,
-      "label": "29.8x vs 16.8x sector"
+      "value": 30.43,
+      "threshold": 16.7,
+      "label": "30.4x vs 16.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.8,
+      "value": 1.84,
       "threshold": 1.5,
-      "label": "1.80x vs 1.5x"
+      "label": "1.84x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 12.64,
+      "value": 12.58,
       "threshold": 10.0,
       "label": "12.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 8.69,
+      "value": 8.51,
       "threshold": 5.0,
-      "label": "8.7% vs 5%"
+      "label": "8.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 22.65,
-      "threshold": 29.81,
-      "label": "Fwd 22.6x vs Trail 29.8x"
+      "value": 23.12,
+      "threshold": 30.43,
+      "label": "Fwd 23.1x vs Trail 30.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 29.81,
-    "sectorPe": 19.81,
-    "pb": 1.8,
-    "ps": 0.47,
-    "evEbitda": 12.64,
-    "fcfYield": 8.69,
-    "forwardPe": 22.65,
-    "dividendYield": 2.26,
+    "pe": 30.43,
+    "sectorPe": 19.65,
+    "pb": 1.84,
+    "ps": 0.48,
+    "evEbitda": 12.58,
+    "fcfYield": 8.51,
+    "forwardPe": 23.12,
+    "dividendYield": 2.29,
     "revenueGrowth": 9.7,
     "profitMargin": 1.55,
     "operatingMargin": 5.59,

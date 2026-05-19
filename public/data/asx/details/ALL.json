@@ -1,16 +1,12 @@
 {
   "ticker": "ALL",
   "name": "ARISTOCRAT FPO [ALL]",
-  "price": 51.53,
-  "valuationScore": 7.9,
-  "marketCap": "31.1B",
+  "price": 52.03,
+  "valuationScore": 8.2,
+  "marketCap": "31.4B",
   "sector": "Consumer Discretionary",
   "domain": "aristocrat.com",
   "chartData": [
-    {
-      "date": "2025-05-18",
-      "price": 61.89
-    },
     {
       "date": "2025-05-25",
       "price": 60.22
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-17",
       "price": 51.53
+    },
+    {
+      "date": "2026-05-24",
+      "price": 52.03
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 27.26,
-      "threshold": 13.99,
-      "label": "27.3x vs 14.0x sector"
+      "value": 27.53,
+      "threshold": 13.77,
+      "label": "27.5x vs 13.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 5.03,
+      "value": 5.08,
       "threshold": 1.5,
-      "label": "5.03x vs 1.5x"
+      "label": "5.08x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 14.01,
+      "value": 13.98,
       "threshold": 10.0,
       "label": "14.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.94,
+      "value": 2.91,
       "threshold": 5.0,
       "label": "2.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 17.96,
-      "threshold": 27.26,
-      "label": "Fwd 18.0x vs Trail 27.3x"
+      "value": 18.13,
+      "threshold": 27.53,
+      "label": "Fwd 18.1x vs Trail 27.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 27.26,
-    "sectorPe": 16.46,
-    "pb": 5.03,
-    "ps": 4.94,
-    "evEbitda": 14.01,
-    "fcfYield": 2.94,
-    "forwardPe": 17.96,
-    "dividendYield": 1.92,
+    "pe": 27.53,
+    "sectorPe": 16.2,
+    "pb": 5.08,
+    "ps": 4.99,
+    "evEbitda": 13.98,
+    "fcfYield": 2.91,
+    "forwardPe": 18.13,
+    "dividendYield": 1.93,
     "revenueGrowth": -0.2,
     "profitMargin": 23.46,
     "operatingMargin": 28.62,

@@ -1,16 +1,12 @@
 {
   "ticker": "BWP",
   "name": "BWPPROPGP STAPLED [BWP]",
-  "price": 3.81,
+  "price": 3.82,
   "valuationScore": 2.7,
   "marketCap": "2.8B",
   "sector": "Real Estate",
   "domain": "bwptrust.com.au",
   "chartData": [
-    {
-      "date": "2025-05-18",
-      "price": 3.43
-    },
     {
       "date": "2025-05-25",
       "price": 3.41
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-17",
       "price": 3.81
+    },
+    {
+      "date": "2026-05-24",
+      "price": 3.82
     }
   ],
   "testsPassed": 3,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 10.3,
-      "threshold": 9.7,
-      "label": "10.3x vs 9.7x sector"
+      "value": 10.32,
+      "threshold": 9.63,
+      "label": "10.3x vs 9.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 19.42,
-      "threshold": 10.3,
-      "label": "Fwd 19.4x vs Trail 10.3x"
+      "value": 19.47,
+      "threshold": 10.32,
+      "label": "Fwd 19.5x vs Trail 10.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 4.48,
+      "value": 4.49,
       "threshold": 0.5,
-      "label": "P/S 13.4x ÷ Growth 3.0% = 4.48"
+      "label": "P/S 13.5x ÷ Growth 3.0% = 4.49"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 10.3,
-    "sectorPe": 11.41,
+    "pe": 10.32,
+    "sectorPe": 11.33,
     "pb": 0.91,
-    "ps": 13.43,
+    "ps": 13.46,
     "evEbitda": null,
     "fcfYield": -0.25,
-    "forwardPe": 19.42,
-    "dividendYield": 4.98,
+    "forwardPe": 19.47,
+    "dividendYield": 5.03,
     "revenueGrowth": 3.0,
     "profitMargin": 162.23,
     "operatingMargin": 86.85,

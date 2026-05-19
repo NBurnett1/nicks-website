@@ -103,7 +103,10 @@ export default function TopStories({ className = '' }) {
           const generatedAt = cached.generatedAt ? new Date(cached.generatedAt) : null
           const ageHours = generatedAt ? (Date.now() - generatedAt.getTime()) / (1000 * 60 * 60) : 999
           if (ageHours < 26) {
-            setStories(cached.topStories.slice(0, 3).map(s => ({
+            // Sort by pubDate descending (most recent first)
+            const sorted = [...cached.topStories]
+              .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate))
+            setStories(sorted.slice(0, 3).map(s => ({
               ...s,
               sourceIcon: s.sourceIcon || '🌐',
             })))

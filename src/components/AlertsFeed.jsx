@@ -49,7 +49,13 @@ export default function AlertsFeed() {
         return res.json()
       })
       .then(data => {
-        setAlerts(data.alerts || [])
+        // Sort alerts by timestamp: most recent first
+        const sortedAlerts = (data.alerts || []).sort((a, b) => {
+          const dateA = new Date(a.timestamp || 0)
+          const dateB = new Date(b.timestamp || 0)
+          return dateB - dateA
+        })
+        setAlerts(sortedAlerts)
         setMeta({
           lastUpdated: data.lastUpdated,
           stocksScanned: data.stocksScanned,

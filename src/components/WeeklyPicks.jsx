@@ -13,6 +13,7 @@ const GRADE_COLORS = {
 
 export default function WeeklyPicks({ exchange = 'ASX' }) {
   const [weekData, setWeekData] = useState(null)
+  const [nextCycleDate, setNextCycleDate] = useState(null)
   const [loading, setLoading] = useState(true)
   const navigate = useNavigate()
 
@@ -21,7 +22,12 @@ export default function WeeklyPicks({ exchange = 'ASX' }) {
     fetch('/data/cycles/index.json')
       .then(res => res.ok ? res.json() : null)
       .then(index => {
-        if (!index?.cycles?.length) { setLoading(false); return }
+        if (!index?.cycles?.length) {
+          // No cycles — show awaiting state
+          setNextCycleDate(index?.nextCycleDate || '2026-06-01')
+          setLoading(false)
+          return
+        }
         // Find the active or latest cycle
         const active = index.cycles.find(c => c.status === 'active')
         const latest = index.cycles[index.cycles.length - 1]
@@ -45,13 +51,55 @@ export default function WeeklyPicks({ exchange = 'ASX' }) {
       <div className="weekly-picks">
         <div className="weekly-picks__loading">
           <div className="weekly-picks__loading-spinner" />
-          Loading this week's picks…
+          Loading picks…
         </div>
       </div>
     )
   }
 
-  if (!weekData) return null
+  // ── Awaiting New Picks State ──
+  if (!weekData) {
+    const launchDate = nextCycleDate ? new Date(nextCycleDate) : new Date('2026-06-01')
+    const now = new Date()
+    const daysUntil = Math.max(0, Math.ceil((launchDate - now) / (1000 * 60 * 60 * 24)))
+    const dateFormatted = launchDate.toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' })
+
+    return (
+      <div className="weekly-picks" id="weekly-picks">
+        <div className="weekly-picks__awaiting">
+          <div className="weekly-picks__awaiting-glow" />
+          <div className="weekly-picks__awaiting-icon">⏳</div>
+          <h2 className="weekly-picks__awaiting-title">Awaiting New Picks</h2>
+          <p className="weekly-picks__awaiting-subtitle">
+            Our selection engine has been upgraded with tighter filters, adversarial AI screening,
+            and quality-first ranking. The next cycle of high-conviction picks drops on:
+          </p>
+          <div className="weekly-picks__awaiting-date">
+            <span className="weekly-picks__awaiting-date-day">{dateFormatted}</span>
+            {daysUntil > 0 && (
+              <span className="weekly-picks__awaiting-date-countdown">
+                {daysUntil} day{daysUntil !== 1 ? 's' : ''} to go
+              </span>
+            )}
+          </div>
+          <div className="weekly-picks__awaiting-features">
+            <div className="weekly-picks__awaiting-feature">
+              <span className="weekly-picks__awaiting-feature-icon">🛡️</span>
+              <span>Macro-aligned sector filtering</span>
+            </div>
+            <div className="weekly-picks__awaiting-feature">
+              <span className="weekly-picks__awaiting-feature-icon">📊</span>
+              <span>Relative strength vs ASX200</span>
+            </div>
+            <div className="weekly-picks__awaiting-feature">
+              <span className="weekly-picks__awaiting-feature-icon">🧠</span>
+              <span>Adversarial AI conviction screening</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  }
 
   const corePicks = weekData.picks.filter(p => p.type === 'core')
   const heroPick = corePicks[0]

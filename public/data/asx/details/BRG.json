@@ -1,16 +1,12 @@
 {
   "ticker": "BRG",
   "name": "BREVILLE FPO [BRG]",
-  "price": 29.26,
-  "valuationScore": 10.7,
+  "price": 29.23,
+  "valuationScore": 10.9,
   "marketCap": "4.2B",
   "sector": "Consumer Discretionary",
   "domain": "brevillegroup.com",
   "chartData": [
-    {
-      "date": "2025-05-18",
-      "price": 30.58
-    },
     {
       "date": "2025-05-25",
       "price": 28.94
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-17",
       "price": 29.26
+    },
+    {
+      "date": "2026-05-24",
+      "price": 29.23
     }
   ],
   "testsPassed": 4,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 31.46,
-      "threshold": 13.99,
-      "label": "31.5x vs 14.0x sector"
+      "value": 31.43,
+      "threshold": 13.77,
+      "label": "31.4x vs 13.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,9 +240,9 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 19.16,
+      "value": 18.99,
       "threshold": 10.0,
-      "label": "19.2x vs 10x"
+      "label": "19.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 27.26,
-      "threshold": 31.46,
-      "label": "Fwd 27.3x vs Trail 31.5x"
+      "value": 27.23,
+      "threshold": 31.43,
+      "label": "Fwd 27.2x vs Trail 31.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 31.46,
-    "sectorPe": 16.46,
+    "pe": 31.43,
+    "sectorPe": 16.2,
     "pb": 4.04,
-    "ps": 2.36,
-    "evEbitda": 19.16,
+    "ps": 2.35,
+    "evEbitda": 18.99,
     "fcfYield": 2.15,
-    "forwardPe": 27.26,
-    "dividendYield": 1.3,
+    "forwardPe": 27.23,
+    "dividendYield": 1.31,
     "revenueGrowth": 10.1,
     "profitMargin": 7.6,
     "operatingMargin": 13.26,

@@ -2,15 +2,11 @@
   "ticker": "AZJ",
   "name": "AURIZON FPO [AZJ]",
   "price": 4.22,
-  "valuationScore": -4.3,
+  "valuationScore": -4.1,
   "marketCap": "7.1B",
   "sector": "Industrials",
   "domain": "aurizon.com.au",
   "chartData": [
-    {
-      "date": "2025-05-18",
-      "price": 2.87
-    },
     {
       "date": "2025-05-25",
       "price": 2.78
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-17",
       "price": 4.22
+    },
+    {
+      "date": "2026-05-24",
+      "price": 4.22
     }
   ],
   "testsPassed": 5,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 23.44,
-      "threshold": 25.71,
-      "label": "23.4x vs 25.7x sector"
+      "value": 23.47,
+      "threshold": 26.69,
+      "label": "23.5x vs 26.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,23 +240,23 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 8.22,
+      "value": 8.16,
       "threshold": 10.0,
       "label": "8.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.03,
+      "value": 5.02,
       "threshold": 5.0,
       "label": "5.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.95,
-      "threshold": 23.44,
-      "label": "Fwd 15.0x vs Trail 23.4x"
+      "value": 14.97,
+      "threshold": 23.47,
+      "label": "Fwd 15.0x vs Trail 23.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 23.44,
-    "sectorPe": 30.25,
+    "pe": 23.47,
+    "sectorPe": 31.4,
     "pb": 1.75,
     "ps": 1.78,
-    "evEbitda": 8.22,
-    "fcfYield": 5.03,
-    "forwardPe": 14.95,
-    "dividendYield": 4.5,
+    "evEbitda": 8.16,
+    "fcfYield": 5.02,
+    "forwardPe": 14.97,
+    "dividendYield": 4.56,
     "revenueGrowth": 2.1,
     "profitMargin": 7.63,
     "operatingMargin": 24.91,

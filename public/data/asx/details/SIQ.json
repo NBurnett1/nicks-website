@@ -1,16 +1,12 @@
 {
   "ticker": "SIQ",
   "name": "SMARTGROUP FPO [SIQ]",
-  "price": 11.14,
-  "valuationScore": 0.2,
-  "marketCap": "1.5B",
+  "price": 11.47,
+  "valuationScore": 1.1,
+  "marketCap": "1.6B",
   "sector": "Industrials",
   "domain": "smartgroup.com.au",
   "chartData": [
-    {
-      "date": "2025-05-18",
-      "price": 7.23
-    },
     {
       "date": "2025-05-25",
       "price": 7.17
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-17",
       "price": 11.14
+    },
+    {
+      "date": "2026-05-24",
+      "price": 11.47
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 18.26,
-      "threshold": 25.71,
-      "label": "18.3x vs 25.7x sector"
+      "value": 18.8,
+      "threshold": 26.69,
+      "label": "18.8x vs 26.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 5.22,
+      "value": 5.37,
       "threshold": 1.5,
-      "label": "5.22x vs 1.5x"
+      "label": "5.37x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 11.81,
+      "value": 11.96,
       "threshold": 10.0,
-      "label": "11.8x vs 10x"
+      "label": "12.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.63,
+      "value": 4.5,
       "threshold": 5.0,
-      "label": "4.6% vs 5%"
+      "label": "4.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 15.42,
-      "threshold": 18.26,
-      "label": "Fwd 15.4x vs Trail 18.3x"
+      "value": 15.88,
+      "threshold": 18.8,
+      "label": "Fwd 15.9x vs Trail 18.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.57,
+      "value": 0.58,
       "threshold": 0.5,
-      "label": "P/S 4.6x ÷ Growth 8.2% = 0.57"
+      "label": "P/S 4.8x ÷ Growth 8.2% = 0.58"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 18.26,
-    "sectorPe": 30.25,
-    "pb": 5.22,
-    "ps": 4.65,
-    "evEbitda": 11.81,
-    "fcfYield": 4.63,
-    "forwardPe": 15.42,
-    "dividendYield": 3.86,
+    "pe": 18.8,
+    "sectorPe": 31.4,
+    "pb": 5.37,
+    "ps": 4.79,
+    "evEbitda": 11.96,
+    "fcfYield": 4.5,
+    "forwardPe": 15.88,
+    "dividendYield": 3.81,
     "revenueGrowth": 8.2,
     "profitMargin": 24.12,
     "operatingMargin": 37.17,

@@ -1,16 +1,12 @@
 {
   "ticker": "BGA",
   "name": "BEGA FPO [BGA]",
-  "price": 5.37,
+  "price": 5.29,
   "valuationScore": 23.7,
   "marketCap": "1.6B",
   "sector": "Consumer Staples",
   "domain": "begagroup.com.au",
   "chartData": [
-    {
-      "date": "2025-05-18",
-      "price": 5.5
-    },
     {
       "date": "2025-05-25",
       "price": 5.36
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-17",
       "price": 5.37
+    },
+    {
+      "date": "2026-05-24",
+      "price": 5.29
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 179.0,
-      "threshold": 23.94,
-      "label": "179.0x vs 23.9x sector"
+      "value": 176.33,
+      "threshold": 23.56,
+      "label": "176.3x vs 23.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.63,
+      "value": 1.6,
       "threshold": 1.5,
-      "label": "1.63x vs 1.5x"
+      "label": "1.60x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 15.58,
+      "value": 15.35,
       "threshold": 10.0,
-      "label": "15.6x vs 10x"
+      "label": "15.3x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.82,
+      "value": 2.86,
       "threshold": 5.0,
-      "label": "2.8% vs 5%"
+      "label": "2.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 20.88,
-      "threshold": 179.0,
-      "label": "Fwd 20.9x vs Trail 179.0x"
+      "value": 20.57,
+      "threshold": 176.33,
+      "label": "Fwd 20.6x vs Trail 176.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.09,
       "threshold": 0.5,
-      "label": "P/S 0.5x ÷ Growth 5.0% = 0.09"
+      "label": "P/S 0.4x ÷ Growth 5.0% = 0.09"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 179.0,
-    "sectorPe": 28.16,
-    "pb": 1.63,
+    "pe": 176.33,
+    "sectorPe": 27.71,
+    "pb": 1.6,
     "ps": 0.45,
-    "evEbitda": 15.58,
-    "fcfYield": 2.82,
-    "forwardPe": 20.88,
-    "dividendYield": 2.61,
+    "evEbitda": 15.35,
+    "fcfYield": 2.86,
+    "forwardPe": 20.57,
+    "dividendYield": 2.66,
     "revenueGrowth": 5.0,
     "profitMargin": 0.23,
     "operatingMargin": 4.06,
