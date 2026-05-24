@@ -1,9 +1,9 @@
 {
   "ticker": "QBE",
   "name": "QBE INSUR. FPO [QBE]",
-  "price": 23.99,
-  "valuationScore": -3.0,
-  "marketCap": "35.8B",
+  "price": 23.57,
+  "valuationScore": -3.1,
+  "marketCap": "35.2B",
   "sector": "Financials",
   "domain": "qbe.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-05-24",
-      "price": 23.99
+      "price": 23.57
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 12.12,
-      "threshold": 16.94,
-      "label": "12.1x vs 16.9x sector"
+      "value": 11.9,
+      "threshold": 17.01,
+      "label": "11.9x vs 17.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.21,
+      "value": 2.17,
       "threshold": 1.5,
-      "label": "2.21x vs 1.5x"
+      "label": "2.17x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 10.99,
+      "value": 11.14,
       "threshold": 10.0,
-      "label": "11.0x vs 10x"
+      "label": "11.1x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 10.25,
+      "value": 10.43,
       "threshold": 5.0,
-      "label": "10.2% vs 5%"
+      "label": "10.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 12.23,
-      "threshold": 12.12,
-      "label": "Fwd 12.2x vs Trail 12.1x"
+      "value": 11.97,
+      "threshold": 11.9,
+      "label": "Fwd 12.0x vs Trail 11.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 12.12,
-    "sectorPe": 19.93,
-    "pb": 2.21,
-    "ps": 1.92,
-    "evEbitda": 10.99,
-    "fcfYield": 10.25,
-    "forwardPe": 12.23,
-    "dividendYield": 4.69,
+    "pe": 11.9,
+    "sectorPe": 20.01,
+    "pb": 2.17,
+    "ps": 1.88,
+    "evEbitda": 11.14,
+    "fcfYield": 10.43,
+    "forwardPe": 11.97,
+    "dividendYield": 4.62,
     "revenueGrowth": 0.0,
     "profitMargin": 11.53,
     "operatingMargin": 22.6,

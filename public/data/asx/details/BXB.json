@@ -1,9 +1,9 @@
 {
   "ticker": "BXB",
   "name": "BRAMB LTD FPO [BXB]",
-  "price": 17.73,
-  "valuationScore": 2.1,
-  "marketCap": "23.9B",
+  "price": 17.11,
+  "valuationScore": 1.7,
+  "marketCap": "23.1B",
   "sector": "Industrials",
   "domain": "brambles.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-05-24",
-      "price": 17.74
+      "price": 17.11
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 18.87,
-      "threshold": 26.69,
-      "label": "18.9x vs 26.7x sector"
+      "value": 18.2,
+      "threshold": 26.37,
+      "label": "18.2x vs 26.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 5.12,
+      "value": 4.86,
       "threshold": 1.5,
-      "label": "5.12x vs 1.5x"
+      "label": "4.86x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 12.88,
+      "value": 12.53,
       "threshold": 10.0,
-      "label": "12.9x vs 10x"
+      "label": "12.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.97,
+      "value": 3.08,
       "threshold": 5.0,
-      "label": "3.0% vs 5%"
+      "label": "3.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.26,
-      "threshold": 18.87,
-      "label": "Fwd 16.3x vs Trail 18.9x"
+      "value": 16.08,
+      "threshold": 18.2,
+      "label": "Fwd 16.1x vs Trail 18.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.68,
+      "value": 0.66,
       "threshold": 0.5,
-      "label": "P/S 3.4x ÷ Growth 5.0% = 0.68"
+      "label": "P/S 3.3x ÷ Growth 5.0% = 0.66"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 18.87,
-    "sectorPe": 31.4,
-    "pb": 5.12,
-    "ps": 3.41,
-    "evEbitda": 12.88,
-    "fcfYield": 2.97,
-    "forwardPe": 16.26,
-    "dividendYield": 3.67,
+    "pe": 18.2,
+    "sectorPe": 31.02,
+    "pb": 4.86,
+    "ps": 3.29,
+    "evEbitda": 12.53,
+    "fcfYield": 3.08,
+    "forwardPe": 16.08,
+    "dividendYield": 3.78,
     "revenueGrowth": 5.0,
     "profitMargin": 13.7,
     "operatingMargin": 21.77,
