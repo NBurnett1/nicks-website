@@ -1,25 +1,61 @@
 {
-  "lastUpdated": "2026-05-27T08:30:37.284342+11:00",
+  "lastUpdated": "2026-05-27T21:57:14.286353+11:00",
   "stocksScanned": 130,
-  "totalAlerts": 83,
+  "totalAlerts": 100,
   "alerts": [
     {
-      "type": "PRICE_MOVE",
+      "type": "EXTREME VOLUME",
       "severity": "critical",
       "ticker": "ASX",
       "exchange": "ASX",
-      "headline": "Stock plunged 13.2% in one session",
-      "detail": "$58.81 → $51.03",
-      "timestamp": "2026-05-26T21:29:06.467253+00:00"
+      "headline": "4.7x average volume detected",
+      "detail": "Volume: 3,286,896 vs 20-day avg: 699,956 | Price down 9.7%",
+      "timestamp": "2026-05-27T10:55:21.495806+00:00"
     },
     {
       "type": "EXTREME VOLUME",
       "severity": "critical",
       "ticker": "NUF",
       "exchange": "ASX",
-      "headline": "7.2x average volume detected",
-      "detail": "Volume: 6,372,812 vs 20-day avg: 891,200 | Price up 2.4%",
-      "timestamp": "2026-05-26T21:29:13.344850+00:00"
+      "headline": "6.6x average volume detected",
+      "detail": "Volume: 7,522,411 vs 20-day avg: 1,140,364 | Price up 13.7%",
+      "timestamp": "2026-05-27T10:55:31.052834+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "critical",
+      "ticker": "NUF",
+      "exchange": "ASX",
+      "headline": "Stock surged 13.7% in one session",
+      "detail": "$2.56 → $2.91",
+      "timestamp": "2026-05-27T10:55:31.276866+00:00"
+    },
+    {
+      "type": "EXTREME VOLUME",
+      "severity": "critical",
+      "ticker": "INA",
+      "exchange": "ASX",
+      "headline": "5.0x average volume detected",
+      "detail": "Volume: 4,331,824 vs 20-day avg: 871,306 | Price up 2.1%",
+      "timestamp": "2026-05-27T10:55:55.792320+00:00"
+    },
+    {
+      "type": "EXTREME VOLUME",
+      "severity": "critical",
+      "ticker": "PNI",
+      "exchange": "ASX",
+      "headline": "5.2x average volume detected",
+      "detail": "Volume: 4,182,111 vs 20-day avg: 804,355 | Price up 1.1%",
+      "timestamp": "2026-05-27T10:56:11.402282+00:00"
+    },
+    {
+      "type": "EXTREME VOLUME",
+      "severity": "critical",
+      "ticker": "SKC",
+      "exchange": "ASX",
+      "headline": "7.0x average volume detected",
+      "detail": "Volume: 1,865,044 vs 20-day avg: 266,825 | Price down 0.0%",
+      "timestamp": "2026-05-27T10:57:07.921916+00:00"
     },
     {
       "type": "INSIDER_SELL",
@@ -49,31 +85,40 @@
       "timestamp": "2026-05-20 00:00:00"
     },
     {
-      "type": "EXTREME VOLUME",
+      "type": "PRICE_MOVE",
       "severity": "high",
       "ticker": "ASX",
       "exchange": "ASX",
-      "headline": "3.6x average volume detected",
-      "detail": "Volume: 2,228,488 vs 20-day avg: 627,168 | Price down 13.2%",
-      "timestamp": "2026-05-26T21:29:06.329391+00:00"
+      "headline": "Stock plunged 9.7% in one session",
+      "detail": "$51.03 → $46.06",
+      "timestamp": "2026-05-27T10:55:21.703790+00:00"
     },
     {
       "type": "PRICE_MOVE",
       "severity": "high",
-      "ticker": "CGF",
+      "ticker": "CCX",
       "exchange": "ASX",
-      "headline": "Stock plunged 5.3% in one session",
-      "detail": "$9.35 → $8.85",
-      "timestamp": "2026-05-26T21:29:07.014219+00:00"
+      "headline": "Stock plunged 5.0% in one session",
+      "detail": "$0.04 → $0.04",
+      "timestamp": "2026-05-27T10:55:24.245130+00:00"
     },
     {
-      "type": "EXTREME VOLUME",
+      "type": "PRICE_MOVE",
       "severity": "high",
-      "ticker": "ASG",
+      "ticker": "MP1",
       "exchange": "ASX",
-      "headline": "3.1x average volume detected",
-      "detail": "Volume: 451,061 vs 20-day avg: 144,347 | Price down 2.2%",
-      "timestamp": "2026-05-26T21:30:14.401180+00:00"
+      "headline": "Stock surged 8.6% in one session",
+      "detail": "$13.79 → $14.98",
+      "timestamp": "2026-05-27T10:56:25.515493+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "high",
+      "ticker": "TAH",
+      "exchange": "ASX",
+      "headline": "Stock surged 5.0% in one session",
+      "detail": "$0.69 → $0.73",
+      "timestamp": "2026-05-27T10:56:39.833854+00:00"
     },
     {
       "type": "INSIDER_SELL",
@@ -101,17 +146,6 @@
       "headline": "Hamilton (Nick) (Chief Executive Officer) purchased 120,000 shares ($787,116)",
       "detail": "Purchase at price 6.56 per share.",
       "timestamp": "2026-05-18 00:00:00"
-    },
-    {
-      "type": "NEWS",
-      "severity": "medium",
-      "ticker": "MQG",
-      "exchange": "ASX",
-      "headline": "Macquarie Group (ASX:MQG) Valuation Check After Recent Share Price Weakness",
-      "detail": "Source: Simply Wall St.",
-      "sentiment": "negative",
-      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/O6S51xV4yEpWIBvrvbUlTg--~B/aD00MzI7dz0xMTk0O2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/simply_wall_st__316/94f732452d254692d8722ac3ce3ea4da",
-      "timestamp": "2026-05-19T04:34:27Z"
     },
     {
       "type": "INSIDER_BUY",
@@ -147,20 +181,83 @@
     {
       "type": "VOLUME SPIKE",
       "severity": "medium",
-      "ticker": "SKC",
+      "ticker": "PPE",
       "exchange": "ASX",
-      "headline": "2.3x average volume detected",
-      "detail": "Volume: 584,454 vs 20-day avg: 251,700 | Price down 2.3%",
-      "timestamp": "2026-05-26T21:30:32.255638+00:00"
+      "headline": "2.1x average volume detected",
+      "detail": "Volume: 214,442 vs 20-day avg: 102,756 | Price up 3.5%",
+      "timestamp": "2026-05-27T10:55:20.699642+00:00"
     },
     {
-      "type": "INSIDER_BUY",
-      "severity": "low",
-      "ticker": "BOQ",
+      "type": "VOLUME SPIKE",
+      "severity": "medium",
+      "ticker": "CCX",
       "exchange": "ASX",
-      "headline": "Waldron (Mary) (Independent Non-Executive Director) purchased 1,600 shares ($7,573)",
-      "detail": "Purchase at price 4.73 per share.",
-      "timestamp": "2026-04-27 00:00:00"
+      "headline": "2.1x average volume detected",
+      "detail": "Volume: 1,836,507 vs 20-day avg: 887,435 | Price down 5.0%",
+      "timestamp": "2026-05-27T10:55:24.022462+00:00"
+    },
+    {
+      "type": "VOLUME SPIKE",
+      "severity": "medium",
+      "ticker": "EDV",
+      "exchange": "ASX",
+      "headline": "2.3x average volume detected",
+      "detail": "Volume: 9,690,987 vs 20-day avg: 4,256,989 | Price down 4.9%",
+      "timestamp": "2026-05-27T10:55:37.604131+00:00"
+    },
+    {
+      "type": "VOLUME SPIKE",
+      "severity": "medium",
+      "ticker": "SLC",
+      "exchange": "ASX",
+      "headline": "2.5x average volume detected",
+      "detail": "Volume: 2,630,891 vs 20-day avg: 1,032,953 | Price up 3.9%",
+      "timestamp": "2026-05-27T10:56:16.088303+00:00"
+    },
+    {
+      "type": "VOLUME SPIKE",
+      "severity": "medium",
+      "ticker": "WEB",
+      "exchange": "ASX",
+      "headline": "2.2x average volume detected",
+      "detail": "Volume: 5,376,912 vs 20-day avg: 2,486,033 | Price up 2.1%",
+      "timestamp": "2026-05-27T10:56:17.614015+00:00"
+    },
+    {
+      "type": "VOLUME SPIKE",
+      "severity": "medium",
+      "ticker": "MP1",
+      "exchange": "ASX",
+      "headline": "2.6x average volume detected",
+      "detail": "Volume: 4,249,492 vs 20-day avg: 1,644,635 | Price up 8.6%",
+      "timestamp": "2026-05-27T10:56:25.329969+00:00"
+    },
+    {
+      "type": "VOLUME SPIKE",
+      "severity": "medium",
+      "ticker": "WES",
+      "exchange": "ASX",
+      "headline": "2.0x average volume detected",
+      "detail": "Volume: 2,748,630 vs 20-day avg: 1,350,519 | Price up 1.4%",
+      "timestamp": "2026-05-27T10:56:26.129733+00:00"
+    },
+    {
+      "type": "VOLUME SPIKE",
+      "severity": "medium",
+      "ticker": "CHC",
+      "exchange": "ASX",
+      "headline": "2.1x average volume detected",
+      "detail": "Volume: 2,468,395 vs 20-day avg: 1,169,587 | Price down 2.5%",
+      "timestamp": "2026-05-27T10:56:31.331146+00:00"
+    },
+    {
+      "type": "VOLUME SPIKE",
+      "severity": "medium",
+      "ticker": "BWP",
+      "exchange": "ASX",
+      "headline": "2.0x average volume detected",
+      "detail": "Volume: 2,170,651 vs 20-day avg: 1,074,335 | Price down 0.8%",
+      "timestamp": "2026-05-27T10:57:01.382117+00:00"
     },
     {
       "type": "INSIDER_BUY",
@@ -348,17 +445,6 @@
       "sentiment": "positive",
       "thumbnail": "https://s.yimg.com/uu/api/res/1.2/Ox9tvV8.zS7T2eE7P66USA--~B/aD00MzI7dz0xMTk0O2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/simply_wall_st__316/0879100571fc0755502bcfa39cd0a464",
       "timestamp": "2026-05-21T03:20:08Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "WBC",
-      "exchange": "ASX",
-      "headline": "Tower Ltd (ASX:TWR) (Half Year 2026) Earnings Call Highlights: Resilience Amidst Challenges and ...",
-      "detail": "Source: GuruFocus.com",
-      "sentiment": "positive",
-      "thumbnail": null,
-      "timestamp": "2026-05-21T05:01:09Z"
     },
     {
       "type": "NEWS",
@@ -627,17 +713,6 @@
     {
       "type": "NEWS",
       "severity": "low",
-      "ticker": "CBA",
-      "exchange": "ASX",
-      "headline": "OpenAI's Altman says AI unlikely to lead to 'jobs apocalypse'",
-      "detail": "Source: Reuters",
-      "sentiment": "neutral",
-      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/zv5OZNGSh74GQYlymaoOVg--~B/aD01MzM7dz04MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/reuters-finance.com/240a5746838ab7c4b6e227aed862e10b",
-      "timestamp": "2026-05-26T07:23:16Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
       "ticker": "QAN",
       "exchange": "ASX",
       "headline": "Airbus Supply Snarls Push Back Qantas’s Plans for Nonstop Flights to London, New York",
@@ -865,6 +940,94 @@
       "sentiment": "positive",
       "thumbnail": "https://s.yimg.com/uu/api/res/1.2/w2t1xoPraquUCzh5JCiwDw--~B/aD00MzI7dz0xMTk0O2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/simply_wall_st__316/073fc6331af6400e3dbbb4524a7bb84d",
       "timestamp": "2026-05-26T19:39:23Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "QAN",
+      "exchange": "ASX",
+      "headline": "Is It Time To Reassess Qantas Airways (ASX:QAN) After Recent Share Price Rebound",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "neutral",
+      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/O3OmcYFNcZ9w8fuYvI_6Og--~B/aD00MzI7dz0xMTk0O2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/simply_wall_st__316/cdab26cef65d270b239872ce437e6c07",
+      "timestamp": "2026-05-26T21:13:56Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "PPT",
+      "exchange": "ASX",
+      "headline": "Insider Buying Highlights Undervalued Asian Small Caps In May 2026",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "positive",
+      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/00OqBzbQM9NM6aQKBzc4vA--~B/aD00MzI7dz0xMTk0O2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/simply_wall_st__316/992331fc596d921e34ccfa3b8813259a",
+      "timestamp": "2026-05-26T22:36:42Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "NST",
+      "exchange": "ASX",
+      "headline": "Novo regains full control of Egina Gold Project after Northern Star withdrawal",
+      "detail": "Source: Proactive",
+      "sentiment": "neutral",
+      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/ih2qgFAIZJ0nHlPihCcurA--~B/aD03MjA7dz0xMjgwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/proactive_us_504/c46b1aaf673104b14135461772c31b0a",
+      "timestamp": "2026-05-26T23:34:00Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "WBC",
+      "exchange": "ASX",
+      "headline": "Analysis-Once investor darlings, Australian banks get reality check on mortgage change",
+      "detail": "Source: Reuters",
+      "sentiment": "neutral",
+      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/acgdZHY38Q5EfUnBLs5z_A--~B/aD01MzM7dz04MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/reuters.com/3e0fc9cab7fedaefd90c7bc433341372",
+      "timestamp": "2026-05-27T07:38:45Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "NAB",
+      "exchange": "ASX",
+      "headline": "Analysis-Once investor darlings, Australian banks get reality check on mortgage change",
+      "detail": "Source: Reuters",
+      "sentiment": "neutral",
+      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/acgdZHY38Q5EfUnBLs5z_A--~B/aD01MzM7dz04MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/reuters.com/3e0fc9cab7fedaefd90c7bc433341372",
+      "timestamp": "2026-05-27T07:38:45Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "CBA",
+      "exchange": "ASX",
+      "headline": "Analysis-Once investor darlings, Australian banks get reality check on mortgage change",
+      "detail": "Source: Reuters",
+      "sentiment": "neutral",
+      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/acgdZHY38Q5EfUnBLs5z_A--~B/aD01MzM7dz04MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/reuters.com/3e0fc9cab7fedaefd90c7bc433341372",
+      "timestamp": "2026-05-27T07:38:45Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "WOR",
+      "exchange": "ASX",
+      "headline": "AEP taps Worley for Oklahoma gas turbine engineering services",
+      "detail": "Source: Power Technology",
+      "sentiment": "neutral",
+      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/IhnOPsnGc3I5eU_regO46Q--~B/aD04MTA7dz0xNDQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/power_technology_866/d444ec658f0e9b043f8e918c715158cd",
+      "timestamp": "2026-05-27T08:07:28Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "WBC",
+      "exchange": "ASX",
+      "headline": "Oil Slides as Iran Says Talks With US to End War Are Continuing",
+      "detail": "Source: Bloomberg",
+      "sentiment": "neutral",
+      "thumbnail": null,
+      "timestamp": "2026-05-27T10:11:33Z"
     }
   ]
 }
