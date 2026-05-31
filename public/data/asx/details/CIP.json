@@ -1,16 +1,12 @@
 {
   "ticker": "CIP",
   "name": "CEN I REIT ORD UNITS [CIP]",
-  "price": 2.95,
+  "price": 2.98,
   "valuationScore": 2.8,
-  "marketCap": "1.8B",
+  "marketCap": "1.9B",
   "sector": "Real Estate",
   "domain": "centuria.com.au",
   "chartData": [
-    {
-      "date": "2025-05-25",
-      "price": 2.93
-    },
     {
       "date": "2025-06-01",
       "price": 2.92
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-24",
       "price": 2.95
+    },
+    {
+      "date": "2026-05-31",
+      "price": 2.98
     }
   ],
   "testsPassed": 2,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 13.41,
-      "threshold": 9.57,
-      "label": "13.4x vs 9.6x sector"
+      "value": 13.55,
+      "threshold": 9.63,
+      "label": "13.5x vs 9.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 0.78,
+      "value": 0.77,
       "threshold": 5.0,
       "label": "0.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 15.53,
-      "threshold": 13.41,
-      "label": "Fwd 15.5x vs Trail 13.4x"
+      "value": 15.69,
+      "threshold": 13.55,
+      "label": "Fwd 15.7x vs Trail 13.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 1.21,
+      "value": 1.22,
       "threshold": 0.5,
-      "label": "P/S 7.5x ÷ Growth 6.2% = 1.21"
+      "label": "P/S 7.6x ÷ Growth 6.2% = 1.22"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 13.41,
-    "sectorPe": 11.26,
+    "pe": 13.55,
+    "sectorPe": 11.33,
     "pb": 0.75,
-    "ps": 7.5,
+    "ps": 7.57,
     "evEbitda": null,
-    "fcfYield": 0.78,
-    "forwardPe": 15.53,
-    "dividendYield": 5.65,
+    "fcfYield": 0.77,
+    "forwardPe": 15.69,
+    "dividendYield": 5.6,
     "revenueGrowth": 6.2,
     "profitMargin": 56.74,
     "operatingMargin": 65.99,

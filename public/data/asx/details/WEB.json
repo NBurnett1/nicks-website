@@ -1,16 +1,12 @@
 {
   "ticker": "WEB",
   "name": "WEB TRAVEL FPO [WEB]",
-  "price": 2.32,
-  "valuationScore": 38.0,
-  "marketCap": "840M",
+  "price": 2.61,
+  "valuationScore": -0.4,
+  "marketCap": "945M",
   "sector": "Consumer Cyclical",
   "domain": "webtravelgroup.com",
   "chartData": [
-    {
-      "date": "2025-05-25",
-      "price": 4.77
-    },
     {
       "date": "2025-06-01",
       "price": 5.06
@@ -218,81 +214,85 @@
     {
       "date": "2026-05-24",
       "price": 2.32
+    },
+    {
+      "date": "2026-05-31",
+      "price": 2.61
     }
   ],
-  "testsPassed": 6,
-  "grade": "A",
+  "testsPassed": 5,
+  "grade": "B",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 232.0,
-      "threshold": 19.83,
-      "label": "232.0x vs 19.8x sector"
+      "value": 26.1,
+      "threshold": 20.38,
+      "label": "26.1x vs 20.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
-      "passed": true,
-      "value": 1.4,
+      "passed": false,
+      "value": 1.57,
       "threshold": 1.5,
-      "label": "1.40x vs 1.5x"
+      "label": "1.57x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 5.81,
+      "value": 6.34,
       "threshold": 10.0,
-      "label": "5.8x vs 10x"
+      "label": "6.3x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 15.46,
+      "value": 7.05,
       "threshold": 5.0,
-      "label": "15.5% vs 5%"
+      "label": "7.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 7.87,
-      "threshold": 232.0,
-      "label": "Fwd 7.9x vs Trail 232.0x"
+      "value": 8.2,
+      "threshold": 26.1,
+      "label": "Fwd 8.2x vs Trail 26.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": false,
-      "value": 0.08,
+      "value": 9.01,
       "threshold": 5.0,
-      "label": "Margin 0.1% / ROE 0.1%"
+      "label": "Margin 9.0% / ROE 6.1%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
       "value": 0.12,
       "threshold": 0.5,
-      "label": "P/S 2.3x ÷ Growth 20.1% = 0.12"
+      "label": "P/S 2.4x ÷ Growth 19.9% = 0.12"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": true,
-      "value": 20.1,
+      "value": 19.9,
       "threshold": -5.0,
-      "label": "20.1% growth (floor: -5%)"
+      "label": "19.9% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 232.0,
-    "sectorPe": 23.33,
-    "pb": 1.4,
-    "ps": 2.32,
-    "evEbitda": 5.81,
-    "fcfYield": 15.46,
-    "forwardPe": 7.87,
+    "pe": 26.1,
+    "sectorPe": 23.98,
+    "pb": 1.57,
+    "ps": 2.4,
+    "evEbitda": 6.34,
+    "fcfYield": 7.05,
+    "forwardPe": 8.2,
     "dividendYield": null,
-    "revenueGrowth": 20.1,
-    "profitMargin": 0.08,
-    "operatingMargin": 26.88,
-    "roe": 0.08,
-    "debtEquity": 41.54
+    "revenueGrowth": 19.9,
+    "profitMargin": 9.01,
+    "operatingMargin": 22.8,
+    "roe": 6.14,
+    "debtEquity": 43.9
   }
 }

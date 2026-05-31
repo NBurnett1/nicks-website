@@ -1,16 +1,12 @@
 {
   "ticker": "NUF",
   "name": "NUFARM FPO [NUF]",
-  "price": 2.42,
-  "valuationScore": -10.8,
-  "marketCap": "930M",
+  "price": 3.0,
+  "valuationScore": -51.4,
+  "marketCap": "1.2B",
   "sector": "Basic Materials",
   "domain": "nufarm.com",
   "chartData": [
-    {
-      "date": "2025-05-25",
-      "price": 2.47
-    },
     {
       "date": "2025-06-01",
       "price": 2.38
@@ -218,10 +214,14 @@
     {
       "date": "2026-05-24",
       "price": 2.42
+    },
+    {
+      "date": "2026-05-31",
+      "price": 3.0
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -233,37 +233,37 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.5,
+      "value": 0.63,
       "threshold": 1.5,
-      "label": "0.50x vs 1.5x"
+      "label": "0.63x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 9.15,
+      "value": 8.67,
       "threshold": 10.0,
-      "label": "9.2x vs 10x"
+      "label": "8.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 4.84,
+      "passed": true,
+      "value": 22.61,
       "threshold": 5.0,
-      "label": "4.8% vs 5%"
+      "label": "22.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 13.77,
+      "value": 15.35,
       "threshold": null,
       "label": "Insufficient data"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": false,
-      "value": -4.8,
+      "value": -4.69,
       "threshold": 5.0,
-      "label": "Margin -4.8% / ROE -7.7%"
+      "label": "Margin -4.7% / ROE -7.2%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
@@ -282,17 +282,17 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 44.96,
-    "pb": 0.5,
-    "ps": 0.27,
-    "evEbitda": 9.15,
-    "fcfYield": 4.84,
-    "forwardPe": 13.77,
+    "sectorPe": 44.88,
+    "pb": 0.63,
+    "ps": 0.34,
+    "evEbitda": 8.67,
+    "fcfYield": 22.61,
+    "forwardPe": 15.35,
     "dividendYield": null,
     "revenueGrowth": null,
-    "profitMargin": -4.8,
+    "profitMargin": -4.69,
     "operatingMargin": -32.03,
-    "roe": -7.65,
+    "roe": -7.18,
     "debtEquity": 50.33
   }
 }

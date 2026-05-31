@@ -1,16 +1,12 @@
 {
   "ticker": "TPG",
   "name": "TPGLIMITED FPO [TPG]",
-  "price": 4.13,
-  "valuationScore": 14.9,
-  "marketCap": "8.1B",
+  "price": 3.9,
+  "valuationScore": 12.2,
+  "marketCap": "7.7B",
   "sector": "Telecom",
   "domain": "tpgtelecom.com.au",
   "chartData": [
-    {
-      "date": "2025-05-25",
-      "price": 4.96
-    },
     {
       "date": "2025-06-01",
       "price": 4.95
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-24",
       "price": 4.13
+    },
+    {
+      "date": "2026-05-31",
+      "price": 3.9
     }
   ],
   "testsPassed": 6,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 137.67,
-      "threshold": 17.93,
-      "label": "137.7x vs 17.9x sector"
+      "value": 130.0,
+      "threshold": 18.0,
+      "label": "130.0x vs 18.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.93,
+      "value": 0.88,
       "threshold": 1.5,
-      "label": "0.93x vs 1.5x"
+      "label": "0.88x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 9.39,
+      "value": 9.04,
       "threshold": 10.0,
-      "label": "9.4x vs 10x"
+      "label": "9.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 11.84,
+      "value": 12.54,
       "threshold": 5.0,
-      "label": "11.8% vs 5%"
+      "label": "12.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 47.93,
-      "threshold": 137.67,
-      "label": "Fwd 47.9x vs Trail 137.7x"
+      "value": 45.26,
+      "threshold": 130.0,
+      "label": "Fwd 45.3x vs Trail 130.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.42,
+      "value": 0.4,
       "threshold": 0.5,
-      "label": "P/S 1.6x ÷ Growth 3.8% = 0.42"
+      "label": "P/S 1.5x ÷ Growth 3.8% = 0.40"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 137.67,
-    "sectorPe": 21.1,
-    "pb": 0.93,
-    "ps": 1.61,
-    "evEbitda": 9.39,
-    "fcfYield": 11.84,
-    "forwardPe": 47.93,
-    "dividendYield": 4.36,
+    "pe": 130.0,
+    "sectorPe": 21.18,
+    "pb": 0.88,
+    "ps": 1.52,
+    "evEbitda": 9.04,
+    "fcfYield": 12.54,
+    "forwardPe": 45.26,
+    "dividendYield": 4.62,
     "revenueGrowth": 3.8,
     "profitMargin": 9.13,
     "operatingMargin": 7.69,

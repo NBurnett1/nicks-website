@@ -1,16 +1,12 @@
 {
   "ticker": "AGL",
   "name": "AGL ENERGY FPO [AGL]",
-  "price": 8.97,
-  "valuationScore": 8.7,
-  "marketCap": "6.0B",
+  "price": 8.56,
+  "valuationScore": 8.8,
+  "marketCap": "5.8B",
   "sector": "Utilities",
   "domain": "agl.com.au",
   "chartData": [
-    {
-      "date": "2025-05-25",
-      "price": 9.71
-    },
     {
       "date": "2025-06-01",
       "price": 9.62
@@ -218,10 +214,14 @@
     {
       "date": "2026-05-24",
       "price": 8.97
+    },
+    {
+      "date": "2026-05-31",
+      "price": 8.56
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -233,28 +233,28 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.27,
+      "value": 1.22,
       "threshold": 1.5,
-      "label": "1.27x vs 1.5x"
+      "label": "1.22x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
-      "passed": false,
-      "value": 10.06,
+      "passed": true,
+      "value": 9.79,
       "threshold": 10.0,
-      "label": "10.1x vs 10x"
+      "label": "9.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -8.34,
+      "value": -8.74,
       "threshold": 5.0,
-      "label": "-8.3% vs 5%"
+      "label": "-8.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 9.87,
+      "value": 9.91,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -282,13 +282,13 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 21.1,
-    "pb": 1.27,
-    "ps": 0.42,
-    "evEbitda": 10.06,
-    "fcfYield": -8.34,
-    "forwardPe": 9.87,
-    "dividendYield": 5.46,
+    "sectorPe": 21.18,
+    "pb": 1.22,
+    "ps": 0.4,
+    "evEbitda": 9.79,
+    "fcfYield": -8.74,
+    "forwardPe": 9.91,
+    "dividendYield": 5.72,
     "revenueGrowth": -0.9,
     "profitMargin": -1.16,
     "operatingMargin": 7.67,

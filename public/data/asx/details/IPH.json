@@ -1,16 +1,12 @@
 {
   "ticker": "IPH",
   "name": "IPHLIMITED FPO [IPH]",
-  "price": 3.81,
+  "price": 3.78,
   "valuationScore": -11.6,
-  "marketCap": "987M",
+  "marketCap": "979M",
   "sector": "Industrials",
   "domain": "iphltd.com.au",
   "chartData": [
-    {
-      "date": "2025-05-25",
-      "price": 4.52
-    },
     {
       "date": "2025-06-01",
       "price": 4.52
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-24",
       "price": 3.81
+    },
+    {
+      "date": "2026-05-31",
+      "price": 3.78
     }
   ],
   "testsPassed": 8,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 13.61,
-      "threshold": 26.37,
-      "label": "13.6x vs 26.4x sector"
+      "value": 13.5,
+      "threshold": 26.66,
+      "label": "13.5x vs 26.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.47,
+      "value": 1.46,
       "threshold": 1.5,
-      "label": "1.47x vs 1.5x"
+      "label": "1.46x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 7.44,
+      "value": 7.4,
       "threshold": 10.0,
       "label": "7.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 13.25,
+      "value": 13.35,
       "threshold": 5.0,
-      "label": "13.2% vs 5%"
+      "label": "13.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 7.8,
-      "threshold": 13.61,
-      "label": "Fwd 7.8x vs Trail 13.6x"
+      "value": 7.73,
+      "threshold": 13.5,
+      "label": "Fwd 7.7x vs Trail 13.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.21,
       "threshold": 0.5,
-      "label": "P/S 1.4x ÷ Growth 6.5% = 0.21"
+      "label": "P/S 1.3x ÷ Growth 6.5% = 0.21"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 13.61,
-    "sectorPe": 31.02,
-    "pb": 1.47,
-    "ps": 1.35,
-    "evEbitda": 7.44,
-    "fcfYield": 13.25,
-    "forwardPe": 7.8,
-    "dividendYield": 9.97,
+    "pe": 13.5,
+    "sectorPe": 31.36,
+    "pb": 1.46,
+    "ps": 1.34,
+    "evEbitda": 7.4,
+    "fcfYield": 13.35,
+    "forwardPe": 7.73,
+    "dividendYield": 10.05,
     "revenueGrowth": 6.5,
     "profitMargin": 9.98,
     "operatingMargin": 18.74,

@@ -1,16 +1,12 @@
 {
   "ticker": "IMD",
   "name": "IMDEX FPO [IMD]",
-  "price": 4.26,
-  "valuationScore": 7.1,
-  "marketCap": "2.2B",
+  "price": 4.07,
+  "valuationScore": 6.2,
+  "marketCap": "2.1B",
   "sector": "Industrials",
   "domain": "imdex.com",
   "chartData": [
-    {
-      "date": "2025-05-25",
-      "price": 2.76
-    },
     {
       "date": "2025-06-01",
       "price": 2.83
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-24",
       "price": 4.26
+    },
+    {
+      "date": "2026-05-31",
+      "price": 4.07
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 47.33,
-      "threshold": 26.37,
-      "label": "47.3x vs 26.4x sector"
+      "value": 45.22,
+      "threshold": 26.66,
+      "label": "45.2x vs 26.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.34,
+      "value": 3.19,
       "threshold": 1.5,
-      "label": "3.34x vs 1.5x"
+      "label": "3.19x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 19.4,
+      "value": 18.56,
       "threshold": 10.0,
-      "label": "19.4x vs 10x"
+      "label": "18.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.41,
+      "value": 2.53,
       "threshold": 5.0,
-      "label": "2.4% vs 5%"
+      "label": "2.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 30.65,
-      "threshold": 47.33,
-      "label": "Fwd 30.6x vs Trail 47.3x"
+      "value": 29.28,
+      "threshold": 45.22,
+      "label": "Fwd 29.3x vs Trail 45.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.29,
+      "value": 0.27,
       "threshold": 0.5,
-      "label": "P/S 4.7x ÷ Growth 16.3% = 0.29"
+      "label": "P/S 4.5x ÷ Growth 16.3% = 0.27"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 47.33,
-    "sectorPe": 31.02,
-    "pb": 3.34,
-    "ps": 4.68,
-    "evEbitda": 19.4,
-    "fcfYield": 2.41,
-    "forwardPe": 30.65,
-    "dividendYield": 0.64,
+    "pe": 45.22,
+    "sectorPe": 31.36,
+    "pb": 3.19,
+    "ps": 4.47,
+    "evEbitda": 18.56,
+    "fcfYield": 2.53,
+    "forwardPe": 29.28,
+    "dividendYield": 0.67,
     "revenueGrowth": 16.3,
     "profitMargin": 10.81,
     "operatingMargin": 17.87,

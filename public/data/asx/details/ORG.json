@@ -1,16 +1,12 @@
 {
   "ticker": "ORG",
   "name": "ORIGIN ENE FPO [ORG]",
-  "price": 10.9,
+  "price": 10.87,
   "valuationScore": 5.9,
-  "marketCap": "18.8B",
+  "marketCap": "18.7B",
   "sector": "Energy",
   "domain": "originenergy.com.au",
   "chartData": [
-    {
-      "date": "2025-05-25",
-      "price": 10.53
-    },
     {
       "date": "2025-06-01",
       "price": 10.31
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-24",
       "price": 10.9
+    },
+    {
+      "date": "2026-05-31",
+      "price": 10.87
     }
   ],
   "testsPassed": 2,
@@ -226,21 +226,21 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 18.47,
-      "threshold": 16.07,
-      "label": "18.5x vs 16.1x sector"
+      "value": 18.42,
+      "threshold": 16.67,
+      "label": "18.4x vs 16.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.93,
+      "value": 1.92,
       "threshold": 1.5,
-      "label": "1.93x vs 1.5x"
+      "label": "1.92x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 17.15,
+      "value": 17.11,
       "threshold": 10.0,
       "label": "17.1x vs 10x"
     },
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 15.34,
-      "threshold": 18.47,
-      "label": "Fwd 15.3x vs Trail 18.5x"
+      "value": 15.37,
+      "threshold": 18.42,
+      "label": "Fwd 15.4x vs Trail 18.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 18.47,
-    "sectorPe": 18.91,
-    "pb": 1.93,
+    "pe": 18.42,
+    "sectorPe": 19.61,
+    "pb": 1.92,
     "ps": 1.14,
-    "evEbitda": 17.15,
+    "evEbitda": 17.11,
     "fcfYield": 1.01,
-    "forwardPe": 15.34,
-    "dividendYield": 5.5,
+    "forwardPe": 15.37,
+    "dividendYield": 5.52,
     "revenueGrowth": -9.0,
     "profitMargin": 6.2,
     "operatingMargin": 7.66,

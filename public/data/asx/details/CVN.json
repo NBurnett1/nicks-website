@@ -1,16 +1,12 @@
 {
   "ticker": "CVN",
   "name": "CARNARVON FPO [CVN]",
-  "price": 0.12,
-  "valuationScore": -10.7,
-  "marketCap": "224M",
+  "price": 0.13,
+  "valuationScore": -11.7,
+  "marketCap": "233M",
   "sector": "Energy",
   "domain": "carnarvon.com.au",
   "chartData": [
-    {
-      "date": "2025-05-25",
-      "price": 0.1
-    },
     {
       "date": "2025-06-01",
       "price": 0.1
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-24",
       "price": 0.12
+    },
+    {
+      "date": "2026-05-31",
+      "price": 0.13
     }
   ],
   "testsPassed": 1,
@@ -233,9 +233,9 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.84,
+      "value": 0.87,
       "threshold": 1.5,
-      "label": "0.84x vs 1.5x"
+      "label": "0.87x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,14 +247,14 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -1.52,
+      "value": -1.46,
       "threshold": 5.0,
       "label": "-1.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": -37.09,
+      "value": -38.58,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 18.91,
-    "pb": 0.84,
-    "ps": -105.99,
-    "evEbitda": -24.74,
-    "fcfYield": -1.52,
-    "forwardPe": -37.09,
+    "sectorPe": 19.61,
+    "pb": 0.87,
+    "ps": -110.23,
+    "evEbitda": -26.49,
+    "fcfYield": -1.46,
+    "forwardPe": -38.58,
     "dividendYield": null,
     "revenueGrowth": -73.7,
     "profitMargin": 0.0,

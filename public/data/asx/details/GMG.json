@@ -1,16 +1,12 @@
 {
   "ticker": "GMG",
   "name": "GOOD GROUP STAPLED [GMG]",
-  "price": 30.28,
-  "valuationScore": 20.2,
+  "price": 31.67,
+  "valuationScore": 21.2,
   "marketCap": "—",
   "sector": "Real Estate",
   "domain": "goodman.com",
   "chartData": [
-    {
-      "date": "2025-05-25",
-      "price": 32.38
-    },
     {
       "date": "2025-06-01",
       "price": 32.62
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-24",
       "price": 30.28
+    },
+    {
+      "date": "2026-05-31",
+      "price": 31.67
     }
   ],
   "testsPassed": 1,
@@ -226,23 +226,23 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 36.05,
-      "threshold": 9.57,
-      "label": "36.0x vs 9.6x sector"
+      "value": 37.7,
+      "threshold": 9.63,
+      "label": "37.7x vs 9.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.61,
+      "value": 2.73,
       "threshold": 1.5,
-      "label": "2.61x vs 1.5x"
+      "label": "2.73x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 35.17,
+      "value": 36.76,
       "threshold": 10.0,
-      "label": "35.2x vs 10x"
+      "label": "36.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 21.17,
-      "threshold": 36.05,
-      "label": "Fwd 21.2x vs Trail 36.0x"
+      "value": 22.2,
+      "threshold": 37.7,
+      "label": "Fwd 22.2x vs Trail 37.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 36.05,
-    "sectorPe": 11.26,
-    "pb": 2.61,
+    "pe": 37.7,
+    "sectorPe": 11.33,
+    "pb": 2.73,
     "ps": null,
-    "evEbitda": 35.17,
+    "evEbitda": 36.76,
     "fcfYield": null,
-    "forwardPe": 21.17,
-    "dividendYield": 0.99,
+    "forwardPe": 22.2,
+    "dividendYield": 0.95,
     "revenueGrowth": -15.9,
     "profitMargin": 54.55,
     "operatingMargin": 55.9,

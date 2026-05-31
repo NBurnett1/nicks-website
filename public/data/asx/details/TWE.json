@@ -1,16 +1,12 @@
 {
   "ticker": "TWE",
   "name": "TREA WINE FPO [TWE]",
-  "price": 4.5,
-  "valuationScore": -8.4,
-  "marketCap": "3.6B",
+  "price": 4.24,
+  "valuationScore": -8.2,
+  "marketCap": "3.4B",
   "sector": "Consumer Staples",
   "domain": "tweglobal.com",
   "chartData": [
-    {
-      "date": "2025-05-25",
-      "price": 8.16
-    },
     {
       "date": "2025-06-01",
       "price": 8.23
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-24",
       "price": 4.5
+    },
+    {
+      "date": "2026-05-31",
+      "price": 4.24
     }
   ],
   "testsPassed": 1,
@@ -233,9 +233,9 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.94,
+      "value": 0.89,
       "threshold": 1.5,
-      "label": "0.94x vs 1.5x"
+      "label": "0.89x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,14 +247,14 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -1.65,
+      "value": -1.75,
       "threshold": 5.0,
-      "label": "-1.6% vs 5%"
+      "label": "-1.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 13.18,
+      "value": 12.42,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 27.35,
-    "pb": 0.94,
-    "ps": 1.33,
-    "evEbitda": -20.86,
-    "fcfYield": -1.65,
-    "forwardPe": 13.18,
+    "sectorPe": 27.98,
+    "pb": 0.89,
+    "ps": 1.25,
+    "evEbitda": -20.06,
+    "fcfYield": -1.75,
+    "forwardPe": 12.42,
     "dividendYield": 8.81,
     "revenueGrowth": -16.6,
     "profitMargin": -15.88,

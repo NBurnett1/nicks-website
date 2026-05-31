@@ -1,16 +1,12 @@
 {
   "ticker": "XRO",
   "name": "XERO FPO [XRO]",
-  "price": 75.84,
-  "valuationScore": 2.9,
-  "marketCap": "13.2B",
+  "price": 75.17,
+  "valuationScore": 2.0,
+  "marketCap": "13.1B",
   "sector": "Technology",
   "domain": "xero.com",
   "chartData": [
-    {
-      "date": "2025-05-25",
-      "price": 181.12
-    },
     {
       "date": "2025-06-01",
       "price": 184.29
@@ -218,45 +214,49 @@
     {
       "date": "2026-05-24",
       "price": 75.84
+    },
+    {
+      "date": "2026-05-31",
+      "price": 75.17
     }
   ],
-  "testsPassed": 3,
-  "grade": "C",
+  "testsPassed": 2,
+  "grade": "D",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": false,
-      "value": 50.9,
-      "threshold": 36.55,
-      "label": "50.9x vs 36.5x sector"
+      "passed": null,
+      "value": null,
+      "threshold": null,
+      "label": "Insufficient data"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.18,
+      "value": 3.16,
       "threshold": 1.5,
-      "label": "3.18x vs 1.5x"
+      "label": "3.16x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 33.4,
+      "value": 33.11,
       "threshold": 10.0,
-      "label": "33.4x vs 10x"
+      "label": "33.1x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 1.68,
+      "value": 1.69,
       "threshold": 5.0,
       "label": "1.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
-      "passed": true,
-      "value": 38.33,
-      "threshold": 50.9,
-      "label": "Fwd 38.3x vs Trail 50.9x"
+      "passed": null,
+      "value": 37.42,
+      "threshold": null,
+      "label": "Insufficient data"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.12,
       "threshold": 0.5,
-      "label": "P/S 4.8x ÷ Growth 40.8% = 0.12"
+      "label": "P/S 4.7x ÷ Growth 40.8% = 0.12"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 50.9,
-    "sectorPe": 43.0,
-    "pb": 3.18,
-    "ps": 4.78,
-    "evEbitda": 33.4,
-    "fcfYield": 1.68,
-    "forwardPe": 38.33,
+    "pe": null,
+    "sectorPe": 34.33,
+    "pb": 3.16,
+    "ps": 4.75,
+    "evEbitda": 33.11,
+    "fcfYield": 1.69,
+    "forwardPe": 37.42,
     "dividendYield": null,
     "revenueGrowth": 40.8,
     "profitMargin": 6.08,
