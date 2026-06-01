@@ -1,169 +1,43 @@
 {
-  "lastUpdated": "2026-06-01T07:51:33.059027+11:00",
+  "lastUpdated": "2026-06-01T23:37:47.468301+11:00",
   "stocksScanned": 130,
-  "totalAlerts": 163,
+  "totalAlerts": 113,
   "alerts": [
     {
+      "type": "EXTREME VOLUME",
+      "severity": "critical",
+      "ticker": "SYR",
+      "exchange": "ASX",
+      "headline": "10.1x average volume detected",
+      "detail": "Volume: 52,801,421 vs 20-day avg: 5,231,928 | Price up 16.2%",
+      "timestamp": "2026-06-01T12:37:10.373000+00:00"
+    },
+    {
       "type": "PRICE_MOVE",
       "severity": "critical",
-      "ticker": "CCX",
+      "ticker": "SYR",
       "exchange": "ASX",
-      "headline": "Stock surged 10.5% in one session",
-      "detail": "$0.04 → $0.04",
-      "timestamp": "2026-05-31T20:50:26.625561+00:00"
+      "headline": "Stock surged 16.2% in one session",
+      "detail": "$0.10 → $0.12",
+      "timestamp": "2026-06-01T12:37:10.466068+00:00"
     },
     {
       "type": "EXTREME VOLUME",
       "severity": "critical",
-      "ticker": "PPE",
+      "ticker": "ASG",
       "exchange": "ASX",
-      "headline": "4.8x average volume detected",
-      "detail": "Volume: 532,223 vs 20-day avg: 109,752 | Price up 9.2%",
-      "timestamp": "2026-05-31T20:50:26.882861+00:00"
+      "headline": "46.5x average volume detected",
+      "detail": "Volume: 7,991,278 vs 20-day avg: 171,750 | Price down 7.7%",
+      "timestamp": "2026-06-01T12:37:21.294503+00:00"
     },
     {
       "type": "EXTREME VOLUME",
       "severity": "critical",
-      "ticker": "BAP",
-      "exchange": "ASX",
-      "headline": "5.1x average volume detected",
-      "detail": "Volume: 33,739,564 vs 20-day avg: 6,650,311 | Price up 3.7%",
-      "timestamp": "2026-05-31T20:50:37.672155+00:00"
-    },
-    {
-      "type": "EXTREME VOLUME",
-      "severity": "critical",
-      "ticker": "SGP",
-      "exchange": "ASX",
-      "headline": "4.6x average volume detected",
-      "detail": "Volume: 39,421,329 vs 20-day avg: 8,487,074 | Price up 1.7%",
-      "timestamp": "2026-05-31T20:50:49.690821+00:00"
-    },
-    {
-      "type": "EXTREME VOLUME",
-      "severity": "critical",
-      "ticker": "VCX",
-      "exchange": "ASX",
-      "headline": "7.7x average volume detected",
-      "detail": "Volume: 69,670,028 vs 20-day avg: 9,092,790 | Price up 0.4%",
-      "timestamp": "2026-05-31T20:50:51.933638+00:00"
-    },
-    {
-      "type": "EXTREME VOLUME",
-      "severity": "critical",
-      "ticker": "PLS",
-      "exchange": "ASX",
-      "headline": "18.3x average volume detected",
-      "detail": "Volume: 401,573,042 vs 20-day avg: 21,911,994 | Price up 2.5%",
-      "timestamp": "2026-05-31T20:50:54.902092+00:00"
-    },
-    {
-      "type": "EXTREME VOLUME",
-      "severity": "critical",
-      "ticker": "SLC",
+      "ticker": "VEE",
       "exchange": "ASX",
       "headline": "4.1x average volume detected",
-      "detail": "Volume: 5,205,853 vs 20-day avg: 1,256,559 | Price down 3.3%",
-      "timestamp": "2026-05-31T20:50:56.891387+00:00"
-    },
-    {
-      "type": "PRICE_MOVE",
-      "severity": "critical",
-      "ticker": "SBM",
-      "exchange": "ASX",
-      "headline": "Stock surged 10.6% in one session",
-      "detail": "$0.52 → $0.57",
-      "timestamp": "2026-05-31T20:50:57.513030+00:00"
-    },
-    {
-      "type": "EXTREME VOLUME",
-      "severity": "critical",
-      "ticker": "TCL",
-      "exchange": "ASX",
-      "headline": "7.1x average volume detected",
-      "detail": "Volume: 34,430,603 vs 20-day avg: 4,821,821 | Price up 3.0%",
-      "timestamp": "2026-05-31T20:51:00.935163+00:00"
-    },
-    {
-      "type": "EXTREME VOLUME",
-      "severity": "critical",
-      "ticker": "GMG",
-      "exchange": "ASX",
-      "headline": "5.4x average volume detected",
-      "detail": "Volume: 20,181,747 vs 20-day avg: 3,772,065 | Price up 2.9%",
-      "timestamp": "2026-05-31T20:51:01.363200+00:00"
-    },
-    {
-      "type": "EXTREME VOLUME",
-      "severity": "critical",
-      "ticker": "APA",
-      "exchange": "ASX",
-      "headline": "4.3x average volume detected",
-      "detail": "Volume: 11,240,187 vs 20-day avg: 2,611,675 | Price down 0.2%",
-      "timestamp": "2026-05-31T20:51:01.816580+00:00"
-    },
-    {
-      "type": "EXTREME VOLUME",
-      "severity": "critical",
-      "ticker": "CPU",
-      "exchange": "ASX",
-      "headline": "4.2x average volume detected",
-      "detail": "Volume: 6,055,694 vs 20-day avg: 1,453,741 | Price up 1.1%",
-      "timestamp": "2026-05-31T20:51:03.072118+00:00"
-    },
-    {
-      "type": "EXTREME VOLUME",
-      "severity": "critical",
-      "ticker": "TPG",
-      "exchange": "ASX",
-      "headline": "9.7x average volume detected",
-      "detail": "Volume: 29,113,542 vs 20-day avg: 3,009,824 | Price down 1.8%",
-      "timestamp": "2026-05-31T20:51:04.381977+00:00"
-    },
-    {
-      "type": "EXTREME VOLUME",
-      "severity": "critical",
-      "ticker": "IMD",
-      "exchange": "ASX",
-      "headline": "6.5x average volume detected",
-      "detail": "Volume: 6,831,814 vs 20-day avg: 1,058,044 | Price up 1.5%",
-      "timestamp": "2026-05-31T20:51:12.981865+00:00"
-    },
-    {
-      "type": "EXTREME VOLUME",
-      "severity": "critical",
-      "ticker": "SKC",
-      "exchange": "ASX",
-      "headline": "5.2x average volume detected",
-      "detail": "Volume: 2,066,918 vs 20-day avg: 399,652 | Price up 1.2%",
-      "timestamp": "2026-05-31T20:51:17.093745+00:00"
-    },
-    {
-      "type": "EXTREME VOLUME",
-      "severity": "critical",
-      "ticker": "SCG",
-      "exchange": "ASX",
-      "headline": "7.9x average volume detected",
-      "detail": "Volume: 81,574,796 vs 20-day avg: 10,352,341 | Price up 3.0%",
-      "timestamp": "2026-05-31T20:51:17.863527+00:00"
-    },
-    {
-      "type": "EXTREME VOLUME",
-      "severity": "critical",
-      "ticker": "CBA",
-      "exchange": "ASX",
-      "headline": "5.2x average volume detected",
-      "detail": "Volume: 11,194,839 vs 20-day avg: 2,144,221 | Price up 2.2%",
-      "timestamp": "2026-05-31T20:51:18.715422+00:00"
-    },
-    {
-      "type": "EXTREME VOLUME",
-      "severity": "critical",
-      "ticker": "IAG",
-      "exchange": "ASX",
-      "headline": "4.6x average volume detected",
-      "detail": "Volume: 26,965,164 vs 20-day avg: 5,898,169 | Price up 1.2%",
-      "timestamp": "2026-05-31T20:51:20.609492+00:00"
+      "detail": "Volume: 291,706 vs 20-day avg: 71,659 | Price up 1.0%",
+      "timestamp": "2026-06-01T12:37:30.818469+00:00"
     },
     {
       "type": "INSIDER_SELL",
@@ -211,148 +85,94 @@
       "timestamp": "2026-05-27 00:00:00"
     },
     {
-      "type": "EXTREME VOLUME",
+      "type": "PRICE_MOVE",
       "severity": "high",
-      "ticker": "ASX",
+      "ticker": "CVN",
       "exchange": "ASX",
-      "headline": "3.2x average volume detected",
-      "detail": "Volume: 3,100,622 vs 20-day avg: 984,313 | Price up 2.0%",
-      "timestamp": "2026-05-31T20:50:25.263673+00:00"
-    },
-    {
-      "type": "EXTREME VOLUME",
-      "severity": "high",
-      "ticker": "CCX",
-      "exchange": "ASX",
-      "headline": "3.2x average volume detected",
-      "detail": "Volume: 3,163,058 vs 20-day avg: 974,398 | Price up 10.5%",
-      "timestamp": "2026-05-31T20:50:26.463211+00:00"
+      "headline": "Stock plunged 7.7% in one session",
+      "detail": "$0.13 → $0.12",
+      "timestamp": "2026-06-01T12:36:41.794930+00:00"
     },
     {
       "type": "PRICE_MOVE",
       "severity": "high",
-      "ticker": "PPE",
+      "ticker": "APX",
+      "exchange": "ASX",
+      "headline": "Stock surged 7.4% in one session",
+      "detail": "$1.15 → $1.24",
+      "timestamp": "2026-06-01T12:36:43.646554+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "high",
+      "ticker": "GWA",
+      "exchange": "ASX",
+      "headline": "Stock plunged 6.5% in one session",
+      "detail": "$2.14 → $2.00",
+      "timestamp": "2026-06-01T12:36:47.444639+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "high",
+      "ticker": "BAP",
+      "exchange": "ASX",
+      "headline": "Stock surged 8.2% in one session",
+      "detail": "$0.43 → $0.46",
+      "timestamp": "2026-06-01T12:36:49.011352+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "high",
+      "ticker": "RMD",
+      "exchange": "ASX",
+      "headline": "Stock plunged 7.6% in one session",
+      "detail": "$28.75 → $26.57",
+      "timestamp": "2026-06-01T12:36:52.576548+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "high",
+      "ticker": "PME",
       "exchange": "ASX",
       "headline": "Stock surged 9.2% in one session",
-      "detail": "$0.60 → $0.65",
-      "timestamp": "2026-05-31T20:50:26.981567+00:00"
-    },
-    {
-      "type": "PRICE_MOVE",
-      "severity": "high",
-      "ticker": "RSG",
-      "exchange": "ASX",
-      "headline": "Stock surged 8.0% in one session",
-      "detail": "$1.19 → $1.28",
-      "timestamp": "2026-05-31T20:50:28.349590+00:00"
-    },
-    {
-      "type": "EXTREME VOLUME",
-      "severity": "high",
-      "ticker": "DXS",
-      "exchange": "ASX",
-      "headline": "3.6x average volume detected",
-      "detail": "Volume: 9,236,322 vs 20-day avg: 2,537,999 | Price down 5.4%",
-      "timestamp": "2026-05-31T20:50:36.388861+00:00"
-    },
-    {
-      "type": "PRICE_MOVE",
-      "severity": "high",
-      "ticker": "DXS",
-      "exchange": "ASX",
-      "headline": "Stock plunged 5.4% in one session",
-      "detail": "$5.93 → $5.61",
-      "timestamp": "2026-05-31T20:50:36.615901+00:00"
-    },
-    {
-      "type": "EXTREME VOLUME",
-      "severity": "high",
-      "ticker": "QBE",
-      "exchange": "ASX",
-      "headline": "3.8x average volume detected",
-      "detail": "Volume: 9,954,080 vs 20-day avg: 2,632,467 | Price up 0.8%",
-      "timestamp": "2026-05-31T20:50:42.048751+00:00"
-    },
-    {
-      "type": "PRICE_MOVE",
-      "severity": "high",
-      "ticker": "PRU",
-      "exchange": "ASX",
-      "headline": "Stock surged 6.4% in one session",
-      "detail": "$4.86 → $5.17",
-      "timestamp": "2026-05-31T20:50:43.514516+00:00"
-    },
-    {
-      "type": "EXTREME VOLUME",
-      "severity": "high",
-      "ticker": "ANZ",
-      "exchange": "ASX",
-      "headline": "3.6x average volume detected",
-      "detail": "Volume: 18,403,748 vs 20-day avg: 5,104,292 | Price up 0.9%",
-      "timestamp": "2026-05-31T20:50:49.174476+00:00"
+      "detail": "$132.26 → $144.46",
+      "timestamp": "2026-06-01T12:37:06.454285+00:00"
     },
     {
       "type": "PRICE_MOVE",
       "severity": "high",
       "ticker": "MP1",
       "exchange": "ASX",
-      "headline": "Stock surged 5.4% in one session",
-      "detail": "$14.73 → $15.52",
-      "timestamp": "2026-05-31T20:50:59.307993+00:00"
-    },
-    {
-      "type": "EXTREME VOLUME",
-      "severity": "high",
-      "ticker": "WES",
-      "exchange": "ASX",
-      "headline": "3.9x average volume detected",
-      "detail": "Volume: 5,709,681 vs 20-day avg: 1,478,998 | Price up 1.7%",
-      "timestamp": "2026-05-31T20:51:02.247648+00:00"
+      "headline": "Stock surged 7.0% in one session",
+      "detail": "$15.52 → $16.61",
+      "timestamp": "2026-06-01T12:37:11.261376+00:00"
     },
     {
       "type": "PRICE_MOVE",
       "severity": "high",
-      "ticker": "TAH",
+      "ticker": "ASG",
       "exchange": "ASX",
-      "headline": "Stock surged 5.5% in one session",
-      "detail": "$0.73 → $0.77",
-      "timestamp": "2026-05-31T20:51:09.663326+00:00"
-    },
-    {
-      "type": "EXTREME VOLUME",
-      "severity": "high",
-      "ticker": "BXB",
-      "exchange": "ASX",
-      "headline": "3.3x average volume detected",
-      "detail": "Volume: 14,775,220 vs 20-day avg: 4,447,356 | Price up 0.1%",
-      "timestamp": "2026-05-31T20:51:28.469254+00:00"
-    },
-    {
-      "type": "EXTREME VOLUME",
-      "severity": "high",
-      "ticker": "BHP",
-      "exchange": "ASX",
-      "headline": "3.6x average volume detected",
-      "detail": "Volume: 29,984,452 vs 20-day avg: 8,280,242 | Price up 2.9%",
-      "timestamp": "2026-05-31T20:51:30.479022+00:00"
-    },
-    {
-      "type": "EXTREME VOLUME",
-      "severity": "high",
-      "ticker": "FLT",
-      "exchange": "ASX",
-      "headline": "3.2x average volume detected",
-      "detail": "Volume: 4,571,608 vs 20-day avg: 1,418,177 | Price up 8.2%",
-      "timestamp": "2026-05-31T20:51:31.447352+00:00"
+      "headline": "Stock plunged 7.7% in one session",
+      "detail": "$1.96 → $1.81",
+      "timestamp": "2026-06-01T12:37:21.401739+00:00"
     },
     {
       "type": "PRICE_MOVE",
       "severity": "high",
-      "ticker": "FLT",
+      "ticker": "WTC",
       "exchange": "ASX",
-      "headline": "Stock surged 8.2% in one session",
-      "detail": "$10.10 → $10.93",
-      "timestamp": "2026-05-31T20:51:31.581229+00:00"
+      "headline": "Stock surged 8.7% in one session",
+      "detail": "$36.01 → $39.15",
+      "timestamp": "2026-06-01T12:37:29.000464+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "high",
+      "ticker": "XRO",
+      "exchange": "ASX",
+      "headline": "Stock surged 7.7% in one session",
+      "detail": "$75.17 → $80.95",
+      "timestamp": "2026-06-01T12:37:39.929475+00:00"
     },
     {
       "type": "INSIDER_SELL",
@@ -391,17 +211,6 @@
       "timestamp": "2026-05-21 00:00:00"
     },
     {
-      "type": "NEWS",
-      "severity": "medium",
-      "ticker": "WBC",
-      "exchange": "ASX",
-      "headline": "Westpac fined A$26m over hardship delays",
-      "detail": "Source: Retail Banker International",
-      "sentiment": "negative",
-      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/YNYtKwxhWsg8QIf7moACCg--~B/aD04MTA7dz0xNDQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/retail_banker_international_407/99fc1d1939d642bbfbabf7e34273f11f",
-      "timestamp": "2026-05-27T12:04:25Z"
-    },
-    {
       "type": "INSIDER_BUY",
       "severity": "medium",
       "ticker": "FLT",
@@ -424,335 +233,38 @@
     {
       "type": "VOLUME SPIKE",
       "severity": "medium",
-      "ticker": "NUF",
-      "exchange": "ASX",
-      "headline": "2.6x average volume detected",
-      "detail": "Volume: 4,037,450 vs 20-day avg: 1,559,072 | Price up 3.4%",
-      "timestamp": "2026-05-31T20:50:24.471353+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "RSG",
-      "exchange": "ASX",
-      "headline": "2.0x average volume detected",
-      "detail": "Volume: 12,177,805 vs 20-day avg: 6,011,193 | Price up 8.0%",
-      "timestamp": "2026-05-31T20:50:28.257300+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "FMG",
-      "exchange": "ASX",
-      "headline": "2.8x average volume detected",
-      "detail": "Volume: 15,367,825 vs 20-day avg: 5,445,691 | Price up 2.4%",
-      "timestamp": "2026-05-31T20:50:30.508719+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "SDF",
-      "exchange": "ASX",
-      "headline": "2.0x average volume detected",
-      "detail": "Volume: 4,435,647 vs 20-day avg: 2,203,147 | Price up 0.2%",
-      "timestamp": "2026-05-31T20:50:33.718507+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "TWE",
+      "ticker": "RMD",
       "exchange": "ASX",
       "headline": "2.1x average volume detected",
-      "detail": "Volume: 7,795,057 vs 20-day avg: 3,684,712 | Price down 0.5%",
-      "timestamp": "2026-05-31T20:50:36.911139+00:00"
+      "detail": "Volume: 3,206,972 vs 20-day avg: 1,516,715 | Price down 7.6%",
+      "timestamp": "2026-06-01T12:36:52.467465+00:00"
     },
     {
       "type": "VOLUME SPIKE",
       "severity": "medium",
-      "ticker": "SHL",
+      "ticker": "A2M",
       "exchange": "ASX",
-      "headline": "3.0x average volume detected",
-      "detail": "Volume: 4,952,711 vs 20-day avg: 1,675,089 | Price up 3.7%",
-      "timestamp": "2026-05-31T20:50:39.201024+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "NST",
-      "exchange": "ASX",
-      "headline": "2.2x average volume detected",
-      "detail": "Volume: 14,764,990 vs 20-day avg: 6,787,826 | Price up 3.4%",
-      "timestamp": "2026-05-31T20:50:42.959533+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "CQR",
-      "exchange": "ASX",
-      "headline": "2.2x average volume detected",
-      "detail": "Volume: 2,772,105 vs 20-day avg: 1,273,251 | Price up 1.1%",
-      "timestamp": "2026-05-31T20:50:43.858587+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "CSL",
-      "exchange": "ASX",
-      "headline": "3.0x average volume detected",
-      "detail": "Volume: 5,891,391 vs 20-day avg: 1,982,182 | Price down 1.0%",
-      "timestamp": "2026-05-31T20:50:44.331177+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "CAR",
-      "exchange": "ASX",
-      "headline": "2.6x average volume detected",
-      "detail": "Volume: 5,365,651 vs 20-day avg: 2,091,687 | Price up 2.2%",
-      "timestamp": "2026-05-31T20:50:44.673977+00:00"
+      "headline": "2.4x average volume detected",
+      "detail": "Volume: 8,952,882 vs 20-day avg: 3,690,758 | Price down 0.9%",
+      "timestamp": "2026-06-01T12:36:57.533470+00:00"
     },
     {
       "type": "VOLUME SPIKE",
       "severity": "medium",
       "ticker": "INA",
       "exchange": "ASX",
-      "headline": "2.1x average volume detected",
-      "detail": "Volume: 2,215,202 vs 20-day avg: 1,060,343 | Price up 0.3%",
-      "timestamp": "2026-05-31T20:50:47.383762+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "BEN",
-      "exchange": "ASX",
-      "headline": "2.2x average volume detected",
-      "detail": "Volume: 2,269,281 vs 20-day avg: 1,036,403 | Price up 1.5%",
-      "timestamp": "2026-05-31T20:50:47.783645+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "WBC",
-      "exchange": "ASX",
-      "headline": "2.5x average volume detected",
-      "detail": "Volume: 13,666,913 vs 20-day avg: 5,478,657 | Price up 0.2%",
-      "timestamp": "2026-05-31T20:50:51.573583+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "WEB",
-      "exchange": "ASX",
-      "headline": "2.5x average volume detected",
-      "detail": "Volume: 7,507,360 vs 20-day avg: 3,032,537 | Price up 2.8%",
-      "timestamp": "2026-05-31T20:50:52.355212+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "NAB",
-      "exchange": "ASX",
-      "headline": "2.4x average volume detected",
-      "detail": "Volume: 16,098,426 vs 20-day avg: 6,595,487 | Price up 0.6%",
-      "timestamp": "2026-05-31T20:50:52.787027+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "LYC",
-      "exchange": "ASX",
-      "headline": "2.7x average volume detected",
-      "detail": "Volume: 9,482,954 vs 20-day avg: 3,572,940 | Price up 1.3%",
-      "timestamp": "2026-05-31T20:50:53.145614+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "SBM",
-      "exchange": "ASX",
-      "headline": "2.5x average volume detected",
-      "detail": "Volume: 17,752,467 vs 20-day avg: 7,179,366 | Price up 10.6%",
-      "timestamp": "2026-05-31T20:50:57.418423+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "SYR",
-      "exchange": "ASX",
-      "headline": "2.2x average volume detected",
-      "detail": "Volume: 11,018,349 vs 20-day avg: 4,909,244 | Price down 1.0%",
-      "timestamp": "2026-05-31T20:50:58.169048+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "WOW",
-      "exchange": "ASX",
-      "headline": "2.4x average volume detected",
-      "detail": "Volume: 6,130,955 vs 20-day avg: 2,549,025 | Price up 0.8%",
-      "timestamp": "2026-05-31T20:51:03.531128+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "S32",
-      "exchange": "ASX",
-      "headline": "2.6x average volume detected",
-      "detail": "Volume: 38,083,552 vs 20-day avg: 14,785,785 | Price up 3.0%",
-      "timestamp": "2026-05-31T20:51:04.723227+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "AIA",
-      "exchange": "ASX",
-      "headline": "2.2x average volume detected",
-      "detail": "Volume: 1,209,365 vs 20-day avg: 558,541 | Price up 1.0%",
-      "timestamp": "2026-05-31T20:51:09.917300+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "VEA",
-      "exchange": "ASX",
-      "headline": "2.1x average volume detected",
-      "detail": "Volume: 11,287,429 vs 20-day avg: 5,320,752 | Price down 1.9%",
-      "timestamp": "2026-05-31T20:51:12.080891+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "ORG",
-      "exchange": "ASX",
       "headline": "2.3x average volume detected",
-      "detail": "Volume: 8,381,349 vs 20-day avg: 3,682,947 | Price down 0.2%",
-      "timestamp": "2026-05-31T20:51:13.434999+00:00"
+      "detail": "Volume: 2,516,956 vs 20-day avg: 1,111,682 | Price down 0.3%",
+      "timestamp": "2026-06-01T12:36:58.272351+00:00"
     },
     {
       "type": "VOLUME SPIKE",
       "severity": "medium",
-      "ticker": "REA",
-      "exchange": "ASX",
-      "headline": "2.3x average volume detected",
-      "detail": "Volume: 750,278 vs 20-day avg: 321,492 | Price up 0.2%",
-      "timestamp": "2026-05-31T20:51:14.705466+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "WTC",
-      "exchange": "ASX",
-      "headline": "2.6x average volume detected",
-      "detail": "Volume: 3,750,145 vs 20-day avg: 1,438,533 | Price down 1.0%",
-      "timestamp": "2026-05-31T20:51:15.665347+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "COL",
-      "exchange": "ASX",
-      "headline": "2.5x average volume detected",
-      "detail": "Volume: 7,769,696 vs 20-day avg: 3,058,222 | Price up 0.9%",
-      "timestamp": "2026-05-31T20:51:19.118732+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "COH",
-      "exchange": "ASX",
-      "headline": "2.9x average volume detected",
-      "detail": "Volume: 1,729,832 vs 20-day avg: 592,171 | Price up 3.2%",
-      "timestamp": "2026-05-31T20:51:19.567277+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "RIO",
-      "exchange": "ASX",
-      "headline": "2.0x average volume detected",
-      "detail": "Volume: 2,516,432 vs 20-day avg: 1,229,721 | Price up 1.2%",
-      "timestamp": "2026-05-31T20:51:20.024154+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "CIP",
-      "exchange": "ASX",
-      "headline": "2.1x average volume detected",
-      "detail": "Volume: 2,189,751 vs 20-day avg: 1,020,921 | Price up 0.7%",
-      "timestamp": "2026-05-31T20:51:22.869573+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "BWP",
-      "exchange": "ASX",
-      "headline": "2.2x average volume detected",
-      "detail": "Volume: 2,831,387 vs 20-day avg: 1,289,501 | Price up 0.3%",
-      "timestamp": "2026-05-31T20:51:23.324139+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "NHF",
-      "exchange": "ASX",
-      "headline": "2.7x average volume detected",
-      "detail": "Volume: 1,696,486 vs 20-day avg: 635,026 | Price down 1.6%",
-      "timestamp": "2026-05-31T20:51:23.724780+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "MQG",
-      "exchange": "ASX",
-      "headline": "2.1x average volume detected",
-      "detail": "Volume: 1,777,173 vs 20-day avg: 846,042 | Price up 1.1%",
-      "timestamp": "2026-05-31T20:51:24.902287+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "XRO",
-      "exchange": "ASX",
-      "headline": "2.4x average volume detected",
-      "detail": "Volume: 2,411,830 vs 20-day avg: 994,312 | Price up 0.9%",
-      "timestamp": "2026-05-31T20:51:25.604200+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "REH",
-      "exchange": "ASX",
-      "headline": "2.1x average volume detected",
-      "detail": "Volume: 1,140,719 vs 20-day avg: 555,367 | Price up 1.5%",
-      "timestamp": "2026-05-31T20:51:27.466495+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "TLS",
-      "exchange": "ASX",
-      "headline": "2.2x average volume detected",
-      "detail": "Volume: 50,622,757 vs 20-day avg: 23,044,682 | Price down 0.4%",
-      "timestamp": "2026-05-31T20:51:28.000296+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "ANN",
+      "ticker": "SLC",
       "exchange": "ASX",
       "headline": "2.8x average volume detected",
-      "detail": "Volume: 1,140,898 vs 20-day avg: 402,515 | Price up 2.9%",
-      "timestamp": "2026-05-31T20:51:29.470368+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "STO",
-      "exchange": "ASX",
-      "headline": "2.1x average volume detected",
-      "detail": "Volume: 24,169,272 vs 20-day avg: 11,438,530 | Price down 0.5%",
-      "timestamp": "2026-05-31T20:51:30.957214+00:00"
+      "detail": "Volume: 4,127,861 vs 20-day avg: 1,460,982 | Price up 0.9%",
+      "timestamp": "2026-06-01T12:37:08.766427+00:00"
     },
     {
       "type": "INSIDER_BUY",
@@ -861,17 +373,6 @@
       "headline": "O'Sullivan (Paul Dominic) (Independent Non-Executive Chairman) purchased 3,247 shares ($82,150)",
       "detail": "Purchase at price 25.30 per share.",
       "timestamp": "2026-05-21 00:00:00"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "WBC",
-      "exchange": "ASX",
-      "headline": "Westpac Banking (ASX:WBC) Valuation Check As Tighter Lending And Regulation Shape Investor Sentiment",
-      "detail": "Source: Simply Wall St.",
-      "sentiment": "neutral",
-      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/6mTDMHV5wxphXZ1o9ZIO4A--~B/aD00MzI7dz0xMTk0O2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/simply_wall_st__316/9cb69651d4316fa46fbd3b4e13d4fead",
-      "timestamp": "2026-05-24T06:09:58Z"
     },
     {
       "type": "NEWS",
@@ -1284,17 +785,6 @@
     {
       "type": "NEWS",
       "severity": "low",
-      "ticker": "WBC",
-      "exchange": "ASX",
-      "headline": "Once investor darlings, Australian banks get reality check on mortgage change",
-      "detail": "Source: Reuters",
-      "sentiment": "neutral",
-      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/s9mhjmCQdXYSDMyvfPQQUg--~B/aD01MzM7dz04MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/reuters.com/004c33b9cab1e83c7e2ec51b6bda6efd",
-      "timestamp": "2026-05-27T20:59:54Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
       "ticker": "NAB",
       "exchange": "ASX",
       "headline": "Once investor darlings, Australian banks get reality check on mortgage change",
@@ -1313,17 +803,6 @@
       "sentiment": "neutral",
       "thumbnail": "https://s.yimg.com/uu/api/res/1.2/s9mhjmCQdXYSDMyvfPQQUg--~B/aD01MzM7dz04MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/reuters.com/004c33b9cab1e83c7e2ec51b6bda6efd",
       "timestamp": "2026-05-27T20:59:54Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "MQG",
-      "exchange": "ASX",
-      "headline": "World’s Appetite for AI Makes China Less Afraid of Stronger Yuan",
-      "detail": "Source: Bloomberg",
-      "sentiment": "positive",
-      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/Y92NHqBRayq.IjRSCfdnfA--~B/aD0xMzI5O3c9MjAxMDthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/bloomberg_holding_pen_162/0bc4c03dadaa4ee01b13e4dd5d670d4a",
-      "timestamp": "2026-05-28T05:00:04Z"
     },
     {
       "type": "NEWS",
@@ -1460,17 +939,6 @@
     {
       "type": "NEWS",
       "severity": "low",
-      "ticker": "WOW",
-      "exchange": "ASX",
-      "headline": "Woolworths (WLWHY) Moves to Buy: Rationale Behind the Upgrade",
-      "detail": "Source: Zacks",
-      "sentiment": "positive",
-      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/132juehTNIyEUn7pK7.GPA--~B/aD01MDY7dz05MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/zacks.com/3d7c5b2146ac04ffd51752e17ff2a619",
-      "timestamp": "2026-05-29T16:00:03Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
       "ticker": "RIO",
       "exchange": "ASX",
       "headline": "RIO Starts $1.5B AP60 Smelter Expansion in Quebec, Targets End-2026 Completion",
@@ -1599,6 +1067,94 @@
       "sentiment": "positive",
       "thumbnail": "https://s.yimg.com/uu/api/res/1.2/Y_vIYLkkEA5HYgNxQv92Og--~B/aD00MzI7dz0xMTk0O2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/simply_wall_st__316/cffbea492babb121240b33035b679148",
       "timestamp": "2026-05-31T19:39:20Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "SYR",
+      "exchange": "ASX",
+      "headline": "Tesla withdraws termination notice on graphite supply deal with Australia's Syrah",
+      "detail": "Source: Reuters",
+      "sentiment": "positive",
+      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/qmiZz27uGgjArfB_ORZpfw--~B/aD01MjE7dz04MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/reuters.com/682f86bfa0c2865b77cda321c6cb9a54",
+      "timestamp": "2026-05-31T23:49:50Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "WBC",
+      "exchange": "ASX",
+      "headline": "Small Cap Watch: commercial expansion updates drive news flow",
+      "detail": "Source: Proactive",
+      "sentiment": "neutral",
+      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/_PlrsH1Q.XXp_P90rD20ow--~B/aD03MjA7dz0xMjgwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/proactive_us_504/55dc2bb02ce081577f595601141d04ff",
+      "timestamp": "2026-06-01T00:02:00Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "WBC",
+      "exchange": "ASX",
+      "headline": "Greatland Resources secures $500m debt package and approves Havieron development",
+      "detail": "Source: Proactive",
+      "sentiment": "neutral",
+      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/AlM7A7oPlzcjACMIrrEG8w--~B/aD03MjA7dz0xMDc5O2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/proactive_us_504/edf4d8ea149ce5f60da95a2e48dcbb55",
+      "timestamp": "2026-06-01T00:17:00Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "SYR",
+      "exchange": "ASX",
+      "headline": "Tesla Backs Off Threat to Cancel Australian Graphite Supply Agreement, Syrah Stock Pops Over 23%",
+      "detail": "Source: Benzinga",
+      "sentiment": "neutral",
+      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/CAmplAgfXq.5DKt00efMZA--~B/aD02MzA7dz0xMDI0O2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/Benzinga/83b937b1b6defec01a9df77f15288cff",
+      "timestamp": "2026-06-01T04:08:42Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "WBC",
+      "exchange": "ASX",
+      "headline": "Greatland Resources lands $500m as it advances Havieron FID",
+      "detail": "Source: Proactive",
+      "sentiment": "neutral",
+      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/a5BJVMynUoEKi_Ff_0dLZg--~B/aD03MTk7dz0xMjgwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/proactive_us_504/bd3948f84f44af977163cd46be5d5f06",
+      "timestamp": "2026-06-01T09:31:00Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "BPT",
+      "exchange": "ASX",
+      "headline": "Energy & Utilities Roundup: Market Talk",
+      "detail": "Source: The Wall Street Journal",
+      "sentiment": "neutral",
+      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/ZiVoXSFONQaG1tYUkf_vkQ--~B/aD02NDA7dz0xMjgwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/wsj.com/f3a3591266b185ee59754b46dad08085",
+      "timestamp": "2026-06-01T11:12:00Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "MQG",
+      "exchange": "ASX",
+      "headline": "Nomura eyes US asset management deals after Macquarie deal",
+      "detail": "Source: Private Banker International",
+      "sentiment": "positive",
+      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/0vppNdH72YiPn7THqum4MQ--~B/aD04MTA7dz0xNDQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/private_banker_international_938/c9ac232f212fc34131ad0eb8899637b9",
+      "timestamp": "2026-06-01T11:44:10Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "S32",
+      "exchange": "ASX",
+      "headline": "Closing Date Extended for US Government's Planned Investment in Trilogy Metals",
+      "detail": "Source: MT Newswires",
+      "sentiment": "neutral",
+      "thumbnail": null,
+      "timestamp": "2026-06-01T12:13:48Z"
     }
   ]
 }

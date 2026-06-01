@@ -1,7 +1,7 @@
 {
   "strategy": "monthly_conviction",
   "holdWeeks": 4,
-  "startDate": "2026-05-29",
+  "startDate": "2026-05-04",
   "startingCapital": 10000.0,
   "totalValue": 10000.0,
   "totalPnL": 0.0,
@@ -10,17 +10,49 @@
   "wins": 0,
   "losses": 0,
   "flat": 0,
-  "winRate": 0.0,
+  "winRate": 0,
   "bestTrade": null,
   "worstTrade": null,
-  "avgWin": 0.0,
-  "avgLoss": 0.0,
-  "currentCycle": 0,
-  "totalCycles": 0,
-  "completedCycles": 0,
+  "avgWin": 0,
+  "avgLoss": 0,
+  "currentCycle": 2,
+  "totalCycles": 2,
+  "completedCycles": 1,
   "openPositions": [],
   "tradeHistory": [],
-  "cycleReturns": [],
-  "equityCurve": [],
-  "lastUpdated": "2026-05-29T20:45:36.233570+10:00"
+  "cycleReturns": [
+    {
+      "cycle": 1,
+      "dateRange": "04 May – 29 May 2026",
+      "startCapital": 10000.0,
+      "endCapital": 10000.0,
+      "returnPct": 0.0,
+      "picks": 0,
+      "status": "completed"
+    },
+    {
+      "cycle": 2,
+      "dateRange": "01 Jun – 26 Jun 2026",
+      "startCapital": 10000.0,
+      "endCapital": 10000.0,
+      "returnPct": 0.0,
+      "picks": 0,
+      "status": "active"
+    }
+  ],
+  "equityCurve": [
+    {
+      "date": "2026-05-04",
+      "value": 10000.0
+    },
+    {
+      "date": "2026-05-29",
+      "value": 10000.0
+    },
+    {
+      "date": "2026-06-26",
+      "value": 10000.0
+    }
+  ],
+  "lastUpdated": "2026-06-01T22:36:33.382552+10:00"
 }
