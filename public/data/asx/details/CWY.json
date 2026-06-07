@@ -1,16 +1,12 @@
 {
   "ticker": "CWY",
   "name": "CLEANAWAY FPO [CWY]",
-  "price": 2.29,
-  "valuationScore": 2.4,
-  "marketCap": "5.1B",
+  "price": 2.37,
+  "valuationScore": 2.7,
+  "marketCap": "5.3B",
   "sector": "Industrials",
   "domain": "cleanaway.com.au",
   "chartData": [
-    {
-      "date": "2025-06-01",
-      "price": 2.74
-    },
     {
       "date": "2025-06-08",
       "price": 2.66
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-31",
       "price": 2.29
+    },
+    {
+      "date": "2026-06-07",
+      "price": 2.37
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 45.8,
-      "threshold": 26.66,
-      "label": "45.8x vs 26.7x sector"
+      "value": 47.4,
+      "threshold": 26.83,
+      "label": "47.4x vs 26.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.69,
+      "value": 1.75,
       "threshold": 1.5,
-      "label": "1.69x vs 1.5x"
+      "label": "1.75x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 11.9,
+      "value": 12.19,
       "threshold": 10.0,
-      "label": "11.9x vs 10x"
+      "label": "12.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.13,
+      "value": 2.06,
       "threshold": 5.0,
       "label": "2.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 19.13,
-      "threshold": 45.8,
-      "label": "Fwd 19.1x vs Trail 45.8x"
+      "value": 19.79,
+      "threshold": 47.4,
+      "label": "Fwd 19.8x vs Trail 47.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.09,
       "threshold": 0.5,
-      "label": "P/S 1.2x ÷ Growth 13.7% = 0.09"
+      "label": "P/S 1.3x ÷ Growth 13.7% = 0.09"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 45.8,
-    "sectorPe": 31.36,
-    "pb": 1.69,
-    "ps": 1.25,
-    "evEbitda": 11.9,
-    "fcfYield": 2.13,
-    "forwardPe": 19.13,
-    "dividendYield": 2.86,
+    "pe": 47.4,
+    "sectorPe": 31.57,
+    "pb": 1.75,
+    "ps": 1.29,
+    "evEbitda": 12.19,
+    "fcfYield": 2.06,
+    "forwardPe": 19.79,
+    "dividendYield": 2.76,
     "revenueGrowth": 13.7,
     "profitMargin": 2.94,
     "operatingMargin": 6.65,

@@ -1,16 +1,12 @@
 {
   "ticker": "MND",
   "name": "MONADEL FPO [MND]",
-  "price": 31.06,
-  "valuationScore": 4.7,
+  "price": 30.52,
+  "valuationScore": 4.1,
   "marketCap": "3.1B",
   "sector": "Industrials",
   "domain": "monadelphous.com.au",
   "chartData": [
-    {
-      "date": "2025-06-01",
-      "price": 16.67
-    },
     {
       "date": "2025-06-08",
       "price": 16.84
@@ -218,45 +214,49 @@
     {
       "date": "2026-05-31",
       "price": 31.06
+    },
+    {
+      "date": "2026-06-07",
+      "price": 30.52
     }
   ],
-  "testsPassed": 3,
+  "testsPassed": 4,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 29.3,
-      "threshold": 26.66,
-      "label": "29.3x vs 26.7x sector"
+      "value": 28.79,
+      "threshold": 26.83,
+      "label": "28.8x vs 26.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 5.66,
+      "value": 5.56,
       "threshold": 1.5,
-      "label": "5.66x vs 1.5x"
+      "label": "5.56x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 17.84,
+      "value": 17.51,
       "threshold": 10.0,
-      "label": "17.8x vs 10x"
+      "label": "17.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 4.94,
+      "passed": true,
+      "value": 5.03,
       "threshold": 5.0,
-      "label": "4.9% vs 5%"
+      "label": "5.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 25.02,
-      "threshold": 29.3,
-      "label": "Fwd 25.0x vs Trail 29.3x"
+      "value": 24.59,
+      "threshold": 28.79,
+      "label": "Fwd 24.6x vs Trail 28.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 29.3,
-    "sectorPe": 31.36,
-    "pb": 5.66,
-    "ps": 1.21,
-    "evEbitda": 17.84,
-    "fcfYield": 4.94,
-    "forwardPe": 25.02,
-    "dividendYield": 3.16,
+    "pe": 28.79,
+    "sectorPe": 31.57,
+    "pb": 5.56,
+    "ps": 1.19,
+    "evEbitda": 17.51,
+    "fcfYield": 5.03,
+    "forwardPe": 24.59,
+    "dividendYield": 3.21,
     "revenueGrowth": 40.6,
     "profitMargin": 4.11,
     "operatingMargin": 6.05,

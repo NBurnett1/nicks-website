@@ -1,16 +1,12 @@
 {
   "ticker": "TLS",
   "name": "TELSTRA FPO [TLS]",
-  "price": 5.21,
-  "valuationScore": 1.6,
-  "marketCap": "58.3B",
+  "price": 4.97,
+  "valuationScore": 0.4,
+  "marketCap": "55.6B",
   "sector": "Telecom",
   "domain": "telstra.com.au",
   "chartData": [
-    {
-      "date": "2025-06-01",
-      "price": 4.6
-    },
     {
       "date": "2025-06-08",
       "price": 4.68
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-31",
       "price": 5.21
+    },
+    {
+      "date": "2026-06-07",
+      "price": 4.97
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 26.05,
-      "threshold": 18.0,
-      "label": "26.1x vs 18.0x sector"
+      "value": 24.85,
+      "threshold": 17.65,
+      "label": "24.8x vs 17.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.44,
+      "value": 4.23,
       "threshold": 1.5,
-      "label": "4.44x vs 1.5x"
+      "label": "4.23x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 11.04,
+      "value": 10.65,
       "threshold": 10.0,
-      "label": "11.0x vs 10x"
+      "label": "10.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 6.68,
+      "value": 7.01,
       "threshold": 5.0,
-      "label": "6.7% vs 5%"
+      "label": "7.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 23.74,
-      "threshold": 26.05,
-      "label": "Fwd 23.7x vs Trail 26.1x"
+      "value": 22.65,
+      "threshold": 24.85,
+      "label": "Fwd 22.6x vs Trail 24.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 8.39,
+      "value": 8.0,
       "threshold": 0.5,
-      "label": "P/S 2.5x ÷ Growth 0.3% = 8.39"
+      "label": "P/S 2.4x ÷ Growth 0.3% = 8.00"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 26.05,
-    "sectorPe": 21.18,
-    "pb": 4.44,
-    "ps": 2.52,
-    "evEbitda": 11.04,
-    "fcfYield": 6.68,
-    "forwardPe": 23.74,
-    "dividendYield": 4.03,
+    "pe": 24.85,
+    "sectorPe": 20.76,
+    "pb": 4.23,
+    "ps": 2.4,
+    "evEbitda": 10.65,
+    "fcfYield": 7.01,
+    "forwardPe": 22.65,
+    "dividendYield": 4.23,
     "revenueGrowth": 0.3,
     "profitMargin": 9.8,
     "operatingMargin": 16.51,

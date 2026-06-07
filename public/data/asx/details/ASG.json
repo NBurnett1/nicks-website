@@ -1,16 +1,12 @@
 {
   "ticker": "ASG",
   "name": "AUTOSPORTS FPO [ASG]",
-  "price": 1.96,
-  "valuationScore": 8.5,
-  "marketCap": "418M",
+  "price": 1.7,
+  "valuationScore": 8.3,
+  "marketCap": "362M",
   "sector": "Consumer Cyclical",
   "domain": "autosportsgroup.com.au",
   "chartData": [
-    {
-      "date": "2025-06-01",
-      "price": 2.03
-    },
     {
       "date": "2025-06-08",
       "price": 2.03
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-31",
       "price": 1.96
+    },
+    {
+      "date": "2026-06-07",
+      "price": 1.7
     }
   ],
   "testsPassed": 5,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 8.91,
-      "threshold": 20.38,
-      "label": "8.9x vs 20.4x sector"
+      "value": 7.73,
+      "threshold": 19.49,
+      "label": "7.7x vs 19.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.76,
+      "value": 0.66,
       "threshold": 1.5,
-      "label": "0.76x vs 1.5x"
+      "label": "0.66x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 11.32,
+      "value": 10.96,
       "threshold": 10.0,
-      "label": "11.3x vs 10x"
+      "label": "11.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -22.22,
+      "value": -25.62,
       "threshold": 5.0,
-      "label": "-22.2% vs 5%"
+      "label": "-25.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 6.99,
-      "threshold": 8.91,
-      "label": "Fwd 7.0x vs Trail 8.9x"
+      "value": 6.06,
+      "threshold": 7.73,
+      "label": "Fwd 6.1x vs Trail 7.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 8.91,
-    "sectorPe": 23.98,
-    "pb": 0.76,
-    "ps": 0.14,
-    "evEbitda": 11.32,
-    "fcfYield": -22.22,
-    "forwardPe": 6.99,
-    "dividendYield": 5.1,
+    "pe": 7.73,
+    "sectorPe": 22.93,
+    "pb": 0.66,
+    "ps": 0.12,
+    "evEbitda": 10.96,
+    "fcfYield": -25.62,
+    "forwardPe": 6.06,
+    "dividendYield": 5.88,
     "revenueGrowth": 10.9,
     "profitMargin": 1.46,
     "operatingMargin": 4.24,

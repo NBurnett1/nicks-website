@@ -1,16 +1,12 @@
 {
   "ticker": "MIN",
   "name": "MINERALRES FPO [MIN]",
-  "price": 73.47,
-  "valuationScore": 15.2,
-  "marketCap": "14.5B",
+  "price": 67.57,
+  "valuationScore": 14.9,
+  "marketCap": "13.4B",
   "sector": "Materials",
   "domain": "mineralresources.com.au",
   "chartData": [
-    {
-      "date": "2025-06-01",
-      "price": 22.19
-    },
     {
       "date": "2025-06-08",
       "price": 23.71
@@ -218,45 +214,49 @@
     {
       "date": "2026-05-31",
       "price": 73.47
+    },
+    {
+      "date": "2026-06-07",
+      "price": 67.57
     }
   ],
-  "testsPassed": 4,
-  "grade": "C",
+  "testsPassed": 5,
+  "grade": "B",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 36.37,
-      "threshold": 18.78,
-      "label": "36.4x vs 18.8x sector"
+      "value": 33.45,
+      "threshold": 18.46,
+      "label": "33.5x vs 18.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.87,
+      "value": 3.56,
       "threshold": 1.5,
-      "label": "3.87x vs 1.5x"
+      "label": "3.56x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
-      "passed": false,
-      "value": 10.09,
+      "passed": true,
+      "value": 9.49,
       "threshold": 10.0,
-      "label": "10.1x vs 10x"
+      "label": "9.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -2.43,
+      "value": -2.64,
       "threshold": 5.0,
-      "label": "-2.4% vs 5%"
+      "label": "-2.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 20.6,
-      "threshold": 36.37,
-      "label": "Fwd 20.6x vs Trail 36.4x"
+      "value": 17.89,
+      "threshold": 33.45,
+      "label": "Fwd 17.9x vs Trail 33.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.08,
       "threshold": 0.5,
-      "label": "P/S 2.8x ÷ Growth 33.3% = 0.08"
+      "label": "P/S 2.6x ÷ Growth 33.3% = 0.08"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 36.37,
-    "sectorPe": 22.1,
-    "pb": 3.87,
-    "ps": 2.77,
-    "evEbitda": 10.09,
-    "fcfYield": -2.43,
-    "forwardPe": 20.6,
+    "pe": 33.45,
+    "sectorPe": 21.72,
+    "pb": 3.56,
+    "ps": 2.55,
+    "evEbitda": 9.49,
+    "fcfYield": -2.64,
+    "forwardPe": 17.89,
     "dividendYield": null,
     "revenueGrowth": 33.3,
     "profitMargin": 7.64,

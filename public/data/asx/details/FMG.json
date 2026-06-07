@@ -1,16 +1,12 @@
 {
   "ticker": "FMG",
   "name": "FORTESCUE FPO [FMG]",
-  "price": 22.31,
-  "valuationScore": -12.4,
-  "marketCap": "68.7B",
+  "price": 20.53,
+  "valuationScore": -15.2,
+  "marketCap": "63.2B",
   "sector": "Materials",
   "domain": "fortescue.com",
   "chartData": [
-    {
-      "date": "2025-06-01",
-      "price": 14.47
-    },
     {
       "date": "2025-06-08",
       "price": 14.72
@@ -218,45 +214,49 @@
     {
       "date": "2026-05-31",
       "price": 22.31
+    },
+    {
+      "date": "2026-06-07",
+      "price": 20.53
     }
   ],
-  "testsPassed": 5,
-  "grade": "B",
+  "testsPassed": 6,
+  "grade": "A",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 13.12,
-      "threshold": 18.78,
-      "label": "13.1x vs 18.8x sector"
+      "value": 12.08,
+      "threshold": 18.46,
+      "label": "12.1x vs 18.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.38,
+      "value": 2.17,
       "threshold": 1.5,
-      "label": "2.38x vs 1.5x"
+      "label": "2.17x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 8.41,
+      "value": 7.75,
       "threshold": 10.0,
-      "label": "8.4x vs 10x"
+      "label": "7.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 4.65,
+      "passed": true,
+      "value": 5.05,
       "threshold": 5.0,
-      "label": "4.7% vs 5%"
+      "label": "5.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 16.93,
-      "threshold": 13.12,
-      "label": "Fwd 16.9x vs Trail 13.1x"
+      "value": 15.21,
+      "threshold": 12.08,
+      "label": "Fwd 15.2x vs Trail 12.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.4,
+      "value": 0.37,
       "threshold": 0.5,
-      "label": "P/S 4.2x ÷ Growth 10.5% = 0.40"
+      "label": "P/S 3.9x ÷ Growth 10.5% = 0.37"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 13.12,
-    "sectorPe": 22.1,
-    "pb": 2.38,
-    "ps": 4.2,
-    "evEbitda": 8.41,
-    "fcfYield": 4.65,
-    "forwardPe": 16.93,
-    "dividendYield": 5.56,
+    "pe": 12.08,
+    "sectorPe": 21.72,
+    "pb": 2.17,
+    "ps": 3.87,
+    "evEbitda": 7.75,
+    "fcfYield": 5.05,
+    "forwardPe": 15.21,
+    "dividendYield": 6.04,
     "revenueGrowth": 10.5,
     "profitMargin": 22.85,
     "operatingMargin": 35.08,

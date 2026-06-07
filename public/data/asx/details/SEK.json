@@ -1,16 +1,12 @@
 {
   "ticker": "SEK",
   "name": "SEEK FPO [SEK]",
-  "price": 12.41,
-  "valuationScore": -3.3,
-  "marketCap": "4.4B",
+  "price": 12.95,
+  "valuationScore": -3.8,
+  "marketCap": "4.6B",
   "sector": "Technology",
   "domain": "seek.com.au",
   "chartData": [
-    {
-      "date": "2025-06-01",
-      "price": 23.68
-    },
     {
       "date": "2025-06-08",
       "price": 23.15
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-31",
       "price": 12.41
+    },
+    {
+      "date": "2026-06-07",
+      "price": 12.95
     }
   ],
   "testsPassed": 2,
@@ -233,28 +233,28 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.86,
+      "value": 1.94,
       "threshold": 1.5,
-      "label": "1.86x vs 1.5x"
+      "label": "1.94x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 21.21,
+      "value": 21.94,
       "threshold": 10.0,
-      "label": "21.2x vs 10x"
+      "label": "21.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.69,
+      "value": 3.54,
       "threshold": 5.0,
-      "label": "3.7% vs 5%"
+      "label": "3.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 18.22,
+      "value": 19.04,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.18,
+      "value": 0.19,
       "threshold": 0.5,
-      "label": "P/S 3.7x ÷ Growth 20.6% = 0.18"
+      "label": "P/S 3.8x ÷ Growth 20.6% = 0.19"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,13 +282,13 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 34.33,
-    "pb": 1.86,
-    "ps": 3.67,
-    "evEbitda": 21.21,
-    "fcfYield": 3.69,
-    "forwardPe": 18.22,
-    "dividendYield": 3.95,
+    "sectorPe": 36.59,
+    "pb": 1.94,
+    "ps": 3.83,
+    "evEbitda": 21.94,
+    "fcfYield": 3.54,
+    "forwardPe": 19.04,
+    "dividendYield": 3.78,
     "revenueGrowth": 20.6,
     "profitMargin": -12.27,
     "operatingMargin": 25.25,

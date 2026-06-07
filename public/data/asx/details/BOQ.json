@@ -1,16 +1,12 @@
 {
   "ticker": "BOQ",
   "name": "BANK QLD FPO [BOQ]",
-  "price": 6.26,
-  "valuationScore": 3.1,
-  "marketCap": "4.1B",
+  "price": 6.02,
+  "valuationScore": 2.7,
+  "marketCap": "4.0B",
   "sector": "Financials",
   "domain": "boq.com.au",
   "chartData": [
-    {
-      "date": "2025-06-01",
-      "price": 7.36
-    },
     {
       "date": "2025-06-08",
       "price": 7.57
@@ -218,6 +214,10 @@
     {
       "date": "2026-05-31",
       "price": 6.26
+    },
+    {
+      "date": "2026-06-07",
+      "price": 6.02
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 41.73,
-      "threshold": 16.83,
-      "label": "41.7x vs 16.8x sector"
+      "value": 40.13,
+      "threshold": 16.77,
+      "label": "40.1x vs 16.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.7,
+      "value": 0.67,
       "threshold": 1.5,
-      "label": "0.70x vs 1.5x"
+      "label": "0.67x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 11.24,
-      "threshold": 41.73,
-      "label": "Fwd 11.2x vs Trail 41.7x"
+      "value": 10.88,
+      "threshold": 40.13,
+      "label": "Fwd 10.9x vs Trail 40.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 1.24,
+      "value": 1.19,
       "threshold": 0.5,
-      "label": "P/S 2.5x ÷ Growth 2.0% = 1.24"
+      "label": "P/S 2.4x ÷ Growth 2.0% = 1.19"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 41.73,
-    "sectorPe": 19.8,
-    "pb": 0.7,
-    "ps": 2.47,
+    "pe": 40.13,
+    "sectorPe": 19.73,
+    "pb": 0.67,
+    "ps": 2.38,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 11.24,
-    "dividendYield": 6.39,
+    "forwardPe": 10.88,
+    "dividendYield": 6.64,
     "revenueGrowth": 2.0,
     "profitMargin": 5.89,
     "operatingMargin": 25.77,
