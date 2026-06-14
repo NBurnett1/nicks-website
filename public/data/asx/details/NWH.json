@@ -1,16 +1,12 @@
 {
   "ticker": "NWH",
   "name": "NRWHOLDLTD FPO [NWH]",
-  "price": 7.16,
-  "valuationScore": 6.5,
-  "marketCap": "3.3B",
+  "price": 6.96,
+  "valuationScore": 4.5,
+  "marketCap": "3.2B",
   "sector": "Industrials",
   "domain": "nrw.com.au",
   "chartData": [
-    {
-      "date": "2025-06-08",
-      "price": 2.72
-    },
     {
       "date": "2025-06-15",
       "price": 2.81
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-07",
       "price": 7.16
+    },
+    {
+      "date": "2026-06-14",
+      "price": 6.96
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 65.09,
-      "threshold": 26.83,
-      "label": "65.1x vs 26.8x sector"
+      "value": 63.27,
+      "threshold": 28.86,
+      "label": "63.3x vs 28.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 5.13,
+      "value": 4.99,
       "threshold": 1.5,
-      "label": "5.13x vs 1.5x"
+      "label": "4.99x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 14.48,
+      "value": 14.1,
       "threshold": 10.0,
-      "label": "14.5x vs 10x"
+      "label": "14.1x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 6.77,
+      "value": 6.97,
       "threshold": 5.0,
-      "label": "6.8% vs 5%"
+      "label": "7.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 17.17,
-      "threshold": 65.09,
-      "label": "Fwd 17.2x vs Trail 65.1x"
+      "value": 16.57,
+      "threshold": 63.27,
+      "label": "Fwd 16.6x vs Trail 63.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 65.09,
-    "sectorPe": 31.57,
-    "pb": 5.13,
-    "ps": 0.92,
-    "evEbitda": 14.48,
-    "fcfYield": 6.77,
-    "forwardPe": 17.17,
-    "dividendYield": 2.37,
+    "pe": 63.27,
+    "sectorPe": 33.96,
+    "pb": 4.99,
+    "ps": 0.89,
+    "evEbitda": 14.1,
+    "fcfYield": 6.97,
+    "forwardPe": 16.57,
+    "dividendYield": 2.44,
     "revenueGrowth": 19.5,
     "profitMargin": 1.36,
     "operatingMargin": 5.41,

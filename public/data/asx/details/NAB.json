@@ -1,16 +1,12 @@
 {
   "ticker": "NAB",
   "name": "NAT. BANK FPO [NAB]",
-  "price": 36.59,
-  "valuationScore": -0.3,
-  "marketCap": "112.0B",
+  "price": 36.5,
+  "valuationScore": -0.5,
+  "marketCap": "111.7B",
   "sector": "Financials",
   "domain": "nab.com.au",
   "chartData": [
-    {
-      "date": "2025-06-08",
-      "price": 37.02
-    },
     {
       "date": "2025-06-15",
       "price": 37.3
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-07",
       "price": 36.59
+    },
+    {
+      "date": "2026-06-14",
+      "price": 36.5
     }
   ],
   "testsPassed": 2,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 18.3,
-      "threshold": 16.77,
-      "label": "18.3x vs 16.8x sector"
+      "value": 18.25,
+      "threshold": 17.35,
+      "label": "18.2x vs 17.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.77,
-      "threshold": 18.3,
-      "label": "Fwd 14.8x vs Trail 18.3x"
+      "value": 14.75,
+      "threshold": 18.25,
+      "label": "Fwd 14.7x vs Trail 18.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 18.3,
-    "sectorPe": 19.73,
+    "pe": 18.25,
+    "sectorPe": 20.41,
     "pb": 1.85,
-    "ps": 5.45,
+    "ps": 5.43,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 14.77,
-    "dividendYield": 4.65,
+    "forwardPe": 14.75,
+    "dividendYield": 4.66,
     "revenueGrowth": null,
     "profitMargin": 29.67,
     "operatingMargin": 52.47,

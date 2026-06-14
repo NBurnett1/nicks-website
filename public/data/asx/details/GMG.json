@@ -1,16 +1,12 @@
 {
   "ticker": "GMG",
   "name": "GOOD GROUP STAPLED [GMG]",
-  "price": 31.1,
-  "valuationScore": 21.6,
-  "marketCap": "—",
+  "price": 31.52,
+  "valuationScore": 18.9,
+  "marketCap": "64.5B",
   "sector": "Real Estate",
   "domain": "goodman.com",
   "chartData": [
-    {
-      "date": "2025-06-08",
-      "price": 33.26
-    },
     {
       "date": "2025-06-15",
       "price": 33.67
@@ -218,45 +214,49 @@
     {
       "date": "2026-06-07",
       "price": 31.1
+    },
+    {
+      "date": "2026-06-14",
+      "price": 31.52
     }
   ],
-  "testsPassed": 1,
+  "testsPassed": 2,
   "grade": "D",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 37.02,
-      "threshold": 9.48,
-      "label": "37.0x vs 9.5x sector"
+      "value": 37.52,
+      "threshold": 10.43,
+      "label": "37.5x vs 10.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.68,
+      "value": 2.71,
       "threshold": 1.5,
-      "label": "2.68x vs 1.5x"
+      "label": "2.71x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 36.11,
+      "value": 36.59,
       "threshold": 10.0,
-      "label": "36.1x vs 10x"
+      "label": "36.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": null,
-      "value": null,
+      "passed": true,
+      "value": 5.26,
       "threshold": 5.0,
-      "label": "No FCF data"
+      "label": "5.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 21.8,
-      "threshold": 37.02,
-      "label": "Fwd 21.8x vs Trail 37.0x"
+      "value": 22.1,
+      "threshold": 37.52,
+      "label": "Fwd 22.1x vs Trail 37.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": -15.9,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "FAIL — Revenue declining -15.9%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 37.02,
-    "sectorPe": 11.15,
-    "pb": 2.68,
-    "ps": null,
-    "evEbitda": 36.11,
-    "fcfYield": null,
-    "forwardPe": 21.8,
-    "dividendYield": 0.96,
+    "pe": 37.52,
+    "sectorPe": 12.27,
+    "pb": 2.71,
+    "ps": 20.79,
+    "evEbitda": 36.59,
+    "fcfYield": 5.26,
+    "forwardPe": 22.1,
+    "dividendYield": 0.95,
     "revenueGrowth": -15.9,
     "profitMargin": 54.55,
     "operatingMargin": 55.9,

@@ -1,16 +1,12 @@
 {
   "ticker": "ORA",
   "name": "ORORA FPO [ORA]",
-  "price": 1.25,
-  "valuationScore": -7.8,
-  "marketCap": "1.5B",
+  "price": 1.38,
+  "valuationScore": -7.0,
+  "marketCap": "1.7B",
   "sector": "Consumer Cyclical",
   "domain": "ororagroup.com",
   "chartData": [
-    {
-      "date": "2025-06-08",
-      "price": 1.78
-    },
     {
       "date": "2025-06-15",
       "price": 1.73
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-07",
       "price": 1.25
+    },
+    {
+      "date": "2026-06-14",
+      "price": 1.38
     }
   ],
   "testsPassed": 7,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 12.5,
-      "threshold": 19.49,
-      "label": "12.5x vs 19.5x sector"
+      "value": 13.8,
+      "threshold": 19.82,
+      "label": "13.8x vs 19.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.56,
+      "value": 0.61,
       "threshold": 1.5,
-      "label": "0.56x vs 1.5x"
+      "label": "0.61x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 5.15,
+      "value": 5.55,
       "threshold": 10.0,
-      "label": "5.2x vs 10x"
+      "label": "5.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 13.01,
+      "value": 11.79,
       "threshold": 5.0,
-      "label": "13.0% vs 5%"
+      "label": "11.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 10.07,
-      "threshold": 12.5,
-      "label": "Fwd 10.1x vs Trail 12.5x"
+      "value": 11.12,
+      "threshold": 13.8,
+      "label": "Fwd 11.1x vs Trail 13.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.07,
+      "value": 0.08,
       "threshold": 0.5,
-      "label": "P/S 0.7x ÷ Growth 9.7% = 0.07"
+      "label": "P/S 0.8x ÷ Growth 9.7% = 0.08"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 12.5,
-    "sectorPe": 22.93,
-    "pb": 0.56,
-    "ps": 0.7,
-    "evEbitda": 5.15,
-    "fcfYield": 13.01,
-    "forwardPe": 10.07,
-    "dividendYield": 8.0,
+    "pe": 13.8,
+    "sectorPe": 23.32,
+    "pb": 0.61,
+    "ps": 0.77,
+    "evEbitda": 5.55,
+    "fcfYield": 11.79,
+    "forwardPe": 11.12,
+    "dividendYield": 7.25,
     "revenueGrowth": 9.7,
     "profitMargin": 5.68,
     "operatingMargin": 11.63,

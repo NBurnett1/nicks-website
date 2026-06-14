@@ -1,16 +1,12 @@
 {
   "ticker": "SLC",
   "name": "SUPERLOOP FPO [SLC]",
-  "price": 3.57,
-  "valuationScore": 51.4,
-  "marketCap": "1.8B",
+  "price": 3.64,
+  "valuationScore": 51.3,
+  "marketCap": "1.9B",
   "sector": "Communication Services",
   "domain": "superloop.com",
   "chartData": [
-    {
-      "date": "2025-06-08",
-      "price": 2.8
-    },
     {
       "date": "2025-06-15",
       "price": 2.9
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-07",
       "price": 3.57
+    },
+    {
+      "date": "2026-06-14",
+      "price": 3.64
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 119.0,
-      "threshold": 11.17,
-      "label": "119.0x vs 11.2x sector"
+      "value": 121.33,
+      "threshold": 11.33,
+      "label": "121.3x vs 11.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.48,
+      "value": 4.57,
       "threshold": 1.5,
-      "label": "4.48x vs 1.5x"
+      "label": "4.57x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 23.7,
+      "value": 24.17,
       "threshold": 10.0,
-      "label": "23.7x vs 10x"
+      "label": "24.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 1.93,
+      "value": 1.89,
       "threshold": 5.0,
       "label": "1.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 34.78,
-      "threshold": 119.0,
-      "label": "Fwd 34.8x vs Trail 119.0x"
+      "value": 36.47,
+      "threshold": 121.33,
+      "label": "Fwd 36.5x vs Trail 121.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.13,
       "threshold": 0.5,
-      "label": "P/S 3.0x ÷ Growth 23.3% = 0.13"
+      "label": "P/S 3.1x ÷ Growth 23.3% = 0.13"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 119.0,
-    "sectorPe": 13.14,
-    "pb": 4.48,
-    "ps": 3.03,
-    "evEbitda": 23.7,
-    "fcfYield": 1.93,
-    "forwardPe": 34.78,
+    "pe": 121.33,
+    "sectorPe": 13.33,
+    "pb": 4.57,
+    "ps": 3.09,
+    "evEbitda": 24.17,
+    "fcfYield": 1.89,
+    "forwardPe": 36.47,
     "dividendYield": null,
     "revenueGrowth": 23.3,
     "profitMargin": 2.32,

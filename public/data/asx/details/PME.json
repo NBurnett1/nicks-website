@@ -1,16 +1,12 @@
 {
   "ticker": "PME",
   "name": "PROMEDICUS FPO [PME]",
-  "price": 165.64,
+  "price": 164.0,
   "valuationScore": 60.0,
-  "marketCap": "17.3B",
+  "marketCap": "17.1B",
   "sector": "Healthcare",
   "domain": "promed.com.au",
   "chartData": [
-    {
-      "date": "2025-06-08",
-      "price": 274.99
-    },
     {
       "date": "2025-06-15",
       "price": 269.48
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-07",
       "price": 165.64
+    },
+    {
+      "date": "2026-06-14",
+      "price": 164.0
     }
   ],
   "testsPassed": 2,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 73.95,
-      "threshold": 16.2,
-      "label": "73.9x vs 16.2x sector"
+      "value": 72.89,
+      "threshold": 16.73,
+      "label": "72.9x vs 16.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 44.5,
+      "value": 44.06,
       "threshold": 1.5,
-      "label": "44.50x vs 1.5x"
+      "label": "44.06x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 95.51,
+      "value": 94.55,
       "threshold": 10.0,
-      "label": "95.5x vs 10x"
+      "label": "94.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 0.59,
+      "value": 0.6,
       "threshold": 5.0,
       "label": "0.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 91.86,
-      "threshold": 73.95,
-      "label": "Fwd 91.9x vs Trail 73.9x"
+      "value": 90.95,
+      "threshold": 72.89,
+      "label": "Fwd 90.9x vs Trail 72.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 2.53,
+      "value": 2.51,
       "threshold": 0.5,
-      "label": "P/S 71.9x ÷ Growth 28.4% = 2.53"
+      "label": "P/S 71.2x ÷ Growth 28.4% = 2.51"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 73.95,
-    "sectorPe": 19.06,
-    "pb": 44.5,
-    "ps": 71.93,
-    "evEbitda": 95.51,
-    "fcfYield": 0.59,
-    "forwardPe": 91.86,
+    "pe": 72.89,
+    "sectorPe": 19.69,
+    "pb": 44.06,
+    "ps": 71.22,
+    "evEbitda": 94.55,
+    "fcfYield": 0.6,
+    "forwardPe": 90.95,
     "dividendYield": 0.39,
     "revenueGrowth": 28.4,
     "profitMargin": 97.56,

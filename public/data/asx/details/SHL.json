@@ -1,16 +1,12 @@
 {
   "ticker": "SHL",
   "name": "SONIC HLTH FPO [SHL]",
-  "price": 19.34,
-  "valuationScore": -4.0,
-  "marketCap": "9.6B",
+  "price": 20.2,
+  "valuationScore": -3.9,
+  "marketCap": "10.0B",
   "sector": "Healthcare",
   "domain": "sonichealthcare.com",
   "chartData": [
-    {
-      "date": "2025-06-08",
-      "price": 25.2
-    },
     {
       "date": "2025-06-15",
       "price": 25.68
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-07",
       "price": 19.34
+    },
+    {
+      "date": "2026-06-14",
+      "price": 20.2
     }
   ],
   "testsPassed": 5,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 17.42,
-      "threshold": 16.2,
-      "label": "17.4x vs 16.2x sector"
+      "value": 18.2,
+      "threshold": 16.73,
+      "label": "18.2x vs 16.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.12,
+      "value": 1.17,
       "threshold": 1.5,
-      "label": "1.12x vs 1.5x"
+      "label": "1.17x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 11.38,
+      "value": 11.7,
       "threshold": 10.0,
-      "label": "11.4x vs 10x"
+      "label": "11.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 6.25,
+      "value": 5.99,
       "threshold": 5.0,
-      "label": "6.2% vs 5%"
+      "label": "6.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.41,
-      "threshold": 17.42,
-      "label": "Fwd 14.4x vs Trail 17.4x"
+      "value": 15.05,
+      "threshold": 18.2,
+      "label": "Fwd 15.1x vs Trail 18.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.06,
       "threshold": 0.5,
-      "label": "P/S 0.9x ÷ Growth 16.6% = 0.06"
+      "label": "P/S 1.0x ÷ Growth 16.6% = 0.06"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 17.42,
-    "sectorPe": 19.06,
-    "pb": 1.12,
-    "ps": 0.92,
-    "evEbitda": 11.38,
-    "fcfYield": 6.25,
-    "forwardPe": 14.41,
-    "dividendYield": 5.58,
+    "pe": 18.2,
+    "sectorPe": 19.69,
+    "pb": 1.17,
+    "ps": 0.96,
+    "evEbitda": 11.7,
+    "fcfYield": 5.99,
+    "forwardPe": 15.05,
+    "dividendYield": 5.35,
     "revenueGrowth": 16.6,
     "profitMargin": 5.18,
     "operatingMargin": 8.98,

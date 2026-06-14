@@ -1,16 +1,12 @@
 {
   "ticker": "AMC",
   "name": "AMCOR PLC CDI 1:1 [AMC]",
-  "price": 52.87,
-  "valuationScore": 2.6,
-  "marketCap": "24.4B",
+  "price": 56.87,
+  "valuationScore": 3.6,
+  "marketCap": "26.3B",
   "sector": "Materials",
   "domain": "amcor.com",
   "chartData": [
-    {
-      "date": "2025-06-08",
-      "price": 65.78
-    },
     {
       "date": "2025-06-15",
       "price": 66.58
@@ -218,45 +214,49 @@
     {
       "date": "2026-06-07",
       "price": 52.87
+    },
+    {
+      "date": "2026-06-14",
+      "price": 56.87
     }
   ],
-  "testsPassed": 4,
+  "testsPassed": 3,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 30.39,
-      "threshold": 18.46,
-      "label": "30.4x vs 18.5x sector"
+      "value": 31.95,
+      "threshold": 18.57,
+      "label": "31.9x vs 18.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
-      "passed": true,
-      "value": 1.5,
+      "passed": false,
+      "value": 1.58,
       "threshold": 1.5,
-      "label": "1.50x vs 1.5x"
+      "label": "1.58x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 12.38,
+      "value": 12.96,
       "threshold": 10.0,
-      "label": "12.4x vs 10x"
+      "label": "13.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 0.61,
+      "value": 0.57,
       "threshold": 5.0,
       "label": "0.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 8.65,
-      "threshold": 30.39,
-      "label": "Fwd 8.7x vs Trail 30.4x"
+      "value": 9.3,
+      "threshold": 31.95,
+      "label": "Fwd 9.3x vs Trail 31.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.01,
+      "value": 0.02,
       "threshold": 0.5,
-      "label": "P/S 1.1x ÷ Growth 77.4% = 0.01"
+      "label": "P/S 1.2x ÷ Growth 77.4% = 0.02"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 30.39,
-    "sectorPe": 21.72,
-    "pb": 1.5,
-    "ps": 1.1,
-    "evEbitda": 12.38,
-    "fcfYield": 0.61,
-    "forwardPe": 8.65,
-    "dividendYield": 7.2,
+    "pe": 31.95,
+    "sectorPe": 21.85,
+    "pb": 1.58,
+    "ps": 1.18,
+    "evEbitda": 12.96,
+    "fcfYield": 0.57,
+    "forwardPe": 9.3,
+    "dividendYield": 6.7,
     "revenueGrowth": 77.4,
     "profitMargin": 3.06,
     "operatingMargin": 8.59,

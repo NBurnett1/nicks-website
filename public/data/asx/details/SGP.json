@@ -1,16 +1,12 @@
 {
   "ticker": "SGP",
   "name": "STOCKLAND. STAPLED [SGP]",
-  "price": 3.83,
-  "valuationScore": -1.5,
-  "marketCap": "9.3B",
+  "price": 4.23,
+  "valuationScore": -1.2,
+  "marketCap": "10.3B",
   "sector": "Real Estate",
   "domain": "stockland.com.au",
   "chartData": [
-    {
-      "date": "2025-06-08",
-      "price": 5.22
-    },
     {
       "date": "2025-06-15",
       "price": 5.35
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-07",
       "price": 3.83
+    },
+    {
+      "date": "2026-06-14",
+      "price": 4.23
     }
   ],
   "testsPassed": 6,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 10.64,
-      "threshold": 9.48,
-      "label": "10.6x vs 9.5x sector"
+      "value": 11.75,
+      "threshold": 10.43,
+      "label": "11.8x vs 10.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.89,
+      "value": 0.98,
       "threshold": 1.5,
-      "label": "0.89x vs 1.5x"
+      "label": "0.98x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 16.58,
+      "value": 17.67,
       "threshold": 10.0,
-      "label": "16.6x vs 10x"
+      "label": "17.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 6.95,
+      "value": 6.29,
       "threshold": 5.0,
-      "label": "7.0% vs 5%"
+      "label": "6.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 10.55,
-      "threshold": 10.64,
-      "label": "Fwd 10.5x vs Trail 10.6x"
+      "value": 11.65,
+      "threshold": 11.75,
+      "label": "Fwd 11.6x vs Trail 11.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.09,
+      "value": 0.1,
       "threshold": 0.5,
-      "label": "P/S 2.6x ÷ Growth 30.6% = 0.09"
+      "label": "P/S 2.9x ÷ Growth 30.6% = 0.10"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 10.64,
-    "sectorPe": 11.15,
-    "pb": 0.89,
-    "ps": 2.65,
-    "evEbitda": 16.58,
-    "fcfYield": 6.95,
-    "forwardPe": 10.55,
-    "dividendYield": 6.84,
+    "pe": 11.75,
+    "sectorPe": 12.27,
+    "pb": 0.98,
+    "ps": 2.92,
+    "evEbitda": 17.67,
+    "fcfYield": 6.29,
+    "forwardPe": 11.65,
+    "dividendYield": 6.19,
     "revenueGrowth": 30.6,
     "profitMargin": 24.82,
     "operatingMargin": 21.64,

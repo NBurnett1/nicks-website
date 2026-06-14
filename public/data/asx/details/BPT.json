@@ -1,16 +1,12 @@
 {
   "ticker": "BPT",
   "name": "BEACH FPO [BPT]",
-  "price": 1.09,
-  "valuationScore": -14.2,
+  "price": 1.07,
+  "valuationScore": -14.4,
   "marketCap": "2.5B",
   "sector": "Energy",
   "domain": "beachenergy.com.au",
   "chartData": [
-    {
-      "date": "2025-06-08",
-      "price": 1.26
-    },
     {
       "date": "2025-06-15",
       "price": 1.23
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-07",
       "price": 1.09
+    },
+    {
+      "date": "2026-06-14",
+      "price": 1.08
     }
   ],
   "testsPassed": 4,
@@ -233,28 +233,28 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.78,
+      "value": 0.77,
       "threshold": 1.5,
-      "label": "0.78x vs 1.5x"
+      "label": "0.77x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 3.21,
+      "value": 3.17,
       "threshold": 10.0,
       "label": "3.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 12.19,
+      "value": 12.36,
       "threshold": 5.0,
-      "label": "12.2% vs 5%"
+      "label": "12.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 4.86,
+      "value": 4.77,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -282,13 +282,13 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 19.68,
-    "pb": 0.78,
-    "ps": 1.18,
-    "evEbitda": 3.21,
-    "fcfYield": 12.19,
-    "forwardPe": 4.86,
-    "dividendYield": 6.42,
+    "sectorPe": 19.29,
+    "pb": 0.77,
+    "ps": 1.17,
+    "evEbitda": 3.17,
+    "fcfYield": 12.36,
+    "forwardPe": 4.77,
+    "dividendYield": 6.51,
     "revenueGrowth": -0.3,
     "profitMargin": -5.51,
     "operatingMargin": 19.48,

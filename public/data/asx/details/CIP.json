@@ -1,16 +1,12 @@
 {
   "ticker": "CIP",
   "name": "CEN I REIT ORD UNITS [CIP]",
-  "price": 2.9,
-  "valuationScore": 2.8,
-  "marketCap": "1.8B",
+  "price": 3.05,
+  "valuationScore": 2.4,
+  "marketCap": "1.9B",
   "sector": "Real Estate",
   "domain": "centuria.com.au",
   "chartData": [
-    {
-      "date": "2025-06-08",
-      "price": 2.98
-    },
     {
       "date": "2025-06-15",
       "price": 3.01
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-07",
       "price": 2.9
+    },
+    {
+      "date": "2026-06-14",
+      "price": 3.05
     }
   ],
   "testsPassed": 2,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 13.18,
-      "threshold": 9.48,
-      "label": "13.2x vs 9.5x sector"
+      "value": 13.86,
+      "threshold": 10.43,
+      "label": "13.9x vs 10.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.73,
+      "value": 0.77,
       "threshold": 1.5,
-      "label": "0.73x vs 1.5x"
+      "label": "0.77x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 0.79,
+      "value": 0.75,
       "threshold": 5.0,
       "label": "0.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 15.27,
-      "threshold": 13.18,
-      "label": "Fwd 15.3x vs Trail 13.2x"
+      "value": 16.06,
+      "threshold": 13.86,
+      "label": "Fwd 16.1x vs Trail 13.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 1.19,
+      "value": 1.25,
       "threshold": 0.5,
-      "label": "P/S 7.4x ÷ Growth 6.2% = 1.19"
+      "label": "P/S 7.8x ÷ Growth 6.2% = 1.25"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 13.18,
-    "sectorPe": 11.15,
-    "pb": 0.73,
-    "ps": 7.37,
+    "pe": 13.86,
+    "sectorPe": 12.27,
+    "pb": 0.77,
+    "ps": 7.75,
     "evEbitda": null,
-    "fcfYield": 0.79,
-    "forwardPe": 15.27,
-    "dividendYield": 5.75,
+    "fcfYield": 0.75,
+    "forwardPe": 16.06,
+    "dividendYield": 5.51,
     "revenueGrowth": 6.2,
     "profitMargin": 56.74,
     "operatingMargin": 65.99,

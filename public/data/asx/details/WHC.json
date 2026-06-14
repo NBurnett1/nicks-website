@@ -1,16 +1,12 @@
 {
   "ticker": "WHC",
   "name": "WHITEHAVEN FPO [WHC]",
-  "price": 9.37,
+  "price": 8.88,
   "valuationScore": -60.0,
-  "marketCap": "7.7B",
+  "marketCap": "7.3B",
   "sector": "Materials",
   "domain": "whitehavencoal.com.au",
   "chartData": [
-    {
-      "date": "2025-06-08",
-      "price": 5.71
-    },
     {
       "date": "2025-06-15",
       "price": 5.57
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-07",
       "price": 9.37
+    },
+    {
+      "date": "2026-06-14",
+      "price": 8.88
     }
   ],
   "testsPassed": 5,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 11.86,
-      "threshold": 18.46,
-      "label": "11.9x vs 18.5x sector"
+      "value": 11.24,
+      "threshold": 18.57,
+      "label": "11.2x vs 18.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.31,
+      "value": 1.24,
       "threshold": 1.5,
-      "label": "1.31x vs 1.5x"
+      "label": "1.24x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 3.54,
+      "value": 3.37,
       "threshold": 10.0,
-      "label": "3.5x vs 10x"
+      "label": "3.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 22.31,
+      "value": 23.55,
       "threshold": 5.0,
-      "label": "22.3% vs 5%"
+      "label": "23.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 14.71,
-      "threshold": 11.86,
-      "label": "Fwd 14.7x vs Trail 11.9x"
+      "value": 13.94,
+      "threshold": 11.24,
+      "label": "Fwd 13.9x vs Trail 11.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 11.86,
-    "sectorPe": 21.72,
-    "pb": 1.31,
-    "ps": 1.58,
-    "evEbitda": 3.54,
-    "fcfYield": 22.31,
-    "forwardPe": 14.71,
-    "dividendYield": 0.85,
+    "pe": 11.24,
+    "sectorPe": 21.85,
+    "pb": 1.24,
+    "ps": 1.5,
+    "evEbitda": 3.37,
+    "fcfYield": 23.55,
+    "forwardPe": 13.94,
+    "dividendYield": 0.9,
     "revenueGrowth": -27.7,
     "profitMargin": 12.66,
     "operatingMargin": 1.49,

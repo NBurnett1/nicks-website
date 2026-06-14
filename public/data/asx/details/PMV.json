@@ -1,16 +1,12 @@
 {
   "ticker": "PMV",
   "name": "PREM INV. FPO [PMV]",
-  "price": 12.9,
-  "valuationScore": 0.7,
-  "marketCap": "2.1B",
+  "price": 14.13,
+  "valuationScore": 1.4,
+  "marketCap": "2.3B",
   "sector": "Consumer Discretionary",
   "domain": "premierinvestments.com.au",
   "chartData": [
-    {
-      "date": "2025-06-08",
-      "price": 19.58
-    },
     {
       "date": "2025-06-15",
       "price": 18.85
@@ -218,45 +214,49 @@
     {
       "date": "2026-06-07",
       "price": 12.9
+    },
+    {
+      "date": "2026-06-14",
+      "price": 14.13
     }
   ],
-  "testsPassed": 4,
+  "testsPassed": 3,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 14.33,
-      "threshold": 14.27,
-      "label": "14.3x vs 14.3x sector"
+      "value": 15.7,
+      "threshold": 14.71,
+      "label": "15.7x vs 14.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.02,
+      "value": 2.21,
       "threshold": 1.5,
-      "label": "2.02x vs 1.5x"
+      "label": "2.21x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
-      "passed": true,
-      "value": 9.74,
+      "passed": false,
+      "value": 10.74,
       "threshold": 10.0,
-      "label": "9.7x vs 10x"
+      "label": "10.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 0.44,
+      "value": 0.4,
       "threshold": 5.0,
       "label": "0.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.13,
-      "threshold": 14.33,
-      "label": "Fwd 12.1x vs Trail 14.3x"
+      "value": 13.29,
+      "threshold": 15.7,
+      "label": "Fwd 13.3x vs Trail 15.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 14.33,
-    "sectorPe": 16.79,
-    "pb": 2.02,
-    "ps": 2.49,
-    "evEbitda": 9.74,
-    "fcfYield": 0.44,
-    "forwardPe": 12.13,
-    "dividendYield": 7.36,
+    "pe": 15.7,
+    "sectorPe": 17.31,
+    "pb": 2.21,
+    "ps": 2.73,
+    "evEbitda": 10.74,
+    "fcfYield": 0.4,
+    "forwardPe": 13.29,
+    "dividendYield": 6.72,
     "revenueGrowth": -1.1,
     "profitMargin": 39.05,
     "operatingMargin": 25.9,

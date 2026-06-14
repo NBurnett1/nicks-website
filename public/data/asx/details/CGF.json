@@ -1,16 +1,12 @@
 {
   "ticker": "CGF",
   "name": "CHALLENGER FPO [CGF]",
-  "price": 9.12,
+  "price": 9.57,
   "valuationScore": -19.1,
-  "marketCap": "6.3B",
+  "marketCap": "6.6B",
   "sector": "Financial Services",
   "domain": "challenger.com.au",
   "chartData": [
-    {
-      "date": "2025-06-08",
-      "price": 7.55
-    },
     {
       "date": "2025-06-15",
       "price": 7.58
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-07",
       "price": 9.12
+    },
+    {
+      "date": "2026-06-14",
+      "price": 9.57
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 14.71,
-      "threshold": 14.53,
-      "label": "14.7x vs 14.5x sector"
+      "value": 15.44,
+      "threshold": 15.28,
+      "label": "15.4x vs 15.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.53,
+      "value": 1.61,
       "threshold": 1.5,
-      "label": "1.53x vs 1.5x"
+      "label": "1.61x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 16.21,
+      "value": 15.45,
       "threshold": 5.0,
-      "label": "16.2% vs 5%"
+      "label": "15.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.78,
-      "threshold": 14.71,
-      "label": "Fwd 12.8x vs Trail 14.7x"
+      "value": 13.41,
+      "threshold": 15.44,
+      "label": "Fwd 13.4x vs Trail 15.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 14.71,
-    "sectorPe": 17.1,
-    "pb": 1.53,
-    "ps": 2.25,
-    "evEbitda": -3.33,
-    "fcfYield": 16.21,
-    "forwardPe": 12.78,
-    "dividendYield": 3.4,
+    "pe": 15.44,
+    "sectorPe": 17.97,
+    "pb": 1.61,
+    "ps": 2.36,
+    "evEbitda": -3.1,
+    "fcfYield": 15.45,
+    "forwardPe": 13.41,
+    "dividendYield": 3.24,
     "revenueGrowth": -16.9,
     "profitMargin": 16.39,
     "operatingMargin": 55.62,

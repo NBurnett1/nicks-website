@@ -1,16 +1,12 @@
 {
   "ticker": "XRO",
   "name": "XERO FPO [XRO]",
-  "price": 79.27,
-  "valuationScore": 1.6,
-  "marketCap": "13.7B",
+  "price": 73.5,
+  "valuationScore": 1.4,
+  "marketCap": "12.7B",
   "sector": "Technology",
   "domain": "xero.com",
   "chartData": [
-    {
-      "date": "2025-06-08",
-      "price": 188.67
-    },
     {
       "date": "2025-06-15",
       "price": 188.7
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-07",
       "price": 79.27
+    },
+    {
+      "date": "2026-06-14",
+      "price": 73.5
     }
   ],
   "testsPassed": 2,
@@ -233,28 +233,28 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.0,
+      "value": 2.79,
       "threshold": 1.5,
-      "label": "3.00x vs 1.5x"
+      "label": "2.79x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 34.88,
+      "value": 32.38,
       "threshold": 10.0,
-      "label": "34.9x vs 10x"
+      "label": "32.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 1.61,
+      "value": 1.73,
       "threshold": 5.0,
-      "label": "1.6% vs 5%"
+      "label": "1.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 39.96,
+      "value": 36.69,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.12,
+      "value": 0.11,
       "threshold": 0.5,
-      "label": "P/S 5.0x ÷ Growth 40.8% = 0.12"
+      "label": "P/S 4.6x ÷ Growth 40.8% = 0.11"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 36.59,
-    "pb": 3.0,
-    "ps": 4.99,
-    "evEbitda": 34.88,
-    "fcfYield": 1.61,
-    "forwardPe": 39.96,
+    "sectorPe": 33.81,
+    "pb": 2.79,
+    "ps": 4.63,
+    "evEbitda": 32.38,
+    "fcfYield": 1.73,
+    "forwardPe": 36.69,
     "dividendYield": null,
     "revenueGrowth": 40.8,
     "profitMargin": 6.08,

@@ -1,16 +1,12 @@
 {
   "ticker": "NHC",
   "name": "NEW HOPE FPO [NHC]",
-  "price": 6.08,
-  "valuationScore": 2.7,
+  "price": 6.04,
+  "valuationScore": 2.9,
   "marketCap": "5.1B",
   "sector": "Materials",
   "domain": "newhopegroup.com.au",
   "chartData": [
-    {
-      "date": "2025-06-08",
-      "price": 3.56
-    },
     {
       "date": "2025-06-15",
       "price": 3.67
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-07",
       "price": 6.08
+    },
+    {
+      "date": "2026-06-14",
+      "price": 6.04
     }
   ],
   "testsPassed": 1,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 33.78,
-      "threshold": 18.46,
-      "label": "33.8x vs 18.5x sector"
+      "value": 33.56,
+      "threshold": 18.57,
+      "label": "33.6x vs 18.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.97,
+      "value": 1.96,
       "threshold": 1.5,
-      "label": "1.97x vs 1.5x"
+      "label": "1.96x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 10.97,
+      "value": 10.89,
       "threshold": 10.0,
-      "label": "11.0x vs 10x"
+      "label": "10.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 0.86,
+      "value": 0.87,
       "threshold": 5.0,
       "label": "0.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 13.29,
-      "threshold": 33.78,
-      "label": "Fwd 13.3x vs Trail 33.8x"
+      "value": 13.2,
+      "threshold": 33.56,
+      "label": "Fwd 13.2x vs Trail 33.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 33.78,
-    "sectorPe": 21.72,
-    "pb": 1.97,
-    "ps": 3.22,
-    "evEbitda": 10.97,
-    "fcfYield": 0.86,
-    "forwardPe": 13.29,
-    "dividendYield": 3.29,
+    "pe": 33.56,
+    "sectorPe": 21.85,
+    "pb": 1.96,
+    "ps": 3.2,
+    "evEbitda": 10.89,
+    "fcfYield": 0.87,
+    "forwardPe": 13.2,
+    "dividendYield": 3.31,
     "revenueGrowth": -20.1,
     "profitMargin": 9.64,
     "operatingMargin": 13.4,
