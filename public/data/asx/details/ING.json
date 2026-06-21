@@ -1,16 +1,12 @@
 {
   "ticker": "ING",
   "name": "INGHAMS FPO [ING]",
-  "price": 2.12,
-  "valuationScore": -13.1,
-  "marketCap": "788M",
+  "price": 2.1,
+  "valuationScore": -14.6,
+  "marketCap": "781M",
   "sector": "Consumer Staples",
   "domain": "inghams.com.au",
   "chartData": [
-    {
-      "date": "2025-06-15",
-      "price": 3.64
-    },
     {
       "date": "2025-06-22",
       "price": 3.44
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-14",
       "price": 2.12
+    },
+    {
+      "date": "2026-06-21",
+      "price": 2.1
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 14.13,
-      "threshold": 26.85,
-      "label": "14.1x vs 26.9x sector"
+      "value": 14.0,
+      "threshold": 26.46,
+      "label": "14.0x vs 26.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.09,
+      "value": 3.06,
       "threshold": 1.5,
-      "label": "3.09x vs 1.5x"
+      "label": "3.06x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 13.39,
+      "value": 13.35,
       "threshold": 10.0,
-      "label": "13.4x vs 10x"
+      "label": "13.3x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 15.34,
+      "value": 15.48,
       "threshold": 5.0,
-      "label": "15.3% vs 5%"
+      "label": "15.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 10.38,
-      "threshold": 14.13,
-      "label": "Fwd 10.4x vs Trail 14.1x"
+      "value": 10.28,
+      "threshold": 14.0,
+      "label": "Fwd 10.3x vs Trail 14.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 14.13,
-    "sectorPe": 31.59,
-    "pb": 3.09,
+    "pe": 14.0,
+    "sectorPe": 31.13,
+    "pb": 3.06,
     "ps": 0.25,
-    "evEbitda": 13.39,
-    "fcfYield": 15.34,
-    "forwardPe": 10.38,
-    "dividendYield": 3.77,
+    "evEbitda": 13.35,
+    "fcfYield": 15.48,
+    "forwardPe": 10.28,
+    "dividendYield": 3.81,
     "revenueGrowth": -0.1,
     "profitMargin": 1.79,
     "operatingMargin": 3.88,

@@ -1,16 +1,12 @@
 {
   "ticker": "BEN",
   "name": "BEN ADE BK FPO [BEN]",
-  "price": 10.34,
+  "price": 10.55,
   "valuationScore": -1.6,
-  "marketCap": "5.8B",
+  "marketCap": "5.9B",
   "sector": "Financials",
   "domain": "bendigoadelaide.com.au",
   "chartData": [
-    {
-      "date": "2025-06-15",
-      "price": 12.13
-    },
     {
       "date": "2025-06-22",
       "price": 11.93
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-14",
       "price": 10.34
+    },
+    {
+      "date": "2026-06-21",
+      "price": 10.55
     }
   ],
   "testsPassed": 2,
@@ -233,9 +233,9 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.88,
+      "value": 0.9,
       "threshold": 1.5,
-      "label": "0.88x vs 1.5x"
+      "label": "0.90x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,7 +254,7 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 12.16,
+      "value": 12.41,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -282,13 +282,13 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 20.41,
-    "pb": 0.88,
-    "ps": 3.04,
+    "sectorPe": 20.65,
+    "pb": 0.9,
+    "ps": 3.11,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 12.16,
-    "dividendYield": 5.8,
+    "forwardPe": 12.41,
+    "dividendYield": 5.69,
     "revenueGrowth": 0.0,
     "profitMargin": -4.35,
     "operatingMargin": 29.54,

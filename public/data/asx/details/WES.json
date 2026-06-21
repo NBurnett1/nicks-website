@@ -1,16 +1,12 @@
 {
   "ticker": "WES",
   "name": "WESFARMER FPO [WES]",
-  "price": 86.47,
-  "valuationScore": 18.8,
-  "marketCap": "98.2B",
+  "price": 85.76,
+  "valuationScore": 17.3,
+  "marketCap": "97.4B",
   "sector": "Consumer Discretionary",
   "domain": "wesfarmers.com.au",
   "chartData": [
-    {
-      "date": "2025-06-15",
-      "price": 82.7
-    },
     {
       "date": "2025-06-22",
       "price": 81.21
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-14",
       "price": 86.47
+    },
+    {
+      "date": "2026-06-21",
+      "price": 85.76
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 32.03,
-      "threshold": 14.71,
-      "label": "32.0x vs 14.7x sector"
+      "value": 31.76,
+      "threshold": 15.32,
+      "label": "31.8x vs 15.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 12.5,
+      "value": 12.39,
       "threshold": 1.5,
-      "label": "12.50x vs 1.5x"
+      "label": "12.39x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 23.62,
+      "value": 23.45,
       "threshold": 10.0,
-      "label": "23.6x vs 10x"
+      "label": "23.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.35,
+      "value": 3.38,
       "threshold": 5.0,
       "label": "3.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 31.06,
-      "threshold": 32.03,
-      "label": "Fwd 31.1x vs Trail 32.0x"
+      "value": 30.99,
+      "threshold": 31.76,
+      "label": "Fwd 31.0x vs Trail 31.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 32.03,
-    "sectorPe": 17.31,
-    "pb": 12.5,
-    "ps": 2.11,
-    "evEbitda": 23.62,
-    "fcfYield": 3.35,
-    "forwardPe": 31.06,
-    "dividendYield": 2.46,
+    "pe": 31.76,
+    "sectorPe": 18.02,
+    "pb": 12.39,
+    "ps": 2.1,
+    "evEbitda": 23.45,
+    "fcfYield": 3.38,
+    "forwardPe": 30.99,
+    "dividendYield": 2.48,
     "revenueGrowth": 3.1,
     "profitMargin": 6.6,
     "operatingMargin": 9.66,

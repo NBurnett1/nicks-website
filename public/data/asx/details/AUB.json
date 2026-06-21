@@ -1,16 +1,12 @@
 {
   "ticker": "AUB",
   "name": "AUB GROUP FPO [AUB]",
-  "price": 28.42,
-  "valuationScore": 2.3,
+  "price": 28.47,
+  "valuationScore": 3.8,
   "marketCap": "3.7B",
   "sector": "Financial Services",
   "domain": "aubgroup.com.au",
   "chartData": [
-    {
-      "date": "2025-06-15",
-      "price": 33.44
-    },
     {
       "date": "2025-06-22",
       "price": 34.28
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-14",
       "price": 28.42
+    },
+    {
+      "date": "2026-06-21",
+      "price": 28.47
     }
   ],
   "testsPassed": 4,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 17.65,
-      "threshold": 15.28,
-      "label": "17.7x vs 15.3x sector"
+      "value": 17.68,
+      "threshold": 15.03,
+      "label": "17.7x vs 15.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,7 +240,7 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 12.69,
+      "value": 12.7,
       "threshold": 10.0,
       "label": "12.7x vs 10x"
     },
@@ -254,8 +254,8 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.21,
-      "threshold": 17.65,
+      "value": 14.24,
+      "threshold": 17.68,
       "label": "Fwd 14.2x vs Trail 17.7x"
     },
     "profitabilityCheck": {
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 17.65,
-    "sectorPe": 17.97,
+    "pe": 17.68,
+    "sectorPe": 17.68,
     "pb": 2.4,
     "ps": 3.08,
-    "evEbitda": 12.69,
+    "evEbitda": 12.7,
     "fcfYield": 2.61,
-    "forwardPe": 14.21,
+    "forwardPe": 14.24,
     "dividendYield": 3.27,
     "revenueGrowth": 6.3,
     "profitMargin": 15.65,

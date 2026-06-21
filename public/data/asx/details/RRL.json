@@ -1,16 +1,12 @@
 {
   "ticker": "RRL",
   "name": "REGIS FPO [RRL]",
-  "price": 5.85,
-  "valuationScore": -35.0,
-  "marketCap": "4.4B",
+  "price": 6.94,
+  "valuationScore": -32.4,
+  "marketCap": "5.3B",
   "sector": "Basic Materials",
   "domain": "regisresources.com.au",
   "chartData": [
-    {
-      "date": "2025-06-15",
-      "price": 4.92
-    },
     {
       "date": "2025-06-22",
       "price": 4.57
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-14",
       "price": 5.85
+    },
+    {
+      "date": "2026-06-21",
+      "price": 6.94
     }
   ],
   "testsPassed": 7,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 9.14,
-      "threshold": 38.63,
-      "label": "9.1x vs 38.6x sector"
+      "value": 10.84,
+      "threshold": 38.1,
+      "label": "10.8x vs 38.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.33,
+      "value": 2.77,
       "threshold": 1.5,
-      "label": "2.33x vs 1.5x"
+      "label": "2.77x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 3.6,
+      "value": 4.41,
       "threshold": 10.0,
-      "label": "3.6x vs 10x"
+      "label": "4.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 14.76,
+      "value": 12.44,
       "threshold": 5.0,
-      "label": "14.8% vs 5%"
+      "label": "12.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 4.22,
-      "threshold": 9.14,
-      "label": "Fwd 4.2x vs Trail 9.1x"
+      "value": 5.03,
+      "threshold": 10.84,
+      "label": "Fwd 5.0x vs Trail 10.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.06,
+      "value": 0.07,
       "threshold": 0.5,
-      "label": "P/S 2.3x ÷ Growth 40.0% = 0.06"
+      "label": "P/S 2.7x ÷ Growth 40.0% = 0.07"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 9.14,
-    "sectorPe": 45.45,
-    "pb": 2.33,
-    "ps": 2.26,
-    "evEbitda": 3.6,
-    "fcfYield": 14.76,
-    "forwardPe": 4.22,
-    "dividendYield": 3.42,
+    "pe": 10.84,
+    "sectorPe": 44.82,
+    "pb": 2.77,
+    "ps": 2.68,
+    "evEbitda": 4.41,
+    "fcfYield": 12.44,
+    "forwardPe": 5.03,
+    "dividendYield": 2.88,
     "revenueGrowth": 40.0,
     "profitMargin": 24.95,
     "operatingMargin": 41.36,

@@ -1,16 +1,12 @@
 {
   "ticker": "NEC",
   "name": "NINE ENT FPO [NEC]",
-  "price": 0.91,
-  "valuationScore": -1.0,
-  "marketCap": "1.4B",
+  "price": 0.92,
+  "valuationScore": -0.7,
+  "marketCap": "1.5B",
   "sector": "Communication Services",
   "domain": "nineforbrands.com.au",
   "chartData": [
-    {
-      "date": "2025-06-15",
-      "price": 1.08
-    },
     {
       "date": "2025-06-22",
       "price": 1.05
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-14",
       "price": 0.91
+    },
+    {
+      "date": "2026-06-21",
+      "price": 0.92
     }
   ],
   "testsPassed": 5,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 13.0,
-      "threshold": 11.33,
-      "label": "13.0x vs 11.3x sector"
+      "value": 13.07,
+      "threshold": 11.11,
+      "label": "13.1x vs 11.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,23 +240,23 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 4.19,
+      "value": 4.21,
       "threshold": 10.0,
       "label": "4.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 0.23,
+      "value": 0.22,
       "threshold": 5.0,
       "label": "0.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 8.89,
-      "threshold": 13.0,
-      "label": "Fwd 8.9x vs Trail 13.0x"
+      "value": 9.13,
+      "threshold": 13.07,
+      "label": "Fwd 9.1x vs Trail 13.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 13.0,
-    "sectorPe": 13.33,
+    "pe": 13.07,
+    "sectorPe": 13.07,
     "pb": 0.88,
     "ps": 0.55,
-    "evEbitda": 4.19,
-    "fcfYield": 0.23,
-    "forwardPe": 8.89,
-    "dividendYield": 9.34,
+    "evEbitda": 4.21,
+    "fcfYield": 0.22,
+    "forwardPe": 9.13,
+    "dividendYield": 9.29,
     "revenueGrowth": -4.4,
     "profitMargin": 34.84,
     "operatingMargin": 13.72,

@@ -1,16 +1,12 @@
 {
   "ticker": "MTS",
   "name": "METCASHLTD FPO [MTS]",
-  "price": 3.21,
-  "valuationScore": -11.5,
+  "price": 3.18,
+  "valuationScore": -11.7,
   "marketCap": "3.5B",
   "sector": "Consumer Defensive",
   "domain": "metcash.com",
   "chartData": [
-    {
-      "date": "2025-06-15",
-      "price": 3.55
-    },
     {
       "date": "2025-06-22",
       "price": 3.52
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-14",
       "price": 3.21
+    },
+    {
+      "date": "2026-06-21",
+      "price": 3.18
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 12.35,
-      "threshold": 18.01,
-      "label": "12.3x vs 18.0x sector"
+      "value": 12.23,
+      "threshold": 17.59,
+      "label": "12.2x vs 17.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.12,
+      "value": 2.1,
       "threshold": 1.5,
-      "label": "2.12x vs 1.5x"
+      "label": "2.10x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 10.1,
+      "value": 10.04,
       "threshold": 10.0,
-      "label": "10.1x vs 10x"
+      "label": "10.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 12.76,
+      "value": 12.88,
       "threshold": 5.0,
-      "label": "12.8% vs 5%"
+      "label": "12.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 12.49,
-      "threshold": 12.35,
-      "label": "Fwd 12.5x vs Trail 12.3x"
+      "value": 12.41,
+      "threshold": 12.23,
+      "label": "Fwd 12.4x vs Trail 12.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 2.04,
+      "value": 2.02,
       "threshold": 0.5,
-      "label": "P/S 0.2x ÷ Growth 0.1% = 2.04"
+      "label": "P/S 0.2x ÷ Growth 0.1% = 2.02"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 12.35,
-    "sectorPe": 21.19,
-    "pb": 2.12,
+    "pe": 12.23,
+    "sectorPe": 20.69,
+    "pb": 2.1,
     "ps": 0.2,
-    "evEbitda": 10.1,
-    "fcfYield": 12.76,
-    "forwardPe": 12.49,
-    "dividendYield": 5.61,
+    "evEbitda": 10.04,
+    "fcfYield": 12.88,
+    "forwardPe": 12.41,
+    "dividendYield": 5.66,
     "revenueGrowth": 0.1,
     "profitMargin": 1.64,
     "operatingMargin": 2.57,

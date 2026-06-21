@@ -1,16 +1,12 @@
 {
   "ticker": "LYC",
   "name": "LYNAS FPO [LYC]",
-  "price": 17.77,
+  "price": 18.18,
   "valuationScore": 60.0,
-  "marketCap": "17.9B",
+  "marketCap": "18.3B",
   "sector": "Basic Materials",
   "domain": "lynasrareearths.com",
   "chartData": [
-    {
-      "date": "2025-06-15",
-      "price": 9.0
-    },
     {
       "date": "2025-06-22",
       "price": 9.28
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-14",
       "price": 17.77
+    },
+    {
+      "date": "2026-06-21",
+      "price": 18.18
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 222.13,
-      "threshold": 38.63,
-      "label": "222.1x vs 38.6x sector"
+      "value": 227.25,
+      "threshold": 38.1,
+      "label": "227.3x vs 38.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 5.32,
+      "value": 5.44,
       "threshold": 1.5,
-      "label": "5.32x vs 1.5x"
+      "label": "5.44x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 133.07,
+      "value": 136.29,
       "threshold": 10.0,
-      "label": "133.1x vs 10x"
+      "label": "136.3x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -1.71,
+      "value": -1.67,
       "threshold": 5.0,
       "label": "-1.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 26.11,
-      "threshold": 222.13,
-      "label": "Fwd 26.1x vs Trail 222.1x"
+      "value": 26.72,
+      "threshold": 227.25,
+      "label": "Fwd 26.7x vs Trail 227.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.4,
+      "value": 0.41,
       "threshold": 0.5,
-      "label": "P/S 25.0x ÷ Growth 62.7% = 0.40"
+      "label": "P/S 25.6x ÷ Growth 62.7% = 0.41"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 222.13,
-    "sectorPe": 45.45,
-    "pb": 5.32,
-    "ps": 24.98,
-    "evEbitda": 133.07,
-    "fcfYield": -1.71,
-    "forwardPe": 26.11,
+    "pe": 227.25,
+    "sectorPe": 44.82,
+    "pb": 5.44,
+    "ps": 25.56,
+    "evEbitda": 136.29,
+    "fcfYield": -1.67,
+    "forwardPe": 26.72,
     "dividendYield": null,
     "revenueGrowth": 62.7,
     "profitMargin": 11.5,

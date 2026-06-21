@@ -1,16 +1,12 @@
 {
   "ticker": "S32",
   "name": "SOUTH32 FPO [S32]",
-  "price": 4.52,
-  "valuationScore": 10.1,
-  "marketCap": "20.3B",
+  "price": 4.13,
+  "valuationScore": 8.8,
+  "marketCap": "18.5B",
   "sector": "Materials",
   "domain": "south32.net",
   "chartData": [
-    {
-      "date": "2025-06-15",
-      "price": 2.86
-    },
     {
       "date": "2025-06-22",
       "price": 2.8
@@ -218,45 +214,49 @@
     {
       "date": "2026-06-14",
       "price": 4.52
+    },
+    {
+      "date": "2026-06-21",
+      "price": 4.13
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 37.67,
-      "threshold": 18.57,
-      "label": "37.7x vs 18.6x sector"
+      "value": 34.42,
+      "threshold": 18.18,
+      "label": "34.4x vs 18.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
-      "passed": false,
-      "value": 1.55,
+      "passed": true,
+      "value": 1.41,
       "threshold": 1.5,
-      "label": "1.55x vs 1.5x"
+      "label": "1.41x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 17.05,
+      "value": 15.58,
       "threshold": 10.0,
-      "label": "17.0x vs 10x"
+      "label": "15.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -0.7,
+      "value": -0.76,
       "threshold": 5.0,
-      "label": "-0.7% vs 5%"
+      "label": "-0.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 11.79,
-      "threshold": 37.67,
-      "label": "Fwd 11.8x vs Trail 37.7x"
+      "value": 10.39,
+      "threshold": 34.42,
+      "label": "Fwd 10.4x vs Trail 34.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 37.67,
-    "sectorPe": 21.85,
-    "pb": 1.55,
-    "ps": 3.43,
-    "evEbitda": 17.05,
-    "fcfYield": -0.7,
-    "forwardPe": 11.79,
-    "dividendYield": 2.09,
+    "pe": 34.42,
+    "sectorPe": 21.39,
+    "pb": 1.41,
+    "ps": 3.13,
+    "evEbitda": 15.58,
+    "fcfYield": -0.76,
+    "forwardPe": 10.39,
+    "dividendYield": 2.29,
     "revenueGrowth": -2.6,
     "profitMargin": 5.37,
     "operatingMargin": 12.87,

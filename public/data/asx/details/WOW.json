@@ -1,16 +1,12 @@
 {
   "ticker": "WOW",
   "name": "WOOLWORTHS FPO [WOW]",
-  "price": 38.33,
-  "valuationScore": 13.2,
+  "price": 38.32,
+  "valuationScore": 13.0,
   "marketCap": "46.8B",
   "sector": "Consumer Staples",
   "domain": "woolworthsgroup.com.au",
   "chartData": [
-    {
-      "date": "2025-06-15",
-      "price": 31.31
-    },
     {
       "date": "2025-06-22",
       "price": 30.93
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-14",
       "price": 38.33
+    },
+    {
+      "date": "2026-06-21",
+      "price": 38.32
     }
   ],
   "testsPassed": 3,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 78.22,
-      "threshold": 26.85,
-      "label": "78.2x vs 26.9x sector"
+      "value": 78.2,
+      "threshold": 26.46,
+      "label": "78.2x vs 26.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,7 +240,7 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 19.05,
+      "value": 19.04,
       "threshold": 10.0,
       "label": "19.0x vs 10x"
     },
@@ -255,7 +255,7 @@
       "name": "Forward P/E Re-rating",
       "passed": true,
       "value": 27.16,
-      "threshold": 78.22,
+      "threshold": 78.2,
       "label": "Fwd 27.2x vs Trail 78.2x"
     },
     "profitabilityCheck": {
@@ -281,11 +281,11 @@
     }
   },
   "metrics": {
-    "pe": 78.22,
-    "sectorPe": 31.59,
+    "pe": 78.2,
+    "sectorPe": 31.13,
     "pb": 10.1,
     "ps": 0.67,
-    "evEbitda": 19.05,
+    "evEbitda": 19.04,
     "fcfYield": 4.84,
     "forwardPe": 27.16,
     "dividendYield": 2.35,
