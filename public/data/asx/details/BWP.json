@@ -1,16 +1,12 @@
 {
   "ticker": "BWP",
   "name": "BWPPROPGP STAPLED [BWP]",
-  "price": 3.88,
-  "valuationScore": 2.3,
-  "marketCap": "3.0B",
+  "price": 3.96,
+  "valuationScore": 2.4,
+  "marketCap": "3.1B",
   "sector": "Real Estate",
   "domain": "bwptrust.com.au",
   "chartData": [
-    {
-      "date": "2025-06-22",
-      "price": 3.4
-    },
     {
       "date": "2025-06-29",
       "price": 3.47
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-21",
       "price": 3.88
+    },
+    {
+      "date": "2026-06-28",
+      "price": 3.96
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 10.49,
-      "threshold": 10.38,
-      "label": "10.5x vs 10.4x sector"
+      "value": 10.7,
+      "threshold": 10.5,
+      "label": "10.7x vs 10.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.93,
+      "value": 0.95,
       "threshold": 1.5,
-      "label": "0.93x vs 1.5x"
+      "label": "0.95x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -0.23,
+      "value": -0.22,
       "threshold": 5.0,
       "label": "-0.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 19.78,
-      "threshold": 10.49,
-      "label": "Fwd 19.8x vs Trail 10.5x"
+      "value": 20.19,
+      "threshold": 10.7,
+      "label": "Fwd 20.2x vs Trail 10.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 4.92,
+      "value": 5.02,
       "threshold": 0.5,
-      "label": "P/S 14.8x ÷ Growth 3.0% = 4.92"
+      "label": "P/S 15.1x ÷ Growth 3.0% = 5.02"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 10.49,
-    "sectorPe": 12.21,
-    "pb": 0.93,
-    "ps": 14.77,
+    "pe": 10.7,
+    "sectorPe": 12.35,
+    "pb": 0.95,
+    "ps": 15.07,
     "evEbitda": null,
-    "fcfYield": -0.23,
-    "forwardPe": 19.78,
+    "fcfYield": -0.22,
+    "forwardPe": 20.19,
     "dividendYield": 4.89,
     "revenueGrowth": 3.0,
     "profitMargin": 162.23,

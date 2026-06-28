@@ -1,16 +1,12 @@
 {
   "ticker": "PNI",
   "name": "PINNACLE FPO [PNI]",
-  "price": 16.81,
+  "price": 16.7,
   "valuationScore": 60.0,
   "marketCap": "4.0B",
   "sector": "Financial Services",
   "domain": "pinnacleinvestment.com",
   "chartData": [
-    {
-      "date": "2025-06-22",
-      "price": 18.78
-    },
     {
       "date": "2025-06-29",
       "price": 19.46
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-21",
       "price": 16.81
+    },
+    {
+      "date": "2026-06-28",
+      "price": 16.7
     }
   ],
   "testsPassed": 3,
@@ -226,23 +226,23 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 30.02,
-      "threshold": 15.03,
-      "label": "30.0x vs 15.0x sector"
+      "value": 29.82,
+      "threshold": 14.91,
+      "label": "29.8x vs 14.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.0,
+      "value": 3.98,
       "threshold": 1.5,
-      "label": "4.00x vs 1.5x"
+      "label": "3.98x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 142.92,
+      "value": 141.9,
       "threshold": 10.0,
-      "label": "142.9x vs 10x"
+      "label": "141.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 19.14,
-      "threshold": 30.02,
-      "label": "Fwd 19.1x vs Trail 30.0x"
+      "value": 19.01,
+      "threshold": 29.82,
+      "label": "Fwd 19.0x vs Trail 29.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": false,
       "value": 0.72,
       "threshold": 0.5,
-      "label": "P/S 48.0x ÷ Growth 66.6% = 0.72"
+      "label": "P/S 47.6x ÷ Growth 66.6% = 0.72"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 30.02,
-    "sectorPe": 17.68,
-    "pb": 4.0,
-    "ps": 47.96,
-    "evEbitda": 142.92,
+    "pe": 29.82,
+    "sectorPe": 17.54,
+    "pb": 3.98,
+    "ps": 47.65,
+    "evEbitda": 141.9,
     "fcfYield": -0.08,
-    "forwardPe": 19.14,
-    "dividendYield": 3.33,
+    "forwardPe": 19.01,
+    "dividendYield": 3.35,
     "revenueGrowth": 66.6,
     "profitMargin": 150.25,
     "operatingMargin": 25.21,

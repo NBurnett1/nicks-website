@@ -1,16 +1,12 @@
 {
   "ticker": "BRG",
   "name": "BREVILLE FPO [BRG]",
-  "price": 31.31,
-  "valuationScore": 10.2,
-  "marketCap": "4.5B",
+  "price": 31.43,
+  "valuationScore": 10.1,
+  "marketCap": "4.6B",
   "sector": "Consumer Discretionary",
   "domain": "brevillegroup.com",
   "chartData": [
-    {
-      "date": "2025-06-22",
-      "price": 28.32
-    },
     {
       "date": "2025-06-29",
       "price": 29.13
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-21",
       "price": 31.31
+    },
+    {
+      "date": "2026-06-28",
+      "price": 31.43
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 33.67,
-      "threshold": 15.32,
-      "label": "33.7x vs 15.3x sector"
+      "value": 33.8,
+      "threshold": 15.41,
+      "label": "33.8x vs 15.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.33,
+      "value": 4.34,
       "threshold": 1.5,
-      "label": "4.33x vs 1.5x"
+      "label": "4.34x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 20.46,
+      "value": 20.54,
       "threshold": 10.0,
       "label": "20.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.01,
+      "value": 2.0,
       "threshold": 5.0,
       "label": "2.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 29.19,
-      "threshold": 33.67,
-      "label": "Fwd 29.2x vs Trail 33.7x"
+      "value": 29.31,
+      "threshold": 33.8,
+      "label": "Fwd 29.3x vs Trail 33.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 33.67,
-    "sectorPe": 18.02,
-    "pb": 4.33,
-    "ps": 2.52,
-    "evEbitda": 20.46,
-    "fcfYield": 2.01,
-    "forwardPe": 29.19,
+    "pe": 33.8,
+    "sectorPe": 18.13,
+    "pb": 4.34,
+    "ps": 2.53,
+    "evEbitda": 20.54,
+    "fcfYield": 2.0,
+    "forwardPe": 29.31,
     "dividendYield": 1.21,
     "revenueGrowth": 10.1,
     "profitMargin": 7.6,

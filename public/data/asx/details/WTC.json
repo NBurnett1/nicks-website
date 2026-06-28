@@ -1,16 +1,12 @@
 {
   "ticker": "WTC",
   "name": "WISETECH FPO [WTC]",
-  "price": 36.88,
-  "valuationScore": 4.6,
-  "marketCap": "12.4B",
+  "price": 31.55,
+  "valuationScore": 3.5,
+  "marketCap": "10.6B",
   "sector": "Technology",
   "domain": "wisetechglobal.com",
   "chartData": [
-    {
-      "date": "2025-06-22",
-      "price": 106.89
-    },
     {
       "date": "2025-06-29",
       "price": 108.36
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-21",
       "price": 36.88
+    },
+    {
+      "date": "2026-06-28",
+      "price": 31.55
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 53.45,
-      "threshold": 30.22,
-      "label": "53.4x vs 30.2x sector"
+      "value": 45.07,
+      "threshold": 26.7,
+      "label": "45.1x vs 26.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.67,
+      "value": 4.0,
       "threshold": 1.5,
-      "label": "4.67x vs 1.5x"
+      "label": "4.00x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 33.58,
+      "value": 29.43,
       "threshold": 10.0,
-      "label": "33.6x vs 10x"
+      "label": "29.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.69,
+      "value": 3.14,
       "threshold": 5.0,
-      "label": "2.7% vs 5%"
+      "label": "3.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 25.04,
-      "threshold": 53.45,
-      "label": "Fwd 25.0x vs Trail 53.4x"
+      "value": 20.95,
+      "threshold": 45.07,
+      "label": "Fwd 21.0x vs Trail 45.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.15,
+      "value": 0.13,
       "threshold": 0.5,
-      "label": "P/S 11.6x ÷ Growth 76.4% = 0.15"
+      "label": "P/S 9.9x ÷ Growth 76.4% = 0.13"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 53.45,
-    "sectorPe": 35.55,
-    "pb": 4.67,
-    "ps": 11.59,
-    "evEbitda": 33.58,
-    "fcfYield": 2.69,
-    "forwardPe": 25.04,
-    "dividendYield": 0.58,
+    "pe": 45.07,
+    "sectorPe": 31.41,
+    "pb": 4.0,
+    "ps": 9.91,
+    "evEbitda": 29.43,
+    "fcfYield": 3.14,
+    "forwardPe": 20.95,
+    "dividendYield": 0.67,
     "revenueGrowth": 76.4,
     "profitMargin": 15.18,
     "operatingMargin": 29.45,

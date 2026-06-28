@@ -1,16 +1,12 @@
 {
   "ticker": "SBM",
   "name": "ST.BARBARA FPO [SBM]",
-  "price": 0.58,
-  "valuationScore": 37.9,
-  "marketCap": "708M",
+  "price": 0.47,
+  "valuationScore": 36.7,
+  "marketCap": "575M",
   "sector": "Basic Materials",
   "domain": "stbarbara.com.au",
   "chartData": [
-    {
-      "date": "2025-06-22",
-      "price": 0.32
-    },
     {
       "date": "2025-06-29",
       "price": 0.28
@@ -218,10 +214,14 @@
     {
       "date": "2026-06-21",
       "price": 0.58
+    },
+    {
+      "date": "2026-06-28",
+      "price": 0.47
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -232,29 +232,29 @@
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
-      "passed": false,
-      "value": 1.63,
+      "passed": true,
+      "value": 1.32,
       "threshold": 1.5,
-      "label": "1.63x vs 1.5x"
+      "label": "1.32x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 42.8,
+      "value": 33.84,
       "threshold": 10.0,
-      "label": "42.8x vs 10x"
+      "label": "33.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -8.62,
+      "value": -10.61,
       "threshold": 5.0,
-      "label": "-8.6% vs 5%"
+      "label": "-10.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 1.42,
+      "value": 1.15,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.09,
+      "value": 0.07,
       "threshold": 0.5,
-      "label": "P/S 2.9x ÷ Growth 32.4% = 0.09"
+      "label": "P/S 2.3x ÷ Growth 32.4% = 0.07"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 44.82,
-    "pb": 1.63,
-    "ps": 2.87,
-    "evEbitda": 42.8,
-    "fcfYield": -8.62,
-    "forwardPe": 1.42,
+    "sectorPe": 46.35,
+    "pb": 1.32,
+    "ps": 2.33,
+    "evEbitda": 33.84,
+    "fcfYield": -10.61,
+    "forwardPe": 1.15,
     "dividendYield": null,
     "revenueGrowth": 32.4,
     "profitMargin": -18.42,

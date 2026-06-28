@@ -2,15 +2,11 @@
   "ticker": "SUL",
   "name": "SUPARETAIL FPO [SUL]",
   "price": 13.12,
-  "valuationScore": -8.3,
+  "valuationScore": -8.6,
   "marketCap": "3.0B",
   "sector": "Consumer Discretionary",
   "domain": "superretailgroup.com.au",
   "chartData": [
-    {
-      "date": "2025-06-22",
-      "price": 13.09
-    },
     {
       "date": "2025-06-29",
       "price": 13.28
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-21",
       "price": 13.12
+    },
+    {
+      "date": "2026-06-28",
+      "price": 13.12
     }
   ],
   "testsPassed": 6,
@@ -227,8 +227,8 @@
       "name": "P/E Discount",
       "passed": true,
       "value": 15.26,
-      "threshold": 15.32,
-      "label": "15.3x vs 15.3x sector"
+      "threshold": 15.41,
+      "label": "15.3x vs 15.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -282,7 +282,7 @@
   },
   "metrics": {
     "pe": 15.26,
-    "sectorPe": 18.02,
+    "sectorPe": 18.13,
     "pb": 2.33,
     "ps": 0.71,
     "evEbitda": 9.4,

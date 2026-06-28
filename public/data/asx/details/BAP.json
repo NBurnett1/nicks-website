@@ -1,16 +1,12 @@
 {
   "ticker": "BAP",
   "name": "BAPCOR LTD FPO [BAP]",
-  "price": 0.47,
-  "valuationScore": -4.8,
-  "marketCap": "313M",
+  "price": 0.42,
+  "valuationScore": -5.3,
+  "marketCap": "283M",
   "sector": "Consumer Cyclical",
   "domain": "bapcor.com.au",
   "chartData": [
-    {
-      "date": "2025-06-22",
-      "price": 4.75
-    },
     {
       "date": "2025-06-29",
       "price": 4.89
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-21",
       "price": 0.47
+    },
+    {
+      "date": "2026-06-28",
+      "price": 0.42
     }
   ],
   "testsPassed": 3,
@@ -233,28 +233,28 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.22,
+      "value": 0.2,
       "threshold": 1.5,
-      "label": "0.22x vs 1.5x"
+      "label": "0.20x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 13.96,
+      "value": 13.68,
       "threshold": 10.0,
-      "label": "14.0x vs 10x"
+      "label": "13.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 17.27,
+      "value": 19.12,
       "threshold": 5.0,
-      "label": "17.3% vs 5%"
+      "label": "19.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 14.2,
+      "value": 12.82,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -282,13 +282,13 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 25.17,
-    "pb": 0.22,
-    "ps": 0.16,
-    "evEbitda": 13.96,
-    "fcfYield": 17.27,
-    "forwardPe": 14.2,
-    "dividendYield": 17.14,
+    "sectorPe": 24.71,
+    "pb": 0.2,
+    "ps": 0.15,
+    "evEbitda": 13.68,
+    "fcfYield": 19.12,
+    "forwardPe": 12.82,
+    "dividendYield": 18.98,
     "revenueGrowth": -3.9,
     "profitMargin": -5.96,
     "operatingMargin": 1.59,

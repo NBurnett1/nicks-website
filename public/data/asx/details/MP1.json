@@ -1,16 +1,12 @@
 {
   "ticker": "MP1",
   "name": "MEGAPORT FPO [MP1]",
-  "price": 20.94,
-  "valuationScore": 36.2,
-  "marketCap": "4.6B",
+  "price": 20.26,
+  "valuationScore": 38.0,
+  "marketCap": "4.5B",
   "sector": "Technology",
   "domain": "megaport.com",
   "chartData": [
-    {
-      "date": "2025-06-22",
-      "price": 13.44
-    },
     {
       "date": "2025-06-29",
       "price": 14.17
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-21",
       "price": 20.94
+    },
+    {
+      "date": "2026-06-28",
+      "price": 20.26
     }
   ],
   "testsPassed": 1,
@@ -233,28 +233,28 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 7.44,
+      "value": 7.2,
       "threshold": 1.5,
-      "label": "7.44x vs 1.5x"
+      "label": "7.20x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 216.57,
+      "value": 209.32,
       "threshold": 10.0,
-      "label": "216.6x vs 10x"
+      "label": "209.3x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 1.75,
+      "value": 1.81,
       "threshold": 5.0,
       "label": "1.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 103.97,
+      "value": 100.6,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.69,
+      "value": 0.67,
       "threshold": 0.5,
-      "label": "P/S 18.1x ÷ Growth 26.3% = 0.69"
+      "label": "P/S 17.5x ÷ Growth 26.3% = 0.67"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 35.55,
-    "pb": 7.44,
-    "ps": 18.13,
-    "evEbitda": 216.57,
-    "fcfYield": 1.75,
-    "forwardPe": 103.97,
+    "sectorPe": 31.41,
+    "pb": 7.2,
+    "ps": 17.54,
+    "evEbitda": 209.32,
+    "fcfYield": 1.81,
+    "forwardPe": 100.6,
     "dividendYield": null,
     "revenueGrowth": 26.3,
     "profitMargin": -7.94,

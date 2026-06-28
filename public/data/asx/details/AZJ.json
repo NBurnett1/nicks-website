@@ -2,15 +2,11 @@
   "ticker": "AZJ",
   "name": "AURIZON FPO [AZJ]",
   "price": 4.21,
-  "valuationScore": -5.0,
+  "valuationScore": -5.1,
   "marketCap": "7.1B",
   "sector": "Industrials",
   "domain": "aurizon.com.au",
   "chartData": [
-    {
-      "date": "2025-06-22",
-      "price": 2.91
-    },
     {
       "date": "2025-06-29",
       "price": 2.84
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-21",
       "price": 4.21
+    },
+    {
+      "date": "2026-06-28",
+      "price": 4.21
     }
   ],
   "testsPassed": 5,
@@ -227,8 +227,8 @@
       "name": "P/E Discount",
       "passed": true,
       "value": 23.39,
-      "threshold": 28.72,
-      "label": "23.4x vs 28.7x sector"
+      "threshold": 28.97,
+      "label": "23.4x vs 29.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -282,7 +282,7 @@
   },
   "metrics": {
     "pe": 23.39,
-    "sectorPe": 33.79,
+    "sectorPe": 34.08,
     "pb": 1.74,
     "ps": 1.77,
     "evEbitda": 8.21,

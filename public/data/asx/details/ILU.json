@@ -1,16 +1,12 @@
 {
   "ticker": "ILU",
   "name": "ILUKA RES FPO [ILU]",
-  "price": 7.82,
-  "valuationScore": 40.1,
-  "marketCap": "3.4B",
+  "price": 6.9,
+  "valuationScore": 44.4,
+  "marketCap": "3.0B",
   "sector": "Materials",
   "domain": "iluka.com",
   "chartData": [
-    {
-      "date": "2025-06-22",
-      "price": 3.53
-    },
     {
       "date": "2025-06-29",
       "price": 3.81
@@ -218,10 +214,14 @@
     {
       "date": "2026-06-21",
       "price": 7.82
+    },
+    {
+      "date": "2026-06-28",
+      "price": 6.9
     }
   ],
-  "testsPassed": 0,
-  "grade": "F",
+  "testsPassed": 1,
+  "grade": "D",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -232,29 +232,29 @@
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
-      "passed": false,
-      "value": 1.62,
+      "passed": true,
+      "value": 1.43,
       "threshold": 1.5,
-      "label": "1.62x vs 1.5x"
+      "label": "1.43x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 11.61,
+      "value": 10.58,
       "threshold": 10.0,
-      "label": "11.6x vs 10x"
+      "label": "10.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -12.17,
+      "value": -13.79,
       "threshold": 5.0,
-      "label": "-12.2% vs 5%"
+      "label": "-13.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": -22.78,
+      "value": -19.02,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -282,13 +282,13 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 21.39,
-    "pb": 1.62,
-    "ps": 3.32,
-    "evEbitda": 11.61,
-    "fcfYield": -12.17,
-    "forwardPe": -22.78,
-    "dividendYield": 0.64,
+    "sectorPe": 20.2,
+    "pb": 1.43,
+    "ps": 2.93,
+    "evEbitda": 10.58,
+    "fcfYield": -13.79,
+    "forwardPe": -19.02,
+    "dividendYield": 0.72,
     "revenueGrowth": -19.1,
     "profitMargin": -28.4,
     "operatingMargin": -37.48,

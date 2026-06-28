@@ -1,16 +1,12 @@
 {
   "ticker": "NWH",
   "name": "NRWHOLDLTD FPO [NWH]",
-  "price": 6.81,
-  "valuationScore": 4.7,
-  "marketCap": "3.1B",
+  "price": 7.25,
+  "valuationScore": 5.0,
+  "marketCap": "3.3B",
   "sector": "Industrials",
   "domain": "nrw.com.au",
   "chartData": [
-    {
-      "date": "2025-06-22",
-      "price": 2.81
-    },
     {
       "date": "2025-06-29",
       "price": 2.84
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-21",
       "price": 6.81
+    },
+    {
+      "date": "2026-06-28",
+      "price": 7.25
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 68.1,
-      "threshold": 28.72,
-      "label": "68.1x vs 28.7x sector"
+      "value": 65.91,
+      "threshold": 28.97,
+      "label": "65.9x vs 29.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.88,
+      "value": 5.19,
       "threshold": 1.5,
-      "label": "4.88x vs 1.5x"
+      "label": "5.19x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 13.81,
+      "value": 14.65,
       "threshold": 10.0,
-      "label": "13.8x vs 10x"
+      "label": "14.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 7.12,
+      "value": 6.69,
       "threshold": 5.0,
-      "label": "7.1% vs 5%"
+      "label": "6.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.24,
-      "threshold": 68.1,
-      "label": "Fwd 16.2x vs Trail 68.1x"
+      "value": 17.29,
+      "threshold": 65.91,
+      "label": "Fwd 17.3x vs Trail 65.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.04,
+      "value": 0.05,
       "threshold": 0.5,
-      "label": "P/S 0.9x ÷ Growth 19.5% = 0.04"
+      "label": "P/S 0.9x ÷ Growth 19.5% = 0.05"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 68.1,
-    "sectorPe": 33.79,
-    "pb": 4.88,
-    "ps": 0.87,
-    "evEbitda": 13.81,
-    "fcfYield": 7.12,
-    "forwardPe": 16.24,
-    "dividendYield": 2.5,
+    "pe": 65.91,
+    "sectorPe": 34.08,
+    "pb": 5.19,
+    "ps": 0.93,
+    "evEbitda": 14.65,
+    "fcfYield": 6.69,
+    "forwardPe": 17.29,
+    "dividendYield": 2.34,
     "revenueGrowth": 19.5,
     "profitMargin": 1.36,
     "operatingMargin": 5.41,

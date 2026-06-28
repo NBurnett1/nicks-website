@@ -1,16 +1,12 @@
 {
   "ticker": "EDV",
   "name": "ENDEAVOUR FPO [EDV]",
-  "price": 3.43,
-  "valuationScore": -8.4,
-  "marketCap": "6.2B",
+  "price": 3.3,
+  "valuationScore": -8.9,
+  "marketCap": "5.9B",
   "sector": "Consumer Defensive",
   "domain": "endeavourgroup.com.au",
   "chartData": [
-    {
-      "date": "2025-06-22",
-      "price": 3.88
-    },
     {
       "date": "2025-06-29",
       "price": 3.84
@@ -218,45 +214,49 @@
     {
       "date": "2026-06-21",
       "price": 3.43
+    },
+    {
+      "date": "2026-06-28",
+      "price": 3.3
     }
   ],
-  "testsPassed": 4,
-  "grade": "C",
+  "testsPassed": 5,
+  "grade": "B",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 16.33,
-      "threshold": 17.59,
-      "label": "16.3x vs 17.6x sector"
+      "value": 15.71,
+      "threshold": 17.21,
+      "label": "15.7x vs 17.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
-      "passed": false,
-      "value": 1.55,
+      "passed": true,
+      "value": 1.49,
       "threshold": 1.5,
-      "label": "1.55x vs 1.5x"
+      "label": "1.49x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 10.29,
+      "value": 10.08,
       "threshold": 10.0,
-      "label": "10.3x vs 10x"
+      "label": "10.1x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 9.47,
+      "value": 9.84,
       "threshold": 5.0,
-      "label": "9.5% vs 5%"
+      "label": "9.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.25,
-      "threshold": 16.33,
-      "label": "Fwd 16.2x vs Trail 16.3x"
+      "value": 15.63,
+      "threshold": 15.71,
+      "label": "Fwd 15.6x vs Trail 15.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.56,
+      "value": 0.54,
       "threshold": 0.5,
-      "label": "P/S 0.5x ÷ Growth 0.9% = 0.56"
+      "label": "P/S 0.5x ÷ Growth 0.9% = 0.54"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 16.33,
-    "sectorPe": 20.69,
-    "pb": 1.55,
-    "ps": 0.51,
-    "evEbitda": 10.29,
-    "fcfYield": 9.47,
-    "forwardPe": 16.25,
-    "dividendYield": 4.99,
+    "pe": 15.71,
+    "sectorPe": 20.25,
+    "pb": 1.49,
+    "ps": 0.49,
+    "evEbitda": 10.08,
+    "fcfYield": 9.84,
+    "forwardPe": 15.63,
+    "dividendYield": 5.18,
     "revenueGrowth": 0.9,
     "profitMargin": 3.09,
     "operatingMargin": 7.75,

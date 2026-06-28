@@ -1,16 +1,12 @@
 {
   "ticker": "ANZ",
   "name": "ANZ GROUP FPO [ANZ]",
-  "price": 35.03,
+  "price": 35.04,
   "valuationScore": -1.3,
   "marketCap": "105.5B",
   "sector": "Financials",
   "domain": "anz.com.au",
   "chartData": [
-    {
-      "date": "2025-06-22",
-      "price": 27.16
-    },
     {
       "date": "2025-06-29",
       "price": 27.93
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-21",
       "price": 35.03
+    },
+    {
+      "date": "2026-06-28",
+      "price": 35.04
     }
   ],
   "testsPassed": 4,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 17.78,
-      "threshold": 17.55,
-      "label": "17.8x vs 17.6x sector"
+      "value": 17.79,
+      "threshold": 17.67,
+      "label": "17.8x vs 17.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -254,8 +254,8 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 13.8,
-      "threshold": 17.78,
+      "value": 13.81,
+      "threshold": 17.79,
       "label": "Fwd 13.8x vs Trail 17.8x"
     },
     "profitabilityCheck": {
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 17.78,
-    "sectorPe": 20.65,
+    "pe": 17.79,
+    "sectorPe": 20.79,
     "pb": 1.48,
     "ps": 4.9,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 13.8,
+    "forwardPe": 13.81,
     "dividendYield": 4.74,
     "revenueGrowth": -2.1,
     "profitMargin": 27.42,

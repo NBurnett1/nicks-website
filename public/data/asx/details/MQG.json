@@ -1,16 +1,12 @@
 {
   "ticker": "MQG",
   "name": "MACQ GROUP FPO [MQG]",
-  "price": 249.82,
-  "valuationScore": 2.3,
-  "marketCap": "95.2B",
+  "price": 249.36,
+  "valuationScore": 2.2,
+  "marketCap": "95.0B",
   "sector": "Financials",
   "domain": "macquarie.com",
   "chartData": [
-    {
-      "date": "2025-06-22",
-      "price": 202.4
-    },
     {
       "date": "2025-06-29",
       "price": 213.37
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-21",
       "price": 249.82
+    },
+    {
+      "date": "2026-06-28",
+      "price": 249.36
     }
   ],
   "testsPassed": 3,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 25.73,
-      "threshold": 17.55,
-      "label": "25.7x vs 17.6x sector"
+      "value": 25.68,
+      "threshold": 17.67,
+      "label": "25.7x vs 17.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -254,8 +254,8 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 20.34,
-      "threshold": 25.73,
+      "value": 20.31,
+      "threshold": 25.68,
       "label": "Fwd 20.3x vs Trail 25.7x"
     },
     "profitabilityCheck": {
@@ -270,7 +270,7 @@
       "passed": false,
       "value": 0.92,
       "threshold": 0.5,
-      "label": "P/S 5.4x ÷ Growth 5.8% = 0.92"
+      "label": "P/S 5.3x ÷ Growth 5.8% = 0.92"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 25.73,
-    "sectorPe": 20.65,
+    "pe": 25.68,
+    "sectorPe": 20.79,
     "pb": 2.64,
-    "ps": 5.35,
+    "ps": 5.34,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 20.34,
+    "forwardPe": 20.31,
     "dividendYield": 3.43,
     "revenueGrowth": 5.8,
     "profitMargin": 21.12,

@@ -1,16 +1,12 @@
 {
   "ticker": "IMD",
   "name": "IMDEX FPO [IMD]",
-  "price": 4.19,
-  "valuationScore": 5.2,
+  "price": 4.11,
+  "valuationScore": 4.6,
   "marketCap": "2.1B",
   "sector": "Industrials",
   "domain": "imdex.com",
   "chartData": [
-    {
-      "date": "2025-06-22",
-      "price": 2.77
-    },
     {
       "date": "2025-06-29",
       "price": 2.71
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-21",
       "price": 4.19
+    },
+    {
+      "date": "2026-06-28",
+      "price": 4.11
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 46.56,
-      "threshold": 28.72,
-      "label": "46.6x vs 28.7x sector"
+      "value": 45.67,
+      "threshold": 28.97,
+      "label": "45.7x vs 29.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.29,
+      "value": 3.22,
       "threshold": 1.5,
-      "label": "3.29x vs 1.5x"
+      "label": "3.22x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 19.09,
+      "value": 18.74,
       "threshold": 10.0,
-      "label": "19.1x vs 10x"
+      "label": "18.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.45,
+      "value": 2.5,
       "threshold": 5.0,
       "label": "2.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 30.09,
-      "threshold": 46.56,
-      "label": "Fwd 30.1x vs Trail 46.6x"
+      "value": 29.52,
+      "threshold": 45.67,
+      "label": "Fwd 29.5x vs Trail 45.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.28,
       "threshold": 0.5,
-      "label": "P/S 4.6x ÷ Growth 16.3% = 0.28"
+      "label": "P/S 4.5x ÷ Growth 16.3% = 0.28"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 46.56,
-    "sectorPe": 33.79,
-    "pb": 3.29,
-    "ps": 4.6,
-    "evEbitda": 19.09,
-    "fcfYield": 2.45,
-    "forwardPe": 30.09,
-    "dividendYield": 0.65,
+    "pe": 45.67,
+    "sectorPe": 34.08,
+    "pb": 3.22,
+    "ps": 4.51,
+    "evEbitda": 18.74,
+    "fcfYield": 2.5,
+    "forwardPe": 29.52,
+    "dividendYield": 0.66,
     "revenueGrowth": 16.3,
     "profitMargin": 10.81,
     "operatingMargin": 17.87,
