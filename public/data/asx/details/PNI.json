@@ -1,16 +1,12 @@
 {
   "ticker": "PNI",
   "name": "PINNACLE FPO [PNI]",
-  "price": 16.7,
+  "price": 18.19,
   "valuationScore": 60.0,
-  "marketCap": "4.0B",
+  "marketCap": "4.4B",
   "sector": "Financial Services",
   "domain": "pinnacleinvestment.com",
   "chartData": [
-    {
-      "date": "2025-06-29",
-      "price": 19.46
-    },
     {
       "date": "2025-07-06",
       "price": 20.57
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-28",
       "price": 16.7
+    },
+    {
+      "date": "2026-07-05",
+      "price": 18.19
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 29.82,
-      "threshold": 14.91,
-      "label": "29.8x vs 14.9x sector"
+      "value": 32.48,
+      "threshold": 15.07,
+      "label": "32.5x vs 15.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.98,
+      "value": 4.33,
       "threshold": 1.5,
-      "label": "3.98x vs 1.5x"
+      "label": "4.33x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 141.9,
+      "value": 155.79,
       "threshold": 10.0,
-      "label": "141.9x vs 10x"
+      "label": "155.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -0.08,
+      "value": -0.07,
       "threshold": 5.0,
       "label": "-0.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 19.01,
-      "threshold": 29.82,
-      "label": "Fwd 19.0x vs Trail 29.8x"
+      "value": 20.74,
+      "threshold": 32.48,
+      "label": "Fwd 20.7x vs Trail 32.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.72,
+      "value": 0.78,
       "threshold": 0.5,
-      "label": "P/S 47.6x ÷ Growth 66.6% = 0.72"
+      "label": "P/S 52.2x ÷ Growth 66.6% = 0.78"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 29.82,
-    "sectorPe": 17.54,
-    "pb": 3.98,
-    "ps": 47.65,
-    "evEbitda": 141.9,
-    "fcfYield": -0.08,
-    "forwardPe": 19.01,
-    "dividendYield": 3.35,
+    "pe": 32.48,
+    "sectorPe": 17.73,
+    "pb": 4.33,
+    "ps": 52.25,
+    "evEbitda": 155.79,
+    "fcfYield": -0.07,
+    "forwardPe": 20.74,
+    "dividendYield": 3.08,
     "revenueGrowth": 66.6,
     "profitMargin": 150.25,
     "operatingMargin": 25.21,

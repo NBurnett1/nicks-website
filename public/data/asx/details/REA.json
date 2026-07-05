@@ -1,16 +1,12 @@
 {
   "ticker": "REA",
   "name": "REA GROUP FPO [REA]",
-  "price": 133.54,
-  "valuationScore": 4.9,
-  "marketCap": "17.5B",
+  "price": 141.91,
+  "valuationScore": 5.1,
+  "marketCap": "18.6B",
   "sector": "Technology",
   "domain": "rea-group.com",
   "chartData": [
-    {
-      "date": "2025-06-29",
-      "price": 231.72
-    },
     {
       "date": "2025-07-06",
       "price": 228.7
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-28",
       "price": 133.54
+    },
+    {
+      "date": "2026-07-05",
+      "price": 141.91
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 30.77,
-      "threshold": 26.7,
-      "label": "30.8x vs 26.7x sector"
+      "value": 32.77,
+      "threshold": 28.24,
+      "label": "32.8x vs 28.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 8.57,
+      "value": 9.11,
       "threshold": 1.5,
-      "label": "8.57x vs 1.5x"
+      "label": "9.11x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 20.03,
+      "value": 21.31,
       "threshold": 10.0,
-      "label": "20.0x vs 10x"
+      "label": "21.3x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.74,
+      "value": 2.58,
       "threshold": 5.0,
-      "label": "2.7% vs 5%"
+      "label": "2.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 24.29,
-      "threshold": 30.77,
-      "label": "Fwd 24.3x vs Trail 30.8x"
+      "value": 25.93,
+      "threshold": 32.77,
+      "label": "Fwd 25.9x vs Trail 32.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 1.46,
+      "value": 1.56,
       "threshold": 0.5,
-      "label": "P/S 8.9x ÷ Growth 6.1% = 1.46"
+      "label": "P/S 9.5x ÷ Growth 6.1% = 1.56"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 30.77,
-    "sectorPe": 31.41,
-    "pb": 8.57,
-    "ps": 8.93,
-    "evEbitda": 20.03,
-    "fcfYield": 2.74,
-    "forwardPe": 24.29,
-    "dividendYield": 1.86,
+    "pe": 32.77,
+    "sectorPe": 33.22,
+    "pb": 9.11,
+    "ps": 9.49,
+    "evEbitda": 21.31,
+    "fcfYield": 2.58,
+    "forwardPe": 25.93,
+    "dividendYield": 1.75,
     "revenueGrowth": 6.1,
     "profitMargin": 29.28,
     "operatingMargin": 47.53,

@@ -2,15 +2,11 @@
   "ticker": "MTS",
   "name": "METCASHLTD FPO [MTS]",
   "price": 3.0,
-  "valuationScore": -9.7,
+  "valuationScore": -9.9,
   "marketCap": "3.3B",
   "sector": "Consumer Defensive",
   "domain": "metcash.com",
   "chartData": [
-    {
-      "date": "2025-06-29",
-      "price": 3.72
-    },
     {
       "date": "2025-07-06",
       "price": 3.87
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-28",
       "price": 3.0
+    },
+    {
+      "date": "2026-07-05",
+      "price": 3.0
     }
   ],
   "testsPassed": 5,
@@ -227,8 +227,8 @@
       "name": "P/E Discount",
       "passed": true,
       "value": 12.0,
-      "threshold": 17.21,
-      "label": "12.0x vs 17.2x sector"
+      "threshold": 17.38,
+      "label": "12.0x vs 17.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -282,7 +282,7 @@
   },
   "metrics": {
     "pe": 12.0,
-    "sectorPe": 20.25,
+    "sectorPe": 20.45,
     "pb": 1.93,
     "ps": 0.19,
     "evEbitda": 9.46,

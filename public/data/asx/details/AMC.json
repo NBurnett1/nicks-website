@@ -1,16 +1,12 @@
 {
   "ticker": "AMC",
   "name": "AMCOR PLC CDI 1:1 [AMC]",
-  "price": 61.67,
-  "valuationScore": 5.5,
-  "marketCap": "28.5B",
+  "price": 64.55,
+  "valuationScore": 5.9,
+  "marketCap": "29.8B",
   "sector": "Materials",
   "domain": "amcor.com",
   "chartData": [
-    {
-      "date": "2025-06-29",
-      "price": 66.77
-    },
     {
       "date": "2025-07-06",
       "price": 70.25
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-28",
       "price": 61.67
+    },
+    {
+      "date": "2026-07-05",
+      "price": 64.55
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 34.07,
-      "threshold": 17.17,
-      "label": "34.1x vs 17.2x sector"
+      "value": 35.66,
+      "threshold": 17.61,
+      "label": "35.7x vs 17.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.72,
+      "value": 1.76,
       "threshold": 1.5,
-      "label": "1.72x vs 1.5x"
+      "label": "1.76x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 13.65,
+      "value": 14.06,
       "threshold": 10.0,
-      "label": "13.6x vs 10x"
+      "label": "14.1x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 0.52,
+      "value": 0.5,
       "threshold": 5.0,
       "label": "0.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 9.87,
-      "threshold": 34.07,
-      "label": "Fwd 9.9x vs Trail 34.1x"
+      "value": 10.4,
+      "threshold": 35.66,
+      "label": "Fwd 10.4x vs Trail 35.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 34.07,
-    "sectorPe": 20.2,
-    "pb": 1.72,
-    "ps": 1.28,
-    "evEbitda": 13.65,
-    "fcfYield": 0.52,
-    "forwardPe": 9.87,
-    "dividendYield": 6.18,
+    "pe": 35.66,
+    "sectorPe": 20.72,
+    "pb": 1.76,
+    "ps": 1.34,
+    "evEbitda": 14.06,
+    "fcfYield": 0.5,
+    "forwardPe": 10.4,
+    "dividendYield": 5.9,
     "revenueGrowth": 77.4,
     "profitMargin": 3.06,
     "operatingMargin": 8.59,

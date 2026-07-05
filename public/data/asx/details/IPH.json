@@ -1,16 +1,12 @@
 {
   "ticker": "IPH",
   "name": "IPHLIMITED FPO [IPH]",
-  "price": 3.8,
-  "valuationScore": -13.1,
-  "marketCap": "974M",
+  "price": 3.87,
+  "valuationScore": -13.0,
+  "marketCap": "992M",
   "sector": "Industrials",
   "domain": "iphltd.com.au",
   "chartData": [
-    {
-      "date": "2025-06-29",
-      "price": 4.14
-    },
     {
       "date": "2025-07-06",
       "price": 4.29
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-28",
       "price": 3.8
+    },
+    {
+      "date": "2026-07-05",
+      "price": 3.87
     }
   ],
   "testsPassed": 8,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 13.57,
-      "threshold": 28.97,
-      "label": "13.6x vs 29.0x sector"
+      "value": 13.82,
+      "threshold": 27.98,
+      "label": "13.8x vs 28.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.46,
+      "value": 1.49,
       "threshold": 1.5,
-      "label": "1.46x vs 1.5x"
+      "label": "1.49x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 7.42,
+      "value": 7.52,
       "threshold": 10.0,
-      "label": "7.4x vs 10x"
+      "label": "7.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 13.43,
+      "value": 13.18,
       "threshold": 5.0,
-      "label": "13.4% vs 5%"
+      "label": "13.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 7.84,
-      "threshold": 13.57,
-      "label": "Fwd 7.8x vs Trail 13.6x"
+      "value": 7.99,
+      "threshold": 13.82,
+      "label": "Fwd 8.0x vs Trail 13.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.21,
       "threshold": 0.5,
-      "label": "P/S 1.3x ÷ Growth 6.5% = 0.21"
+      "label": "P/S 1.4x ÷ Growth 6.5% = 0.21"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 13.57,
-    "sectorPe": 34.08,
-    "pb": 1.46,
-    "ps": 1.34,
-    "evEbitda": 7.42,
-    "fcfYield": 13.43,
-    "forwardPe": 7.84,
-    "dividendYield": 10.0,
+    "pe": 13.82,
+    "sectorPe": 32.92,
+    "pb": 1.49,
+    "ps": 1.36,
+    "evEbitda": 7.52,
+    "fcfYield": 13.18,
+    "forwardPe": 7.99,
+    "dividendYield": 9.82,
     "revenueGrowth": 6.5,
     "profitMargin": 9.98,
     "operatingMargin": 18.74,

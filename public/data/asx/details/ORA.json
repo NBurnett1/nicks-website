@@ -1,16 +1,12 @@
 {
   "ticker": "ORA",
   "name": "ORORA FPO [ORA]",
-  "price": 1.41,
-  "valuationScore": -6.6,
+  "price": 1.39,
+  "valuationScore": -6.8,
   "marketCap": "1.7B",
   "sector": "Consumer Cyclical",
   "domain": "ororagroup.com",
   "chartData": [
-    {
-      "date": "2025-06-29",
-      "price": 1.83
-    },
     {
       "date": "2025-07-06",
       "price": 1.91
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-28",
       "price": 1.4
+    },
+    {
+      "date": "2026-07-05",
+      "price": 1.38
     }
   ],
   "testsPassed": 7,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 14.05,
-      "threshold": 21.01,
-      "label": "14.0x vs 21.0x sector"
+      "value": 13.85,
+      "threshold": 20.84,
+      "label": "13.8x vs 20.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,23 +240,23 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 5.63,
+      "value": 5.57,
       "threshold": 10.0,
       "label": "5.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 11.58,
+      "value": 11.74,
       "threshold": 5.0,
-      "label": "11.6% vs 5%"
+      "label": "11.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 11.32,
-      "threshold": 14.05,
-      "label": "Fwd 11.3x vs Trail 14.0x"
+      "value": 11.23,
+      "threshold": 13.85,
+      "label": "Fwd 11.2x vs Trail 13.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 14.05,
-    "sectorPe": 24.71,
+    "pe": 13.85,
+    "sectorPe": 24.52,
     "pb": 0.62,
-    "ps": 0.79,
-    "evEbitda": 5.63,
-    "fcfYield": 11.58,
-    "forwardPe": 11.32,
-    "dividendYield": 7.12,
+    "ps": 0.78,
+    "evEbitda": 5.57,
+    "fcfYield": 11.74,
+    "forwardPe": 11.23,
+    "dividendYield": 7.22,
     "revenueGrowth": 9.7,
     "profitMargin": 5.68,
     "operatingMargin": 11.63,

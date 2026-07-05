@@ -1,16 +1,12 @@
 {
   "ticker": "GWA",
   "name": "GWA GROUP FPO [GWA]",
-  "price": 2.3,
+  "price": 2.31,
   "valuationScore": -9.2,
-  "marketCap": "610M",
+  "marketCap": "613M",
   "sector": "Industrials",
   "domain": "gwagroup.com.au",
   "chartData": [
-    {
-      "date": "2025-06-29",
-      "price": 2.2
-    },
     {
       "date": "2025-07-06",
       "price": 2.2
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-28",
       "price": 2.3
+    },
+    {
+      "date": "2026-07-05",
+      "price": 2.31
     }
   ],
   "testsPassed": 6,
@@ -226,36 +226,36 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 12.78,
-      "threshold": 28.97,
-      "label": "12.8x vs 29.0x sector"
+      "value": 12.83,
+      "threshold": 27.98,
+      "label": "12.8x vs 28.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.02,
+      "value": 2.03,
       "threshold": 1.5,
-      "label": "2.02x vs 1.5x"
+      "label": "2.03x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 8.61,
+      "value": 8.64,
       "threshold": 10.0,
       "label": "8.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 9.33,
+      "value": 9.29,
       "threshold": 5.0,
       "label": "9.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 11.39,
-      "threshold": 12.78,
+      "value": 11.44,
+      "threshold": 12.83,
       "label": "Fwd 11.4x vs Trail 12.8x"
     },
     "profitabilityCheck": {
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 12.78,
-    "sectorPe": 34.08,
-    "pb": 2.02,
-    "ps": 1.44,
-    "evEbitda": 8.61,
-    "fcfYield": 9.33,
-    "forwardPe": 11.39,
-    "dividendYield": 6.96,
+    "pe": 12.83,
+    "sectorPe": 32.92,
+    "pb": 2.03,
+    "ps": 1.45,
+    "evEbitda": 8.64,
+    "fcfYield": 9.29,
+    "forwardPe": 11.44,
+    "dividendYield": 6.93,
     "revenueGrowth": 2.0,
     "profitMargin": 11.02,
     "operatingMargin": 18.24,

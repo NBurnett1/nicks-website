@@ -1,16 +1,12 @@
 {
   "ticker": "AZJ",
   "name": "AURIZON FPO [AZJ]",
-  "price": 4.21,
-  "valuationScore": -5.1,
-  "marketCap": "7.1B",
+  "price": 4.09,
+  "valuationScore": -5.4,
+  "marketCap": "6.9B",
   "sector": "Industrials",
   "domain": "aurizon.com.au",
   "chartData": [
-    {
-      "date": "2025-06-29",
-      "price": 2.84
-    },
     {
       "date": "2025-07-06",
       "price": 2.98
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-28",
       "price": 4.21
+    },
+    {
+      "date": "2026-07-05",
+      "price": 4.09
     }
   ],
   "testsPassed": 5,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 23.39,
-      "threshold": 28.97,
-      "label": "23.4x vs 29.0x sector"
+      "value": 22.72,
+      "threshold": 27.98,
+      "label": "22.7x vs 28.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.74,
+      "value": 1.69,
       "threshold": 1.5,
-      "label": "1.74x vs 1.5x"
+      "label": "1.69x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 8.21,
+      "value": 8.07,
       "threshold": 10.0,
-      "label": "8.2x vs 10x"
+      "label": "8.1x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.04,
+      "value": 5.19,
       "threshold": 5.0,
-      "label": "5.0% vs 5%"
+      "label": "5.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.89,
-      "threshold": 23.39,
-      "label": "Fwd 14.9x vs Trail 23.4x"
+      "value": 14.47,
+      "threshold": 22.72,
+      "label": "Fwd 14.5x vs Trail 22.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.84,
+      "value": 0.82,
       "threshold": 0.5,
-      "label": "P/S 1.8x ÷ Growth 2.1% = 0.84"
+      "label": "P/S 1.7x ÷ Growth 2.1% = 0.82"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 23.39,
-    "sectorPe": 34.08,
-    "pb": 1.74,
-    "ps": 1.77,
-    "evEbitda": 8.21,
-    "fcfYield": 5.04,
-    "forwardPe": 14.89,
-    "dividendYield": 4.51,
+    "pe": 22.72,
+    "sectorPe": 32.92,
+    "pb": 1.69,
+    "ps": 1.72,
+    "evEbitda": 8.07,
+    "fcfYield": 5.19,
+    "forwardPe": 14.47,
+    "dividendYield": 4.65,
     "revenueGrowth": 2.1,
     "profitMargin": 7.63,
     "operatingMargin": 24.91,

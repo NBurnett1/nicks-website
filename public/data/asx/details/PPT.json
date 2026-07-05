@@ -1,16 +1,12 @@
 {
   "ticker": "PPT",
   "name": "PERPETUAL FPO [PPT]",
-  "price": 15.19,
-  "valuationScore": -5.4,
-  "marketCap": "1.8B",
+  "price": 18.98,
+  "valuationScore": -3.4,
+  "marketCap": "2.2B",
   "sector": "Financial Services",
   "domain": "perpetual.com.au",
   "chartData": [
-    {
-      "date": "2025-06-29",
-      "price": 17.11
-    },
     {
       "date": "2025-07-06",
       "price": 19.38
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-28",
       "price": 15.19
+    },
+    {
+      "date": "2026-07-05",
+      "price": 18.98
     }
   ],
   "testsPassed": 4,
@@ -233,28 +233,28 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.07,
+      "value": 1.33,
       "threshold": 1.5,
-      "label": "1.07x vs 1.5x"
+      "label": "1.33x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 7.93,
+      "value": 9.41,
       "threshold": 10.0,
-      "label": "7.9x vs 10x"
+      "label": "9.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 14.35,
+      "value": 11.48,
       "threshold": 5.0,
-      "label": "14.3% vs 5%"
+      "label": "11.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 9.89,
+      "value": 11.19,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.78,
+      "value": 0.98,
       "threshold": 0.5,
-      "label": "P/S 1.3x ÷ Growth 1.6% = 0.78"
+      "label": "P/S 1.6x ÷ Growth 1.6% = 0.98"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,13 +282,13 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 17.54,
-    "pb": 1.07,
-    "ps": 1.25,
-    "evEbitda": 7.93,
-    "fcfYield": 14.35,
-    "forwardPe": 9.89,
-    "dividendYield": 7.44,
+    "sectorPe": 17.73,
+    "pb": 1.33,
+    "ps": 1.57,
+    "evEbitda": 9.41,
+    "fcfYield": 11.48,
+    "forwardPe": 11.19,
+    "dividendYield": 5.95,
     "revenueGrowth": 1.6,
     "profitMargin": -1.16,
     "operatingMargin": 14.43,

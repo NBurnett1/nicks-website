@@ -1,16 +1,12 @@
 {
   "ticker": "SDF",
   "name": "STEADFAST FPO [SDF]",
-  "price": 5.08,
-  "valuationScore": -1.9,
+  "price": 5.07,
+  "valuationScore": -2.3,
   "marketCap": "5.6B",
   "sector": "Financial Services",
   "domain": "steadfast.com.au",
   "chartData": [
-    {
-      "date": "2025-06-29",
-      "price": 5.76
-    },
     {
       "date": "2025-07-06",
       "price": 5.78
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-28",
       "price": 5.08
+    },
+    {
+      "date": "2026-07-05",
+      "price": 5.07
     }
   ],
   "testsPassed": 6,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 15.88,
-      "threshold": 14.91,
-      "label": "15.9x vs 14.9x sector"
+      "value": 15.84,
+      "threshold": 15.07,
+      "label": "15.8x vs 15.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,23 +240,23 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 8.91,
+      "value": 8.89,
       "threshold": 10.0,
       "label": "8.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 10.31,
+      "value": 10.33,
       "threshold": 5.0,
       "label": "10.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.84,
-      "threshold": 15.88,
-      "label": "Fwd 14.8x vs Trail 15.9x"
+      "value": 14.81,
+      "threshold": 15.84,
+      "label": "Fwd 14.8x vs Trail 15.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 15.88,
-    "sectorPe": 17.54,
+    "pe": 15.84,
+    "sectorPe": 17.73,
     "pb": 2.42,
     "ps": 2.56,
-    "evEbitda": 8.91,
-    "fcfYield": 10.31,
-    "forwardPe": 14.84,
-    "dividendYield": 3.92,
+    "evEbitda": 8.89,
+    "fcfYield": 10.33,
+    "forwardPe": 14.81,
+    "dividendYield": 3.93,
     "revenueGrowth": 14.9,
     "profitMargin": 16.13,
     "operatingMargin": 27.58,

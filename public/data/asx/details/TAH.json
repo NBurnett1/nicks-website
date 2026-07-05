@@ -8,10 +8,6 @@
   "domain": "tabcorp.com.au",
   "chartData": [
     {
-      "date": "2025-06-29",
-      "price": 0.68
-    },
-    {
       "date": "2025-07-06",
       "price": 0.72
     },
@@ -218,6 +214,10 @@
     {
       "date": "2026-06-28",
       "price": 0.83
+    },
+    {
+      "date": "2026-07-05",
+      "price": 0.83
     }
   ],
   "testsPassed": 4,
@@ -227,8 +227,8 @@
       "name": "P/E Discount",
       "passed": false,
       "value": 83.0,
-      "threshold": 21.01,
-      "label": "83.0x vs 21.0x sector"
+      "threshold": 20.84,
+      "label": "83.0x vs 20.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -282,7 +282,7 @@
   },
   "metrics": {
     "pe": 83.0,
-    "sectorPe": 24.71,
+    "sectorPe": 24.52,
     "pb": 1.58,
     "ps": 0.72,
     "evEbitda": 9.19,
