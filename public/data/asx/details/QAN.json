@@ -1,16 +1,12 @@
 {
   "ticker": "QAN",
   "name": "QANTAS FPO [QAN]",
-  "price": 10.61,
-  "valuationScore": 9.8,
-  "marketCap": "16.1B",
+  "price": 10.41,
+  "valuationScore": 10.1,
+  "marketCap": "15.8B",
   "sector": "Industrials",
   "domain": "qantas.com",
   "chartData": [
-    {
-      "date": "2025-07-06",
-      "price": 10.09
-    },
     {
       "date": "2025-07-13",
       "price": 10.33
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-05",
       "price": 10.61
+    },
+    {
+      "date": "2026-07-12",
+      "price": 10.41
     }
   ],
   "testsPassed": 6,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 10.01,
-      "threshold": 27.98,
-      "label": "10.0x vs 28.0x sector"
+      "value": 9.82,
+      "threshold": 27.91,
+      "label": "9.8x vs 27.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 11.95,
+      "value": 11.72,
       "threshold": 1.5,
-      "label": "11.95x vs 1.5x"
+      "label": "11.72x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 5.16,
+      "value": 5.09,
       "threshold": 10.0,
-      "label": "5.2x vs 10x"
+      "label": "5.1x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -3.76,
+      "value": -3.83,
       "threshold": 5.0,
       "label": "-3.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 9.77,
-      "threshold": 10.01,
-      "label": "Fwd 9.8x vs Trail 10.0x"
+      "value": 9.62,
+      "threshold": 9.82,
+      "label": "Fwd 9.6x vs Trail 9.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.1,
       "threshold": 0.5,
-      "label": "P/S 0.7x ÷ Growth 6.3% = 0.10"
+      "label": "P/S 0.6x ÷ Growth 6.3% = 0.10"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 10.01,
-    "sectorPe": 32.92,
-    "pb": 11.95,
-    "ps": 0.65,
-    "evEbitda": 5.16,
-    "fcfYield": -3.76,
-    "forwardPe": 9.77,
-    "dividendYield": 3.73,
+    "pe": 9.82,
+    "sectorPe": 32.83,
+    "pb": 11.72,
+    "ps": 0.64,
+    "evEbitda": 5.09,
+    "fcfYield": -3.83,
+    "forwardPe": 9.62,
+    "dividendYield": 3.8,
     "revenueGrowth": 6.3,
     "profitMargin": 6.53,
     "operatingMargin": 11.4,

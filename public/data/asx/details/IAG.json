@@ -1,16 +1,12 @@
 {
   "ticker": "IAG",
   "name": "INSUR.AUST FPO [IAG]",
-  "price": 8.12,
-  "valuationScore": 3.6,
-  "marketCap": "19.0B",
+  "price": 8.19,
+  "valuationScore": 3.5,
+  "marketCap": "19.1B",
   "sector": "Financials",
   "domain": "iag.com.au",
   "chartData": [
-    {
-      "date": "2025-07-06",
-      "price": 8.32
-    },
     {
       "date": "2025-07-13",
       "price": 8.13
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-05",
       "price": 8.12
+    },
+    {
+      "date": "2026-07-12",
+      "price": 8.19
     }
   ],
   "testsPassed": 5,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 17.65,
-      "threshold": 17.74,
-      "label": "17.7x vs 17.7x sector"
+      "value": 17.8,
+      "threshold": 18.02,
+      "label": "17.8x vs 18.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.63,
+      "value": 2.65,
       "threshold": 1.5,
-      "label": "2.63x vs 1.5x"
+      "label": "2.65x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 10.82,
+      "value": 10.91,
       "threshold": 10.0,
-      "label": "10.8x vs 10x"
+      "label": "10.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -2.09,
+      "value": -2.07,
       "threshold": 5.0,
       "label": "-2.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.84,
-      "threshold": 17.65,
-      "label": "Fwd 16.8x vs Trail 17.7x"
+      "value": 17.01,
+      "threshold": 17.8,
+      "label": "Fwd 17.0x vs Trail 17.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 17.65,
-    "sectorPe": 20.87,
-    "pb": 2.63,
-    "ps": 1.04,
-    "evEbitda": 10.82,
-    "fcfYield": -2.09,
-    "forwardPe": 16.84,
-    "dividendYield": 3.82,
+    "pe": 17.8,
+    "sectorPe": 21.2,
+    "pb": 2.65,
+    "ps": 1.05,
+    "evEbitda": 10.91,
+    "fcfYield": -2.07,
+    "forwardPe": 17.01,
+    "dividendYield": 3.79,
     "revenueGrowth": 10.3,
     "profitMargin": 5.95,
     "operatingMargin": 9.44,

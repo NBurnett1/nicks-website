@@ -1,16 +1,12 @@
 {
   "ticker": "CHC",
   "name": "CHARTER HG STP FORUS [CHC]",
-  "price": 22.9,
-  "valuationScore": 15.1,
-  "marketCap": "10.8B",
+  "price": 22.34,
+  "valuationScore": 14.8,
+  "marketCap": "10.6B",
   "sector": "Real Estate",
   "domain": "charterhall.com.au",
   "chartData": [
-    {
-      "date": "2025-07-06",
-      "price": 18.89
-    },
     {
       "date": "2025-07-13",
       "price": 18.73
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-05",
       "price": 22.9
+    },
+    {
+      "date": "2026-07-12",
+      "price": 22.34
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 20.45,
-      "threshold": 10.01,
-      "label": "20.4x vs 10.0x sector"
+      "value": 19.95,
+      "threshold": 9.98,
+      "label": "19.9x vs 10.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.79,
+      "value": 3.7,
       "threshold": 1.5,
-      "label": "3.79x vs 1.5x"
+      "label": "3.70x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 18.02,
+      "value": 17.59,
       "threshold": 10.0,
-      "label": "18.0x vs 10x"
+      "label": "17.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 0.71,
+      "value": 0.73,
       "threshold": 5.0,
       "label": "0.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 19.95,
-      "threshold": 20.45,
-      "label": "Fwd 20.0x vs Trail 20.4x"
+      "value": 19.41,
+      "threshold": 19.95,
+      "label": "Fwd 19.4x vs Trail 19.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.2,
+      "value": 0.19,
       "threshold": 0.5,
-      "label": "P/S 12.6x ÷ Growth 63.7% = 0.20"
+      "label": "P/S 12.3x ÷ Growth 63.7% = 0.19"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 20.45,
-    "sectorPe": 11.77,
-    "pb": 3.79,
-    "ps": 12.58,
-    "evEbitda": 18.02,
-    "fcfYield": 0.71,
-    "forwardPe": 19.95,
-    "dividendYield": 2.26,
+    "pe": 19.95,
+    "sectorPe": 11.74,
+    "pb": 3.7,
+    "ps": 12.27,
+    "evEbitda": 17.59,
+    "fcfYield": 0.73,
+    "forwardPe": 19.41,
+    "dividendYield": 2.31,
     "revenueGrowth": 63.7,
     "profitMargin": 32.5,
     "operatingMargin": 69.98,

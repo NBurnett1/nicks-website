@@ -1,16 +1,12 @@
 {
   "ticker": "DOW",
   "name": "DOWNER EDI FPO [DOW]",
-  "price": 7.9,
-  "valuationScore": -6.2,
+  "price": 7.88,
+  "valuationScore": -5.6,
   "marketCap": "5.2B",
   "sector": "Industrials",
   "domain": "downergroup.com",
   "chartData": [
-    {
-      "date": "2025-07-06",
-      "price": 6.21
-    },
     {
       "date": "2025-07-13",
       "price": 6.47
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-05",
       "price": 7.9
+    },
+    {
+      "date": "2026-07-12",
+      "price": 7.88
     }
   ],
   "testsPassed": 2,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 32.92,
-      "threshold": 27.98,
-      "label": "32.9x vs 28.0x sector"
+      "value": 32.83,
+      "threshold": 27.91,
+      "label": "32.8x vs 27.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.66,
+      "value": 2.65,
       "threshold": 1.5,
-      "label": "2.66x vs 1.5x"
+      "label": "2.65x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 11.64,
+      "value": 11.62,
       "threshold": 10.0,
       "label": "11.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 11.13,
+      "value": 11.16,
       "threshold": 5.0,
-      "label": "11.1% vs 5%"
+      "label": "11.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.33,
-      "threshold": 32.92,
-      "label": "Fwd 16.3x vs Trail 32.9x"
+      "value": 16.29,
+      "threshold": 32.83,
+      "label": "Fwd 16.3x vs Trail 32.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 32.92,
-    "sectorPe": 32.92,
-    "pb": 2.66,
+    "pe": 32.83,
+    "sectorPe": 32.83,
+    "pb": 2.65,
     "ps": 0.51,
-    "evEbitda": 11.64,
-    "fcfYield": 11.13,
-    "forwardPe": 16.33,
-    "dividendYield": 3.42,
+    "evEbitda": 11.62,
+    "fcfYield": 11.16,
+    "forwardPe": 16.29,
+    "dividendYield": 3.43,
     "revenueGrowth": -7.1,
     "profitMargin": 1.59,
     "operatingMargin": 3.82,

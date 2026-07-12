@@ -1,16 +1,12 @@
 {
   "ticker": "SUL",
   "name": "SUPARETAIL FPO [SUL]",
-  "price": 12.84,
-  "valuationScore": -8.3,
+  "price": 12.91,
+  "valuationScore": -8.2,
   "marketCap": "2.9B",
   "sector": "Consumer Discretionary",
   "domain": "superretailgroup.com.au",
   "chartData": [
-    {
-      "date": "2025-07-06",
-      "price": 13.93
-    },
     {
       "date": "2025-07-13",
       "price": 14.52
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-05",
       "price": 12.84
+    },
+    {
+      "date": "2026-07-12",
+      "price": 12.91
     }
   ],
   "testsPassed": 5,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 14.93,
-      "threshold": 14.68,
-      "label": "14.9x vs 14.7x sector"
+      "value": 15.01,
+      "threshold": 14.51,
+      "label": "15.0x vs 14.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.28,
+      "value": 2.29,
       "threshold": 1.5,
-      "label": "2.28x vs 1.5x"
+      "label": "2.29x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 9.26,
+      "value": 9.29,
       "threshold": 10.0,
       "label": "9.3x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 14.16,
+      "value": 14.09,
       "threshold": 5.0,
-      "label": "14.2% vs 5%"
+      "label": "14.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 13.34,
-      "threshold": 14.93,
-      "label": "Fwd 13.3x vs Trail 14.9x"
+      "value": 13.44,
+      "threshold": 15.01,
+      "label": "Fwd 13.4x vs Trail 15.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 14.93,
-    "sectorPe": 17.27,
-    "pb": 2.28,
+    "pe": 15.01,
+    "sectorPe": 17.07,
+    "pb": 2.29,
     "ps": 0.7,
-    "evEbitda": 9.26,
-    "fcfYield": 14.16,
-    "forwardPe": 13.34,
-    "dividendYield": 4.98,
+    "evEbitda": 9.29,
+    "fcfYield": 14.09,
+    "forwardPe": 13.44,
+    "dividendYield": 4.96,
     "revenueGrowth": 4.2,
     "profitMargin": 4.72,
     "operatingMargin": 8.48,

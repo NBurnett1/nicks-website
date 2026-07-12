@@ -1,16 +1,12 @@
 {
   "ticker": "SHL",
   "name": "SONIC HLTH FPO [SHL]",
-  "price": 21.25,
-  "valuationScore": -5.3,
+  "price": 21.24,
+  "valuationScore": -5.1,
   "marketCap": "10.5B",
   "sector": "Healthcare",
   "domain": "sonichealthcare.com",
   "chartData": [
-    {
-      "date": "2025-07-06",
-      "price": 25.94
-    },
     {
       "date": "2025-07-13",
       "price": 25.99
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-05",
       "price": 21.25
+    },
+    {
+      "date": "2026-07-12",
+      "price": 21.24
     }
   ],
   "testsPassed": 6,
@@ -227,8 +227,8 @@
       "name": "P/E Discount",
       "passed": true,
       "value": 19.14,
-      "threshold": 20.15,
-      "label": "19.1x vs 20.1x sector"
+      "threshold": 19.58,
+      "label": "19.1x vs 19.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -282,7 +282,7 @@
   },
   "metrics": {
     "pe": 19.14,
-    "sectorPe": 23.71,
+    "sectorPe": 23.03,
     "pb": 1.23,
     "ps": 1.01,
     "evEbitda": 12.09,

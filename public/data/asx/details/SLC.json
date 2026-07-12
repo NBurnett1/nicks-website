@@ -1,16 +1,12 @@
 {
   "ticker": "SLC",
   "name": "SUPERLOOP FPO [SLC]",
-  "price": 3.1,
-  "valuationScore": 43.3,
+  "price": 3.09,
+  "valuationScore": 41.7,
   "marketCap": "1.6B",
   "sector": "Communication Services",
   "domain": "superloop.com",
   "chartData": [
-    {
-      "date": "2025-07-06",
-      "price": 2.96
-    },
     {
       "date": "2025-07-13",
       "price": 2.98
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-05",
       "price": 3.1
+    },
+    {
+      "date": "2026-07-12",
+      "price": 3.09
     }
   ],
   "testsPassed": 3,
@@ -226,23 +226,23 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 103.33,
-      "threshold": 11.11,
-      "label": "103.3x vs 11.1x sector"
+      "value": 103.0,
+      "threshold": 11.47,
+      "label": "103.0x vs 11.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.89,
+      "value": 3.88,
       "threshold": 1.5,
-      "label": "3.89x vs 1.5x"
+      "label": "3.88x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 20.59,
+      "value": 20.52,
       "threshold": 10.0,
-      "label": "20.6x vs 10x"
+      "label": "20.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 31.06,
-      "threshold": 103.33,
-      "label": "Fwd 31.1x vs Trail 103.3x"
+      "value": 30.96,
+      "threshold": 103.0,
+      "label": "Fwd 31.0x vs Trail 103.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 103.33,
-    "sectorPe": 13.07,
-    "pb": 3.89,
-    "ps": 2.63,
-    "evEbitda": 20.59,
+    "pe": 103.0,
+    "sectorPe": 13.5,
+    "pb": 3.88,
+    "ps": 2.62,
+    "evEbitda": 20.52,
     "fcfYield": 2.22,
-    "forwardPe": 31.06,
+    "forwardPe": 30.96,
     "dividendYield": null,
     "revenueGrowth": 23.3,
     "profitMargin": 2.32,

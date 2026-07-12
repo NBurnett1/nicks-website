@@ -1,16 +1,12 @@
 {
   "ticker": "CCX",
   "name": "CITYCHIC FPO [CCX]",
-  "price": 0.04,
-  "valuationScore": -26.7,
-  "marketCap": "15M",
+  "price": 0.05,
+  "valuationScore": -18.1,
+  "marketCap": "21M",
   "sector": "Consumer Cyclical",
   "domain": "citychiccollective.com.au",
   "chartData": [
-    {
-      "date": "2025-07-06",
-      "price": 0.09
-    },
     {
       "date": "2025-07-13",
       "price": 0.09
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-05",
       "price": 0.04
+    },
+    {
+      "date": "2026-07-12",
+      "price": 0.05
     }
   ],
   "testsPassed": 3,
@@ -233,28 +233,28 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.51,
+      "value": 0.7,
       "threshold": 1.5,
-      "label": "0.51x vs 1.5x"
+      "label": "0.70x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 10.96,
+      "value": 12.5,
       "threshold": 10.0,
-      "label": "11.0x vs 10x"
+      "label": "12.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 76.34,
+      "value": 55.13,
       "threshold": 5.0,
-      "label": "76.3% vs 5%"
+      "label": "55.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 1.95,
+      "value": 2.7,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 24.52,
-    "pb": 0.51,
-    "ps": 0.11,
-    "evEbitda": 10.96,
-    "fcfYield": 76.34,
-    "forwardPe": 1.95,
+    "sectorPe": 24.51,
+    "pb": 0.7,
+    "ps": 0.15,
+    "evEbitda": 12.5,
+    "fcfYield": 55.13,
+    "forwardPe": 2.7,
     "dividendYield": null,
     "revenueGrowth": -0.4,
     "profitMargin": -4.14,

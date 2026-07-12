@@ -1,16 +1,12 @@
 {
   "ticker": "WOR",
   "name": "WORLEY FPO [WOR]",
-  "price": 10.78,
-  "valuationScore": -6.7,
+  "price": 10.8,
+  "valuationScore": -7.6,
   "marketCap": "5.5B",
   "sector": "Energy",
   "domain": "worley.com",
   "chartData": [
-    {
-      "date": "2025-07-06",
-      "price": 12.8
-    },
     {
       "date": "2025-07-13",
       "price": 12.89
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-05",
       "price": 10.78
+    },
+    {
+      "date": "2026-07-12",
+      "price": 10.8
     }
   ],
   "testsPassed": 5,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 16.33,
-      "threshold": 14.93,
-      "label": "16.3x vs 14.9x sector"
+      "value": 16.36,
+      "threshold": 15.08,
+      "label": "16.4x vs 15.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,23 +240,23 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 9.59,
+      "value": 9.6,
       "threshold": 10.0,
       "label": "9.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 9.11,
+      "value": 9.1,
       "threshold": 5.0,
       "label": "9.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.01,
-      "threshold": 16.33,
-      "label": "Fwd 12.0x vs Trail 16.3x"
+      "value": 12.03,
+      "threshold": 16.36,
+      "label": "Fwd 12.0x vs Trail 16.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 16.33,
-    "sectorPe": 17.56,
+    "pe": 16.36,
+    "sectorPe": 17.75,
     "pb": 1.02,
     "ps": 0.49,
-    "evEbitda": 9.59,
-    "fcfYield": 9.11,
-    "forwardPe": 12.01,
-    "dividendYield": 4.64,
+    "evEbitda": 9.6,
+    "fcfYield": 9.1,
+    "forwardPe": 12.03,
+    "dividendYield": 4.63,
     "revenueGrowth": -1.6,
     "profitMargin": 3.1,
     "operatingMargin": 3.71,

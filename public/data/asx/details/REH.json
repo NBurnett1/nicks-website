@@ -1,16 +1,12 @@
 {
   "ticker": "REH",
   "name": "REECE FPO [REH]",
-  "price": 16.44,
-  "valuationScore": 3.1,
-  "marketCap": "10.1B",
+  "price": 15.6,
+  "valuationScore": 2.8,
+  "marketCap": "9.6B",
   "sector": "Industrials",
   "domain": "reece.com.au",
   "chartData": [
-    {
-      "date": "2025-07-06",
-      "price": 14.36
-    },
     {
       "date": "2025-07-13",
       "price": 13.28
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-05",
       "price": 16.44
+    },
+    {
+      "date": "2026-07-12",
+      "price": 15.6
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 37.36,
-      "threshold": 27.98,
-      "label": "37.4x vs 28.0x sector"
+      "value": 35.45,
+      "threshold": 27.91,
+      "label": "35.5x vs 27.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.76,
+      "value": 2.62,
       "threshold": 1.5,
-      "label": "2.76x vs 1.5x"
+      "label": "2.62x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 20.59,
+      "value": 19.72,
       "threshold": 10.0,
-      "label": "20.6x vs 10x"
+      "label": "19.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.42,
+      "value": 3.6,
       "threshold": 5.0,
-      "label": "3.4% vs 5%"
+      "label": "3.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 30.79,
-      "threshold": 37.36,
-      "label": "Fwd 30.8x vs Trail 37.4x"
+      "value": 29.22,
+      "threshold": 35.45,
+      "label": "Fwd 29.2x vs Trail 35.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.2,
+      "value": 0.19,
       "threshold": 0.5,
-      "label": "P/S 1.1x ÷ Growth 5.6% = 0.20"
+      "label": "P/S 1.0x ÷ Growth 5.6% = 0.19"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 37.36,
-    "sectorPe": 32.92,
-    "pb": 2.76,
-    "ps": 1.1,
-    "evEbitda": 20.59,
-    "fcfYield": 3.42,
-    "forwardPe": 30.79,
-    "dividendYield": 1.05,
+    "pe": 35.45,
+    "sectorPe": 32.83,
+    "pb": 2.62,
+    "ps": 1.04,
+    "evEbitda": 19.72,
+    "fcfYield": 3.6,
+    "forwardPe": 29.22,
+    "dividendYield": 1.11,
     "revenueGrowth": 5.6,
     "profitMargin": 3.04,
     "operatingMargin": 5.62,

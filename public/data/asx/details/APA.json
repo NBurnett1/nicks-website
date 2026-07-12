@@ -1,16 +1,12 @@
 {
   "ticker": "APA",
   "name": "APA GROUP STAPLED [APA]",
-  "price": 9.93,
-  "valuationScore": 19.3,
-  "marketCap": "13.1B",
+  "price": 9.95,
+  "valuationScore": 19.8,
+  "marketCap": "13.2B",
   "sector": "Utilities",
   "domain": "apa.com.au",
   "chartData": [
-    {
-      "date": "2025-07-06",
-      "price": 7.88
-    },
     {
       "date": "2025-07-13",
       "price": 7.82
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-05",
       "price": 9.93
+    },
+    {
+      "date": "2026-07-12",
+      "price": 9.95
     }
   ],
   "testsPassed": 2,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 82.75,
-      "threshold": 17.38,
-      "label": "82.8x vs 17.4x sector"
+      "value": 82.92,
+      "threshold": 17.13,
+      "label": "82.9x vs 17.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.71,
+      "value": 4.72,
       "threshold": 1.5,
-      "label": "4.71x vs 1.5x"
+      "label": "4.72x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 13.32,
+      "value": 13.34,
       "threshold": 10.0,
       "label": "13.3x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 1.56,
+      "value": 1.55,
       "threshold": 5.0,
       "label": "1.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 42.03,
-      "threshold": 82.75,
-      "label": "Fwd 42.0x vs Trail 82.8x"
+      "value": 43.18,
+      "threshold": 82.92,
+      "label": "Fwd 43.2x vs Trail 82.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 82.75,
-    "sectorPe": 20.45,
-    "pb": 4.71,
-    "ps": 4.11,
-    "evEbitda": 13.32,
-    "fcfYield": 1.56,
-    "forwardPe": 42.03,
-    "dividendYield": 5.84,
+    "pe": 82.92,
+    "sectorPe": 20.15,
+    "pb": 4.72,
+    "ps": 4.12,
+    "evEbitda": 13.34,
+    "fcfYield": 1.55,
+    "forwardPe": 43.18,
+    "dividendYield": 5.83,
     "revenueGrowth": -0.4,
     "profitMargin": 5.07,
     "operatingMargin": 34.14,

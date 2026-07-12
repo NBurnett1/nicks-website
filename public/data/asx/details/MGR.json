@@ -2,15 +2,11 @@
   "ticker": "MGR",
   "name": "MIRVAC GRP STAPLED [MGR]",
   "price": 1.71,
-  "valuationScore": -4.4,
+  "valuationScore": -4.1,
   "marketCap": "6.7B",
   "sector": "Real Estate",
   "domain": "mirvac.com",
   "chartData": [
-    {
-      "date": "2025-07-06",
-      "price": 2.15
-    },
     {
       "date": "2025-07-13",
       "price": 2.05
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-05",
       "price": 1.71
+    },
+    {
+      "date": "2026-07-12",
+      "price": 1.71
     }
   ],
   "testsPassed": 5,
@@ -226,8 +226,8 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 17.1,
-      "threshold": 10.01,
+      "value": 17.05,
+      "threshold": 9.98,
       "label": "17.1x vs 10.0x sector"
     },
     "pbBelowBook": {
@@ -240,23 +240,23 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 14.25,
+      "value": 14.23,
       "threshold": 10.0,
-      "label": "14.3x vs 10x"
+      "label": "14.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 12.78,
+      "value": 12.82,
       "threshold": 5.0,
       "label": "12.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.86,
-      "threshold": 17.1,
-      "label": "Fwd 12.9x vs Trail 17.1x"
+      "value": 12.84,
+      "threshold": 17.05,
+      "label": "Fwd 12.8x vs Trail 17.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 17.1,
-    "sectorPe": 11.77,
+    "pe": 17.05,
+    "sectorPe": 11.74,
     "pb": 0.73,
     "ps": 2.3,
-    "evEbitda": 14.25,
-    "fcfYield": 12.78,
-    "forwardPe": 12.86,
-    "dividendYield": 5.61,
+    "evEbitda": 14.23,
+    "fcfYield": 12.82,
+    "forwardPe": 12.84,
+    "dividendYield": 5.63,
     "revenueGrowth": 21.7,
     "profitMargin": 13.17,
     "operatingMargin": 26.4,

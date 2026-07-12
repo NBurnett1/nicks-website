@@ -2,15 +2,11 @@
   "ticker": "ORA",
   "name": "ORORA FPO [ORA]",
   "price": 1.39,
-  "valuationScore": -6.8,
+  "valuationScore": -6.9,
   "marketCap": "1.7B",
   "sector": "Consumer Cyclical",
   "domain": "ororagroup.com",
   "chartData": [
-    {
-      "date": "2025-07-06",
-      "price": 1.91
-    },
     {
       "date": "2025-07-13",
       "price": 2.01
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-05",
       "price": 1.38
+    },
+    {
+      "date": "2026-07-12",
+      "price": 1.39
     }
   ],
   "testsPassed": 7,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 13.85,
+      "value": 13.9,
       "threshold": 20.84,
-      "label": "13.8x vs 20.8x sector"
+      "label": "13.9x vs 20.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,23 +240,23 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 5.57,
+      "value": 5.58,
       "threshold": 10.0,
       "label": "5.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 11.74,
+      "value": 11.7,
       "threshold": 5.0,
       "label": "11.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 11.23,
-      "threshold": 13.85,
-      "label": "Fwd 11.2x vs Trail 13.8x"
+      "value": 11.55,
+      "threshold": 13.9,
+      "label": "Fwd 11.6x vs Trail 13.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 13.85,
-    "sectorPe": 24.52,
+    "pe": 13.9,
+    "sectorPe": 24.51,
     "pb": 0.62,
     "ps": 0.78,
-    "evEbitda": 5.57,
-    "fcfYield": 11.74,
-    "forwardPe": 11.23,
-    "dividendYield": 7.22,
+    "evEbitda": 5.58,
+    "fcfYield": 11.7,
+    "forwardPe": 11.55,
+    "dividendYield": 7.19,
     "revenueGrowth": 9.7,
     "profitMargin": 5.68,
     "operatingMargin": 11.63,
