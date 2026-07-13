@@ -1,52 +1,43 @@
 {
-  "lastUpdated": "2026-07-13T07:38:15.064227+11:00",
+  "lastUpdated": "2026-07-13T21:26:39.217703+11:00",
   "stocksScanned": 128,
-  "totalAlerts": 54,
+  "totalAlerts": 57,
   "alerts": [
     {
       "type": "PRICE_MOVE",
       "severity": "critical",
       "ticker": "CCX",
       "exchange": "ASX",
-      "headline": "Stock surged 14.9% in one session",
-      "detail": "$0.05 → $0.05",
-      "timestamp": "2026-07-12T20:36:45.505662+00:00"
+      "headline": "Stock surged 27.8% in one session",
+      "detail": "$0.05 → $0.07",
+      "timestamp": "2026-07-13T10:24:57.850423+00:00"
     },
     {
       "type": "PRICE_MOVE",
       "severity": "high",
-      "ticker": "RSG",
+      "ticker": "SBM",
       "exchange": "ASX",
-      "headline": "Stock surged 5.6% in one session",
-      "detail": "$0.90 → $0.95",
-      "timestamp": "2026-07-12T20:36:44.866592+00:00"
+      "headline": "Stock plunged 5.3% in one session",
+      "detail": "$0.47 → $0.44",
+      "timestamp": "2026-07-13T10:25:29.855006+00:00"
     },
     {
       "type": "PRICE_MOVE",
       "severity": "high",
-      "ticker": "CVN",
+      "ticker": "SKC",
       "exchange": "ASX",
-      "headline": "Stock plunged 9.1% in one session",
-      "detail": "$0.11 → $0.10",
-      "timestamp": "2026-07-12T20:36:58.358550+00:00"
+      "headline": "Stock plunged 5.6% in one session",
+      "detail": "$0.44 → $0.42",
+      "timestamp": "2026-07-13T10:26:22.127898+00:00"
     },
     {
-      "type": "PRICE_MOVE",
+      "type": "EXTREME VOLUME",
       "severity": "high",
-      "ticker": "PME",
+      "ticker": "INA",
       "exchange": "ASX",
-      "headline": "Stock plunged 6.3% in one session",
-      "detail": "$210.42 → $197.07",
-      "timestamp": "2026-07-12T20:37:20.995545+00:00"
-    },
-    {
-      "type": "PRICE_MOVE",
-      "severity": "high",
-      "ticker": "S32",
-      "exchange": "ASX",
-      "headline": "Stock surged 5.2% in one session",
-      "detail": "$3.82 → $4.02",
-      "timestamp": "2026-07-12T20:37:42.104155+00:00"
+      "headline": "3.1x average volume detected",
+      "detail": "Volume: 3,843,007 vs 20-day avg: 1,242,014 | Price down 3.2%",
+      "timestamp": "2026-07-13T10:26:38.325754+00:00"
     },
     {
       "type": "NEWS",
@@ -104,6 +95,24 @@
       "timestamp": "2026-07-10T11:14:04Z"
     },
     {
+      "type": "VOLUME SPIKE",
+      "severity": "medium",
+      "ticker": "AZJ",
+      "exchange": "ASX",
+      "headline": "2.7x average volume detected",
+      "detail": "Volume: 17,699,614 vs 20-day avg: 6,630,617 | Price down 1.0%",
+      "timestamp": "2026-07-13T10:25:09.724537+00:00"
+    },
+    {
+      "type": "VOLUME SPIKE",
+      "severity": "medium",
+      "ticker": "AGL",
+      "exchange": "ASX",
+      "headline": "2.9x average volume detected",
+      "detail": "Volume: 6,377,309 vs 20-day avg: 2,182,294 | Price down 3.7%",
+      "timestamp": "2026-07-13T10:25:40.947530+00:00"
+    },
+    {
       "type": "INSIDER_BUY",
       "severity": "low",
       "ticker": "ARB",
@@ -153,6 +162,24 @@
       "severity": "low",
       "ticker": "MIN",
       "exchange": "ASX",
+      "headline": "Ferrier (Susan) (Director (Non-Executive)) purchased 416 shares ($17,996)",
+      "detail": "Purchase at price 43.26 per share.",
+      "timestamp": "2026-07-01 00:00:00"
+    },
+    {
+      "type": "INSIDER_BUY",
+      "severity": "low",
+      "ticker": "MIN",
+      "exchange": "ASX",
+      "headline": "Hayward (Colleen) (Independent Non-Executive Director) purchased 418 shares ($18,073)",
+      "detail": "Purchase at price 43.24 per share.",
+      "timestamp": "2026-07-01 00:00:00"
+    },
+    {
+      "type": "INSIDER_BUY",
+      "severity": "low",
+      "ticker": "MIN",
+      "exchange": "ASX",
       "headline": "Moorhead (Colin Francis) (Director (Non-Executive)) purchased 416 shares ($17,996)",
       "detail": "Purchase at price 43.26 per share.",
       "timestamp": "2026-07-01 00:00:00"
@@ -187,40 +214,11 @@
     {
       "type": "INSIDER_BUY",
       "severity": "low",
-      "ticker": "MIN",
-      "exchange": "ASX",
-      "headline": "Ferrier (Susan) (Director (Non-Executive)) purchased 416 shares ($17,996)",
-      "detail": "Purchase at price 43.26 per share.",
-      "timestamp": "2026-07-01 00:00:00"
-    },
-    {
-      "type": "INSIDER_BUY",
-      "severity": "low",
-      "ticker": "MIN",
-      "exchange": "ASX",
-      "headline": "Hayward (Colleen) (Independent Non-Executive Director) purchased 418 shares ($18,073)",
-      "detail": "Purchase at price 43.24 per share.",
-      "timestamp": "2026-07-01 00:00:00"
-    },
-    {
-      "type": "INSIDER_BUY",
-      "severity": "low",
       "ticker": "MTS",
       "exchange": "ASX",
       "headline": "Johnson (Mark Graham) (Independent Non-Executive Director) purchased 10,000 shares ($20,734)",
       "detail": "Purchase at price 2.07 per share.",
       "timestamp": "2026-07-03 00:00:00"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "A2M",
-      "exchange": "ASX",
-      "headline": "New Zealand pledges seven new trade negotiations if National Party wins election",
-      "detail": "Source: Investing.com",
-      "sentiment": "neutral",
-      "thumbnail": null,
-      "timestamp": "2026-07-05T04:00:16Z"
     },
     {
       "type": "NEWS",
@@ -562,6 +560,39 @@
       "sentiment": "neutral",
       "thumbnail": "https://s.yimg.com/uu/api/res/1.2/ZIpGQLmn89sOUlKhM2abeA--~B/aD0xNDQwO3c9MTkyMDthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/insidermonkey.com/f73ace7191a96e5c9f2b2533ba788610",
       "timestamp": "2026-07-11T21:03:47Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "RRL",
+      "exchange": "ASX",
+      "headline": "Regis Resources Won’t Match Genesis Bid For Vault Minerals",
+      "detail": "Source: The Wall Street Journal",
+      "sentiment": "neutral",
+      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/bUZdX49qcPy633uWtSyeNQ--~B/aD02NDA7dz0xMjgwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/wsj.com/bb20c5336306c9a5ae49f9b775e5b599",
+      "timestamp": "2026-07-12T23:47:00Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "WBC",
+      "exchange": "ASX",
+      "headline": "Treasury Two-Year Yields Rise to Highest Since 2025 as Oil Jumps",
+      "detail": "Source: Bloomberg",
+      "sentiment": "positive",
+      "thumbnail": null,
+      "timestamp": "2026-07-13T02:30:01Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "NAB",
+      "exchange": "ASX",
+      "headline": "Treasury Two-Year Yields Rise to Highest Since 2025 as Oil Jumps",
+      "detail": "Source: Bloomberg",
+      "sentiment": "positive",
+      "thumbnail": null,
+      "timestamp": "2026-07-13T02:30:01Z"
     }
   ]
 }
