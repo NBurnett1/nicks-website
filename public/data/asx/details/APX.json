@@ -1,16 +1,12 @@
 {
   "ticker": "APX",
   "name": "APPEN FPO [APX]",
-  "price": 0.91,
-  "valuationScore": -13.0,
-  "marketCap": "243M",
+  "price": 0.88,
+  "valuationScore": -13.5,
+  "marketCap": "236M",
   "sector": "Technology",
   "domain": "appen.com",
   "chartData": [
-    {
-      "date": "2025-07-13",
-      "price": 1.11
-    },
     {
       "date": "2025-07-20",
       "price": 1.17
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-12",
       "price": 0.9
+    },
+    {
+      "date": "2026-07-19",
+      "price": 0.88
     }
   ],
   "testsPassed": 3,
@@ -233,9 +233,9 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.77,
+      "value": 1.73,
       "threshold": 1.5,
-      "label": "1.77x vs 1.5x"
+      "label": "1.73x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,14 +247,14 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 7.43,
+      "value": 7.63,
       "threshold": 5.0,
-      "label": "7.4% vs 5%"
+      "label": "7.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 9.49,
+      "value": 9.23,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.16,
+      "value": 0.15,
       "threshold": 0.5,
-      "label": "P/S 1.0x ÷ Growth 6.7% = 0.16"
+      "label": "P/S 1.0x ÷ Growth 6.7% = 0.15"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 34.36,
-    "pb": 1.77,
-    "ps": 1.04,
-    "evEbitda": -10.97,
-    "fcfYield": 7.43,
-    "forwardPe": 9.49,
+    "sectorPe": 37.15,
+    "pb": 1.73,
+    "ps": 1.02,
+    "evEbitda": -10.59,
+    "fcfYield": 7.63,
+    "forwardPe": 9.23,
     "dividendYield": null,
     "revenueGrowth": 6.7,
     "profitMargin": -9.38,

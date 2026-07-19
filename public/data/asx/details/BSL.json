@@ -1,16 +1,12 @@
 {
   "ticker": "BSL",
-  "name": "BLUESCOPE FPO [BSL]",
-  "price": 32.0,
-  "valuationScore": 2.0,
-  "marketCap": "14.0B",
+  "name": "BSL",
+  "price": 31.71,
+  "valuationScore": 1.7,
+  "marketCap": "13.9B",
   "sector": "Basic Materials",
   "domain": "bluescope.com",
   "chartData": [
-    {
-      "date": "2025-07-13",
-      "price": 22.94
-    },
     {
       "date": "2025-07-20",
       "price": 22.78
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-12",
       "price": 32.0
+    },
+    {
+      "date": "2026-07-19",
+      "price": 31.71
     }
   ],
   "testsPassed": 5,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 56.14,
-      "threshold": 39.42,
-      "label": "56.1x vs 39.4x sector"
+      "value": 55.63,
+      "threshold": 38.25,
+      "label": "55.6x vs 38.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.3,
+      "value": 1.29,
       "threshold": 1.5,
-      "label": "1.30x vs 1.5x"
+      "label": "1.29x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 9.56,
+      "value": 9.48,
       "threshold": 10.0,
-      "label": "9.6x vs 10x"
+      "label": "9.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 0.34,
+      "value": 0.35,
       "threshold": 5.0,
       "label": "0.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 13.61,
-      "threshold": 56.14,
-      "label": "Fwd 13.6x vs Trail 56.1x"
+      "value": 13.49,
+      "threshold": 55.63,
+      "label": "Fwd 13.5x vs Trail 55.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 56.14,
-    "sectorPe": 46.37,
-    "pb": 1.3,
+    "pe": 55.63,
+    "sectorPe": 45.0,
+    "pb": 1.29,
     "ps": 0.84,
-    "evEbitda": 9.56,
-    "fcfYield": 0.34,
-    "forwardPe": 13.61,
-    "dividendYield": 2.97,
+    "evEbitda": 9.48,
+    "fcfYield": 0.35,
+    "forwardPe": 13.49,
+    "dividendYield": 3.0,
     "revenueGrowth": 4.0,
     "profitMargin": 1.78,
     "operatingMargin": 6.27,

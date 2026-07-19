@@ -1,16 +1,12 @@
 {
   "ticker": "WBC",
   "name": "WESTPAC FPO [WBC]",
-  "price": 36.54,
-  "valuationScore": -1.0,
+  "price": 36.56,
+  "valuationScore": -0.2,
   "marketCap": "124.8B",
   "sector": "Financials",
   "domain": "westpac.com.au",
   "chartData": [
-    {
-      "date": "2025-07-13",
-      "price": 32.51
-    },
     {
       "date": "2025-07-20",
       "price": 32.99
@@ -218,17 +214,21 @@
     {
       "date": "2026-07-12",
       "price": 36.54
+    },
+    {
+      "date": "2026-07-19",
+      "price": 36.56
     }
   ],
-  "testsPassed": 4,
+  "testsPassed": 3,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": true,
-      "value": 18.0,
-      "threshold": 18.02,
-      "label": "18.0x vs 18.0x sector"
+      "passed": false,
+      "value": 18.01,
+      "threshold": 16.94,
+      "label": "18.0x vs 16.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -254,8 +254,8 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.86,
-      "threshold": 18.0,
+      "value": 16.87,
+      "threshold": 18.01,
       "label": "Fwd 16.9x vs Trail 18.0x"
     },
     "profitabilityCheck": {
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 18.0,
-    "sectorPe": 21.2,
+    "pe": 18.01,
+    "sectorPe": 19.93,
     "pb": 1.76,
-    "ps": 5.6,
+    "ps": 5.61,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 16.86,
+    "forwardPe": 16.87,
     "dividendYield": 4.21,
     "revenueGrowth": 1.5,
     "profitMargin": 31.5,

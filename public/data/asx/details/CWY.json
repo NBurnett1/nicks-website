@@ -1,16 +1,12 @@
 {
   "ticker": "CWY",
   "name": "CLEANAWAY FPO [CWY]",
-  "price": 2.33,
+  "price": 2.35,
   "valuationScore": 1.8,
-  "marketCap": "5.2B",
+  "marketCap": "5.3B",
   "sector": "Industrials",
   "domain": "cleanaway.com.au",
   "chartData": [
-    {
-      "date": "2025-07-13",
-      "price": 2.81
-    },
     {
       "date": "2025-07-20",
       "price": 2.81
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-12",
       "price": 2.33
+    },
+    {
+      "date": "2026-07-19",
+      "price": 2.35
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 46.6,
-      "threshold": 27.91,
-      "label": "46.6x vs 27.9x sector"
+      "value": 47.0,
+      "threshold": 28.09,
+      "label": "47.0x vs 28.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.72,
+      "value": 1.74,
       "threshold": 1.5,
-      "label": "1.72x vs 1.5x"
+      "label": "1.74x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 12.05,
+      "value": 12.12,
       "threshold": 10.0,
-      "label": "12.0x vs 10x"
+      "label": "12.1x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.09,
+      "value": 2.07,
       "threshold": 5.0,
       "label": "2.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 19.67,
-      "threshold": 46.6,
-      "label": "Fwd 19.7x vs Trail 46.6x"
+      "value": 19.84,
+      "threshold": 47.0,
+      "label": "Fwd 19.8x vs Trail 47.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 46.6,
-    "sectorPe": 32.83,
-    "pb": 1.72,
-    "ps": 1.27,
-    "evEbitda": 12.05,
-    "fcfYield": 2.09,
-    "forwardPe": 19.67,
-    "dividendYield": 2.81,
+    "pe": 47.0,
+    "sectorPe": 33.04,
+    "pb": 1.74,
+    "ps": 1.28,
+    "evEbitda": 12.12,
+    "fcfYield": 2.07,
+    "forwardPe": 19.84,
+    "dividendYield": 2.79,
     "revenueGrowth": 13.7,
     "profitMargin": 2.94,
     "operatingMargin": 6.65,

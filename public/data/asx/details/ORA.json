@@ -1,16 +1,12 @@
 {
   "ticker": "ORA",
   "name": "ORORA FPO [ORA]",
-  "price": 1.39,
-  "valuationScore": -6.9,
-  "marketCap": "1.7B",
+  "price": 1.44,
+  "valuationScore": -7.0,
+  "marketCap": "1.8B",
   "sector": "Consumer Cyclical",
   "domain": "ororagroup.com",
   "chartData": [
-    {
-      "date": "2025-07-13",
-      "price": 2.01
-    },
     {
       "date": "2025-07-20",
       "price": 2.03
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-12",
       "price": 1.39
+    },
+    {
+      "date": "2026-07-19",
+      "price": 1.43
     }
   ],
   "testsPassed": 7,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 13.9,
-      "threshold": 20.84,
-      "label": "13.9x vs 20.8x sector"
+      "value": 14.35,
+      "threshold": 20.72,
+      "label": "14.3x vs 20.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.62,
+      "value": 0.64,
       "threshold": 1.5,
-      "label": "0.62x vs 1.5x"
+      "label": "0.64x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 5.58,
+      "value": 5.72,
       "threshold": 10.0,
-      "label": "5.6x vs 10x"
+      "label": "5.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 11.7,
+      "value": 11.33,
       "threshold": 5.0,
-      "label": "11.7% vs 5%"
+      "label": "11.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 11.55,
-      "threshold": 13.9,
-      "label": "Fwd 11.6x vs Trail 13.9x"
+      "value": 11.93,
+      "threshold": 14.35,
+      "label": "Fwd 11.9x vs Trail 14.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 13.9,
-    "sectorPe": 24.51,
-    "pb": 0.62,
-    "ps": 0.78,
-    "evEbitda": 5.58,
-    "fcfYield": 11.7,
-    "forwardPe": 11.55,
-    "dividendYield": 7.19,
+    "pe": 14.35,
+    "sectorPe": 24.38,
+    "pb": 0.64,
+    "ps": 0.8,
+    "evEbitda": 5.72,
+    "fcfYield": 11.33,
+    "forwardPe": 11.93,
+    "dividendYield": 6.97,
     "revenueGrowth": 9.7,
     "profitMargin": 5.68,
     "operatingMargin": 11.63,

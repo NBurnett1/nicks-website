@@ -1,16 +1,12 @@
 {
   "ticker": "RIO",
-  "name": "RIO TINTO FPO [RIO]",
-  "price": 164.49,
-  "valuationScore": 2.1,
-  "marketCap": "267.5B",
+  "name": "RIO",
+  "price": 160.95,
+  "valuationScore": 1.6,
+  "marketCap": "—",
   "sector": "Materials",
   "domain": "riotinto.com",
   "chartData": [
-    {
-      "date": "2025-07-13",
-      "price": 106.55
-    },
     {
       "date": "2025-07-20",
       "price": 108.48
@@ -218,45 +214,49 @@
     {
       "date": "2026-07-12",
       "price": 164.49
+    },
+    {
+      "date": "2026-07-19",
+      "price": 160.95
     }
   ],
-  "testsPassed": 4,
+  "testsPassed": 3,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 18.63,
-      "threshold": 16.97,
-      "label": "18.6x vs 17.0x sector"
+      "value": 18.25,
+      "threshold": 16.75,
+      "label": "18.2x vs 16.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
-      "passed": false,
-      "value": 2.98,
+      "passed": null,
+      "value": null,
       "threshold": 1.5,
-      "label": "2.98x vs 1.5x"
+      "label": "No P/B data"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 14.12,
+      "value": 13.84,
       "threshold": 10.0,
-      "label": "14.1x vs 10x"
+      "label": "13.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 1.31,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "1.3% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.87,
-      "threshold": 18.63,
-      "label": "Fwd 12.9x vs Trail 18.6x"
+      "value": 12.68,
+      "threshold": 18.25,
+      "label": "Fwd 12.7x vs Trail 18.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": true,
-      "value": 0.32,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 4.6x ÷ Growth 14.6% = 0.32"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 18.63,
-    "sectorPe": 19.96,
-    "pb": 2.98,
-    "ps": 4.64,
-    "evEbitda": 14.12,
-    "fcfYield": 1.31,
-    "forwardPe": 12.87,
-    "dividendYield": 3.58,
+    "pe": 18.25,
+    "sectorPe": 19.71,
+    "pb": null,
+    "ps": null,
+    "evEbitda": 13.84,
+    "fcfYield": null,
+    "forwardPe": 12.68,
+    "dividendYield": 3.66,
     "revenueGrowth": 14.6,
     "profitMargin": 17.29,
     "operatingMargin": 25.32,

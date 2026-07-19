@@ -1,16 +1,12 @@
 {
   "ticker": "QBE",
-  "name": "QBE INSUR. FPO [QBE]",
-  "price": 25.47,
-  "valuationScore": -3.1,
-  "marketCap": "38.1B",
+  "name": "QBE",
+  "price": 24.99,
+  "valuationScore": -2.1,
+  "marketCap": "—",
   "sector": "Financials",
   "domain": "qbe.com",
   "chartData": [
-    {
-      "date": "2025-07-13",
-      "price": 21.55
-    },
     {
       "date": "2025-07-20",
       "price": 21.99
@@ -218,45 +214,49 @@
     {
       "date": "2026-07-12",
       "price": 25.47
+    },
+    {
+      "date": "2026-07-19",
+      "price": 24.99
     }
   ],
-  "testsPassed": 4,
+  "testsPassed": 3,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 12.36,
-      "threshold": 18.02,
-      "label": "12.4x vs 18.0x sector"
+      "value": 12.19,
+      "threshold": 16.94,
+      "label": "12.2x vs 16.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
-      "passed": false,
-      "value": 2.28,
+      "passed": null,
+      "value": null,
       "threshold": 1.5,
-      "label": "2.28x vs 1.5x"
+      "label": "No P/B data"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 12.05,
+      "value": 11.82,
       "threshold": 10.0,
-      "label": "12.1x vs 10x"
+      "label": "11.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": true,
-      "value": 9.65,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "9.7% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 12.82,
-      "threshold": 12.36,
-      "label": "Fwd 12.8x vs Trail 12.4x"
+      "value": 12.56,
+      "threshold": 12.19,
+      "label": "Fwd 12.6x vs Trail 12.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": 0.0,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining 0.0%"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 12.36,
-    "sectorPe": 21.2,
-    "pb": 2.28,
-    "ps": 2.03,
-    "evEbitda": 12.05,
-    "fcfYield": 9.65,
-    "forwardPe": 12.82,
-    "dividendYield": 4.28,
+    "pe": 12.19,
+    "sectorPe": 19.93,
+    "pb": null,
+    "ps": null,
+    "evEbitda": 11.82,
+    "fcfYield": null,
+    "forwardPe": 12.56,
+    "dividendYield": 4.36,
     "revenueGrowth": 0.0,
     "profitMargin": 11.53,
     "operatingMargin": 22.6,

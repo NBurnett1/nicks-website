@@ -1,16 +1,12 @@
 {
   "ticker": "LNW",
   "name": "LIGHT & WO CDI 1:1 [LNW]",
-  "price": 106.8,
-  "valuationScore": 46.9,
-  "marketCap": "8.4B",
+  "price": 112.42,
+  "valuationScore": 45.3,
+  "marketCap": "8.6B",
   "sector": "Consumer Cyclical",
   "domain": "lnw.com",
   "chartData": [
-    {
-      "date": "2025-07-13",
-      "price": 152.14
-    },
     {
       "date": "2025-07-20",
       "price": 151.32
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-12",
       "price": 106.8
+    },
+    {
+      "date": "2026-07-19",
+      "price": 112.42
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 24.67,
-      "threshold": 20.84,
-      "label": "24.7x vs 20.8x sector"
+      "value": 25.96,
+      "threshold": 20.72,
+      "label": "26.0x vs 20.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 18.76,
+      "value": 19.77,
       "threshold": 1.5,
-      "label": "18.76x vs 1.5x"
+      "label": "19.77x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 10.88,
+      "value": 11.24,
       "threshold": 10.0,
-      "label": "10.9x vs 10x"
+      "label": "11.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.48,
+      "value": 5.36,
       "threshold": 5.0,
-      "label": "5.5% vs 5%"
+      "label": "5.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 8.2,
-      "threshold": 24.67,
-      "label": "Fwd 8.2x vs Trail 24.7x"
+      "value": 8.71,
+      "threshold": 25.96,
+      "label": "Fwd 8.7x vs Trail 26.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 1.2,
+      "value": 1.23,
       "threshold": 0.5,
-      "label": "P/S 2.5x ÷ Growth 2.1% = 1.20"
+      "label": "P/S 2.6x ÷ Growth 2.1% = 1.23"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 24.67,
-    "sectorPe": 24.51,
-    "pb": 18.76,
-    "ps": 2.52,
-    "evEbitda": 10.88,
-    "fcfYield": 5.48,
-    "forwardPe": 8.2,
+    "pe": 25.96,
+    "sectorPe": 24.38,
+    "pb": 19.77,
+    "ps": 2.58,
+    "evEbitda": 11.24,
+    "fcfYield": 5.36,
+    "forwardPe": 8.71,
     "dividendYield": null,
     "revenueGrowth": 2.1,
     "profitMargin": 7.39,

@@ -1,16 +1,12 @@
 {
   "ticker": "IAG",
-  "name": "INSUR.AUST FPO [IAG]",
-  "price": 8.19,
-  "valuationScore": 3.5,
-  "marketCap": "19.1B",
+  "name": "IAG",
+  "price": 8.32,
+  "valuationScore": 0.8,
+  "marketCap": "—",
   "sector": "Financials",
   "domain": "iag.com.au",
   "chartData": [
-    {
-      "date": "2025-07-13",
-      "price": 8.13
-    },
     {
       "date": "2025-07-20",
       "price": 8.19
@@ -218,45 +214,49 @@
     {
       "date": "2026-07-12",
       "price": 8.19
+    },
+    {
+      "date": "2026-07-19",
+      "price": 8.32
     }
   ],
-  "testsPassed": 5,
-  "grade": "B",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": true,
-      "value": 17.8,
-      "threshold": 18.02,
-      "label": "17.8x vs 18.0x sector"
+      "passed": false,
+      "value": 18.09,
+      "threshold": 16.94,
+      "label": "18.1x vs 16.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.65,
+      "value": 2.69,
       "threshold": 1.5,
-      "label": "2.65x vs 1.5x"
+      "label": "2.69x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 10.91,
+      "value": 11.06,
       "threshold": 10.0,
-      "label": "10.9x vs 10x"
+      "label": "11.1x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": -2.07,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "-2.1% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 17.01,
-      "threshold": 17.8,
-      "label": "Fwd 17.0x vs Trail 17.8x"
+      "value": 17.33,
+      "threshold": 18.09,
+      "label": "Fwd 17.3x vs Trail 18.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": true,
-      "value": 0.1,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 1.0x ÷ Growth 10.3% = 0.10"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 17.8,
-    "sectorPe": 21.2,
-    "pb": 2.65,
-    "ps": 1.05,
-    "evEbitda": 10.91,
-    "fcfYield": -2.07,
-    "forwardPe": 17.01,
-    "dividendYield": 3.79,
+    "pe": 18.09,
+    "sectorPe": 19.93,
+    "pb": 2.69,
+    "ps": null,
+    "evEbitda": 11.06,
+    "fcfYield": null,
+    "forwardPe": 17.33,
+    "dividendYield": 3.73,
     "revenueGrowth": 10.3,
     "profitMargin": 5.95,
     "operatingMargin": 9.44,
