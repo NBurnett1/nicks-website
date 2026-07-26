@@ -1,16 +1,12 @@
 {
   "ticker": "SHL",
   "name": "SONIC HLTH FPO [SHL]",
-  "price": 21.88,
-  "valuationScore": -4.6,
-  "marketCap": "10.8B",
+  "price": 21.22,
+  "valuationScore": -4.1,
+  "marketCap": "10.5B",
   "sector": "Healthcare",
   "domain": "sonichealthcare.com",
   "chartData": [
-    {
-      "date": "2025-07-20",
-      "price": 26.37
-    },
     {
       "date": "2025-07-27",
       "price": 26.81
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-19",
       "price": 21.88
+    },
+    {
+      "date": "2026-07-26",
+      "price": 21.22
     }
   ],
   "testsPassed": 5,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 19.89,
-      "threshold": 19.23,
-      "label": "19.9x vs 19.2x sector"
+      "value": 19.12,
+      "threshold": 17.97,
+      "label": "19.1x vs 18.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.26,
+      "value": 1.22,
       "threshold": 1.5,
-      "label": "1.26x vs 1.5x"
+      "label": "1.22x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 12.32,
+      "value": 12.08,
       "threshold": 10.0,
-      "label": "12.3x vs 10x"
+      "label": "12.1x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.53,
+      "value": 5.7,
       "threshold": 5.0,
-      "label": "5.5% vs 5%"
+      "label": "5.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.64,
-      "threshold": 19.89,
-      "label": "Fwd 16.6x vs Trail 19.9x"
+      "value": 16.27,
+      "threshold": 19.12,
+      "label": "Fwd 16.3x vs Trail 19.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 19.89,
-    "sectorPe": 22.63,
-    "pb": 1.26,
-    "ps": 1.04,
-    "evEbitda": 12.32,
-    "fcfYield": 5.53,
-    "forwardPe": 16.64,
-    "dividendYield": 4.94,
+    "pe": 19.12,
+    "sectorPe": 21.14,
+    "pb": 1.22,
+    "ps": 1.01,
+    "evEbitda": 12.08,
+    "fcfYield": 5.7,
+    "forwardPe": 16.27,
+    "dividendYield": 5.09,
     "revenueGrowth": 16.6,
     "profitMargin": 5.18,
     "operatingMargin": 8.98,

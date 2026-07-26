@@ -1,16 +1,12 @@
 {
   "ticker": "ANN",
   "name": "ANSELL FPO [ANN]",
-  "price": 31.67,
-  "valuationScore": 0.2,
+  "price": 31.82,
+  "valuationScore": 1.2,
   "marketCap": "4.5B",
   "sector": "Healthcare",
   "domain": "ansell.com",
   "chartData": [
-    {
-      "date": "2025-07-20",
-      "price": 30.28
-    },
     {
       "date": "2025-07-27",
       "price": 30.2
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-19",
       "price": 31.67
+    },
+    {
+      "date": "2026-07-26",
+      "price": 31.82
     }
   ],
   "testsPassed": 2,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 23.46,
-      "threshold": 19.23,
-      "label": "23.5x vs 19.2x sector"
+      "value": 23.92,
+      "threshold": 17.97,
+      "label": "23.9x vs 18.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.6,
+      "value": 1.61,
       "threshold": 1.5,
-      "label": "1.60x vs 1.5x"
+      "label": "1.61x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 14.65,
+      "value": 14.71,
       "threshold": 10.0,
       "label": "14.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.57,
+      "value": 2.56,
       "threshold": 5.0,
       "label": "2.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.6,
-      "threshold": 23.46,
-      "label": "Fwd 14.6x vs Trail 23.5x"
+      "value": 14.64,
+      "threshold": 23.92,
+      "label": "Fwd 14.6x vs Trail 23.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 3.17,
+      "value": 3.18,
       "threshold": 0.5,
-      "label": "P/S 2.2x ÷ Growth 0.7% = 3.17"
+      "label": "P/S 2.2x ÷ Growth 0.7% = 3.18"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 23.46,
-    "sectorPe": 22.63,
-    "pb": 1.6,
-    "ps": 2.22,
-    "evEbitda": 14.65,
-    "fcfYield": 2.57,
-    "forwardPe": 14.6,
-    "dividendYield": 2.54,
+    "pe": 23.92,
+    "sectorPe": 21.14,
+    "pb": 1.61,
+    "ps": 2.23,
+    "evEbitda": 14.71,
+    "fcfYield": 2.56,
+    "forwardPe": 14.64,
+    "dividendYield": 2.53,
     "revenueGrowth": 0.7,
     "profitMargin": 6.74,
     "operatingMargin": 14.31,

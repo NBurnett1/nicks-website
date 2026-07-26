@@ -1,16 +1,12 @@
 {
   "ticker": "WBC",
   "name": "WESTPAC FPO [WBC]",
-  "price": 36.56,
-  "valuationScore": -0.2,
-  "marketCap": "124.8B",
+  "price": 37.14,
+  "valuationScore": -1.1,
+  "marketCap": "126.8B",
   "sector": "Financials",
   "domain": "westpac.com.au",
   "chartData": [
-    {
-      "date": "2025-07-20",
-      "price": 32.99
-    },
     {
       "date": "2025-07-27",
       "price": 31.76
@@ -218,24 +214,28 @@
     {
       "date": "2026-07-19",
       "price": 36.56
+    },
+    {
+      "date": "2026-07-26",
+      "price": 37.14
     }
   ],
-  "testsPassed": 3,
+  "testsPassed": 4,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": false,
-      "value": 18.01,
-      "threshold": 16.94,
-      "label": "18.0x vs 16.9x sector"
+      "passed": true,
+      "value": 18.3,
+      "threshold": 18.38,
+      "label": "18.3x vs 18.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.76,
+      "value": 1.79,
       "threshold": 1.5,
-      "label": "1.76x vs 1.5x"
+      "label": "1.79x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.87,
-      "threshold": 18.01,
-      "label": "Fwd 16.9x vs Trail 18.0x"
+      "value": 17.09,
+      "threshold": 18.3,
+      "label": "Fwd 17.1x vs Trail 18.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 3.74,
+      "value": 3.8,
       "threshold": 0.5,
-      "label": "P/S 5.6x ÷ Growth 1.5% = 3.74"
+      "label": "P/S 5.7x ÷ Growth 1.5% = 3.80"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 18.01,
-    "sectorPe": 19.93,
-    "pb": 1.76,
-    "ps": 5.61,
+    "pe": 18.3,
+    "sectorPe": 21.63,
+    "pb": 1.79,
+    "ps": 5.7,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 16.87,
-    "dividendYield": 4.21,
+    "forwardPe": 17.09,
+    "dividendYield": 4.15,
     "revenueGrowth": 1.5,
     "profitMargin": 31.5,
     "operatingMargin": 50.43,

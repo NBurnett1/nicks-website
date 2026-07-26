@@ -1,16 +1,12 @@
 {
   "ticker": "SDF",
   "name": "STEADFAST FPO [SDF]",
-  "price": 5.27,
-  "valuationScore": -0.9,
-  "marketCap": "5.9B",
+  "price": 5.2,
+  "valuationScore": -2.4,
+  "marketCap": "5.8B",
   "sector": "Financial Services",
   "domain": "steadfast.com.au",
   "chartData": [
-    {
-      "date": "2025-07-20",
-      "price": 5.78
-    },
     {
       "date": "2025-07-27",
       "price": 5.6
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-19",
       "price": 5.27
+    },
+    {
+      "date": "2026-07-26",
+      "price": 5.2
     }
   ],
   "testsPassed": 6,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 16.47,
-      "threshold": 15.53,
-      "label": "16.5x vs 15.5x sector"
+      "value": 16.25,
+      "threshold": 15.85,
+      "label": "16.2x vs 15.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.52,
+      "value": 2.48,
       "threshold": 1.5,
-      "label": "2.52x vs 1.5x"
+      "label": "2.48x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 9.16,
+      "value": 9.07,
       "threshold": 10.0,
-      "label": "9.2x vs 10x"
+      "label": "9.1x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 9.94,
+      "value": 10.07,
       "threshold": 5.0,
-      "label": "9.9% vs 5%"
+      "label": "10.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 15.4,
-      "threshold": 16.47,
-      "label": "Fwd 15.4x vs Trail 16.5x"
+      "value": 15.2,
+      "threshold": 16.25,
+      "label": "Fwd 15.2x vs Trail 16.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.18,
       "threshold": 0.5,
-      "label": "P/S 2.7x ÷ Growth 14.9% = 0.18"
+      "label": "P/S 2.6x ÷ Growth 14.9% = 0.18"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 16.47,
-    "sectorPe": 18.27,
-    "pb": 2.52,
-    "ps": 2.66,
-    "evEbitda": 9.16,
-    "fcfYield": 9.94,
-    "forwardPe": 15.4,
-    "dividendYield": 3.78,
+    "pe": 16.25,
+    "sectorPe": 18.65,
+    "pb": 2.48,
+    "ps": 2.62,
+    "evEbitda": 9.07,
+    "fcfYield": 10.07,
+    "forwardPe": 15.2,
+    "dividendYield": 3.83,
     "revenueGrowth": 14.9,
     "profitMargin": 16.13,
     "operatingMargin": 27.58,

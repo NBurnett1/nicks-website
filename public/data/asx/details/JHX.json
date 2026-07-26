@@ -1,16 +1,12 @@
 {
   "ticker": "JHX",
   "name": "J HARDIE CDI 1:1 [JHX]",
-  "price": 37.6,
-  "valuationScore": 12.6,
-  "marketCap": "21.8B",
+  "price": 36.92,
+  "valuationScore": 13.9,
+  "marketCap": "21.4B",
   "sector": "Basic Materials",
   "domain": "jameshardie.com",
   "chartData": [
-    {
-      "date": "2025-07-20",
-      "price": 41.0
-    },
     {
       "date": "2025-07-27",
       "price": 41.13
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-19",
       "price": 37.6
+    },
+    {
+      "date": "2026-07-26",
+      "price": 36.92
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 139.26,
-      "threshold": 38.25,
-      "label": "139.3x vs 38.2x sector"
+      "value": 136.74,
+      "threshold": 38.7,
+      "label": "136.7x vs 38.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.37,
+      "value": 2.33,
       "threshold": 1.5,
-      "label": "2.37x vs 1.5x"
+      "label": "2.33x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 20.92,
+      "value": 20.52,
       "threshold": 10.0,
-      "label": "20.9x vs 10x"
+      "label": "20.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 1.7,
+      "value": 1.75,
       "threshold": 5.0,
-      "label": "1.7% vs 5%"
+      "label": "1.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 18.02,
-      "threshold": 139.26,
-      "label": "Fwd 18.0x vs Trail 139.3x"
+      "value": 17.14,
+      "threshold": 136.74,
+      "label": "Fwd 17.1x vs Trail 136.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.1,
       "threshold": 0.5,
-      "label": "P/S 4.5x ÷ Growth 44.5% = 0.10"
+      "label": "P/S 4.4x ÷ Growth 44.5% = 0.10"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,18 +281,18 @@
     }
   },
   "metrics": {
-    "pe": 139.26,
-    "sectorPe": 45.0,
-    "pb": 2.37,
-    "ps": 4.51,
-    "evEbitda": 20.92,
-    "fcfYield": 1.7,
-    "forwardPe": 18.02,
+    "pe": 136.74,
+    "sectorPe": 45.53,
+    "pb": 2.33,
+    "ps": 4.43,
+    "evEbitda": 20.52,
+    "fcfYield": 1.75,
+    "forwardPe": 17.14,
     "dividendYield": null,
     "revenueGrowth": 44.5,
     "profitMargin": 2.15,
     "operatingMargin": 18.9,
     "roe": 2.42,
-    "debtEquity": 76.09
+    "debtEquity": 74.48
   }
 }

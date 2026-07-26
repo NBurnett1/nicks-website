@@ -1,16 +1,12 @@
 {
   "ticker": "CBA",
   "name": "CWLTH BANK FPO [CBA]",
-  "price": 171.78,
-  "valuationScore": 5.5,
-  "marketCap": "287.2B",
+  "price": 174.03,
+  "valuationScore": 3.9,
+  "marketCap": "291.0B",
   "sector": "Financials",
   "domain": "commbank.com.au",
   "chartData": [
-    {
-      "date": "2025-07-20",
-      "price": 177.31
-    },
     {
       "date": "2025-07-27",
       "price": 168.0
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-19",
       "price": 171.78
+    },
+    {
+      "date": "2026-07-26",
+      "price": 174.03
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 27.62,
-      "threshold": 16.94,
-      "label": "27.6x vs 16.9x sector"
+      "value": 28.02,
+      "threshold": 18.38,
+      "label": "28.0x vs 18.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.72,
+      "value": 3.77,
       "threshold": 1.5,
-      "label": "3.72x vs 1.5x"
+      "label": "3.77x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 25.56,
-      "threshold": 27.62,
-      "label": "Fwd 25.6x vs Trail 27.6x"
+      "value": 25.9,
+      "threshold": 28.02,
+      "label": "Fwd 25.9x vs Trail 28.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 1.53,
+      "value": 1.55,
       "threshold": 0.5,
-      "label": "P/S 10.1x ÷ Growth 6.6% = 1.53"
+      "label": "P/S 10.2x ÷ Growth 6.6% = 1.55"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 27.62,
-    "sectorPe": 19.93,
-    "pb": 3.72,
-    "ps": 10.09,
+    "pe": 28.02,
+    "sectorPe": 21.63,
+    "pb": 3.77,
+    "ps": 10.22,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 25.56,
-    "dividendYield": 2.88,
+    "forwardPe": 25.9,
+    "dividendYield": 2.84,
     "revenueGrowth": 6.6,
     "profitMargin": 36.35,
     "operatingMargin": 55.51,

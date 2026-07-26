@@ -1,16 +1,12 @@
 {
   "ticker": "RIO",
-  "name": "RIO",
-  "price": 160.95,
-  "valuationScore": 1.6,
-  "marketCap": "—",
+  "name": "RIO TINTO FPO [RIO]",
+  "price": 159.99,
+  "valuationScore": 1.9,
+  "marketCap": "260.2B",
   "sector": "Materials",
   "domain": "riotinto.com",
   "chartData": [
-    {
-      "date": "2025-07-20",
-      "price": 108.48
-    },
     {
       "date": "2025-07-27",
       "price": 113.99
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-19",
       "price": 160.95
+    },
+    {
+      "date": "2026-07-26",
+      "price": 159.99
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 18.25,
-      "threshold": 16.75,
-      "label": "18.2x vs 16.8x sector"
+      "value": 18.39,
+      "threshold": 17.37,
+      "label": "18.4x vs 17.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": 2.89,
       "threshold": 1.5,
-      "label": "No P/B data"
+      "label": "2.89x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 13.84,
+      "value": 13.76,
       "threshold": 10.0,
       "label": "13.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": 1.34,
       "threshold": 5.0,
-      "label": "No FCF data"
+      "label": "1.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.68,
-      "threshold": 18.25,
-      "label": "Fwd 12.7x vs Trail 18.2x"
+      "value": 12.63,
+      "threshold": 18.39,
+      "label": "Fwd 12.6x vs Trail 18.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 18.25,
-    "sectorPe": 19.71,
-    "pb": null,
+    "pe": 18.39,
+    "sectorPe": 20.43,
+    "pb": 2.89,
     "ps": null,
-    "evEbitda": 13.84,
-    "fcfYield": null,
-    "forwardPe": 12.68,
-    "dividendYield": 3.66,
+    "evEbitda": 13.76,
+    "fcfYield": 1.34,
+    "forwardPe": 12.63,
+    "dividendYield": 3.68,
     "revenueGrowth": 14.6,
     "profitMargin": 17.29,
     "operatingMargin": 25.32,

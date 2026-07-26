@@ -1,16 +1,12 @@
 {
   "ticker": "WOR",
-  "name": "WOR",
-  "price": 10.73,
-  "valuationScore": -0.8,
-  "marketCap": "—",
+  "name": "WORLEY FPO [WOR]",
+  "price": 10.64,
+  "valuationScore": -9.3,
+  "marketCap": "5.4B",
   "sector": "Energy",
   "domain": "worley.com",
   "chartData": [
-    {
-      "date": "2025-07-20",
-      "price": 12.69
-    },
     {
       "date": "2025-07-27",
       "price": 12.66
@@ -218,45 +214,49 @@
     {
       "date": "2026-07-19",
       "price": 10.73
+    },
+    {
+      "date": "2026-07-26",
+      "price": 10.64
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 5,
+  "grade": "B",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 16.26,
-      "threshold": 15.17,
-      "label": "16.3x vs 15.2x sector"
+      "value": 16.12,
+      "threshold": 15.3,
+      "label": "16.1x vs 15.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
-      "passed": null,
-      "value": null,
+      "passed": true,
+      "value": 1.01,
       "threshold": 1.5,
-      "label": "No P/B data"
+      "label": "1.01x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 9.55,
+      "value": 9.49,
       "threshold": 10.0,
-      "label": "9.6x vs 10x"
+      "label": "9.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": null,
-      "value": null,
+      "passed": true,
+      "value": 9.23,
       "threshold": 5.0,
-      "label": "No FCF data"
+      "label": "9.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
-      "passed": null,
-      "value": null,
-      "threshold": 16.26,
-      "label": "Insufficient data"
+      "passed": true,
+      "value": 12.11,
+      "threshold": 16.12,
+      "label": "Fwd 12.1x vs Trail 16.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 16.26,
-    "sectorPe": 17.85,
-    "pb": null,
+    "pe": 16.12,
+    "sectorPe": 18.0,
+    "pb": 1.01,
     "ps": null,
-    "evEbitda": 9.55,
-    "fcfYield": null,
-    "forwardPe": null,
-    "dividendYield": 4.66,
+    "evEbitda": 9.49,
+    "fcfYield": 9.23,
+    "forwardPe": 12.11,
+    "dividendYield": 4.7,
     "revenueGrowth": -1.6,
     "profitMargin": 3.1,
     "operatingMargin": 3.71,

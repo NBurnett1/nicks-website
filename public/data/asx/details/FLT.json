@@ -1,16 +1,12 @@
 {
   "ticker": "FLT",
   "name": "FLIGHT CTR FPO [FLT]",
-  "price": 12.18,
-  "valuationScore": 2.0,
-  "marketCap": "2.5B",
+  "price": 11.71,
+  "valuationScore": 1.1,
+  "marketCap": "2.4B",
   "sector": "Consumer Cyclical",
   "domain": "fctgl.com",
   "chartData": [
-    {
-      "date": "2025-07-20",
-      "price": 12.93
-    },
     {
       "date": "2025-07-27",
       "price": 12.7
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-19",
       "price": 12.18
+    },
+    {
+      "date": "2026-07-26",
+      "price": 11.71
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 24.36,
-      "threshold": 20.72,
-      "label": "24.4x vs 20.7x sector"
+      "value": 23.42,
+      "threshold": 20.53,
+      "label": "23.4x vs 20.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.18,
+      "value": 2.09,
       "threshold": 1.5,
-      "label": "2.18x vs 1.5x"
+      "label": "2.09x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 12.88,
+      "value": 12.5,
       "threshold": 10.0,
-      "label": "12.9x vs 10x"
+      "label": "12.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 10.19,
+      "value": 10.6,
       "threshold": 5.0,
-      "label": "10.2% vs 5%"
+      "label": "10.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 10.87,
-      "threshold": 24.36,
-      "label": "Fwd 10.9x vs Trail 24.4x"
+      "value": 10.36,
+      "threshold": 23.42,
+      "label": "Fwd 10.4x vs Trail 23.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.14,
       "threshold": 0.5,
-      "label": "P/S 0.9x ÷ Growth 6.1% = 0.14"
+      "label": "P/S 0.8x ÷ Growth 6.1% = 0.14"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 24.36,
-    "sectorPe": 24.38,
-    "pb": 2.18,
-    "ps": 0.88,
-    "evEbitda": 12.88,
-    "fcfYield": 10.19,
-    "forwardPe": 10.87,
-    "dividendYield": 3.37,
+    "pe": 23.42,
+    "sectorPe": 24.15,
+    "pb": 2.09,
+    "ps": 0.84,
+    "evEbitda": 12.5,
+    "fcfYield": 10.6,
+    "forwardPe": 10.36,
+    "dividendYield": 3.5,
     "revenueGrowth": 6.1,
     "profitMargin": 3.82,
     "operatingMargin": 6.63,

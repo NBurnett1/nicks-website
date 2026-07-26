@@ -1,16 +1,12 @@
 {
   "ticker": "COL",
   "name": "COLESGROUP FPO [COL]",
-  "price": 23.21,
-  "valuationScore": 3.4,
-  "marketCap": "31.2B",
+  "price": 23.43,
+  "valuationScore": 3.3,
+  "marketCap": "31.5B",
   "sector": "Consumer Staples",
   "domain": "colesgroup.com.au",
   "chartData": [
-    {
-      "date": "2025-07-20",
-      "price": 19.92
-    },
     {
       "date": "2025-07-27",
       "price": 19.56
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-19",
       "price": 23.21
+    },
+    {
+      "date": "2026-07-26",
+      "price": 23.43
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 30.54,
-      "threshold": 25.96,
-      "label": "30.5x vs 26.0x sector"
+      "value": 30.83,
+      "threshold": 26.2,
+      "label": "30.8x vs 26.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 7.99,
+      "value": 8.07,
       "threshold": 1.5,
-      "label": "7.99x vs 1.5x"
+      "label": "8.07x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 16.07,
+      "value": 16.19,
       "threshold": 10.0,
-      "label": "16.1x vs 10x"
+      "label": "16.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.37,
+      "value": 4.33,
       "threshold": 5.0,
-      "label": "4.4% vs 5%"
+      "label": "4.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 23.05,
-      "threshold": 30.54,
-      "label": "Fwd 23.0x vs Trail 30.5x"
+      "value": 23.3,
+      "threshold": 30.83,
+      "label": "Fwd 23.3x vs Trail 30.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 30.54,
-    "sectorPe": 30.54,
-    "pb": 7.99,
-    "ps": 0.69,
-    "evEbitda": 16.07,
-    "fcfYield": 4.37,
-    "forwardPe": 23.05,
-    "dividendYield": 3.15,
+    "pe": 30.83,
+    "sectorPe": 30.83,
+    "pb": 8.07,
+    "ps": 0.7,
+    "evEbitda": 16.19,
+    "fcfYield": 4.33,
+    "forwardPe": 23.3,
+    "dividendYield": 3.12,
     "revenueGrowth": 2.5,
     "profitMargin": 2.25,
     "operatingMargin": 3.92,

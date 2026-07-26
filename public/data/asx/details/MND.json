@@ -1,16 +1,12 @@
 {
   "ticker": "MND",
-  "name": "MND",
-  "price": 29.15,
+  "name": "MONADEL FPO [MND]",
+  "price": 29.1,
   "valuationScore": 2.4,
   "marketCap": "2.9B",
   "sector": "Industrials",
   "domain": "monadelphous.com.au",
   "chartData": [
-    {
-      "date": "2025-07-20",
-      "price": 18.0
-    },
     {
       "date": "2025-07-27",
       "price": 18.37
@@ -218,44 +214,48 @@
     {
       "date": "2026-07-19",
       "price": 29.15
+    },
+    {
+      "date": "2026-07-26",
+      "price": 29.1
     }
   ],
-  "testsPassed": 5,
-  "grade": "B",
+  "testsPassed": 4,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 27.5,
-      "threshold": 28.09,
-      "label": "27.5x vs 28.1x sector"
+      "value": 27.45,
+      "threshold": 27.6,
+      "label": "27.5x vs 27.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 5.31,
+      "value": 5.3,
       "threshold": 1.5,
-      "label": "5.31x vs 1.5x"
+      "label": "5.30x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 16.66,
+      "value": 16.62,
       "threshold": 10.0,
-      "label": "16.7x vs 10x"
+      "label": "16.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.24,
+      "value": 5.25,
       "threshold": 5.0,
       "label": "5.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 23.24,
-      "threshold": 27.5,
+      "value": 23.21,
+      "threshold": 27.45,
       "label": "Fwd 23.2x vs Trail 27.5x"
     },
     "profitabilityCheck": {
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": true,
-      "value": 0.03,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 1.1x ÷ Growth 40.6% = 0.03"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 27.5,
-    "sectorPe": 33.04,
-    "pb": 5.31,
-    "ps": 1.14,
-    "evEbitda": 16.66,
-    "fcfYield": 5.24,
-    "forwardPe": 23.24,
-    "dividendYield": 3.36,
+    "pe": 27.45,
+    "sectorPe": 32.48,
+    "pb": 5.3,
+    "ps": null,
+    "evEbitda": 16.62,
+    "fcfYield": 5.25,
+    "forwardPe": 23.21,
+    "dividendYield": 3.37,
     "revenueGrowth": 40.6,
     "profitMargin": 4.11,
     "operatingMargin": 6.05,

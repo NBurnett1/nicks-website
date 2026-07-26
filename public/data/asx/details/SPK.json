@@ -2,15 +2,11 @@
   "ticker": "SPK",
   "name": "SPARK NZ FPO NZX [SPK]",
   "price": 1.53,
-  "valuationScore": -14.4,
+  "valuationScore": -14.1,
   "marketCap": "2.9B",
   "sector": "Communication Services",
   "domain": "sparknz.co.nz",
   "chartData": [
-    {
-      "date": "2025-07-20",
-      "price": 2.15
-    },
     {
       "date": "2025-07-27",
       "price": 2.1
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-19",
       "price": 1.53
+    },
+    {
+      "date": "2026-07-26",
+      "price": 1.53
     }
   ],
   "testsPassed": 4,
@@ -226,36 +226,36 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 12.75,
-      "threshold": 11.78,
-      "label": "12.8x vs 11.8x sector"
+      "value": 12.79,
+      "threshold": 11.41,
+      "label": "12.8x vs 11.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.6,
+      "value": 2.61,
       "threshold": 1.5,
-      "label": "2.60x vs 1.5x"
+      "label": "2.61x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 6.12,
+      "value": 6.13,
       "threshold": 10.0,
       "label": "6.1x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 12.51,
+      "value": 12.47,
       "threshold": 5.0,
       "label": "12.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 13.49,
-      "threshold": 12.75,
+      "value": 13.52,
+      "threshold": 12.79,
       "label": "Fwd 13.5x vs Trail 12.8x"
     },
     "profitabilityCheck": {
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 12.75,
-    "sectorPe": 13.86,
-    "pb": 2.6,
+    "pe": 12.79,
+    "sectorPe": 13.43,
+    "pb": 2.61,
     "ps": 0.78,
-    "evEbitda": 6.12,
-    "fcfYield": 12.51,
-    "forwardPe": 13.49,
-    "dividendYield": 11.09,
+    "evEbitda": 6.13,
+    "fcfYield": 12.47,
+    "forwardPe": 13.52,
+    "dividendYield": 11.06,
     "revenueGrowth": -1.2,
     "profitMargin": 7.81,
     "operatingMargin": 7.61,

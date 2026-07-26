@@ -1,16 +1,12 @@
 {
   "ticker": "CLW",
   "name": "CHTR H LWR STAPLED [CLW]",
-  "price": 3.69,
+  "price": 3.68,
   "valuationScore": -1.2,
   "marketCap": "2.6B",
   "sector": "Real Estate",
   "domain": "charterhall.com.au",
   "chartData": [
-    {
-      "date": "2025-07-20",
-      "price": 3.86
-    },
     {
       "date": "2025-07-27",
       "price": 3.79
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-19",
       "price": 3.69
+    },
+    {
+      "date": "2026-07-26",
+      "price": 3.68
     }
   ],
   "testsPassed": 3,
@@ -226,8 +226,8 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 11.9,
-      "threshold": 10.12,
+      "value": 11.87,
+      "threshold": 10.09,
       "label": "11.9x vs 10.1x sector"
     },
     "pbBelowBook": {
@@ -247,15 +247,15 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 6.08,
+      "value": 6.09,
       "threshold": 5.0,
       "label": "6.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 14.42,
-      "threshold": 11.9,
+      "value": 14.38,
+      "threshold": 11.87,
       "label": "Fwd 14.4x vs Trail 11.9x"
     },
     "profitabilityCheck": {
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 1.92,
+      "value": 1.91,
       "threshold": 0.5,
-      "label": "P/S 7.5x ÷ Growth 3.9% = 1.92"
+      "label": "P/S 7.5x ÷ Growth 3.9% = 1.91"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 11.9,
-    "sectorPe": 11.9,
+    "pe": 11.87,
+    "sectorPe": 11.87,
     "pb": 0.79,
-    "ps": 7.48,
+    "ps": 7.46,
     "evEbitda": null,
-    "fcfYield": 6.08,
-    "forwardPe": 14.42,
-    "dividendYield": 6.91,
+    "fcfYield": 6.09,
+    "forwardPe": 14.38,
+    "dividendYield": 6.93,
     "revenueGrowth": 3.9,
     "profitMargin": 62.96,
     "operatingMargin": 80.57,

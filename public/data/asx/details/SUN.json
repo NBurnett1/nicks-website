@@ -1,16 +1,12 @@
 {
   "ticker": "SUN",
   "name": "SUNCORP FPO [SUN]",
-  "price": 19.05,
-  "valuationScore": 0.0,
-  "marketCap": "20.2B",
+  "price": 19.14,
+  "valuationScore": -1.6,
+  "marketCap": "20.3B",
   "sector": "Financials",
   "domain": "suncorpgroup.com.au",
   "chartData": [
-    {
-      "date": "2025-07-20",
-      "price": 19.94
-    },
     {
       "date": "2025-07-27",
       "price": 19.63
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-19",
       "price": 19.05
+    },
+    {
+      "date": "2026-07-26",
+      "price": 19.14
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 22.95,
-      "threshold": 16.94,
-      "label": "23.0x vs 16.9x sector"
+      "value": 23.06,
+      "threshold": 18.38,
+      "label": "23.1x vs 18.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.03,
+      "value": 2.04,
       "threshold": 1.5,
-      "label": "2.03x vs 1.5x"
+      "label": "2.04x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 14.13,
+      "value": 14.2,
       "threshold": 10.0,
-      "label": "14.1x vs 10x"
+      "label": "14.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 11.53,
+      "value": 11.47,
       "threshold": 5.0,
       "label": "11.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.25,
-      "threshold": 22.95,
-      "label": "Fwd 16.3x vs Trail 23.0x"
+      "value": 16.33,
+      "threshold": 23.06,
+      "label": "Fwd 16.3x vs Trail 23.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 22.95,
-    "sectorPe": 19.93,
-    "pb": 2.03,
-    "ps": 1.34,
-    "evEbitda": 14.13,
-    "fcfYield": 11.53,
-    "forwardPe": 16.25,
+    "pe": 23.06,
+    "sectorPe": 21.63,
+    "pb": 2.04,
+    "ps": 1.35,
+    "evEbitda": 14.2,
+    "fcfYield": 11.47,
+    "forwardPe": 16.33,
     "dividendYield": 1.78,
     "revenueGrowth": 1.7,
     "profitMargin": 6.54,
