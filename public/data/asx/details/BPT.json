@@ -2,8 +2,8 @@
   "ticker": "BPT",
   "name": "BEACH FPO [BPT]",
   "price": 0.9,
-  "valuationScore": -5.1,
-  "marketCap": "—",
+  "valuationScore": -20.1,
+  "marketCap": "2.1B",
   "sector": "Energy",
   "domain": "beachenergy.com.au",
   "chartData": [
@@ -220,7 +220,7 @@
       "price": 0.9
     }
   ],
-  "testsPassed": 3,
+  "testsPassed": 4,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
@@ -240,16 +240,16 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 2.67,
+      "value": 2.74,
       "threshold": 10.0,
       "label": "2.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": null,
-      "value": null,
+      "passed": true,
+      "value": 14.76,
       "threshold": 5.0,
-      "label": "No FCF data"
+      "label": "14.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
@@ -285,8 +285,8 @@
     "sectorPe": 18.03,
     "pb": 0.65,
     "ps": null,
-    "evEbitda": 2.67,
-    "fcfYield": null,
+    "evEbitda": 2.74,
+    "fcfYield": 14.76,
     "forwardPe": 5.16,
     "dividendYield": 7.78,
     "revenueGrowth": -0.3,
