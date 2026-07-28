@@ -1,8 +1,8 @@
 {
   "ticker": "BOQ",
   "name": "BANK QLD FPO [BOQ]",
-  "price": 6.5,
-  "valuationScore": 2.4,
+  "price": 6.56,
+  "valuationScore": 3.2,
   "marketCap": "4.3B",
   "sector": "Financials",
   "domain": "boq.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-02",
-      "price": 6.5
+      "price": 6.56
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 43.33,
-      "threshold": 18.67,
-      "label": "43.3x vs 18.7x sector"
+      "value": 43.73,
+      "threshold": 17.51,
+      "label": "43.7x vs 17.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.72,
+      "value": 0.73,
       "threshold": 1.5,
-      "label": "0.72x vs 1.5x"
+      "label": "0.73x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 11.77,
-      "threshold": 43.33,
-      "label": "Fwd 11.8x vs Trail 43.3x"
+      "value": 11.87,
+      "threshold": 43.73,
+      "label": "Fwd 11.9x vs Trail 43.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 1.28,
+      "value": 1.3,
       "threshold": 0.5,
-      "label": "P/S 2.6x ÷ Growth 2.0% = 1.28"
+      "label": "P/S 2.6x ÷ Growth 2.0% = 1.30"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 43.33,
-    "sectorPe": 21.96,
-    "pb": 0.72,
-    "ps": 2.57,
+    "pe": 43.73,
+    "sectorPe": 20.61,
+    "pb": 0.73,
+    "ps": 2.59,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 11.77,
-    "dividendYield": 6.17,
+    "forwardPe": 11.87,
+    "dividendYield": 6.1,
     "revenueGrowth": 2.0,
     "profitMargin": 5.89,
     "operatingMargin": 25.77,

@@ -1,9 +1,9 @@
 {
   "ticker": "BPT",
   "name": "BEACH FPO [BPT]",
-  "price": 0.87,
-  "valuationScore": -19.8,
-  "marketCap": "2.0B",
+  "price": 0.9,
+  "valuationScore": -5.1,
+  "marketCap": "—",
   "sector": "Energy",
   "domain": "beachenergy.com.au",
   "chartData": [
@@ -217,10 +217,10 @@
     },
     {
       "date": "2026-08-02",
-      "price": 0.87
+      "price": 0.9
     }
   ],
-  "testsPassed": 4,
+  "testsPassed": 3,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
@@ -233,9 +233,9 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.63,
+      "value": 0.65,
       "threshold": 1.5,
-      "label": "0.63x vs 1.5x"
+      "label": "0.65x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -246,15 +246,15 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": true,
-      "value": 15.24,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "15.2% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 5.0,
+      "value": 5.16,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": -0.3,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining -0.3%"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,13 +282,13 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 17.78,
-    "pb": 0.63,
-    "ps": 0.95,
+    "sectorPe": 18.03,
+    "pb": 0.65,
+    "ps": null,
     "evEbitda": 2.67,
-    "fcfYield": 15.24,
-    "forwardPe": 5.0,
-    "dividendYield": 8.05,
+    "fcfYield": null,
+    "forwardPe": 5.16,
+    "dividendYield": 7.78,
     "revenueGrowth": -0.3,
     "profitMargin": -5.51,
     "operatingMargin": 19.48,

@@ -1,8 +1,8 @@
 {
   "ticker": "SIQ",
   "name": "SMARTGROUP FPO [SIQ]",
-  "price": 12.95,
-  "valuationScore": 2.0,
+  "price": 12.99,
+  "valuationScore": 2.1,
   "marketCap": "1.8B",
   "sector": "Industrials",
   "domain": "smartgroup.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-02",
-      "price": 12.95
+      "price": 12.99
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 21.23,
-      "threshold": 27.84,
-      "label": "21.2x vs 27.8x sector"
+      "value": 20.95,
+      "threshold": 27.94,
+      "label": "21.0x vs 27.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 6.07,
+      "value": 6.09,
       "threshold": 1.5,
-      "label": "6.07x vs 1.5x"
+      "label": "6.09x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.96,
+      "value": 3.95,
       "threshold": 5.0,
       "label": "4.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 17.93,
-      "threshold": 21.23,
-      "label": "Fwd 17.9x vs Trail 21.2x"
+      "value": 17.98,
+      "threshold": 20.95,
+      "label": "Fwd 18.0x vs Trail 21.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 21.23,
-    "sectorPe": 32.75,
-    "pb": 6.07,
-    "ps": 5.43,
+    "pe": 20.95,
+    "sectorPe": 32.88,
+    "pb": 6.09,
+    "ps": 5.45,
     "evEbitda": 13.55,
-    "fcfYield": 3.96,
-    "forwardPe": 17.93,
+    "fcfYield": 3.95,
+    "forwardPe": 17.98,
     "dividendYield": 3.35,
     "revenueGrowth": 8.2,
     "profitMargin": 24.12,

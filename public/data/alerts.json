@@ -1,16 +1,43 @@
 {
-  "lastUpdated": "2026-07-28T14:36:52.252151+11:00",
+  "lastUpdated": "2026-07-28T20:41:01.944776+11:00",
   "stocksScanned": 128,
-  "totalAlerts": 47,
+  "totalAlerts": 61,
   "alerts": [
+    {
+      "type": "PRICE_MOVE",
+      "severity": "critical",
+      "ticker": "SGR",
+      "exchange": "ASX",
+      "headline": "Stock surged 13.0% in one session",
+      "detail": "$0.12 → $0.13",
+      "timestamp": "2026-07-28T09:40:38.624118+00:00"
+    },
+    {
+      "type": "EXTREME VOLUME",
+      "severity": "critical",
+      "ticker": "WEB",
+      "exchange": "ASX",
+      "headline": "4.2x average volume detected",
+      "detail": "Volume: 7,947,528 vs 20-day avg: 1,895,851 | Price up 17.1%",
+      "timestamp": "2026-07-28T09:40:52.232775+00:00"
+    },
     {
       "type": "PRICE_MOVE",
       "severity": "critical",
       "ticker": "WEB",
       "exchange": "ASX",
-      "headline": "Stock surged 14.1% in one session",
-      "detail": "$2.81 → $3.20",
-      "timestamp": "2026-07-28T03:36:47.110226+00:00"
+      "headline": "Stock surged 17.1% in one session",
+      "detail": "$2.81 → $3.29",
+      "timestamp": "2026-07-28T09:40:52.422450+00:00"
+    },
+    {
+      "type": "EXTREME VOLUME",
+      "severity": "critical",
+      "ticker": "PMV",
+      "exchange": "ASX",
+      "headline": "4.3x average volume detected",
+      "detail": "Volume: 1,380,547 vs 20-day avg: 323,646 | Price down 0.9%",
+      "timestamp": "2026-07-28T09:40:55.425855+00:00"
     },
     {
       "type": "INSIDER_SELL",
@@ -53,18 +80,90 @@
       "severity": "high",
       "ticker": "VEA",
       "exchange": "ASX",
-      "headline": "Stock surged 5.3% in one session",
-      "detail": "$2.44 → $2.57",
-      "timestamp": "2026-07-28T03:36:06.806154+00:00"
+      "headline": "Stock surged 8.6% in one session",
+      "detail": "$2.44 → $2.65",
+      "timestamp": "2026-07-28T09:39:39.364143+00:00"
     },
     {
       "type": "PRICE_MOVE",
       "severity": "high",
-      "ticker": "VEE",
+      "ticker": "BAP",
       "exchange": "ASX",
-      "headline": "Stock plunged 5.6% in one session",
-      "detail": "$0.54 → $0.51",
-      "timestamp": "2026-07-28T03:36:26.656491+00:00"
+      "headline": "Stock surged 7.5% in one session",
+      "detail": "$0.40 → $0.43",
+      "timestamp": "2026-07-28T09:39:48.997302+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "high",
+      "ticker": "SEK",
+      "exchange": "ASX",
+      "headline": "Stock surged 6.8% in one session",
+      "detail": "$13.16 → $14.06",
+      "timestamp": "2026-07-28T09:39:56.293723+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "high",
+      "ticker": "CVN",
+      "exchange": "ASX",
+      "headline": "Stock surged 5.3% in one session",
+      "detail": "$0.09 → $0.10",
+      "timestamp": "2026-07-28T09:39:57.363090+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "high",
+      "ticker": "CAR",
+      "exchange": "ASX",
+      "headline": "Stock surged 5.5% in one session",
+      "detail": "$25.00 → $26.38",
+      "timestamp": "2026-07-28T09:39:58.531601+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "high",
+      "ticker": "ILU",
+      "exchange": "ASX",
+      "headline": "Stock surged 5.1% in one session",
+      "detail": "$5.83 → $6.13",
+      "timestamp": "2026-07-28T09:40:13.410945+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "high",
+      "ticker": "LNW",
+      "exchange": "ASX",
+      "headline": "Stock surged 6.5% in one session",
+      "detail": "$109.70 → $116.86",
+      "timestamp": "2026-07-28T09:40:16.014423+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "high",
+      "ticker": "MP1",
+      "exchange": "ASX",
+      "headline": "Stock plunged 5.9% in one session",
+      "detail": "$18.96 → $17.85",
+      "timestamp": "2026-07-28T09:40:17.632453+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "high",
+      "ticker": "WTC",
+      "exchange": "ASX",
+      "headline": "Stock surged 8.1% in one session",
+      "detail": "$32.12 → $34.71",
+      "timestamp": "2026-07-28T09:40:44.701980+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "high",
+      "ticker": "FLT",
+      "exchange": "ASX",
+      "headline": "Stock surged 5.1% in one session",
+      "detail": "$12.03 → $12.64",
+      "timestamp": "2026-07-28T09:40:54.321873+00:00"
     },
     {
       "type": "NEWS",
@@ -91,20 +190,47 @@
     {
       "type": "VOLUME SPIKE",
       "severity": "medium",
-      "ticker": "WEB",
+      "ticker": "VEA",
       "exchange": "ASX",
-      "headline": "2.6x average volume detected",
-      "detail": "Volume: 4,965,458 vs 20-day avg: 1,895,851 | Price up 14.1%",
-      "timestamp": "2026-07-28T03:36:46.589714+00:00"
+      "headline": "2.3x average volume detected",
+      "detail": "Volume: 11,536,330 vs 20-day avg: 4,987,812 | Price up 8.6%",
+      "timestamp": "2026-07-28T09:39:39.255256+00:00"
     },
     {
-      "type": "INSIDER_BUY",
-      "severity": "low",
-      "ticker": "NUF",
+      "type": "VOLUME SPIKE",
+      "severity": "medium",
+      "ticker": "EDV",
       "exchange": "ASX",
-      "headline": "Gartmann (Alexandra) (Independent Non-Executive Director) purchased 18,000 shares ($34,124)",
-      "detail": "Purchase at price 1.90 per share.",
-      "timestamp": "2026-06-30 00:00:00"
+      "headline": "2.4x average volume detected",
+      "detail": "Volume: 8,626,090 vs 20-day avg: 3,559,026 | Price up 3.8%",
+      "timestamp": "2026-07-28T09:39:42.390541+00:00"
+    },
+    {
+      "type": "VOLUME SPIKE",
+      "severity": "medium",
+      "ticker": "PNI",
+      "exchange": "ASX",
+      "headline": "2.1x average volume detected",
+      "detail": "Volume: 1,210,038 vs 20-day avg: 565,769 | Price down 1.7%",
+      "timestamp": "2026-07-28T09:40:12.115937+00:00"
+    },
+    {
+      "type": "VOLUME SPIKE",
+      "severity": "medium",
+      "ticker": "TPG",
+      "exchange": "ASX",
+      "headline": "2.4x average volume detected",
+      "detail": "Volume: 5,505,888 vs 20-day avg: 2,341,349 | Price up 0.9%",
+      "timestamp": "2026-07-28T09:40:32.299789+00:00"
+    },
+    {
+      "type": "VOLUME SPIKE",
+      "severity": "medium",
+      "ticker": "BXB",
+      "exchange": "ASX",
+      "headline": "2.0x average volume detected",
+      "detail": "Volume: 6,610,302 vs 20-day avg: 3,292,107 | Price up 1.0%",
+      "timestamp": "2026-07-28T09:40:50.156546+00:00"
     },
     {
       "type": "INSIDER_BUY",
@@ -421,7 +547,7 @@
     {
       "type": "NEWS",
       "severity": "low",
-      "ticker": "BHP",
+      "ticker": "BSL",
       "exchange": "ASX",
       "headline": "Australia to challenge Trump’s new 12.5% tariff, says PM Albanese",
       "detail": "Source: Investing.com",
@@ -432,7 +558,7 @@
     {
       "type": "NEWS",
       "severity": "low",
-      "ticker": "BSL",
+      "ticker": "BHP",
       "exchange": "ASX",
       "headline": "Australia to challenge Trump’s new 12.5% tariff, says PM Albanese",
       "detail": "Source: Investing.com",

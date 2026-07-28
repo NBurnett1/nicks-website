@@ -1,9 +1,9 @@
 {
   "ticker": "ORI",
   "name": "ORICA FPO [ORI]",
-  "price": 23.66,
-  "valuationScore": -11.4,
-  "marketCap": "11.0B",
+  "price": 23.67,
+  "valuationScore": 1.2,
+  "marketCap": "—",
   "sector": "Basic Materials",
   "domain": "orica.com",
   "chartData": [
@@ -217,18 +217,18 @@
     },
     {
       "date": "2026-08-02",
-      "price": 23.66
+      "price": 23.67
     }
   ],
-  "testsPassed": 4,
+  "testsPassed": 3,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 46.38,
-      "threshold": 39.43,
-      "label": "46.4x vs 39.4x sector"
+      "value": 46.41,
+      "threshold": 39.45,
+      "label": "46.4x vs 39.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -246,16 +246,16 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": true,
-      "value": 7.34,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "7.3% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 17.17,
-      "threshold": 46.38,
+      "value": 17.18,
+      "threshold": 46.41,
       "label": "Fwd 17.2x vs Trail 46.4x"
     },
     "profitabilityCheck": {
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": -1.7,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining -1.7%"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 46.38,
-    "sectorPe": 46.38,
+    "pe": 46.41,
+    "sectorPe": 46.41,
     "pb": 2.94,
-    "ps": 1.35,
+    "ps": null,
     "evEbitda": 9.86,
-    "fcfYield": 7.34,
-    "forwardPe": 17.17,
+    "fcfYield": null,
+    "forwardPe": 17.18,
     "dividendYield": 2.55,
     "revenueGrowth": -1.7,
     "profitMargin": 3.09,

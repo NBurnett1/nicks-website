@@ -1,9 +1,9 @@
 {
   "ticker": "ANZ",
   "name": "ANZ GROUP FPO [ANZ]",
-  "price": 36.93,
-  "valuationScore": -1.4,
-  "marketCap": "111.2B",
+  "price": 37.22,
+  "valuationScore": -0.8,
+  "marketCap": "—",
   "sector": "Financials",
   "domain": "anz.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-02",
-      "price": 36.93
+      "price": 37.22
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 18.75,
-      "threshold": 18.67,
-      "label": "18.7x vs 18.7x sector"
+      "value": 18.89,
+      "threshold": 17.51,
+      "label": "18.9x vs 17.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.56,
+      "value": 1.58,
       "threshold": 1.5,
-      "label": "1.56x vs 1.5x"
+      "label": "1.58x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.56,
-      "threshold": 18.75,
-      "label": "Fwd 14.6x vs Trail 18.7x"
+      "value": 14.69,
+      "threshold": 18.89,
+      "label": "Fwd 14.7x vs Trail 18.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": -2.1,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining -2.1%"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 18.75,
-    "sectorPe": 21.96,
-    "pb": 1.56,
-    "ps": 5.17,
+    "pe": 18.89,
+    "sectorPe": 20.61,
+    "pb": 1.58,
+    "ps": null,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 14.56,
-    "dividendYield": 4.5,
+    "forwardPe": 14.69,
+    "dividendYield": 4.46,
     "revenueGrowth": -2.1,
     "profitMargin": 27.42,
     "operatingMargin": 48.8,

@@ -1,9 +1,9 @@
 {
   "ticker": "TLS",
   "name": "TELSTRA FPO [TLS]",
-  "price": 4.96,
-  "valuationScore": -0.4,
-  "marketCap": "55.2B",
+  "price": 5.01,
+  "valuationScore": 3.4,
+  "marketCap": "—",
   "sector": "Telecom",
   "domain": "telstra.com.au",
   "chartData": [
@@ -217,25 +217,25 @@
     },
     {
       "date": "2026-08-02",
-      "price": 4.95
+      "price": 5.01
     }
   ],
-  "testsPassed": 4,
+  "testsPassed": 3,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 24.77,
-      "threshold": 17.5,
-      "label": "24.8x vs 17.5x sector"
+      "value": 25.05,
+      "threshold": 17.6,
+      "label": "25.1x vs 17.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.22,
+      "value": 4.27,
       "threshold": 1.5,
-      "label": "4.22x vs 1.5x"
+      "label": "4.27x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -246,17 +246,17 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": true,
-      "value": 7.06,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "7.1% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 22.73,
-      "threshold": 24.77,
-      "label": "Fwd 22.7x vs Trail 24.8x"
+      "value": 22.99,
+      "threshold": 25.05,
+      "label": "Fwd 23.0x vs Trail 25.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": 7.94,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 2.4x ÷ Growth 0.3% = 7.94"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 24.77,
-    "sectorPe": 20.59,
-    "pb": 4.22,
-    "ps": 2.38,
+    "pe": 25.05,
+    "sectorPe": 20.7,
+    "pb": 4.27,
+    "ps": null,
     "evEbitda": 10.59,
-    "fcfYield": 7.06,
-    "forwardPe": 22.73,
-    "dividendYield": 4.26,
+    "fcfYield": null,
+    "forwardPe": 22.99,
+    "dividendYield": 4.19,
     "revenueGrowth": 0.3,
     "profitMargin": 9.8,
     "operatingMargin": 16.51,

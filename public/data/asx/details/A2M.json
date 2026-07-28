@@ -1,8 +1,8 @@
 {
   "ticker": "A2M",
   "name": "A2 MILK FPO NZ [A2M]",
-  "price": 7.2,
-  "valuationScore": 0.5,
+  "price": 7.19,
+  "valuationScore": 0.1,
   "marketCap": "5.2B",
   "sector": "Consumer Staples",
   "domain": "thea2milkcompany.com",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-02",
-      "price": 7.2
+      "price": 7.19
     }
   ],
   "testsPassed": 4,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 28.8,
-      "threshold": 26.53,
-      "label": "28.8x vs 26.5x sector"
+      "value": 28.76,
+      "threshold": 26.61,
+      "label": "28.8x vs 26.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 27.05,
-      "threshold": 28.8,
-      "label": "Fwd 27.1x vs Trail 28.8x"
+      "value": 27.02,
+      "threshold": 28.76,
+      "label": "Fwd 27.0x vs Trail 28.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.14,
+      "value": 0.13,
       "threshold": 0.5,
-      "label": "P/S 2.5x ÷ Growth 18.8% = 0.14"
+      "label": "P/S 2.5x ÷ Growth 18.8% = 0.13"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 28.8,
-    "sectorPe": 31.21,
+    "pe": 28.76,
+    "sectorPe": 31.3,
     "pb": 4.53,
     "ps": 2.54,
     "evEbitda": 15.07,
     "fcfYield": 3.02,
-    "forwardPe": 27.05,
+    "forwardPe": 27.02,
     "dividendYield": 2.37,
     "revenueGrowth": 18.8,
     "profitMargin": 5.94,

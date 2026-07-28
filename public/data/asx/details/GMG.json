@@ -1,11 +1,11 @@
 {
   "ticker": "GMG",
   "name": "GOOD GROUP STAPLED [GMG]",
-  "price": 29.31,
-  "valuationScore": 13.4,
-  "marketCap": "59.9B",
+  "price": 29.58,
+  "valuationScore": 17.4,
+  "marketCap": "—",
   "sector": "Real Estate",
-  "domain": "",
+  "domain": "goodman.com",
   "chartData": [
     {
       "date": "2025-08-03",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-02",
-      "price": 29.31
+      "price": 29.58
     }
   ],
   "testsPassed": 1,
@@ -226,23 +226,23 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 34.89,
-      "threshold": 10.23,
-      "label": "34.9x vs 10.2x sector"
+      "value": 35.21,
+      "threshold": 10.45,
+      "label": "35.2x vs 10.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.52,
+      "value": 2.55,
       "threshold": 1.5,
-      "label": "2.52x vs 1.5x"
+      "label": "2.55x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": 34.31,
       "threshold": 10.0,
-      "label": "No EV/EBITDA data"
+      "label": "34.3x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
@@ -254,16 +254,16 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 20.55,
-      "threshold": 34.89,
-      "label": "Fwd 20.5x vs Trail 34.9x"
+      "value": 20.74,
+      "threshold": 35.21,
+      "label": "Fwd 20.7x vs Trail 35.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": 54.55,
       "threshold": 5.0,
-      "label": "Insufficient data"
+      "label": "Margin 54.5% / ROE 7.9%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
@@ -274,25 +274,25 @@
     },
     "revenueTrend": {
       "name": "Revenue Trend",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": -15.9,
       "threshold": -5.0,
-      "label": "No revenue data"
+      "label": "-15.9% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 34.89,
-    "sectorPe": 12.03,
-    "pb": 2.52,
+    "pe": 35.21,
+    "sectorPe": 12.29,
+    "pb": 2.55,
     "ps": null,
-    "evEbitda": null,
+    "evEbitda": 34.31,
     "fcfYield": null,
-    "forwardPe": 20.55,
+    "forwardPe": 20.74,
     "dividendYield": 1.02,
-    "revenueGrowth": null,
-    "profitMargin": null,
-    "operatingMargin": null,
-    "roe": null,
-    "debtEquity": null
+    "revenueGrowth": -15.9,
+    "profitMargin": 54.55,
+    "operatingMargin": 55.9,
+    "roe": 7.93,
+    "debtEquity": 17.6
   }
 }
