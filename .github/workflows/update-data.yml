@@ -1,79 +1,32 @@
-name: ASX Monthly Conviction Pipeline
+name: ASX Daily Picks Pipeline
 
 on:
   schedule:
-    # SUNDAY 8pm AEST (10:00 UTC)
-    # Cycle boundary: archive previous cycle + generate next cycle picks
-    - cron: '0 10 * * 0'
+    # DAILY 6am AEST (20:00 UTC previous day)
+    # Refresh valuation data, generate picks, fetch news
+    - cron: '0 20 * * *'
 
     # MON-FRI 5pm AEST (7:00 UTC)
-    # Update current prices for the active cycle
+    # Mid-day price update + alerts refresh
     - cron: '0 7 * * 1-5'
-
-    # DAILY 6am AEST (20:00 UTC previous day)
-    # Refresh news alerts + trigger Vercel redeploy for fresh content
-    - cron: '0 20 * * *'
 
   workflow_dispatch:
     inputs:
       mode:
         description: 'Pipeline mode'
         required: true
-        default: 'update-prices'
+        default: 'full-pipeline'
         type: choice
         options:
           - full-pipeline
-          - update-prices
-          - generate-picks
-          - daily-refresh
+          - picks-only
+          - news-only
 
 permissions:
   contents: write
 
 jobs:
-  # ═══════════════════════════════════════════════════
-  # DAILY REFRESH — Runs every day at 6am AEST
-  # Fetches fresh news/alerts and commits to trigger
-  # a Vercel redeploy so articles are always current.
-  # ═══════════════════════════════════════════════════
-  daily-refresh:
-    if: github.event.schedule == '0 20 * * *' || github.event.inputs.mode == 'daily-refresh'
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-          cache: 'pip'
-          cache-dependency-path: scripts/requirements.txt
-
-      - name: Install dependencies
-        run: pip install -r scripts/requirements.txt
-
-      - name: Refresh news & market alerts
-        run: python scripts/fetch_alerts.py
-
-      - name: Fetch daily top stories
-        run: python scripts/fetch_top_stories.py
-
-      - name: Commit and push (triggers Vercel redeploy)
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/data/alerts.json public/data/top_stories.json
-          git diff --staged --quiet || git commit -m "chore: daily news refresh [$(date -u +%Y-%m-%d)]"
-          git push
-
-  # ═══════════════════════════════════════════════════
-  # MAIN PIPELINE — Sunday full run + weekday price updates
-  # ═══════════════════════════════════════════════════
-  update-data:
-    if: github.event.schedule != '0 20 * * *' && github.event.inputs.mode != 'daily-refresh'
+  daily-pipeline:
     runs-on: ubuntu-latest
     timeout-minutes: 45
 
@@ -92,51 +45,29 @@ jobs:
         run: pip install -r scripts/requirements.txt
 
       # ═══════════════════════════════════════════
-      # SUNDAY: Full pipeline + archive + new cycle (if boundary)
+      # FULL PIPELINE: Valuation scan + picks + news
       # ═══════════════════════════════════════════
 
       - name: Run ASX valuation pipeline
-        if: github.event.schedule == '0 10 * * 0' || github.event.inputs.mode == 'full-pipeline'
+        if: github.event.inputs.mode != 'news-only'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/run_pipeline.py --exchange ASX --skip-reports
 
-      - name: Archive previous cycle + generate new picks (if boundary)
-        if: github.event.schedule == '0 10 * * 0' || github.event.inputs.mode == 'full-pipeline' || github.event.inputs.mode == 'generate-picks'
+      - name: Generate daily picks
+        if: github.event.inputs.mode != 'news-only'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python scripts/generate_weekly_picks.py --sunday
+        run: python scripts/generate_daily_picks.py
+
+      # ═══════════════════════════════════════════
+      # NEWS & ALERTS
+      # ═══════════════════════════════════════════
 
       - name: Scan news & market alerts
-        if: github.event.schedule == '0 10 * * 0' || github.event.inputs.mode == 'full-pipeline'
         run: python scripts/fetch_alerts.py
-
-      - name: Send weekly picks email to subscribers
-        if: github.event.schedule == '0 10 * * 0' || github.event.inputs.mode == 'full-pipeline'
-        env:
-          GMAIL_USER: ${{ secrets.GMAIL_USER }}
-          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
-          ENCRYPT_KEY: ${{ secrets.ENCRYPT_KEY }}
-        run: python scripts/send_weekly_email.py
-
-      # ═══════════════════════════════════════════
-      # MON-FRI: Update prices + alerts for active cycle
-      # ═══════════════════════════════════════════
-
-      - name: Update weekly prices
-        if: github.event.schedule == '0 7 * * 1-5' || github.event.inputs.mode == 'update-prices' || github.event.inputs.mode == 'full-pipeline'
-        run: python scripts/update_weekly_prices.py
-
-      - name: Scan news & market alerts (daily)
-        if: github.event.schedule == '0 7 * * 1-5' || github.event.inputs.mode == 'update-prices'
-        run: python scripts/fetch_alerts.py
-
-      # ═══════════════════════════════════════════
-      # DAILY: Refresh top stories & news feed
-      # ═══════════════════════════════════════════
 
       - name: Fetch daily top stories
-        if: github.event.schedule == '0 7 * * 1-5' || github.event.schedule == '0 10 * * 0' || github.event.inputs.mode == 'full-pipeline' || github.event.inputs.mode == 'update-prices'
         run: python scripts/fetch_top_stories.py
 
       # ═══════════════════════════════════════════
@@ -148,7 +79,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add public/data/
-          git diff --staged --quiet || git commit -m "chore: ASX data update [$(date -u +%Y-%m-%d %H:%M)]
+          git diff --staged --quiet || git commit -m "chore: daily picks refresh [$(date -u +%Y-%m-%d %H:%M)]
 
           Schedule: ${{ github.event.schedule || github.event.inputs.mode }}"
           git push

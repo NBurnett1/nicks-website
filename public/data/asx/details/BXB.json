@@ -1,16 +1,12 @@
 {
   "ticker": "BXB",
   "name": "BRAMB LTD FPO [BXB]",
-  "price": 18.71,
+  "price": 19.18,
   "valuationScore": 2.0,
-  "marketCap": "25.0B",
+  "marketCap": "25.6B",
   "sector": "Industrials",
   "domain": "brambles.com",
   "chartData": [
-    {
-      "date": "2025-07-27",
-      "price": 22.52
-    },
     {
       "date": "2025-08-03",
       "price": 23.08
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-26",
       "price": 18.71
+    },
+    {
+      "date": "2026-08-02",
+      "price": 19.17
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 19.49,
-      "threshold": 27.6,
-      "label": "19.5x vs 27.6x sector"
+      "value": 19.97,
+      "threshold": 27.84,
+      "label": "20.0x vs 27.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 5.2,
+      "value": 5.33,
       "threshold": 1.5,
-      "label": "5.20x vs 1.5x"
+      "label": "5.33x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 13.58,
+      "value": 13.81,
       "threshold": 10.0,
-      "label": "13.6x vs 10x"
+      "label": "13.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.84,
+      "value": 2.77,
       "threshold": 5.0,
       "label": "2.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 17.48,
-      "threshold": 19.49,
-      "label": "Fwd 17.5x vs Trail 19.5x"
+      "value": 17.94,
+      "threshold": 19.97,
+      "label": "Fwd 17.9x vs Trail 20.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.71,
+      "value": 0.73,
       "threshold": 0.5,
-      "label": "P/S 3.6x ÷ Growth 5.0% = 0.71"
+      "label": "P/S 3.7x ÷ Growth 5.0% = 0.73"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 19.49,
-    "sectorPe": 32.48,
-    "pb": 5.2,
-    "ps": 3.56,
-    "evEbitda": 13.58,
-    "fcfYield": 2.84,
-    "forwardPe": 17.48,
-    "dividendYield": 3.46,
+    "pe": 19.97,
+    "sectorPe": 32.75,
+    "pb": 5.33,
+    "ps": 3.65,
+    "evEbitda": 13.81,
+    "fcfYield": 2.77,
+    "forwardPe": 17.94,
+    "dividendYield": 3.39,
     "revenueGrowth": 5.0,
     "profitMargin": 13.7,
     "operatingMargin": 21.77,

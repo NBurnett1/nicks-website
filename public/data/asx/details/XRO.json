@@ -1,16 +1,12 @@
 {
   "ticker": "XRO",
   "name": "XERO FPO [XRO]",
-  "price": 61.58,
-  "valuationScore": 0.8,
-  "marketCap": "10.7B",
+  "price": 66.7,
+  "valuationScore": 0.9,
+  "marketCap": "11.6B",
   "sector": "Technology",
   "domain": "xero.com",
   "chartData": [
-    {
-      "date": "2025-07-27",
-      "price": 178.09
-    },
     {
       "date": "2025-08-03",
       "price": 174.75
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-26",
       "price": 61.58
+    },
+    {
+      "date": "2026-08-02",
+      "price": 66.7
     }
   ],
   "testsPassed": 2,
@@ -233,28 +233,28 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.35,
+      "value": 2.54,
       "threshold": 1.5,
-      "label": "2.35x vs 1.5x"
+      "label": "2.54x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 27.21,
+      "value": 28.82,
       "threshold": 10.0,
-      "label": "27.2x vs 10x"
+      "label": "28.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.07,
+      "value": 1.91,
       "threshold": 5.0,
-      "label": "2.1% vs 5%"
+      "label": "1.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 30.69,
+      "value": 33.32,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.1,
       "threshold": 0.5,
-      "label": "P/S 3.9x ÷ Growth 40.8% = 0.10"
+      "label": "P/S 4.2x ÷ Growth 40.8% = 0.10"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 35.07,
-    "pb": 2.35,
-    "ps": 3.88,
-    "evEbitda": 27.21,
-    "fcfYield": 2.07,
-    "forwardPe": 30.69,
+    "sectorPe": 36.5,
+    "pb": 2.54,
+    "ps": 4.2,
+    "evEbitda": 28.82,
+    "fcfYield": 1.91,
+    "forwardPe": 33.32,
     "dividendYield": null,
     "revenueGrowth": 40.8,
     "profitMargin": 6.08,

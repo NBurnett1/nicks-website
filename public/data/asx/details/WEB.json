@@ -1,16 +1,12 @@
 {
   "ticker": "WEB",
   "name": "WEB TRAVEL FPO [WEB]",
-  "price": 2.57,
-  "valuationScore": -0.9,
-  "marketCap": "930M",
+  "price": 3.15,
+  "valuationScore": 1.5,
+  "marketCap": "1.1B",
   "sector": "Consumer Cyclical",
   "domain": "webtravelgroup.com",
   "chartData": [
-    {
-      "date": "2025-07-27",
-      "price": 4.67
-    },
     {
       "date": "2025-08-03",
       "price": 4.42
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-26",
       "price": 2.57
+    },
+    {
+      "date": "2026-08-02",
+      "price": 3.15
     }
   ],
   "testsPassed": 5,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 25.7,
-      "threshold": 20.53,
-      "label": "25.7x vs 20.5x sector"
+      "value": 31.55,
+      "threshold": 21.68,
+      "label": "31.6x vs 21.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.6,
+      "value": 1.96,
       "threshold": 1.5,
-      "label": "1.60x vs 1.5x"
+      "label": "1.96x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 6.21,
+      "value": 6.97,
       "threshold": 10.0,
-      "label": "6.2x vs 10x"
+      "label": "7.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 7.15,
+      "value": 5.83,
       "threshold": 5.0,
-      "label": "7.2% vs 5%"
+      "label": "5.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 8.17,
-      "threshold": 25.7,
-      "label": "Fwd 8.2x vs Trail 25.7x"
+      "value": 10.03,
+      "threshold": 31.55,
+      "label": "Fwd 10.0x vs Trail 31.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.12,
+      "value": 0.15,
       "threshold": 0.5,
-      "label": "P/S 2.4x ÷ Growth 19.9% = 0.12"
+      "label": "P/S 2.9x ÷ Growth 19.9% = 0.15"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 25.7,
-    "sectorPe": 24.15,
-    "pb": 1.6,
-    "ps": 2.36,
-    "evEbitda": 6.21,
-    "fcfYield": 7.15,
-    "forwardPe": 8.17,
+    "pe": 31.55,
+    "sectorPe": 25.5,
+    "pb": 1.96,
+    "ps": 2.9,
+    "evEbitda": 6.97,
+    "fcfYield": 5.83,
+    "forwardPe": 10.03,
     "dividendYield": null,
     "revenueGrowth": 19.9,
     "profitMargin": 9.01,

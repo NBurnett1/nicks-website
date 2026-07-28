@@ -1,16 +1,12 @@
 {
   "ticker": "SCG",
   "name": "SCENTRE STAPLED [SCG]",
-  "price": 3.89,
-  "valuationScore": 4.3,
+  "price": 3.88,
+  "valuationScore": 4.2,
   "marketCap": "20.3B",
   "sector": "Real Estate",
   "domain": "scentregroup.com",
   "chartData": [
-    {
-      "date": "2025-07-27",
-      "price": 3.53
-    },
     {
       "date": "2025-08-03",
       "price": 3.56
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-26",
       "price": 3.89
+    },
+    {
+      "date": "2026-08-02",
+      "price": 3.88
     }
   ],
   "testsPassed": 3,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 11.44,
-      "threshold": 10.09,
-      "label": "11.4x vs 10.1x sector"
+      "value": 11.43,
+      "threshold": 10.23,
+      "label": "11.4x vs 10.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -254,8 +254,8 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 15.62,
-      "threshold": 11.44,
+      "value": 15.6,
+      "threshold": 11.43,
       "label": "Fwd 15.6x vs Trail 11.4x"
     },
     "profitabilityCheck": {
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 9.46,
+      "value": 9.45,
       "threshold": 0.5,
-      "label": "P/S 7.6x ÷ Growth 0.8% = 9.46"
+      "label": "P/S 7.6x ÷ Growth 0.8% = 9.45"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 11.44,
-    "sectorPe": 11.87,
+    "pe": 11.43,
+    "sectorPe": 12.03,
     "pb": 1.07,
-    "ps": 7.57,
+    "ps": 7.56,
     "evEbitda": null,
     "fcfYield": -1.77,
-    "forwardPe": 15.62,
+    "forwardPe": 15.6,
     "dividendYield": 4.56,
     "revenueGrowth": 0.8,
     "profitMargin": 66.24,

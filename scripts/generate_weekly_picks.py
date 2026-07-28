@@ -463,12 +463,13 @@ def select_core_picks(index_data, details_dir, exclude_tickers=None, sector_bias
         if mc < MIN_MARKET_CAP_CORE:
             continue
 
-        # Skip stocks in ANY headwind sector (bias <= -0.3) — tightened from -0.5
-        # A 4-week conviction hold should never fight macro headwinds
+        # Skip stocks in STRONG headwind sectors (bias <= -0.6)
+        # Mild headwinds (-0.3 to -0.6) are penalized in scoring but not blocked,
+        # allowing the adversarial AI screen to make the final quality judgment
         sector = s.get("sector", "Unknown")
         bias = _find_sector_bias(sector, sector_biases)
-        if bias <= -0.3:
-            print(f"    ⛔ Skipping {s['ticker']} — {sector} has headwind ({bias:+.1f})")
+        if bias <= -0.6:
+            print(f"    ⛔ Skipping {s['ticker']} — {sector} has strong headwind ({bias:+.1f})")
             continue
 
         # ── Profitability & leverage gate (load detail metrics) ──
@@ -578,8 +579,10 @@ def select_core_picks(index_data, details_dir, exclude_tickers=None, sector_bias
                     break
 
     # Load details for thesis generation + earnings calendar check
+    # Send more candidates to qualitative screening (AI will reject the weak ones)
     picks = []
-    for rank, stock in enumerate(selected[:CORE_PICKS], 1):
+    screen_limit = max(CORE_PICKS, min(len(selected), CORE_PICKS * 3))
+    for rank, stock in enumerate(selected[:screen_limit], 1):
         detail = _load_detail(details_dir, stock["ticker"])
         bias = stock.get("_macroBias", 0)
         macro_label = _bias_label(bias)
@@ -813,6 +816,15 @@ def generate_cycle(cycle_num, index_data, details_dir, cycles_dir, backfill=Fals
 
     picks = core
 
+    # If we got zero candidates through, retry with Grade C inclusion
+    # This happens in tough macro environments where A/B universe is too narrow
+    if not picks:
+        print(f"  ⚠️  Zero candidates from Grade A/B pool — widening to Grade C with strict AI screening")
+        core = select_core_picks(index_data, details_dir, exclude_tickers=exclude,
+                                 sector_biases=sector_biases, hold_end_date=friday,
+                                 include_grade_c=True)
+        picks = core
+
     # ── QUALITATIVE SCREENING ──
     picks = qualify_picks(picks, details_dir, sector_biases=sector_biases)
 
@@ -823,6 +835,12 @@ def generate_cycle(cycle_num, index_data, details_dir, cycles_dir, backfill=Fals
         for r in rejected:
             print(f"     ✗ {r['ticker']}: {r.get('qualReasoning', 'No reason given')}")
     picks = [p for p in picks if p.get("qualPassed", True)]
+
+    # Sort survivors by qualitative conviction score (highest first), then trim to CORE_PICKS
+    picks.sort(key=lambda p: -(p.get("qualScore") or 0))
+    if len(picks) > CORE_PICKS:
+        print(f"  ✂️  Trimming from {len(picks)} → {CORE_PICKS} best conviction picks")
+        picks = picks[:CORE_PICKS]
 
     # Re-rank
     for i, p in enumerate(picks, 1):

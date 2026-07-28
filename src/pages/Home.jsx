@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import LiveTicker from '../components/LiveTicker'
 import WeeklyPicks from '../components/WeeklyPicks'
-import WeekArchive from '../components/WeekArchive'
 import AlertsFeed from '../components/AlertsFeed'
 import TopStories from '../components/TopStories'
 import GlobalNewsFeed from '../components/GlobalNewsFeed'
@@ -81,15 +80,15 @@ export default function Home() {
         <div className="container">
           <div className="home__hero-badge">
             <span className="home__hero-badge-dot" />
-            ASX Monthly Conviction Picks
+            ASX Daily Conviction Picks
           </div>
           <h1 className="home__hero-title">
-            Nick's Monthly<br />
+            Nick's Daily<br />
             <span className="home__hero-highlight">ASX Picks.</span>
           </h1>
           <p className="home__hero-subtitle">
-            3 high-conviction value plays every 4 weeks. Held for a full month with stop-loss protection.
-            Track the performance cycle by cycle.
+            High-conviction value plays refreshed daily. Powered by valuation screening, analyst consensus,
+            advisory firm signals, and adversarial AI analysis.
           </p>
         </div>
       </section>
@@ -103,7 +102,7 @@ export default function Home() {
       <section className="home__share">
         <div className="container">
           <div className="home__share-bar">
-            <span className="home__share-label">Share this cycle's picks</span>
+            <span className="home__share-label">Share today's picks</span>
             <div className="home__share-buttons">
               <a
                 href={`https://twitter.com/intent/tweet?text=${encodeURIComponent("Check out the latest ASX picks on Nick Knows Best — free monthly conviction research 📈")}&url=${encodeURIComponent('https://asx-valuations.vercel.app')}`}
@@ -155,10 +154,7 @@ export default function Home() {
         <GlobalNewsFeed variant="full" />
       </div>
 
-      {/* Week Archive — track record */}
-      <div className="container">
-        <WeekArchive />
-      </div>
+
 
       {/* Subscribe CTA */}
       <section className="home__subscribe" id="subscribe">
@@ -169,7 +165,7 @@ export default function Home() {
               <div>
                 <h2 className="home__subscribe-title">Get Picks in Your Inbox</h2>
                 <p className="home__subscribe-text">
-                  New picks drop every 4 weeks. Join to get notified + daily stop-loss alerts.
+                  Fresh picks drop daily. Join to get notified with our best conviction plays.
                 </p>
               </div>
             </div>

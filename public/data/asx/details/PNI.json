@@ -1,16 +1,12 @@
 {
   "ticker": "PNI",
   "name": "PINNACLE FPO [PNI]",
-  "price": 15.71,
+  "price": 15.64,
   "valuationScore": 60.0,
   "marketCap": "3.8B",
   "sector": "Financial Services",
   "domain": "pinnacleinvestment.com",
   "chartData": [
-    {
-      "date": "2025-07-27",
-      "price": 21.22
-    },
     {
       "date": "2025-08-03",
       "price": 21.32
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-26",
       "price": 15.71
+    },
+    {
+      "date": "2026-08-02",
+      "price": 15.64
     }
   ],
   "testsPassed": 3,
@@ -226,23 +226,23 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 28.05,
-      "threshold": 15.85,
-      "label": "28.1x vs 15.8x sector"
+      "value": 27.93,
+      "threshold": 16.04,
+      "label": "27.9x vs 16.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.74,
+      "value": 3.72,
       "threshold": 1.5,
-      "label": "3.74x vs 1.5x"
+      "label": "3.72x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 132.67,
+      "value": 135.37,
       "threshold": 10.0,
-      "label": "132.7x vs 10x"
+      "label": "135.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 17.9,
-      "threshold": 28.05,
-      "label": "Fwd 17.9x vs Trail 28.1x"
+      "value": 17.95,
+      "threshold": 27.93,
+      "label": "Fwd 18.0x vs Trail 27.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.68,
+      "value": 0.67,
       "threshold": 0.5,
-      "label": "P/S 45.1x ÷ Growth 66.6% = 0.68"
+      "label": "P/S 44.9x ÷ Growth 66.6% = 0.67"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 28.05,
-    "sectorPe": 18.65,
-    "pb": 3.74,
-    "ps": 45.13,
-    "evEbitda": 132.67,
+    "pe": 27.93,
+    "sectorPe": 18.88,
+    "pb": 3.72,
+    "ps": 44.92,
+    "evEbitda": 135.37,
     "fcfYield": -0.08,
-    "forwardPe": 17.9,
-    "dividendYield": 3.56,
+    "forwardPe": 17.95,
+    "dividendYield": 3.5,
     "revenueGrowth": 66.6,
     "profitMargin": 150.25,
     "operatingMargin": 25.21,

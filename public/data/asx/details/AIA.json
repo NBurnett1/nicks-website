@@ -1,16 +1,12 @@
 {
   "ticker": "AIA",
   "name": "AUCK AIRPT FPO NZX [AIA]",
-  "price": 7.08,
+  "price": 7.21,
   "valuationScore": 7.6,
-  "marketCap": "12.0B",
+  "marketCap": "12.2B",
   "sector": "Industrials",
   "domain": "aucklandairport.co.nz",
   "chartData": [
-    {
-      "date": "2025-07-27",
-      "price": 6.89
-    },
     {
       "date": "2025-08-03",
       "price": 6.78
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-26",
       "price": 7.08
+    },
+    {
+      "date": "2026-08-02",
+      "price": 7.21
     }
   ],
   "testsPassed": 2,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 35.4,
-      "threshold": 27.6,
-      "label": "35.4x vs 27.6x sector"
+      "value": 36.05,
+      "threshold": 27.84,
+      "label": "36.0x vs 27.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.37,
+      "value": 1.39,
       "threshold": 1.5,
-      "label": "1.37x vs 1.5x"
+      "label": "1.39x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 20.44,
+      "value": 20.75,
       "threshold": 10.0,
-      "label": "20.4x vs 10x"
+      "label": "20.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -4.49,
+      "value": -4.41,
       "threshold": 5.0,
-      "label": "-4.5% vs 5%"
+      "label": "-4.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 45.8,
-      "threshold": 35.4,
-      "label": "Fwd 45.8x vs Trail 35.4x"
+      "value": 46.67,
+      "threshold": 36.05,
+      "label": "Fwd 46.7x vs Trail 36.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 2.0,
+      "value": 2.04,
       "threshold": 0.5,
-      "label": "P/S 12.2x ÷ Growth 6.1% = 2.00"
+      "label": "P/S 12.4x ÷ Growth 6.1% = 2.04"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 35.4,
-    "sectorPe": 32.48,
-    "pb": 1.37,
-    "ps": 12.22,
-    "evEbitda": 20.44,
-    "fcfYield": -4.49,
-    "forwardPe": 45.8,
-    "dividendYield": 1.64,
+    "pe": 36.05,
+    "sectorPe": 32.75,
+    "pb": 1.39,
+    "ps": 12.44,
+    "evEbitda": 20.75,
+    "fcfYield": -4.41,
+    "forwardPe": 46.67,
+    "dividendYield": 1.61,
     "revenueGrowth": 6.1,
     "profitMargin": 41.78,
     "operatingMargin": 48.54,

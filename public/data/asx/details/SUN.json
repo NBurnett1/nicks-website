@@ -1,16 +1,12 @@
 {
   "ticker": "SUN",
   "name": "SUNCORP FPO [SUN]",
-  "price": 19.14,
-  "valuationScore": -1.6,
-  "marketCap": "20.3B",
+  "price": 19.45,
+  "valuationScore": -1.7,
+  "marketCap": "20.6B",
   "sector": "Financials",
   "domain": "suncorpgroup.com.au",
   "chartData": [
-    {
-      "date": "2025-07-27",
-      "price": 19.63
-    },
     {
       "date": "2025-08-03",
       "price": 19.96
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-26",
       "price": 19.14
+    },
+    {
+      "date": "2026-08-02",
+      "price": 19.45
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 23.06,
-      "threshold": 18.38,
-      "label": "23.1x vs 18.4x sector"
+      "value": 23.43,
+      "threshold": 18.67,
+      "label": "23.4x vs 18.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.04,
+      "value": 2.08,
       "threshold": 1.5,
-      "label": "2.04x vs 1.5x"
+      "label": "2.08x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 14.2,
+      "value": 14.31,
       "threshold": 10.0,
-      "label": "14.2x vs 10x"
+      "label": "14.3x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 11.47,
+      "value": 11.29,
       "threshold": 5.0,
-      "label": "11.5% vs 5%"
+      "label": "11.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.33,
-      "threshold": 23.06,
-      "label": "Fwd 16.3x vs Trail 23.1x"
+      "value": 16.59,
+      "threshold": 23.43,
+      "label": "Fwd 16.6x vs Trail 23.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.79,
+      "value": 0.8,
       "threshold": 0.5,
-      "label": "P/S 1.3x ÷ Growth 1.7% = 0.79"
+      "label": "P/S 1.4x ÷ Growth 1.7% = 0.80"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 23.06,
-    "sectorPe": 21.63,
-    "pb": 2.04,
-    "ps": 1.35,
-    "evEbitda": 14.2,
-    "fcfYield": 11.47,
-    "forwardPe": 16.33,
-    "dividendYield": 1.78,
+    "pe": 23.43,
+    "sectorPe": 21.96,
+    "pb": 2.08,
+    "ps": 1.37,
+    "evEbitda": 14.31,
+    "fcfYield": 11.29,
+    "forwardPe": 16.59,
+    "dividendYield": 1.76,
     "revenueGrowth": 1.7,
     "profitMargin": 6.54,
     "operatingMargin": 6.42,

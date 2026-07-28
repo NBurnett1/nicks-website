@@ -1,16 +1,12 @@
 {
   "ticker": "SYR",
   "name": "SYRAH RES FPO [SYR]",
-  "price": 0.11,
-  "valuationScore": 23.8,
-  "marketCap": "255M",
+  "price": 0.1,
+  "valuationScore": 26.0,
+  "marketCap": "244M",
   "sector": "Basic Materials",
   "domain": "syrahresources.com.au",
   "chartData": [
-    {
-      "date": "2025-07-27",
-      "price": 0.38
-    },
     {
       "date": "2025-08-03",
       "price": 0.27
@@ -218,10 +214,14 @@
     {
       "date": "2026-07-26",
       "price": 0.11
+    },
+    {
+      "date": "2026-08-02",
+      "price": 0.1
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -233,9 +233,9 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.31,
+      "value": 0.29,
       "threshold": 1.5,
-      "label": "0.31x vs 1.5x"
+      "label": "0.29x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,14 +247,14 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -14.59,
+      "value": -15.29,
       "threshold": 5.0,
-      "label": "-14.6% vs 5%"
+      "label": "-15.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": -3.42,
+      "value": -3.26,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": true,
+      "value": 0.05,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "P/S 7.3x ÷ Growth 151.5% = 0.05"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 45.53,
-    "pb": 0.31,
-    "ps": null,
+    "sectorPe": 46.38,
+    "pb": 0.29,
+    "ps": 7.3,
     "evEbitda": -5.39,
-    "fcfYield": -14.59,
-    "forwardPe": -3.42,
+    "fcfYield": -15.29,
+    "forwardPe": -3.26,
     "dividendYield": null,
     "revenueGrowth": 151.5,
     "profitMargin": 0.0,

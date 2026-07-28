@@ -1,16 +1,12 @@
 {
   "ticker": "PME",
   "name": "PROMEDICUS FPO [PME]",
-  "price": 159.82,
+  "price": 159.45,
   "valuationScore": 60.0,
   "marketCap": "16.7B",
   "sector": "Healthcare",
   "domain": "promed.com.au",
   "chartData": [
-    {
-      "date": "2025-07-27",
-      "price": 319.64
-    },
     {
       "date": "2025-08-03",
       "price": 312.81
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-26",
       "price": 159.82
+    },
+    {
+      "date": "2026-08-02",
+      "price": 159.37
     }
   ],
   "testsPassed": 2,
@@ -226,23 +226,23 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 71.35,
-      "threshold": 17.97,
-      "label": "71.3x vs 18.0x sector"
+      "value": 71.18,
+      "threshold": 18.99,
+      "label": "71.2x vs 19.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 42.94,
+      "value": 42.84,
       "threshold": 1.5,
-      "label": "42.94x vs 1.5x"
+      "label": "42.84x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 92.11,
+      "value": 93.52,
       "threshold": 10.0,
-      "label": "92.1x vs 10x"
+      "label": "93.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 88.85,
-      "threshold": 71.35,
-      "label": "Fwd 88.8x vs Trail 71.3x"
+      "value": 88.64,
+      "threshold": 71.18,
+      "label": "Fwd 88.6x vs Trail 71.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": false,
       "value": 2.44,
       "threshold": 0.5,
-      "label": "P/S 69.4x ÷ Growth 28.4% = 2.44"
+      "label": "P/S 69.2x ÷ Growth 28.4% = 2.44"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 71.35,
-    "sectorPe": 21.14,
-    "pb": 42.94,
-    "ps": 69.4,
-    "evEbitda": 92.11,
+    "pe": 71.18,
+    "sectorPe": 22.34,
+    "pb": 42.84,
+    "ps": 69.24,
+    "evEbitda": 93.52,
     "fcfYield": 0.62,
-    "forwardPe": 88.85,
-    "dividendYield": 0.4,
+    "forwardPe": 88.64,
+    "dividendYield": 0.39,
     "revenueGrowth": 28.4,
     "profitMargin": 97.56,
     "operatingMargin": 72.66,

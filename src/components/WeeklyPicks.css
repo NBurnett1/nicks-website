@@ -727,3 +727,33 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* ── Advisory & Analyst Badges ── */
+.weekly-picks__card-advisory,
+.weekly-picks__card-analyst {
+  font-size: 0.6rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+}
+
+.weekly-picks__card-advisory {
+  background: rgba(251, 191, 36, 0.1);
+  color: var(--amber-400);
+}
+
+.weekly-picks__card-analyst {
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--blue-400);
+}
+
+.weekly-picks__card-footer {
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.weekly-picks__days-remaining {
+  color: var(--amber-400);
+  font-weight: 600;
+}

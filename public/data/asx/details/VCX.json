@@ -1,16 +1,12 @@
 {
   "ticker": "VCX",
   "name": "VICINITY STAPLED [VCX]",
-  "price": 2.65,
-  "valuationScore": -0.2,
-  "marketCap": "12.3B",
+  "price": 2.62,
+  "valuationScore": -0.5,
+  "marketCap": "12.1B",
   "sector": "Real Estate",
   "domain": "vicinity.com.au",
   "chartData": [
-    {
-      "date": "2025-07-27",
-      "price": 2.33
-    },
     {
       "date": "2025-08-03",
       "price": 2.33
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-26",
       "price": 2.65
+    },
+    {
+      "date": "2026-08-02",
+      "price": 2.61
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 9.14,
-      "threshold": 10.09,
-      "label": "9.1x vs 10.1x sector"
+      "value": 9.02,
+      "threshold": 10.23,
+      "label": "9.0x vs 10.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.04,
+      "value": 1.02,
       "threshold": 1.5,
-      "label": "1.04x vs 1.5x"
+      "label": "1.02x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 19.89,
+      "value": 19.73,
       "threshold": 10.0,
-      "label": "19.9x vs 10x"
+      "label": "19.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.94,
+      "value": 5.0,
       "threshold": 5.0,
-      "label": "4.9% vs 5%"
+      "label": "5.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 16.82,
-      "threshold": 9.14,
-      "label": "Fwd 16.8x vs Trail 9.1x"
+      "value": 16.6,
+      "threshold": 9.02,
+      "label": "Fwd 16.6x vs Trail 9.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 7.38,
+      "value": 7.29,
       "threshold": 0.5,
-      "label": "P/S 8.9x ÷ Growth 1.2% = 7.38"
+      "label": "P/S 8.7x ÷ Growth 1.2% = 7.29"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 9.14,
-    "sectorPe": 11.87,
-    "pb": 1.04,
-    "ps": 8.86,
-    "evEbitda": 19.89,
-    "fcfYield": 4.94,
-    "forwardPe": 16.82,
-    "dividendYield": 4.68,
+    "pe": 9.02,
+    "sectorPe": 12.03,
+    "pb": 1.02,
+    "ps": 8.74,
+    "evEbitda": 19.73,
+    "fcfYield": 5.0,
+    "forwardPe": 16.6,
+    "dividendYield": 4.73,
     "revenueGrowth": 1.2,
     "profitMargin": 94.93,
     "operatingMargin": 62.76,

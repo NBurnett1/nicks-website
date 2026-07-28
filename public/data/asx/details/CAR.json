@@ -1,16 +1,12 @@
 {
   "ticker": "CAR",
   "name": "CAR GROUP FPO [CAR]",
-  "price": 23.92,
-  "valuationScore": -2.0,
-  "marketCap": "9.1B",
+  "price": 25.18,
+  "valuationScore": -2.1,
+  "marketCap": "9.5B",
   "sector": "Technology",
   "domain": "cargroup.com",
   "chartData": [
-    {
-      "date": "2025-07-27",
-      "price": 36.24
-    },
     {
       "date": "2025-08-03",
       "price": 36.51
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-26",
       "price": 23.92
+    },
+    {
+      "date": "2026-08-02",
+      "price": 25.18
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 30.67,
-      "threshold": 29.81,
-      "label": "30.7x vs 29.8x sector"
+      "value": 32.28,
+      "threshold": 31.02,
+      "label": "32.3x vs 31.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.21,
+      "value": 3.38,
       "threshold": 1.5,
-      "label": "3.21x vs 1.5x"
+      "label": "3.38x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 18.12,
+      "value": 18.83,
       "threshold": 10.0,
-      "label": "18.1x vs 10x"
+      "label": "18.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.44,
+      "value": 3.27,
       "threshold": 5.0,
-      "label": "3.4% vs 5%"
+      "label": "3.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 20.13,
-      "threshold": 30.67,
-      "label": "Fwd 20.1x vs Trail 30.7x"
+      "value": 21.19,
+      "threshold": 32.28,
+      "label": "Fwd 21.2x vs Trail 32.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.92,
+      "value": 0.97,
       "threshold": 0.5,
-      "label": "P/S 7.4x ÷ Growth 8.0% = 0.92"
+      "label": "P/S 7.8x ÷ Growth 8.0% = 0.97"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 30.67,
-    "sectorPe": 35.07,
-    "pb": 3.21,
-    "ps": 7.37,
-    "evEbitda": 18.12,
-    "fcfYield": 3.44,
-    "forwardPe": 20.13,
-    "dividendYield": 3.55,
+    "pe": 32.28,
+    "sectorPe": 36.5,
+    "pb": 3.38,
+    "ps": 7.75,
+    "evEbitda": 18.83,
+    "fcfYield": 3.27,
+    "forwardPe": 21.19,
+    "dividendYield": 3.4,
     "revenueGrowth": 8.0,
     "profitMargin": 24.01,
     "operatingMargin": 37.3,

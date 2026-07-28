@@ -1,16 +1,12 @@
 {
   "ticker": "WES",
   "name": "WESFARMER FPO [WES]",
-  "price": 87.25,
-  "valuationScore": 19.4,
-  "marketCap": "99.1B",
+  "price": 88.64,
+  "valuationScore": 19.1,
+  "marketCap": "100.6B",
   "sector": "Consumer Discretionary",
   "domain": "wesfarmers.com.au",
   "chartData": [
-    {
-      "date": "2025-07-27",
-      "price": 80.42
-    },
     {
       "date": "2025-08-03",
       "price": 82.9
@@ -218,6 +214,10 @@
     {
       "date": "2026-07-26",
       "price": 87.25
+    },
+    {
+      "date": "2026-08-02",
+      "price": 88.63
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 32.31,
-      "threshold": 14.48,
-      "label": "32.3x vs 14.5x sector"
+      "value": 32.83,
+      "threshold": 14.9,
+      "label": "32.8x vs 14.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 12.61,
+      "value": 12.81,
       "threshold": 1.5,
-      "label": "12.61x vs 1.5x"
+      "label": "12.81x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 23.81,
+      "value": 23.85,
       "threshold": 10.0,
       "label": "23.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.32,
+      "value": 3.27,
       "threshold": 5.0,
       "label": "3.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 31.46,
-      "threshold": 32.31,
-      "label": "Fwd 31.5x vs Trail 32.3x"
+      "value": 31.96,
+      "threshold": 32.83,
+      "label": "Fwd 32.0x vs Trail 32.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.69,
+      "value": 0.7,
       "threshold": 0.5,
-      "label": "P/S 2.1x ÷ Growth 3.1% = 0.69"
+      "label": "P/S 2.2x ÷ Growth 3.1% = 0.70"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 32.31,
-    "sectorPe": 17.04,
-    "pb": 12.61,
-    "ps": 2.13,
-    "evEbitda": 23.81,
-    "fcfYield": 3.32,
-    "forwardPe": 31.46,
+    "pe": 32.83,
+    "sectorPe": 17.53,
+    "pb": 12.81,
+    "ps": 2.17,
+    "evEbitda": 23.85,
+    "fcfYield": 3.27,
+    "forwardPe": 31.96,
     "dividendYield": 2.44,
     "revenueGrowth": 3.1,
     "profitMargin": 6.6,

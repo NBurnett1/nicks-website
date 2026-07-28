@@ -12,31 +12,15 @@ const GRADE_COLORS = {
 }
 
 export default function WeeklyPicks({ exchange = 'ASX' }) {
-  const [weekData, setWeekData] = useState(null)
-  const [nextCycleDate, setNextCycleDate] = useState(null)
+  const [picksData, setPicksData] = useState(null)
   const [loading, setLoading] = useState(true)
   const navigate = useNavigate()
 
   useEffect(() => {
-    // Load cycle index to find current/latest cycle
-    fetch('/data/cycles/index.json')
+    fetch('/data/picks.json')
       .then(res => res.ok ? res.json() : null)
-      .then(index => {
-        if (!index?.cycles?.length) {
-          // No cycles — show awaiting state
-          setNextCycleDate(index?.nextCycleDate || '2026-06-01')
-          setLoading(false)
-          return
-        }
-        // Find the active or latest cycle
-        const active = index.cycles.find(c => c.status === 'active')
-        const latest = index.cycles[index.cycles.length - 1]
-        const target = active || latest
-        return fetch(`/data/cycles/cycle${target.cycle}.json`)
-      })
-      .then(res => res?.ok ? res.json() : null)
       .then(data => {
-        if (data) setWeekData(data)
+        if (data?.picks?.length) setPicksData(data)
         setLoading(false)
       })
       .catch(() => setLoading(false))
@@ -57,43 +41,30 @@ export default function WeeklyPicks({ exchange = 'ASX' }) {
     )
   }
 
-  // ── Awaiting New Picks State ──
-  if (!weekData) {
-    const launchDate = nextCycleDate ? new Date(nextCycleDate) : new Date('2026-06-01')
-    const now = new Date()
-    const daysUntil = Math.max(0, Math.ceil((launchDate - now) / (1000 * 60 * 60 * 24)))
-    const dateFormatted = launchDate.toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' })
-
+  // ── No Picks State ──
+  if (!picksData || !picksData.picks?.length) {
     return (
       <div className="weekly-picks" id="weekly-picks">
         <div className="weekly-picks__awaiting">
           <div className="weekly-picks__awaiting-glow" />
-          <div className="weekly-picks__awaiting-icon">⏳</div>
-          <h2 className="weekly-picks__awaiting-title">Awaiting New Picks</h2>
+          <div className="weekly-picks__awaiting-icon">📊</div>
+          <h2 className="weekly-picks__awaiting-title">Picks Refreshing</h2>
           <p className="weekly-picks__awaiting-subtitle">
-            Our selection engine has been upgraded with tighter filters, adversarial AI screening,
-            and quality-first ranking. The next cycle of high-conviction picks drops on:
+            Our AI-powered selection engine is analyzing the ASX, sourcing analyst recommendations,
+            and running adversarial screening. Fresh picks are generated daily.
           </p>
-          <div className="weekly-picks__awaiting-date">
-            <span className="weekly-picks__awaiting-date-day">{dateFormatted}</span>
-            {daysUntil > 0 && (
-              <span className="weekly-picks__awaiting-date-countdown">
-                {daysUntil} day{daysUntil !== 1 ? 's' : ''} to go
-              </span>
-            )}
-          </div>
           <div className="weekly-picks__awaiting-features">
             <div className="weekly-picks__awaiting-feature">
-              <span className="weekly-picks__awaiting-feature-icon">🛡️</span>
-              <span>Macro-aligned sector filtering</span>
+              <span className="weekly-picks__awaiting-feature-icon">🏦</span>
+              <span>Analyst consensus signals</span>
             </div>
             <div className="weekly-picks__awaiting-feature">
-              <span className="weekly-picks__awaiting-feature-icon">📊</span>
-              <span>Relative strength vs ASX200</span>
+              <span className="weekly-picks__awaiting-feature-icon">📰</span>
+              <span>Advisory firm recommendations</span>
             </div>
             <div className="weekly-picks__awaiting-feature">
               <span className="weekly-picks__awaiting-feature-icon">🧠</span>
-              <span>Adversarial AI conviction screening</span>
+              <span>AI conviction screening</span>
             </div>
           </div>
         </div>
@@ -101,14 +72,9 @@ export default function WeeklyPicks({ exchange = 'ASX' }) {
     )
   }
 
-  const corePicks = weekData.picks.filter(p => p.type === 'core')
-  const heroPick = corePicks[0]
-  const remainingCore = corePicks.slice(1)
-  const isActive = weekData.status === 'active' || weekData.status === 'upcoming'
-
-  // Calculate days remaining in hold period
-  const endDate = weekData.endDate ? new Date(weekData.endDate) : null
-  const daysRemaining = endDate ? Math.max(0, Math.ceil((endDate - new Date()) / (1000 * 60 * 60 * 24))) : null
+  const picks = picksData.picks
+  const heroPick = picks[0]
+  const remainingPicks = picks.slice(1)
 
   return (
     <div className="weekly-picks" id="weekly-picks">
@@ -116,40 +82,29 @@ export default function WeeklyPicks({ exchange = 'ASX' }) {
       <div className="weekly-picks__header">
         <div className="weekly-picks__title-group">
           <div className="weekly-picks__week-badge">
-            <span className="weekly-picks__week-num">Cycle {weekData.cycle}</span>
-            <span className={`weekly-picks__status weekly-picks__status--${weekData.status}`}>
-              {weekData.status === 'active' ? '● Live' : weekData.status === 'upcoming' ? '◉ Monday' : '✓ Complete'}
+            <span className="weekly-picks__week-num">Today's Picks</span>
+            <span className="weekly-picks__status weekly-picks__status--active">
+              ● Live
             </span>
           </div>
           <div>
-            <h2 className="weekly-picks__title">Current Picks</h2>
+            <h2 className="weekly-picks__title">Daily Conviction Picks</h2>
             <p className="weekly-picks__subtitle">
-              {weekData.dateRange} · {weekData.picks.length} stocks · 4-week hold
-              {daysRemaining !== null && isActive && (
-                <span className="weekly-picks__days-remaining"> · {daysRemaining}d remaining</span>
-              )}
+              {picksData.date} · {picks.length} stocks · Refreshed daily
             </p>
           </div>
         </div>
-        {weekData.summary && (
-          <div className="weekly-picks__summary-badge">
-            <span className={`weekly-picks__summary-pnl ${weekData.summary.avgPnlPct >= 0 ? 'weekly-picks__summary-pnl--positive' : 'weekly-picks__summary-pnl--negative'}`}>
-              {weekData.summary.avgPnlPct >= 0 ? '↑' : '↓'} {weekData.summary.avgPnlPct >= 0 ? '+' : ''}{weekData.summary.avgPnlPct.toFixed(1)}%
-            </span>
-            <span className="weekly-picks__summary-label">avg return</span>
-          </div>
-        )}
       </div>
 
       {/* Macro Context Banner */}
-      {weekData.macro && weekData.macro.headline && (
+      {picksData.macro && picksData.macro.headline && (
         <div className="weekly-picks__macro">
           <div className="weekly-picks__macro-icon">🌍</div>
           <div className="weekly-picks__macro-content">
-            <div className="weekly-picks__macro-headline">{weekData.macro.headline}</div>
-            {weekData.macro.themes && weekData.macro.themes.length > 0 && (
+            <div className="weekly-picks__macro-headline">{picksData.macro.headline}</div>
+            {picksData.macro.themes && picksData.macro.themes.length > 0 && (
               <div className="weekly-picks__macro-themes">
-                {weekData.macro.themes.map((theme, i) => (
+                {picksData.macro.themes.map((theme, i) => (
                   <span key={i} className="weekly-picks__macro-theme">• {theme}</span>
                 ))}
               </div>
@@ -192,30 +147,38 @@ export default function WeeklyPicks({ exchange = 'ASX' }) {
           <div className="weekly-picks__hero-thesis">{heroPick.thesis}</div>
           <div className="weekly-picks__hero-footer">
             <div className="weekly-picks__hero-price">
-              <span className="weekly-picks__label">Entry</span>
-              <span className="weekly-picks__value">A${heroPick.entryPrice.toFixed(2)}</span>
-            </div>
-            <div className="weekly-picks__hero-price">
-              <span className="weekly-picks__label">Current</span>
-              <span className="weekly-picks__value">A${heroPick.currentPrice.toFixed(2)}</span>
-            </div>
-            <div className="weekly-picks__hero-price">
-              <span className="weekly-picks__label">P&L</span>
-              <span className={`weekly-picks__value ${heroPick.pnlPct > 0 ? 'weekly-picks__value--positive' : heroPick.pnlPct < 0 ? 'weekly-picks__value--negative' : ''}`}>
-                {heroPick.pnlPct !== 0 ? `${heroPick.pnlPct > 0 ? '+' : ''}${heroPick.pnlPct.toFixed(1)}%` : '—'}
-              </span>
+              <span className="weekly-picks__label">Price</span>
+              <span className="weekly-picks__value">A${heroPick.price?.toFixed(2)}</span>
             </div>
             <div className="weekly-picks__hero-mcap">
               <span className="weekly-picks__label">Market Cap</span>
               <span className="weekly-picks__value">{heroPick.marketCap}</span>
             </div>
+            {heroPick.qualScore && (
+              <div className="weekly-picks__hero-price">
+                <span className="weekly-picks__label">AI Score</span>
+                <span className="weekly-picks__value">{heroPick.qualScore}/10</span>
+              </div>
+            )}
+            {heroPick.advisorySource && (
+              <div className="weekly-picks__hero-price">
+                <span className="weekly-picks__label">📰 Signal</span>
+                <span className="weekly-picks__value" style={{fontSize: '0.7rem'}}>{heroPick.advisorySource}</span>
+              </div>
+            )}
+            {heroPick.analystConsensus && (
+              <div className="weekly-picks__hero-price">
+                <span className="weekly-picks__label">🏦 Analyst</span>
+                <span className="weekly-picks__value" style={{fontSize: '0.7rem'}}>{heroPick.analystConsensus}</span>
+              </div>
+            )}
           </div>
         </div>
       )}
 
-      {/* Core Picks Grid — #2, #3, #4 */}
+      {/* Remaining Picks Grid */}
       <div className="weekly-picks__grid">
-        {remainingCore.map((pick, i) => (
+        {remainingPicks.map((pick, i) => (
           <div
             key={pick.ticker}
             className="weekly-picks__card"
@@ -243,13 +206,20 @@ export default function WeeklyPicks({ exchange = 'ASX' }) {
             </div>
             <div className="weekly-picks__card-thesis">{pick.thesis}</div>
             <div className="weekly-picks__card-footer">
-              <span className="weekly-picks__card-price">A${pick.entryPrice.toFixed(2)}</span>
-              <span className={`weekly-picks__card-pnl ${pick.pnlPct > 0 ? 'weekly-picks__card-pnl--positive' : pick.pnlPct < 0 ? 'weekly-picks__card-pnl--negative' : ''}`}>
-                {pick.pnlPct !== 0 ? `${pick.pnlPct > 0 ? '+' : ''}${pick.pnlPct.toFixed(1)}%` : '—'}
-              </span>
-              {pick.stopTriggered && (
-                <span className="weekly-picks__stop-badge" title={pick.stopReason}>
-                  🛑 {pick.stopTriggered === 'STOP_LOSS' ? 'Stopped' : 'Trailed'}
+              <span className="weekly-picks__card-price">A${pick.price?.toFixed(2)}</span>
+              {pick.qualScore && (
+                <span className="weekly-picks__card-pnl weekly-picks__card-pnl--positive">
+                  AI: {pick.qualScore}/10
+                </span>
+              )}
+              {pick.advisorySource && (
+                <span className="weekly-picks__card-advisory" title={pick.advisoryHeadline}>
+                  📰 {pick.advisorySource}
+                </span>
+              )}
+              {pick.analystConsensus && (
+                <span className="weekly-picks__card-analyst">
+                  🏦 {pick.analystConsensus}
                 </span>
               )}
             </div>
