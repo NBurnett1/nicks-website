@@ -1,9 +1,9 @@
 {
   "ticker": "PNI",
   "name": "PINNACLE FPO [PNI]",
-  "price": 15.73,
+  "price": 15.52,
   "valuationScore": 60.0,
-  "marketCap": "3.8B",
+  "marketCap": "3.7B",
   "sector": "Financial Services",
   "domain": "pinnacleinvestment.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-02",
-      "price": 15.73
+      "price": 15.52
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 28.09,
-      "threshold": 16.11,
-      "label": "28.1x vs 16.1x sector"
+      "value": 27.71,
+      "threshold": 16.28,
+      "label": "27.7x vs 16.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.75,
+      "value": 3.7,
       "threshold": 1.5,
-      "label": "3.75x vs 1.5x"
+      "label": "3.70x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 18.06,
-      "threshold": 28.09,
-      "label": "Fwd 18.1x vs Trail 28.1x"
+      "value": 17.82,
+      "threshold": 27.71,
+      "label": "Fwd 17.8x vs Trail 27.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.68,
+      "value": 0.67,
       "threshold": 0.5,
-      "label": "P/S 45.2x ÷ Growth 66.6% = 0.68"
+      "label": "P/S 44.6x ÷ Growth 66.6% = 0.67"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 28.09,
-    "sectorPe": 18.95,
-    "pb": 3.75,
-    "ps": 45.18,
+    "pe": 27.71,
+    "sectorPe": 19.15,
+    "pb": 3.7,
+    "ps": 44.58,
     "evEbitda": 132.86,
     "fcfYield": -0.08,
-    "forwardPe": 18.06,
+    "forwardPe": 17.82,
     "dividendYield": 3.56,
     "revenueGrowth": 66.6,
     "profitMargin": 150.25,

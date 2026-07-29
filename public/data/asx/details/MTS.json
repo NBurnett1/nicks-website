@@ -1,8 +1,8 @@
 {
   "ticker": "MTS",
   "name": "METCASHLTD FPO [MTS]",
-  "price": 3.05,
-  "valuationScore": -10.0,
+  "price": 3.11,
+  "valuationScore": -10.1,
   "marketCap": "3.4B",
   "sector": "Consumer Defensive",
   "domain": "metcash.com",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-02",
-      "price": 3.05
+      "price": 3.11
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 12.2,
-      "threshold": 17.67,
-      "label": "12.2x vs 17.7x sector"
+      "value": 12.44,
+      "threshold": 18.09,
+      "label": "12.4x vs 18.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.97,
+      "value": 2.0,
       "threshold": 1.5,
-      "label": "1.97x vs 1.5x"
+      "label": "2.00x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 10.14,
+      "value": 9.95,
       "threshold": 5.0,
-      "label": "10.1% vs 5%"
+      "label": "9.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 11.79,
-      "threshold": 12.2,
-      "label": "Fwd 11.8x vs Trail 12.2x"
+      "value": 12.02,
+      "threshold": 12.44,
+      "label": "Fwd 12.0x vs Trail 12.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 12.2,
-    "sectorPe": 20.79,
-    "pb": 1.97,
+    "pe": 12.44,
+    "sectorPe": 21.28,
+    "pb": 2.0,
     "ps": null,
     "evEbitda": 9.56,
-    "fcfYield": 10.14,
-    "forwardPe": 11.79,
+    "fcfYield": 9.95,
+    "forwardPe": 12.02,
     "dividendYield": 6.23,
     "revenueGrowth": 0.3,
     "profitMargin": 1.61,

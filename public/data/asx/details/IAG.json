@@ -1,9 +1,9 @@
 {
   "ticker": "IAG",
   "name": "INSUR.AUST FPO [IAG]",
-  "price": 8.61,
-  "valuationScore": 3.6,
-  "marketCap": "20.1B",
+  "price": 8.72,
+  "valuationScore": 3.7,
+  "marketCap": "20.4B",
   "sector": "Financials",
   "domain": "iag.com.au",
   "chartData": [
@@ -217,25 +217,25 @@
     },
     {
       "date": "2026-08-02",
-      "price": 8.61
+      "price": 8.72
     }
   ],
-  "testsPassed": 4,
+  "testsPassed": 3,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": true,
-      "value": 18.72,
-      "threshold": 18.76,
-      "label": "18.7x vs 18.8x sector"
+      "passed": false,
+      "value": 18.96,
+      "threshold": 18.78,
+      "label": "19.0x vs 18.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.79,
+      "value": 2.82,
       "threshold": 1.5,
-      "label": "2.79x vs 1.5x"
+      "label": "2.82x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -1.97,
+      "value": -1.95,
       "threshold": 5.0,
-      "label": "-2.0% vs 5%"
+      "label": "-1.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 17.89,
-      "threshold": 18.72,
-      "label": "Fwd 17.9x vs Trail 18.7x"
+      "value": 18.12,
+      "threshold": 18.96,
+      "label": "Fwd 18.1x vs Trail 19.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 18.72,
-    "sectorPe": 22.07,
-    "pb": 2.79,
+    "pe": 18.96,
+    "sectorPe": 22.09,
+    "pb": 2.82,
     "ps": null,
     "evEbitda": 11.4,
-    "fcfYield": -1.97,
-    "forwardPe": 17.89,
+    "fcfYield": -1.95,
+    "forwardPe": 18.12,
     "dividendYield": 3.6,
     "revenueGrowth": 10.3,
     "profitMargin": 5.95,
