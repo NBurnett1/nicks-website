@@ -220,8 +220,8 @@
       "price": 40.55
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -240,9 +240,9 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 19.59,
+      "value": 19.87,
       "threshold": 10.0,
-      "label": "19.6x vs 10x"
+      "label": "19.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": true,
+      "value": 0.21,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "P/S 0.7x ÷ Growth 3.4% = 0.21"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -284,8 +284,8 @@
     "pe": 82.76,
     "sectorPe": 32.08,
     "pb": 10.69,
-    "ps": null,
-    "evEbitda": 19.59,
+    "ps": 0.7,
+    "evEbitda": 19.87,
     "fcfYield": 4.58,
     "forwardPe": 28.46,
     "dividendYield": 2.22,

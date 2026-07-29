@@ -2,7 +2,7 @@
   "ticker": "RIO",
   "name": "RIO TINTO FPO [RIO]",
   "price": 165.39,
-  "valuationScore": 2.1,
+  "valuationScore": 2.2,
   "marketCap": "269.0B",
   "sector": "Materials",
   "domain": "riotinto.com",
@@ -220,13 +220,13 @@
       "price": 165.39
     }
   ],
-  "testsPassed": 3,
+  "testsPassed": 4,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 19.03,
+      "value": 18.97,
       "threshold": 17.76,
       "label": "19.0x vs 17.8x sector"
     },
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 13.17,
-      "threshold": 19.03,
-      "label": "Fwd 13.2x vs Trail 19.0x"
+      "value": 13.12,
+      "threshold": 18.97,
+      "label": "Fwd 13.1x vs Trail 19.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": true,
+      "value": 0.32,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "P/S 4.7x ÷ Growth 14.6% = 0.32"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 19.03,
+    "pe": 18.97,
     "sectorPe": 20.9,
     "pb": 3.02,
-    "ps": null,
+    "ps": 4.67,
     "evEbitda": 13.72,
     "fcfYield": 1.3,
-    "forwardPe": 13.17,
+    "forwardPe": 13.12,
     "dividendYield": 3.69,
     "revenueGrowth": 14.6,
     "profitMargin": 17.29,

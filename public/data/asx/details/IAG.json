@@ -2,7 +2,7 @@
   "ticker": "IAG",
   "name": "INSUR.AUST FPO [IAG]",
   "price": 8.72,
-  "valuationScore": 3.7,
+  "valuationScore": 3.8,
   "marketCap": "20.4B",
   "sector": "Financials",
   "domain": "iag.com.au",
@@ -220,7 +220,7 @@
       "price": 8.72
     }
   ],
-  "testsPassed": 3,
+  "testsPassed": 4,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
@@ -240,9 +240,9 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 11.4,
+      "value": 11.54,
       "threshold": 10.0,
-      "label": "11.4x vs 10x"
+      "label": "11.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": true,
+      "value": 0.11,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "P/S 1.1x ÷ Growth 10.3% = 0.11"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -284,11 +284,11 @@
     "pe": 18.96,
     "sectorPe": 22.09,
     "pb": 2.82,
-    "ps": null,
-    "evEbitda": 11.4,
+    "ps": 1.12,
+    "evEbitda": 11.54,
     "fcfYield": -1.95,
     "forwardPe": 18.12,
-    "dividendYield": 3.6,
+    "dividendYield": 3.56,
     "revenueGrowth": 10.3,
     "profitMargin": 5.95,
     "operatingMargin": 9.44,
