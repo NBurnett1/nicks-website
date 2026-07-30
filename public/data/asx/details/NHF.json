@@ -1,8 +1,8 @@
 {
   "ticker": "NHF",
   "name": "NIBHOLDING FPO [NHF]",
-  "price": 7.66,
-  "valuationScore": 3.1,
+  "price": 7.53,
+  "valuationScore": 3.2,
   "marketCap": "3.7B",
   "sector": "Financial Services",
   "domain": "nib.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-02",
-      "price": 7.66
+      "price": 7.53
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 19.15,
-      "threshold": 16.28,
-      "label": "19.1x vs 16.3x sector"
+      "value": 18.82,
+      "threshold": 16.0,
+      "label": "18.8x vs 16.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.35,
+      "value": 3.29,
       "threshold": 1.5,
-      "label": "3.35x vs 1.5x"
+      "label": "3.29x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 0.93,
+      "value": 0.95,
       "threshold": 5.0,
       "label": "0.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.31,
-      "threshold": 19.15,
-      "label": "Fwd 16.3x vs Trail 19.1x"
+      "value": 16.03,
+      "threshold": 18.82,
+      "label": "Fwd 16.0x vs Trail 18.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.18,
+      "value": 0.17,
       "threshold": 0.5,
-      "label": "P/S 1.0x ÷ Growth 5.7% = 0.18"
+      "label": "P/S 1.0x ÷ Growth 5.7% = 0.17"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 19.15,
-    "sectorPe": 19.15,
-    "pb": 3.35,
-    "ps": 1.0,
+    "pe": 18.82,
+    "sectorPe": 18.82,
+    "pb": 3.29,
+    "ps": 0.99,
     "evEbitda": 9.0,
-    "fcfYield": 0.93,
-    "forwardPe": 16.31,
-    "dividendYield": 3.39,
+    "fcfYield": 0.95,
+    "forwardPe": 16.03,
+    "dividendYield": null,
     "revenueGrowth": 5.7,
     "profitMargin": 5.36,
     "operatingMargin": 6.56,

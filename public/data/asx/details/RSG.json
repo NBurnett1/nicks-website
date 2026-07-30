@@ -1,9 +1,9 @@
 {
   "ticker": "RSG",
   "name": "RESOLUTE FPO [RSG]",
-  "price": 0.97,
-  "valuationScore": -20.8,
-  "marketCap": "2.1B",
+  "price": 0.9,
+  "valuationScore": -22.1,
+  "marketCap": "1.9B",
   "sector": "Basic Materials",
   "domain": "rml.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-02",
-      "price": 0.97
+      "price": 0.9
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 10.78,
-      "threshold": 39.08,
-      "label": "10.8x vs 39.1x sector"
+      "value": 10.0,
+      "threshold": 38.75,
+      "label": "10.0x vs 38.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.98,
+      "value": 1.84,
       "threshold": 1.5,
-      "label": "1.98x vs 1.5x"
+      "label": "1.84x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 8.73,
+      "value": 9.4,
       "threshold": 5.0,
-      "label": "8.7% vs 5%"
+      "label": "9.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 4.77,
-      "threshold": 10.78,
-      "label": "Fwd 4.8x vs Trail 10.8x"
+      "value": 4.43,
+      "threshold": 10.0,
+      "label": "Fwd 4.4x vs Trail 10.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 10.78,
-    "sectorPe": 45.98,
-    "pb": 1.98,
-    "ps": 2.4,
+    "pe": 10.0,
+    "sectorPe": 45.59,
+    "pb": 1.84,
+    "ps": 2.22,
     "evEbitda": 6.94,
-    "fcfYield": 8.73,
-    "forwardPe": 4.77,
+    "fcfYield": 9.4,
+    "forwardPe": 4.43,
     "dividendYield": null,
     "revenueGrowth": -9.0,
     "profitMargin": 14.88,

@@ -1,9 +1,9 @@
 {
   "ticker": "EDV",
   "name": "ENDEAVOUR FPO [EDV]",
-  "price": 3.54,
-  "valuationScore": -8.7,
-  "marketCap": "6.4B",
+  "price": 3.46,
+  "valuationScore": -9.3,
+  "marketCap": "6.2B",
   "sector": "Consumer Defensive",
   "domain": "endeavourgroup.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-02",
-      "price": 3.54
+      "price": 3.46
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 16.86,
-      "threshold": 18.09,
-      "label": "16.9x vs 18.1x sector"
+      "value": 16.48,
+      "threshold": 17.67,
+      "label": "16.5x vs 17.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.59,
+      "value": 1.56,
       "threshold": 1.5,
-      "label": "1.59x vs 1.5x"
+      "label": "1.56x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 9.17,
+      "value": 9.38,
       "threshold": 5.0,
-      "label": "9.2% vs 5%"
+      "label": "9.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.77,
-      "threshold": 16.86,
-      "label": "Fwd 16.8x vs Trail 16.9x"
+      "value": 16.39,
+      "threshold": 16.48,
+      "label": "Fwd 16.4x vs Trail 16.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.58,
+      "value": 0.57,
       "threshold": 0.5,
-      "label": "P/S 0.5x ÷ Growth 0.9% = 0.58"
+      "label": "P/S 0.5x ÷ Growth 0.9% = 0.57"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 16.86,
-    "sectorPe": 21.28,
-    "pb": 1.59,
-    "ps": 0.52,
+    "pe": 16.48,
+    "sectorPe": 20.79,
+    "pb": 1.56,
+    "ps": 0.51,
     "evEbitda": 10.48,
-    "fcfYield": 9.17,
-    "forwardPe": 16.77,
-    "dividendYield": 4.83,
+    "fcfYield": 9.38,
+    "forwardPe": 16.39,
+    "dividendYield": null,
     "revenueGrowth": 0.9,
     "profitMargin": 3.09,
     "operatingMargin": 7.75,

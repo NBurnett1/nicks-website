@@ -1,8 +1,8 @@
 {
   "ticker": "TPG",
   "name": "TPGLIMITED FPO [TPG]",
-  "price": 3.6,
-  "valuationScore": 6.9,
+  "price": 3.61,
+  "valuationScore": 7.2,
   "marketCap": "7.1B",
   "sector": "Telecom",
   "domain": "tpgtelecom.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-02",
-      "price": 3.6
+      "price": 3.61
     }
   ],
   "testsPassed": 6,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 120.0,
-      "threshold": 18.09,
-      "label": "120.0x vs 18.1x sector"
+      "value": 120.33,
+      "threshold": 17.67,
+      "label": "120.3x vs 17.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 13.59,
+      "value": 13.55,
       "threshold": 5.0,
       "label": "13.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 39.51,
-      "threshold": 120.0,
-      "label": "Fwd 39.5x vs Trail 120.0x"
+      "value": 39.62,
+      "threshold": 120.33,
+      "label": "Fwd 39.6x vs Trail 120.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 120.0,
-    "sectorPe": 21.28,
+    "pe": 120.33,
+    "sectorPe": 20.79,
     "pb": 0.81,
     "ps": 1.4,
     "evEbitda": 8.59,
-    "fcfYield": 13.59,
-    "forwardPe": 39.51,
+    "fcfYield": 13.55,
+    "forwardPe": 39.62,
     "dividendYield": 5.0,
     "revenueGrowth": 3.8,
     "profitMargin": 9.13,
