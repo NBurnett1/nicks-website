@@ -2,8 +2,8 @@
   "ticker": "TLS",
   "name": "TELSTRA FPO [TLS]",
   "price": 5.03,
-  "valuationScore": 3.2,
-  "marketCap": "—",
+  "valuationScore": -0.5,
+  "marketCap": "56.0B",
   "sector": "Telecom",
   "domain": "telstra.com.au",
   "chartData": [
@@ -220,14 +220,14 @@
       "price": 5.03
     }
   ],
-  "testsPassed": 3,
+  "testsPassed": 4,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
       "value": 25.15,
-      "threshold": 17.67,
+      "threshold": 17.69,
       "label": "25.2x vs 17.7x sector"
     },
     "pbBelowBook": {
@@ -240,21 +240,21 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 10.8,
+      "value": 10.75,
       "threshold": 10.0,
-      "label": "10.8x vs 10x"
+      "label": "10.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": null,
-      "value": null,
+      "passed": true,
+      "value": 6.95,
       "threshold": 5.0,
-      "label": "No FCF data"
+      "label": "7.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 23.08,
+      "value": 23.15,
       "threshold": 25.15,
       "label": "Fwd 23.1x vs Trail 25.2x"
     },
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": 8.06,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "P/S 2.4x ÷ Growth 0.3% = 8.06"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,13 +282,13 @@
   },
   "metrics": {
     "pe": 25.15,
-    "sectorPe": 20.79,
+    "sectorPe": 20.81,
     "pb": 4.28,
-    "ps": null,
-    "evEbitda": 10.8,
-    "fcfYield": null,
-    "forwardPe": 23.08,
-    "dividendYield": null,
+    "ps": 2.42,
+    "evEbitda": 10.75,
+    "fcfYield": 6.95,
+    "forwardPe": 23.15,
+    "dividendYield": 4.17,
     "revenueGrowth": 0.3,
     "profitMargin": 9.8,
     "operatingMargin": 16.51,

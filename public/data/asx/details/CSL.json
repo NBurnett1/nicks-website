@@ -3,7 +3,7 @@
   "name": "CSL FPO [CSL]",
   "price": 127.93,
   "valuationScore": -1.2,
-  "marketCap": "—",
+  "marketCap": "61.3B",
   "sector": "Healthcare",
   "domain": "csl.com",
   "chartData": [
@@ -226,7 +226,7 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 14.47,
+      "value": 14.46,
       "threshold": 19.67,
       "label": "14.5x vs 19.7x sector"
     },
@@ -240,22 +240,22 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 15.2,
+      "value": 15.18,
       "threshold": 10.0,
       "label": "15.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": 3.02,
       "threshold": 5.0,
-      "label": "No FCF data"
+      "label": "3.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.03,
-      "threshold": 14.47,
+      "value": 14.04,
+      "threshold": 14.46,
       "label": "Fwd 14.0x vs Trail 14.5x"
     },
     "profitabilityCheck": {
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": -1.8,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "FAIL — Revenue declining -1.8%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 14.47,
+    "pe": 14.46,
     "sectorPe": 23.14,
     "pb": 2.31,
-    "ps": null,
-    "evEbitda": 15.2,
-    "fcfYield": null,
-    "forwardPe": 14.03,
+    "ps": 3.98,
+    "evEbitda": 15.18,
+    "fcfYield": 3.02,
+    "forwardPe": 14.04,
     "dividendYield": 3.33,
     "revenueGrowth": -1.8,
     "profitMargin": 9.06,

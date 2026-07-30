@@ -2,8 +2,8 @@
   "ticker": "GMG",
   "name": "GOOD GROUP STAPLED [GMG]",
   "price": 29.28,
-  "valuationScore": 16.6,
-  "marketCap": "—",
+  "valuationScore": 16.3,
+  "marketCap": "59.9B",
   "sector": "Real Estate",
   "domain": "goodman.com",
   "chartData": [
@@ -220,7 +220,7 @@
       "price": 29.28
     }
   ],
-  "testsPassed": 1,
+  "testsPassed": 2,
   "grade": "D",
   "valuationTests": {
     "peDiscount": {
@@ -240,16 +240,16 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 34.01,
+      "value": 34.04,
       "threshold": 10.0,
       "label": "34.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": null,
-      "value": null,
+      "passed": true,
+      "value": 5.67,
       "threshold": 5.0,
-      "label": "No FCF data"
+      "label": "5.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": -15.9,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "FAIL — Revenue declining -15.9%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -284,11 +284,11 @@
     "pe": 34.86,
     "sectorPe": 12.23,
     "pb": 2.52,
-    "ps": null,
-    "evEbitda": 34.01,
-    "fcfYield": null,
+    "ps": 19.31,
+    "evEbitda": 34.04,
+    "fcfYield": 5.67,
     "forwardPe": 20.52,
-    "dividendYield": 1.03,
+    "dividendYield": 1.02,
     "revenueGrowth": -15.9,
     "profitMargin": 54.55,
     "operatingMargin": 55.9,
