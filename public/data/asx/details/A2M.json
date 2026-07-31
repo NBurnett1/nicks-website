@@ -220,15 +220,15 @@
       "price": 6.89
     }
   ],
-  "testsPassed": 4,
-  "grade": "C",
+  "testsPassed": 5,
+  "grade": "B",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": false,
-      "value": 27.56,
+      "passed": true,
+      "value": 26.5,
       "threshold": 26.94,
-      "label": "27.6x vs 26.9x sector"
+      "label": "26.5x vs 26.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,9 +240,9 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 14.96,
+      "value": 14.5,
       "threshold": 10.0,
-      "label": "15.0x vs 10x"
+      "label": "14.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 25.89,
-      "threshold": 27.56,
-      "label": "Fwd 25.9x vs Trail 27.6x"
+      "value": 25.92,
+      "threshold": 26.5,
+      "label": "Fwd 25.9x vs Trail 26.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 27.56,
+    "pe": 26.5,
     "sectorPe": 31.7,
     "pb": 4.37,
     "ps": 2.43,
-    "evEbitda": 14.96,
+    "evEbitda": 14.5,
     "fcfYield": 3.15,
-    "forwardPe": 25.89,
-    "dividendYield": 2.38,
+    "forwardPe": 25.92,
+    "dividendYield": 2.44,
     "revenueGrowth": 18.8,
     "profitMargin": 5.94,
     "operatingMargin": 14.74,
