@@ -1,9 +1,9 @@
 {
   "ticker": "SUL",
   "name": "SUPARETAIL FPO [SUL]",
-  "price": 13.51,
-  "valuationScore": -8.2,
-  "marketCap": "3.1B",
+  "price": 13.31,
+  "valuationScore": -8.5,
+  "marketCap": "3.0B",
   "sector": "Consumer Discretionary",
   "domain": "superretailgroup.com.au",
   "chartData": [
@@ -217,25 +217,25 @@
     },
     {
       "date": "2026-08-02",
-      "price": 13.51
+      "price": 13.31
     }
   ],
-  "testsPassed": 5,
-  "grade": "B",
+  "testsPassed": 6,
+  "grade": "A",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": false,
-      "value": 15.71,
-      "threshold": 15.64,
-      "label": "15.7x vs 15.6x sector"
+      "passed": true,
+      "value": 15.48,
+      "threshold": 15.78,
+      "label": "15.5x vs 15.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.4,
+      "value": 2.36,
       "threshold": 1.5,
-      "label": "2.40x vs 1.5x"
+      "label": "2.36x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 13.46,
+      "value": 13.66,
       "threshold": 5.0,
-      "label": "13.5% vs 5%"
+      "label": "13.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.08,
-      "threshold": 15.71,
-      "label": "Fwd 14.1x vs Trail 15.7x"
+      "value": 13.87,
+      "threshold": 15.48,
+      "label": "Fwd 13.9x vs Trail 15.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 15.71,
-    "sectorPe": 18.4,
-    "pb": 2.4,
-    "ps": 0.73,
+    "pe": 15.48,
+    "sectorPe": 18.56,
+    "pb": 2.36,
+    "ps": 0.72,
     "evEbitda": 9.6,
-    "fcfYield": 13.46,
-    "forwardPe": 14.08,
+    "fcfYield": 13.66,
+    "forwardPe": 13.87,
     "dividendYield": 4.74,
     "revenueGrowth": 4.2,
     "profitMargin": 4.72,

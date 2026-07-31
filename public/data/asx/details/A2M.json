@@ -1,9 +1,9 @@
 {
   "ticker": "A2M",
   "name": "A2 MILK FPO NZ [A2M]",
-  "price": 7.07,
-  "valuationScore": 0.1,
-  "marketCap": "5.1B",
+  "price": 6.89,
+  "valuationScore": -0.3,
+  "marketCap": "5.0B",
   "sector": "Consumer Staples",
   "domain": "thea2milkcompany.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-02",
-      "price": 7.07
+      "price": 6.89
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 28.28,
-      "threshold": 27.13,
-      "label": "28.3x vs 27.1x sector"
+      "value": 27.56,
+      "threshold": 26.94,
+      "label": "27.6x vs 26.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.48,
+      "value": 4.37,
       "threshold": 1.5,
-      "label": "4.48x vs 1.5x"
+      "label": "4.37x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.07,
+      "value": 3.15,
       "threshold": 5.0,
       "label": "3.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 26.56,
-      "threshold": 28.28,
-      "label": "Fwd 26.6x vs Trail 28.3x"
+      "value": 25.89,
+      "threshold": 27.56,
+      "label": "Fwd 25.9x vs Trail 27.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.13,
       "threshold": 0.5,
-      "label": "P/S 2.5x ÷ Growth 18.8% = 0.13"
+      "label": "P/S 2.4x ÷ Growth 18.8% = 0.13"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 28.28,
-    "sectorPe": 31.92,
-    "pb": 4.48,
-    "ps": 2.49,
+    "pe": 27.56,
+    "sectorPe": 31.7,
+    "pb": 4.37,
+    "ps": 2.43,
     "evEbitda": 14.96,
-    "fcfYield": 3.07,
-    "forwardPe": 26.56,
+    "fcfYield": 3.15,
+    "forwardPe": 25.89,
     "dividendYield": 2.38,
     "revenueGrowth": 18.8,
     "profitMargin": 5.94,
