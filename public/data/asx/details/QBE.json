@@ -2,8 +2,8 @@
   "ticker": "QBE",
   "name": "QBE INSUR. FPO [QBE]",
   "price": 24.73,
-  "valuationScore": -3.8,
-  "marketCap": "36.9B",
+  "valuationScore": -1.8,
+  "marketCap": "—",
   "sector": "Financials",
   "domain": "qbe.com",
   "chartData": [
@@ -220,15 +220,15 @@
       "price": 24.73
     }
   ],
-  "testsPassed": 4,
+  "testsPassed": 3,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
       "value": 12.12,
-      "threshold": 18.61,
-      "label": "12.1x vs 18.6x sector"
+      "threshold": 17.57,
+      "label": "12.1x vs 17.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -246,10 +246,10 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": true,
-      "value": 9.94,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "9.9% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": 0.0,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining 0.0%"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,11 +282,11 @@
   },
   "metrics": {
     "pe": 12.12,
-    "sectorPe": 21.89,
+    "sectorPe": 20.66,
     "pb": 2.23,
-    "ps": 1.97,
+    "ps": null,
     "evEbitda": 11.7,
-    "fcfYield": 9.94,
+    "fcfYield": null,
     "forwardPe": 12.46,
     "dividendYield": 4.41,
     "revenueGrowth": 0.0,

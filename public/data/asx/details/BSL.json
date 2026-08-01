@@ -2,8 +2,8 @@
   "ticker": "BSL",
   "name": "BLUESCOPE FPO [BSL]",
   "price": 32.72,
-  "valuationScore": 2.4,
-  "marketCap": "14.3B",
+  "valuationScore": 0.1,
+  "marketCap": "—",
   "sector": "Basic Materials",
   "domain": "bluescope.com",
   "chartData": [
@@ -220,8 +220,8 @@
       "price": 32.72
     }
   ],
-  "testsPassed": 5,
-  "grade": "B",
+  "testsPassed": 4,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -246,10 +246,10 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 0.34,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "0.3% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": true,
-      "value": 0.22,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 0.9x ÷ Growth 4.0% = 0.22"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -284,9 +284,9 @@
     "pe": 57.4,
     "sectorPe": 45.73,
     "pb": 1.33,
-    "ps": 0.86,
+    "ps": null,
     "evEbitda": 9.77,
-    "fcfYield": 0.34,
+    "fcfYield": null,
     "forwardPe": 13.8,
     "dividendYield": 2.9,
     "revenueGrowth": 4.0,
