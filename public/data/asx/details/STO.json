@@ -2,8 +2,8 @@
   "ticker": "STO",
   "name": "SANTOS FPO [STO]",
   "price": 7.84,
-  "valuationScore": 0.1,
-  "marketCap": "—",
+  "valuationScore": -0.1,
+  "marketCap": "25.5B",
   "sector": "Energy",
   "domain": "santos.com",
   "chartData": [
@@ -246,10 +246,10 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": 2.93,
       "threshold": 5.0,
-      "label": "No FCF data"
+      "label": "2.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": -11.6,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "FAIL — Revenue declining -11.6%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -284,9 +284,9 @@
     "pe": 21.78,
     "sectorPe": 18.24,
     "pb": 1.14,
-    "ps": null,
+    "ps": 5.16,
     "evEbitda": 10.74,
-    "fcfYield": null,
+    "fcfYield": 2.93,
     "forwardPe": 11.27,
     "dividendYield": 4.45,
     "revenueGrowth": -11.6,
