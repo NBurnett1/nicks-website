@@ -1,16 +1,12 @@
 {
   "ticker": "RMD",
   "name": "RESMED CDI 10:1 [RMD]",
-  "price": 29.79,
-  "valuationScore": -3.1,
-  "marketCap": "43.2B",
+  "price": 30.26,
+  "valuationScore": -3.3,
+  "marketCap": "43.9B",
   "sector": "Healthcare",
   "domain": "resmed.com",
   "chartData": [
-    {
-      "date": "2025-08-03",
-      "price": 42.6
-    },
     {
       "date": "2025-08-10",
       "price": 42.73
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-02",
       "price": 29.79
+    },
+    {
+      "date": "2026-08-09",
+      "price": 30.26
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 19.99,
-      "threshold": 19.31,
-      "label": "20.0x vs 19.3x sector"
+      "value": 20.31,
+      "threshold": 19.44,
+      "label": "20.3x vs 19.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.86,
+      "value": 1.89,
       "threshold": 1.5,
-      "label": "1.86x vs 1.5x"
+      "label": "1.89x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.35,
+      "value": 3.3,
       "threshold": 5.0,
-      "label": "3.4% vs 5%"
+      "label": "3.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 17.15,
-      "threshold": 19.99,
-      "label": "Fwd 17.1x vs Trail 20.0x"
+      "value": 17.42,
+      "threshold": 20.31,
+      "label": "Fwd 17.4x vs Trail 20.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.72,
+      "value": 0.73,
       "threshold": 0.5,
-      "label": "P/S 7.8x ÷ Growth 10.8% = 0.72"
+      "label": "P/S 7.9x ÷ Growth 10.8% = 0.73"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 19.99,
-    "sectorPe": 22.72,
-    "pb": 1.86,
-    "ps": 7.8,
+    "pe": 20.31,
+    "sectorPe": 22.87,
+    "pb": 1.89,
+    "ps": 7.93,
     "evEbitda": 7.77,
-    "fcfYield": 3.35,
-    "forwardPe": 17.15,
+    "fcfYield": 3.3,
+    "forwardPe": 17.42,
     "dividendYield": 1.15,
     "revenueGrowth": 10.8,
     "profitMargin": 27.44,

@@ -1,16 +1,12 @@
 {
   "ticker": "PLS",
   "name": "PLSGROUP FPO [PLS]",
-  "price": 4.15,
+  "price": 4.08,
   "valuationScore": 35.1,
-  "marketCap": "13.4B",
+  "marketCap": "13.2B",
   "sector": "Basic Materials",
   "domain": "pls.com",
   "chartData": [
-    {
-      "date": "2025-08-03",
-      "price": 1.67
-    },
     {
       "date": "2025-08-10",
       "price": 1.93
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-02",
       "price": 4.15
+    },
+    {
+      "date": "2026-08-09",
+      "price": 4.08
     }
   ],
   "testsPassed": 2,
@@ -233,9 +233,9 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.74,
+      "value": 3.68,
       "threshold": 1.5,
-      "label": "3.74x vs 1.5x"
+      "label": "3.68x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,14 +247,14 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -0.7,
+      "value": -0.71,
       "threshold": 5.0,
       "label": "-0.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 11.02,
+      "value": 10.83,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.3,
+      "value": 0.29,
       "threshold": 0.5,
-      "label": "P/S 13.8x ÷ Growth 46.6% = 0.30"
+      "label": "P/S 13.6x ÷ Growth 46.6% = 0.29"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -283,11 +283,11 @@
   "metrics": {
     "pe": null,
     "sectorPe": 45.73,
-    "pb": 3.74,
-    "ps": 13.83,
+    "pb": 3.68,
+    "ps": 13.6,
     "evEbitda": 70.57,
-    "fcfYield": -0.7,
-    "forwardPe": 11.02,
+    "fcfYield": -0.71,
+    "forwardPe": 10.83,
     "dividendYield": null,
     "revenueGrowth": 46.6,
     "profitMargin": -9.67,

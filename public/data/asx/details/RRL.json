@@ -1,16 +1,12 @@
 {
   "ticker": "RRL",
   "name": "REGIS FPO [RRL]",
-  "price": 6.09,
-  "valuationScore": -32.7,
-  "marketCap": "4.6B",
+  "price": 6.15,
+  "valuationScore": -32.3,
+  "marketCap": "4.7B",
   "sector": "Basic Materials",
   "domain": "regisresources.com.au",
   "chartData": [
-    {
-      "date": "2025-08-03",
-      "price": 3.91
-    },
     {
       "date": "2025-08-10",
       "price": 4.26
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-02",
       "price": 6.09
+    },
+    {
+      "date": "2026-08-09",
+      "price": 6.15
     }
   ],
   "testsPassed": 7,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 9.52,
+      "value": 9.61,
       "threshold": 38.87,
-      "label": "9.5x vs 38.9x sector"
+      "label": "9.6x vs 38.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.43,
+      "value": 2.45,
       "threshold": 1.5,
-      "label": "2.43x vs 1.5x"
+      "label": "2.45x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 14.17,
+      "value": 14.03,
       "threshold": 5.0,
-      "label": "14.2% vs 5%"
+      "label": "14.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 5.74,
-      "threshold": 9.52,
-      "label": "Fwd 5.7x vs Trail 9.5x"
+      "value": 5.8,
+      "threshold": 9.61,
+      "label": "Fwd 5.8x vs Trail 9.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 9.52,
+    "pe": 9.61,
     "sectorPe": 45.73,
-    "pb": 2.43,
-    "ps": 2.36,
+    "pb": 2.45,
+    "ps": 2.38,
     "evEbitda": 3.78,
-    "fcfYield": 14.17,
-    "forwardPe": 5.74,
+    "fcfYield": 14.03,
+    "forwardPe": 5.8,
     "dividendYield": 3.28,
     "revenueGrowth": 40.0,
     "profitMargin": 24.95,

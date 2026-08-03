@@ -1,16 +1,12 @@
 {
   "ticker": "CHC",
   "name": "CHARTER HG STP FORUS [CHC]",
-  "price": 23.33,
-  "valuationScore": 14.4,
+  "price": 23.27,
+  "valuationScore": 14.5,
   "marketCap": "11.0B",
   "sector": "Real Estate",
   "domain": "charterhall.com.au",
   "chartData": [
-    {
-      "date": "2025-08-03",
-      "price": 19.51
-    },
     {
       "date": "2025-08-10",
       "price": 21.32
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-02",
       "price": 23.33
+    },
+    {
+      "date": "2026-08-09",
+      "price": 23.27
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 20.83,
-      "threshold": 10.45,
+      "value": 20.78,
+      "threshold": 10.36,
       "label": "20.8x vs 10.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.86,
+      "value": 3.85,
       "threshold": 1.5,
-      "label": "3.86x vs 1.5x"
+      "label": "3.85x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,8 +254,8 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 20.24,
-      "threshold": 20.83,
+      "value": 20.19,
+      "threshold": 20.78,
       "label": "Fwd 20.2x vs Trail 20.8x"
     },
     "profitabilityCheck": {
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 20.83,
-    "sectorPe": 12.29,
-    "pb": 3.86,
-    "ps": 12.82,
+    "pe": 20.78,
+    "sectorPe": 12.19,
+    "pb": 3.85,
+    "ps": 12.78,
     "evEbitda": 18.34,
     "fcfYield": 0.7,
-    "forwardPe": 20.24,
+    "forwardPe": 20.19,
     "dividendYield": 2.22,
     "revenueGrowth": 63.7,
     "profitMargin": 32.5,

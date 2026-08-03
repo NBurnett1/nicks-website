@@ -2,15 +2,11 @@
   "ticker": "TPG",
   "name": "TPGLIMITED FPO [TPG]",
   "price": 3.58,
-  "valuationScore": 7.9,
+  "valuationScore": 6.9,
   "marketCap": "7.0B",
   "sector": "Telecom",
   "domain": "tpgtelecom.com.au",
   "chartData": [
-    {
-      "date": "2025-08-03",
-      "price": 5.26
-    },
     {
       "date": "2025-08-10",
       "price": 5.14
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-02",
       "price": 3.58
+    },
+    {
+      "date": "2026-08-09",
+      "price": 3.58
     }
   ],
   "testsPassed": 6,
@@ -227,8 +227,8 @@
       "name": "P/E Discount",
       "passed": false,
       "value": 119.33,
-      "threshold": 17.74,
-      "label": "119.3x vs 17.7x sector"
+      "threshold": 17.77,
+      "label": "119.3x vs 17.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -282,7 +282,7 @@
   },
   "metrics": {
     "pe": 119.33,
-    "sectorPe": 20.87,
+    "sectorPe": 20.91,
     "pb": 0.81,
     "ps": 1.39,
     "evEbitda": 8.56,

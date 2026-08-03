@@ -2,15 +2,11 @@
   "ticker": "CWY",
   "name": "CLEANAWAY FPO [CWY]",
   "price": 2.34,
-  "valuationScore": 1.7,
+  "valuationScore": 1.6,
   "marketCap": "5.2B",
   "sector": "Industrials",
   "domain": "cleanaway.com.au",
   "chartData": [
-    {
-      "date": "2025-08-03",
-      "price": 2.8
-    },
     {
       "date": "2025-08-10",
       "price": 2.82
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-02",
       "price": 2.34
+    },
+    {
+      "date": "2026-08-09",
+      "price": 2.34
     }
   ],
   "testsPassed": 3,
@@ -227,8 +227,8 @@
       "name": "P/E Discount",
       "passed": false,
       "value": 46.8,
-      "threshold": 27.55,
-      "label": "46.8x vs 27.6x sector"
+      "threshold": 27.84,
+      "label": "46.8x vs 27.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -282,7 +282,7 @@
   },
   "metrics": {
     "pe": 46.8,
-    "sectorPe": 32.42,
+    "sectorPe": 32.75,
     "pb": 1.73,
     "ps": 1.27,
     "evEbitda": 12.08,
