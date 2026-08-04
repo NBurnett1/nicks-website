@@ -1,9 +1,9 @@
 {
   "ticker": "BHP",
   "name": "BHP GROUP FPO [BHP]",
-  "price": 60.72,
-  "valuationScore": 0.5,
-  "marketCap": "308.5B",
+  "price": 60.52,
+  "valuationScore": 0.3,
+  "marketCap": "307.5B",
   "sector": "Materials",
   "domain": "bhp.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-09",
-      "price": 60.72
+      "price": 60.52
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 21.16,
-      "threshold": 17.98,
-      "label": "21.2x vs 18.0x sector"
+      "value": 21.09,
+      "threshold": 17.92,
+      "label": "21.1x vs 17.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.3,
+      "value": 4.28,
       "threshold": 1.5,
-      "label": "4.30x vs 1.5x"
+      "label": "4.28x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 12.44,
+      "value": 12.51,
       "threshold": 10.0,
-      "label": "12.4x vs 10x"
+      "label": "12.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.64,
+      "value": 2.65,
       "threshold": 5.0,
       "label": "2.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.75,
-      "threshold": 21.16,
-      "label": "Fwd 16.8x vs Trail 21.2x"
+      "value": 16.76,
+      "threshold": 21.09,
+      "label": "Fwd 16.8x vs Trail 21.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 21.16,
-    "sectorPe": 21.16,
-    "pb": 4.3,
-    "ps": 5.71,
-    "evEbitda": 12.44,
-    "fcfYield": 2.64,
-    "forwardPe": 16.75,
+    "pe": 21.09,
+    "sectorPe": 21.09,
+    "pb": 4.28,
+    "ps": 5.7,
+    "evEbitda": 12.51,
+    "fcfYield": 2.65,
+    "forwardPe": 16.76,
     "dividendYield": 3.22,
     "revenueGrowth": 10.8,
     "profitMargin": 18.97,

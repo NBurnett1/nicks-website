@@ -1,8 +1,8 @@
 {
   "ticker": "RSG",
   "name": "RESOLUTE FPO [RSG]",
-  "price": 0.94,
-  "valuationScore": -21.2,
+  "price": 0.95,
+  "valuationScore": -21.0,
   "marketCap": "2.0B",
   "sector": "Basic Materials",
   "domain": "rml.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-09",
-      "price": 0.94
+      "price": 0.95
     }
   ],
   "testsPassed": 5,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 10.39,
-      "threshold": 38.87,
-      "label": "10.4x vs 38.9x sector"
+      "value": 10.61,
+      "threshold": 39.42,
+      "label": "10.6x vs 39.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.91,
+      "value": 1.95,
       "threshold": 1.5,
-      "label": "1.91x vs 1.5x"
+      "label": "1.95x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 6.63,
+      "value": 6.67,
       "threshold": 10.0,
-      "label": "6.6x vs 10x"
+      "label": "6.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 9.05,
+      "value": 8.86,
       "threshold": 5.0,
-      "label": "9.1% vs 5%"
+      "label": "8.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 5.23,
-      "threshold": 10.39,
-      "label": "Fwd 5.2x vs Trail 10.4x"
+      "value": 5.34,
+      "threshold": 10.61,
+      "label": "Fwd 5.3x vs Trail 10.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 10.39,
-    "sectorPe": 45.73,
-    "pb": 1.91,
-    "ps": 2.31,
-    "evEbitda": 6.63,
-    "fcfYield": 9.05,
-    "forwardPe": 5.23,
+    "pe": 10.61,
+    "sectorPe": 46.37,
+    "pb": 1.95,
+    "ps": 2.36,
+    "evEbitda": 6.67,
+    "fcfYield": 8.86,
+    "forwardPe": 5.34,
     "dividendYield": null,
     "revenueGrowth": -9.0,
     "profitMargin": 14.88,
