@@ -1,8 +1,8 @@
 {
   "ticker": "GNC",
   "name": "GRAINCORP FPO [GNC]",
-  "price": 5.53,
-  "valuationScore": 4.0,
+  "price": 5.41,
+  "valuationScore": 3.7,
   "marketCap": "1.2B",
   "sector": "Consumer Staples",
   "domain": "graincorp.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-09",
-      "price": 5.53
+      "price": 5.41
     }
   ],
   "testsPassed": 1,
@@ -233,9 +233,9 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.9,
+      "value": 0.88,
       "threshold": 1.5,
-      "label": "0.90x vs 1.5x"
+      "label": "0.88x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,14 +247,14 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.66,
+      "value": 2.72,
       "threshold": 5.0,
       "label": "2.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 24.99,
+      "value": 24.45,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 32.01,
-    "pb": 0.9,
+    "sectorPe": 31.87,
+    "pb": 0.88,
     "ps": 0.17,
     "evEbitda": 37.6,
-    "fcfYield": 2.66,
-    "forwardPe": 24.99,
+    "fcfYield": 2.72,
+    "forwardPe": 24.45,
     "dividendYield": 5.06,
     "revenueGrowth": -5.1,
     "profitMargin": -0.19,

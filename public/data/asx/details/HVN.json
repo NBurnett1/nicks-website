@@ -1,7 +1,7 @@
 {
   "ticker": "HVN",
   "name": "HARVEY FPO [HVN]",
-  "price": 4.96,
+  "price": 4.97,
   "valuationScore": -10.0,
   "marketCap": "6.2B",
   "sector": "Consumer Discretionary",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-09",
-      "price": 4.96
+      "price": 4.97
     }
   ],
   "testsPassed": 7,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 11.02,
-      "threshold": 16.08,
-      "label": "11.0x vs 16.1x sector"
+      "value": 11.04,
+      "threshold": 15.97,
+      "label": "11.0x vs 16.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -247,15 +247,15 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 12.23,
+      "value": 12.21,
       "threshold": 5.0,
       "label": "12.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 13.57,
-      "threshold": 11.02,
+      "value": 13.59,
+      "threshold": 11.04,
       "label": "Fwd 13.6x vs Trail 11.0x"
     },
     "profitabilityCheck": {
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 11.02,
-    "sectorPe": 18.92,
+    "pe": 11.04,
+    "sectorPe": 18.79,
     "pb": 1.26,
     "ps": 2.0,
     "evEbitda": 9.41,
-    "fcfYield": 12.23,
-    "forwardPe": 13.57,
+    "fcfYield": 12.21,
+    "forwardPe": 13.59,
     "dividendYield": 5.85,
     "revenueGrowth": 11.6,
     "profitMargin": 18.12,

@@ -1,9 +1,9 @@
 {
   "ticker": "SYR",
   "name": "SYRAH RES FPO [SYR]",
-  "price": 0.11,
-  "valuationScore": 24.7,
-  "marketCap": "255M",
+  "price": 0.1,
+  "valuationScore": -9.6,
+  "marketCap": "—",
   "sector": "Basic Materials",
   "domain": "syrahresources.com.au",
   "chartData": [
@@ -217,11 +217,11 @@
     },
     {
       "date": "2026-08-09",
-      "price": 0.11
+      "price": 0.1
     }
   ],
-  "testsPassed": 3,
-  "grade": "C",
+  "testsPassed": 2,
+  "grade": "D",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -233,9 +233,9 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.31,
+      "value": 0.29,
       "threshold": 1.5,
-      "label": "0.31x vs 1.5x"
+      "label": "0.29x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -246,15 +246,15 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": -14.59,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "-14.6% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": -3.42,
+      "value": -3.26,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": true,
-      "value": 0.05,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 7.7x ÷ Growth 151.5% = 0.05"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 46.37,
-    "pb": 0.31,
-    "ps": 7.65,
+    "sectorPe": 46.8,
+    "pb": 0.29,
+    "ps": null,
     "evEbitda": -5.39,
-    "fcfYield": -14.59,
-    "forwardPe": -3.42,
+    "fcfYield": null,
+    "forwardPe": -3.26,
     "dividendYield": null,
     "revenueGrowth": 151.5,
     "profitMargin": 0.0,
