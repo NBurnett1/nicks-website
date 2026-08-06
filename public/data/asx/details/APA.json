@@ -1,9 +1,9 @@
 {
   "ticker": "APA",
   "name": "APA GROUP STAPLED [APA]",
-  "price": 10.18,
-  "valuationScore": 18.6,
-  "marketCap": "13.5B",
+  "price": 10.0,
+  "valuationScore": 18.0,
+  "marketCap": "13.2B",
   "sector": "Utilities",
   "domain": "apa.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-09",
-      "price": 10.18
+      "price": 10.0
     }
   ],
   "testsPassed": 2,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 84.83,
-      "threshold": 18.23,
-      "label": "84.8x vs 18.2x sector"
+      "value": 83.33,
+      "threshold": 18.32,
+      "label": "83.3x vs 18.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.83,
+      "value": 4.74,
       "threshold": 1.5,
-      "label": "4.83x vs 1.5x"
+      "label": "4.74x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 1.52,
+      "value": 1.54,
       "threshold": 5.0,
       "label": "1.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 43.96,
-      "threshold": 84.83,
-      "label": "Fwd 44.0x vs Trail 84.8x"
+      "value": 43.19,
+      "threshold": 83.33,
+      "label": "Fwd 43.2x vs Trail 83.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 84.83,
-    "sectorPe": 21.44,
-    "pb": 4.83,
-    "ps": 4.22,
+    "pe": 83.33,
+    "sectorPe": 21.56,
+    "pb": 4.74,
+    "ps": 4.14,
     "evEbitda": 13.49,
-    "fcfYield": 1.52,
-    "forwardPe": 43.96,
+    "fcfYield": 1.54,
+    "forwardPe": 43.19,
     "dividendYield": 5.7,
     "revenueGrowth": -0.4,
     "profitMargin": 5.07,

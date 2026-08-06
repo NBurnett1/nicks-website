@@ -1,8 +1,8 @@
 {
   "ticker": "ORI",
   "name": "ORICA FPO [ORI]",
-  "price": 23.87,
-  "valuationScore": 1.1,
+  "price": 23.52,
+  "valuationScore": 0.9,
   "marketCap": "—",
   "sector": "Basic Materials",
   "domain": "orica.com",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-09",
-      "price": 23.87
+      "price": 23.52
     }
   ],
   "testsPassed": 3,
@@ -226,23 +226,23 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 46.8,
-      "threshold": 39.78,
-      "label": "46.8x vs 39.8x sector"
+      "value": 46.12,
+      "threshold": 39.2,
+      "label": "46.1x vs 39.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.96,
+      "value": 2.92,
       "threshold": 1.5,
-      "label": "2.96x vs 1.5x"
+      "label": "2.92x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 9.73,
+      "value": 9.91,
       "threshold": 10.0,
-      "label": "9.7x vs 10x"
+      "label": "9.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 17.33,
-      "threshold": 46.8,
-      "label": "Fwd 17.3x vs Trail 46.8x"
+      "value": 17.07,
+      "threshold": 46.12,
+      "label": "Fwd 17.1x vs Trail 46.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 46.8,
-    "sectorPe": 46.8,
-    "pb": 2.96,
+    "pe": 46.12,
+    "sectorPe": 46.12,
+    "pb": 2.92,
     "ps": null,
-    "evEbitda": 9.73,
+    "evEbitda": 9.91,
     "fcfYield": null,
-    "forwardPe": 17.33,
-    "dividendYield": 2.56,
+    "forwardPe": 17.07,
+    "dividendYield": 2.53,
     "revenueGrowth": -1.7,
     "profitMargin": 3.09,
     "operatingMargin": 4.86,
