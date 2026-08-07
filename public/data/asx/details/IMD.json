@@ -1,8 +1,8 @@
 {
   "ticker": "IMD",
   "name": "IMDEX FPO [IMD]",
-  "price": 3.9,
-  "valuationScore": 3.6,
+  "price": 3.88,
+  "valuationScore": 3.5,
   "marketCap": "2.0B",
   "sector": "Industrials",
   "domain": "imdex.com",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-09",
-      "price": 3.9
+      "price": 3.88
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 43.33,
-      "threshold": 28.09,
-      "label": "43.3x vs 28.1x sector"
+      "value": 43.11,
+      "threshold": 28.01,
+      "label": "43.1x vs 28.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.06,
+      "value": 3.04,
       "threshold": 1.5,
-      "label": "3.06x vs 1.5x"
+      "label": "3.04x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 17.68,
+      "value": 17.81,
       "threshold": 10.0,
-      "label": "17.7x vs 10x"
+      "label": "17.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.64,
+      "value": 2.65,
       "threshold": 5.0,
       "label": "2.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 27.12,
-      "threshold": 43.33,
-      "label": "Fwd 27.1x vs Trail 43.3x"
+      "value": 26.98,
+      "threshold": 43.11,
+      "label": "Fwd 27.0x vs Trail 43.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 43.33,
-    "sectorPe": 33.04,
-    "pb": 3.06,
-    "ps": 4.28,
-    "evEbitda": 17.68,
-    "fcfYield": 2.64,
-    "forwardPe": 27.12,
+    "pe": 43.11,
+    "sectorPe": 32.96,
+    "pb": 3.04,
+    "ps": 4.26,
+    "evEbitda": 17.81,
+    "fcfYield": 2.65,
+    "forwardPe": 26.98,
     "dividendYield": 0.7,
     "revenueGrowth": 16.3,
     "profitMargin": 10.81,
