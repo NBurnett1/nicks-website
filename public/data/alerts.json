@@ -1,16 +1,16 @@
 {
-  "lastUpdated": "2026-08-07T11:55:06.712655+11:00",
+  "lastUpdated": "2026-08-07T19:18:19.489954+11:00",
   "stocksScanned": 129,
-  "totalAlerts": 39,
+  "totalAlerts": 50,
   "alerts": [
     {
-      "type": "PRICE_MOVE",
+      "type": "EXTREME VOLUME",
       "severity": "critical",
-      "ticker": "ALU",
+      "ticker": "NHC",
       "exchange": "ASX",
-      "headline": "Stock surged 10.5% in one session",
-      "detail": "$0.62 → $0.69",
-      "timestamp": "2026-08-07T00:55:06.320731+00:00"
+      "headline": "4.4x average volume detected",
+      "detail": "Volume: 9,307,332 vs 20-day avg: 2,126,368 | Price up 0.8%",
+      "timestamp": "2026-08-07T08:18:16.462789+00:00"
     },
     {
       "type": "INSIDER_SELL",
@@ -40,6 +40,78 @@
       "timestamp": "2026-07-15 00:00:00"
     },
     {
+      "type": "PRICE_MOVE",
+      "severity": "high",
+      "ticker": "CCX",
+      "exchange": "ASX",
+      "headline": "Stock plunged 8.9% in one session",
+      "detail": "$0.06 → $0.05",
+      "timestamp": "2026-08-07T08:16:55.660130+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "high",
+      "ticker": "RMD",
+      "exchange": "ASX",
+      "headline": "Stock plunged 8.3% in one session",
+      "detail": "$31.48 → $28.87",
+      "timestamp": "2026-08-07T08:17:11.672919+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "high",
+      "ticker": "LNW",
+      "exchange": "ASX",
+      "headline": "Stock surged 5.3% in one session",
+      "detail": "$118.08 → $124.30",
+      "timestamp": "2026-08-07T08:17:35.372986+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "high",
+      "ticker": "SBM",
+      "exchange": "ASX",
+      "headline": "Stock surged 5.4% in one session",
+      "detail": "$0.56 → $0.58",
+      "timestamp": "2026-08-07T08:17:35.893575+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "high",
+      "ticker": "PLS",
+      "exchange": "ASX",
+      "headline": "Stock surged 6.5% in one session",
+      "detail": "$4.30 → $4.58",
+      "timestamp": "2026-08-07T08:17:36.400245+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "high",
+      "ticker": "JHX",
+      "exchange": "ASX",
+      "headline": "Stock surged 5.8% in one session",
+      "detail": "$40.82 → $43.18",
+      "timestamp": "2026-08-07T08:17:41.312811+00:00"
+    },
+    {
+      "type": "EXTREME VOLUME",
+      "severity": "high",
+      "ticker": "ALU",
+      "exchange": "ASX",
+      "headline": "3.2x average volume detected",
+      "detail": "Volume: 3,532,752 vs 20-day avg: 1,106,348 | Price up 8.1%",
+      "timestamp": "2026-08-07T08:18:18.739087+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "high",
+      "ticker": "ALU",
+      "exchange": "ASX",
+      "headline": "Stock surged 8.1% in one session",
+      "detail": "$0.62 → $0.67",
+      "timestamp": "2026-08-07T08:18:18.961932+00:00"
+    },
+    {
       "type": "INSIDER_SELL",
       "severity": "medium",
       "ticker": "ALQ",
@@ -56,6 +128,24 @@
       "headline": "Deane (Malcolm) (Chief Executive Officer) sold 33,440 shares ($489,210)",
       "detail": "Sale at price 14.63 per share.",
       "timestamp": "2026-07-30 00:00:00"
+    },
+    {
+      "type": "VOLUME SPIKE",
+      "severity": "medium",
+      "ticker": "CCX",
+      "exchange": "ASX",
+      "headline": "2.5x average volume detected",
+      "detail": "Volume: 1,781,544 vs 20-day avg: 709,648 | Price down 8.9%",
+      "timestamp": "2026-08-07T08:16:55.412624+00:00"
+    },
+    {
+      "type": "VOLUME SPIKE",
+      "severity": "medium",
+      "ticker": "RMD",
+      "exchange": "ASX",
+      "headline": "2.6x average volume detected",
+      "detail": "Volume: 4,817,465 vs 20-day avg: 1,850,533 | Price down 8.3%",
+      "timestamp": "2026-08-07T08:17:11.422525+00:00"
     },
     {
       "type": "INSIDER_BUY",
@@ -195,17 +285,6 @@
     {
       "type": "NEWS",
       "severity": "low",
-      "ticker": "JHX",
-      "exchange": "ASX",
-      "headline": "Boise Cascade Q2 Earnings Call Highlights",
-      "detail": "Source: MarketBeat",
-      "sentiment": "positive",
-      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/Xw7W8t.O0R_zLC2Y5iFzGg--~B/aD02NzU7dz0xMjAwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/marketbeat_955/cad3e69f137c0819bb3689adb9072ded",
-      "timestamp": "2026-08-04T21:03:55Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
       "ticker": "ORG",
       "exchange": "ASX",
       "headline": "Energy & Utilities Roundup: Market Talk",
@@ -305,17 +384,6 @@
     {
       "type": "NEWS",
       "severity": "low",
-      "ticker": "RMD",
-      "exchange": "ASX",
-      "headline": "ResMed (RMD) Faces An Earnings Test After A Rebound That Still Looks Undervalued",
-      "detail": "Source: Simply Wall St.",
-      "sentiment": "neutral",
-      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/oY9vQNBdaHAXW3k6VZJztA--~B/aD00MzI7dz0xMTk0O2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/simply_wall_st__316/b23fe2923663ce315e2ef7ba313db8b9",
-      "timestamp": "2026-08-06T13:16:22Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
       "ticker": "BXB",
       "exchange": "ASX",
       "headline": "Navigating Alphabet’s (GOOGL) AI Frontier",
@@ -411,6 +479,39 @@
       "sentiment": "neutral",
       "thumbnail": "https://s.yimg.com/uu/api/res/1.2/9naTdeJlVMX28sdlDpLdrQ--~B/aD02MDA7dz05MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/zacks.com/ac90b3d74679f6d01a122aa033d8a9a4",
       "timestamp": "2026-08-06T23:30:02Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "JHX",
+      "exchange": "ASX",
+      "headline": "James Hardie Industries PLC (JHIUF) (Q1 2027) Earnings Call Highlights: Record Growth and ...",
+      "detail": "Source: GuruFocus.com",
+      "sentiment": "positive",
+      "thumbnail": null,
+      "timestamp": "2026-08-07T05:12:37Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "RMD",
+      "exchange": "ASX",
+      "headline": "ResMed Inc (RMD) (Q4 2026) Earnings Call Highlights: Strong Revenue Growth and Strategic ...",
+      "detail": "Source: GuruFocus.com",
+      "sentiment": "positive",
+      "thumbnail": null,
+      "timestamp": "2026-08-07T05:12:47Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "CQR",
+      "exchange": "ASX",
+      "headline": "Charter Hall Retail REIT (ASX:CQR) (FY 2026) Earnings Call Highlights: Record Occupancy and 4% ...",
+      "detail": "Source: GuruFocus.com",
+      "sentiment": "positive",
+      "thumbnail": null,
+      "timestamp": "2026-08-07T07:00:26Z"
     }
   ]
 }
