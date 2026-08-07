@@ -2,8 +2,8 @@
   "ticker": "CSL",
   "name": "CSL FPO [CSL]",
   "price": 132.19,
-  "valuationScore": -1.0,
-  "marketCap": "—",
+  "valuationScore": -0.9,
+  "marketCap": "63.3B",
   "sector": "Healthcare",
   "domain": "csl.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-09",
-      "price": 132.19
+      "price": 132.36
     }
   ],
   "testsPassed": 3,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 15.09,
-      "threshold": 20.1,
-      "label": "15.1x vs 20.1x sector"
+      "value": 15.11,
+      "threshold": 19.95,
+      "label": "15.1x vs 19.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,22 +240,22 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 15.62,
+      "value": 15.61,
       "threshold": 10.0,
       "label": "15.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": 2.92,
       "threshold": 5.0,
-      "label": "No FCF data"
+      "label": "2.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
       "value": 14.67,
-      "threshold": 15.09,
+      "threshold": 15.11,
       "label": "Fwd 14.7x vs Trail 15.1x"
     },
     "profitabilityCheck": {
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": -1.8,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "FAIL — Revenue declining -1.8%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,12 +281,12 @@
     }
   },
   "metrics": {
-    "pe": 15.09,
-    "sectorPe": 23.65,
+    "pe": 15.11,
+    "sectorPe": 23.47,
     "pb": 2.41,
-    "ps": null,
-    "evEbitda": 15.62,
-    "fcfYield": null,
+    "ps": 4.11,
+    "evEbitda": 15.61,
+    "fcfYield": 2.92,
     "forwardPe": 14.67,
     "dividendYield": 3.22,
     "revenueGrowth": -1.8,

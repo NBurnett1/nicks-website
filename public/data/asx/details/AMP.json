@@ -2,8 +2,8 @@
   "ticker": "AMP",
   "name": "AMP FPO [AMP]",
   "price": 2.42,
-  "valuationScore": 4.6,
-  "marketCap": "—",
+  "valuationScore": 3.4,
+  "marketCap": "5.9B",
   "sector": "Financials",
   "domain": "amp.com.au",
   "chartData": [
@@ -217,18 +217,18 @@
     },
     {
       "date": "2026-08-09",
-      "price": 2.42
+      "price": 2.31
     }
   ],
-  "testsPassed": 1,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
       "value": 34.57,
-      "threshold": 17.95,
-      "label": "34.6x vs 17.9x sector"
+      "threshold": 18.79,
+      "label": "34.6x vs 18.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,16 +240,16 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 19.44,
+      "value": 18.66,
       "threshold": 10.0,
-      "label": "19.4x vs 10x"
+      "label": "18.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": null,
-      "value": null,
+      "passed": true,
+      "value": 12.44,
       "threshold": 5.0,
-      "label": "No FCF data"
+      "label": "12.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
@@ -261,38 +261,38 @@
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": false,
-      "value": 4.76,
+      "value": 6.64,
       "threshold": 5.0,
-      "label": "Margin 4.8% / ROE 3.6%"
+      "label": "Margin 6.6% / ROE 5.1%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": 0.57,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "P/S 2.1x ÷ Growth 3.6% = 0.57"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
-      "passed": null,
-      "value": null,
+      "passed": true,
+      "value": 3.6,
       "threshold": -5.0,
-      "label": "No revenue data"
+      "label": "3.6% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": 34.57,
-    "sectorPe": 21.11,
+    "sectorPe": 22.1,
     "pb": 1.64,
-    "ps": null,
-    "evEbitda": 19.44,
-    "fcfYield": null,
+    "ps": 2.07,
+    "evEbitda": 18.66,
+    "fcfYield": 12.44,
     "forwardPe": 16.14,
-    "dividendYield": 1.83,
-    "revenueGrowth": null,
-    "profitMargin": 4.76,
-    "operatingMargin": 55.84,
-    "roe": 3.6,
-    "debtEquity": 791.59
+    "dividendYield": 2.07,
+    "revenueGrowth": 3.6,
+    "profitMargin": 6.64,
+    "operatingMargin": 66.32,
+    "roe": 5.09,
+    "debtEquity": 789.66
   }
 }

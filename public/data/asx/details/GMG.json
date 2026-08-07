@@ -2,8 +2,8 @@
   "ticker": "GMG",
   "name": "GOOD GROUP STAPLED [GMG]",
   "price": 29.95,
-  "valuationScore": 17.3,
-  "marketCap": "—",
+  "valuationScore": 16.6,
+  "marketCap": "61.2B",
   "sector": "Real Estate",
   "domain": "goodman.com",
   "chartData": [
@@ -217,18 +217,18 @@
     },
     {
       "date": "2026-08-09",
-      "price": 29.95
+      "price": 30.24
     }
   ],
-  "testsPassed": 1,
+  "testsPassed": 2,
   "grade": "D",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 35.65,
+      "value": 35.24,
       "threshold": 10.53,
-      "label": "35.7x vs 10.5x sector"
+      "label": "35.2x vs 10.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,23 +240,23 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 35.13,
+      "value": 34.8,
       "threshold": 10.0,
-      "label": "35.1x vs 10x"
+      "label": "34.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": null,
-      "value": null,
+      "passed": true,
+      "value": 5.54,
       "threshold": 5.0,
-      "label": "No FCF data"
+      "label": "5.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
       "value": 20.98,
-      "threshold": 35.65,
-      "label": "Fwd 21.0x vs Trail 35.7x"
+      "threshold": 35.24,
+      "label": "Fwd 21.0x vs Trail 35.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": -15.9,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "FAIL — Revenue declining -15.9%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 35.65,
+    "pe": 35.24,
     "sectorPe": 12.39,
     "pb": 2.58,
-    "ps": null,
-    "evEbitda": 35.13,
-    "fcfYield": null,
+    "ps": 19.75,
+    "evEbitda": 34.8,
+    "fcfYield": 5.54,
     "forwardPe": 20.98,
-    "dividendYield": 0.99,
+    "dividendYield": 1.0,
     "revenueGrowth": -15.9,
     "profitMargin": 54.55,
     "operatingMargin": 55.9,
