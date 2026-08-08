@@ -2,7 +2,7 @@
   "ticker": "QBE",
   "name": "QBE INSUR. FPO [QBE]",
   "price": 24.42,
-  "valuationScore": -2.1,
+  "valuationScore": -3.7,
   "marketCap": "36.5B",
   "sector": "Financials",
   "domain": "qbe.com",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-09",
-      "price": 24.36
+      "price": 24.42
     }
   ],
   "testsPassed": 4,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 12.21,
-      "threshold": 18.79,
-      "label": "12.2x vs 18.8x sector"
+      "value": 12.15,
+      "threshold": 18.88,
+      "label": "12.1x vs 18.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -255,8 +255,8 @@
       "name": "Forward P/E Re-rating",
       "passed": false,
       "value": 12.31,
-      "threshold": 12.21,
-      "label": "Fwd 12.3x vs Trail 12.2x"
+      "threshold": 12.15,
+      "label": "Fwd 12.3x vs Trail 12.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,8 +281,8 @@
     }
   },
   "metrics": {
-    "pe": 12.21,
-    "sectorPe": 22.1,
+    "pe": 12.15,
+    "sectorPe": 22.21,
     "pb": 2.2,
     "ps": 1.95,
     "evEbitda": 11.55,

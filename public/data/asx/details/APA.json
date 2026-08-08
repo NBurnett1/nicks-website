@@ -2,7 +2,7 @@
   "ticker": "APA",
   "name": "APA GROUP STAPLED [APA]",
   "price": 9.91,
-  "valuationScore": 16.3,
+  "valuationScore": 17.9,
   "marketCap": "13.1B",
   "sector": "Utilities",
   "domain": "apa.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-09",
-      "price": 10.0
+      "price": 9.91
     }
   ],
   "testsPassed": 2,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 76.23,
-      "threshold": 18.45,
-      "label": "76.2x vs 18.4x sector"
+      "value": 82.58,
+      "threshold": 18.2,
+      "label": "82.6x vs 18.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -255,8 +255,8 @@
       "name": "Forward P/E Re-rating",
       "passed": true,
       "value": 42.78,
-      "threshold": 76.23,
-      "label": "Fwd 42.8x vs Trail 76.2x"
+      "threshold": 82.58,
+      "label": "Fwd 42.8x vs Trail 82.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,8 +281,8 @@
     }
   },
   "metrics": {
-    "pe": 76.23,
-    "sectorPe": 21.71,
+    "pe": 82.58,
+    "sectorPe": 21.42,
     "pb": 4.7,
     "ps": 4.1,
     "evEbitda": 13.31,

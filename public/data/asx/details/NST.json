@@ -2,7 +2,7 @@
   "ticker": "NST",
   "name": "NTH STAR FPO [NST]",
   "price": 22.7,
-  "valuationScore": -0.5,
+  "valuationScore": -0.6,
   "marketCap": "32.3B",
   "sector": "Materials",
   "domain": "nsrltd.com",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-09",
-      "price": 22.19
+      "price": 22.7
     }
   ],
   "testsPassed": 5,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 19.74,
+      "value": 19.24,
       "threshold": 18.78,
-      "label": "19.7x vs 18.8x sector"
+      "label": "19.2x vs 18.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -255,8 +255,8 @@
       "name": "Forward P/E Re-rating",
       "passed": true,
       "value": 14.4,
-      "threshold": 19.74,
-      "label": "Fwd 14.4x vs Trail 19.7x"
+      "threshold": 19.24,
+      "label": "Fwd 14.4x vs Trail 19.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,7 +281,7 @@
     }
   },
   "metrics": {
-    "pe": 19.74,
+    "pe": 19.24,
     "sectorPe": 22.09,
     "pb": 2.13,
     "ps": 4.65,

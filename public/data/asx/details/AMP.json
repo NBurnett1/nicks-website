@@ -2,7 +2,7 @@
   "ticker": "AMP",
   "name": "AMP FPO [AMP]",
   "price": 2.42,
-  "valuationScore": 3.4,
+  "valuationScore": 5.2,
   "marketCap": "5.9B",
   "sector": "Financials",
   "domain": "amp.com.au",
@@ -217,25 +217,25 @@
     },
     {
       "date": "2026-08-09",
-      "price": 2.31
+      "price": 2.42
     }
   ],
-  "testsPassed": 3,
-  "grade": "C",
+  "testsPassed": 2,
+  "grade": "D",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
       "value": 34.57,
-      "threshold": 18.79,
-      "label": "34.6x vs 18.8x sector"
+      "threshold": 18.88,
+      "label": "34.6x vs 18.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.64,
+      "value": 1.65,
       "threshold": 1.5,
-      "label": "1.64x vs 1.5x"
+      "label": "1.65x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -246,52 +246,52 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": true,
-      "value": 12.44,
+      "passed": false,
+      "value": 3.81,
       "threshold": 5.0,
-      "label": "12.4% vs 5%"
+      "label": "3.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.14,
+      "value": 16.19,
       "threshold": 34.57,
-      "label": "Fwd 16.1x vs Trail 34.6x"
+      "label": "Fwd 16.2x vs Trail 34.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": false,
-      "value": 6.64,
+      "value": 6.67,
       "threshold": 5.0,
-      "label": "Margin 6.6% / ROE 5.1%"
+      "label": "Margin 6.7% / ROE 5.1%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.57,
+      "value": 0.74,
       "threshold": 0.5,
-      "label": "P/S 2.1x ÷ Growth 3.6% = 0.57"
+      "label": "P/S 2.1x ÷ Growth 2.8% = 0.74"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": true,
-      "value": 3.6,
+      "value": 2.8,
       "threshold": -5.0,
-      "label": "3.6% growth (floor: -5%)"
+      "label": "2.8% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": 34.57,
-    "sectorPe": 22.1,
-    "pb": 1.64,
-    "ps": 2.07,
+    "sectorPe": 22.21,
+    "pb": 1.65,
+    "ps": 2.08,
     "evEbitda": 18.66,
-    "fcfYield": 12.44,
-    "forwardPe": 16.14,
+    "fcfYield": 3.81,
+    "forwardPe": 16.19,
     "dividendYield": 2.07,
-    "revenueGrowth": 3.6,
-    "profitMargin": 6.64,
-    "operatingMargin": 66.32,
+    "revenueGrowth": 2.8,
+    "profitMargin": 6.67,
+    "operatingMargin": 66.05,
     "roe": 5.09,
     "debtEquity": 789.66
   }
