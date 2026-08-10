@@ -8,10 +8,6 @@
   "domain": "aurizon.com.au",
   "chartData": [
     {
-      "date": "2025-08-10",
-      "price": 3.05
-    },
-    {
       "date": "2025-08-17",
       "price": 3.11
     },
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-09",
       "price": 4.19
+    },
+    {
+      "date": "2026-08-16",
+      "price": 4.19
     }
   ],
   "testsPassed": 5,
@@ -227,8 +227,8 @@
       "name": "P/E Discount",
       "passed": true,
       "value": 23.28,
-      "threshold": 27.77,
-      "label": "23.3x vs 27.8x sector"
+      "threshold": 27.62,
+      "label": "23.3x vs 27.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -282,7 +282,7 @@
   },
   "metrics": {
     "pe": 23.28,
-    "sectorPe": 32.67,
+    "sectorPe": 32.5,
     "pb": 1.74,
     "ps": 1.77,
     "evEbitda": 8.18,

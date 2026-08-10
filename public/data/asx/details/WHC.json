@@ -1,16 +1,12 @@
 {
   "ticker": "WHC",
   "name": "WHITEHAVEN FPO [WHC]",
-  "price": 7.32,
+  "price": 7.49,
   "valuationScore": -60.0,
-  "marketCap": "6.0B",
+  "marketCap": "6.2B",
   "sector": "Materials",
   "domain": "whitehavencoal.com.au",
   "chartData": [
-    {
-      "date": "2025-08-10",
-      "price": 6.86
-    },
     {
       "date": "2025-08-17",
       "price": 6.83
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-09",
       "price": 7.32
+    },
+    {
+      "date": "2026-08-16",
+      "price": 7.49
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 9.27,
-      "threshold": 18.78,
-      "label": "9.3x vs 18.8x sector"
+      "value": 9.48,
+      "threshold": 18.94,
+      "label": "9.5x vs 18.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.02,
+      "value": 1.04,
       "threshold": 1.5,
-      "label": "1.02x vs 1.5x"
+      "label": "1.04x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 28.6,
+      "value": 27.95,
       "threshold": 5.0,
-      "label": "28.6% vs 5%"
+      "label": "27.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 11.87,
-      "threshold": 9.27,
-      "label": "Fwd 11.9x vs Trail 9.3x"
+      "value": 12.15,
+      "threshold": 9.48,
+      "label": "Fwd 12.1x vs Trail 9.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 9.27,
-    "sectorPe": 22.09,
-    "pb": 1.02,
-    "ps": 1.23,
+    "pe": 9.48,
+    "sectorPe": 22.29,
+    "pb": 1.04,
+    "ps": 1.26,
     "evEbitda": 2.84,
-    "fcfYield": 28.6,
-    "forwardPe": 11.87,
+    "fcfYield": 27.95,
+    "forwardPe": 12.15,
     "dividendYield": 1.09,
     "revenueGrowth": -27.7,
     "profitMargin": 12.66,

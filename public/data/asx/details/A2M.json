@@ -1,16 +1,12 @@
 {
   "ticker": "A2M",
   "name": "A2 MILK FPO NZ [A2M]",
-  "price": 6.83,
-  "valuationScore": -0.2,
+  "price": 6.87,
+  "valuationScore": -0.4,
   "marketCap": "5.0B",
   "sector": "Consumer Staples",
   "domain": "thea2milkcompany.com",
   "chartData": [
-    {
-      "date": "2025-08-10",
-      "price": 7.39
-    },
     {
       "date": "2025-08-17",
       "price": 7.52
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-09",
       "price": 6.83
+    },
+    {
+      "date": "2026-08-16",
+      "price": 6.87
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 26.27,
-      "threshold": 27.05,
-      "label": "26.3x vs 27.1x sector"
+      "value": 26.42,
+      "threshold": 26.73,
+      "label": "26.4x vs 26.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.29,
+      "value": 4.31,
       "threshold": 1.5,
-      "label": "4.29x vs 1.5x"
+      "label": "4.31x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.18,
+      "value": 3.16,
       "threshold": 5.0,
       "label": "3.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 25.68,
-      "threshold": 26.27,
-      "label": "Fwd 25.7x vs Trail 26.3x"
+      "value": 25.84,
+      "threshold": 26.42,
+      "label": "Fwd 25.8x vs Trail 26.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 26.27,
-    "sectorPe": 31.83,
-    "pb": 4.29,
-    "ps": 2.41,
+    "pe": 26.42,
+    "sectorPe": 31.45,
+    "pb": 4.31,
+    "ps": 2.42,
     "evEbitda": 14.35,
-    "fcfYield": 3.18,
-    "forwardPe": 25.68,
+    "fcfYield": 3.16,
+    "forwardPe": 25.84,
     "dividendYield": 2.46,
     "revenueGrowth": 18.8,
     "profitMargin": 5.94,

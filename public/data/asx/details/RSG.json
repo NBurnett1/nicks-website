@@ -1,16 +1,12 @@
 {
   "ticker": "RSG",
   "name": "RESOLUTE FPO [RSG]",
-  "price": 1.06,
-  "valuationScore": -20.6,
-  "marketCap": "2.3B",
+  "price": 1.12,
+  "valuationScore": -19.7,
+  "marketCap": "2.4B",
   "sector": "Basic Materials",
   "domain": "rml.com.au",
   "chartData": [
-    {
-      "date": "2025-08-10",
-      "price": 0.68
-    },
     {
       "date": "2025-08-17",
       "price": 0.72
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-09",
       "price": 1.06
+    },
+    {
+      "date": "2026-08-16",
+      "price": 1.12
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 13.25,
-      "threshold": 39.22,
-      "label": "13.2x vs 39.2x sector"
+      "value": 14.06,
+      "threshold": 38.98,
+      "label": "14.1x vs 39.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.16,
+      "value": 2.3,
       "threshold": 1.5,
-      "label": "2.16x vs 1.5x"
+      "label": "2.30x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 7.98,
+      "value": 7.52,
       "threshold": 5.0,
-      "label": "8.0% vs 5%"
+      "label": "7.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 6.08,
-      "threshold": 13.25,
-      "label": "Fwd 6.1x vs Trail 13.2x"
+      "value": 5.85,
+      "threshold": 14.06,
+      "label": "Fwd 5.8x vs Trail 14.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 13.25,
-    "sectorPe": 46.14,
-    "pb": 2.16,
-    "ps": 2.62,
+    "pe": 14.06,
+    "sectorPe": 45.86,
+    "pb": 2.3,
+    "ps": 2.78,
     "evEbitda": 7.63,
-    "fcfYield": 7.98,
-    "forwardPe": 6.08,
+    "fcfYield": 7.52,
+    "forwardPe": 5.85,
     "dividendYield": null,
     "revenueGrowth": -9.0,
     "profitMargin": 14.88,

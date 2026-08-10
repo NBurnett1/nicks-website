@@ -1,16 +1,12 @@
 {
   "ticker": "CSL",
   "name": "CSL FPO [CSL]",
-  "price": 132.19,
-  "valuationScore": -1.7,
-  "marketCap": "63.3B",
+  "price": 134.47,
+  "valuationScore": -0.9,
+  "marketCap": "—",
   "sector": "Healthcare",
   "domain": "csl.com",
   "chartData": [
-    {
-      "date": "2025-08-10",
-      "price": 254.6
-    },
     {
       "date": "2025-08-17",
       "price": 263.86
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-09",
       "price": 132.19
+    },
+    {
+      "date": "2026-08-16",
+      "price": 134.47
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 15.12,
-      "threshold": 20.14,
-      "label": "15.1x vs 20.1x sector"
+      "value": 15.39,
+      "threshold": 20.5,
+      "label": "15.4x vs 20.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.41,
+      "value": 2.45,
       "threshold": 1.5,
-      "label": "2.41x vs 1.5x"
+      "label": "2.45x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -246,17 +246,17 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 2.92,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "2.9% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.69,
-      "threshold": 15.12,
-      "label": "Fwd 14.7x vs Trail 15.1x"
+      "value": 14.94,
+      "threshold": 15.39,
+      "label": "Fwd 14.9x vs Trail 15.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": -1.8,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining -1.8%"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 15.12,
-    "sectorPe": 23.69,
-    "pb": 2.41,
-    "ps": 4.11,
+    "pe": 15.39,
+    "sectorPe": 24.12,
+    "pb": 2.45,
+    "ps": null,
     "evEbitda": 15.61,
-    "fcfYield": 2.92,
-    "forwardPe": 14.69,
+    "fcfYield": null,
+    "forwardPe": 14.94,
     "dividendYield": 3.22,
     "revenueGrowth": -1.8,
     "profitMargin": 9.06,

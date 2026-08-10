@@ -1,16 +1,12 @@
 {
   "ticker": "WOR",
   "name": "WORLEY FPO [WOR]",
-  "price": 10.88,
-  "valuationScore": -24.4,
-  "marketCap": "5.5B",
+  "price": 10.94,
+  "valuationScore": -0.6,
+  "marketCap": "—",
   "sector": "Energy",
   "domain": "worley.com",
   "chartData": [
-    {
-      "date": "2025-08-10",
-      "price": 12.62
-    },
     {
       "date": "2025-08-17",
       "price": 12.54
@@ -218,24 +214,28 @@
     {
       "date": "2026-08-09",
       "price": 10.88
+    },
+    {
+      "date": "2026-08-16",
+      "price": 10.94
     }
   ],
-  "testsPassed": 5,
-  "grade": "B",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 16.48,
-      "threshold": 14.8,
-      "label": "16.5x vs 14.8x sector"
+      "value": 16.58,
+      "threshold": 14.82,
+      "label": "16.6x vs 14.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
-      "passed": true,
-      "value": 1.03,
+      "passed": null,
+      "value": null,
       "threshold": 1.5,
-      "label": "1.03x vs 1.5x"
+      "label": "No P/B data"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -246,17 +246,17 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": true,
-      "value": 9.03,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "9.0% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.22,
-      "threshold": 16.48,
-      "label": "Fwd 12.2x vs Trail 16.5x"
+      "value": 12.29,
+      "threshold": 16.58,
+      "label": "Fwd 12.3x vs Trail 16.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": -1.6,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining -1.6%"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 16.48,
-    "sectorPe": 17.41,
-    "pb": 1.03,
-    "ps": 0.49,
+    "pe": 16.58,
+    "sectorPe": 17.44,
+    "pb": null,
+    "ps": null,
     "evEbitda": 9.66,
-    "fcfYield": 9.03,
-    "forwardPe": 12.22,
+    "fcfYield": null,
+    "forwardPe": 12.29,
     "dividendYield": 4.6,
     "revenueGrowth": -1.6,
     "profitMargin": 3.1,

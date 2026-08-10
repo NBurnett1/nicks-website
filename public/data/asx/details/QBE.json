@@ -1,16 +1,12 @@
 {
   "ticker": "QBE",
   "name": "QBE INSUR. FPO [QBE]",
-  "price": 24.42,
-  "valuationScore": -3.7,
-  "marketCap": "36.5B",
+  "price": 23.91,
+  "valuationScore": -1.9,
+  "marketCap": "—",
   "sector": "Financials",
   "domain": "qbe.com",
   "chartData": [
-    {
-      "date": "2025-08-10",
-      "price": 20.32
-    },
     {
       "date": "2025-08-17",
       "price": 20.52
@@ -218,24 +214,28 @@
     {
       "date": "2026-08-09",
       "price": 24.42
+    },
+    {
+      "date": "2026-08-16",
+      "price": 23.91
     }
   ],
-  "testsPassed": 4,
+  "testsPassed": 3,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 12.15,
-      "threshold": 18.88,
-      "label": "12.1x vs 18.9x sector"
+      "value": 11.9,
+      "threshold": 17.52,
+      "label": "11.9x vs 17.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.2,
+      "value": 2.16,
       "threshold": 1.5,
-      "label": "2.20x vs 1.5x"
+      "label": "2.16x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -246,17 +246,17 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": true,
-      "value": 10.07,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "10.1% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 12.31,
-      "threshold": 12.15,
-      "label": "Fwd 12.3x vs Trail 12.1x"
+      "value": 12.03,
+      "threshold": 11.9,
+      "label": "Fwd 12.0x vs Trail 11.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": 0.0,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining 0.0%"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 12.15,
-    "sectorPe": 22.21,
-    "pb": 2.2,
-    "ps": 1.95,
+    "pe": 11.9,
+    "sectorPe": 20.61,
+    "pb": 2.16,
+    "ps": null,
     "evEbitda": 11.55,
-    "fcfYield": 10.07,
-    "forwardPe": 12.31,
+    "fcfYield": null,
+    "forwardPe": 12.03,
     "dividendYield": 4.46,
     "revenueGrowth": 0.0,
     "profitMargin": 11.53,

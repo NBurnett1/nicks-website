@@ -1,16 +1,12 @@
 {
   "ticker": "ASG",
   "name": "AUTOSPORTS FPO [ASG]",
-  "price": 1.63,
+  "price": 1.66,
   "valuationScore": 10.1,
-  "marketCap": "347M",
+  "marketCap": "354M",
   "sector": "Consumer Cyclical",
   "domain": "autosportsgroup.com.au",
   "chartData": [
-    {
-      "date": "2025-08-10",
-      "price": 2.51
-    },
     {
       "date": "2025-08-17",
       "price": 2.6
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-09",
       "price": 1.63
+    },
+    {
+      "date": "2026-08-16",
+      "price": 1.66
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 7.41,
-      "threshold": 22.56,
-      "label": "7.4x vs 22.6x sector"
+      "value": 7.55,
+      "threshold": 22.81,
+      "label": "7.5x vs 22.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.64,
+      "value": 0.65,
       "threshold": 1.5,
-      "label": "0.64x vs 1.5x"
+      "label": "0.65x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -26.72,
+      "value": -26.24,
       "threshold": 5.0,
-      "label": "-26.7% vs 5%"
+      "label": "-26.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 7.69,
-      "threshold": 7.41,
-      "label": "Fwd 7.7x vs Trail 7.4x"
+      "value": 7.83,
+      "threshold": 7.55,
+      "label": "Fwd 7.8x vs Trail 7.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 7.41,
-    "sectorPe": 26.54,
-    "pb": 0.64,
+    "pe": 7.55,
+    "sectorPe": 26.83,
+    "pb": 0.65,
     "ps": 0.12,
     "evEbitda": 10.86,
-    "fcfYield": -26.72,
-    "forwardPe": 7.69,
+    "fcfYield": -26.24,
+    "forwardPe": 7.83,
     "dividendYield": 6.13,
     "revenueGrowth": 10.9,
     "profitMargin": 1.46,
