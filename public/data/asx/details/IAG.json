@@ -2,8 +2,8 @@
   "ticker": "IAG",
   "name": "INSUR.AUST FPO [IAG]",
   "price": 8.35,
-  "valuationScore": 0.3,
-  "marketCap": "—",
+  "valuationScore": 3.6,
+  "marketCap": "19.5B",
   "sector": "Financials",
   "domain": "iag.com.au",
   "chartData": [
@@ -220,15 +220,15 @@
       "price": 8.35
     }
   ],
-  "testsPassed": 3,
-  "grade": "C",
+  "testsPassed": 5,
+  "grade": "B",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": false,
+      "passed": true,
       "value": 18.15,
-      "threshold": 17.52,
-      "label": "18.2x vs 17.5x sector"
+      "threshold": 18.38,
+      "label": "18.2x vs 18.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,16 +240,16 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 11.43,
+      "value": 11.1,
       "threshold": 10.0,
-      "label": "11.4x vs 10x"
+      "label": "11.1x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": -2.03,
       "threshold": 5.0,
-      "label": "No FCF data"
+      "label": "-2.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": true,
+      "value": 0.1,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "P/S 1.1x ÷ Growth 10.3% = 0.10"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,13 +282,13 @@
   },
   "metrics": {
     "pe": 18.15,
-    "sectorPe": 20.61,
+    "sectorPe": 21.62,
     "pb": 2.7,
-    "ps": null,
-    "evEbitda": 11.43,
-    "fcfYield": null,
+    "ps": 1.07,
+    "evEbitda": 11.1,
+    "fcfYield": -2.03,
     "forwardPe": 17.31,
-    "dividendYield": 3.59,
+    "dividendYield": 3.71,
     "revenueGrowth": 10.3,
     "profitMargin": 5.95,
     "operatingMargin": 9.44,
