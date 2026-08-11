@@ -2,7 +2,7 @@
   "ticker": "BWP",
   "name": "BWPPROPGP STAPLED [BWP]",
   "price": 3.89,
-  "valuationScore": 2.3,
+  "valuationScore": 2.2,
   "marketCap": "2.8B",
   "sector": "Real Estate",
   "domain": "bwptrust.com.au",
@@ -220,14 +220,14 @@
       "price": 3.89
     }
   ],
-  "testsPassed": 3,
+  "testsPassed": 4,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": false,
+      "passed": true,
       "value": 10.51,
-      "threshold": 10.47,
+      "threshold": 10.53,
       "label": "10.5x vs 10.5x sector"
     },
     "pbBelowBook": {
@@ -282,7 +282,7 @@
   },
   "metrics": {
     "pe": 10.51,
-    "sectorPe": 12.32,
+    "sectorPe": 12.39,
     "pb": 0.93,
     "ps": 13.71,
     "evEbitda": null,

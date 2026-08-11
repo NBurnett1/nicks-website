@@ -1,9 +1,9 @@
 {
   "ticker": "VCX",
   "name": "VICINITY STAPLED [VCX]",
-  "price": 2.71,
+  "price": 2.7,
   "valuationScore": -0.1,
-  "marketCap": "12.6B",
+  "marketCap": "12.5B",
   "sector": "Real Estate",
   "domain": "vicinity.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-16",
-      "price": 2.71
+      "price": 2.7
     }
   ],
   "testsPassed": 4,
@@ -226,8 +226,8 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 9.34,
-      "threshold": 10.47,
+      "value": 9.31,
+      "threshold": 10.53,
       "label": "9.3x vs 10.5x sector"
     },
     "pbBelowBook": {
@@ -247,15 +247,15 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.83,
+      "value": 4.85,
       "threshold": 5.0,
       "label": "4.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 17.22,
-      "threshold": 9.34,
+      "value": 17.16,
+      "threshold": 9.31,
       "label": "Fwd 17.2x vs Trail 9.3x"
     },
     "profitabilityCheck": {
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 7.55,
+      "value": 7.52,
       "threshold": 0.5,
-      "label": "P/S 9.1x ÷ Growth 1.2% = 7.55"
+      "label": "P/S 9.0x ÷ Growth 1.2% = 7.52"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 9.34,
-    "sectorPe": 12.32,
+    "pe": 9.31,
+    "sectorPe": 12.39,
     "pb": 1.06,
-    "ps": 9.06,
+    "ps": 9.03,
     "evEbitda": 20.21,
-    "fcfYield": 4.83,
-    "forwardPe": 17.22,
+    "fcfYield": 4.85,
+    "forwardPe": 17.16,
     "dividendYield": 4.58,
     "revenueGrowth": 1.2,
     "profitMargin": 94.93,
