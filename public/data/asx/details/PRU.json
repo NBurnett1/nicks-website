@@ -1,9 +1,9 @@
 {
   "ticker": "PRU",
   "name": "PERSEUS FPO [PRU]",
-  "price": 5.64,
+  "price": 5.61,
   "valuationScore": -2.9,
-  "marketCap": "7.5B",
+  "marketCap": "7.4B",
   "sector": "Basic Materials",
   "domain": "perseusmining.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-16",
-      "price": 5.64
+      "price": 5.61
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 15.24,
-      "threshold": 38.5,
-      "label": "15.2x vs 38.5x sector"
+      "value": 15.16,
+      "threshold": 38.27,
+      "label": "15.2x vs 38.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.4,
+      "value": 2.39,
       "threshold": 1.5,
-      "label": "2.40x vs 1.5x"
+      "label": "2.39x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 11.01,
-      "threshold": 15.24,
-      "label": "Fwd 11.0x vs Trail 15.2x"
+      "value": 10.95,
+      "threshold": 15.16,
+      "label": "Fwd 10.9x vs Trail 15.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 1.28,
+      "value": 1.27,
       "threshold": 0.5,
-      "label": "P/S 5.9x ÷ Growth 4.6% = 1.28"
+      "label": "P/S 5.8x ÷ Growth 4.6% = 1.27"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 15.24,
-    "sectorPe": 45.29,
-    "pb": 2.4,
-    "ps": 5.87,
+    "pe": 15.16,
+    "sectorPe": 45.02,
+    "pb": 2.39,
+    "ps": 5.84,
     "evEbitda": 10.63,
     "fcfYield": 1.22,
-    "forwardPe": 11.01,
+    "forwardPe": 10.95,
     "dividendYield": 1.77,
     "revenueGrowth": 4.6,
     "profitMargin": 27.94,

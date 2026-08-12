@@ -1,9 +1,9 @@
 {
   "ticker": "IAG",
   "name": "INSUR.AUST FPO [IAG]",
-  "price": 8.02,
+  "price": 8.23,
   "valuationScore": 3.3,
-  "marketCap": "18.8B",
+  "marketCap": "19.2B",
   "sector": "Financials",
   "domain": "iag.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-16",
-      "price": 8.02
+      "price": 8.23
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 17.43,
-      "threshold": 18.28,
-      "label": "17.4x vs 18.3x sector"
+      "value": 17.89,
+      "threshold": 18.52,
+      "label": "17.9x vs 18.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.6,
+      "value": 2.66,
       "threshold": 1.5,
-      "label": "2.60x vs 1.5x"
+      "label": "2.66x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -2.12,
+      "value": -2.06,
       "threshold": 5.0,
       "label": "-2.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.62,
-      "threshold": 17.43,
-      "label": "Fwd 16.6x vs Trail 17.4x"
+      "value": 17.06,
+      "threshold": 17.89,
+      "label": "Fwd 17.1x vs Trail 17.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.1,
       "threshold": 0.5,
-      "label": "P/S 1.0x ÷ Growth 10.3% = 0.10"
+      "label": "P/S 1.1x ÷ Growth 10.3% = 0.10"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 17.43,
-    "sectorPe": 21.5,
-    "pb": 2.6,
-    "ps": 1.03,
+    "pe": 17.89,
+    "sectorPe": 21.79,
+    "pb": 2.66,
+    "ps": 1.05,
     "evEbitda": 10.71,
-    "fcfYield": -2.12,
-    "forwardPe": 16.62,
+    "fcfYield": -2.06,
+    "forwardPe": 17.06,
     "dividendYield": 3.87,
     "revenueGrowth": 10.3,
     "profitMargin": 5.95,

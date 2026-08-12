@@ -1,9 +1,9 @@
 {
   "ticker": "BOQ",
   "name": "BANK QLD FPO [BOQ]",
-  "price": 6.62,
-  "valuationScore": 2.9,
-  "marketCap": "4.4B",
+  "price": 6.51,
+  "valuationScore": 2.5,
+  "marketCap": "4.3B",
   "sector": "Financials",
   "domain": "boq.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-16",
-      "price": 6.62
+      "price": 6.51
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 44.13,
-      "threshold": 18.28,
-      "label": "44.1x vs 18.3x sector"
+      "value": 43.4,
+      "threshold": 18.52,
+      "label": "43.4x vs 18.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.74,
+      "value": 0.72,
       "threshold": 1.5,
-      "label": "0.74x vs 1.5x"
+      "label": "0.72x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.33,
-      "threshold": 44.13,
-      "label": "Fwd 12.3x vs Trail 44.1x"
+      "value": 12.18,
+      "threshold": 43.4,
+      "label": "Fwd 12.2x vs Trail 43.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 1.31,
+      "value": 1.29,
       "threshold": 0.5,
-      "label": "P/S 2.6x ÷ Growth 2.0% = 1.31"
+      "label": "P/S 2.6x ÷ Growth 2.0% = 1.29"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 44.13,
-    "sectorPe": 21.5,
-    "pb": 0.74,
-    "ps": 2.62,
+    "pe": 43.4,
+    "sectorPe": 21.79,
+    "pb": 0.72,
+    "ps": 2.57,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 12.33,
+    "forwardPe": 12.18,
     "dividendYield": 6.04,
     "revenueGrowth": 2.0,
     "profitMargin": 5.89,

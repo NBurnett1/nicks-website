@@ -1,8 +1,8 @@
 {
   "ticker": "BGA",
   "name": "BEGA FPO [BGA]",
-  "price": 6.23,
-  "valuationScore": 25.4,
+  "price": 6.12,
+  "valuationScore": 25.1,
   "marketCap": "1.9B",
   "sector": "Consumer Staples",
   "domain": "begagroup.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-16",
-      "price": 6.23
+      "price": 6.12
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 207.67,
-      "threshold": 26.44,
-      "label": "207.7x vs 26.4x sector"
+      "value": 204.0,
+      "threshold": 26.22,
+      "label": "204.0x vs 26.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.89,
+      "value": 1.85,
       "threshold": 1.5,
-      "label": "1.89x vs 1.5x"
+      "label": "1.85x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.43,
+      "value": 2.48,
       "threshold": 5.0,
-      "label": "2.4% vs 5%"
+      "label": "2.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 24.28,
-      "threshold": 207.67,
-      "label": "Fwd 24.3x vs Trail 207.7x"
+      "value": 23.85,
+      "threshold": 204.0,
+      "label": "Fwd 23.9x vs Trail 204.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 207.67,
-    "sectorPe": 31.11,
-    "pb": 1.89,
+    "pe": 204.0,
+    "sectorPe": 30.84,
+    "pb": 1.85,
     "ps": 0.52,
     "evEbitda": 17.57,
-    "fcfYield": 2.43,
-    "forwardPe": 24.28,
+    "fcfYield": 2.48,
+    "forwardPe": 23.85,
     "dividendYield": 2.25,
     "revenueGrowth": 5.0,
     "profitMargin": 0.23,
