@@ -1,9 +1,9 @@
 {
   "ticker": "SKC",
   "name": "SKYCITY FPO NZX [SKC]",
-  "price": 0.51,
+  "price": 0.5,
   "valuationScore": 4.3,
-  "marketCap": "563M",
+  "marketCap": "552M",
   "sector": "Consumer Cyclical",
   "domain": "skycityentertainmentgroup.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-16",
-      "price": 0.51
+      "price": 0.5
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 17.0,
-      "threshold": 22.47,
-      "label": "17.0x vs 22.5x sector"
+      "value": 16.67,
+      "threshold": 22.67,
+      "label": "16.7x vs 22.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.43,
+      "value": 0.42,
       "threshold": 1.5,
-      "label": "0.43x vs 1.5x"
+      "label": "0.42x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -14.48,
+      "value": -14.77,
       "threshold": 5.0,
-      "label": "-14.5% vs 5%"
+      "label": "-14.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 15.47,
-      "threshold": 17.0,
-      "label": "Fwd 15.5x vs Trail 17.0x"
+      "value": 15.21,
+      "threshold": 16.67,
+      "label": "Fwd 15.2x vs Trail 16.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 17.0,
-    "sectorPe": 26.44,
-    "pb": 0.43,
-    "ps": 0.69,
+    "pe": 16.67,
+    "sectorPe": 26.67,
+    "pb": 0.42,
+    "ps": 0.68,
     "evEbitda": 7.29,
-    "fcfYield": -14.48,
-    "forwardPe": 15.47,
+    "fcfYield": -14.77,
+    "forwardPe": 15.21,
     "dividendYield": null,
     "revenueGrowth": -2.4,
     "profitMargin": 4.33,

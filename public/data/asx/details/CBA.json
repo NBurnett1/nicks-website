@@ -1,9 +1,9 @@
 {
   "ticker": "CBA",
   "name": "CWLTH BANK FPO [CBA]",
-  "price": 172.72,
-  "valuationScore": 3.5,
-  "marketCap": "288.8B",
+  "price": 169.0,
+  "valuationScore": 3.9,
+  "marketCap": "282.5B",
   "sector": "Financials",
   "domain": "commbank.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-16",
-      "price": 172.72
+      "price": 169.0
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 26.53,
-      "threshold": 18.52,
-      "label": "26.5x vs 18.5x sector"
+      "value": 25.96,
+      "threshold": 17.6,
+      "label": "26.0x vs 17.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.74,
+      "value": 3.66,
       "threshold": 1.5,
-      "label": "3.74x vs 1.5x"
+      "label": "3.66x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 25.38,
-      "threshold": 26.53,
-      "label": "Fwd 25.4x vs Trail 26.5x"
+      "value": 24.84,
+      "threshold": 25.96,
+      "label": "Fwd 24.8x vs Trail 26.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 1.54,
+      "value": 1.5,
       "threshold": 0.5,
-      "label": "P/S 10.1x ÷ Growth 6.6% = 1.54"
+      "label": "P/S 9.9x ÷ Growth 6.6% = 1.50"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 26.53,
-    "sectorPe": 21.79,
-    "pb": 3.74,
-    "ps": 10.15,
+    "pe": 25.96,
+    "sectorPe": 20.7,
+    "pb": 3.66,
+    "ps": 9.93,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 25.38,
+    "forwardPe": 24.84,
     "dividendYield": 2.85,
     "revenueGrowth": 6.6,
     "profitMargin": 36.35,

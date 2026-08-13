@@ -1,9 +1,9 @@
 {
   "ticker": "DOW",
   "name": "DOWNER EDI FPO [DOW]",
-  "price": 7.68,
+  "price": 7.6,
   "valuationScore": -7.2,
-  "marketCap": "5.1B",
+  "marketCap": "5.0B",
   "sector": "Industrials",
   "domain": "downergroup.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-16",
-      "price": 7.68
+      "price": 7.6
     }
   ],
   "testsPassed": 2,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 32.0,
-      "threshold": 27.2,
-      "label": "32.0x vs 27.2x sector"
+      "value": 31.67,
+      "threshold": 26.92,
+      "label": "31.7x vs 26.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.58,
+      "value": 2.55,
       "threshold": 1.5,
-      "label": "2.58x vs 1.5x"
+      "label": "2.55x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 11.36,
+      "value": 11.46,
       "threshold": 10.0,
-      "label": "11.4x vs 10x"
+      "label": "11.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 11.45,
+      "value": 11.57,
       "threshold": 5.0,
-      "label": "11.4% vs 5%"
+      "label": "11.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.08,
-      "threshold": 32.0,
-      "label": "Fwd 16.1x vs Trail 32.0x"
+      "value": 15.92,
+      "threshold": 31.67,
+      "label": "Fwd 15.9x vs Trail 31.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 32.0,
-    "sectorPe": 32.0,
-    "pb": 2.58,
+    "pe": 31.67,
+    "sectorPe": 31.67,
+    "pb": 2.55,
     "ps": 0.5,
-    "evEbitda": 11.36,
-    "fcfYield": 11.45,
-    "forwardPe": 16.08,
+    "evEbitda": 11.46,
+    "fcfYield": 11.57,
+    "forwardPe": 15.92,
     "dividendYield": 3.52,
     "revenueGrowth": -7.1,
     "profitMargin": 1.59,
