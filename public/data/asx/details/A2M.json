@@ -1,9 +1,9 @@
 {
   "ticker": "A2M",
   "name": "A2 MILK FPO NZ [A2M]",
-  "price": 6.93,
+  "price": 6.75,
   "valuationScore": -0.3,
-  "marketCap": "5.0B",
+  "marketCap": "4.9B",
   "sector": "Consumer Staples",
   "domain": "thea2milkcompany.com",
   "chartData": [
@@ -217,25 +217,25 @@
     },
     {
       "date": "2026-08-16",
-      "price": 6.93
+      "price": 6.75
     }
   ],
-  "testsPassed": 4,
-  "grade": "C",
+  "testsPassed": 5,
+  "grade": "B",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": false,
-      "value": 26.65,
-      "threshold": 26.47,
-      "label": "26.7x vs 26.5x sector"
+      "passed": true,
+      "value": 25.96,
+      "threshold": 26.33,
+      "label": "26.0x vs 26.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.35,
+      "value": 4.24,
       "threshold": 1.5,
-      "label": "4.35x vs 1.5x"
+      "label": "4.24x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.14,
+      "value": 3.22,
       "threshold": 5.0,
-      "label": "3.1% vs 5%"
+      "label": "3.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 26.05,
-      "threshold": 26.65,
-      "label": "Fwd 26.0x vs Trail 26.7x"
+      "value": 25.37,
+      "threshold": 25.96,
+      "label": "Fwd 25.4x vs Trail 26.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 26.65,
-    "sectorPe": 31.14,
-    "pb": 4.35,
-    "ps": 2.44,
+    "pe": 25.96,
+    "sectorPe": 30.97,
+    "pb": 4.24,
+    "ps": 2.38,
     "evEbitda": 14.48,
-    "fcfYield": 3.14,
-    "forwardPe": 26.05,
+    "fcfYield": 3.22,
+    "forwardPe": 25.37,
     "dividendYield": 2.43,
     "revenueGrowth": 18.8,
     "profitMargin": 5.94,

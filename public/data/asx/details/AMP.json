@@ -2,8 +2,8 @@
   "ticker": "AMP",
   "name": "AMP FPO [AMP]",
   "price": 2.33,
-  "valuationScore": 4.4,
-  "marketCap": "—",
+  "valuationScore": 5.5,
+  "marketCap": "5.7B",
   "sector": "Financials",
   "domain": "amp.com.au",
   "chartData": [
@@ -240,16 +240,16 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 18.58,
+      "value": 18.54,
       "threshold": 10.0,
-      "label": "18.6x vs 10x"
+      "label": "18.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": 3.96,
       "threshold": 5.0,
-      "label": "No FCF data"
+      "label": "4.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": 0.71,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "P/S 2.0x ÷ Growth 2.8% = 0.71"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,11 +282,11 @@
   },
   "metrics": {
     "pe": 33.29,
-    "sectorPe": 20.7,
+    "sectorPe": 20.71,
     "pb": 1.53,
-    "ps": null,
-    "evEbitda": 18.58,
-    "fcfYield": null,
+    "ps": 2.0,
+    "evEbitda": 18.54,
+    "fcfYield": 3.96,
     "forwardPe": 15.59,
     "dividendYield": 2.15,
     "revenueGrowth": 2.8,

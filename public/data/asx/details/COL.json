@@ -1,9 +1,9 @@
 {
   "ticker": "COL",
   "name": "COLESGROUP FPO [COL]",
-  "price": 23.67,
-  "valuationScore": 3.1,
-  "marketCap": "31.8B",
+  "price": 23.54,
+  "valuationScore": 3.5,
+  "marketCap": "31.6B",
   "sector": "Consumer Staples",
   "domain": "colesgroup.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-16",
-      "price": 23.67
+      "price": 23.54
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 31.14,
-      "threshold": 26.47,
-      "label": "31.1x vs 26.5x sector"
+      "value": 30.97,
+      "threshold": 26.33,
+      "label": "31.0x vs 26.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 8.15,
+      "value": 8.11,
       "threshold": 1.5,
-      "label": "8.15x vs 1.5x"
+      "label": "8.11x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 16.2,
+      "value": 16.32,
       "threshold": 10.0,
-      "label": "16.2x vs 10x"
+      "label": "16.3x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.28,
+      "value": 4.31,
       "threshold": 5.0,
       "label": "4.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 23.58,
-      "threshold": 31.14,
-      "label": "Fwd 23.6x vs Trail 31.1x"
+      "value": 23.45,
+      "threshold": 30.97,
+      "label": "Fwd 23.5x vs Trail 31.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 31.14,
-    "sectorPe": 31.14,
-    "pb": 8.15,
-    "ps": 0.71,
-    "evEbitda": 16.2,
-    "fcfYield": 4.28,
-    "forwardPe": 23.58,
+    "pe": 30.97,
+    "sectorPe": 30.97,
+    "pb": 8.11,
+    "ps": 0.7,
+    "evEbitda": 16.32,
+    "fcfYield": 4.31,
+    "forwardPe": 23.45,
     "dividendYield": 3.08,
     "revenueGrowth": 2.5,
     "profitMargin": 2.25,

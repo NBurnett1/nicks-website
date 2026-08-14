@@ -1,8 +1,8 @@
 {
   "ticker": "TPG",
   "name": "TPGLIMITED FPO [TPG]",
-  "price": 3.57,
-  "valuationScore": 5.9,
+  "price": 3.55,
+  "valuationScore": 7.7,
   "marketCap": "7.0B",
   "sector": "Telecom",
   "domain": "tpgtelecom.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-16",
-      "price": 3.57
+      "price": 3.55
     }
   ],
   "testsPassed": 6,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 119.0,
-      "threshold": 17.72,
-      "label": "119.0x vs 17.7x sector"
+      "value": 118.33,
+      "threshold": 17.77,
+      "label": "118.3x vs 17.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,23 +240,23 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 8.55,
+      "value": 8.56,
       "threshold": 10.0,
-      "label": "8.5x vs 10x"
+      "label": "8.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 13.7,
+      "value": 13.78,
       "threshold": 5.0,
-      "label": "13.7% vs 5%"
+      "label": "13.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 39.45,
-      "threshold": 119.0,
-      "label": "Fwd 39.4x vs Trail 119.0x"
+      "value": 39.23,
+      "threshold": 118.33,
+      "label": "Fwd 39.2x vs Trail 118.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.37,
+      "value": 0.36,
       "threshold": 0.5,
-      "label": "P/S 1.4x ÷ Growth 3.8% = 0.37"
+      "label": "P/S 1.4x ÷ Growth 3.8% = 0.36"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 119.0,
-    "sectorPe": 20.85,
+    "pe": 118.33,
+    "sectorPe": 20.91,
     "pb": 0.8,
-    "ps": 1.39,
-    "evEbitda": 8.55,
-    "fcfYield": 13.7,
-    "forwardPe": 39.45,
-    "dividendYield": 5.04,
+    "ps": 1.38,
+    "evEbitda": 8.56,
+    "fcfYield": 13.78,
+    "forwardPe": 39.23,
+    "dividendYield": 5.03,
     "revenueGrowth": 3.8,
     "profitMargin": 9.13,
     "operatingMargin": 7.69,

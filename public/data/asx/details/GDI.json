@@ -2,8 +2,8 @@
   "ticker": "GDI",
   "name": "GDI PROP STAPLED [GDI]",
   "price": 0.64,
-  "valuationScore": 49.8,
-  "marketCap": "343M",
+  "valuationScore": 49.0,
+  "marketCap": "345M",
   "sector": "Real Estate",
   "domain": "gdi.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-16",
-      "price": 0.63
+      "price": 0.64
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 9.07,
-      "threshold": 10.01,
-      "label": "9.1x vs 10.0x sector"
+      "value": 9.14,
+      "threshold": 9.94,
+      "label": "9.1x vs 9.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 12.96,
+      "value": 13.06,
       "threshold": 1.5,
-      "label": "12.96x vs 1.5x"
+      "label": "13.06x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,15 +247,15 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -15.71,
+      "value": -15.59,
       "threshold": 5.0,
-      "label": "-15.7% vs 5%"
+      "label": "-15.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 6.98,
-      "threshold": 9.07,
+      "value": 7.03,
+      "threshold": 9.14,
       "label": "Fwd 7.0x vs Trail 9.1x"
     },
     "profitabilityCheck": {
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 1.11,
+      "value": 1.12,
       "threshold": 0.5,
-      "label": "P/S 3.9x ÷ Growth 3.5% = 1.11"
+      "label": "P/S 3.9x ÷ Growth 3.5% = 1.12"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 9.07,
-    "sectorPe": 11.78,
-    "pb": 12.96,
-    "ps": 3.88,
+    "pe": 9.14,
+    "sectorPe": 11.69,
+    "pb": 13.06,
+    "ps": 3.91,
     "evEbitda": 28.47,
-    "fcfYield": -15.71,
-    "forwardPe": 6.98,
+    "fcfYield": -15.59,
+    "forwardPe": 7.03,
     "dividendYield": 7.75,
     "revenueGrowth": 3.5,
     "profitMargin": 1.91,

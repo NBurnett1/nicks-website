@@ -1,9 +1,9 @@
 {
   "ticker": "ASX",
   "name": "ASX FPO [ASX]",
-  "price": 60.52,
-  "valuationScore": -3.7,
-  "marketCap": "11.8B",
+  "price": 58.29,
+  "valuationScore": -8.8,
+  "marketCap": "11.4B",
   "sector": "Financial Services",
   "domain": "asx.com.au",
   "chartData": [
@@ -217,46 +217,46 @@
     },
     {
       "date": "2026-08-16",
-      "price": 60.52
+      "price": 58.29
     }
   ],
-  "testsPassed": 3,
-  "grade": "C",
+  "testsPassed": 5,
+  "grade": "B",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 22.5,
-      "threshold": 15.64,
-      "label": "22.5x vs 15.6x sector"
+      "value": 23.41,
+      "threshold": 15.62,
+      "label": "23.4x vs 15.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.01,
+      "value": 2.9,
       "threshold": 1.5,
-      "label": "3.01x vs 1.5x"
+      "label": "2.90x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
-      "passed": false,
-      "value": 10.83,
+      "passed": true,
+      "value": 9.36,
       "threshold": 10.0,
-      "label": "10.8x vs 10x"
+      "label": "9.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 27.47,
+      "value": 28.52,
       "threshold": 5.0,
-      "label": "27.5% vs 5%"
+      "label": "28.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
-      "passed": false,
-      "value": 23.64,
-      "threshold": 22.5,
-      "label": "Fwd 23.6x vs Trail 22.5x"
+      "passed": true,
+      "value": 22.51,
+      "threshold": 23.41,
+      "label": "Fwd 22.5x vs Trail 23.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.9,
+      "value": 0.86,
       "threshold": 0.5,
-      "label": "P/S 10.0x ÷ Growth 11.2% = 0.90"
+      "label": "P/S 9.7x ÷ Growth 11.2% = 0.86"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 22.5,
-    "sectorPe": 18.4,
-    "pb": 3.01,
-    "ps": 10.04,
-    "evEbitda": 10.83,
-    "fcfYield": 27.47,
-    "forwardPe": 23.64,
-    "dividendYield": 3.36,
+    "pe": 23.41,
+    "sectorPe": 18.38,
+    "pb": 2.9,
+    "ps": 9.67,
+    "evEbitda": 9.36,
+    "fcfYield": 28.52,
+    "forwardPe": 22.51,
+    "dividendYield": 3.67,
     "revenueGrowth": 11.2,
     "profitMargin": 44.36,
     "operatingMargin": 55.86,
