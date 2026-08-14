@@ -2,7 +2,7 @@
   "ticker": "ASX",
   "name": "ASX FPO [ASX]",
   "price": 58.29,
-  "valuationScore": -8.8,
+  "valuationScore": -4.0,
   "marketCap": "11.4B",
   "sector": "Financial Services",
   "domain": "asx.com.au",
@@ -220,8 +220,8 @@
       "price": 58.29
     }
   ],
-  "testsPassed": 5,
-  "grade": "B",
+  "testsPassed": 4,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -239,10 +239,10 @@
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
-      "passed": true,
-      "value": 9.36,
+      "passed": false,
+      "value": 10.83,
       "threshold": 10.0,
-      "label": "9.4x vs 10x"
+      "label": "10.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
@@ -254,7 +254,7 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 22.51,
+      "value": 22.47,
       "threshold": 23.41,
       "label": "Fwd 22.5x vs Trail 23.4x"
     },
@@ -285,10 +285,10 @@
     "sectorPe": 18.38,
     "pb": 2.9,
     "ps": 9.67,
-    "evEbitda": 9.36,
+    "evEbitda": 10.83,
     "fcfYield": 28.52,
-    "forwardPe": 22.51,
-    "dividendYield": 3.67,
+    "forwardPe": 22.47,
+    "dividendYield": 3.36,
     "revenueGrowth": 11.2,
     "profitMargin": 44.36,
     "operatingMargin": 55.86,

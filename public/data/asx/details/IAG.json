@@ -2,8 +2,8 @@
   "ticker": "IAG",
   "name": "INSUR.AUST FPO [IAG]",
   "price": 8.14,
-  "valuationScore": 3.7,
-  "marketCap": "19.0B",
+  "valuationScore": -0.1,
+  "marketCap": "—",
   "sector": "Financials",
   "domain": "iag.com.au",
   "chartData": [
@@ -220,57 +220,57 @@
       "price": 8.14
     }
   ],
-  "testsPassed": 4,
+  "testsPassed": 3,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
       "value": 18.93,
-      "threshold": 17.6,
+      "threshold": 17.58,
       "label": "18.9x vs 17.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.63,
+      "value": 2.62,
       "threshold": 1.5,
-      "label": "2.63x vs 1.5x"
+      "label": "2.62x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 10.96,
+      "value": 10.04,
       "threshold": 10.0,
-      "label": "11.0x vs 10x"
+      "label": "10.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": -2.08,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "-2.1% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.45,
+      "value": 16.44,
       "threshold": 18.93,
       "label": "Fwd 16.4x vs Trail 18.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": true,
-      "value": 5.95,
+      "value": 5.34,
       "threshold": 5.0,
-      "label": "Margin 6.0% / ROE 15.7%"
+      "label": "Margin 5.3% / ROE 15.6%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": true,
-      "value": 0.1,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 1.0x ÷ Growth 10.3% = 0.10"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,17 +282,17 @@
   },
   "metrics": {
     "pe": 18.93,
-    "sectorPe": 20.71,
-    "pb": 2.63,
-    "ps": 1.04,
-    "evEbitda": 10.96,
-    "fcfYield": -2.08,
-    "forwardPe": 16.45,
-    "dividendYield": 3.77,
+    "sectorPe": 20.68,
+    "pb": 2.62,
+    "ps": null,
+    "evEbitda": 10.04,
+    "fcfYield": null,
+    "forwardPe": 16.44,
+    "dividendYield": 3.93,
     "revenueGrowth": 10.3,
-    "profitMargin": 5.95,
-    "operatingMargin": 9.44,
-    "roe": 15.74,
-    "debtEquity": 41.71
+    "profitMargin": 5.34,
+    "operatingMargin": 10.71,
+    "roe": 15.57,
+    "debtEquity": 41.34
   }
 }

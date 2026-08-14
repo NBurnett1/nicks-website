@@ -2,7 +2,7 @@
   "ticker": "ORA",
   "name": "ORORA FPO [ORA]",
   "price": 1.5,
-  "valuationScore": -5.7,
+  "valuationScore": -0.3,
   "marketCap": "1.8B",
   "sector": "Consumer Cyclical",
   "domain": "ororagroup.com",
@@ -220,8 +220,8 @@
       "price": 1.5
     }
   ],
-  "testsPassed": 5,
-  "grade": "B",
+  "testsPassed": 4,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -240,16 +240,16 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 5.88,
+      "value": 6.33,
       "threshold": 10.0,
-      "label": "5.9x vs 10x"
+      "label": "6.3x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": true,
-      "value": 10.81,
+      "passed": false,
+      "value": -0.63,
       "threshold": 5.0,
-      "label": "10.8% vs 5%"
+      "label": "-0.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
@@ -261,38 +261,38 @@
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": false,
-      "value": 5.68,
+      "value": -27.7,
       "threshold": 5.0,
-      "label": "Margin 5.7% / ROE 4.3%"
+      "label": "Margin -27.7% / ROE -25.5%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.09,
+      "value": 0.24,
       "threshold": 0.5,
-      "label": "P/S 0.8x ÷ Growth 9.7% = 0.09"
+      "label": "P/S 0.8x ÷ Growth 3.4% = 0.24"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": true,
-      "value": 9.7,
+      "value": 3.4,
       "threshold": -5.0,
-      "label": "9.7% growth (floor: -5%)"
+      "label": "3.4% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 28.23,
+    "sectorPe": 28.17,
     "pb": 0.67,
-    "ps": 0.84,
-    "evEbitda": 5.88,
-    "fcfYield": 10.81,
+    "ps": 0.83,
+    "evEbitda": 6.33,
+    "fcfYield": -0.63,
     "forwardPe": 12.67,
-    "dividendYield": 6.73,
-    "revenueGrowth": 9.7,
-    "profitMargin": 5.68,
-    "operatingMargin": 11.63,
-    "roe": 4.35,
-    "debtEquity": 28.95
+    "dividendYield": 5.98,
+    "revenueGrowth": 3.4,
+    "profitMargin": -27.7,
+    "operatingMargin": 10.66,
+    "roe": -25.53,
+    "debtEquity": 60.0
   }
 }

@@ -2,7 +2,7 @@
   "ticker": "SUN",
   "name": "SUNCORP FPO [SUN]",
   "price": 19.7,
-  "valuationScore": -1.1,
+  "valuationScore": 0.8,
   "marketCap": "20.9B",
   "sector": "Financials",
   "domain": "suncorpgroup.com.au",
@@ -227,7 +227,7 @@
       "name": "P/E Discount",
       "passed": false,
       "value": 20.74,
-      "threshold": 17.6,
+      "threshold": 17.58,
       "label": "20.7x vs 17.6x sector"
     },
     "pbBelowBook": {
@@ -240,16 +240,16 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 13.79,
+      "value": 13.92,
       "threshold": 10.0,
-      "label": "13.8x vs 10x"
+      "label": "13.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 11.15,
+      "value": 8.03,
       "threshold": 5.0,
-      "label": "11.2% vs 5%"
+      "label": "8.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
@@ -261,38 +261,38 @@
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": true,
-      "value": 6.54,
+      "value": 6.83,
       "threshold": 5.0,
-      "label": "Margin 6.5% / ROE 8.4%"
+      "label": "Margin 6.8% / ROE 10.1%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.81,
+      "value": -0.5,
       "threshold": 0.5,
-      "label": "P/S 1.4x ÷ Growth 1.7% = 0.81"
+      "label": "FAIL — Revenue declining -0.5%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": true,
-      "value": 1.7,
+      "value": -0.5,
       "threshold": -5.0,
-      "label": "1.7% growth (floor: -5%)"
+      "label": "-0.5% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": 20.74,
-    "sectorPe": 20.71,
+    "sectorPe": 20.68,
     "pb": 2.1,
-    "ps": 1.38,
-    "evEbitda": 13.79,
-    "fcfYield": 11.15,
+    "ps": 1.39,
+    "evEbitda": 13.92,
+    "fcfYield": 8.03,
     "forwardPe": 15.78,
-    "dividendYield": 1.83,
-    "revenueGrowth": 1.7,
-    "profitMargin": 6.54,
-    "operatingMargin": 6.42,
-    "roe": 8.4,
-    "debtEquity": 22.54
+    "dividendYield": 5.28,
+    "revenueGrowth": -0.5,
+    "profitMargin": 6.83,
+    "operatingMargin": 13.66,
+    "roe": 10.14,
+    "debtEquity": 25.55
   }
 }

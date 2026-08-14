@@ -2,8 +2,8 @@
   "ticker": "TCL",
   "name": "TRANSURBAN STAPLED [TCL]",
   "price": 13.96,
-  "valuationScore": 21.1,
-  "marketCap": "43.6B",
+  "valuationScore": 18.6,
+  "marketCap": "—",
   "sector": "Industrials",
   "domain": "transurban.com",
   "chartData": [
@@ -220,7 +220,7 @@
       "price": 13.96
     }
   ],
-  "testsPassed": 2,
+  "testsPassed": 1,
   "grade": "D",
   "valuationTests": {
     "peDiscount": {
@@ -240,16 +240,16 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 29.05,
+      "value": 27.65,
       "threshold": 10.0,
-      "label": "29.1x vs 10x"
+      "label": "27.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 1.31,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "1.3% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
@@ -261,38 +261,38 @@
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": false,
-      "value": 12.19,
+      "value": 9.4,
       "threshold": 5.0,
-      "label": "Margin 12.2% / ROE 5.4%"
+      "label": "Margin 9.4% / ROE 5.0%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": 1.36,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 11.1x ÷ Growth 8.2% = 1.36"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
-      "passed": true,
-      "value": 8.2,
+      "passed": false,
+      "value": -9.8,
       "threshold": -5.0,
-      "label": "8.2% growth (floor: -5%)"
+      "label": "-9.8% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": 116.33,
     "sectorPe": 31.38,
     "pb": 4.95,
-    "ps": 11.11,
-    "evEbitda": 29.05,
-    "fcfYield": 1.31,
+    "ps": null,
+    "evEbitda": 27.65,
+    "fcfYield": null,
     "forwardPe": 53.24,
-    "dividendYield": 4.78,
-    "revenueGrowth": 8.2,
-    "profitMargin": 12.19,
-    "operatingMargin": 35.6,
-    "roe": 5.36,
-    "debtEquity": 228.43
+    "dividendYield": 5.01,
+    "revenueGrowth": -9.8,
+    "profitMargin": 9.4,
+    "operatingMargin": 24.27,
+    "roe": 4.97,
+    "debtEquity": 262.7
   }
 }

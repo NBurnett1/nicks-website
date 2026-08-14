@@ -2,8 +2,8 @@
   "ticker": "CSL",
   "name": "CSL FPO [CSL]",
   "price": 136.5,
-  "valuationScore": -1.8,
-  "marketCap": "65.4B",
+  "valuationScore": -1.1,
+  "marketCap": "—",
   "sector": "Healthcare",
   "domain": "csl.com",
   "chartData": [
@@ -226,7 +226,7 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 15.64,
+      "value": 15.62,
       "threshold": 21.51,
       "label": "15.6x vs 21.5x sector"
     },
@@ -246,16 +246,16 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 2.83,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "2.8% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
       "value": 15.16,
-      "threshold": 15.64,
+      "threshold": 15.62,
       "label": "Fwd 15.2x vs Trail 15.6x"
     },
     "profitabilityCheck": {
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": -1.8,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining -1.8%"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 15.64,
+    "pe": 15.62,
     "sectorPe": 25.3,
     "pb": 2.49,
-    "ps": 4.24,
+    "ps": null,
     "evEbitda": 16.14,
-    "fcfYield": 2.83,
+    "fcfYield": null,
     "forwardPe": 15.16,
-    "dividendYield": 3.1,
+    "dividendYield": 3.12,
     "revenueGrowth": -1.8,
     "profitMargin": 9.06,
     "operatingMargin": 31.65,
