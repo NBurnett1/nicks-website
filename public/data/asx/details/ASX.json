@@ -2,7 +2,7 @@
   "ticker": "ASX",
   "name": "ASX FPO [ASX]",
   "price": 58.29,
-  "valuationScore": -4.0,
+  "valuationScore": 8.0,
   "marketCap": "11.4B",
   "sector": "Financial Services",
   "domain": "asx.com.au",
@@ -220,7 +220,7 @@
       "price": 58.29
     }
   ],
-  "testsPassed": 4,
+  "testsPassed": 3,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
@@ -240,16 +240,16 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 10.83,
+      "value": 10.6,
       "threshold": 10.0,
-      "label": "10.8x vs 10x"
+      "label": "10.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": true,
-      "value": 28.52,
+      "passed": false,
+      "value": -2.85,
       "threshold": 5.0,
-      "label": "28.5% vs 5%"
+      "label": "-2.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
@@ -261,38 +261,38 @@
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": true,
-      "value": 44.36,
+      "value": 38.42,
       "threshold": 5.0,
-      "label": "Margin 44.4% / ROE 13.6%"
+      "label": "Margin 38.4% / ROE 12.3%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.86,
+      "value": 0.61,
       "threshold": 0.5,
-      "label": "P/S 9.7x ÷ Growth 11.2% = 0.86"
+      "label": "P/S 9.0x ÷ Growth 14.7% = 0.61"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": true,
-      "value": 11.2,
+      "value": 14.7,
       "threshold": -5.0,
-      "label": "11.2% growth (floor: -5%)"
+      "label": "14.7% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": 23.41,
     "sectorPe": 18.38,
     "pb": 2.9,
-    "ps": 9.67,
-    "evEbitda": 10.83,
-    "fcfYield": 28.52,
+    "ps": 9.02,
+    "evEbitda": 10.6,
+    "fcfYield": -2.85,
     "forwardPe": 22.47,
-    "dividendYield": 3.36,
-    "revenueGrowth": 11.2,
-    "profitMargin": 44.36,
-    "operatingMargin": 55.86,
-    "roe": 13.64,
-    "debtEquity": 12.33
+    "dividendYield": 3.59,
+    "revenueGrowth": 14.7,
+    "profitMargin": 38.42,
+    "operatingMargin": 47.31,
+    "roe": 12.34,
+    "debtEquity": 12.3
   }
 }
