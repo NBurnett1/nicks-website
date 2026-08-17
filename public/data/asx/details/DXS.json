@@ -1,16 +1,12 @@
 {
   "ticker": "DXS",
   "name": "DEXUS STAPLED [DXS]",
-  "price": 5.88,
-  "valuationScore": -14.4,
-  "marketCap": "6.3B",
+  "price": 5.75,
+  "valuationScore": -14.7,
+  "marketCap": "6.2B",
   "sector": "Real Estate",
   "domain": "dexus.com",
   "chartData": [
-    {
-      "date": "2025-08-17",
-      "price": 7.0
-    },
     {
       "date": "2025-08-24",
       "price": 7.11
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-16",
       "price": 5.88
+    },
+    {
+      "date": "2026-08-23",
+      "price": 5.75
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 12.78,
-      "threshold": 9.94,
-      "label": "12.8x vs 9.9x sector"
+      "value": 12.5,
+      "threshold": 9.87,
+      "label": "12.5x vs 9.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.66,
+      "value": 0.64,
       "threshold": 1.5,
-      "label": "0.66x vs 1.5x"
+      "label": "0.64x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 14.6,
+      "value": 14.93,
       "threshold": 5.0,
-      "label": "14.6% vs 5%"
+      "label": "14.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 10.12,
-      "threshold": 12.78,
-      "label": "Fwd 10.1x vs Trail 12.8x"
+      "value": 9.9,
+      "threshold": 12.5,
+      "label": "Fwd 9.9x vs Trail 12.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.2,
+      "value": 0.19,
       "threshold": 0.5,
-      "label": "P/S 4.5x ÷ Growth 22.7% = 0.20"
+      "label": "P/S 4.4x ÷ Growth 22.7% = 0.19"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 12.78,
-    "sectorPe": 11.69,
-    "pb": 0.66,
-    "ps": 4.47,
+    "pe": 12.5,
+    "sectorPe": 11.61,
+    "pb": 0.64,
+    "ps": 4.37,
     "evEbitda": 12.34,
-    "fcfYield": 14.6,
-    "forwardPe": 10.12,
+    "fcfYield": 14.93,
+    "forwardPe": 9.9,
     "dividendYield": 6.29,
     "revenueGrowth": 22.7,
     "profitMargin": 38.96,

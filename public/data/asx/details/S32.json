@@ -1,16 +1,12 @@
 {
   "ticker": "S32",
   "name": "SOUTH32 FPO [S32]",
-  "price": 4.76,
-  "valuationScore": 11.8,
-  "marketCap": "21.3B",
+  "price": 4.92,
+  "valuationScore": 12.0,
+  "marketCap": "22.0B",
   "sector": "Materials",
   "domain": "south32.net",
   "chartData": [
-    {
-      "date": "2025-08-17",
-      "price": 2.88
-    },
     {
       "date": "2025-08-24",
       "price": 2.76
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-16",
       "price": 4.76
+    },
+    {
+      "date": "2026-08-23",
+      "price": 4.92
     }
   ],
   "testsPassed": 2,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 39.67,
-      "threshold": 16.51,
-      "label": "39.7x vs 16.5x sector"
+      "value": 41.0,
+      "threshold": 16.7,
+      "label": "41.0x vs 16.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.62,
+      "value": 1.67,
       "threshold": 1.5,
-      "label": "1.62x vs 1.5x"
+      "label": "1.67x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -0.66,
+      "value": -0.64,
       "threshold": 5.0,
-      "label": "-0.7% vs 5%"
+      "label": "-0.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.76,
-      "threshold": 39.67,
-      "label": "Fwd 12.8x vs Trail 39.7x"
+      "value": 13.19,
+      "threshold": 41.0,
+      "label": "Fwd 13.2x vs Trail 41.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 39.67,
-    "sectorPe": 19.42,
-    "pb": 1.62,
-    "ps": 3.61,
+    "pe": 41.0,
+    "sectorPe": 19.65,
+    "pb": 1.67,
+    "ps": 3.73,
     "evEbitda": 17.95,
-    "fcfYield": -0.66,
-    "forwardPe": 12.76,
+    "fcfYield": -0.64,
+    "forwardPe": 13.19,
     "dividendYield": 1.98,
     "revenueGrowth": -2.6,
     "profitMargin": 5.37,

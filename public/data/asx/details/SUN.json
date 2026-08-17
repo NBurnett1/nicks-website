@@ -1,16 +1,12 @@
 {
   "ticker": "SUN",
   "name": "SUNCORP FPO [SUN]",
-  "price": 19.7,
-  "valuationScore": 1.0,
-  "marketCap": "20.9B",
+  "price": 18.7,
+  "valuationScore": 0.9,
+  "marketCap": "19.8B",
   "sector": "Financials",
   "domain": "suncorpgroup.com.au",
   "chartData": [
-    {
-      "date": "2025-08-17",
-      "price": 19.67
-    },
     {
       "date": "2025-08-24",
       "price": 20.9
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-16",
       "price": 19.08
+    },
+    {
+      "date": "2026-08-23",
+      "price": 18.7
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 20.74,
-      "threshold": 17.58,
-      "label": "20.7x vs 17.6x sector"
+      "value": 19.68,
+      "threshold": 16.73,
+      "label": "19.7x vs 16.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.1,
+      "value": 2.0,
       "threshold": 1.5,
-      "label": "2.10x vs 1.5x"
+      "label": "2.00x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 8.03,
+      "value": 8.46,
       "threshold": 5.0,
-      "label": "8.0% vs 5%"
+      "label": "8.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 15.78,
-      "threshold": 20.74,
-      "label": "Fwd 15.8x vs Trail 20.7x"
+      "value": 14.98,
+      "threshold": 19.68,
+      "label": "Fwd 15.0x vs Trail 19.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 20.74,
-    "sectorPe": 20.68,
-    "pb": 2.1,
-    "ps": 1.39,
+    "pe": 19.68,
+    "sectorPe": 19.68,
+    "pb": 2.0,
+    "ps": 1.32,
     "evEbitda": 13.85,
-    "fcfYield": 8.03,
-    "forwardPe": 15.78,
+    "fcfYield": 8.46,
+    "forwardPe": 14.98,
     "dividendYield": 5.28,
     "revenueGrowth": -0.5,
     "profitMargin": 6.83,

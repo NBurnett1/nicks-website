@@ -1,16 +1,12 @@
 {
   "ticker": "TCL",
   "name": "TRANSURBAN STAPLED [TCL]",
-  "price": 13.96,
-  "valuationScore": 18.4,
+  "price": 14.07,
+  "valuationScore": 18.8,
   "marketCap": "—",
   "sector": "Industrials",
   "domain": "transurban.com",
   "chartData": [
-    {
-      "date": "2025-08-17",
-      "price": 13.36
-    },
     {
       "date": "2025-08-24",
       "price": 14.11
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-16",
       "price": 13.96
+    },
+    {
+      "date": "2026-08-23",
+      "price": 14.07
     }
   ],
   "testsPassed": 1,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 116.33,
-      "threshold": 26.67,
-      "label": "116.3x vs 26.7x sector"
+      "value": 117.25,
+      "threshold": 26.35,
+      "label": "117.2x vs 26.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.95,
+      "value": 4.99,
       "threshold": 1.5,
-      "label": "4.95x vs 1.5x"
+      "label": "4.99x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 58.63,
-      "threshold": 116.33,
-      "label": "Fwd 58.6x vs Trail 116.3x"
+      "value": 59.09,
+      "threshold": 117.25,
+      "label": "Fwd 59.1x vs Trail 117.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 116.33,
-    "sectorPe": 31.38,
-    "pb": 4.95,
+    "pe": 117.25,
+    "sectorPe": 31.0,
+    "pb": 4.99,
     "ps": null,
     "evEbitda": 27.05,
     "fcfYield": null,
-    "forwardPe": 58.63,
+    "forwardPe": 59.09,
     "dividendYield": 5.01,
     "revenueGrowth": -9.8,
     "profitMargin": 9.4,

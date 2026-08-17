@@ -1,16 +1,12 @@
 {
   "ticker": "ASG",
   "name": "AUTOSPORTS FPO [ASG]",
-  "price": 1.58,
-  "valuationScore": 11.9,
-  "marketCap": "337M",
+  "price": 1.57,
+  "valuationScore": 12.2,
+  "marketCap": "334M",
   "sector": "Consumer Cyclical",
   "domain": "autosportsgroup.com.au",
   "chartData": [
-    {
-      "date": "2025-08-17",
-      "price": 2.6
-    },
     {
       "date": "2025-08-24",
       "price": 3.0
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-16",
       "price": 1.58
+    },
+    {
+      "date": "2026-08-23",
+      "price": 1.57
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 7.18,
-      "threshold": 23.94,
-      "label": "7.2x vs 23.9x sector"
+      "value": 7.14,
+      "threshold": 24.32,
+      "label": "7.1x vs 24.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.62,
+      "value": 0.61,
       "threshold": 1.5,
-      "label": "0.62x vs 1.5x"
+      "label": "0.61x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -27.56,
+      "value": -27.74,
       "threshold": 5.0,
-      "label": "-27.6% vs 5%"
+      "label": "-27.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 7.45,
-      "threshold": 7.18,
-      "label": "Fwd 7.5x vs Trail 7.2x"
+      "value": 7.4,
+      "threshold": 7.14,
+      "label": "Fwd 7.4x vs Trail 7.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 7.18,
-    "sectorPe": 28.17,
-    "pb": 0.62,
+    "pe": 7.14,
+    "sectorPe": 28.61,
+    "pb": 0.61,
     "ps": 0.11,
     "evEbitda": 10.76,
-    "fcfYield": -27.56,
-    "forwardPe": 7.45,
+    "fcfYield": -27.74,
+    "forwardPe": 7.4,
     "dividendYield": 6.33,
     "revenueGrowth": 10.9,
     "profitMargin": 1.46,

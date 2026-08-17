@@ -1,16 +1,12 @@
 {
   "ticker": "REA",
   "name": "REA GROUP FPO [REA]",
-  "price": 177.0,
-  "valuationScore": 6.0,
+  "price": 177.38,
+  "valuationScore": 6.2,
   "marketCap": "23.2B",
   "sector": "Technology",
   "domain": "rea-group.com",
   "chartData": [
-    {
-      "date": "2025-08-17",
-      "price": 247.06
-    },
     {
       "date": "2025-08-24",
       "price": 259.77
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-16",
       "price": 177.0
+    },
+    {
+      "date": "2026-08-23",
+      "price": 177.38
     }
   ],
   "testsPassed": 2,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 34.71,
-      "threshold": 30.83,
-      "label": "34.7x vs 30.8x sector"
+      "value": 34.78,
+      "threshold": 30.3,
+      "label": "34.8x vs 30.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 12.19,
+      "value": 12.22,
       "threshold": 1.5,
-      "label": "12.19x vs 1.5x"
+      "label": "12.22x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.23,
+      "value": 2.22,
       "threshold": 5.0,
       "label": "2.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 26.94,
-      "threshold": 34.71,
-      "label": "Fwd 26.9x vs Trail 34.7x"
+      "value": 27.0,
+      "threshold": 34.78,
+      "label": "Fwd 27.0x vs Trail 34.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 34.71,
-    "sectorPe": 36.27,
-    "pb": 12.19,
-    "ps": 11.72,
+    "pe": 34.78,
+    "sectorPe": 35.65,
+    "pb": 12.22,
+    "ps": 11.74,
     "evEbitda": 23.03,
-    "fcfYield": 2.23,
-    "forwardPe": 26.94,
+    "fcfYield": 2.22,
+    "forwardPe": 27.0,
     "dividendYield": 1.95,
     "revenueGrowth": null,
     "profitMargin": 27.9,

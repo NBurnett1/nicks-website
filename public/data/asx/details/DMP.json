@@ -1,16 +1,12 @@
 {
   "ticker": "DMP",
   "name": "DOMINOS FPO [DMP]",
-  "price": 19.41,
-  "valuationScore": 3.7,
+  "price": 19.24,
+  "valuationScore": 3.6,
   "marketCap": "1.8B",
   "sector": "Consumer Cyclical",
   "domain": "dominos.com.au",
   "chartData": [
-    {
-      "date": "2025-08-17",
-      "price": 18.64
-    },
     {
       "date": "2025-08-24",
       "price": 18.79
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-16",
       "price": 19.41
+    },
+    {
+      "date": "2026-08-23",
+      "price": 19.24
     }
   ],
   "testsPassed": 2,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 30.81,
-      "threshold": 23.94,
-      "label": "30.8x vs 23.9x sector"
+      "value": 30.54,
+      "threshold": 24.32,
+      "label": "30.5x vs 24.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.69,
+      "value": 2.67,
       "threshold": 1.5,
-      "label": "2.69x vs 1.5x"
+      "label": "2.67x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 6.65,
+      "value": 6.7,
       "threshold": 5.0,
       "label": "6.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.65,
-      "threshold": 30.81,
-      "label": "Fwd 14.7x vs Trail 30.8x"
+      "value": 14.52,
+      "threshold": 30.54,
+      "label": "Fwd 14.5x vs Trail 30.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 30.81,
-    "sectorPe": 28.17,
-    "pb": 2.69,
-    "ps": 0.82,
+    "pe": 30.54,
+    "sectorPe": 28.61,
+    "pb": 2.67,
+    "ps": 0.81,
     "evEbitda": 14.73,
-    "fcfYield": 6.65,
-    "forwardPe": 14.65,
+    "fcfYield": 6.7,
+    "forwardPe": 14.52,
     "dividendYield": 2.4,
     "revenueGrowth": -5.5,
     "profitMargin": 2.65,

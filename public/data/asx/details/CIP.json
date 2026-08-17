@@ -2,15 +2,11 @@
   "ticker": "CIP",
   "name": "CEN I REIT ORD UNITS [CIP]",
   "price": 3.04,
-  "valuationScore": 1.4,
+  "valuationScore": 1.5,
   "marketCap": "1.9B",
   "sector": "Real Estate",
   "domain": "centuria.com.au",
   "chartData": [
-    {
-      "date": "2025-08-17",
-      "price": 3.17
-    },
     {
       "date": "2025-08-24",
       "price": 3.25
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-16",
       "price": 3.04
+    },
+    {
+      "date": "2026-08-23",
+      "price": 3.04
     }
   ],
   "testsPassed": 2,
@@ -227,7 +227,7 @@
       "name": "P/E Discount",
       "passed": false,
       "value": 11.69,
-      "threshold": 9.94,
+      "threshold": 9.87,
       "label": "11.7x vs 9.9x sector"
     },
     "pbBelowBook": {
@@ -282,7 +282,7 @@
   },
   "metrics": {
     "pe": 11.69,
-    "sectorPe": 11.69,
+    "sectorPe": 11.61,
     "pb": 0.76,
     "ps": 7.4,
     "evEbitda": null,

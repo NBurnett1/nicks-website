@@ -1,16 +1,12 @@
 {
   "ticker": "ALL",
   "name": "ARISTOCRAT FPO [ALL]",
-  "price": 64.4,
-  "valuationScore": 8.3,
-  "marketCap": "38.6B",
+  "price": 64.5,
+  "valuationScore": 9.0,
+  "marketCap": "38.7B",
   "sector": "Consumer Discretionary",
   "domain": "aristocrat.com",
   "chartData": [
-    {
-      "date": "2025-08-17",
-      "price": 69.39
-    },
     {
       "date": "2025-08-24",
       "price": 69.56
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-16",
       "price": 64.4
+    },
+    {
+      "date": "2026-08-23",
+      "price": 64.5
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 27.06,
-      "threshold": 15.64,
-      "label": "27.1x vs 15.6x sector"
+      "value": 27.1,
+      "threshold": 14.5,
+      "label": "27.1x vs 14.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 6.29,
+      "value": 6.3,
       "threshold": 1.5,
-      "label": "6.29x vs 1.5x"
+      "label": "6.30x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,15 +247,15 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.37,
+      "value": 2.36,
       "threshold": 5.0,
       "label": "2.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 22.2,
-      "threshold": 27.06,
+      "value": 22.24,
+      "threshold": 27.1,
       "label": "Fwd 22.2x vs Trail 27.1x"
     },
     "profitabilityCheck": {
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 27.06,
-    "sectorPe": 18.4,
-    "pb": 6.29,
-    "ps": 6.14,
+    "pe": 27.1,
+    "sectorPe": 17.06,
+    "pb": 6.3,
+    "ps": 6.15,
     "evEbitda": 17.38,
-    "fcfYield": 2.37,
-    "forwardPe": 22.2,
+    "fcfYield": 2.36,
+    "forwardPe": 22.24,
     "dividendYield": 1.54,
     "revenueGrowth": -0.2,
     "profitMargin": 23.46,

@@ -1,16 +1,12 @@
 {
   "ticker": "ALQ",
   "name": "ALS FPO [ALQ]",
-  "price": 22.36,
-  "valuationScore": 6.6,
-  "marketCap": "11.3B",
+  "price": 22.5,
+  "valuationScore": 6.7,
+  "marketCap": "11.4B",
   "sector": "Industrials",
   "domain": "alsglobal.com",
   "chartData": [
-    {
-      "date": "2025-08-17",
-      "price": 18.32
-    },
     {
       "date": "2025-08-24",
       "price": 18.6
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-16",
       "price": 22.36
+    },
+    {
+      "date": "2026-08-23",
+      "price": 22.5
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 35.49,
-      "threshold": 26.67,
-      "label": "35.5x vs 26.7x sector"
+      "value": 35.71,
+      "threshold": 26.35,
+      "label": "35.7x vs 26.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 6.68,
+      "value": 6.72,
       "threshold": 1.5,
-      "label": "6.68x vs 1.5x"
+      "label": "6.72x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.86,
+      "value": 2.84,
       "threshold": 5.0,
-      "label": "2.9% vs 5%"
+      "label": "2.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 22.33,
-      "threshold": 35.49,
-      "label": "Fwd 22.3x vs Trail 35.5x"
+      "value": 22.47,
+      "threshold": 35.71,
+      "label": "Fwd 22.5x vs Trail 35.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 35.49,
-    "sectorPe": 31.38,
-    "pb": 6.68,
-    "ps": 3.42,
+    "pe": 35.71,
+    "sectorPe": 31.0,
+    "pb": 6.72,
+    "ps": 3.44,
     "evEbitda": 18.05,
-    "fcfYield": 2.86,
-    "forwardPe": 22.33,
+    "fcfYield": 2.84,
+    "forwardPe": 22.47,
     "dividendYield": 1.9,
     "revenueGrowth": 8.2,
     "profitMargin": 9.6,

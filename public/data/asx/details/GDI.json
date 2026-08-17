@@ -2,15 +2,11 @@
   "ticker": "GDI",
   "name": "GDI PROP STAPLED [GDI]",
   "price": 0.64,
-  "valuationScore": 57.1,
+  "valuationScore": 58.1,
   "marketCap": "345M",
   "sector": "Real Estate",
   "domain": "gdi.com.au",
   "chartData": [
-    {
-      "date": "2025-08-17",
-      "price": 0.61
-    },
     {
       "date": "2025-08-24",
       "price": 0.63
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-16",
       "price": 0.64
+    },
+    {
+      "date": "2026-08-23",
+      "price": 0.64
     }
   ],
   "testsPassed": 3,
@@ -227,7 +227,7 @@
       "name": "P/E Discount",
       "passed": true,
       "value": 9.14,
-      "threshold": 9.94,
+      "threshold": 9.87,
       "label": "9.1x vs 9.9x sector"
     },
     "pbBelowBook": {
@@ -282,7 +282,7 @@
   },
   "metrics": {
     "pe": 9.14,
-    "sectorPe": 11.69,
+    "sectorPe": 11.61,
     "pb": 13.06,
     "ps": 3.91,
     "evEbitda": 28.36,

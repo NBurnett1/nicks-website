@@ -1,16 +1,12 @@
 {
   "ticker": "BSL",
   "name": "BLUESCOPE FPO [BSL]",
-  "price": 33.69,
-  "valuationScore": 0.4,
+  "price": 32.94,
+  "valuationScore": 0.1,
   "marketCap": "—",
   "sector": "Basic Materials",
   "domain": "bluescope.com",
   "chartData": [
-    {
-      "date": "2025-08-17",
-      "price": 22.64
-    },
     {
       "date": "2025-08-24",
       "price": 21.72
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-16",
       "price": 33.69
+    },
+    {
+      "date": "2026-08-23",
+      "price": 32.94
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 59.11,
-      "threshold": 37.0,
-      "label": "59.1x vs 37.0x sector"
+      "value": 57.79,
+      "threshold": 37.2,
+      "label": "57.8x vs 37.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.37,
+      "value": 1.34,
       "threshold": 1.5,
-      "label": "1.37x vs 1.5x"
+      "label": "1.34x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.11,
-      "threshold": 59.11,
-      "label": "Fwd 14.1x vs Trail 59.1x"
+      "value": 13.58,
+      "threshold": 57.79,
+      "label": "Fwd 13.6x vs Trail 57.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 59.11,
-    "sectorPe": 43.53,
-    "pb": 1.37,
+    "pe": 57.79,
+    "sectorPe": 43.76,
+    "pb": 1.34,
     "ps": null,
     "evEbitda": 10.05,
     "fcfYield": null,
-    "forwardPe": 14.11,
+    "forwardPe": 13.58,
     "dividendYield": 2.82,
     "revenueGrowth": 4.0,
     "profitMargin": 1.78,

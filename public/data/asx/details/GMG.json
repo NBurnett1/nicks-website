@@ -1,16 +1,12 @@
 {
   "ticker": "GMG",
   "name": "GOOD GROUP STAPLED [GMG]",
-  "price": 29.67,
-  "valuationScore": 17.8,
+  "price": 29.57,
+  "valuationScore": 18.1,
   "marketCap": "—",
   "sector": "Real Estate",
   "domain": "goodman.com",
   "chartData": [
-    {
-      "date": "2025-08-17",
-      "price": 35.55
-    },
     {
       "date": "2025-08-24",
       "price": 33.58
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-16",
       "price": 29.67
+    },
+    {
+      "date": "2026-08-23",
+      "price": 29.57
     }
   ],
   "testsPassed": 1,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 35.32,
-      "threshold": 9.94,
-      "label": "35.3x vs 9.9x sector"
+      "value": 35.2,
+      "threshold": 9.87,
+      "label": "35.2x vs 9.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 20.79,
-      "threshold": 35.32,
-      "label": "Fwd 20.8x vs Trail 35.3x"
+      "value": 20.72,
+      "threshold": 35.2,
+      "label": "Fwd 20.7x vs Trail 35.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 35.32,
-    "sectorPe": 11.69,
+    "pe": 35.2,
+    "sectorPe": 11.61,
     "pb": 2.55,
     "ps": null,
     "evEbitda": 34.48,
     "fcfYield": null,
-    "forwardPe": 20.79,
+    "forwardPe": 20.72,
     "dividendYield": 1.01,
     "revenueGrowth": -15.9,
     "profitMargin": 54.55,

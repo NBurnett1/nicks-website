@@ -1,16 +1,12 @@
 {
   "ticker": "TLS",
   "name": "TELSTRA FPO [TLS]",
-  "price": 4.78,
-  "valuationScore": 2.4,
+  "price": 4.81,
+  "valuationScore": 2.5,
   "marketCap": "—",
   "sector": "Telecom",
   "domain": "telstra.com.au",
   "chartData": [
-    {
-      "date": "2025-08-17",
-      "price": 4.69
-    },
     {
       "date": "2025-08-24",
       "price": 4.85
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-16",
       "price": 4.78
+    },
+    {
+      "date": "2026-08-23",
+      "price": 4.81
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 23.9,
-      "threshold": 17.64,
-      "label": "23.9x vs 17.6x sector"
+      "value": 24.05,
+      "threshold": 17.54,
+      "label": "24.1x vs 17.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.07,
+      "value": 4.1,
       "threshold": 1.5,
-      "label": "4.07x vs 1.5x"
+      "label": "4.10x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 20.93,
-      "threshold": 23.9,
-      "label": "Fwd 20.9x vs Trail 23.9x"
+      "value": 21.06,
+      "threshold": 24.05,
+      "label": "Fwd 21.1x vs Trail 24.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 23.9,
-    "sectorPe": 20.75,
-    "pb": 4.07,
+    "pe": 24.05,
+    "sectorPe": 20.63,
+    "pb": 4.1,
     "ps": null,
     "evEbitda": 10.3,
     "fcfYield": null,
-    "forwardPe": 20.93,
+    "forwardPe": 21.06,
     "dividendYield": 4.39,
     "revenueGrowth": -2.0,
     "profitMargin": 9.77,

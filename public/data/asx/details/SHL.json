@@ -1,16 +1,12 @@
 {
   "ticker": "SHL",
   "name": "SONIC HLTH FPO [SHL]",
-  "price": 22.37,
-  "valuationScore": -7.5,
-  "marketCap": "11.1B",
+  "price": 22.81,
+  "valuationScore": -7.1,
+  "marketCap": "11.3B",
   "sector": "Healthcare",
   "domain": "sonichealthcare.com",
   "chartData": [
-    {
-      "date": "2025-08-17",
-      "price": 27.02
-    },
     {
       "date": "2025-08-24",
       "price": 23.49
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-16",
       "price": 22.37
+    },
+    {
+      "date": "2026-08-23",
+      "price": 22.81
     }
   ],
   "testsPassed": 6,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 20.15,
-      "threshold": 21.51,
-      "label": "20.2x vs 21.5x sector"
+      "value": 20.55,
+      "threshold": 21.13,
+      "label": "20.5x vs 21.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.29,
+      "value": 1.32,
       "threshold": 1.5,
-      "label": "1.29x vs 1.5x"
+      "label": "1.32x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.41,
+      "value": 5.3,
       "threshold": 5.0,
-      "label": "5.4% vs 5%"
+      "label": "5.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 17.28,
-      "threshold": 20.15,
-      "label": "Fwd 17.3x vs Trail 20.2x"
+      "value": 17.62,
+      "threshold": 20.55,
+      "label": "Fwd 17.6x vs Trail 20.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.06,
+      "value": 0.07,
       "threshold": 0.5,
-      "label": "P/S 1.1x ÷ Growth 16.6% = 0.06"
+      "label": "P/S 1.1x ÷ Growth 16.6% = 0.07"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 20.15,
-    "sectorPe": 25.3,
-    "pb": 1.29,
-    "ps": 1.06,
+    "pe": 20.55,
+    "sectorPe": 24.86,
+    "pb": 1.32,
+    "ps": 1.08,
     "evEbitda": 12.51,
-    "fcfYield": 5.41,
-    "forwardPe": 17.28,
+    "fcfYield": 5.3,
+    "forwardPe": 17.62,
     "dividendYield": 4.83,
     "revenueGrowth": 16.6,
     "profitMargin": 5.18,

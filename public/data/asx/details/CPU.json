@@ -1,16 +1,12 @@
 {
   "ticker": "CPU",
   "name": "CSHARE FPO [CPU]",
-  "price": 40.46,
-  "valuationScore": 12.3,
+  "price": 40.47,
+  "valuationScore": 12.1,
   "marketCap": "—",
   "sector": "Financial Services",
   "domain": "computershare.com",
   "chartData": [
-    {
-      "date": "2025-08-17",
-      "price": 39.82
-    },
     {
       "date": "2025-08-24",
       "price": 38.78
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-16",
       "price": 40.46
+    },
+    {
+      "date": "2026-08-23",
+      "price": 40.47
     }
   ],
   "testsPassed": 2,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 26.79,
-      "threshold": 15.62,
-      "label": "26.8x vs 15.6x sector"
+      "value": 26.8,
+      "threshold": 15.81,
+      "label": "26.8x vs 15.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -255,7 +255,7 @@
       "name": "Forward P/E Re-rating",
       "passed": true,
       "value": 17.49,
-      "threshold": 26.79,
+      "threshold": 26.8,
       "label": "Fwd 17.5x vs Trail 26.8x"
     },
     "profitabilityCheck": {
@@ -281,8 +281,8 @@
     }
   },
   "metrics": {
-    "pe": 26.79,
-    "sectorPe": 18.38,
+    "pe": 26.8,
+    "sectorPe": 18.6,
     "pb": 7.24,
     "ps": null,
     "evEbitda": 21.73,

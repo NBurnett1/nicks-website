@@ -1,16 +1,12 @@
 {
   "ticker": "BPT",
   "name": "BEACH FPO [BPT]",
-  "price": 0.86,
-  "valuationScore": -7.6,
+  "price": 0.88,
+  "valuationScore": -7.5,
   "marketCap": "—",
   "sector": "Energy",
   "domain": "beachenergy.com.au",
   "chartData": [
-    {
-      "date": "2025-08-17",
-      "price": 1.18
-    },
     {
       "date": "2025-08-24",
       "price": 1.19
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-16",
       "price": 0.87
+    },
+    {
+      "date": "2026-08-23",
+      "price": 0.88
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 7.21,
-      "threshold": 12.56,
-      "label": "7.2x vs 12.6x sector"
+      "value": 7.29,
+      "threshold": 12.59,
+      "label": "7.3x vs 12.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.6,
+      "value": 0.61,
       "threshold": 1.5,
-      "label": "0.60x vs 1.5x"
+      "label": "0.61x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 5.68,
-      "threshold": 7.21,
-      "label": "Fwd 5.7x vs Trail 7.2x"
+      "value": 5.75,
+      "threshold": 7.29,
+      "label": "Fwd 5.7x vs Trail 7.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 7.21,
-    "sectorPe": 14.78,
-    "pb": 0.6,
+    "pe": 7.29,
+    "sectorPe": 14.81,
+    "pb": 0.61,
     "ps": null,
     "evEbitda": 2.76,
     "fcfYield": null,
-    "forwardPe": 5.68,
+    "forwardPe": 5.75,
     "dividendYield": 4.62,
     "revenueGrowth": -17.1,
     "profitMargin": 14.65,
