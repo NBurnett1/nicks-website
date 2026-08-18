@@ -1,7 +1,7 @@
 {
   "ticker": "SIQ",
   "name": "SMARTGROUP FPO [SIQ]",
-  "price": 13.15,
+  "price": 13.02,
   "valuationScore": 2.0,
   "marketCap": "1.8B",
   "sector": "Industrials",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-23",
-      "price": 13.15
+      "price": 13.02
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 21.56,
-      "threshold": 26.35,
-      "label": "21.6x vs 26.4x sector"
+      "value": 21.34,
+      "threshold": 25.01,
+      "label": "21.3x vs 25.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 6.16,
+      "value": 6.1,
       "threshold": 1.5,
-      "label": "6.16x vs 1.5x"
+      "label": "6.10x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.93,
+      "value": 3.94,
       "threshold": 5.0,
       "label": "3.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 18.21,
-      "threshold": 21.56,
-      "label": "Fwd 18.2x vs Trail 21.6x"
+      "value": 18.03,
+      "threshold": 21.34,
+      "label": "Fwd 18.0x vs Trail 21.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 21.56,
-    "sectorPe": 31.0,
-    "pb": 6.16,
-    "ps": 5.49,
+    "pe": 21.34,
+    "sectorPe": 29.42,
+    "pb": 6.1,
+    "ps": 5.46,
     "evEbitda": 13.88,
-    "fcfYield": 3.93,
-    "forwardPe": 18.21,
+    "fcfYield": 3.94,
+    "forwardPe": 18.03,
     "dividendYield": 3.27,
     "revenueGrowth": 8.2,
     "profitMargin": 24.12,

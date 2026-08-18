@@ -1,8 +1,8 @@
 {
   "ticker": "IPH",
   "name": "IPHLIMITED FPO [IPH]",
-  "price": 4.2,
-  "valuationScore": -11.8,
+  "price": 4.16,
+  "valuationScore": -12.0,
   "marketCap": "1.1B",
   "sector": "Industrials",
   "domain": "iphltd.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-23",
-      "price": 4.2
+      "price": 4.16
     }
   ],
   "testsPassed": 7,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 15.0,
-      "threshold": 26.35,
-      "label": "15.0x vs 26.4x sector"
+      "value": 14.86,
+      "threshold": 25.01,
+      "label": "14.9x vs 25.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.62,
+      "value": 1.6,
       "threshold": 1.5,
-      "label": "1.62x vs 1.5x"
+      "label": "1.60x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 12.15,
+      "value": 12.26,
       "threshold": 5.0,
-      "label": "12.2% vs 5%"
+      "label": "12.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 8.67,
-      "threshold": 15.0,
-      "label": "Fwd 8.7x vs Trail 15.0x"
+      "value": 8.59,
+      "threshold": 14.86,
+      "label": "Fwd 8.6x vs Trail 14.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 15.0,
-    "sectorPe": 31.0,
-    "pb": 1.62,
-    "ps": 1.48,
+    "pe": 14.86,
+    "sectorPe": 29.42,
+    "pb": 1.6,
+    "ps": 1.46,
     "evEbitda": 7.99,
-    "fcfYield": 12.15,
-    "forwardPe": 8.67,
+    "fcfYield": 12.26,
+    "forwardPe": 8.59,
     "dividendYield": 9.05,
     "revenueGrowth": 6.5,
     "profitMargin": 9.98,

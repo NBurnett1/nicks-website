@@ -1,8 +1,8 @@
 {
   "ticker": "ARB",
   "name": "ARB CORP FPO [ARB]",
-  "price": 19.09,
-  "valuationScore": -1.3,
+  "price": 19.46,
+  "valuationScore": -1.1,
   "marketCap": "1.6B",
   "sector": "Consumer Discretionary",
   "domain": "arb.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-23",
-      "price": 19.09
+      "price": 19.46
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 17.84,
-      "threshold": 14.5,
-      "label": "17.8x vs 14.5x sector"
+      "value": 18.19,
+      "threshold": 14.6,
+      "label": "18.2x vs 14.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.17,
+      "value": 2.21,
       "threshold": 1.5,
-      "label": "2.17x vs 1.5x"
+      "label": "2.21x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 6.03,
+      "value": 5.91,
       "threshold": 5.0,
-      "label": "6.0% vs 5%"
+      "label": "5.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.98,
-      "threshold": 17.84,
-      "label": "Fwd 17.0x vs Trail 17.8x"
+      "value": 17.31,
+      "threshold": 18.19,
+      "label": "Fwd 17.3x vs Trail 18.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 17.84,
-    "sectorPe": 17.06,
-    "pb": 2.17,
-    "ps": 2.19,
+    "pe": 18.19,
+    "sectorPe": 17.18,
+    "pb": 2.21,
+    "ps": 2.23,
     "evEbitda": 11.18,
-    "fcfYield": 6.03,
-    "forwardPe": 16.98,
+    "fcfYield": 5.91,
+    "forwardPe": 17.31,
     "dividendYield": 3.56,
     "revenueGrowth": -1.2,
     "profitMargin": 12.16,

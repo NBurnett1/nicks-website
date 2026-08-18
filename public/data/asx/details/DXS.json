@@ -1,8 +1,8 @@
 {
   "ticker": "DXS",
   "name": "DEXUS STAPLED [DXS]",
-  "price": 5.75,
-  "valuationScore": -8.1,
+  "price": 5.76,
+  "valuationScore": -14.1,
   "marketCap": "6.2B",
   "sector": "Real Estate",
   "domain": "dexus.com",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-23",
-      "price": 5.75
+      "price": 5.76
     }
   ],
   "testsPassed": 5,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 12.5,
-      "threshold": 9.87,
-      "label": "12.5x vs 9.9x sector"
+      "value": 12.52,
+      "threshold": 9.56,
+      "label": "12.5x vs 9.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -247,15 +247,15 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 14.93,
+      "value": 14.9,
       "threshold": 5.0,
       "label": "14.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 9.9,
-      "threshold": 12.5,
+      "value": 9.91,
+      "threshold": 12.52,
       "label": "Fwd 9.9x vs Trail 12.5x"
     },
     "profitabilityCheck": {
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 12.5,
-    "sectorPe": 11.61,
+    "pe": 12.52,
+    "sectorPe": 11.25,
     "pb": 0.64,
-    "ps": 4.37,
+    "ps": 4.38,
     "evEbitda": 12.18,
-    "fcfYield": 14.93,
-    "forwardPe": 9.9,
+    "fcfYield": 14.9,
+    "forwardPe": 9.91,
     "dividendYield": 6.43,
     "revenueGrowth": 22.7,
     "profitMargin": 38.96,

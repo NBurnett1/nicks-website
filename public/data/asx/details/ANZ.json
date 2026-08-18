@@ -1,9 +1,9 @@
 {
   "ticker": "ANZ",
   "name": "ANZ GROUP FPO [ANZ]",
-  "price": 37.88,
-  "valuationScore": -0.7,
-  "marketCap": "114.1B",
+  "price": 37.68,
+  "valuationScore": -0.4,
+  "marketCap": "—",
   "sector": "Financials",
   "domain": "anz.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-23",
-      "price": 37.88
+      "price": 37.68
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 19.23,
-      "threshold": 16.75,
-      "label": "19.2x vs 16.8x sector"
+      "value": 19.13,
+      "threshold": 16.42,
+      "label": "19.1x vs 16.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.61,
+      "value": 1.6,
       "threshold": 1.5,
-      "label": "1.61x vs 1.5x"
+      "label": "1.60x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.84,
-      "threshold": 19.23,
-      "label": "Fwd 14.8x vs Trail 19.2x"
+      "value": 14.76,
+      "threshold": 19.13,
+      "label": "Fwd 14.8x vs Trail 19.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": -2.1,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining -2.1%"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 19.23,
-    "sectorPe": 19.71,
-    "pb": 1.61,
-    "ps": 5.3,
+    "pe": 19.13,
+    "sectorPe": 19.32,
+    "pb": 1.6,
+    "ps": null,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 14.84,
+    "forwardPe": 14.76,
     "dividendYield": 4.38,
     "revenueGrowth": -2.1,
     "profitMargin": 27.42,

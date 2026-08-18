@@ -1,9 +1,9 @@
 {
   "ticker": "CSL",
   "name": "CSL FPO [CSL]",
-  "price": 134.6,
-  "valuationScore": -1.8,
-  "marketCap": "64.5B",
+  "price": 157.82,
+  "valuationScore": -0.5,
+  "marketCap": "75.6B",
   "sector": "Healthcare",
   "domain": "csl.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-23",
-      "price": 134.6
+      "price": 157.82
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 15.44,
-      "threshold": 21.13,
-      "label": "15.4x vs 21.1x sector"
+      "value": 18.1,
+      "threshold": 22.73,
+      "label": "18.1x vs 22.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.46,
+      "value": 2.89,
       "threshold": 1.5,
-      "label": "2.46x vs 1.5x"
+      "label": "2.89x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.87,
+      "value": 2.45,
       "threshold": 5.0,
-      "label": "2.9% vs 5%"
+      "label": "2.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.98,
-      "threshold": 15.44,
-      "label": "Fwd 15.0x vs Trail 15.4x"
+      "value": 16.59,
+      "threshold": 18.1,
+      "label": "Fwd 16.6x vs Trail 18.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": -1.8,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining -1.8%"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 15.44,
-    "sectorPe": 24.86,
-    "pb": 2.46,
-    "ps": 4.18,
+    "pe": 18.1,
+    "sectorPe": 26.74,
+    "pb": 2.89,
+    "ps": null,
     "evEbitda": 15.85,
-    "fcfYield": 2.87,
-    "forwardPe": 14.98,
+    "fcfYield": 2.45,
+    "forwardPe": 16.59,
     "dividendYield": 3.17,
     "revenueGrowth": -1.8,
     "profitMargin": 9.06,

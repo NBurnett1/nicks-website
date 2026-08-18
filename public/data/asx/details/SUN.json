@@ -1,9 +1,9 @@
 {
   "ticker": "SUN",
   "name": "SUNCORP FPO [SUN]",
-  "price": 18.7,
-  "valuationScore": -0.5,
-  "marketCap": "19.8B",
+  "price": 18.35,
+  "valuationScore": -0.4,
+  "marketCap": "19.5B",
   "sector": "Financials",
   "domain": "suncorpgroup.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-23",
-      "price": 18.7
+      "price": 18.35
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 19.68,
-      "threshold": 16.75,
-      "label": "19.7x vs 16.8x sector"
+      "value": 19.32,
+      "threshold": 16.42,
+      "label": "19.3x vs 16.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.0,
+      "value": 1.96,
       "threshold": 1.5,
-      "label": "2.00x vs 1.5x"
+      "label": "1.96x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 8.46,
+      "value": 8.62,
       "threshold": 5.0,
-      "label": "8.5% vs 5%"
+      "label": "8.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.98,
-      "threshold": 19.68,
-      "label": "Fwd 15.0x vs Trail 19.7x"
+      "value": 14.7,
+      "threshold": 19.32,
+      "label": "Fwd 14.7x vs Trail 19.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 19.68,
-    "sectorPe": 19.71,
-    "pb": 2.0,
-    "ps": 1.32,
+    "pe": 19.32,
+    "sectorPe": 19.32,
+    "pb": 1.96,
+    "ps": 1.29,
     "evEbitda": 13.2,
-    "fcfYield": 8.46,
-    "forwardPe": 14.98,
+    "fcfYield": 8.62,
+    "forwardPe": 14.7,
     "dividendYield": 5.56,
     "revenueGrowth": -0.5,
     "profitMargin": 6.83,
