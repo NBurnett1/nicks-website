@@ -2,8 +2,8 @@
   "ticker": "BSL",
   "name": "BLUESCOPE FPO [BSL]",
   "price": 31.5,
-  "valuationScore": -1.4,
-  "marketCap": "—",
+  "valuationScore": -1.6,
+  "marketCap": "13.8B",
   "sector": "Basic Materials",
   "domain": "bluescope.com",
   "chartData": [
@@ -233,37 +233,37 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.28,
+      "value": 1.34,
       "threshold": 1.5,
-      "label": "1.28x vs 1.5x"
+      "label": "1.34x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 9.83,
+      "value": 7.95,
       "threshold": 10.0,
-      "label": "9.8x vs 10x"
+      "label": "7.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": 0.97,
       "threshold": 5.0,
-      "label": "No FCF data"
+      "label": "1.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 13.16,
+      "value": 12.64,
       "threshold": 17.4,
-      "label": "Fwd 13.2x vs Trail 17.4x"
+      "label": "Fwd 12.6x vs Trail 17.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": false,
-      "value": 1.78,
+      "value": 4.76,
       "threshold": 5.0,
-      "label": "Margin 1.8% / ROE 3.4%"
+      "label": "Margin 4.8% / ROE 8.1%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
@@ -275,24 +275,24 @@
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": true,
-      "value": 4.0,
+      "value": 1.5,
       "threshold": -5.0,
-      "label": "4.0% growth (floor: -5%)"
+      "label": "1.5% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": 17.4,
     "sectorPe": 17.4,
-    "pb": 1.28,
+    "pb": 1.34,
     "ps": null,
-    "evEbitda": 9.83,
-    "fcfYield": null,
-    "forwardPe": 13.16,
-    "dividendYield": 3.95,
-    "revenueGrowth": 4.0,
-    "profitMargin": 1.78,
-    "operatingMargin": 6.27,
-    "roe": 3.43,
-    "debtEquity": 9.45
+    "evEbitda": 7.95,
+    "fcfYield": 0.97,
+    "forwardPe": 12.64,
+    "dividendYield": 4.13,
+    "revenueGrowth": 1.5,
+    "profitMargin": 4.76,
+    "operatingMargin": 7.83,
+    "roe": 8.1,
+    "debtEquity": 16.21
   }
 }

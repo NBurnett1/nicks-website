@@ -2,7 +2,7 @@
   "ticker": "AZJ",
   "name": "AURIZON FPO [AZJ]",
   "price": 3.63,
-  "valuationScore": -6.9,
+  "valuationScore": -6.0,
   "marketCap": "6.1B",
   "sector": "Industrials",
   "domain": "aurizon.com.au",
@@ -220,8 +220,8 @@
       "price": 3.63
     }
   ],
-  "testsPassed": 5,
-  "grade": "B",
+  "testsPassed": 6,
+  "grade": "A",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -240,59 +240,59 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 7.67,
+      "value": 7.29,
       "threshold": 10.0,
-      "label": "7.7x vs 10x"
+      "label": "7.3x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": true,
-      "value": 5.85,
+      "passed": false,
+      "value": 4.69,
       "threshold": 5.0,
-      "label": "5.8% vs 5%"
+      "label": "4.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.77,
+      "value": 14.79,
       "threshold": 17.29,
       "label": "Fwd 14.8x vs Trail 17.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
-      "passed": false,
-      "value": 7.63,
+      "passed": true,
+      "value": 8.69,
       "threshold": 5.0,
-      "label": "Margin 7.6% / ROE 7.2%"
+      "label": "Margin 8.7% / ROE 9.0%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": 0.73,
+      "passed": true,
+      "value": 0.16,
       "threshold": 0.5,
-      "label": "P/S 1.5x ÷ Growth 2.1% = 0.73"
+      "label": "P/S 1.5x ÷ Growth 9.0% = 0.16"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": true,
-      "value": 2.1,
+      "value": 9.0,
       "threshold": -5.0,
-      "label": "2.1% growth (floor: -5%)"
+      "label": "9.0% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": 17.29,
     "sectorPe": 29.42,
     "pb": 1.5,
-    "ps": 1.53,
-    "evEbitda": 7.67,
-    "fcfYield": 5.85,
-    "forwardPe": 14.77,
-    "dividendYield": 5.09,
-    "revenueGrowth": 2.1,
-    "profitMargin": 7.63,
-    "operatingMargin": 24.91,
-    "roe": 7.23,
-    "debtEquity": 136.85
+    "ps": 1.47,
+    "evEbitda": 7.29,
+    "fcfYield": 4.69,
+    "forwardPe": 14.79,
+    "dividendYield": 6.34,
+    "revenueGrowth": 9.0,
+    "profitMargin": 8.69,
+    "operatingMargin": 20.31,
+    "roe": 9.02,
+    "debtEquity": 148.34
   }
 }

@@ -2,7 +2,7 @@
   "ticker": "A2M",
   "name": "A2 MILK FPO NZ [A2M]",
   "price": 7.09,
-  "valuationScore": 0.0,
+  "valuationScore": -1.0,
   "marketCap": "5.1B",
   "sector": "Consumer Staples",
   "domain": "thea2milkcompany.com",
@@ -220,8 +220,8 @@
       "price": 7.09
     }
   ],
-  "testsPassed": 4,
-  "grade": "C",
+  "testsPassed": 5,
+  "grade": "B",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -240,16 +240,16 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 13.59,
+      "value": 14.48,
       "threshold": 10.0,
-      "label": "13.6x vs 10x"
+      "label": "14.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 3.06,
+      "passed": true,
+      "value": 6.61,
       "threshold": 5.0,
-      "label": "3.1% vs 5%"
+      "label": "6.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
@@ -261,38 +261,38 @@
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": true,
-      "value": 5.94,
+      "value": 5.76,
       "threshold": 5.0,
-      "label": "Margin 5.9% / ROE 14.7%"
+      "label": "Margin 5.8% / ROE 16.6%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.13,
+      "value": 0.4,
       "threshold": 0.5,
-      "label": "P/S 2.5x ÷ Growth 18.8% = 0.13"
+      "label": "P/S 2.6x ÷ Growth 6.5% = 0.40"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": true,
-      "value": 18.8,
+      "value": 6.5,
       "threshold": -5.0,
-      "label": "18.8% growth (floor: -5%)"
+      "label": "6.5% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": 29.54,
     "sectorPe": 30.46,
     "pb": 4.48,
-    "ps": 2.5,
-    "evEbitda": 13.59,
-    "fcfYield": 3.06,
+    "ps": 2.61,
+    "evEbitda": 14.48,
+    "fcfYield": 6.61,
     "forwardPe": 26.83,
-    "dividendYield": 2.42,
-    "revenueGrowth": 18.8,
-    "profitMargin": 5.94,
+    "dividendYield": 1.89,
+    "revenueGrowth": 6.5,
+    "profitMargin": 5.76,
     "operatingMargin": 14.74,
-    "roe": 14.72,
-    "debtEquity": 1.38
+    "roe": 16.57,
+    "debtEquity": 2.27
   }
 }
