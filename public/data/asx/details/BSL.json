@@ -2,7 +2,7 @@
   "ticker": "BSL",
   "name": "BLUESCOPE FPO [BSL]",
   "price": 32.15,
-  "valuationScore": -1.3,
+  "valuationScore": -0.3,
   "marketCap": "14.1B",
   "sector": "Basic Materials",
   "domain": "bluescope.com",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-23",
-      "price": 32.15
+      "price": 31.5
     }
   ],
   "testsPassed": 4,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 17.76,
-      "threshold": 15.1,
-      "label": "17.8x vs 15.1x sector"
+      "value": 18.16,
+      "threshold": 15.44,
+      "label": "18.2x vs 15.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,58 +240,58 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 7.95,
+      "value": 9.22,
       "threshold": 10.0,
-      "label": "7.9x vs 10x"
+      "label": "9.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 0.95,
+      "value": 0.78,
       "threshold": 5.0,
-      "label": "0.9% vs 5%"
+      "label": "0.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
       "value": 12.9,
-      "threshold": 17.76,
-      "label": "Fwd 12.9x vs Trail 17.8x"
+      "threshold": 18.16,
+      "label": "Fwd 12.9x vs Trail 18.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": false,
-      "value": 4.76,
+      "value": 4.81,
       "threshold": 5.0,
       "label": "Margin 4.8% / ROE 8.1%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.56,
+      "value": 1.41,
       "threshold": 0.5,
-      "label": "P/S 0.8x ÷ Growth 1.5% = 0.56"
+      "label": "P/S 0.8x ÷ Growth 0.6% = 1.41"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": true,
-      "value": 1.5,
+      "value": 0.6,
       "threshold": -5.0,
-      "label": "1.5% growth (floor: -5%)"
+      "label": "0.6% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 17.76,
-    "sectorPe": 17.76,
+    "pe": 18.16,
+    "sectorPe": 18.16,
     "pb": 1.37,
-    "ps": 0.84,
-    "evEbitda": 7.95,
-    "fcfYield": 0.95,
+    "ps": 0.85,
+    "evEbitda": 9.22,
+    "fcfYield": 0.78,
     "forwardPe": 12.9,
-    "dividendYield": 4.13,
-    "revenueGrowth": 1.5,
-    "profitMargin": 4.76,
-    "operatingMargin": 7.83,
+    "dividendYield": 4.04,
+    "revenueGrowth": 0.6,
+    "profitMargin": 4.81,
+    "operatingMargin": 6.86,
     "roe": 8.1,
     "debtEquity": 16.21
   }

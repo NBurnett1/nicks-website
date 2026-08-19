@@ -2,7 +2,7 @@
   "ticker": "STO",
   "name": "SANTOS FPO [STO]",
   "price": 8.31,
-  "valuationScore": 2.0,
+  "valuationScore": 2.2,
   "marketCap": "27.0B",
   "sector": "Energy",
   "domain": "santos.com",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-23",
-      "price": 8.31
+      "price": 8.11
     }
   ],
   "testsPassed": 2,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 23.74,
+      "value": 24.44,
       "threshold": 12.71,
-      "label": "23.7x vs 12.7x sector"
+      "label": "24.4x vs 12.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 11.84,
-      "threshold": 23.74,
-      "label": "Fwd 11.8x vs Trail 23.7x"
+      "value": 11.66,
+      "threshold": 24.44,
+      "label": "Fwd 11.7x vs Trail 24.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 23.74,
+    "pe": 24.44,
     "sectorPe": 14.95,
     "pb": 1.22,
     "ps": 5.46,
     "evEbitda": 11.04,
     "fcfYield": 2.76,
-    "forwardPe": 11.84,
+    "forwardPe": 11.66,
     "dividendYield": 4.3,
     "revenueGrowth": -11.6,
     "profitMargin": 16.56,
