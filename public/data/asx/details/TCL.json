@@ -1,9 +1,9 @@
 {
   "ticker": "TCL",
   "name": "TRANSURBAN STAPLED [TCL]",
-  "price": 13.91,
-  "valuationScore": 19.5,
-  "marketCap": "—",
+  "price": 14.01,
+  "valuationScore": 20.6,
+  "marketCap": "43.7B",
   "sector": "Industrials",
   "domain": "transurban.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-23",
-      "price": 13.91
+      "price": 14.01
     }
   ],
   "testsPassed": 1,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 115.92,
-      "threshold": 25.01,
-      "label": "115.9x vs 25.0x sector"
+      "value": 116.75,
+      "threshold": 25.34,
+      "label": "116.8x vs 25.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.93,
+      "value": 4.96,
       "threshold": 1.5,
-      "label": "4.93x vs 1.5x"
+      "label": "4.96x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -246,17 +246,17 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": 2.44,
       "threshold": 5.0,
-      "label": "No FCF data"
+      "label": "2.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 58.42,
-      "threshold": 115.92,
-      "label": "Fwd 58.4x vs Trail 115.9x"
+      "value": 58.84,
+      "threshold": 116.75,
+      "label": "Fwd 58.8x vs Trail 116.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": -9.8,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "FAIL — Revenue declining -9.8%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 115.92,
-    "sectorPe": 29.42,
-    "pb": 4.93,
-    "ps": null,
+    "pe": 116.75,
+    "sectorPe": 29.81,
+    "pb": 4.96,
+    "ps": 11.22,
     "evEbitda": 26.98,
-    "fcfYield": null,
-    "forwardPe": 58.42,
+    "fcfYield": 2.44,
+    "forwardPe": 58.84,
     "dividendYield": 5.03,
     "revenueGrowth": -9.8,
     "profitMargin": 9.4,

@@ -1,9 +1,9 @@
 {
   "ticker": "QAN",
   "name": "QANTAS FPO [QAN]",
-  "price": 9.69,
-  "valuationScore": 8.4,
-  "marketCap": "14.7B",
+  "price": 9.53,
+  "valuationScore": 8.2,
+  "marketCap": "14.4B",
   "sector": "Industrials",
   "domain": "qantas.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-23",
-      "price": 9.69
+      "price": 9.53
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 9.14,
-      "threshold": 25.01,
-      "label": "9.1x vs 25.0x sector"
+      "value": 8.99,
+      "threshold": 25.34,
+      "label": "9.0x vs 25.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 10.91,
+      "value": 10.73,
       "threshold": 1.5,
-      "label": "10.91x vs 1.5x"
+      "label": "10.73x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -4.12,
+      "value": -4.18,
       "threshold": 5.0,
-      "label": "-4.1% vs 5%"
+      "label": "-4.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 9.18,
-      "threshold": 9.14,
-      "label": "Fwd 9.2x vs Trail 9.1x"
+      "value": 9.03,
+      "threshold": 8.99,
+      "label": "Fwd 9.0x vs Trail 9.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 9.14,
-    "sectorPe": 29.42,
-    "pb": 10.91,
-    "ps": 0.6,
+    "pe": 8.99,
+    "sectorPe": 29.81,
+    "pb": 10.73,
+    "ps": 0.59,
     "evEbitda": 4.84,
-    "fcfYield": -4.12,
-    "forwardPe": 9.18,
+    "fcfYield": -4.18,
+    "forwardPe": 9.03,
     "dividendYield": 4.09,
     "revenueGrowth": 6.3,
     "profitMargin": 6.53,

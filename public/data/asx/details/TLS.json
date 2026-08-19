@@ -2,7 +2,7 @@
   "ticker": "TLS",
   "name": "TELSTRA FPO [TLS]",
   "price": 4.74,
-  "valuationScore": -1.2,
+  "valuationScore": -0.6,
   "marketCap": "52.8B",
   "sector": "Telecom",
   "domain": "telstra.com.au",
@@ -227,8 +227,8 @@
       "name": "P/E Discount",
       "passed": false,
       "value": 23.7,
-      "threshold": 16.89,
-      "label": "23.7x vs 16.9x sector"
+      "threshold": 17.42,
+      "label": "23.7x vs 17.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": -2.0,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "FAIL — Revenue declining -2.0%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,9 +282,9 @@
   },
   "metrics": {
     "pe": 23.7,
-    "sectorPe": 19.88,
+    "sectorPe": 20.49,
     "pb": 4.04,
-    "ps": null,
+    "ps": 2.3,
     "evEbitda": 10.23,
     "fcfYield": 6.51,
     "forwardPe": 20.76,
