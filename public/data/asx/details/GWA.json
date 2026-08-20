@@ -2,7 +2,7 @@
   "ticker": "GWA",
   "name": "GWA GROUP FPO [GWA]",
   "price": 2.09,
-  "valuationScore": -10.5,
+  "valuationScore": -6.0,
   "marketCap": "532M",
   "sector": "Industrials",
   "domain": "gwagroup.com.au",
@@ -220,8 +220,8 @@
       "price": 2.09
     }
   ],
-  "testsPassed": 6,
-  "grade": "A",
+  "testsPassed": 5,
+  "grade": "B",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -233,23 +233,23 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.84,
+      "value": 1.86,
       "threshold": 1.5,
-      "label": "1.84x vs 1.5x"
+      "label": "1.86x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 8.92,
+      "value": 8.36,
       "threshold": 10.0,
-      "label": "8.9x vs 10x"
+      "label": "8.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": true,
-      "value": 10.7,
+      "passed": false,
+      "value": 4.78,
       "threshold": 5.0,
-      "label": "10.7% vs 5%"
+      "label": "4.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
@@ -261,38 +261,38 @@
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": true,
-      "value": 11.02,
+      "value": 11.36,
       "threshold": 5.0,
-      "label": "Margin 11.0% / ROE 15.5%"
+      "label": "Margin 11.4% / ROE 16.3%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.63,
+      "value": -0.2,
       "threshold": 0.5,
-      "label": "P/S 1.3x ÷ Growth 2.0% = 0.63"
+      "label": "FAIL — Revenue declining -0.2%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": true,
-      "value": 2.0,
+      "value": -0.2,
       "threshold": -5.0,
-      "label": "2.0% growth (floor: -5%)"
+      "label": "-0.2% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": 11.61,
     "sectorPe": 27.83,
-    "pb": 1.84,
+    "pb": 1.86,
     "ps": 1.26,
-    "evEbitda": 8.92,
-    "fcfYield": 10.7,
+    "evEbitda": 8.36,
+    "fcfYield": 4.78,
     "forwardPe": 10.23,
-    "dividendYield": 7.08,
-    "revenueGrowth": 2.0,
-    "profitMargin": 11.02,
-    "operatingMargin": 18.24,
-    "roe": 15.46,
-    "debtEquity": 56.95
+    "dividendYield": 8.13,
+    "revenueGrowth": -0.2,
+    "profitMargin": 11.36,
+    "operatingMargin": 18.76,
+    "roe": 16.29,
+    "debtEquity": 70.4
   }
 }

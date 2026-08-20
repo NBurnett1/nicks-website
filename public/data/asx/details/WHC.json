@@ -220,15 +220,15 @@
       "price": 7.63
     }
   ],
-  "testsPassed": 6,
+  "testsPassed": 7,
   "grade": "A",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
       "value": 15.9,
-      "threshold": 17.39,
-      "label": "15.9x vs 17.4x sector"
+      "threshold": 17.24,
+      "label": "15.9x vs 17.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,59 +240,59 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 2.99,
+      "value": 2.92,
       "threshold": 10.0,
-      "label": "3.0x vs 10x"
+      "label": "2.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 27.44,
+      "value": 26.25,
       "threshold": 5.0,
-      "label": "27.4% vs 5%"
+      "label": "26.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.54,
+      "value": 14.07,
       "threshold": 15.9,
-      "label": "Fwd 12.5x vs Trail 15.9x"
+      "label": "Fwd 14.1x vs Trail 15.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
-      "passed": true,
-      "value": 12.66,
+      "passed": false,
+      "value": 7.13,
       "threshold": 5.0,
-      "label": "Margin 12.7% / ROE 11.3%"
+      "label": "Margin 7.1% / ROE 6.6%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": -27.7,
+      "passed": true,
+      "value": 0.05,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining -27.7%"
+      "label": "P/S 1.2x ÷ Growth 21.6% = 0.05"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
-      "passed": false,
-      "value": -27.7,
+      "passed": true,
+      "value": 21.6,
       "threshold": -5.0,
-      "label": "-27.7% growth (floor: -5%)"
+      "label": "21.6% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": 15.9,
-    "sectorPe": 20.46,
+    "sectorPe": 20.29,
     "pb": 1.06,
-    "ps": 1.29,
-    "evEbitda": 2.99,
-    "fcfYield": 27.44,
-    "forwardPe": 12.54,
-    "dividendYield": 1.03,
-    "revenueGrowth": -27.7,
-    "profitMargin": 12.66,
-    "operatingMargin": 1.49,
-    "roe": 11.33,
-    "debtEquity": 34.2
+    "ps": 1.16,
+    "evEbitda": 2.92,
+    "fcfYield": 26.25,
+    "forwardPe": 14.07,
+    "dividendYield": 1.57,
+    "revenueGrowth": 21.6,
+    "profitMargin": 7.13,
+    "operatingMargin": 13.78,
+    "roe": 6.63,
+    "debtEquity": 39.27
   }
 }

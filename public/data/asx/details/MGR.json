@@ -2,7 +2,7 @@
   "ticker": "MGR",
   "name": "MIRVAC GRP STAPLED [MGR]",
   "price": 1.9,
-  "valuationScore": -10.2,
+  "valuationScore": -5.9,
   "marketCap": "7.5B",
   "sector": "Real Estate",
   "domain": "mirvac.com",
@@ -220,7 +220,7 @@
       "price": 1.9
     }
   ],
-  "testsPassed": 4,
+  "testsPassed": 3,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
@@ -240,16 +240,16 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 14.41,
+      "value": 12.69,
       "threshold": 10.0,
-      "label": "14.4x vs 10x"
+      "label": "12.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 11.51,
+      "value": 10.67,
       "threshold": 5.0,
-      "label": "11.5% vs 5%"
+      "label": "10.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
@@ -261,38 +261,38 @@
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": false,
-      "value": 13.17,
+      "value": 22.79,
       "threshold": 5.0,
-      "label": "Margin 13.2% / ROE 4.2%"
+      "label": "Margin 22.8% / ROE 7.4%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": true,
-      "value": 0.12,
+      "passed": false,
+      "value": 0.93,
       "threshold": 0.5,
-      "label": "P/S 2.6x ÷ Growth 21.7% = 0.12"
+      "label": "P/S 2.5x ÷ Growth 2.7% = 0.93"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": true,
-      "value": 21.7,
+      "value": 2.7,
       "threshold": -5.0,
-      "label": "21.7% growth (floor: -5%)"
+      "label": "2.7% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": 11.18,
     "sectorPe": 11.18,
     "pb": 0.82,
-    "ps": 2.56,
-    "evEbitda": 14.41,
-    "fcfYield": 11.51,
+    "ps": 2.52,
+    "evEbitda": 12.69,
+    "fcfYield": 10.67,
     "forwardPe": 12.19,
-    "dividendYield": 5.52,
-    "revenueGrowth": 21.7,
-    "profitMargin": 13.17,
-    "operatingMargin": 26.4,
-    "roe": 4.21,
-    "debtEquity": 44.11
+    "dividendYield": 5.05,
+    "revenueGrowth": 2.7,
+    "profitMargin": 22.79,
+    "operatingMargin": 28.77,
+    "roe": 7.36,
+    "debtEquity": 42.05
   }
 }

@@ -2,7 +2,7 @@
   "ticker": "CGF",
   "name": "CHALLENGER FPO [CGF]",
   "price": 9.85,
-  "valuationScore": -22.0,
+  "valuationScore": 36.2,
   "marketCap": "6.7B",
   "sector": "Financial Services",
   "domain": "challenger.com.au",
@@ -220,8 +220,8 @@
       "price": 9.85
     }
   ],
-  "testsPassed": 3,
-  "grade": "C",
+  "testsPassed": 2,
+  "grade": "D",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -246,53 +246,53 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": true,
-      "value": 15.18,
+      "passed": false,
+      "value": -25.74,
       "threshold": 5.0,
-      "label": "15.2% vs 5%"
+      "label": "-25.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 13.34,
+      "value": 13.33,
       "threshold": 17.28,
       "label": "Fwd 13.3x vs Trail 17.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": true,
-      "value": 16.39,
+      "value": 17.62,
       "threshold": 5.0,
-      "label": "Margin 16.4% / ROE 11.6%"
+      "label": "Margin 17.6% / ROE 11.8%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": -16.9,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining -16.9%"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
-      "passed": false,
-      "value": -16.9,
+      "passed": null,
+      "value": null,
       "threshold": -5.0,
-      "label": "-16.9% growth (floor: -5%)"
+      "label": "No revenue data"
     }
   },
   "metrics": {
     "pe": 17.28,
     "sectorPe": 18.11,
     "pb": 1.65,
-    "ps": 2.4,
-    "evEbitda": -2.71,
-    "fcfYield": 15.18,
-    "forwardPe": 13.34,
-    "dividendYield": 3.39,
-    "revenueGrowth": -16.9,
-    "profitMargin": 16.39,
-    "operatingMargin": 55.62,
-    "roe": 11.55,
-    "debtEquity": 195.79
+    "ps": 2.34,
+    "evEbitda": -9.61,
+    "fcfYield": -25.74,
+    "forwardPe": 13.33,
+    "dividendYield": 3.25,
+    "revenueGrowth": null,
+    "profitMargin": 17.62,
+    "operatingMargin": 60.43,
+    "roe": 11.83,
+    "debtEquity": 208.18
   }
 }

@@ -2,7 +2,7 @@
   "ticker": "BRG",
   "name": "BREVILLE FPO [BRG]",
   "price": 32.18,
-  "valuationScore": 11.1,
+  "valuationScore": 10.3,
   "marketCap": "4.7B",
   "sector": "Consumer Discretionary",
   "domain": "brevillegroup.com",
@@ -220,7 +220,7 @@
       "price": 32.18
     }
   ],
-  "testsPassed": 4,
+  "testsPassed": 3,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
@@ -233,66 +233,66 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.45,
+      "value": 4.4,
       "threshold": 1.5,
-      "label": "4.45x vs 1.5x"
+      "label": "4.40x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 20.73,
+      "value": 20.07,
       "threshold": 10.0,
-      "label": "20.7x vs 10x"
+      "label": "20.1x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 1.96,
+      "value": 2.63,
       "threshold": 5.0,
-      "label": "2.0% vs 5%"
+      "label": "2.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 26.92,
+      "value": 26.99,
       "threshold": 34.23,
-      "label": "Fwd 26.9x vs Trail 34.2x"
+      "label": "Fwd 27.0x vs Trail 34.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": true,
-      "value": 7.6,
+      "value": 7.63,
       "threshold": 5.0,
-      "label": "Margin 7.6% / ROE 13.5%"
+      "label": "Margin 7.6% / ROE 13.6%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": true,
-      "value": 0.26,
+      "passed": false,
+      "value": 1.35,
       "threshold": 0.5,
-      "label": "P/S 2.6x ÷ Growth 10.1% = 0.26"
+      "label": "P/S 2.6x ÷ Growth 1.9% = 1.35"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": true,
-      "value": 10.1,
+      "value": 1.9,
       "threshold": -5.0,
-      "label": "10.1% growth (floor: -5%)"
+      "label": "1.9% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": 34.23,
     "sectorPe": 17.43,
-    "pb": 4.45,
-    "ps": 2.59,
-    "evEbitda": 20.73,
-    "fcfYield": 1.96,
-    "forwardPe": 26.92,
-    "dividendYield": 1.2,
-    "revenueGrowth": 10.1,
-    "profitMargin": 7.6,
-    "operatingMargin": 13.26,
-    "roe": 13.51,
-    "debtEquity": 27.99
+    "pb": 4.4,
+    "ps": 2.57,
+    "evEbitda": 20.07,
+    "fcfYield": 2.63,
+    "forwardPe": 26.99,
+    "dividendYield": 1.18,
+    "revenueGrowth": 1.9,
+    "profitMargin": 7.63,
+    "operatingMargin": 8.73,
+    "roe": 13.59,
+    "debtEquity": 14.5
   }
 }
