@@ -1,9 +1,9 @@
 {
   "ticker": "MGR",
   "name": "MIRVAC GRP STAPLED [MGR]",
-  "price": 1.85,
-  "valuationScore": -1.7,
-  "marketCap": "7.3B",
+  "price": 1.9,
+  "valuationScore": -10.2,
+  "marketCap": "7.5B",
   "sector": "Real Estate",
   "domain": "mirvac.com",
   "chartData": [
@@ -217,25 +217,25 @@
     },
     {
       "date": "2026-08-23",
-      "price": 1.74
+      "price": 1.9
     }
   ],
-  "testsPassed": 5,
-  "grade": "B",
+  "testsPassed": 4,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 20.56,
-      "threshold": 9.81,
-      "label": "20.6x vs 9.8x sector"
+      "value": 11.18,
+      "threshold": 9.5,
+      "label": "11.2x vs 9.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.79,
+      "value": 0.82,
       "threshold": 1.5,
-      "label": "0.79x vs 1.5x"
+      "label": "0.82x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 11.82,
+      "value": 11.51,
       "threshold": 5.0,
-      "label": "11.8% vs 5%"
+      "label": "11.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
-      "passed": true,
-      "value": 12.74,
-      "threshold": 20.56,
-      "label": "Fwd 12.7x vs Trail 20.6x"
+      "passed": false,
+      "value": 12.19,
+      "threshold": 11.18,
+      "label": "Fwd 12.2x vs Trail 11.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.11,
+      "value": 0.12,
       "threshold": 0.5,
-      "label": "P/S 2.5x ÷ Growth 21.7% = 0.11"
+      "label": "P/S 2.6x ÷ Growth 21.7% = 0.12"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 20.56,
-    "sectorPe": 11.54,
-    "pb": 0.79,
-    "ps": 2.49,
+    "pe": 11.18,
+    "sectorPe": 11.18,
+    "pb": 0.82,
+    "ps": 2.56,
     "evEbitda": 14.41,
-    "fcfYield": 11.82,
-    "forwardPe": 12.74,
+    "fcfYield": 11.51,
+    "forwardPe": 12.19,
     "dividendYield": 5.52,
     "revenueGrowth": 21.7,
     "profitMargin": 13.17,

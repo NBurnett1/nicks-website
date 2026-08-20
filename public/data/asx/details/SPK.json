@@ -1,9 +1,9 @@
 {
   "ticker": "SPK",
   "name": "SPARK NZ FPO NZX [SPK]",
-  "price": 1.68,
-  "valuationScore": -13.6,
-  "marketCap": "3.2B",
+  "price": 1.82,
+  "valuationScore": -11.3,
+  "marketCap": "3.4B",
   "sector": "Communication Services",
   "domain": "sparknz.co.nz",
   "chartData": [
@@ -217,25 +217,25 @@
     },
     {
       "date": "2026-08-23",
-      "price": 1.62
+      "price": 1.82
     }
   ],
-  "testsPassed": 5,
-  "grade": "B",
+  "testsPassed": 4,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 15.27,
-      "threshold": 12.98,
-      "label": "15.3x vs 13.0x sector"
+      "value": 15.17,
+      "threshold": 12.89,
+      "label": "15.2x vs 12.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.83,
+      "value": 3.07,
       "threshold": 1.5,
-      "label": "2.83x vs 1.5x"
+      "label": "3.07x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 11.39,
+      "value": 10.52,
       "threshold": 5.0,
-      "label": "11.4% vs 5%"
+      "label": "10.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
-      "passed": true,
-      "value": 14.91,
-      "threshold": 15.27,
-      "label": "Fwd 14.9x vs Trail 15.3x"
+      "passed": false,
+      "value": 16.16,
+      "threshold": 15.17,
+      "label": "Fwd 16.2x vs Trail 15.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 15.27,
-    "sectorPe": 15.27,
-    "pb": 2.83,
-    "ps": 0.86,
+    "pe": 15.17,
+    "sectorPe": 15.17,
+    "pb": 3.07,
+    "ps": 0.93,
     "evEbitda": 6.45,
-    "fcfYield": 11.39,
-    "forwardPe": 14.91,
+    "fcfYield": 10.52,
+    "forwardPe": 16.16,
     "dividendYield": 10.1,
     "revenueGrowth": -1.2,
     "profitMargin": 7.81,

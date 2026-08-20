@@ -1,9 +1,9 @@
 {
   "ticker": "RSG",
   "name": "RESOLUTE FPO [RSG]",
-  "price": 1.17,
-  "valuationScore": -16.1,
-  "marketCap": "2.5B",
+  "price": 1.26,
+  "valuationScore": -15.6,
+  "marketCap": "2.7B",
   "sector": "Basic Materials",
   "domain": "rml.com.au",
   "chartData": [
@@ -217,25 +217,25 @@
     },
     {
       "date": "2026-08-23",
-      "price": 1.15
+      "price": 1.26
     }
   ],
-  "testsPassed": 5,
-  "grade": "B",
+  "testsPassed": 4,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": true,
-      "value": 14.62,
-      "threshold": 15.44,
-      "label": "14.6x vs 15.4x sector"
+      "passed": false,
+      "value": 15.81,
+      "threshold": 14.11,
+      "label": "15.8x vs 14.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.39,
+      "value": 2.58,
       "threshold": 1.5,
-      "label": "2.39x vs 1.5x"
+      "label": "2.58x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 7.23,
+      "value": 6.69,
       "threshold": 5.0,
-      "label": "7.2% vs 5%"
+      "label": "6.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 6.71,
-      "threshold": 14.62,
-      "label": "Fwd 6.7x vs Trail 14.6x"
+      "value": 7.25,
+      "threshold": 15.81,
+      "label": "Fwd 7.3x vs Trail 15.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 14.62,
-    "sectorPe": 18.16,
-    "pb": 2.39,
-    "ps": 2.89,
+    "pe": 15.81,
+    "sectorPe": 16.6,
+    "pb": 2.58,
+    "ps": 3.12,
     "evEbitda": 8.47,
-    "fcfYield": 7.23,
-    "forwardPe": 6.71,
+    "fcfYield": 6.69,
+    "forwardPe": 7.25,
     "dividendYield": null,
     "revenueGrowth": -9.0,
     "profitMargin": 14.88,

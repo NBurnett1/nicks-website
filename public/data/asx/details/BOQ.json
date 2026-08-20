@@ -1,8 +1,8 @@
 {
   "ticker": "BOQ",
   "name": "BANK QLD FPO [BOQ]",
-  "price": 6.38,
-  "valuationScore": 3.5,
+  "price": 6.35,
+  "valuationScore": 3.8,
   "marketCap": "4.2B",
   "sector": "Financials",
   "domain": "boq.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-23",
-      "price": 6.4
+      "price": 6.35
     }
   ],
   "testsPassed": 3,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 42.53,
-      "threshold": 16.44,
-      "label": "42.5x vs 16.4x sector"
+      "value": 42.33,
+      "threshold": 16.04,
+      "label": "42.3x vs 16.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 11.91,
-      "threshold": 42.53,
-      "label": "Fwd 11.9x vs Trail 42.5x"
+      "value": 11.85,
+      "threshold": 42.33,
+      "label": "Fwd 11.9x vs Trail 42.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 1.26,
+      "value": 1.25,
       "threshold": 0.5,
-      "label": "P/S 2.5x ÷ Growth 2.0% = 1.26"
+      "label": "P/S 2.5x ÷ Growth 2.0% = 1.25"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 42.53,
-    "sectorPe": 19.34,
+    "pe": 42.33,
+    "sectorPe": 18.87,
     "pb": 0.71,
-    "ps": 2.52,
+    "ps": 2.51,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 11.91,
-    "dividendYield": null,
+    "forwardPe": 11.85,
+    "dividendYield": 6.27,
     "revenueGrowth": 2.0,
     "profitMargin": 5.89,
     "operatingMargin": 25.77,

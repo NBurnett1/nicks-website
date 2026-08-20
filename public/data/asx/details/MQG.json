@@ -1,11 +1,11 @@
 {
   "ticker": "MQG",
   "name": "MACQ GROUP FPO [MQG]",
-  "price": 254.21,
-  "valuationScore": 2.7,
-  "marketCap": "96.9B",
+  "price": 252.3,
+  "valuationScore": 0.0,
+  "marketCap": "—",
   "sector": "Financials",
-  "domain": "macquarie.com",
+  "domain": "",
   "chartData": [
     {
       "date": "2025-08-24",
@@ -217,25 +217,25 @@
     },
     {
       "date": "2026-08-23",
-      "price": 255.42
+      "price": 252.3
     }
   ],
-  "testsPassed": 3,
-  "grade": "C",
+  "testsPassed": 0,
+  "grade": "F",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": false,
-      "value": 26.18,
-      "threshold": 16.44,
-      "label": "26.2x vs 16.4x sector"
+      "passed": null,
+      "value": null,
+      "threshold": null,
+      "label": "Insufficient data"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
-      "passed": false,
-      "value": 2.69,
+      "passed": null,
+      "value": null,
       "threshold": 1.5,
-      "label": "2.69x vs 1.5x"
+      "label": "No P/B data"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -253,46 +253,46 @@
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
-      "passed": true,
-      "value": 20.7,
-      "threshold": 26.18,
-      "label": "Fwd 20.7x vs Trail 26.2x"
+      "passed": null,
+      "value": null,
+      "threshold": null,
+      "label": "Insufficient data"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
-      "passed": true,
-      "value": 21.12,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "Margin 21.1% / ROE 11.2%"
+      "label": "Insufficient data"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": 0.94,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 5.4x ÷ Growth 5.8% = 0.94"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
-      "passed": true,
-      "value": 5.8,
+      "passed": null,
+      "value": null,
       "threshold": -5.0,
-      "label": "5.8% growth (floor: -5%)"
+      "label": "No revenue data"
     }
   },
   "metrics": {
-    "pe": 26.18,
-    "sectorPe": 19.34,
-    "pb": 2.69,
-    "ps": 5.45,
+    "pe": null,
+    "sectorPe": 18.87,
+    "pb": null,
+    "ps": null,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 20.7,
-    "dividendYield": 3.43,
-    "revenueGrowth": 5.8,
-    "profitMargin": 21.12,
-    "operatingMargin": 28.36,
-    "roe": 11.21,
+    "forwardPe": null,
+    "dividendYield": null,
+    "revenueGrowth": null,
+    "profitMargin": null,
+    "operatingMargin": null,
+    "roe": null,
     "debtEquity": null
   }
 }

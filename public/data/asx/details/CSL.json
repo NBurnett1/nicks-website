@@ -1,9 +1,9 @@
 {
   "ticker": "CSL",
   "name": "CSL FPO [CSL]",
-  "price": 166.48,
+  "price": 171.2,
   "valuationScore": 2.8,
-  "marketCap": "79.7B",
+  "marketCap": "—",
   "sector": "Healthcare",
   "domain": "csl.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-23",
-      "price": 157.82
+      "price": 171.2
     }
   ],
   "testsPassed": 1,
@@ -233,9 +233,9 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.84,
+      "value": 3.95,
       "threshold": 1.5,
-      "label": "3.84x vs 1.5x"
+      "label": "3.95x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -246,15 +246,15 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 2.15,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "2.1% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 17.75,
+      "value": 18.25,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": 0.92,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 5.0x ÷ Growth 5.5% = 0.92"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 31.66,
-    "pb": 3.84,
-    "ps": 5.05,
+    "sectorPe": 31.18,
+    "pb": 3.95,
+    "ps": null,
     "evEbitda": 17.21,
-    "fcfYield": 2.15,
-    "forwardPe": 17.75,
+    "fcfYield": null,
+    "forwardPe": 18.25,
     "dividendYield": 2.45,
     "revenueGrowth": 5.5,
     "profitMargin": -16.33,

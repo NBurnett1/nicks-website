@@ -1,9 +1,9 @@
 {
   "ticker": "WHC",
   "name": "WHITEHAVEN FPO [WHC]",
-  "price": 7.55,
+  "price": 7.63,
   "valuationScore": -60.0,
-  "marketCap": "6.2B",
+  "marketCap": "6.3B",
   "sector": "Materials",
   "domain": "whitehavencoal.com.au",
   "chartData": [
@@ -217,25 +217,25 @@
     },
     {
       "date": "2026-08-23",
-      "price": 7.76
+      "price": 7.63
     }
   ],
-  "testsPassed": 5,
-  "grade": "B",
+  "testsPassed": 6,
+  "grade": "A",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 9.32,
-      "threshold": 16.71,
-      "label": "9.3x vs 16.7x sector"
+      "value": 15.9,
+      "threshold": 17.39,
+      "label": "15.9x vs 17.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.05,
+      "value": 1.06,
       "threshold": 1.5,
-      "label": "1.05x vs 1.5x"
+      "label": "1.06x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 27.73,
+      "value": 27.44,
       "threshold": 5.0,
-      "label": "27.7% vs 5%"
+      "label": "27.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
-      "passed": false,
-      "value": 12.41,
-      "threshold": 9.32,
-      "label": "Fwd 12.4x vs Trail 9.3x"
+      "passed": true,
+      "value": 12.54,
+      "threshold": 15.9,
+      "label": "Fwd 12.5x vs Trail 15.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 9.32,
-    "sectorPe": 19.66,
-    "pb": 1.05,
-    "ps": 1.27,
+    "pe": 15.9,
+    "sectorPe": 20.46,
+    "pb": 1.06,
+    "ps": 1.29,
     "evEbitda": 2.99,
-    "fcfYield": 27.73,
-    "forwardPe": 12.41,
+    "fcfYield": 27.44,
+    "forwardPe": 12.54,
     "dividendYield": 1.03,
     "revenueGrowth": -27.7,
     "profitMargin": 12.66,
