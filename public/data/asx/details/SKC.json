@@ -2,7 +2,7 @@
   "ticker": "SKC",
   "name": "SKYCITY FPO NZX [SKC]",
   "price": 0.5,
-  "valuationScore": 4.7,
+  "valuationScore": 6.1,
   "marketCap": "552M",
   "sector": "Consumer Cyclical",
   "domain": "skycityentertainmentgroup.com",
@@ -220,15 +220,15 @@
       "price": 0.5
     }
   ],
-  "testsPassed": 5,
-  "grade": "B",
+  "testsPassed": 4,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": true,
-      "value": 16.67,
-      "threshold": 22.43,
-      "label": "16.7x vs 22.4x sector"
+      "passed": false,
+      "value": 25.0,
+      "threshold": 22.52,
+      "label": "25.0x vs 22.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 8.96,
-      "threshold": 16.67,
-      "label": "Fwd 9.0x vs Trail 16.7x"
+      "value": 10.35,
+      "threshold": 25.0,
+      "label": "Fwd 10.3x vs Trail 25.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 16.67,
-    "sectorPe": 26.39,
+    "pe": 25.0,
+    "sectorPe": 26.5,
     "pb": 0.42,
     "ps": 0.68,
     "evEbitda": 7.15,
     "fcfYield": -14.77,
-    "forwardPe": 8.96,
+    "forwardPe": 10.35,
     "dividendYield": null,
     "revenueGrowth": -2.4,
     "profitMargin": 4.33,

@@ -2,7 +2,7 @@
   "ticker": "MP1",
   "name": "MEGAPORT FPO [MP1]",
   "price": 18.38,
-  "valuationScore": 29.7,
+  "valuationScore": 60.0,
   "marketCap": "4.5B",
   "sector": "Technology",
   "domain": "megaport.com",
@@ -220,7 +220,7 @@
       "price": 18.38
     }
   ],
-  "testsPassed": 1,
+  "testsPassed": 2,
   "grade": "D",
   "valuationTests": {
     "peDiscount": {
@@ -240,59 +240,59 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 210.17,
+      "value": 899.08,
       "threshold": 10.0,
-      "label": "210.2x vs 10x"
+      "label": "899.1x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 1.81,
+      "value": -3.14,
       "threshold": 5.0,
-      "label": "1.8% vs 5%"
+      "label": "-3.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 30.3,
+      "value": 33.58,
       "threshold": null,
       "label": "Insufficient data"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": false,
-      "value": -7.94,
+      "value": -12.49,
       "threshold": 5.0,
-      "label": "Margin -7.9% / ROE -6.0%"
+      "label": "Margin -12.5% / ROE -6.6%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": 0.66,
+      "passed": true,
+      "value": 0.3,
       "threshold": 0.5,
-      "label": "P/S 17.5x ÷ Growth 26.3% = 0.66"
+      "label": "P/S 14.3x ÷ Growth 47.4% = 0.30"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": true,
-      "value": 26.3,
+      "value": 47.4,
       "threshold": -5.0,
-      "label": "26.3% growth (floor: -5%)"
+      "label": "47.4% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": null,
     "sectorPe": 34.63,
     "pb": 6.53,
-    "ps": 17.46,
-    "evEbitda": 210.17,
-    "fcfYield": 1.81,
-    "forwardPe": 30.3,
+    "ps": 14.27,
+    "evEbitda": 899.08,
+    "fcfYield": -3.14,
+    "forwardPe": 33.58,
     "dividendYield": null,
-    "revenueGrowth": 26.3,
-    "profitMargin": -7.94,
-    "operatingMargin": -2.82,
-    "roe": -6.01,
-    "debtEquity": 18.4
+    "revenueGrowth": 47.4,
+    "profitMargin": -12.49,
+    "operatingMargin": -15.95,
+    "roe": -6.61,
+    "debtEquity": 10.62
   }
 }

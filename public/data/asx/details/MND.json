@@ -2,8 +2,8 @@
   "ticker": "MND",
   "name": "MONADEL FPO [MND]",
   "price": 32.19,
-  "valuationScore": 5.3,
-  "marketCap": "—",
+  "valuationScore": 6.1,
+  "marketCap": "3.2B",
   "sector": "Industrials",
   "domain": "monadelphous.com.au",
   "chartData": [
@@ -220,15 +220,15 @@
       "price": 32.19
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
       "value": 30.37,
-      "threshold": 23.34,
-      "label": "30.4x vs 23.3x sector"
+      "threshold": 20.34,
+      "label": "30.4x vs 20.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,16 +240,16 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 18.29,
+      "value": 18.55,
       "threshold": 10.0,
-      "label": "18.3x vs 10x"
+      "label": "18.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": 4.74,
       "threshold": 5.0,
-      "label": "No FCF data"
+      "label": "4.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": true,
+      "value": 0.03,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "P/S 1.3x ÷ Growth 40.6% = 0.03"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,13 +282,13 @@
   },
   "metrics": {
     "pe": 30.37,
-    "sectorPe": 27.46,
+    "sectorPe": 23.93,
     "pb": 5.87,
-    "ps": null,
-    "evEbitda": 18.29,
-    "fcfYield": null,
+    "ps": 1.26,
+    "evEbitda": 18.55,
+    "fcfYield": 4.74,
     "forwardPe": 25.3,
-    "dividendYield": 3.08,
+    "dividendYield": 3.04,
     "revenueGrowth": 40.6,
     "profitMargin": 4.11,
     "operatingMargin": 6.05,

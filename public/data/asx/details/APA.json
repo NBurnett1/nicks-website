@@ -2,7 +2,7 @@
   "ticker": "APA",
   "name": "APA GROUP STAPLED [APA]",
   "price": 10.52,
-  "valuationScore": 20.9,
+  "valuationScore": 16.1,
   "marketCap": "13.9B",
   "sector": "Utilities",
   "domain": "apa.com.au",
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 87.67,
-      "threshold": 16.99,
-      "label": "87.7x vs 17.0x sector"
+      "value": 65.75,
+      "threshold": 17.0,
+      "label": "65.8x vs 17.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,59 +240,59 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 13.5,
+      "value": 10.91,
       "threshold": 10.0,
-      "label": "13.5x vs 10x"
+      "label": "10.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 1.47,
+      "value": 0.59,
       "threshold": 5.0,
-      "label": "1.5% vs 5%"
+      "label": "0.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 45.42,
-      "threshold": 87.67,
-      "label": "Fwd 45.4x vs Trail 87.7x"
+      "value": 39.54,
+      "threshold": 65.75,
+      "label": "Fwd 39.5x vs Trail 65.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
-      "passed": false,
-      "value": 5.07,
+      "passed": true,
+      "value": 6.89,
       "threshold": 5.0,
-      "label": "Margin 5.1% / ROE 6.8%"
+      "label": "Margin 6.9% / ROE 8.7%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": -0.4,
+      "value": -12.3,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining -0.4%"
+      "label": "FAIL — Revenue declining -12.3%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
-      "passed": true,
-      "value": -0.4,
+      "passed": false,
+      "value": -12.3,
       "threshold": -5.0,
-      "label": "-0.4% growth (floor: -5%)"
+      "label": "-12.3% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 87.67,
-    "sectorPe": 19.98,
+    "pe": 65.75,
+    "sectorPe": 20.0,
     "pb": 4.99,
-    "ps": 4.36,
-    "evEbitda": 13.5,
-    "fcfYield": 1.47,
-    "forwardPe": 45.42,
-    "dividendYield": 5.69,
-    "revenueGrowth": -0.4,
-    "profitMargin": 5.07,
-    "operatingMargin": 34.14,
-    "roe": 6.85,
-    "debtEquity": 477.06
+    "ps": 4.64,
+    "evEbitda": 10.91,
+    "fcfYield": 0.59,
+    "forwardPe": 39.54,
+    "dividendYield": 5.51,
+    "revenueGrowth": -12.3,
+    "profitMargin": 6.89,
+    "operatingMargin": 38.3,
+    "roe": 8.72,
+    "debtEquity": 524.38
   }
 }

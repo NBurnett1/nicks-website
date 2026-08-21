@@ -2,7 +2,7 @@
   "ticker": "SIQ",
   "name": "SMARTGROUP FPO [SIQ]",
   "price": 12.86,
-  "valuationScore": 2.5,
+  "valuationScore": 3.3,
   "marketCap": "1.8B",
   "sector": "Industrials",
   "domain": "smartgroup.com.au",
@@ -220,15 +220,15 @@
       "price": 12.86
     }
   ],
-  "testsPassed": 4,
+  "testsPassed": 3,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": true,
+      "passed": false,
       "value": 21.08,
-      "threshold": 23.34,
-      "label": "21.1x vs 23.3x sector"
+      "threshold": 20.34,
+      "label": "21.1x vs 20.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,14 +240,14 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 13.69,
+      "value": 13.58,
       "threshold": 10.0,
-      "label": "13.7x vs 10x"
+      "label": "13.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.99,
+      "value": 4.01,
       "threshold": 5.0,
       "label": "4.0% vs 5%"
     },
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.66,
+      "value": 0.65,
       "threshold": 0.5,
-      "label": "P/S 5.4x ÷ Growth 8.2% = 0.66"
+      "label": "P/S 5.4x ÷ Growth 8.2% = 0.65"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,13 +282,13 @@
   },
   "metrics": {
     "pe": 21.08,
-    "sectorPe": 27.46,
+    "sectorPe": 23.93,
     "pb": 6.03,
-    "ps": 5.4,
-    "evEbitda": 13.69,
-    "fcfYield": 3.99,
+    "ps": 5.37,
+    "evEbitda": 13.58,
+    "fcfYield": 4.01,
     "forwardPe": 17.8,
-    "dividendYield": 3.32,
+    "dividendYield": 3.34,
     "revenueGrowth": 8.2,
     "profitMargin": 24.12,
     "operatingMargin": 37.17,

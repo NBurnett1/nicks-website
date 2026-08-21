@@ -2,7 +2,7 @@
   "ticker": "DXS",
   "name": "DEXUS STAPLED [DXS]",
   "price": 5.74,
-  "valuationScore": -12.0,
+  "valuationScore": -3.1,
   "marketCap": "6.2B",
   "sector": "Real Estate",
   "domain": "dexus.com",
@@ -220,15 +220,15 @@
       "price": 5.74
     }
   ],
-  "testsPassed": 5,
-  "grade": "B",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 12.48,
-      "threshold": 9.55,
-      "label": "12.5x vs 9.6x sector"
+      "value": 10.44,
+      "threshold": 9.18,
+      "label": "10.4x vs 9.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,59 +240,59 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 12.24,
+      "value": 15.15,
       "threshold": 10.0,
-      "label": "12.2x vs 10x"
+      "label": "15.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 14.95,
+      "value": 6.58,
       "threshold": 5.0,
-      "label": "14.9% vs 5%"
+      "label": "6.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 10.22,
-      "threshold": 12.48,
-      "label": "Fwd 10.2x vs Trail 12.5x"
+      "value": 10.24,
+      "threshold": 10.44,
+      "label": "Fwd 10.2x vs Trail 10.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": false,
-      "value": 38.96,
+      "value": 46.1,
       "threshold": 5.0,
-      "label": "Margin 39.0% / ROE 4.7%"
+      "label": "Margin 46.1% / ROE 4.8%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": true,
-      "value": 0.19,
+      "passed": false,
+      "value": -12.1,
       "threshold": 0.5,
-      "label": "P/S 4.4x ÷ Growth 22.7% = 0.19"
+      "label": "FAIL — Revenue declining -12.1%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
-      "passed": true,
-      "value": 22.7,
+      "passed": false,
+      "value": -12.1,
       "threshold": -5.0,
-      "label": "22.7% growth (floor: -5%)"
+      "label": "-12.1% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 12.48,
-    "sectorPe": 11.24,
+    "pe": 10.44,
+    "sectorPe": 10.79,
     "pb": 0.64,
-    "ps": 4.36,
-    "evEbitda": 12.24,
-    "fcfYield": 14.95,
-    "forwardPe": 10.22,
-    "dividendYield": 6.38,
-    "revenueGrowth": 22.7,
-    "profitMargin": 38.96,
-    "operatingMargin": 67.2,
-    "roe": 4.74,
-    "debtEquity": 46.55
+    "ps": 4.65,
+    "evEbitda": 15.15,
+    "fcfYield": 6.58,
+    "forwardPe": 10.24,
+    "dividendYield": 6.45,
+    "revenueGrowth": -12.1,
+    "profitMargin": 46.1,
+    "operatingMargin": 66.3,
+    "roe": 4.85,
+    "debtEquity": 46.69
   }
 }

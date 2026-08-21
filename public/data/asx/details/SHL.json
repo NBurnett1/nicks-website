@@ -2,7 +2,7 @@
   "ticker": "SHL",
   "name": "SONIC HLTH FPO [SHL]",
   "price": 21.08,
-  "valuationScore": -6.8,
+  "valuationScore": -11.5,
   "marketCap": "10.4B",
   "sector": "Healthcare",
   "domain": "sonichealthcare.com",
@@ -220,15 +220,15 @@
       "price": 21.08
     }
   ],
-  "testsPassed": 6,
+  "testsPassed": 7,
   "grade": "A",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 18.99,
+      "value": 17.14,
       "threshold": 26.5,
-      "label": "19.0x vs 26.5x sector"
+      "label": "17.1x vs 26.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -239,60 +239,60 @@
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
-      "passed": false,
-      "value": 12.95,
+      "passed": true,
+      "value": 8.41,
       "threshold": 10.0,
-      "label": "12.9x vs 10x"
+      "label": "8.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.74,
+      "value": 7.07,
       "threshold": 5.0,
-      "label": "5.7% vs 5%"
+      "label": "7.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.03,
-      "threshold": 18.99,
-      "label": "Fwd 16.0x vs Trail 19.0x"
+      "value": 16.04,
+      "threshold": 17.14,
+      "label": "Fwd 16.0x vs Trail 17.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": false,
-      "value": 5.18,
+      "value": 5.6,
       "threshold": 5.0,
-      "label": "Margin 5.2% / ROE 6.6%"
+      "label": "Margin 5.6% / ROE 7.5%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.06,
+      "value": 0.11,
       "threshold": 0.5,
-      "label": "P/S 1.0x ÷ Growth 16.6% = 0.06"
+      "label": "P/S 1.0x ÷ Growth 8.9% = 0.11"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": true,
-      "value": 16.6,
+      "value": 8.9,
       "threshold": -5.0,
-      "label": "16.6% growth (floor: -5%)"
+      "label": "8.9% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 18.99,
+    "pe": 17.14,
     "sectorPe": 31.18,
     "pb": 1.22,
-    "ps": 1.0,
-    "evEbitda": 12.95,
-    "fcfYield": 5.74,
-    "forwardPe": 16.03,
-    "dividendYield": 4.58,
-    "revenueGrowth": 16.6,
-    "profitMargin": 5.18,
-    "operatingMargin": 8.98,
-    "roe": 6.63,
-    "debtEquity": 68.22
+    "ps": 0.96,
+    "evEbitda": 8.41,
+    "fcfYield": 7.07,
+    "forwardPe": 16.04,
+    "dividendYield": 5.12,
+    "revenueGrowth": 8.9,
+    "profitMargin": 5.6,
+    "operatingMargin": 9.5,
+    "roe": 7.5,
+    "debtEquity": 68.76
   }
 }

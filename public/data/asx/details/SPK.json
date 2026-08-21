@@ -2,7 +2,7 @@
   "ticker": "SPK",
   "name": "SPARK NZ FPO NZX [SPK]",
   "price": 1.82,
-  "valuationScore": -11.0,
+  "valuationScore": -25.8,
   "marketCap": "3.4B",
   "sector": "Communication Services",
   "domain": "sparknz.co.nz",
@@ -220,15 +220,15 @@
       "price": 1.82
     }
   ],
-  "testsPassed": 5,
-  "grade": "B",
+  "testsPassed": 4,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": false,
-      "value": 15.17,
-      "threshold": 12.89,
-      "label": "15.2x vs 12.9x sector"
+      "passed": true,
+      "value": 8.67,
+      "threshold": 11.72,
+      "label": "8.7x vs 11.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,59 +240,59 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 6.77,
+      "value": 4.0,
       "threshold": 10.0,
-      "label": "6.8x vs 10x"
+      "label": "4.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 10.52,
+      "value": 28.52,
       "threshold": 5.0,
-      "label": "10.5% vs 5%"
+      "label": "28.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
-      "passed": true,
-      "value": 14.44,
-      "threshold": 15.17,
-      "label": "Fwd 14.4x vs Trail 15.2x"
+      "passed": false,
+      "value": 14.51,
+      "threshold": 8.67,
+      "label": "Fwd 14.5x vs Trail 8.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": true,
-      "value": 7.81,
+      "value": 12.64,
       "threshold": 5.0,
-      "label": "Margin 7.8% / ROE 19.7%"
+      "label": "Margin 12.6% / ROE 30.7%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": -1.2,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining -1.2%"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
-      "passed": true,
-      "value": -1.2,
+      "passed": null,
+      "value": null,
       "threshold": -5.0,
-      "label": "-1.2% growth (floor: -5%)"
+      "label": "No revenue data"
     }
   },
   "metrics": {
-    "pe": 15.17,
-    "sectorPe": 15.17,
+    "pe": 8.67,
+    "sectorPe": 13.79,
     "pb": 3.07,
-    "ps": 0.93,
-    "evEbitda": 6.77,
-    "fcfYield": 10.52,
-    "forwardPe": 14.44,
-    "dividendYield": 9.33,
-    "revenueGrowth": -1.2,
-    "profitMargin": 7.81,
-    "operatingMargin": 7.61,
-    "roe": 19.72,
-    "debtEquity": 171.2
+    "ps": 0.87,
+    "evEbitda": 4.0,
+    "fcfYield": 28.52,
+    "forwardPe": 14.51,
+    "dividendYield": 6.78,
+    "revenueGrowth": null,
+    "profitMargin": 12.64,
+    "operatingMargin": 26.7,
+    "roe": 30.69,
+    "debtEquity": 115.42
   }
 }

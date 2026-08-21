@@ -2,7 +2,7 @@
   "ticker": "DOW",
   "name": "DOWNER EDI FPO [DOW]",
   "price": 6.59,
-  "valuationScore": -8.5,
+  "valuationScore": -6.9,
   "marketCap": "4.3B",
   "sector": "Industrials",
   "domain": "downergroup.com",
@@ -220,15 +220,15 @@
       "price": 6.59
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 4,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": false,
-      "value": 27.46,
-      "threshold": 23.34,
-      "label": "27.5x vs 23.3x sector"
+      "passed": true,
+      "value": 19.97,
+      "threshold": 20.34,
+      "label": "20.0x vs 20.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -239,60 +239,60 @@
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
-      "passed": false,
-      "value": 11.07,
+      "passed": true,
+      "value": 8.72,
       "threshold": 10.0,
-      "label": "11.1x vs 10x"
+      "label": "8.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 13.34,
+      "value": 10.31,
       "threshold": 5.0,
-      "label": "13.3% vs 5%"
+      "label": "10.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
       "value": 12.8,
-      "threshold": 27.46,
-      "label": "Fwd 12.8x vs Trail 27.5x"
+      "threshold": 19.97,
+      "label": "Fwd 12.8x vs Trail 20.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": false,
-      "value": 1.59,
+      "value": 2.23,
       "threshold": 5.0,
-      "label": "Margin 1.6% / ROE 7.8%"
+      "label": "Margin 2.2% / ROE 10.3%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": -7.1,
+      "value": -7.7,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining -7.1%"
+      "label": "FAIL — Revenue declining -7.7%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": false,
-      "value": -7.1,
+      "value": -7.7,
       "threshold": -5.0,
-      "label": "-7.1% growth (floor: -5%)"
+      "label": "-7.7% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 27.46,
-    "sectorPe": 27.46,
+    "pe": 19.97,
+    "sectorPe": 23.93,
     "pb": 2.22,
-    "ps": 0.43,
-    "evEbitda": 11.07,
-    "fcfYield": 13.34,
+    "ps": 0.45,
+    "evEbitda": 8.72,
+    "fcfYield": 10.31,
     "forwardPe": 12.8,
-    "dividendYield": 3.62,
-    "revenueGrowth": -7.1,
-    "profitMargin": 1.59,
-    "operatingMargin": 3.82,
-    "roe": 7.8,
-    "debtEquity": 61.69
+    "dividendYield": 4.43,
+    "revenueGrowth": -7.7,
+    "profitMargin": 2.23,
+    "operatingMargin": 5.76,
+    "roe": 10.29,
+    "debtEquity": 66.05
   }
 }

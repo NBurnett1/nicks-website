@@ -2,7 +2,7 @@
   "ticker": "NWH",
   "name": "NRWHOLDLTD FPO [NWH]",
   "price": 8.2,
-  "valuationScore": 11.4,
+  "valuationScore": 1.4,
   "marketCap": "3.8B",
   "sector": "Industrials",
   "domain": "nrw.com.au",
@@ -220,15 +220,15 @@
       "price": 8.2
     }
   ],
-  "testsPassed": 4,
-  "grade": "C",
+  "testsPassed": 5,
+  "grade": "B",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 82.0,
-      "threshold": 23.34,
-      "label": "82.0x vs 23.3x sector"
+      "value": 24.85,
+      "threshold": 20.34,
+      "label": "24.8x vs 20.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -239,60 +239,60 @@
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
-      "passed": false,
-      "value": 15.3,
+      "passed": true,
+      "value": 9.36,
       "threshold": 10.0,
-      "label": "15.3x vs 10x"
+      "label": "9.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.91,
+      "value": 5.6,
       "threshold": 5.0,
-      "label": "5.9% vs 5%"
+      "label": "5.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 18.41,
-      "threshold": 82.0,
-      "label": "Fwd 18.4x vs Trail 82.0x"
+      "value": 17.1,
+      "threshold": 24.85,
+      "label": "Fwd 17.1x vs Trail 24.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": false,
-      "value": 1.36,
+      "value": 3.57,
       "threshold": 5.0,
-      "label": "Margin 1.4% / ROE 7.5%"
+      "label": "Margin 3.6% / ROE 23.6%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.05,
+      "value": 0.02,
       "threshold": 0.5,
-      "label": "P/S 1.0x ÷ Growth 19.5% = 0.05"
+      "label": "P/S 0.9x ÷ Growth 43.6% = 0.02"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": true,
-      "value": 19.5,
+      "value": 43.6,
       "threshold": -5.0,
-      "label": "19.5% growth (floor: -5%)"
+      "label": "43.6% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 82.0,
-    "sectorPe": 27.46,
+    "pe": 24.85,
+    "sectorPe": 23.93,
     "pb": 5.87,
-    "ps": 1.05,
-    "evEbitda": 15.3,
-    "fcfYield": 5.91,
-    "forwardPe": 18.41,
-    "dividendYield": 2.24,
-    "revenueGrowth": 19.5,
-    "profitMargin": 1.36,
-    "operatingMargin": 5.41,
-    "roe": 7.46,
-    "debtEquity": 84.62
+    "ps": 0.88,
+    "evEbitda": 9.36,
+    "fcfYield": 5.6,
+    "forwardPe": 17.1,
+    "dividendYield": 2.8,
+    "revenueGrowth": 43.6,
+    "profitMargin": 3.57,
+    "operatingMargin": 5.89,
+    "roe": 23.6,
+    "debtEquity": 84.86
   }
 }

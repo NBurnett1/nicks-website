@@ -2,7 +2,7 @@
   "ticker": "AIA",
   "name": "AUCK AIRPT FPO NZX [AIA]",
   "price": 7.2,
-  "valuationScore": 8.7,
+  "valuationScore": 11.3,
   "marketCap": "12.2B",
   "sector": "Industrials",
   "domain": "aucklandairport.co.nz",
@@ -220,15 +220,15 @@
       "price": 7.2
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 36.0,
-      "threshold": 23.34,
-      "label": "36.0x vs 23.3x sector"
+      "value": 45.0,
+      "threshold": 20.34,
+      "label": "45.0x vs 20.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,59 +240,59 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 21.19,
+      "value": 21.12,
       "threshold": 10.0,
-      "label": "21.2x vs 10x"
+      "label": "21.1x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -4.4,
+      "value": -4.75,
       "threshold": 5.0,
-      "label": "-4.4% vs 5%"
+      "label": "-4.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
-      "passed": false,
-      "value": 39.18,
-      "threshold": 36.0,
-      "label": "Fwd 39.2x vs Trail 36.0x"
+      "passed": true,
+      "value": 38.9,
+      "threshold": 45.0,
+      "label": "Fwd 38.9x vs Trail 45.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": false,
-      "value": 41.78,
+      "value": 33.63,
       "threshold": 5.0,
-      "label": "Margin 41.8% / ROE 4.0%"
+      "label": "Margin 33.6% / ROE 3.1%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 2.04,
+      "value": 4.55,
       "threshold": 0.5,
-      "label": "P/S 12.5x ÷ Growth 6.1% = 2.04"
+      "label": "P/S 12.3x ÷ Growth 2.7% = 4.55"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": true,
-      "value": 6.1,
+      "value": 2.7,
       "threshold": -5.0,
-      "label": "6.1% growth (floor: -5%)"
+      "label": "2.7% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 36.0,
-    "sectorPe": 27.46,
+    "pe": 45.0,
+    "sectorPe": 23.93,
     "pb": 1.39,
-    "ps": 12.46,
-    "evEbitda": 21.19,
-    "fcfYield": -4.4,
-    "forwardPe": 39.18,
-    "dividendYield": 1.57,
-    "revenueGrowth": 6.1,
-    "profitMargin": 41.78,
-    "operatingMargin": 48.54,
-    "roe": 3.98,
-    "debtEquity": 25.07
+    "ps": 12.3,
+    "evEbitda": 21.12,
+    "fcfYield": -4.75,
+    "forwardPe": 38.9,
+    "dividendYield": 1.53,
+    "revenueGrowth": 2.7,
+    "profitMargin": 33.63,
+    "operatingMargin": 45.31,
+    "roe": 3.14,
+    "debtEquity": 25.72
   }
 }
