@@ -1,9 +1,9 @@
 {
   "ticker": "IAG",
   "name": "INSUR.AUST FPO [IAG]",
-  "price": 7.8,
-  "valuationScore": 1.5,
-  "marketCap": "18.2B",
+  "price": 7.87,
+  "valuationScore": 0.6,
+  "marketCap": "—",
   "sector": "Financials",
   "domain": "iag.com.au",
   "chartData": [
@@ -217,25 +217,25 @@
     },
     {
       "date": "2026-08-23",
-      "price": 7.8
+      "price": 7.87
     }
   ],
-  "testsPassed": 4,
+  "testsPassed": 3,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 18.14,
-      "threshold": 16.19,
-      "label": "18.1x vs 16.2x sector"
+      "value": 18.3,
+      "threshold": 16.22,
+      "label": "18.3x vs 16.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.51,
+      "value": 2.53,
       "threshold": 1.5,
-      "label": "2.51x vs 1.5x"
+      "label": "2.53x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -246,17 +246,17 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 3.59,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "3.6% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 15.75,
-      "threshold": 18.14,
-      "label": "Fwd 15.8x vs Trail 18.1x"
+      "value": 15.89,
+      "threshold": 18.3,
+      "label": "Fwd 15.9x vs Trail 18.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": true,
-      "value": 0.09,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 1.0x ÷ Growth 10.3% = 0.09"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 18.14,
-    "sectorPe": 19.04,
-    "pb": 2.51,
-    "ps": 0.95,
+    "pe": 18.3,
+    "sectorPe": 19.08,
+    "pb": 2.53,
+    "ps": null,
     "evEbitda": 10.03,
-    "fcfYield": 3.59,
-    "forwardPe": 15.75,
+    "fcfYield": null,
+    "forwardPe": 15.89,
     "dividendYield": 4.1,
     "revenueGrowth": 10.3,
     "profitMargin": 5.34,

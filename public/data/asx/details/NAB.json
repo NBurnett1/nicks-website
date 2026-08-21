@@ -1,9 +1,9 @@
 {
   "ticker": "NAB",
   "name": "NAT. BANK FPO [NAB]",
-  "price": 38.43,
-  "valuationScore": 0.1,
-  "marketCap": "117.6B",
+  "price": 38.17,
+  "valuationScore": 0.3,
+  "marketCap": "—",
   "sector": "Financials",
   "domain": "nab.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-23",
-      "price": 38.43
+      "price": 38.17
     }
   ],
   "testsPassed": 2,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 19.21,
-      "threshold": 16.19,
-      "label": "19.2x vs 16.2x sector"
+      "value": 19.09,
+      "threshold": 16.22,
+      "label": "19.1x vs 16.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.94,
+      "value": 1.93,
       "threshold": 1.5,
-      "label": "1.94x vs 1.5x"
+      "label": "1.93x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 15.8,
-      "threshold": 19.21,
-      "label": "Fwd 15.8x vs Trail 19.2x"
+      "value": 15.69,
+      "threshold": 19.09,
+      "label": "Fwd 15.7x vs Trail 19.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": 0.92,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 5.6x ÷ Growth 6.1% = 0.92"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 19.21,
-    "sectorPe": 19.04,
-    "pb": 1.94,
-    "ps": 5.64,
+    "pe": 19.09,
+    "sectorPe": 19.08,
+    "pb": 1.93,
+    "ps": null,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 15.8,
+    "forwardPe": 15.69,
     "dividendYield": 4.42,
     "revenueGrowth": 6.1,
     "profitMargin": 29.26,

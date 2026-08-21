@@ -1,9 +1,9 @@
 {
   "ticker": "CBA",
   "name": "CWLTH BANK FPO [CBA]",
-  "price": 156.44,
-  "valuationScore": 3.4,
-  "marketCap": "261.6B",
+  "price": 157.99,
+  "valuationScore": 3.9,
+  "marketCap": "264.1B",
   "sector": "Financials",
   "domain": "commbank.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-23",
-      "price": 156.44
+      "price": 157.99
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 23.99,
-      "threshold": 16.19,
-      "label": "24.0x vs 16.2x sector"
+      "value": 24.23,
+      "threshold": 16.22,
+      "label": "24.2x vs 16.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.32,
+      "value": 3.36,
       "threshold": 1.5,
-      "label": "3.32x vs 1.5x"
+      "label": "3.36x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 23.07,
-      "threshold": 23.99,
-      "label": "Fwd 23.1x vs Trail 24.0x"
+      "value": 23.29,
+      "threshold": 24.23,
+      "label": "Fwd 23.3x vs Trail 24.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 1.37,
+      "value": 1.38,
       "threshold": 0.5,
-      "label": "P/S 8.9x ÷ Growth 6.5% = 1.37"
+      "label": "P/S 9.0x ÷ Growth 6.5% = 1.38"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 23.99,
-    "sectorPe": 19.04,
-    "pb": 3.32,
-    "ps": 8.91,
+    "pe": 24.23,
+    "sectorPe": 19.08,
+    "pb": 3.36,
+    "ps": 8.99,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 23.07,
+    "forwardPe": 23.29,
     "dividendYield": 3.23,
     "revenueGrowth": 6.5,
     "profitMargin": 37.0,

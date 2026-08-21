@@ -1,7 +1,7 @@
 {
   "ticker": "NEC",
   "name": "NINE ENT FPO [NEC]",
-  "price": 0.97,
+  "price": 0.96,
   "valuationScore": -1.3,
   "marketCap": "1.5B",
   "sector": "Communication Services",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-23",
-      "price": 0.98
+      "price": 0.96
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 13.93,
+      "value": 13.79,
       "threshold": 12.89,
-      "label": "13.9x vs 12.9x sector"
+      "label": "13.8x vs 12.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.94,
+      "value": 0.93,
       "threshold": 1.5,
-      "label": "0.94x vs 1.5x"
+      "label": "0.93x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 9.78,
-      "threshold": 13.93,
-      "label": "Fwd 9.8x vs Trail 13.9x"
+      "value": 9.68,
+      "threshold": 13.79,
+      "label": "Fwd 9.7x vs Trail 13.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 13.93,
+    "pe": 13.79,
     "sectorPe": 15.17,
-    "pb": 0.94,
+    "pb": 0.93,
     "ps": 0.58,
     "evEbitda": 4.47,
     "fcfYield": 0.21,
-    "forwardPe": 9.78,
+    "forwardPe": 9.68,
     "dividendYield": 8.72,
     "revenueGrowth": -4.4,
     "profitMargin": 34.84,
