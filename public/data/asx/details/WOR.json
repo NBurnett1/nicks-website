@@ -2,8 +2,8 @@
   "ticker": "WOR",
   "name": "WORLEY FPO [WOR]",
   "price": 10.9,
-  "valuationScore": -22.0,
-  "marketCap": "5.5B",
+  "valuationScore": -0.5,
+  "marketCap": "—",
   "sector": "Energy",
   "domain": "worley.com",
   "chartData": [
@@ -220,8 +220,8 @@
       "price": 10.9
     }
   ],
-  "testsPassed": 5,
-  "grade": "B",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -232,10 +232,10 @@
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
-      "passed": true,
-      "value": 1.03,
+      "passed": null,
+      "value": null,
       "threshold": 1.5,
-      "label": "1.03x vs 1.5x"
+      "label": "No P/B data"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -246,10 +246,10 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": true,
-      "value": 9.01,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "9.0% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": -1.6,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining -1.6%"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -283,10 +283,10 @@
   "metrics": {
     "pe": 16.52,
     "sectorPe": 14.79,
-    "pb": 1.03,
-    "ps": 0.5,
+    "pb": null,
+    "ps": null,
     "evEbitda": 9.67,
-    "fcfYield": 9.01,
+    "fcfYield": null,
     "forwardPe": 12.26,
     "dividendYield": 4.59,
     "revenueGrowth": -1.6,

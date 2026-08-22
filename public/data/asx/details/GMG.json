@@ -2,8 +2,8 @@
   "ticker": "GMG",
   "name": "GOOD GROUP STAPLED [GMG]",
   "price": 27.27,
-  "valuationScore": 9.4,
-  "marketCap": "55.8B",
+  "valuationScore": 9.7,
+  "marketCap": "—",
   "sector": "Real Estate",
   "domain": "goodman.com",
   "chartData": [
@@ -220,7 +220,7 @@
       "price": 27.27
     }
   ],
-  "testsPassed": 4,
+  "testsPassed": 3,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
@@ -246,15 +246,15 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": true,
-      "value": 5.36,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "5.4% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 17.19,
+      "value": 17.18,
       "threshold": 20.5,
       "label": "Fwd 17.2x vs Trail 20.5x"
     },
@@ -286,8 +286,8 @@
     "pb": 2.35,
     "ps": null,
     "evEbitda": 24.08,
-    "fcfYield": 5.36,
-    "forwardPe": 17.19,
+    "fcfYield": null,
+    "forwardPe": 17.18,
     "dividendYield": 1.1,
     "revenueGrowth": 65.8,
     "profitMargin": 68.44,

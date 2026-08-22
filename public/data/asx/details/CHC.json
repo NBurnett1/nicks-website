@@ -2,7 +2,7 @@
   "ticker": "CHC",
   "name": "CHARTER HG STP FORUS [CHC]",
   "price": 20.71,
-  "valuationScore": 13.1,
+  "valuationScore": 12.2,
   "marketCap": "9.8B",
   "sector": "Real Estate",
   "domain": "charterhall.com.au",
@@ -220,15 +220,15 @@
       "price": 20.71
     }
   ],
-  "testsPassed": 4,
+  "testsPassed": 3,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 18.49,
+      "value": 23.27,
       "threshold": 9.18,
-      "label": "18.5x vs 9.2x sector"
+      "label": "23.3x vs 9.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,59 +240,59 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 17.41,
+      "value": 19.18,
       "threshold": 10.0,
-      "label": "17.4x vs 10x"
+      "label": "19.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 0.78,
+      "passed": true,
+      "value": 5.3,
       "threshold": 5.0,
-      "label": "0.8% vs 5%"
+      "label": "5.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
       "value": 16.32,
-      "threshold": 18.49,
-      "label": "Fwd 16.3x vs Trail 18.5x"
+      "threshold": 23.27,
+      "label": "Fwd 16.3x vs Trail 23.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": true,
-      "value": 32.5,
+      "value": 29.77,
       "threshold": 5.0,
-      "label": "Margin 32.5% / ROE 18.0%"
+      "label": "Margin 29.8% / ROE 15.3%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": true,
-      "value": 0.18,
+      "passed": false,
+      "value": -8.6,
       "threshold": 0.5,
-      "label": "P/S 11.4x ÷ Growth 63.7% = 0.18"
+      "label": "FAIL — Revenue declining -8.6%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
-      "passed": true,
-      "value": 63.7,
+      "passed": false,
+      "value": -8.6,
       "threshold": -5.0,
-      "label": "63.7% growth (floor: -5%)"
+      "label": "-8.6% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 18.49,
+    "pe": 23.27,
     "sectorPe": 10.79,
     "pb": 3.43,
-    "ps": 11.38,
-    "evEbitda": 17.41,
-    "fcfYield": 0.78,
+    "ps": 12.07,
+    "evEbitda": 19.18,
+    "fcfYield": 5.3,
     "forwardPe": 16.32,
-    "dividendYield": 2.34,
-    "revenueGrowth": 63.7,
-    "profitMargin": 32.5,
-    "operatingMargin": 69.98,
-    "roe": 17.98,
-    "debtEquity": 18.04
+    "dividendYield": 2.5,
+    "revenueGrowth": -8.6,
+    "profitMargin": 29.77,
+    "operatingMargin": 59.61,
+    "roe": 15.26,
+    "debtEquity": 25.8
   }
 }

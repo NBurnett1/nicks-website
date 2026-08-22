@@ -2,58 +2,58 @@
   "ticker": "TPG",
   "name": "TPGLIMITED FPO [TPG]",
   "price": 3.81,
-  "valuationScore": 12.8,
+  "valuationScore": -33.6,
   "marketCap": "7.5B",
   "sector": "Telecom",
   "domain": "tpgtelecom.com.au",
   "chartData": [
     {
       "date": "2025-08-24",
-      "price": 5.05
+      "price": 3.6
     },
     {
       "date": "2025-08-31",
-      "price": 5.08
+      "price": 3.62
     },
     {
       "date": "2025-09-07",
-      "price": 4.8
+      "price": 3.42
     },
     {
       "date": "2025-09-14",
-      "price": 4.76
+      "price": 3.39
     },
     {
       "date": "2025-09-21",
-      "price": 4.92
+      "price": 3.5
     },
     {
       "date": "2025-09-28",
-      "price": 4.92
+      "price": 3.5
     },
     {
       "date": "2025-10-05",
-      "price": 5.05
+      "price": 3.59
     },
     {
       "date": "2025-10-12",
-      "price": 5.28
+      "price": 3.76
     },
     {
       "date": "2025-10-19",
-      "price": 5.18
+      "price": 3.69
     },
     {
       "date": "2025-10-26",
-      "price": 5.24
+      "price": 3.73
     },
     {
       "date": "2025-11-02",
-      "price": 5.41
+      "price": 3.85
     },
     {
       "date": "2025-11-09",
-      "price": 5.52
+      "price": 3.94
     },
     {
       "date": "2025-11-16",
@@ -220,15 +220,15 @@
       "price": 3.81
     }
   ],
-  "testsPassed": 6,
-  "grade": "A",
+  "testsPassed": 5,
+  "grade": "B",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
       "value": 127.0,
-      "threshold": 17.0,
-      "label": "127.0x vs 17.0x sector"
+      "threshold": 17.56,
+      "label": "127.0x vs 17.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,59 +240,59 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 8.49,
+      "value": 9.0,
       "threshold": 10.0,
-      "label": "8.5x vs 10x"
+      "label": "9.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 12.84,
+      "value": 64.21,
       "threshold": 5.0,
-      "label": "12.8% vs 5%"
+      "label": "64.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 46.07,
+      "value": 45.85,
       "threshold": 127.0,
-      "label": "Fwd 46.1x vs Trail 127.0x"
+      "label": "Fwd 45.8x vs Trail 127.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": false,
-      "value": 9.13,
+      "value": 8.64,
       "threshold": 5.0,
-      "label": "Margin 9.1% / ROE 0.5%"
+      "label": "Margin 8.6% / ROE 0.6%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": true,
-      "value": 0.39,
+      "passed": false,
+      "value": -0.7,
       "threshold": 0.5,
-      "label": "P/S 1.5x ÷ Growth 3.8% = 0.39"
+      "label": "FAIL — Revenue declining -0.7%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": true,
-      "value": 3.8,
+      "value": -0.7,
       "threshold": -5.0,
-      "label": "3.8% growth (floor: -5%)"
+      "label": "-0.7% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": 127.0,
-    "sectorPe": 20.0,
+    "sectorPe": 20.66,
     "pb": 0.86,
-    "ps": 1.48,
-    "evEbitda": 8.49,
-    "fcfYield": 12.84,
-    "forwardPe": 46.07,
-    "dividendYield": 5.1,
-    "revenueGrowth": 3.8,
-    "profitMargin": 9.13,
-    "operatingMargin": 7.69,
-    "roe": 0.52,
-    "debtEquity": 47.91
+    "ps": 1.49,
+    "evEbitda": 9.0,
+    "fcfYield": 64.21,
+    "forwardPe": 45.85,
+    "dividendYield": 5.25,
+    "revenueGrowth": -0.7,
+    "profitMargin": 8.64,
+    "operatingMargin": 8.55,
+    "roe": 0.56,
+    "debtEquity": 49.03
   }
 }
