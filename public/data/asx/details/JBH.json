@@ -1,16 +1,12 @@
 {
   "ticker": "JBH",
   "name": "JB HI-FI FPO [JBH]",
-  "price": 69.2,
-  "valuationScore": -0.9,
-  "marketCap": "7.6B",
+  "price": 68.41,
+  "valuationScore": -1.1,
+  "marketCap": "7.5B",
   "sector": "Consumer Discretionary",
   "domain": "jbhifi.com.au",
   "chartData": [
-    {
-      "date": "2025-08-24",
-      "price": 115.14
-    },
     {
       "date": "2025-08-31",
       "price": 114.28
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-23",
       "price": 69.2
+    },
+    {
+      "date": "2026-08-30",
+      "price": 68.41
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 15.48,
-      "threshold": 14.05,
-      "label": "15.5x vs 14.1x sector"
+      "value": 15.3,
+      "threshold": 14.01,
+      "label": "15.3x vs 14.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.62,
+      "value": 4.56,
       "threshold": 1.5,
-      "label": "4.62x vs 1.5x"
+      "label": "4.56x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 7.28,
+      "value": 7.36,
       "threshold": 5.0,
-      "label": "7.3% vs 5%"
+      "label": "7.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 15.06,
-      "threshold": 15.48,
-      "label": "Fwd 15.1x vs Trail 15.5x"
+      "value": 14.89,
+      "threshold": 15.3,
+      "label": "Fwd 14.9x vs Trail 15.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 15.48,
-    "sectorPe": 16.53,
-    "pb": 4.62,
+    "pe": 15.3,
+    "sectorPe": 16.48,
+    "pb": 4.56,
     "ps": 0.68,
     "evEbitda": 10.15,
-    "fcfYield": 7.28,
-    "forwardPe": 15.06,
+    "fcfYield": 7.36,
+    "forwardPe": 14.89,
     "dividendYield": 4.87,
     "revenueGrowth": 1.9,
     "profitMargin": 4.43,

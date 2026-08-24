@@ -1,16 +1,12 @@
 {
   "ticker": "GDI",
   "name": "GDI PROP STAPLED [GDI]",
-  "price": 0.62,
-  "valuationScore": 50.5,
-  "marketCap": "337M",
+  "price": 0.64,
+  "valuationScore": 51.3,
+  "marketCap": "343M",
   "sector": "Real Estate",
   "domain": "gdi.com.au",
   "chartData": [
-    {
-      "date": "2025-08-24",
-      "price": 0.63
-    },
     {
       "date": "2025-08-31",
       "price": 0.63
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-23",
       "price": 0.62
+    },
+    {
+      "date": "2026-08-30",
+      "price": 0.63
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 8.93,
+      "value": 9.07,
       "threshold": 9.18,
-      "label": "8.9x vs 9.2x sector"
+      "label": "9.1x vs 9.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 12.76,
+      "value": 12.96,
       "threshold": 1.5,
-      "label": "12.76x vs 1.5x"
+      "label": "12.96x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -15.97,
+      "value": -15.71,
       "threshold": 5.0,
-      "label": "-16.0% vs 5%"
+      "label": "-15.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 6.87,
-      "threshold": 8.93,
-      "label": "Fwd 6.9x vs Trail 8.9x"
+      "value": 7.38,
+      "threshold": 9.07,
+      "label": "Fwd 7.4x vs Trail 9.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 1.09,
+      "value": 1.11,
       "threshold": 0.5,
-      "label": "P/S 3.8x ÷ Growth 3.5% = 1.09"
+      "label": "P/S 3.9x ÷ Growth 3.5% = 1.11"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 8.93,
+    "pe": 9.07,
     "sectorPe": 10.79,
-    "pb": 12.76,
-    "ps": 3.82,
+    "pb": 12.96,
+    "ps": 3.88,
     "evEbitda": 28.26,
-    "fcfYield": -15.97,
-    "forwardPe": 6.87,
+    "fcfYield": -15.71,
+    "forwardPe": 7.38,
     "dividendYield": 8.0,
     "revenueGrowth": 3.5,
     "profitMargin": 1.91,

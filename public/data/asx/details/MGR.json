@@ -1,16 +1,12 @@
 {
   "ticker": "MGR",
   "name": "MIRVAC GRP STAPLED [MGR]",
-  "price": 1.91,
+  "price": 1.9,
   "valuationScore": -5.5,
   "marketCap": "7.5B",
   "sector": "Real Estate",
   "domain": "mirvac.com",
   "chartData": [
-    {
-      "date": "2025-08-24",
-      "price": 2.26
-    },
     {
       "date": "2025-08-31",
       "price": 2.24
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-23",
       "price": 1.91
+    },
+    {
+      "date": "2026-08-30",
+      "price": 1.9
     }
   ],
   "testsPassed": 3,
@@ -226,7 +226,7 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 11.24,
+      "value": 11.18,
       "threshold": 9.18,
       "label": "11.2x vs 9.2x sector"
     },
@@ -247,15 +247,15 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 10.62,
+      "value": 10.67,
       "threshold": 5.0,
-      "label": "10.6% vs 5%"
+      "label": "10.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 13.23,
-      "threshold": 11.24,
+      "value": 13.16,
+      "threshold": 11.18,
       "label": "Fwd 13.2x vs Trail 11.2x"
     },
     "profitabilityCheck": {
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.94,
+      "value": 0.93,
       "threshold": 0.5,
-      "label": "P/S 2.5x ÷ Growth 2.7% = 0.94"
+      "label": "P/S 2.5x ÷ Growth 2.7% = 0.93"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 11.24,
+    "pe": 11.18,
     "sectorPe": 10.79,
     "pb": 0.82,
-    "ps": 2.54,
+    "ps": 2.52,
     "evEbitda": 12.73,
-    "fcfYield": 10.62,
-    "forwardPe": 13.23,
+    "fcfYield": 10.67,
+    "forwardPe": 13.16,
     "dividendYield": 5.03,
     "revenueGrowth": 2.7,
     "profitMargin": 22.79,

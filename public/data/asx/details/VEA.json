@@ -1,16 +1,12 @@
 {
   "ticker": "VEA",
   "name": "VIVA E GRP FPO [VEA]",
-  "price": 2.8,
-  "valuationScore": 5.2,
-  "marketCap": "4.6B",
+  "price": 2.85,
+  "valuationScore": 5.7,
+  "marketCap": "4.7B",
   "sector": "Energy",
   "domain": "vivaenergy.com.au",
   "chartData": [
-    {
-      "date": "2025-08-24",
-      "price": 2.01
-    },
     {
       "date": "2025-08-31",
       "price": 2.09
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-23",
       "price": 2.8
+    },
+    {
+      "date": "2026-08-30",
+      "price": 2.85
     }
   ],
   "testsPassed": 0,
@@ -233,9 +233,9 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.19,
+      "value": 3.24,
       "threshold": 1.5,
-      "label": "3.19x vs 1.5x"
+      "label": "3.24x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,14 +247,14 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.27,
+      "value": 2.23,
       "threshold": 5.0,
-      "label": "2.3% vs 5%"
+      "label": "2.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 11.88,
+      "value": 12.09,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 14.79,
-    "pb": 3.19,
+    "sectorPe": 14.74,
+    "pb": 3.24,
     "ps": 0.16,
     "evEbitda": 22.75,
-    "fcfYield": 2.27,
-    "forwardPe": 11.88,
+    "fcfYield": 2.23,
+    "forwardPe": 12.09,
     "dividendYield": 2.81,
     "revenueGrowth": -6.1,
     "profitMargin": -1.48,

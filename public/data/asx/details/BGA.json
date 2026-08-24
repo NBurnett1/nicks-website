@@ -1,16 +1,12 @@
 {
   "ticker": "BGA",
   "name": "BEGA FPO [BGA]",
-  "price": 6.49,
+  "price": 6.46,
   "valuationScore": 1.5,
   "marketCap": "2.0B",
   "sector": "Consumer Staples",
   "domain": "begagroup.com.au",
   "chartData": [
-    {
-      "date": "2025-08-24",
-      "price": 5.38
-    },
     {
       "date": "2025-08-31",
       "price": 5.77
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-23",
       "price": 6.49
+    },
+    {
+      "date": "2026-08-30",
+      "price": 6.46
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 36.06,
-      "threshold": 25.52,
-      "label": "36.1x vs 25.5x sector"
+      "value": 35.89,
+      "threshold": 25.32,
+      "label": "35.9x vs 25.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.99,
+      "value": 1.98,
       "threshold": 1.5,
-      "label": "1.99x vs 1.5x"
+      "label": "1.98x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 1.6,
+      "value": 1.61,
       "threshold": 5.0,
       "label": "1.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 21.78,
-      "threshold": 36.06,
-      "label": "Fwd 21.8x vs Trail 36.1x"
+      "value": 21.68,
+      "threshold": 35.89,
+      "label": "Fwd 21.7x vs Trail 35.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 36.06,
-    "sectorPe": 30.03,
-    "pb": 1.99,
-    "ps": 0.53,
+    "pe": 35.89,
+    "sectorPe": 29.79,
+    "pb": 1.98,
+    "ps": 0.52,
     "evEbitda": 13.02,
-    "fcfYield": 1.6,
-    "forwardPe": 21.78,
+    "fcfYield": 1.61,
+    "forwardPe": 21.68,
     "dividendYield": 2.31,
     "revenueGrowth": 8.3,
     "profitMargin": 1.45,

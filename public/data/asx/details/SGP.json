@@ -1,16 +1,12 @@
 {
   "ticker": "SGP",
   "name": "STOCKLAND. STAPLED [SGP]",
-  "price": 4.7,
-  "valuationScore": 1.4,
-  "marketCap": "11.4B",
+  "price": 4.73,
+  "valuationScore": 1.6,
+  "marketCap": "11.5B",
   "sector": "Real Estate",
   "domain": "stockland.com.au",
   "chartData": [
-    {
-      "date": "2025-08-24",
-      "price": 6.06
-    },
     {
       "date": "2025-08-31",
       "price": 5.88
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-23",
       "price": 4.7
+    },
+    {
+      "date": "2026-08-30",
+      "price": 4.73
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 11.46,
+      "value": 11.54,
       "threshold": 9.18,
       "label": "11.5x vs 9.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.09,
+      "value": 1.1,
       "threshold": 1.5,
-      "label": "1.09x vs 1.5x"
+      "label": "1.10x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.69,
+      "value": 2.67,
       "threshold": 5.0,
       "label": "2.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 11.9,
-      "threshold": 11.46,
-      "label": "Fwd 11.9x vs Trail 11.5x"
+      "value": 11.98,
+      "threshold": 11.54,
+      "label": "Fwd 12.0x vs Trail 11.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 11.46,
+    "pe": 11.54,
     "sectorPe": 10.79,
-    "pb": 1.09,
-    "ps": 2.99,
+    "pb": 1.1,
+    "ps": 3.01,
     "evEbitda": 16.19,
-    "fcfYield": 2.69,
-    "forwardPe": 11.9,
+    "fcfYield": 2.67,
+    "forwardPe": 11.98,
     "dividendYield": 5.36,
     "revenueGrowth": 14.1,
     "profitMargin": 25.99,

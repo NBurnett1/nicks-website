@@ -1,16 +1,12 @@
 {
   "ticker": "WOR",
   "name": "WORLEY FPO [WOR]",
-  "price": 10.9,
-  "valuationScore": -22.0,
+  "price": 10.91,
+  "valuationScore": -21.5,
   "marketCap": "5.5B",
   "sector": "Energy",
   "domain": "worley.com",
   "chartData": [
-    {
-      "date": "2025-08-24",
-      "price": 12.41
-    },
     {
       "date": "2025-08-31",
       "price": 14.12
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-23",
       "price": 10.9
+    },
+    {
+      "date": "2026-08-30",
+      "price": 10.91
     }
   ],
   "testsPassed": 5,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 16.52,
-      "threshold": 12.57,
-      "label": "16.5x vs 12.6x sector"
+      "value": 16.53,
+      "threshold": 12.53,
+      "label": "16.5x vs 12.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -247,15 +247,15 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 9.01,
+      "value": 9.0,
       "threshold": 5.0,
       "label": "9.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.26,
-      "threshold": 16.52,
+      "value": 12.27,
+      "threshold": 16.53,
       "label": "Fwd 12.3x vs Trail 16.5x"
     },
     "profitabilityCheck": {
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 16.52,
-    "sectorPe": 14.79,
+    "pe": 16.53,
+    "sectorPe": 14.74,
     "pb": 1.03,
     "ps": 0.5,
     "evEbitda": 9.67,
-    "fcfYield": 9.01,
-    "forwardPe": 12.26,
+    "fcfYield": 9.0,
+    "forwardPe": 12.27,
     "dividendYield": 4.59,
     "revenueGrowth": -1.6,
     "profitMargin": 3.1,

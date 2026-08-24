@@ -1,16 +1,12 @@
 {
   "ticker": "NWH",
   "name": "NRWHOLDLTD FPO [NWH]",
-  "price": 8.2,
-  "valuationScore": 1.6,
-  "marketCap": "3.8B",
+  "price": 8.08,
+  "valuationScore": 1.4,
+  "marketCap": "3.7B",
   "sector": "Industrials",
   "domain": "nrw.com.au",
   "chartData": [
-    {
-      "date": "2025-08-24",
-      "price": 3.67
-    },
     {
       "date": "2025-08-31",
       "price": 3.7
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-23",
       "price": 8.2
+    },
+    {
+      "date": "2026-08-30",
+      "price": 8.08
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 24.85,
-      "threshold": 20.34,
-      "label": "24.8x vs 20.3x sector"
+      "value": 24.48,
+      "threshold": 20.4,
+      "label": "24.5x vs 20.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 5.87,
+      "value": 5.79,
       "threshold": 1.5,
-      "label": "5.87x vs 1.5x"
+      "label": "5.79x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.6,
+      "value": 5.68,
       "threshold": 5.0,
-      "label": "5.6% vs 5%"
+      "label": "5.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 17.1,
-      "threshold": 24.85,
-      "label": "Fwd 17.1x vs Trail 24.8x"
+      "value": 16.85,
+      "threshold": 24.48,
+      "label": "Fwd 16.8x vs Trail 24.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 24.85,
-    "sectorPe": 23.93,
-    "pb": 5.87,
-    "ps": 0.88,
+    "pe": 24.48,
+    "sectorPe": 24.0,
+    "pb": 5.79,
+    "ps": 0.86,
     "evEbitda": 9.36,
-    "fcfYield": 5.6,
-    "forwardPe": 17.1,
+    "fcfYield": 5.68,
+    "forwardPe": 16.85,
     "dividendYield": 2.8,
     "revenueGrowth": 43.6,
     "profitMargin": 3.57,

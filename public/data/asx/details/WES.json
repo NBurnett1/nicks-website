@@ -1,16 +1,12 @@
 {
   "ticker": "WES",
   "name": "WESFARMER FPO [WES]",
-  "price": 82.37,
-  "valuationScore": 17.4,
+  "price": 82.35,
+  "valuationScore": 17.3,
   "marketCap": "93.5B",
   "sector": "Consumer Discretionary",
   "domain": "wesfarmers.com.au",
   "chartData": [
-    {
-      "date": "2025-08-24",
-      "price": 92.32
-    },
     {
       "date": "2025-08-31",
       "price": 89.57
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-23",
       "price": 82.37
+    },
+    {
+      "date": "2026-08-30",
+      "price": 82.35
     }
   ],
   "testsPassed": 3,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 30.51,
-      "threshold": 14.05,
-      "label": "30.5x vs 14.1x sector"
+      "value": 30.5,
+      "threshold": 14.01,
+      "label": "30.5x vs 14.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -247,15 +247,15 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.51,
+      "value": 3.52,
       "threshold": 5.0,
       "label": "3.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 29.64,
-      "threshold": 30.51,
+      "value": 29.63,
+      "threshold": 30.5,
       "label": "Fwd 29.6x vs Trail 30.5x"
     },
     "profitabilityCheck": {
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 30.51,
-    "sectorPe": 16.53,
+    "pe": 30.5,
+    "sectorPe": 16.48,
     "pb": 11.9,
     "ps": 2.01,
     "evEbitda": 22.62,
-    "fcfYield": 3.51,
-    "forwardPe": 29.64,
+    "fcfYield": 3.52,
+    "forwardPe": 29.63,
     "dividendYield": 2.59,
     "revenueGrowth": 3.1,
     "profitMargin": 6.6,

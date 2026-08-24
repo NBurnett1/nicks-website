@@ -1,16 +1,12 @@
 {
   "ticker": "AGL",
   "name": "AGL ENERGY FPO [AGL]",
-  "price": 8.88,
+  "price": 8.78,
   "valuationScore": -1.2,
-  "marketCap": "6.0B",
+  "marketCap": "5.9B",
   "sector": "Utilities",
   "domain": "agl.com.au",
   "chartData": [
-    {
-      "date": "2025-08-24",
-      "price": 8.12
-    },
     {
       "date": "2025-08-31",
       "price": 8.04
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-23",
       "price": 8.88
+    },
+    {
+      "date": "2026-08-30",
+      "price": 8.78
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 7.93,
-      "threshold": 17.74,
-      "label": "7.9x vs 17.7x sector"
+      "value": 7.84,
+      "threshold": 17.87,
+      "label": "7.8x vs 17.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.13,
+      "value": 1.12,
       "threshold": 1.5,
-      "label": "1.13x vs 1.5x"
+      "label": "1.12x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -2.26,
+      "value": -2.28,
       "threshold": 5.0,
       "label": "-2.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 10.26,
-      "threshold": 7.93,
-      "label": "Fwd 10.3x vs Trail 7.9x"
+      "value": 10.15,
+      "threshold": 7.84,
+      "label": "Fwd 10.1x vs Trail 7.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 7.93,
-    "sectorPe": 20.87,
-    "pb": 1.13,
-    "ps": 0.43,
+    "pe": 7.84,
+    "sectorPe": 21.03,
+    "pb": 1.12,
+    "ps": 0.42,
     "evEbitda": 7.25,
-    "fcfYield": -2.26,
-    "forwardPe": 10.26,
+    "fcfYield": -2.28,
+    "forwardPe": 10.15,
     "dividendYield": 5.86,
     "revenueGrowth": -4.7,
     "profitMargin": 5.43,

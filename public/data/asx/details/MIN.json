@@ -1,16 +1,12 @@
 {
   "ticker": "MIN",
   "name": "MINERALRES FPO [MIN]",
-  "price": 66.29,
-  "valuationScore": 13.6,
-  "marketCap": "13.2B",
+  "price": 69.07,
+  "valuationScore": 13.7,
+  "marketCap": "13.7B",
   "sector": "Materials",
   "domain": "mineralresources.com.au",
   "chartData": [
-    {
-      "date": "2025-08-24",
-      "price": 35.69
-    },
     {
       "date": "2025-08-31",
       "price": 37.4
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-23",
       "price": 66.29
+    },
+    {
+      "date": "2026-08-30",
+      "price": 69.07
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 32.82,
-      "threshold": 17.56,
-      "label": "32.8x vs 17.6x sector"
+      "value": 34.19,
+      "threshold": 17.87,
+      "label": "34.2x vs 17.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.49,
+      "value": 3.64,
       "threshold": 1.5,
-      "label": "3.49x vs 1.5x"
+      "label": "3.64x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -2.68,
+      "value": -2.57,
       "threshold": 5.0,
-      "label": "-2.7% vs 5%"
+      "label": "-2.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.51,
-      "threshold": 32.82,
-      "label": "Fwd 14.5x vs Trail 32.8x"
+      "value": 15.12,
+      "threshold": 34.19,
+      "label": "Fwd 15.1x vs Trail 34.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.08,
       "threshold": 0.5,
-      "label": "P/S 2.5x ÷ Growth 33.3% = 0.08"
+      "label": "P/S 2.6x ÷ Growth 33.3% = 0.08"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 32.82,
-    "sectorPe": 20.66,
-    "pb": 3.49,
-    "ps": 2.51,
+    "pe": 34.19,
+    "sectorPe": 21.03,
+    "pb": 3.64,
+    "ps": 2.62,
     "evEbitda": 9.37,
-    "fcfYield": -2.68,
-    "forwardPe": 14.51,
+    "fcfYield": -2.57,
+    "forwardPe": 15.12,
     "dividendYield": null,
     "revenueGrowth": 33.3,
     "profitMargin": 7.64,

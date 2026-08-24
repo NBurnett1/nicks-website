@@ -1,16 +1,12 @@
 {
   "ticker": "WOW",
   "name": "WOOLWORTHS FPO [WOW]",
-  "price": 38.86,
-  "valuationScore": 16.1,
-  "marketCap": "47.5B",
+  "price": 38.54,
+  "valuationScore": 16.0,
+  "marketCap": "47.1B",
   "sector": "Consumer Staples",
   "domain": "woolworthsgroup.com.au",
   "chartData": [
-    {
-      "date": "2025-08-24",
-      "price": 32.2
-    },
     {
       "date": "2025-08-31",
       "price": 28.0
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-23",
       "price": 38.86
+    },
+    {
+      "date": "2026-08-30",
+      "price": 38.54
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 79.31,
-      "threshold": 25.52,
-      "label": "79.3x vs 25.5x sector"
+      "value": 78.65,
+      "threshold": 25.32,
+      "label": "78.7x vs 25.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 10.24,
+      "value": 10.16,
       "threshold": 1.5,
-      "label": "10.24x vs 1.5x"
+      "label": "10.16x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.78,
+      "value": 4.82,
       "threshold": 5.0,
       "label": "4.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 27.26,
-      "threshold": 79.31,
-      "label": "Fwd 27.3x vs Trail 79.3x"
+      "value": 27.03,
+      "threshold": 78.65,
+      "label": "Fwd 27.0x vs Trail 78.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 79.31,
-    "sectorPe": 30.03,
-    "pb": 10.24,
-    "ps": 0.68,
+    "pe": 78.65,
+    "sectorPe": 29.79,
+    "pb": 10.16,
+    "ps": 0.67,
     "evEbitda": 19.24,
-    "fcfYield": 4.78,
-    "forwardPe": 27.26,
+    "fcfYield": 4.82,
+    "forwardPe": 27.03,
     "dividendYield": 2.32,
     "revenueGrowth": 3.4,
     "profitMargin": 0.85,

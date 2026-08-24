@@ -1,16 +1,12 @@
 {
   "ticker": "GMG",
   "name": "GOOD GROUP STAPLED [GMG]",
-  "price": 27.27,
-  "valuationScore": 9.2,
-  "marketCap": "55.8B",
+  "price": 27.55,
+  "valuationScore": 9.5,
+  "marketCap": "56.3B",
   "sector": "Real Estate",
   "domain": "goodman.com",
   "chartData": [
-    {
-      "date": "2025-08-24",
-      "price": 33.58
-    },
     {
       "date": "2025-08-31",
       "price": 34.03
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-23",
       "price": 27.27
+    },
+    {
+      "date": "2026-08-30",
+      "price": 27.55
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 20.5,
+      "value": 20.71,
       "threshold": 9.18,
-      "label": "20.5x vs 9.2x sector"
+      "label": "20.7x vs 9.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.35,
+      "value": 2.37,
       "threshold": 1.5,
-      "label": "2.35x vs 1.5x"
+      "label": "2.37x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.36,
+      "value": 5.31,
       "threshold": 5.0,
-      "label": "5.4% vs 5%"
+      "label": "5.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 17.18,
-      "threshold": 20.5,
-      "label": "Fwd 17.2x vs Trail 20.5x"
+      "value": 17.36,
+      "threshold": 20.71,
+      "label": "Fwd 17.4x vs Trail 20.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 20.5,
+    "pe": 20.71,
     "sectorPe": 10.79,
-    "pb": 2.35,
+    "pb": 2.37,
     "ps": null,
     "evEbitda": 24.08,
-    "fcfYield": 5.36,
-    "forwardPe": 17.18,
+    "fcfYield": 5.31,
+    "forwardPe": 17.36,
     "dividendYield": 1.1,
     "revenueGrowth": 65.8,
     "profitMargin": 68.44,

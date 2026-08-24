@@ -1,16 +1,12 @@
 {
   "ticker": "PDN",
   "name": "PALADIN FPO [PDN]",
-  "price": 10.58,
-  "valuationScore": 39.7,
-  "marketCap": "4.8B",
+  "price": 11.7,
+  "valuationScore": 39.9,
+  "marketCap": "5.3B",
   "sector": "Energy",
   "domain": "paladinenergy.com.au",
   "chartData": [
-    {
-      "date": "2025-08-24",
-      "price": 6.61
-    },
     {
       "date": "2025-08-31",
       "price": 7.85
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-23",
       "price": 10.58
+    },
+    {
+      "date": "2026-08-30",
+      "price": 11.7
     }
   ],
   "testsPassed": 1,
@@ -233,9 +233,9 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.9,
+      "value": 3.2,
       "threshold": 1.5,
-      "label": "2.90x vs 1.5x"
+      "label": "3.20x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,14 +247,14 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -2.36,
+      "value": -2.13,
       "threshold": 5.0,
-      "label": "-2.4% vs 5%"
+      "label": "-2.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 51.24,
+      "value": 53.35,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 1.2,
+      "value": 1.32,
       "threshold": 0.5,
-      "label": "P/S 19.1x ÷ Growth 16.0% = 1.20"
+      "label": "P/S 21.2x ÷ Growth 16.0% = 1.32"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 14.79,
-    "pb": 2.9,
-    "ps": 19.13,
+    "sectorPe": 14.74,
+    "pb": 3.2,
+    "ps": 21.16,
     "evEbitda": 87.19,
-    "fcfYield": -2.36,
-    "forwardPe": 51.24,
+    "fcfYield": -2.13,
+    "forwardPe": 53.35,
     "dividendYield": null,
     "revenueGrowth": 16.0,
     "profitMargin": -5.2,

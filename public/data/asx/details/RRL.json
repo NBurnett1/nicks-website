@@ -1,16 +1,12 @@
 {
   "ticker": "RRL",
   "name": "REGIS FPO [RRL]",
-  "price": 8.5,
-  "valuationScore": -30.7,
+  "price": 8.48,
+  "valuationScore": -31.3,
   "marketCap": "6.4B",
   "sector": "Basic Materials",
   "domain": "regisresources.com.au",
   "chartData": [
-    {
-      "date": "2025-08-24",
-      "price": 3.96
-    },
     {
       "date": "2025-08-31",
       "price": 4.41
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-23",
       "price": 8.5
+    },
+    {
+      "date": "2026-08-30",
+      "price": 8.48
     }
   ],
   "testsPassed": 7,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 9.04,
-      "threshold": 14.43,
-      "label": "9.0x vs 14.4x sector"
+      "value": 9.02,
+      "threshold": 14.69,
+      "label": "9.0x vs 14.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.95,
+      "value": 2.94,
       "threshold": 1.5,
-      "label": "2.95x vs 1.5x"
+      "label": "2.94x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,15 +247,15 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 11.02,
+      "value": 11.05,
       "threshold": 5.0,
-      "label": "11.0% vs 5%"
+      "label": "11.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 8.19,
-      "threshold": 9.04,
+      "value": 8.18,
+      "threshold": 9.02,
       "label": "Fwd 8.2x vs Trail 9.0x"
     },
     "profitabilityCheck": {
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 9.04,
-    "sectorPe": 16.97,
-    "pb": 2.95,
-    "ps": 2.74,
+    "pe": 9.02,
+    "sectorPe": 17.28,
+    "pb": 2.94,
+    "ps": 2.73,
     "evEbitda": 4.44,
-    "fcfYield": 11.02,
-    "forwardPe": 8.19,
+    "fcfYield": 11.05,
+    "forwardPe": 8.18,
     "dividendYield": 3.53,
     "revenueGrowth": 44.9,
     "profitMargin": 30.44,

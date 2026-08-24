@@ -1,16 +1,12 @@
 {
   "ticker": "WTC",
   "name": "WISETECH FPO [WTC]",
-  "price": 42.33,
-  "valuationScore": 6.2,
-  "marketCap": "14.2B",
+  "price": 43.49,
+  "valuationScore": 6.6,
+  "marketCap": "14.6B",
   "sector": "Technology",
   "domain": "wisetechglobal.com",
   "chartData": [
-    {
-      "date": "2025-08-24",
-      "price": 112.22
-    },
     {
       "date": "2025-08-31",
       "price": 101.46
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-23",
       "price": 42.33
+    },
+    {
+      "date": "2026-08-30",
+      "price": 43.49
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 62.25,
-      "threshold": 29.43,
-      "label": "62.3x vs 29.4x sector"
+      "value": 63.96,
+      "threshold": 29.28,
+      "label": "64.0x vs 29.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 5.41,
+      "value": 5.56,
       "threshold": 1.5,
-      "label": "5.41x vs 1.5x"
+      "label": "5.56x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.34,
+      "value": 2.28,
       "threshold": 5.0,
       "label": "2.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 29.77,
-      "threshold": 62.25,
-      "label": "Fwd 29.8x vs Trail 62.3x"
+      "value": 30.59,
+      "threshold": 63.96,
+      "label": "Fwd 30.6x vs Trail 64.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.17,
+      "value": 0.18,
       "threshold": 0.5,
-      "label": "P/S 13.3x ÷ Growth 76.4% = 0.17"
+      "label": "P/S 13.7x ÷ Growth 76.4% = 0.18"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 62.25,
-    "sectorPe": 34.63,
-    "pb": 5.41,
-    "ps": 13.31,
+    "pe": 63.96,
+    "sectorPe": 34.44,
+    "pb": 5.56,
+    "ps": 13.67,
     "evEbitda": 37.83,
-    "fcfYield": 2.34,
-    "forwardPe": 29.77,
+    "fcfYield": 2.28,
+    "forwardPe": 30.59,
     "dividendYield": 0.5,
     "revenueGrowth": 76.4,
     "profitMargin": 15.18,

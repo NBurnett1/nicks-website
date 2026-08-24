@@ -1,16 +1,12 @@
 {
   "ticker": "ORA",
   "name": "ORORA FPO [ORA]",
-  "price": 1.49,
+  "price": 1.47,
   "valuationScore": 0.4,
   "marketCap": "1.8B",
   "sector": "Consumer Cyclical",
   "domain": "ororagroup.com",
   "chartData": [
-    {
-      "date": "2025-08-24",
-      "price": 2.17
-    },
     {
       "date": "2025-08-31",
       "price": 2.03
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-23",
       "price": 1.49
+    },
+    {
+      "date": "2026-08-30",
+      "price": 1.47
     }
   ],
   "testsPassed": 4,
@@ -233,9 +233,9 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.94,
+      "value": 0.93,
       "threshold": 1.5,
-      "label": "0.94x vs 1.5x"
+      "label": "0.93x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,7 +254,7 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 12.78,
+      "value": 12.65,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 26.5,
-    "pb": 0.94,
-    "ps": 0.82,
+    "sectorPe": 28.0,
+    "pb": 0.93,
+    "ps": 0.81,
     "evEbitda": 6.33,
     "fcfYield": -0.64,
-    "forwardPe": 12.78,
+    "forwardPe": 12.65,
     "dividendYield": 6.06,
     "revenueGrowth": 3.4,
     "profitMargin": -27.7,

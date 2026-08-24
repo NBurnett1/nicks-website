@@ -1,16 +1,12 @@
 {
   "ticker": "PRU",
   "name": "PERSEUS FPO [PRU]",
-  "price": 6.11,
-  "valuationScore": 1.0,
-  "marketCap": "8.1B",
+  "price": 6.22,
+  "valuationScore": 1.1,
+  "marketCap": "8.3B",
   "sector": "Basic Materials",
   "domain": "perseusmining.com",
   "chartData": [
-    {
-      "date": "2025-08-24",
-      "price": 3.53
-    },
     {
       "date": "2025-08-31",
       "price": 3.7
@@ -218,6 +214,10 @@
     {
       "date": "2026-08-23",
       "price": 6.11
+    },
+    {
+      "date": "2026-08-30",
+      "price": 6.22
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 16.97,
-      "threshold": 14.43,
-      "label": "17.0x vs 14.4x sector"
+      "value": 17.28,
+      "threshold": 14.69,
+      "label": "17.3x vs 14.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.61,
+      "value": 2.65,
       "threshold": 1.5,
-      "label": "2.61x vs 1.5x"
+      "label": "2.65x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 1.12,
+      "value": 1.1,
       "threshold": 5.0,
       "label": "1.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 11.82,
-      "threshold": 16.97,
-      "label": "Fwd 11.8x vs Trail 17.0x"
+      "value": 12.03,
+      "threshold": 17.28,
+      "label": "Fwd 12.0x vs Trail 17.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 1.38,
+      "value": 1.41,
       "threshold": 0.5,
-      "label": "P/S 6.4x ÷ Growth 4.6% = 1.38"
+      "label": "P/S 6.5x ÷ Growth 4.6% = 1.41"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 16.97,
-    "sectorPe": 16.97,
-    "pb": 2.61,
-    "ps": 6.36,
+    "pe": 17.28,
+    "sectorPe": 17.28,
+    "pb": 2.65,
+    "ps": 6.48,
     "evEbitda": 11.57,
-    "fcfYield": 1.12,
-    "forwardPe": 11.82,
+    "fcfYield": 1.1,
+    "forwardPe": 12.03,
     "dividendYield": 1.64,
     "revenueGrowth": 4.6,
     "profitMargin": 27.94,
