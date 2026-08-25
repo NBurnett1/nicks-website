@@ -2,7 +2,7 @@
   "ticker": "WBC",
   "name": "WESTPAC FPO [WBC]",
   "price": 34.02,
-  "valuationScore": -1.1,
+  "valuationScore": -0.8,
   "marketCap": "116.2B",
   "sector": "Financials",
   "domain": "westpac.com.au",
@@ -220,15 +220,15 @@
       "price": 34.02
     }
   ],
-  "testsPassed": 4,
+  "testsPassed": 3,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": true,
+      "passed": false,
       "value": 16.76,
-      "threshold": 16.79,
-      "label": "16.8x vs 16.8x sector"
+      "threshold": 16.26,
+      "label": "16.8x vs 16.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -282,13 +282,13 @@
   },
   "metrics": {
     "pe": 16.76,
-    "sectorPe": 19.76,
+    "sectorPe": 19.12,
     "pb": 1.64,
     "ps": 5.22,
     "evEbitda": null,
     "fcfYield": null,
     "forwardPe": 15.92,
-    "dividendYield": 4.56,
+    "dividendYield": 4.53,
     "revenueGrowth": 1.5,
     "profitMargin": 31.5,
     "operatingMargin": 50.43,

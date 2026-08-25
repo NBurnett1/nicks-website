@@ -2,8 +2,8 @@
   "ticker": "BSL",
   "name": "BLUESCOPE FPO [BSL]",
   "price": 31.03,
-  "valuationScore": -0.6,
-  "marketCap": "13.6B",
+  "valuationScore": -3.0,
+  "marketCap": "—",
   "sector": "Basic Materials",
   "domain": "bluescope.com",
   "chartData": [
@@ -227,8 +227,8 @@
       "name": "P/E Discount",
       "passed": true,
       "value": 17.14,
-      "threshold": 20.94,
-      "label": "17.1x vs 20.9x sector"
+      "threshold": 20.14,
+      "label": "17.1x vs 20.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,16 +240,16 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 8.95,
+      "value": 8.93,
       "threshold": 10.0,
       "label": "8.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 0.81,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "0.8% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": 1.36,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 0.8x ÷ Growth 0.6% = 1.36"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,13 +282,13 @@
   },
   "metrics": {
     "pe": 17.14,
-    "sectorPe": 24.63,
+    "sectorPe": 23.69,
     "pb": 1.32,
-    "ps": 0.82,
-    "evEbitda": 8.95,
-    "fcfYield": 0.81,
+    "ps": null,
+    "evEbitda": 8.93,
+    "fcfYield": null,
     "forwardPe": 12.57,
-    "dividendYield": 4.18,
+    "dividendYield": 4.19,
     "revenueGrowth": 0.6,
     "profitMargin": 4.81,
     "operatingMargin": 6.86,

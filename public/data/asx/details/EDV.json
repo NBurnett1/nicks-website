@@ -2,7 +2,7 @@
   "ticker": "EDV",
   "name": "ENDEAVOUR FPO [EDV]",
   "price": 3.14,
-  "valuationScore": 16.8,
+  "valuationScore": 12.5,
   "marketCap": "5.6B",
   "sector": "Consumer Defensive",
   "domain": "endeavourgroup.com.au",
@@ -220,15 +220,15 @@
       "price": 3.14
     }
   ],
-  "testsPassed": 3,
+  "testsPassed": 4,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
       "value": 104.67,
-      "threshold": 17.87,
-      "label": "104.7x vs 17.9x sector"
+      "threshold": 18.71,
+      "label": "104.7x vs 18.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,16 +240,16 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 10.23,
+      "value": 10.48,
       "threshold": 10.0,
-      "label": "10.2x vs 10x"
+      "label": "10.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 2.9,
+      "passed": true,
+      "value": 6.94,
       "threshold": 5.0,
-      "label": "2.9% vs 5%"
+      "label": "6.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
@@ -282,17 +282,17 @@
   },
   "metrics": {
     "pe": 104.67,
-    "sectorPe": 21.03,
+    "sectorPe": 22.01,
     "pb": 1.57,
     "ps": 0.46,
-    "evEbitda": 10.23,
-    "fcfYield": 2.9,
+    "evEbitda": 10.48,
+    "fcfYield": 6.94,
     "forwardPe": 15.11,
-    "dividendYield": 3.72,
+    "dividendYield": 3.82,
     "revenueGrowth": 1.7,
     "profitMargin": 0.43,
-    "operatingMargin": -0.81,
+    "operatingMargin": 5.37,
     "roe": 1.4,
-    "debtEquity": 165.17
+    "debtEquity": 165.31
   }
 }

@@ -2,7 +2,7 @@
   "ticker": "GDI",
   "name": "GDI PROP STAPLED [GDI]",
   "price": 0.67,
-  "valuationScore": 54.5,
+  "valuationScore": 44.3,
   "marketCap": "359M",
   "sector": "Real Estate",
   "domain": "gdi.com.au",
@@ -220,7 +220,7 @@
       "price": 0.67
     }
   ],
-  "testsPassed": 2,
+  "testsPassed": 1,
   "grade": "D",
   "valuationTests": {
     "peDiscount": {
@@ -233,23 +233,23 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 13.57,
+      "value": 13.3,
       "threshold": 1.5,
-      "label": "13.57x vs 1.5x"
+      "label": "13.30x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 28.36,
+      "value": 28.17,
       "threshold": 10.0,
-      "label": "28.4x vs 10x"
+      "label": "28.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -15.01,
+      "value": -0.16,
       "threshold": 5.0,
-      "label": "-15.0% vs 5%"
+      "label": "-0.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
@@ -261,38 +261,38 @@
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": false,
-      "value": 1.91,
+      "value": 1.63,
       "threshold": 5.0,
-      "label": "Margin 1.9% / ROE 5.3%"
+      "label": "Margin 1.6% / ROE 4.8%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 1.16,
+      "value": -7.5,
       "threshold": 0.5,
-      "label": "P/S 4.1x ÷ Growth 3.5% = 1.16"
+      "label": "FAIL — Revenue declining -7.5%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
-      "passed": true,
-      "value": 3.5,
+      "passed": false,
+      "value": -7.5,
       "threshold": -5.0,
-      "label": "3.5% growth (floor: -5%)"
+      "label": "-7.5% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": 11.08,
     "sectorPe": 11.03,
-    "pb": 13.57,
-    "ps": 4.06,
-    "evEbitda": 28.36,
-    "fcfYield": -15.01,
+    "pb": 13.3,
+    "ps": 4.23,
+    "evEbitda": 28.17,
+    "fcfYield": -0.16,
     "forwardPe": 7.27,
-    "dividendYield": 7.87,
-    "revenueGrowth": 3.5,
-    "profitMargin": 1.91,
-    "operatingMargin": 57.97,
-    "roe": 5.32,
-    "debtEquity": 54.68
+    "dividendYield": 7.52,
+    "revenueGrowth": -7.5,
+    "profitMargin": 1.63,
+    "operatingMargin": 57.71,
+    "roe": 4.81,
+    "debtEquity": 49.77
   }
 }

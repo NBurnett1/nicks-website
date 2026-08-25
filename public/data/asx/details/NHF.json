@@ -2,7 +2,7 @@
   "ticker": "NHF",
   "name": "NIBHOLDING FPO [NHF]",
   "price": 6.82,
-  "valuationScore": 0.2,
+  "valuationScore": -5.2,
   "marketCap": "3.3B",
   "sector": "Financial Services",
   "domain": "nib.com.au",
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 17.95,
-      "threshold": 15.98,
-      "label": "17.9x vs 16.0x sector"
+      "value": 18.43,
+      "threshold": 16.71,
+      "label": "18.4x vs 16.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,59 +240,59 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 7.52,
+      "value": 7.72,
       "threshold": 10.0,
-      "label": "7.5x vs 10x"
+      "label": "7.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 1.05,
+      "passed": true,
+      "value": 5.82,
       "threshold": 5.0,
-      "label": "1.1% vs 5%"
+      "label": "5.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 13.45,
-      "threshold": 17.95,
-      "label": "Fwd 13.4x vs Trail 17.9x"
+      "value": 13.52,
+      "threshold": 18.43,
+      "label": "Fwd 13.5x vs Trail 18.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
-      "passed": true,
-      "value": 5.36,
+      "passed": false,
+      "value": 4.92,
       "threshold": 5.0,
-      "label": "Margin 5.4% / ROE 17.9%"
+      "label": "Margin 4.9% / ROE 16.4%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.16,
+      "value": 0.19,
       "threshold": 0.5,
-      "label": "P/S 0.9x ÷ Growth 5.7% = 0.16"
+      "label": "P/S 0.9x ÷ Growth 4.6% = 0.19"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": true,
-      "value": 5.7,
+      "value": 4.6,
       "threshold": -5.0,
-      "label": "5.7% growth (floor: -5%)"
+      "label": "4.6% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 17.95,
-    "sectorPe": 18.8,
+    "pe": 18.43,
+    "sectorPe": 19.66,
     "pb": 2.98,
-    "ps": 0.89,
-    "evEbitda": 7.52,
-    "fcfYield": 1.05,
-    "forwardPe": 13.45,
-    "dividendYield": 3.86,
-    "revenueGrowth": 5.7,
-    "profitMargin": 5.36,
-    "operatingMargin": 6.56,
-    "roe": 17.88,
-    "debtEquity": 25.39
+    "ps": 0.87,
+    "evEbitda": 7.72,
+    "fcfYield": 5.82,
+    "forwardPe": 13.52,
+    "dividendYield": 4.25,
+    "revenueGrowth": 4.6,
+    "profitMargin": 4.92,
+    "operatingMargin": 7.67,
+    "roe": 16.37,
+    "debtEquity": 19.9
   }
 }
