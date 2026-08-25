@@ -1,7 +1,7 @@
 {
   "ticker": "BPT",
   "name": "BEACH FPO [BPT]",
-  "price": 0.9,
+  "price": 0.89,
   "valuationScore": 15.5,
   "marketCap": "2.0B",
   "sector": "Energy",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-30",
-      "price": 0.89
+      "price": 0.88
     }
   ],
   "testsPassed": 5,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 7.46,
-      "threshold": 12.53,
-      "label": "7.5x vs 12.5x sector"
+      "value": 7.38,
+      "threshold": 12.69,
+      "label": "7.4x vs 12.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -7.55,
+      "value": -7.63,
       "threshold": 5.0,
-      "label": "-7.5% vs 5%"
+      "label": "-7.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 5.88,
-      "threshold": 7.46,
-      "label": "Fwd 5.9x vs Trail 7.5x"
+      "value": 5.81,
+      "threshold": 7.38,
+      "label": "Fwd 5.8x vs Trail 7.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 7.46,
-    "sectorPe": 14.74,
+    "pe": 7.38,
+    "sectorPe": 14.93,
     "pb": 0.62,
-    "ps": 1.06,
+    "ps": 1.05,
     "evEbitda": 2.84,
-    "fcfYield": -7.55,
-    "forwardPe": 5.88,
+    "fcfYield": -7.63,
+    "forwardPe": 5.81,
     "dividendYield": 4.47,
     "revenueGrowth": -17.1,
     "profitMargin": 14.65,

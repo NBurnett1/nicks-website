@@ -1,7 +1,7 @@
 {
   "ticker": "BWP",
   "name": "BWPPROPGP STAPLED [BWP]",
-  "price": 3.73,
+  "price": 3.71,
   "valuationScore": -1.9,
   "marketCap": "2.7B",
   "sector": "Real Estate",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-30",
-      "price": 3.73
+      "price": 3.71
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 6.66,
-      "threshold": 9.18,
-      "label": "6.7x vs 9.2x sector"
+      "value": 6.62,
+      "threshold": 9.37,
+      "label": "6.6x vs 9.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.88,
+      "value": 0.87,
       "threshold": 1.5,
-      "label": "0.88x vs 1.5x"
+      "label": "0.87x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.41,
+      "value": 4.44,
       "threshold": 5.0,
       "label": "4.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 18.44,
-      "threshold": 6.66,
-      "label": "Fwd 18.4x vs Trail 6.7x"
+      "value": 18.38,
+      "threshold": 6.62,
+      "label": "Fwd 18.4x vs Trail 6.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 4.32,
+      "value": 4.3,
       "threshold": 0.5,
-      "label": "P/S 13.0x ÷ Growth 3.0% = 4.32"
+      "label": "P/S 12.9x ÷ Growth 3.0% = 4.30"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 6.66,
-    "sectorPe": 10.79,
-    "pb": 0.88,
-    "ps": 12.96,
+    "pe": 6.62,
+    "sectorPe": 11.03,
+    "pb": 0.87,
+    "ps": 12.89,
     "evEbitda": null,
-    "fcfYield": 4.41,
-    "forwardPe": 18.44,
+    "fcfYield": 4.44,
+    "forwardPe": 18.38,
     "dividendYield": 5.2,
     "revenueGrowth": 3.0,
     "profitMargin": 195.1,

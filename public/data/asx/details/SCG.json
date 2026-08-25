@@ -1,9 +1,9 @@
 {
   "ticker": "SCG",
   "name": "SCENTRE STAPLED [SCG]",
-  "price": 3.67,
-  "valuationScore": 4.3,
-  "marketCap": "19.2B",
+  "price": 3.58,
+  "valuationScore": 4.1,
+  "marketCap": "18.7B",
   "sector": "Real Estate",
   "domain": "scentregroup.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-30",
-      "price": 3.67
+      "price": 3.58
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 10.79,
-      "threshold": 9.18,
-      "label": "10.8x vs 9.2x sector"
+      "value": 10.53,
+      "threshold": 9.37,
+      "label": "10.5x vs 9.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.01,
+      "value": 0.99,
       "threshold": 1.5,
-      "label": "1.01x vs 1.5x"
+      "label": "0.99x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -1.88,
+      "value": -1.93,
       "threshold": 5.0,
       "label": "-1.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 14.73,
-      "threshold": 10.79,
-      "label": "Fwd 14.7x vs Trail 10.8x"
+      "value": 14.37,
+      "threshold": 10.53,
+      "label": "Fwd 14.4x vs Trail 10.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 8.92,
+      "value": 8.7,
       "threshold": 0.5,
-      "label": "P/S 7.1x ÷ Growth 0.8% = 8.92"
+      "label": "P/S 7.0x ÷ Growth 0.8% = 8.70"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 10.79,
-    "sectorPe": 10.79,
-    "pb": 1.01,
-    "ps": 7.14,
+    "pe": 10.53,
+    "sectorPe": 11.03,
+    "pb": 0.99,
+    "ps": 6.96,
     "evEbitda": null,
-    "fcfYield": -1.88,
-    "forwardPe": 14.73,
+    "fcfYield": -1.93,
+    "forwardPe": 14.37,
     "dividendYield": 5.02,
     "revenueGrowth": 0.8,
     "profitMargin": 66.24,
