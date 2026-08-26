@@ -1,9 +1,9 @@
 {
   "ticker": "INA",
   "name": "INGENIA STAPLED [INA]",
-  "price": 4.26,
-  "valuationScore": -0.3,
-  "marketCap": "1.7B",
+  "price": 3.99,
+  "valuationScore": -0.7,
+  "marketCap": "1.6B",
   "sector": "Real Estate",
   "domain": "ingeniacommunities.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-30",
-      "price": 4.26
+      "price": 3.99
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 12.91,
-      "threshold": 9.37,
-      "label": "12.9x vs 9.4x sector"
+      "value": 12.09,
+      "threshold": 9.25,
+      "label": "12.1x vs 9.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.04,
+      "value": 0.97,
       "threshold": 1.5,
-      "label": "1.04x vs 1.5x"
+      "label": "0.97x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.84,
+      "value": 6.24,
       "threshold": 5.0,
-      "label": "5.8% vs 5%"
+      "label": "6.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 10.38,
-      "threshold": 12.91,
-      "label": "Fwd 10.4x vs Trail 12.9x"
+      "value": 9.78,
+      "threshold": 12.09,
+      "label": "Fwd 9.8x vs Trail 12.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.75,
+      "value": 0.7,
       "threshold": 0.5,
-      "label": "P/S 3.2x ÷ Growth 4.3% = 0.75"
+      "label": "P/S 3.0x ÷ Growth 4.3% = 0.70"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 12.91,
-    "sectorPe": 11.03,
-    "pb": 1.04,
-    "ps": 3.21,
+    "pe": 12.09,
+    "sectorPe": 10.88,
+    "pb": 0.97,
+    "ps": 3.01,
     "evEbitda": 16.11,
-    "fcfYield": 5.84,
-    "forwardPe": 10.38,
+    "fcfYield": 6.24,
+    "forwardPe": 9.78,
     "dividendYield": 2.16,
     "revenueGrowth": 4.3,
     "profitMargin": 25.57,

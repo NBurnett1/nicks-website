@@ -1,9 +1,9 @@
 {
   "ticker": "WOR",
   "name": "WORLEY FPO [WOR]",
-  "price": 11.1,
-  "valuationScore": -0.4,
-  "marketCap": "—",
+  "price": 9.9,
+  "valuationScore": -23.8,
+  "marketCap": "5.0B",
   "sector": "Energy",
   "domain": "worley.com",
   "chartData": [
@@ -217,25 +217,25 @@
     },
     {
       "date": "2026-08-30",
-      "price": 11.1
+      "price": 9.9
     }
   ],
-  "testsPassed": 3,
-  "grade": "C",
+  "testsPassed": 5,
+  "grade": "B",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 16.82,
-      "threshold": 12.69,
-      "label": "16.8x vs 12.7x sector"
+      "value": 15.0,
+      "threshold": 12.75,
+      "label": "15.0x vs 12.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
-      "passed": null,
-      "value": null,
+      "passed": true,
+      "value": 0.94,
       "threshold": 1.5,
-      "label": "No P/B data"
+      "label": "0.94x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -246,17 +246,17 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": null,
-      "value": null,
+      "passed": true,
+      "value": 9.92,
       "threshold": 5.0,
-      "label": "No FCF data"
+      "label": "9.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.49,
-      "threshold": 16.82,
-      "label": "Fwd 12.5x vs Trail 16.8x"
+      "value": 11.14,
+      "threshold": 15.0,
+      "label": "Fwd 11.1x vs Trail 15.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": -1.6,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "FAIL — Revenue declining -1.6%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 16.82,
-    "sectorPe": 14.93,
-    "pb": null,
-    "ps": null,
+    "pe": 15.0,
+    "sectorPe": 15.0,
+    "pb": 0.94,
+    "ps": 0.45,
     "evEbitda": 9.81,
-    "fcfYield": null,
-    "forwardPe": 12.49,
+    "fcfYield": 9.92,
+    "forwardPe": 11.14,
     "dividendYield": 4.5,
     "revenueGrowth": -1.6,
     "profitMargin": 3.1,

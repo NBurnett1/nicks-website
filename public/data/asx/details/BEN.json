@@ -1,9 +1,9 @@
 {
   "ticker": "BEN",
   "name": "BEN ADE BK FPO [BEN]",
-  "price": 10.85,
-  "valuationScore": -1.9,
-  "marketCap": "6.3B",
+  "price": 10.55,
+  "valuationScore": -2.2,
+  "marketCap": "6.1B",
   "sector": "Financials",
   "domain": "bendigoadelaide.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-30",
-      "price": 10.85
+      "price": 10.55
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 17.22,
+      "value": 16.75,
       "threshold": 16.26,
-      "label": "17.2x vs 16.3x sector"
+      "label": "16.7x vs 16.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.93,
+      "value": 0.9,
       "threshold": 1.5,
-      "label": "0.93x vs 1.5x"
+      "label": "0.90x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.15,
-      "threshold": 17.22,
-      "label": "Fwd 12.1x vs Trail 17.2x"
+      "value": 11.81,
+      "threshold": 16.75,
+      "label": "Fwd 11.8x vs Trail 16.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.87,
+      "value": 0.84,
       "threshold": 0.5,
-      "label": "P/S 3.2x ÷ Growth 3.7% = 0.87"
+      "label": "P/S 3.1x ÷ Growth 3.7% = 0.84"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 17.22,
-    "sectorPe": 19.12,
-    "pb": 0.93,
-    "ps": 3.21,
+    "pe": 16.75,
+    "sectorPe": 19.13,
+    "pb": 0.9,
+    "ps": 3.12,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 12.15,
+    "forwardPe": 11.81,
     "dividendYield": 6.08,
     "revenueGrowth": 3.7,
     "profitMargin": 19.23,

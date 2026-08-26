@@ -2,7 +2,7 @@
   "ticker": "SDF",
   "name": "STEADFAST FPO [SDF]",
   "price": 5.83,
-  "valuationScore": -8.4,
+  "valuationScore": -7.3,
   "marketCap": "6.5B",
   "sector": "Financial Services",
   "domain": "steadfast.com.au",
@@ -220,15 +220,15 @@
       "price": 5.83
     }
   ],
-  "testsPassed": 6,
+  "testsPassed": 7,
   "grade": "A",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": false,
+      "passed": true,
       "value": 18.22,
-      "threshold": 16.71,
-      "label": "18.2x vs 16.7x sector"
+      "threshold": 18.94,
+      "label": "18.2x vs 18.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -282,7 +282,7 @@
   },
   "metrics": {
     "pe": 18.22,
-    "sectorPe": 19.66,
+    "sectorPe": 22.28,
     "pb": 2.78,
     "ps": 2.94,
     "evEbitda": 9.91,
