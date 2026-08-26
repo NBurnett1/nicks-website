@@ -2,7 +2,7 @@
   "ticker": "ASG",
   "name": "AUTOSPORTS FPO [ASG]",
   "price": 1.5,
-  "valuationScore": 12.7,
+  "valuationScore": -4.5,
   "marketCap": "320M",
   "sector": "Consumer Cyclical",
   "domain": "autosportsgroup.com.au",
@@ -220,8 +220,8 @@
       "price": 1.5
     }
   ],
-  "testsPassed": 5,
-  "grade": "B",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -239,17 +239,17 @@
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
-      "passed": false,
-      "value": 10.7,
+      "passed": null,
+      "value": null,
       "threshold": 10.0,
-      "label": "10.7x vs 10x"
+      "label": "No EV/EBITDA data"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": -29.03,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "-29.0% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
@@ -260,39 +260,39 @@
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
-      "passed": false,
-      "value": 1.46,
+      "passed": null,
+      "value": 0.8,
       "threshold": 5.0,
-      "label": "Margin 1.5% / ROE 8.7%"
+      "label": "Insufficient data"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": true,
-      "value": 0.01,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 0.1x ÷ Growth 10.9% = 0.01"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
-      "passed": true,
-      "value": 10.9,
+      "passed": null,
+      "value": null,
       "threshold": -5.0,
-      "label": "10.9% growth (floor: -5%)"
+      "label": "No revenue data"
     }
   },
   "metrics": {
     "pe": 11.54,
     "sectorPe": 29.0,
     "pb": 0.59,
-    "ps": 0.11,
-    "evEbitda": 10.7,
-    "fcfYield": -29.03,
+    "ps": 0.1,
+    "evEbitda": null,
+    "fcfYield": null,
     "forwardPe": 5.91,
-    "dividendYield": 6.6,
-    "revenueGrowth": 10.9,
-    "profitMargin": 1.46,
-    "operatingMargin": 4.24,
-    "roe": 8.7,
-    "debtEquity": 245.43
+    "dividendYield": 5.33,
+    "revenueGrowth": null,
+    "profitMargin": 0.8,
+    "operatingMargin": 3.82,
+    "roe": null,
+    "debtEquity": null
   }
 }

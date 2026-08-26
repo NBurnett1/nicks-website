@@ -2,8 +2,8 @@
   "ticker": "TLS",
   "name": "TELSTRA FPO [TLS]",
   "price": 4.58,
-  "valuationScore": -0.6,
-  "marketCap": "51.0B",
+  "valuationScore": 2.0,
+  "marketCap": "—",
   "sector": "Telecom",
   "domain": "telstra.com.au",
   "chartData": [
@@ -227,8 +227,8 @@
       "name": "P/E Discount",
       "passed": false,
       "value": 22.9,
-      "threshold": 18.42,
-      "label": "22.9x vs 18.4x sector"
+      "threshold": 18.07,
+      "label": "22.9x vs 18.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -239,17 +239,17 @@
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
-      "passed": false,
-      "value": 10.17,
+      "passed": true,
+      "value": 9.98,
       "threshold": 10.0,
-      "label": "10.2x vs 10x"
+      "label": "10.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": true,
-      "value": 6.74,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "6.7% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": -2.0,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining -2.0%"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,13 +282,13 @@
   },
   "metrics": {
     "pe": 22.9,
-    "sectorPe": 21.67,
+    "sectorPe": 21.26,
     "pb": 3.9,
-    "ps": 2.22,
-    "evEbitda": 10.17,
-    "fcfYield": 6.74,
+    "ps": null,
+    "evEbitda": 9.98,
+    "fcfYield": null,
     "forwardPe": 20.06,
-    "dividendYield": 4.47,
+    "dividendYield": 4.59,
     "revenueGrowth": -2.0,
     "profitMargin": 9.77,
     "operatingMargin": 20.21,

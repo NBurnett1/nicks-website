@@ -2,7 +2,7 @@
   "ticker": "ARB",
   "name": "ARB CORP FPO [ARB]",
   "price": 20.56,
-  "valuationScore": -1.1,
+  "valuationScore": -0.3,
   "marketCap": "1.7B",
   "sector": "Consumer Discretionary",
   "domain": "arb.com.au",
@@ -220,8 +220,8 @@
       "price": 20.56
     }
   ],
-  "testsPassed": 4,
-  "grade": "C",
+  "testsPassed": 2,
+  "grade": "D",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -233,66 +233,66 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.34,
+      "value": 2.32,
       "threshold": 1.5,
-      "label": "2.34x vs 1.5x"
+      "label": "2.32x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 11.06,
+      "value": 12.32,
       "threshold": 10.0,
-      "label": "11.1x vs 10x"
+      "label": "12.3x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": true,
-      "value": 5.6,
+      "passed": false,
+      "value": 3.74,
       "threshold": 5.0,
-      "label": "5.6% vs 5%"
+      "label": "3.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.48,
+      "value": 16.45,
       "threshold": 18.52,
-      "label": "Fwd 16.5x vs Trail 18.5x"
+      "label": "Fwd 16.4x vs Trail 18.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": true,
-      "value": 12.16,
+      "value": 13.08,
       "threshold": 5.0,
-      "label": "Margin 12.2% / ROE 12.1%"
+      "label": "Margin 13.1% / ROE 12.3%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": -1.2,
+      "value": -6.3,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining -1.2%"
+      "label": "FAIL — Revenue declining -6.3%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
-      "passed": true,
-      "value": -1.2,
+      "passed": false,
+      "value": -6.3,
       "threshold": -5.0,
-      "label": "-1.2% growth (floor: -5%)"
+      "label": "-6.3% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": 18.52,
     "sectorPe": 16.99,
-    "pb": 2.34,
-    "ps": 2.36,
-    "evEbitda": 11.06,
-    "fcfYield": 5.6,
-    "forwardPe": 16.48,
-    "dividendYield": 3.6,
-    "revenueGrowth": -1.2,
-    "profitMargin": 12.16,
-    "operatingMargin": 15.85,
-    "roe": 12.07,
-    "debtEquity": 5.82
+    "pb": 2.32,
+    "ps": 2.43,
+    "evEbitda": 12.32,
+    "fcfYield": 3.74,
+    "forwardPe": 16.45,
+    "dividendYield": 3.4,
+    "revenueGrowth": -6.3,
+    "profitMargin": 13.08,
+    "operatingMargin": 17.61,
+    "roe": 12.33,
+    "debtEquity": 6.68
   }
 }

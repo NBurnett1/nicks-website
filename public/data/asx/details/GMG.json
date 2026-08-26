@@ -3,7 +3,7 @@
   "name": "GOOD GROUP STAPLED [GMG]",
   "price": 28.22,
   "valuationScore": 10.4,
-  "marketCap": "57.7B",
+  "marketCap": "—",
   "sector": "Real Estate",
   "domain": "goodman.com",
   "chartData": [
@@ -220,7 +220,7 @@
       "price": 28.22
     }
   ],
-  "testsPassed": 4,
+  "testsPassed": 3,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
@@ -233,23 +233,23 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.43,
+      "value": 2.31,
       "threshold": 1.5,
-      "label": "2.43x vs 1.5x"
+      "label": "2.31x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 24.53,
+      "value": 24.89,
       "threshold": 10.0,
-      "label": "24.5x vs 10x"
+      "label": "24.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": true,
-      "value": 5.18,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "5.2% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
@@ -283,12 +283,12 @@
   "metrics": {
     "pe": 21.22,
     "sectorPe": 10.88,
-    "pb": 2.43,
+    "pb": 2.31,
     "ps": null,
-    "evEbitda": 24.53,
-    "fcfYield": 5.18,
+    "evEbitda": 24.89,
+    "fcfYield": null,
     "forwardPe": 17.78,
-    "dividendYield": 1.08,
+    "dividendYield": 1.06,
     "revenueGrowth": 65.8,
     "profitMargin": 68.44,
     "operatingMargin": 61.01,

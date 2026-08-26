@@ -2,7 +2,7 @@
   "ticker": "SCG",
   "name": "SCENTRE STAPLED [SCG]",
   "price": 3.62,
-  "valuationScore": 3.7,
+  "valuationScore": 0.6,
   "marketCap": "18.9B",
   "sector": "Real Estate",
   "domain": "scentregroup.com",
@@ -220,8 +220,8 @@
       "price": 3.62
     }
   ],
-  "testsPassed": 3,
-  "grade": "C",
+  "testsPassed": 2,
+  "grade": "D",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -247,52 +247,52 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -1.9,
+      "value": 2.93,
       "threshold": 5.0,
-      "label": "-1.9% vs 5%"
+      "label": "2.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 14.4,
+      "value": 14.43,
       "threshold": 9.53,
       "label": "Fwd 14.4x vs Trail 9.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": true,
-      "value": 66.24,
+      "value": 76.53,
       "threshold": 5.0,
-      "label": "Margin 66.2% / ROE 9.6%"
+      "label": "Margin 76.5% / ROE 10.4%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 8.8,
+      "value": -8.3,
       "threshold": 0.5,
-      "label": "P/S 7.0x ÷ Growth 0.8% = 8.80"
+      "label": "FAIL — Revenue declining -8.3%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
-      "passed": true,
-      "value": 0.8,
+      "passed": false,
+      "value": -8.3,
       "threshold": -5.0,
-      "label": "0.8% growth (floor: -5%)"
+      "label": "-8.3% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": 9.53,
     "sectorPe": 10.88,
     "pb": 1.0,
-    "ps": 7.04,
+    "ps": 7.34,
     "evEbitda": null,
-    "fcfYield": -1.9,
-    "forwardPe": 14.4,
-    "dividendYield": 5.15,
-    "revenueGrowth": 0.8,
-    "profitMargin": 66.24,
-    "operatingMargin": 66.94,
-    "roe": 9.63,
-    "debtEquity": 79.16
+    "fcfYield": 2.93,
+    "forwardPe": 14.43,
+    "dividendYield": 5.09,
+    "revenueGrowth": -8.3,
+    "profitMargin": 76.53,
+    "operatingMargin": 66.77,
+    "roe": 10.43,
+    "debtEquity": 71.72
   }
 }

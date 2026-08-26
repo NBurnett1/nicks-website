@@ -2,7 +2,7 @@
   "ticker": "AUB",
   "name": "AUB GROUP FPO [AUB]",
   "price": 29.82,
-  "valuationScore": 4.6,
+  "valuationScore": 3.3,
   "marketCap": "3.9B",
   "sector": "Financial Services",
   "domain": "aubgroup.com.au",
@@ -220,8 +220,8 @@
       "price": 29.82
     }
   ],
-  "testsPassed": 3,
-  "grade": "C",
+  "testsPassed": 2,
+  "grade": "D",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -233,66 +233,66 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.52,
+      "value": 2.07,
       "threshold": 1.5,
-      "label": "2.52x vs 1.5x"
+      "label": "2.07x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 12.91,
+      "value": 12.82,
       "threshold": 10.0,
-      "label": "12.9x vs 10x"
+      "label": "12.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.49,
+      "value": 4.05,
       "threshold": 5.0,
-      "label": "2.5% vs 5%"
+      "label": "4.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.04,
+      "value": 14.15,
       "threshold": 38.23,
-      "label": "Fwd 14.0x vs Trail 38.2x"
+      "label": "Fwd 14.2x vs Trail 38.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
-      "passed": true,
-      "value": 15.65,
+      "passed": false,
+      "value": 7.75,
       "threshold": 5.0,
-      "label": "Margin 15.7% / ROE 12.4%"
+      "label": "Margin 7.8% / ROE 6.3%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.51,
+      "value": 0.6,
       "threshold": 0.5,
-      "label": "P/S 3.2x ÷ Growth 6.3% = 0.51"
+      "label": "P/S 3.1x ÷ Growth 5.2% = 0.60"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": true,
-      "value": 6.3,
+      "value": 5.2,
       "threshold": -5.0,
-      "label": "6.3% growth (floor: -5%)"
+      "label": "5.2% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": 38.23,
     "sectorPe": 22.28,
-    "pb": 2.52,
-    "ps": 3.23,
-    "evEbitda": 12.91,
-    "fcfYield": 2.49,
-    "forwardPe": 14.04,
-    "dividendYield": 3.2,
-    "revenueGrowth": 6.3,
-    "profitMargin": 15.65,
-    "operatingMargin": 23.67,
-    "roe": 12.41,
-    "debtEquity": 65.17
+    "pb": 2.07,
+    "ps": 3.14,
+    "evEbitda": 12.82,
+    "fcfYield": 4.05,
+    "forwardPe": 14.15,
+    "dividendYield": 3.29,
+    "revenueGrowth": 5.2,
+    "profitMargin": 7.75,
+    "operatingMargin": 29.5,
+    "roe": 6.3,
+    "debtEquity": 55.35
   }
 }

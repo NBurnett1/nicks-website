@@ -2,7 +2,7 @@
   "ticker": "INA",
   "name": "INGENIA STAPLED [INA]",
   "price": 3.99,
-  "valuationScore": -0.7,
+  "valuationScore": -1.7,
   "marketCap": "1.6B",
   "sector": "Real Estate",
   "domain": "ingeniacommunities.com.au",
@@ -220,15 +220,15 @@
       "price": 3.99
     }
   ],
-  "testsPassed": 5,
-  "grade": "B",
+  "testsPassed": 6,
+  "grade": "A",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 12.09,
+      "value": 11.74,
       "threshold": 9.25,
-      "label": "12.1x vs 9.2x sector"
+      "label": "11.7x vs 9.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,59 +240,59 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 16.11,
+      "value": 14.98,
       "threshold": 10.0,
-      "label": "16.1x vs 10x"
+      "label": "15.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 6.24,
+      "value": 6.56,
       "threshold": 5.0,
-      "label": "6.2% vs 5%"
+      "label": "6.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 9.78,
-      "threshold": 12.09,
-      "label": "Fwd 9.8x vs Trail 12.1x"
+      "value": 9.7,
+      "threshold": 11.74,
+      "label": "Fwd 9.7x vs Trail 11.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": true,
-      "value": 25.57,
+      "value": 32.35,
       "threshold": 5.0,
-      "label": "Margin 25.6% / ROE 8.5%"
+      "label": "Margin 32.4% / ROE 11.2%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": 0.7,
+      "passed": true,
+      "value": 0.21,
       "threshold": 0.5,
-      "label": "P/S 3.0x ÷ Growth 4.3% = 0.70"
+      "label": "P/S 2.8x ÷ Growth 13.3% = 0.21"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": true,
-      "value": 4.3,
+      "value": 13.3,
       "threshold": -5.0,
-      "label": "4.3% growth (floor: -5%)"
+      "label": "13.3% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 12.09,
+    "pe": 11.74,
     "sectorPe": 10.88,
     "pb": 0.97,
-    "ps": 3.01,
-    "evEbitda": 16.11,
-    "fcfYield": 6.24,
-    "forwardPe": 9.78,
-    "dividendYield": 2.16,
-    "revenueGrowth": 4.3,
-    "profitMargin": 25.57,
-    "operatingMargin": 31.04,
-    "roe": 8.51,
-    "debtEquity": 58.16
+    "ps": 2.82,
+    "evEbitda": 14.98,
+    "fcfYield": 6.56,
+    "forwardPe": 9.7,
+    "dividendYield": 2.41,
+    "revenueGrowth": 13.3,
+    "profitMargin": 32.35,
+    "operatingMargin": 28.57,
+    "roe": 11.16,
+    "debtEquity": 57.77
   }
 }
