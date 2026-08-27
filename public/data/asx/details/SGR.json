@@ -1,9 +1,9 @@
 {
   "ticker": "SGR",
   "name": "STAR ENT FPO [SGR]",
-  "price": 0.13,
-  "valuationScore": 4.8,
-  "marketCap": "863M",
+  "price": 0.14,
+  "valuationScore": 6.8,
+  "marketCap": "896M",
   "sector": "Consumer Cyclical",
   "domain": "starentertainmentgroup.com.au",
   "chartData": [
@@ -217,10 +217,10 @@
     },
     {
       "date": "2026-08-30",
-      "price": 0.13
+      "price": 0.14
     }
   ],
-  "testsPassed": 2,
+  "testsPassed": 1,
   "grade": "D",
   "valuationTests": {
     "peDiscount": {
@@ -232,10 +232,10 @@
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
-      "passed": true,
-      "value": 1.49,
+      "passed": false,
+      "value": 1.55,
       "threshold": 1.5,
-      "label": "1.49x vs 1.5x"
+      "label": "1.55x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,14 +247,14 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -19.23,
+      "value": -18.51,
       "threshold": 5.0,
-      "label": "-19.2% vs 5%"
+      "label": "-18.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": -10.16,
+      "value": -10.56,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 29.0,
-    "pb": 1.49,
-    "ps": 0.65,
+    "sectorPe": 27.52,
+    "pb": 1.55,
+    "ps": 0.67,
     "evEbitda": -5.35,
-    "fcfYield": -19.23,
-    "forwardPe": -10.16,
+    "fcfYield": -18.51,
+    "forwardPe": -10.56,
     "dividendYield": null,
     "revenueGrowth": -4.1,
     "profitMargin": -17.68,

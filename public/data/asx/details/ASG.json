@@ -1,9 +1,9 @@
 {
   "ticker": "ASG",
   "name": "AUTOSPORTS FPO [ASG]",
-  "price": 1.5,
-  "valuationScore": -4.5,
-  "marketCap": "320M",
+  "price": 1.43,
+  "valuationScore": 33.4,
+  "marketCap": "305M",
   "sector": "Consumer Cyclical",
   "domain": "autosportsgroup.com.au",
   "chartData": [
@@ -217,53 +217,53 @@
     },
     {
       "date": "2026-08-30",
-      "price": 1.5
+      "price": 1.43
     }
   ],
-  "testsPassed": 3,
+  "testsPassed": 4,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 11.54,
-      "threshold": 24.65,
-      "label": "11.5x vs 24.6x sector"
+      "value": 11.0,
+      "threshold": 23.39,
+      "label": "11.0x vs 23.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.59,
+      "value": 0.57,
       "threshold": 1.5,
-      "label": "0.59x vs 1.5x"
+      "label": "0.57x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
-      "passed": null,
-      "value": null,
+      "passed": true,
+      "value": 9.23,
       "threshold": 10.0,
-      "label": "No EV/EBITDA data"
+      "label": "9.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": -61.86,
       "threshold": 5.0,
-      "label": "No FCF data"
+      "label": "-61.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 5.91,
-      "threshold": 11.54,
-      "label": "Fwd 5.9x vs Trail 11.5x"
+      "value": 5.64,
+      "threshold": 11.0,
+      "label": "Fwd 5.6x vs Trail 11.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
-      "passed": null,
-      "value": 0.8,
+      "passed": false,
+      "value": 0.81,
       "threshold": 5.0,
-      "label": "Insufficient data"
+      "label": "Margin 0.8% / ROE 5.3%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
@@ -281,18 +281,18 @@
     }
   },
   "metrics": {
-    "pe": 11.54,
-    "sectorPe": 29.0,
-    "pb": 0.59,
+    "pe": 11.0,
+    "sectorPe": 27.52,
+    "pb": 0.57,
     "ps": 0.1,
-    "evEbitda": null,
-    "fcfYield": null,
-    "forwardPe": 5.91,
-    "dividendYield": 5.33,
+    "evEbitda": 9.23,
+    "fcfYield": -61.86,
+    "forwardPe": 5.64,
+    "dividendYield": 5.59,
     "revenueGrowth": null,
-    "profitMargin": 0.8,
-    "operatingMargin": 3.82,
-    "roe": null,
-    "debtEquity": null
+    "profitMargin": 0.81,
+    "operatingMargin": 3.81,
+    "roe": 5.3,
+    "debtEquity": 277.98
   }
 }

@@ -1,9 +1,9 @@
 {
   "ticker": "IAG",
   "name": "INSUR.AUST FPO [IAG]",
-  "price": 7.77,
-  "valuationScore": 0.3,
-  "marketCap": "—",
+  "price": 7.85,
+  "valuationScore": 1.4,
+  "marketCap": "18.4B",
   "sector": "Financials",
   "domain": "iag.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-30",
-      "price": 7.77
+      "price": 7.85
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 18.07,
-      "threshold": 16.1,
-      "label": "18.1x vs 16.1x sector"
+      "value": 18.26,
+      "threshold": 16.14,
+      "label": "18.3x vs 16.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.5,
+      "value": 2.53,
       "threshold": 1.5,
-      "label": "2.50x vs 1.5x"
+      "label": "2.53x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
-      "passed": true,
-      "value": 10.0,
+      "passed": false,
+      "value": 10.09,
       "threshold": 10.0,
-      "label": "10.0x vs 10x"
+      "label": "10.1x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": 3.56,
       "threshold": 5.0,
-      "label": "No FCF data"
+      "label": "3.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 15.69,
-      "threshold": 18.07,
-      "label": "Fwd 15.7x vs Trail 18.1x"
+      "value": 15.85,
+      "threshold": 18.26,
+      "label": "Fwd 15.9x vs Trail 18.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": true,
+      "value": 0.09,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "P/S 1.0x ÷ Growth 10.3% = 0.09"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 18.07,
-    "sectorPe": 18.94,
-    "pb": 2.5,
-    "ps": null,
-    "evEbitda": 10.0,
-    "fcfYield": null,
-    "forwardPe": 15.69,
-    "dividendYield": 4.12,
+    "pe": 18.26,
+    "sectorPe": 18.99,
+    "pb": 2.53,
+    "ps": 0.96,
+    "evEbitda": 10.09,
+    "fcfYield": 3.56,
+    "forwardPe": 15.85,
+    "dividendYield": 4.08,
     "revenueGrowth": 10.3,
     "profitMargin": 5.34,
     "operatingMargin": 10.71,

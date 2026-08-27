@@ -1,9 +1,9 @@
 {
   "ticker": "PDN",
   "name": "PALADIN FPO [PDN]",
-  "price": 12.57,
-  "valuationScore": 52.6,
-  "marketCap": "5.6B",
+  "price": 12.08,
+  "valuationScore": 60.0,
+  "marketCap": "5.4B",
   "sector": "Energy",
   "domain": "paladinenergy.com.au",
   "chartData": [
@@ -217,82 +217,82 @@
     },
     {
       "date": "2026-08-30",
-      "price": 12.57
+      "price": 12.08
     }
   ],
-  "testsPassed": 1,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": null,
-      "value": null,
-      "threshold": null,
-      "label": "Insufficient data"
+      "passed": false,
+      "value": 604.0,
+      "threshold": 18.53,
+      "label": "604.0x vs 18.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.44,
+      "value": 3.31,
       "threshold": 1.5,
-      "label": "3.44x vs 1.5x"
+      "label": "3.31x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 98.91,
+      "value": 70.52,
       "threshold": 10.0,
-      "label": "98.9x vs 10x"
+      "label": "70.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -1.99,
+      "value": 0.08,
       "threshold": 5.0,
-      "label": "-2.0% vs 5%"
+      "label": "0.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
-      "passed": null,
-      "value": 34.5,
-      "threshold": null,
-      "label": "Insufficient data"
+      "passed": true,
+      "value": 32.95,
+      "threshold": 604.0,
+      "label": "Fwd 33.0x vs Trail 604.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": false,
-      "value": -5.2,
+      "value": 1.75,
       "threshold": 5.0,
-      "label": "Margin -5.2% / ROE -3.6%"
+      "label": "Margin 1.8% / ROE -1.0%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": 1.42,
+      "passed": true,
+      "value": 0.13,
       "threshold": 0.5,
-      "label": "P/S 22.7x ÷ Growth 16.0% = 1.42"
+      "label": "P/S 17.8x ÷ Growth 141.5% = 0.13"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": true,
-      "value": 16.0,
+      "value": 141.5,
       "threshold": -5.0,
-      "label": "16.0% growth (floor: -5%)"
+      "label": "141.5% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": null,
-    "sectorPe": 15.0,
-    "pb": 3.44,
-    "ps": 22.73,
-    "evEbitda": 98.91,
-    "fcfYield": -1.99,
-    "forwardPe": 34.5,
+    "pe": 604.0,
+    "sectorPe": 21.8,
+    "pb": 3.31,
+    "ps": 17.84,
+    "evEbitda": 70.52,
+    "fcfYield": 0.08,
+    "forwardPe": 32.95,
     "dividendYield": null,
-    "revenueGrowth": 16.0,
-    "profitMargin": -5.2,
-    "operatingMargin": -0.57,
-    "roe": -3.58,
-    "debtEquity": 18.58
+    "revenueGrowth": 141.5,
+    "profitMargin": 1.75,
+    "operatingMargin": 5.46,
+    "roe": -0.99,
+    "debtEquity": 17.28
   }
 }

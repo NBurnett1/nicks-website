@@ -1,8 +1,8 @@
 {
   "ticker": "FLT",
   "name": "FLIGHT CTR FPO [FLT]",
-  "price": 12.0,
-  "valuationScore": 0.2,
+  "price": 12.19,
+  "valuationScore": 1.1,
   "marketCap": "2.5B",
   "sector": "Consumer Cyclical",
   "domain": "fctgl.com",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-30",
-      "price": 12.0
+      "price": 12.19
     }
   ],
   "testsPassed": 5,
@@ -226,73 +226,73 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 24.0,
-      "threshold": 24.65,
-      "label": "24.0x vs 24.6x sector"
+      "value": 17.67,
+      "threshold": 23.39,
+      "label": "17.7x vs 23.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.15,
+      "value": 2.18,
       "threshold": 1.5,
-      "label": "2.15x vs 1.5x"
+      "label": "2.18x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 12.73,
+      "value": 13.59,
       "threshold": 10.0,
-      "label": "12.7x vs 10x"
+      "label": "13.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 10.41,
+      "value": 5.23,
       "threshold": 5.0,
-      "label": "10.4% vs 5%"
+      "label": "5.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 9.0,
-      "threshold": 24.0,
-      "label": "Fwd 9.0x vs Trail 24.0x"
+      "value": 9.65,
+      "threshold": 17.67,
+      "label": "Fwd 9.7x vs Trail 17.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
-      "passed": false,
-      "value": 3.82,
+      "passed": true,
+      "value": 5.22,
       "threshold": 5.0,
-      "label": "Margin 3.8% / ROE 9.0%"
+      "label": "Margin 5.2% / ROE 12.9%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": true,
-      "value": 0.14,
+      "passed": false,
+      "value": -0.7,
       "threshold": 0.5,
-      "label": "P/S 0.9x ÷ Growth 6.1% = 0.14"
+      "label": "FAIL — Revenue declining -0.7%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": true,
-      "value": 6.1,
+      "value": -0.7,
       "threshold": -5.0,
-      "label": "6.1% growth (floor: -5%)"
+      "label": "-0.7% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 24.0,
-    "sectorPe": 29.0,
-    "pb": 2.15,
-    "ps": 0.86,
-    "evEbitda": 12.73,
-    "fcfYield": 10.41,
-    "forwardPe": 9.0,
-    "dividendYield": 3.42,
-    "revenueGrowth": 6.1,
-    "profitMargin": 3.82,
-    "operatingMargin": 6.63,
-    "roe": 9.02,
-    "debtEquity": 108.65
+    "pe": 17.67,
+    "sectorPe": 27.52,
+    "pb": 2.18,
+    "ps": 0.87,
+    "evEbitda": 13.59,
+    "fcfYield": 5.23,
+    "forwardPe": 9.65,
+    "dividendYield": 3.45,
+    "revenueGrowth": -0.7,
+    "profitMargin": 5.22,
+    "operatingMargin": 7.75,
+    "roe": 12.86,
+    "debtEquity": 112.33
   }
 }

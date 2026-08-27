@@ -1,9 +1,9 @@
 {
   "ticker": "SUL",
   "name": "SUPARETAIL FPO [SUL]",
-  "price": 13.01,
-  "valuationScore": -10.7,
-  "marketCap": "2.9B",
+  "price": 13.17,
+  "valuationScore": -9.6,
+  "marketCap": "3.0B",
   "sector": "Consumer Discretionary",
   "domain": "superretailgroup.com.au",
   "chartData": [
@@ -217,46 +217,46 @@
     },
     {
       "date": "2026-08-30",
-      "price": 13.01
+      "price": 13.17
     }
   ],
-  "testsPassed": 6,
-  "grade": "A",
+  "testsPassed": 5,
+  "grade": "B",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": true,
-      "value": 14.3,
-      "threshold": 14.44,
-      "label": "14.3x vs 14.4x sector"
+      "passed": false,
+      "value": 14.47,
+      "threshold": 13.77,
+      "label": "14.5x vs 13.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.26,
+      "value": 2.29,
       "threshold": 1.5,
-      "label": "2.26x vs 1.5x"
+      "label": "2.29x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 9.39,
+      "value": 9.47,
       "threshold": 10.0,
-      "label": "9.4x vs 10x"
+      "label": "9.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 13.52,
+      "value": 13.35,
       "threshold": 5.0,
-      "label": "13.5% vs 5%"
+      "label": "13.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.0,
-      "threshold": 14.3,
-      "label": "Fwd 12.0x vs Trail 14.3x"
+      "value": 12.14,
+      "threshold": 14.47,
+      "label": "Fwd 12.1x vs Trail 14.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.33,
+      "value": 0.34,
       "threshold": 0.5,
-      "label": "P/S 0.7x ÷ Growth 2.1% = 0.33"
+      "label": "P/S 0.7x ÷ Growth 2.1% = 0.34"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 14.3,
-    "sectorPe": 16.99,
-    "pb": 2.26,
-    "ps": 0.7,
-    "evEbitda": 9.39,
-    "fcfYield": 13.52,
-    "forwardPe": 12.0,
-    "dividendYield": 5.0,
+    "pe": 14.47,
+    "sectorPe": 16.2,
+    "pb": 2.29,
+    "ps": 0.71,
+    "evEbitda": 9.47,
+    "fcfYield": 13.35,
+    "forwardPe": 12.14,
+    "dividendYield": 4.94,
     "revenueGrowth": 2.1,
     "profitMargin": 4.9,
     "operatingMargin": 8.54,

@@ -1,9 +1,9 @@
 {
   "ticker": "DMP",
   "name": "DOMINOS FPO [DMP]",
-  "price": 18.8,
-  "valuationScore": 4.3,
-  "marketCap": "1.8B",
+  "price": 20.3,
+  "valuationScore": -0.0,
+  "marketCap": "1.9B",
   "sector": "Consumer Cyclical",
   "domain": "dominos.com.au",
   "chartData": [
@@ -217,82 +217,82 @@
     },
     {
       "date": "2026-08-30",
-      "price": 18.8
+      "price": 20.3
     }
   ],
-  "testsPassed": 2,
+  "testsPassed": 1,
   "grade": "D",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": false,
-      "value": 29.38,
-      "threshold": 24.65,
-      "label": "29.4x vs 24.6x sector"
+      "passed": null,
+      "value": null,
+      "threshold": null,
+      "label": "Insufficient data"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.61,
+      "value": 2.81,
       "threshold": 1.5,
-      "label": "2.61x vs 1.5x"
+      "label": "2.81x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 14.43,
+      "value": 12.87,
       "threshold": 10.0,
-      "label": "14.4x vs 10x"
+      "label": "12.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 6.86,
+      "value": 11.62,
       "threshold": 5.0,
-      "label": "6.9% vs 5%"
+      "label": "11.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
-      "passed": true,
-      "value": 13.26,
-      "threshold": 29.38,
-      "label": "Fwd 13.3x vs Trail 29.4x"
+      "passed": null,
+      "value": 14.14,
+      "threshold": null,
+      "label": "Insufficient data"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": false,
-      "value": 2.65,
+      "value": -6.56,
       "threshold": 5.0,
-      "label": "Margin 2.6% / ROE 9.1%"
+      "label": "Margin -6.6% / ROE -23.9%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": -5.5,
+      "value": -17.1,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining -5.5%"
+      "label": "FAIL — Revenue declining -17.1%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": false,
-      "value": -5.5,
+      "value": -17.1,
       "threshold": -5.0,
-      "label": "-5.5% growth (floor: -5%)"
+      "label": "-17.1% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 29.38,
-    "sectorPe": 29.0,
-    "pb": 2.61,
-    "ps": 0.8,
-    "evEbitda": 14.43,
-    "fcfYield": 6.86,
-    "forwardPe": 13.26,
-    "dividendYield": 2.47,
-    "revenueGrowth": -5.5,
-    "profitMargin": 2.65,
-    "operatingMargin": 8.27,
-    "roe": 9.07,
-    "debtEquity": 180.99
+    "pe": null,
+    "sectorPe": 27.52,
+    "pb": 2.81,
+    "ps": 0.94,
+    "evEbitda": 12.87,
+    "fcfYield": 11.62,
+    "forwardPe": 14.14,
+    "dividendYield": 2.83,
+    "revenueGrowth": -17.1,
+    "profitMargin": -6.56,
+    "operatingMargin": 8.63,
+    "roe": -23.95,
+    "debtEquity": 245.3
   }
 }
