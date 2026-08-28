@@ -2,7 +2,7 @@
   "ticker": "TLS",
   "name": "TELSTRA FPO [TLS]",
   "price": 4.61,
-  "valuationScore": 1.9,
+  "valuationScore": 2.0,
   "marketCap": "—",
   "sector": "Telecom",
   "domain": "telstra.com.au",
@@ -220,27 +220,27 @@
       "price": 4.61
     }
   ],
-  "testsPassed": 4,
+  "testsPassed": 3,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 23.02,
-      "threshold": 18.03,
-      "label": "23.0x vs 18.0x sector"
+      "value": 23.05,
+      "threshold": 18.16,
+      "label": "23.1x vs 18.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.92,
+      "value": 3.93,
       "threshold": 1.5,
-      "label": "3.92x vs 1.5x"
+      "label": "3.93x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
-      "passed": true,
-      "value": 9.98,
+      "passed": false,
+      "value": 10.03,
       "threshold": 10.0,
       "label": "10.0x vs 10x"
     },
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 20.17,
-      "threshold": 23.02,
-      "label": "Fwd 20.2x vs Trail 23.0x"
+      "value": 20.19,
+      "threshold": 23.05,
+      "label": "Fwd 20.2x vs Trail 23.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 23.02,
-    "sectorPe": 21.21,
-    "pb": 3.92,
+    "pe": 23.05,
+    "sectorPe": 21.36,
+    "pb": 3.93,
     "ps": null,
-    "evEbitda": 9.98,
+    "evEbitda": 10.03,
     "fcfYield": null,
-    "forwardPe": 20.17,
-    "dividendYield": 4.59,
+    "forwardPe": 20.19,
+    "dividendYield": 4.56,
     "revenueGrowth": -2.0,
     "profitMargin": 9.77,
     "operatingMargin": 20.21,

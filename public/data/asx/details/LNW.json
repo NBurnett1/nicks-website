@@ -1,8 +1,8 @@
 {
   "ticker": "LNW",
   "name": "LIGHT & WO CDI 1:1 [LNW]",
-  "price": 130.97,
-  "valuationScore": 47.1,
+  "price": 130.71,
+  "valuationScore": 44.5,
   "marketCap": "9.8B",
   "sector": "Consumer Cyclical",
   "domain": "lnw.com",
@@ -217,46 +217,46 @@
     },
     {
       "date": "2026-08-30",
-      "price": 130.96
+      "price": 130.71
     }
   ],
-  "testsPassed": 4,
-  "grade": "C",
+  "testsPassed": 5,
+  "grade": "B",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": false,
+      "passed": true,
       "value": 27.63,
-      "threshold": 23.54,
-      "label": "27.6x vs 23.5x sector"
+      "threshold": 27.94,
+      "label": "27.6x vs 27.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 23.92,
+      "value": 23.88,
       "threshold": 1.5,
-      "label": "23.92x vs 1.5x"
+      "label": "23.88x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 11.82,
+      "value": 11.98,
       "threshold": 10.0,
-      "label": "11.8x vs 10x"
+      "label": "12.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 6.22,
+      "value": 6.23,
       "threshold": 5.0,
       "label": "6.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 10.55,
+      "value": 10.53,
       "threshold": 27.63,
-      "label": "Fwd 10.6x vs Trail 27.6x"
+      "label": "Fwd 10.5x vs Trail 27.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": 27.63,
-    "sectorPe": 27.69,
-    "pb": 23.92,
+    "sectorPe": 32.87,
+    "pb": 23.88,
     "ps": 2.92,
-    "evEbitda": 11.82,
-    "fcfYield": 6.22,
-    "forwardPe": 10.55,
+    "evEbitda": 11.98,
+    "fcfYield": 6.23,
+    "forwardPe": 10.53,
     "dividendYield": null,
     "revenueGrowth": 2.3,
     "profitMargin": 8.09,

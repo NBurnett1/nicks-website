@@ -1,8 +1,8 @@
 {
   "ticker": "HVN",
   "name": "HARVEY FPO [HVN]",
-  "price": 4.45,
-  "valuationScore": -12.3,
+  "price": 4.42,
+  "valuationScore": -7.3,
   "marketCap": "5.5B",
   "sector": "Consumer Discretionary",
   "domain": "harveynormanholdings.com.au",
@@ -217,82 +217,82 @@
     },
     {
       "date": "2026-08-30",
-      "price": 4.45
+      "price": 4.42
     }
   ],
-  "testsPassed": 7,
+  "testsPassed": 6,
   "grade": "A",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 9.89,
-      "threshold": 13.87,
-      "label": "9.9x vs 13.9x sector"
+      "value": 9.82,
+      "threshold": 13.93,
+      "label": "9.8x vs 13.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.13,
+      "value": 1.12,
       "threshold": 1.5,
-      "label": "1.13x vs 1.5x"
+      "label": "1.12x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 8.76,
+      "value": 7.84,
       "threshold": 10.0,
-      "label": "8.8x vs 10x"
+      "label": "7.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 13.63,
+      "value": 6.92,
       "threshold": 5.0,
-      "label": "13.6% vs 5%"
+      "label": "6.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 12.37,
-      "threshold": 9.89,
-      "label": "Fwd 12.4x vs Trail 9.9x"
+      "value": 11.67,
+      "threshold": 9.82,
+      "label": "Fwd 11.7x vs Trail 9.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": true,
-      "value": 18.12,
+      "value": 17.32,
       "threshold": 5.0,
-      "label": "Margin 18.1% / ROE 11.8%"
+      "label": "Margin 17.3% / ROE 11.0%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": true,
-      "value": 0.15,
+      "passed": false,
+      "value": -2.9,
       "threshold": 0.5,
-      "label": "P/S 1.8x ÷ Growth 11.6% = 0.15"
+      "label": "FAIL — Revenue declining -2.9%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": true,
-      "value": 11.6,
+      "value": -2.9,
       "threshold": -5.0,
-      "label": "11.6% growth (floor: -5%)"
+      "label": "-2.9% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 9.89,
-    "sectorPe": 16.31,
-    "pb": 1.13,
-    "ps": 1.79,
-    "evEbitda": 8.76,
-    "fcfYield": 13.63,
-    "forwardPe": 12.37,
-    "dividendYield": 6.44,
-    "revenueGrowth": 11.6,
-    "profitMargin": 18.12,
-    "operatingMargin": 26.54,
-    "roe": 11.78,
-    "debtEquity": 49.8
+    "pe": 9.82,
+    "sectorPe": 16.39,
+    "pb": 1.12,
+    "ps": 1.8,
+    "evEbitda": 7.84,
+    "fcfYield": 6.92,
+    "forwardPe": 11.67,
+    "dividendYield": 6.56,
+    "revenueGrowth": -2.9,
+    "profitMargin": 17.32,
+    "operatingMargin": 32.84,
+    "roe": 10.98,
+    "debtEquity": 52.34
   }
 }

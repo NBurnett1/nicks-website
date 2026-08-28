@@ -1,9 +1,9 @@
 {
   "ticker": "SBM",
   "name": "ST.BARBARA FPO [SBM]",
-  "price": 0.79,
-  "valuationScore": 25.9,
-  "marketCap": "950M",
+  "price": 0.8,
+  "valuationScore": -20.8,
+  "marketCap": "968M",
   "sector": "Basic Materials",
   "domain": "stbarbara.com.au",
   "chartData": [
@@ -217,10 +217,10 @@
     },
     {
       "date": "2026-08-30",
-      "price": 0.79
+      "price": 0.8
     }
   ],
-  "testsPassed": 2,
+  "testsPassed": 1,
   "grade": "D",
   "valuationTests": {
     "peDiscount": {
@@ -233,66 +233,66 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.19,
+      "value": 2.23,
       "threshold": 1.5,
-      "label": "2.19x vs 1.5x"
+      "label": "2.23x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
-      "passed": false,
-      "value": 49.31,
+      "passed": null,
+      "value": null,
       "threshold": 10.0,
-      "label": "49.3x vs 10x"
+      "label": "No EV/EBITDA data"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -6.42,
+      "value": 1.81,
       "threshold": 5.0,
-      "label": "-6.4% vs 5%"
+      "label": "1.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 11.83,
+      "value": 33.66,
       "threshold": null,
       "label": "Insufficient data"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
-      "passed": false,
-      "value": -18.42,
+      "passed": true,
+      "value": 13508.44,
       "threshold": 5.0,
-      "label": "Margin -18.4% / ROE -1.5%"
+      "label": "Margin 13508.4% / ROE 72.4%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": true,
-      "value": 0.12,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 3.8x ÷ Growth 32.4% = 0.12"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
-      "passed": true,
-      "value": 32.4,
+      "passed": null,
+      "value": null,
       "threshold": -5.0,
-      "label": "32.4% growth (floor: -5%)"
+      "label": "No revenue data"
     }
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 25.23,
-    "pb": 2.19,
-    "ps": 3.84,
-    "evEbitda": 49.31,
-    "fcfYield": -6.42,
-    "forwardPe": 11.83,
+    "sectorPe": 25.27,
+    "pb": 2.23,
+    "ps": 266.99,
+    "evEbitda": -34.82,
+    "fcfYield": 1.81,
+    "forwardPe": 33.66,
     "dividendYield": null,
-    "revenueGrowth": 32.4,
-    "profitMargin": -18.42,
-    "operatingMargin": 2.19,
-    "roe": -1.46,
-    "debtEquity": 0.66
+    "revenueGrowth": null,
+    "profitMargin": 13508.44,
+    "operatingMargin": -852.3,
+    "roe": 72.44,
+    "debtEquity": 0.21
   }
 }

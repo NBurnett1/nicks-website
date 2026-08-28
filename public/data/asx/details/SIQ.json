@@ -1,7 +1,7 @@
 {
   "ticker": "SIQ",
   "name": "SMARTGROUP FPO [SIQ]",
-  "price": 10.43,
+  "price": 10.56,
   "valuationScore": 1.0,
   "marketCap": "1.4B",
   "sector": "Industrials",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-30",
-      "price": 10.43
+      "price": 10.56
     }
   ],
   "testsPassed": 5,
@@ -226,73 +226,73 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 16.29,
-      "threshold": 19.44,
-      "label": "16.3x vs 19.4x sector"
+      "value": 16.5,
+      "threshold": 19.52,
+      "label": "16.5x vs 19.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.89,
+      "value": 4.95,
       "threshold": 1.5,
-      "label": "4.89x vs 1.5x"
+      "label": "4.95x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 13.69,
+      "value": 10.37,
       "threshold": 10.0,
-      "label": "13.7x vs 10x"
+      "label": "10.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": true,
-      "value": 5.23,
+      "passed": false,
+      "value": 4.09,
       "threshold": 5.0,
-      "label": "5.2% vs 5%"
+      "label": "4.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.61,
-      "threshold": 16.29,
-      "label": "Fwd 14.6x vs Trail 16.3x"
+      "value": 14.63,
+      "threshold": 16.5,
+      "label": "Fwd 14.6x vs Trail 16.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": true,
-      "value": 24.12,
+      "value": 23.94,
       "threshold": 5.0,
-      "label": "Margin 24.1% / ROE 29.7%"
+      "label": "Margin 23.9% / ROE 31.0%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": 0.5,
+      "passed": true,
+      "value": 0.31,
       "threshold": 0.5,
-      "label": "P/S 4.1x ÷ Growth 8.2% = 0.50"
+      "label": "P/S 3.9x ÷ Growth 12.8% = 0.31"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": true,
-      "value": 8.2,
+      "value": 12.8,
       "threshold": -5.0,
-      "label": "8.2% growth (floor: -5%)"
+      "label": "12.8% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 16.29,
-    "sectorPe": 22.87,
-    "pb": 4.89,
-    "ps": 4.11,
-    "evEbitda": 13.69,
-    "fcfYield": 5.23,
-    "forwardPe": 14.61,
-    "dividendYield": 3.32,
-    "revenueGrowth": 8.2,
-    "profitMargin": 24.12,
-    "operatingMargin": 37.17,
-    "roe": 29.68,
-    "debtEquity": 32.91
+    "pe": 16.5,
+    "sectorPe": 22.96,
+    "pb": 4.95,
+    "ps": 3.93,
+    "evEbitda": 10.37,
+    "fcfYield": 4.09,
+    "forwardPe": 14.63,
+    "dividendYield": 4.07,
+    "revenueGrowth": 12.8,
+    "profitMargin": 23.94,
+    "operatingMargin": 35.04,
+    "roe": 30.98,
+    "debtEquity": 32.04
   }
 }

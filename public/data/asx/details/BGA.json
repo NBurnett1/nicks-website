@@ -1,8 +1,8 @@
 {
   "ticker": "BGA",
   "name": "BEGA FPO [BGA]",
-  "price": 6.16,
-  "valuationScore": 0.9,
+  "price": 6.11,
+  "valuationScore": 0.7,
   "marketCap": "1.9B",
   "sector": "Consumer Staples",
   "domain": "begagroup.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-30",
-      "price": 6.16
+      "price": 6.11
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 34.22,
-      "threshold": 24.66,
-      "label": "34.2x vs 24.7x sector"
+      "value": 33.94,
+      "threshold": 24.98,
+      "label": "33.9x vs 25.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.89,
+      "value": 1.87,
       "threshold": 1.5,
-      "label": "1.89x vs 1.5x"
+      "label": "1.87x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 12.4,
+      "value": 12.37,
       "threshold": 10.0,
       "label": "12.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 1.69,
+      "value": 1.7,
       "threshold": 5.0,
       "label": "1.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 20.54,
-      "threshold": 34.22,
-      "label": "Fwd 20.5x vs Trail 34.2x"
+      "value": 20.37,
+      "threshold": 33.94,
+      "label": "Fwd 20.4x vs Trail 33.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 34.22,
-    "sectorPe": 29.01,
-    "pb": 1.89,
-    "ps": 0.5,
-    "evEbitda": 12.4,
-    "fcfYield": 1.69,
-    "forwardPe": 20.54,
+    "pe": 33.94,
+    "sectorPe": 29.38,
+    "pb": 1.87,
+    "ps": 0.49,
+    "evEbitda": 12.37,
+    "fcfYield": 1.7,
+    "forwardPe": 20.37,
     "dividendYield": 2.45,
     "revenueGrowth": 8.3,
     "profitMargin": 1.45,
