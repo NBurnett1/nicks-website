@@ -1,9 +1,9 @@
 {
   "ticker": "QBE",
   "name": "QBE INSUR. FPO [QBE]",
-  "price": 21.93,
-  "valuationScore": -4.6,
-  "marketCap": "32.8B",
+  "price": 21.89,
+  "valuationScore": -2.2,
+  "marketCap": "—",
   "sector": "Financials",
   "domain": "qbe.com",
   "chartData": [
@@ -217,18 +217,18 @@
     },
     {
       "date": "2026-08-30",
-      "price": 21.93
+      "price": 21.89
     }
   ],
-  "testsPassed": 6,
-  "grade": "A",
+  "testsPassed": 4,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 11.08,
-      "threshold": 16.14,
-      "label": "11.1x vs 16.1x sector"
+      "value": 11.05,
+      "threshold": 16.04,
+      "label": "11.1x vs 16.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,22 +240,22 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 9.64,
+      "value": 9.71,
       "threshold": 10.0,
-      "label": "9.6x vs 10x"
+      "label": "9.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": true,
-      "value": 10.51,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "10.5% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 11.17,
-      "threshold": 11.08,
+      "value": 11.15,
+      "threshold": 11.05,
       "label": "Fwd 11.2x vs Trail 11.1x"
     },
     "profitabilityCheck": {
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": true,
-      "value": 0.2,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 1.7x ÷ Growth 8.3% = 0.20"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 11.08,
-    "sectorPe": 18.99,
+    "pe": 11.05,
+    "sectorPe": 18.87,
     "pb": 2.02,
-    "ps": 1.68,
-    "evEbitda": 9.64,
-    "fcfYield": 10.51,
-    "forwardPe": 11.17,
+    "ps": null,
+    "evEbitda": 9.71,
+    "fcfYield": null,
+    "forwardPe": 11.15,
     "dividendYield": 5.06,
     "revenueGrowth": 8.3,
     "profitMargin": 11.15,

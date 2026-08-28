@@ -2,8 +2,8 @@
   "ticker": "BPT",
   "name": "BEACH FPO [BPT]",
   "price": 0.86,
-  "valuationScore": 15.1,
-  "marketCap": "2.0B",
+  "valuationScore": -8.3,
+  "marketCap": "—",
   "sector": "Energy",
   "domain": "beachenergy.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-30",
-      "price": 0.85
+      "price": 0.86
     }
   ],
   "testsPassed": 5,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 7.21,
-      "threshold": 18.53,
-      "label": "7.2x vs 18.5x sector"
+      "value": 7.14,
+      "threshold": 18.57,
+      "label": "7.1x vs 18.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -246,17 +246,17 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": -7.81,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "-7.8% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 5.68,
-      "threshold": 7.21,
-      "label": "Fwd 5.7x vs Trail 7.2x"
+      "value": 5.63,
+      "threshold": 7.14,
+      "label": "Fwd 5.6x vs Trail 7.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": -17.1,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining -17.1%"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 7.21,
-    "sectorPe": 21.8,
+    "pe": 7.14,
+    "sectorPe": 21.84,
     "pb": 0.6,
-    "ps": 1.03,
+    "ps": null,
     "evEbitda": 2.76,
-    "fcfYield": -7.81,
-    "forwardPe": 5.68,
+    "fcfYield": null,
+    "forwardPe": 5.63,
     "dividendYield": 4.62,
     "revenueGrowth": -17.1,
     "profitMargin": 14.65,

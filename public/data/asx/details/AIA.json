@@ -1,8 +1,8 @@
 {
   "ticker": "AIA",
   "name": "AUCK AIRPT FPO NZX [AIA]",
-  "price": 7.09,
-  "valuationScore": 11.3,
+  "price": 7.1,
+  "valuationScore": 11.1,
   "marketCap": "12.1B",
   "sector": "Industrials",
   "domain": "aucklandairport.co.nz",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-30",
-      "price": 7.09
+      "price": 7.1
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 44.31,
-      "threshold": 19.63,
-      "label": "44.3x vs 19.6x sector"
+      "value": 44.38,
+      "threshold": 19.44,
+      "label": "44.4x vs 19.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.33,
+      "value": 1.35,
       "threshold": 1.5,
-      "label": "1.33x vs 1.5x"
+      "label": "1.35x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 21.09,
+      "value": 20.85,
       "threshold": 10.0,
-      "label": "21.1x vs 10x"
+      "label": "20.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -4.83,
+      "value": -4.82,
       "threshold": 5.0,
       "label": "-4.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 38.28,
-      "threshold": 44.31,
-      "label": "Fwd 38.3x vs Trail 44.3x"
+      "value": 38.62,
+      "threshold": 44.38,
+      "label": "Fwd 38.6x vs Trail 44.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 44.31,
-    "sectorPe": 23.1,
-    "pb": 1.33,
-    "ps": 12.11,
-    "evEbitda": 21.09,
-    "fcfYield": -4.83,
-    "forwardPe": 38.28,
+    "pe": 44.38,
+    "sectorPe": 22.87,
+    "pb": 1.35,
+    "ps": 12.13,
+    "evEbitda": 20.85,
+    "fcfYield": -4.82,
+    "forwardPe": 38.62,
     "dividendYield": 1.56,
     "revenueGrowth": 2.7,
     "profitMargin": 33.63,

@@ -1,9 +1,9 @@
 {
   "ticker": "WBC",
   "name": "WESTPAC FPO [WBC]",
-  "price": 33.68,
-  "valuationScore": -1.0,
-  "marketCap": "115.0B",
+  "price": 33.83,
+  "valuationScore": -0.7,
+  "marketCap": "115.5B",
   "sector": "Financials",
   "domain": "westpac.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-30",
-      "price": 33.68
+      "price": 33.83
     }
   ],
   "testsPassed": 3,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 16.59,
-      "threshold": 16.14,
-      "label": "16.6x vs 16.1x sector"
+      "value": 16.67,
+      "threshold": 16.04,
+      "label": "16.7x vs 16.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 15.76,
-      "threshold": 16.59,
-      "label": "Fwd 15.8x vs Trail 16.6x"
+      "value": 15.83,
+      "threshold": 16.67,
+      "label": "Fwd 15.8x vs Trail 16.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 3.44,
+      "value": 3.46,
       "threshold": 0.5,
-      "label": "P/S 5.2x ÷ Growth 1.5% = 3.44"
+      "label": "P/S 5.2x ÷ Growth 1.5% = 3.46"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 16.59,
-    "sectorPe": 18.99,
+    "pe": 16.67,
+    "sectorPe": 18.87,
     "pb": 1.63,
-    "ps": 5.17,
+    "ps": 5.19,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 15.76,
+    "forwardPe": 15.83,
     "dividendYield": 4.57,
     "revenueGrowth": 1.5,
     "profitMargin": 31.5,

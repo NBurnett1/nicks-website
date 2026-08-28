@@ -1,9 +1,9 @@
 {
   "ticker": "ORG",
   "name": "ORIGIN ENE FPO [ORG]",
-  "price": 11.71,
-  "valuationScore": -5.9,
-  "marketCap": "20.2B",
+  "price": 11.7,
+  "valuationScore": 0.1,
+  "marketCap": "20.1B",
   "sector": "Energy",
   "domain": "originenergy.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-08-30",
-      "price": 11.71
+      "price": 11.69
     }
   ],
   "testsPassed": 2,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 12.87,
-      "threshold": 18.53,
-      "label": "12.9x vs 18.5x sector"
+      "value": 12.85,
+      "threshold": 18.57,
+      "label": "12.9x vs 18.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -254,8 +254,8 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 20.13,
-      "threshold": 12.87,
+      "value": 20.1,
+      "threshold": 12.85,
       "label": "Fwd 20.1x vs Trail 12.9x"
     },
     "profitabilityCheck": {
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 12.87,
-    "sectorPe": 21.8,
+    "pe": 12.85,
+    "sectorPe": 21.84,
     "pb": 2.07,
     "ps": 1.29,
     "evEbitda": 14.14,
     "fcfYield": 4.06,
-    "forwardPe": 20.13,
+    "forwardPe": 20.1,
     "dividendYield": 5.12,
     "revenueGrowth": -10.2,
     "profitMargin": 10.08,
