@@ -2,8 +2,8 @@
   "ticker": "ORI",
   "name": "ORICA FPO [ORI]",
   "price": 21.98,
-  "valuationScore": 3.4,
-  "marketCap": "—",
+  "valuationScore": 1.2,
+  "marketCap": "10.2B",
   "sector": "Basic Materials",
   "domain": "orica.com",
   "chartData": [
@@ -220,7 +220,7 @@
       "price": 21.98
     }
   ],
-  "testsPassed": 3,
+  "testsPassed": 4,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
@@ -246,10 +246,10 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": null,
-      "value": null,
+      "passed": true,
+      "value": 7.89,
       "threshold": 5.0,
-      "label": "No FCF data"
+      "label": "7.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": -1.7,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "FAIL — Revenue declining -1.7%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -284,9 +284,9 @@
     "pe": 43.1,
     "sectorPe": 25.27,
     "pb": 2.73,
-    "ps": null,
+    "ps": 1.26,
     "evEbitda": 9.28,
-    "fcfYield": null,
+    "fcfYield": 7.89,
     "forwardPe": 15.95,
     "dividendYield": 2.75,
     "revenueGrowth": -1.7,
