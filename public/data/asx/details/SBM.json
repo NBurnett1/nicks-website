@@ -1,16 +1,12 @@
 {
   "ticker": "SBM",
   "name": "ST.BARBARA FPO [SBM]",
-  "price": 0.8,
-  "valuationScore": -20.8,
-  "marketCap": "968M",
+  "price": 0.77,
+  "valuationScore": -9.5,
+  "marketCap": "932M",
   "sector": "Basic Materials",
   "domain": "stbarbara.com.au",
   "chartData": [
-    {
-      "date": "2025-08-31",
-      "price": 0.35
-    },
     {
       "date": "2025-09-07",
       "price": 0.38
@@ -220,8 +216,8 @@
       "price": 0.8
     }
   ],
-  "testsPassed": 1,
-  "grade": "D",
+  "testsPassed": 0,
+  "grade": "F",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -233,9 +229,9 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.23,
+      "value": 2.14,
       "threshold": 1.5,
-      "label": "2.23x vs 1.5x"
+      "label": "2.14x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,23 +243,23 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 1.81,
+      "value": -3.25,
       "threshold": 5.0,
-      "label": "1.8% vs 5%"
+      "label": "-3.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 33.66,
+      "value": 32.39,
       "threshold": null,
       "label": "Insufficient data"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
-      "passed": true,
+      "passed": false,
       "value": 13508.44,
       "threshold": 5.0,
-      "label": "Margin 13508.4% / ROE 72.4%"
+      "label": "Margin 13508.4% / ROE -4.3%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
@@ -282,17 +278,17 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 25.27,
-    "pb": 2.23,
-    "ps": 266.99,
-    "evEbitda": -34.82,
-    "fcfYield": 1.81,
-    "forwardPe": 33.66,
+    "sectorPe": 25.46,
+    "pb": 2.14,
+    "ps": 256.98,
+    "evEbitda": -18.63,
+    "fcfYield": -3.25,
+    "forwardPe": 32.39,
     "dividendYield": 6.25,
     "revenueGrowth": null,
     "profitMargin": 13508.44,
-    "operatingMargin": -852.3,
-    "roe": 72.44,
+    "operatingMargin": -873.74,
+    "roe": -4.27,
     "debtEquity": 0.21
   }
 }

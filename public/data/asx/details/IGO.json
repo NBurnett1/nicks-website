@@ -1,16 +1,12 @@
 {
   "ticker": "IGO",
   "name": "IGOLIMITED FPO [IGO]",
-  "price": 8.58,
-  "valuationScore": 60.0,
-  "marketCap": "6.5B",
+  "price": 8.69,
+  "valuationScore": 47.7,
+  "marketCap": "6.6B",
   "sector": "Materials",
   "domain": "igo.com.au",
   "chartData": [
-    {
-      "date": "2025-08-31",
-      "price": 5.22
-    },
     {
       "date": "2025-09-07",
       "price": 4.85
@@ -220,79 +216,79 @@
       "price": 8.58
     }
   ],
-  "testsPassed": 1,
+  "testsPassed": 2,
   "grade": "D",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 45.16,
-      "threshold": 15.69,
-      "label": "45.2x vs 15.7x sector"
+      "value": 45.74,
+      "threshold": 15.89,
+      "label": "45.7x vs 15.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.15,
+      "value": 3.19,
       "threshold": 1.5,
-      "label": "3.15x vs 1.5x"
+      "label": "3.19x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 239.64,
+      "value": 116.17,
       "threshold": 10.0,
-      "label": "239.6x vs 10x"
+      "label": "116.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.61,
+      "value": 2.85,
       "threshold": 5.0,
-      "label": "2.6% vs 5%"
+      "label": "2.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 13.92,
-      "threshold": 45.16,
-      "label": "Fwd 13.9x vs Trail 45.2x"
+      "value": 14.1,
+      "threshold": 45.74,
+      "label": "Fwd 14.1x vs Trail 45.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": false,
-      "value": -47.18,
+      "value": 31.39,
       "threshold": 5.0,
-      "label": "Margin -47.2% / ROE -9.5%"
+      "label": "Margin 31.4% / ROE 6.7%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": -31.7,
+      "value": 1.38,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining -31.7%"
+      "label": "P/S 14.2x ÷ Growth 10.3% = 1.38"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
-      "passed": false,
-      "value": -31.7,
+      "passed": true,
+      "value": 10.3,
       "threshold": -5.0,
-      "label": "-31.7% growth (floor: -5%)"
+      "label": "10.3% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 45.16,
-    "sectorPe": 18.46,
-    "pb": 3.15,
-    "ps": 14.84,
-    "evEbitda": 239.64,
-    "fcfYield": 2.61,
-    "forwardPe": 13.92,
-    "dividendYield": null,
-    "revenueGrowth": -31.7,
-    "profitMargin": -47.18,
-    "operatingMargin": -42.66,
-    "roe": -9.54,
-    "debtEquity": 1.02
+    "pe": 45.74,
+    "sectorPe": 18.69,
+    "pb": 3.19,
+    "ps": 14.22,
+    "evEbitda": 116.17,
+    "fcfYield": 2.85,
+    "forwardPe": 14.1,
+    "dividendYield": 0.58,
+    "revenueGrowth": 10.3,
+    "profitMargin": 31.39,
+    "operatingMargin": -11.98,
+    "roe": 6.71,
+    "debtEquity": 0.75
   }
 }

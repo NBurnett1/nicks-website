@@ -1,16 +1,12 @@
 {
   "ticker": "REH",
   "name": "REECE FPO [REH]",
-  "price": 16.36,
-  "valuationScore": 3.4,
-  "marketCap": "10.1B",
+  "price": 16.83,
+  "valuationScore": 3.9,
+  "marketCap": "10.4B",
   "sector": "Industrials",
   "domain": "reece.com.au",
   "chartData": [
-    {
-      "date": "2025-08-31",
-      "price": 11.0
-    },
     {
       "date": "2025-09-07",
       "price": 10.28
@@ -220,22 +216,22 @@
       "price": 16.36
     }
   ],
-  "testsPassed": 4,
+  "testsPassed": 3,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 32.72,
-      "threshold": 19.52,
-      "label": "32.7x vs 19.5x sector"
+      "value": 33.66,
+      "threshold": 19.45,
+      "label": "33.7x vs 19.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.68,
+      "value": 2.76,
       "threshold": 1.5,
-      "label": "2.68x vs 1.5x"
+      "label": "2.76x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -246,17 +242,17 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": true,
-      "value": 5.01,
+      "passed": false,
+      "value": 4.87,
       "threshold": 5.0,
-      "label": "5.0% vs 5%"
+      "label": "4.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 26.59,
-      "threshold": 32.72,
-      "label": "Fwd 26.6x vs Trail 32.7x"
+      "value": 27.35,
+      "threshold": 33.66,
+      "label": "Fwd 27.3x vs Trail 33.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +277,13 @@
     }
   },
   "metrics": {
-    "pe": 32.72,
-    "sectorPe": 22.96,
-    "pb": 2.68,
-    "ps": 1.07,
+    "pe": 33.66,
+    "sectorPe": 22.88,
+    "pb": 2.76,
+    "ps": 1.1,
     "evEbitda": 17.15,
-    "fcfYield": 5.01,
-    "forwardPe": 26.59,
+    "fcfYield": 4.87,
+    "forwardPe": 27.35,
     "dividendYield": 1.15,
     "revenueGrowth": 3.4,
     "profitMargin": 3.29,
