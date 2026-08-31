@@ -2,7 +2,7 @@
   "ticker": "CAR",
   "name": "CAR GROUP FPO [CAR]",
   "price": 27.65,
-  "valuationScore": -3.7,
+  "valuationScore": -4.7,
   "marketCap": "10.5B",
   "sector": "Technology",
   "domain": "cargroup.com",
@@ -216,15 +216,15 @@
       "price": 27.57
     }
   ],
-  "testsPassed": 3,
+  "testsPassed": 4,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": false,
+      "passed": true,
       "value": 33.31,
-      "threshold": 29.48,
-      "label": "33.3x vs 29.5x sector"
+      "threshold": 37.96,
+      "label": "33.3x vs 38.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -278,7 +278,7 @@
   },
   "metrics": {
     "pe": 33.31,
-    "sectorPe": 34.68,
+    "sectorPe": 44.66,
     "pb": 3.82,
     "ps": 8.36,
     "evEbitda": 20.54,

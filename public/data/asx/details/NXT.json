@@ -2,7 +2,7 @@
   "ticker": "NXT",
   "name": "NEXTDC FPO [NXT]",
   "price": 13.81,
-  "valuationScore": 35.8,
+  "valuationScore": 42.9,
   "marketCap": "10.5B",
   "sector": "Technology",
   "domain": "nextdc.com",
@@ -221,10 +221,10 @@
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": null,
-      "value": null,
-      "threshold": null,
-      "label": "Insufficient data"
+      "passed": false,
+      "value": 115.08,
+      "threshold": 37.96,
+      "label": "115.1x vs 38.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -250,8 +250,8 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": -32.7,
-      "threshold": null,
+      "value": -51.6,
+      "threshold": 115.08,
       "label": "Insufficient data"
     },
     "profitabilityCheck": {
@@ -277,13 +277,13 @@
     }
   },
   "metrics": {
-    "pe": null,
-    "sectorPe": 34.68,
+    "pe": 115.08,
+    "sectorPe": 44.66,
     "pb": 1.72,
     "ps": 21.15,
     "evEbitda": 68.9,
     "fcfYield": -16.4,
-    "forwardPe": -32.7,
+    "forwardPe": -51.6,
     "dividendYield": null,
     "revenueGrowth": 19.4,
     "profitMargin": 16.53,

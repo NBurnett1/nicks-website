@@ -2,7 +2,7 @@
   "ticker": "REA",
   "name": "REA GROUP FPO [REA]",
   "price": 177.24,
-  "valuationScore": 7.0,
+  "valuationScore": 6.0,
   "marketCap": "23.2B",
   "sector": "Technology",
   "domain": "rea-group.com",
@@ -216,15 +216,15 @@
       "price": 176.32
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": false,
-      "value": 34.68,
-      "threshold": 29.48,
-      "label": "34.7x vs 29.5x sector"
+      "passed": true,
+      "value": 34.75,
+      "threshold": 37.96,
+      "label": "34.8x vs 38.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -251,8 +251,8 @@
       "name": "Forward P/E Re-rating",
       "passed": true,
       "value": 26.98,
-      "threshold": 34.68,
-      "label": "Fwd 27.0x vs Trail 34.7x"
+      "threshold": 34.75,
+      "label": "Fwd 27.0x vs Trail 34.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -277,8 +277,8 @@
     }
   },
   "metrics": {
-    "pe": 34.68,
-    "sectorPe": 34.68,
+    "pe": 34.75,
+    "sectorPe": 44.66,
     "pb": 12.21,
     "ps": 11.73,
     "evEbitda": 22.94,
