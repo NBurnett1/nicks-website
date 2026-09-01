@@ -1,9 +1,9 @@
 {
   "ticker": "ORG",
   "name": "ORIGIN ENE FPO [ORG]",
-  "price": 11.62,
-  "valuationScore": -0.1,
-  "marketCap": "20.0B",
+  "price": 11.7,
+  "valuationScore": -6.5,
+  "marketCap": "20.2B",
   "sector": "Energy",
   "domain": "originenergy.com.au",
   "chartData": [
@@ -214,6 +214,10 @@
     {
       "date": "2026-08-30",
       "price": 11.71
+    },
+    {
+      "date": "2026-09-06",
+      "price": 11.7
     }
   ],
   "testsPassed": 2,
@@ -222,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 12.77,
-      "threshold": 18.92,
-      "label": "12.8x vs 18.9x sector"
+      "value": 12.86,
+      "threshold": 19.0,
+      "label": "12.9x vs 19.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.05,
+      "value": 2.07,
       "threshold": 1.5,
-      "label": "2.05x vs 1.5x"
+      "label": "2.07x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 14.14,
+      "value": 14.05,
       "threshold": 10.0,
       "label": "14.1x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.09,
+      "value": 4.06,
       "threshold": 5.0,
       "label": "4.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 19.98,
-      "threshold": 12.77,
-      "label": "Fwd 20.0x vs Trail 12.8x"
+      "value": 20.11,
+      "threshold": 12.86,
+      "label": "Fwd 20.1x vs Trail 12.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -277,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 12.77,
-    "sectorPe": 22.26,
-    "pb": 2.05,
-    "ps": 1.28,
-    "evEbitda": 14.14,
-    "fcfYield": 4.09,
-    "forwardPe": 19.98,
-    "dividendYield": 5.12,
+    "pe": 12.86,
+    "sectorPe": 22.35,
+    "pb": 2.07,
+    "ps": 1.29,
+    "evEbitda": 14.05,
+    "fcfYield": 4.06,
+    "forwardPe": 20.11,
+    "dividendYield": 5.13,
     "revenueGrowth": -10.2,
     "profitMargin": 10.08,
     "operatingMargin": 9.47,

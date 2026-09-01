@@ -214,6 +214,10 @@
     {
       "date": "2026-08-30",
       "price": 11.82
+    },
+    {
+      "date": "2026-09-06",
+      "price": 11.61
     }
   ],
   "testsPassed": 3,
@@ -223,8 +227,8 @@
       "name": "P/E Discount",
       "passed": false,
       "value": 580.5,
-      "threshold": 18.92,
-      "label": "580.5x vs 18.9x sector"
+      "threshold": 19.0,
+      "label": "580.5x vs 19.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -250,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 31.63,
+      "value": 32.3,
       "threshold": 580.5,
-      "label": "Fwd 31.6x vs Trail 580.5x"
+      "label": "Fwd 32.3x vs Trail 580.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -278,12 +282,12 @@
   },
   "metrics": {
     "pe": 580.5,
-    "sectorPe": 22.26,
+    "sectorPe": 22.35,
     "pb": 3.18,
     "ps": 17.14,
     "evEbitda": 64.93,
     "fcfYield": 0.08,
-    "forwardPe": 31.63,
+    "forwardPe": 32.3,
     "dividendYield": null,
     "revenueGrowth": 141.5,
     "profitMargin": 1.75,

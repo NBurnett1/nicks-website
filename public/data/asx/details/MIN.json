@@ -1,9 +1,9 @@
 {
   "ticker": "MIN",
   "name": "MINERALRES FPO [MIN]",
-  "price": 64.63,
+  "price": 65.0,
   "valuationScore": -3.3,
-  "marketCap": "12.8B",
+  "marketCap": "12.9B",
   "sector": "Materials",
   "domain": "mineralresources.com.au",
   "chartData": [
@@ -214,6 +214,10 @@
     {
       "date": "2026-08-30",
       "price": 65.46
+    },
+    {
+      "date": "2026-09-06",
+      "price": 65.0
     }
   ],
   "testsPassed": 5,
@@ -222,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 12.13,
-      "threshold": 15.86,
-      "label": "12.1x vs 15.9x sector"
+      "value": 12.17,
+      "threshold": 15.94,
+      "label": "12.2x vs 15.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.93,
+      "value": 2.95,
       "threshold": 1.5,
-      "label": "2.93x vs 1.5x"
+      "label": "2.95x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 7.21,
+      "value": 7.14,
       "threshold": 10.0,
-      "label": "7.2x vs 10x"
+      "label": "7.1x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.21,
+      "value": 4.19,
       "threshold": 5.0,
       "label": "4.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 18.1,
-      "threshold": 12.13,
-      "label": "Fwd 18.1x vs Trail 12.1x"
+      "value": 18.2,
+      "threshold": 12.17,
+      "label": "Fwd 18.2x vs Trail 12.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -277,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 12.13,
-    "sectorPe": 18.66,
-    "pb": 2.93,
-    "ps": 1.99,
-    "evEbitda": 7.21,
-    "fcfYield": 4.21,
-    "forwardPe": 18.1,
-    "dividendYield": 1.27,
+    "pe": 12.17,
+    "sectorPe": 18.76,
+    "pb": 2.95,
+    "ps": 2.0,
+    "evEbitda": 7.14,
+    "fcfYield": 4.19,
+    "forwardPe": 18.2,
+    "dividendYield": 1.28,
     "revenueGrowth": 56.2,
     "profitMargin": 16.42,
     "operatingMargin": 25.84,

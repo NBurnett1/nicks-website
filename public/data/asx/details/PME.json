@@ -1,9 +1,9 @@
 {
   "ticker": "PME",
   "name": "PROMEDICUS FPO [PME]",
-  "price": 179.39,
+  "price": 176.42,
   "valuationScore": 60.0,
-  "marketCap": "18.7B",
+  "marketCap": "18.4B",
   "sector": "Healthcare",
   "domain": "promed.com.au",
   "chartData": [
@@ -214,6 +214,10 @@
     {
       "date": "2026-08-30",
       "price": 181.48
+    },
+    {
+      "date": "2026-09-06",
+      "price": 176.42
     }
   ],
   "testsPassed": 2,
@@ -222,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 70.91,
-      "threshold": 25.71,
-      "label": "70.9x vs 25.7x sector"
+      "value": 69.46,
+      "threshold": 25.98,
+      "label": "69.5x vs 26.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 41.56,
+      "value": 40.88,
       "threshold": 1.5,
-      "label": "41.56x vs 1.5x"
+      "label": "40.88x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 95.22,
+      "value": 94.11,
       "threshold": 10.0,
-      "label": "95.2x vs 10x"
+      "label": "94.1x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 0.53,
+      "value": 0.54,
       "threshold": 5.0,
       "label": "0.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 78.59,
-      "threshold": 70.91,
-      "label": "Fwd 78.6x vs Trail 70.9x"
+      "value": 77.29,
+      "threshold": 69.46,
+      "label": "Fwd 77.3x vs Trail 69.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 3.93,
+      "value": 3.87,
       "threshold": 0.5,
-      "label": "P/S 71.6x ÷ Growth 18.2% = 3.93"
+      "label": "P/S 70.4x ÷ Growth 18.2% = 3.87"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -277,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 70.91,
-    "sectorPe": 30.25,
-    "pb": 41.56,
-    "ps": 71.62,
-    "evEbitda": 95.22,
-    "fcfYield": 0.53,
-    "forwardPe": 78.59,
-    "dividendYield": 0.38,
+    "pe": 69.46,
+    "sectorPe": 30.57,
+    "pb": 40.88,
+    "ps": 70.43,
+    "evEbitda": 94.11,
+    "fcfYield": 0.54,
+    "forwardPe": 77.29,
+    "dividendYield": 0.39,
     "revenueGrowth": 18.2,
     "profitMargin": 101.4,
     "operatingMargin": 77.02,

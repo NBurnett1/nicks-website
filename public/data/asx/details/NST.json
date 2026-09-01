@@ -1,9 +1,9 @@
 {
   "ticker": "NST",
   "name": "NTH STAR FPO [NST]",
-  "price": 23.44,
-  "valuationScore": 1.2,
-  "marketCap": "33.4B",
+  "price": 23.69,
+  "valuationScore": 1.1,
+  "marketCap": "33.8B",
   "sector": "Materials",
   "domain": "nsrltd.com",
   "chartData": [
@@ -214,6 +214,10 @@
     {
       "date": "2026-08-30",
       "price": 24.78
+    },
+    {
+      "date": "2026-09-06",
+      "price": 23.69
     }
   ],
   "testsPassed": 5,
@@ -222,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 20.21,
-      "threshold": 15.86,
-      "label": "20.2x vs 15.9x sector"
+      "value": 20.42,
+      "threshold": 15.94,
+      "label": "20.4x vs 15.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.13,
+      "value": 2.15,
       "threshold": 1.5,
-      "label": "2.13x vs 1.5x"
+      "label": "2.15x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 8.68,
+      "value": 8.21,
       "threshold": 10.0,
-      "label": "8.7x vs 10x"
+      "label": "8.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 1.15,
+      "value": 1.14,
       "threshold": 5.0,
       "label": "1.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 10.68,
-      "threshold": 20.21,
-      "label": "Fwd 10.7x vs Trail 20.2x"
+      "value": 10.8,
+      "threshold": 20.42,
+      "label": "Fwd 10.8x vs Trail 20.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.23,
+      "value": 0.24,
       "threshold": 0.5,
-      "label": "P/S 4.4x ÷ Growth 18.7% = 0.23"
+      "label": "P/S 4.4x ÷ Growth 18.7% = 0.24"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -277,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 20.21,
-    "sectorPe": 18.66,
-    "pb": 2.13,
-    "ps": 4.38,
-    "evEbitda": 8.68,
-    "fcfYield": 1.15,
-    "forwardPe": 10.68,
-    "dividendYield": 2.22,
+    "pe": 20.42,
+    "sectorPe": 18.76,
+    "pb": 2.15,
+    "ps": 4.43,
+    "evEbitda": 8.21,
+    "fcfYield": 1.14,
+    "forwardPe": 10.8,
+    "dividendYield": 2.32,
     "revenueGrowth": 18.7,
     "profitMargin": 21.83,
     "operatingMargin": 33.62,

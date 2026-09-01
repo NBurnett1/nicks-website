@@ -1,9 +1,9 @@
 {
   "ticker": "ALQ",
   "name": "ALS FPO [ALQ]",
-  "price": 22.23,
-  "valuationScore": 10.2,
-  "marketCap": "11.3B",
+  "price": 22.07,
+  "valuationScore": 10.1,
+  "marketCap": "11.2B",
   "sector": "Industrials",
   "domain": "alsglobal.com",
   "chartData": [
@@ -214,6 +214,10 @@
     {
       "date": "2026-08-30",
       "price": 22.22
+    },
+    {
+      "date": "2026-09-06",
+      "price": 22.07
     }
   ],
   "testsPassed": 4,
@@ -222,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 35.29,
-      "threshold": 19.45,
-      "label": "35.3x vs 19.4x sector"
+      "value": 35.03,
+      "threshold": 19.42,
+      "label": "35.0x vs 19.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 6.64,
+      "value": 6.59,
       "threshold": 1.5,
-      "label": "6.64x vs 1.5x"
+      "label": "6.59x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
       "value": 17.95,
       "threshold": 10.0,
-      "label": "17.9x vs 10x"
+      "label": "18.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.88,
+      "value": 2.9,
       "threshold": 5.0,
       "label": "2.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 22.2,
-      "threshold": 35.29,
-      "label": "Fwd 22.2x vs Trail 35.3x"
+      "value": 22.04,
+      "threshold": 35.03,
+      "label": "Fwd 22.0x vs Trail 35.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -277,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 35.29,
-    "sectorPe": 22.88,
-    "pb": 6.64,
-    "ps": 3.4,
+    "pe": 35.03,
+    "sectorPe": 22.84,
+    "pb": 6.59,
+    "ps": 3.37,
     "evEbitda": 17.95,
-    "fcfYield": 2.88,
-    "forwardPe": 22.2,
-    "dividendYield": 1.91,
+    "fcfYield": 2.9,
+    "forwardPe": 22.04,
+    "dividendYield": 1.93,
     "revenueGrowth": 8.2,
     "profitMargin": 9.6,
     "operatingMargin": 17.83,

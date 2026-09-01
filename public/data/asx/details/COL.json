@@ -1,9 +1,9 @@
 {
   "ticker": "COL",
   "name": "COLESGROUP FPO [COL]",
-  "price": 24.04,
-  "valuationScore": 4.5,
-  "marketCap": "32.3B",
+  "price": 23.68,
+  "valuationScore": 5.0,
+  "marketCap": "31.8B",
   "sector": "Consumer Staples",
   "domain": "colesgroup.com.au",
   "chartData": [
@@ -214,6 +214,10 @@
     {
       "date": "2026-08-30",
       "price": 23.8
+    },
+    {
+      "date": "2026-09-06",
+      "price": 23.68
     }
   ],
   "testsPassed": 4,
@@ -222,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 29.68,
-      "threshold": 25.23,
-      "label": "29.7x vs 25.2x sector"
+      "value": 29.23,
+      "threshold": 24.85,
+      "label": "29.2x vs 24.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 8.15,
+      "value": 8.03,
       "threshold": 1.5,
-      "label": "8.15x vs 1.5x"
+      "label": "8.03x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 15.57,
+      "value": 15.69,
       "threshold": 10.0,
-      "label": "15.6x vs 10x"
+      "label": "15.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.48,
+      "value": 5.56,
       "threshold": 5.0,
-      "label": "5.5% vs 5%"
+      "label": "5.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 22.43,
-      "threshold": 29.68,
-      "label": "Fwd 22.4x vs Trail 29.7x"
+      "value": 22.09,
+      "threshold": 29.23,
+      "label": "Fwd 22.1x vs Trail 29.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.24,
+      "value": 0.23,
       "threshold": 0.5,
-      "label": "P/S 0.7x ÷ Growth 3.0% = 0.24"
+      "label": "P/S 0.7x ÷ Growth 3.0% = 0.23"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -277,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 29.68,
-    "sectorPe": 29.68,
-    "pb": 8.15,
-    "ps": 0.71,
-    "evEbitda": 15.57,
-    "fcfYield": 5.48,
-    "forwardPe": 22.43,
-    "dividendYield": 3.11,
+    "pe": 29.23,
+    "sectorPe": 29.23,
+    "pb": 8.03,
+    "ps": 0.7,
+    "evEbitda": 15.69,
+    "fcfYield": 5.56,
+    "forwardPe": 22.09,
+    "dividendYield": 3.13,
     "revenueGrowth": 3.0,
     "profitMargin": 2.38,
     "operatingMargin": 4.65,

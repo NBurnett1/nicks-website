@@ -2,7 +2,7 @@
   "ticker": "SKC",
   "name": "SKYCITY FPO NZX [SKC]",
   "price": 0.55,
-  "valuationScore": 36.6,
+  "valuationScore": 36.5,
   "marketCap": "607M",
   "sector": "Consumer Cyclical",
   "domain": "skycityentertainmentgroup.com",
@@ -214,6 +214,10 @@
     {
       "date": "2026-08-30",
       "price": 0.55
+    },
+    {
+      "date": "2026-09-06",
+      "price": 0.55
     }
   ],
   "testsPassed": 4,
@@ -223,8 +227,8 @@
       "name": "P/E Discount",
       "passed": false,
       "value": 55.0,
-      "threshold": 27.96,
-      "label": "55.0x vs 28.0x sector"
+      "threshold": 28.11,
+      "label": "55.0x vs 28.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -278,7 +282,7 @@
   },
   "metrics": {
     "pe": 55.0,
-    "sectorPe": 32.89,
+    "sectorPe": 33.08,
     "pb": 0.46,
     "ps": 0.74,
     "evEbitda": 9.29,

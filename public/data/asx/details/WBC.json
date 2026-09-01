@@ -1,9 +1,9 @@
 {
   "ticker": "WBC",
   "name": "WESTPAC FPO [WBC]",
-  "price": 34.55,
-  "valuationScore": -0.7,
-  "marketCap": "118.0B",
+  "price": 34.36,
+  "valuationScore": -1.0,
+  "marketCap": "117.3B",
   "sector": "Financials",
   "domain": "westpac.com.au",
   "chartData": [
@@ -214,6 +214,10 @@
     {
       "date": "2026-08-30",
       "price": 33.9
+    },
+    {
+      "date": "2026-09-06",
+      "price": 34.36
     }
   ],
   "testsPassed": 3,
@@ -222,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 17.02,
-      "threshold": 16.23,
-      "label": "17.0x vs 16.2x sector"
+      "value": 16.93,
+      "threshold": 16.36,
+      "label": "16.9x vs 16.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.67,
+      "value": 1.66,
       "threshold": 1.5,
-      "label": "1.67x vs 1.5x"
+      "label": "1.66x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -250,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.16,
-      "threshold": 17.02,
-      "label": "Fwd 16.2x vs Trail 17.0x"
+      "value": 16.08,
+      "threshold": 16.93,
+      "label": "Fwd 16.1x vs Trail 16.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 3.53,
+      "value": 3.51,
       "threshold": 0.5,
-      "label": "P/S 5.3x ÷ Growth 1.5% = 3.53"
+      "label": "P/S 5.3x ÷ Growth 1.5% = 3.51"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -277,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 17.02,
-    "sectorPe": 19.1,
-    "pb": 1.67,
-    "ps": 5.3,
+    "pe": 16.93,
+    "sectorPe": 19.25,
+    "pb": 1.66,
+    "ps": 5.27,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 16.16,
-    "dividendYield": 4.54,
+    "forwardPe": 16.08,
+    "dividendYield": 4.48,
     "revenueGrowth": 1.5,
     "profitMargin": 31.5,
     "operatingMargin": 50.43,

@@ -1,9 +1,9 @@
 {
   "ticker": "PRU",
   "name": "PERSEUS FPO [PRU]",
-  "price": 6.48,
-  "valuationScore": 0.5,
-  "marketCap": "8.6B",
+  "price": 6.61,
+  "valuationScore": 0.3,
+  "marketCap": "8.8B",
   "sector": "Basic Materials",
   "domain": "perseusmining.com",
   "chartData": [
@@ -214,6 +214,10 @@
     {
       "date": "2026-08-30",
       "price": 6.73
+    },
+    {
+      "date": "2026-09-06",
+      "price": 6.61
     }
   ],
   "testsPassed": 6,
@@ -222,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 14.73,
-      "threshold": 21.64,
-      "label": "14.7x vs 21.6x sector"
+      "value": 15.02,
+      "threshold": 21.92,
+      "label": "15.0x vs 21.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.77,
+      "value": 2.82,
       "threshold": 1.5,
-      "label": "2.77x vs 1.5x"
+      "label": "2.82x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 9.87,
+      "value": 9.47,
       "threshold": 10.0,
-      "label": "9.9x vs 10x"
+      "label": "9.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 1.67,
+      "value": 1.64,
       "threshold": 5.0,
-      "label": "1.7% vs 5%"
+      "label": "1.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 8.79,
-      "threshold": 14.73,
-      "label": "Fwd 8.8x vs Trail 14.7x"
+      "value": 8.96,
+      "threshold": 15.02,
+      "label": "Fwd 9.0x vs Trail 15.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.18,
+      "value": 0.19,
       "threshold": 0.5,
-      "label": "P/S 5.8x ÷ Growth 31.4% = 0.18"
+      "label": "P/S 5.9x ÷ Growth 31.4% = 0.19"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -277,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 14.73,
-    "sectorPe": 25.46,
-    "pb": 2.77,
-    "ps": 5.8,
-    "evEbitda": 9.87,
-    "fcfYield": 1.67,
-    "forwardPe": 8.79,
-    "dividendYield": 2.08,
+    "pe": 15.02,
+    "sectorPe": 25.79,
+    "pb": 2.82,
+    "ps": 5.91,
+    "evEbitda": 9.47,
+    "fcfYield": 1.64,
+    "forwardPe": 8.96,
+    "dividendYield": 2.12,
     "revenueGrowth": 31.4,
     "profitMargin": 28.86,
     "operatingMargin": 52.43,

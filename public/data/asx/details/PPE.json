@@ -1,9 +1,9 @@
 {
   "ticker": "PPE",
   "name": "PEOPLEINFR FPO [PPE]",
-  "price": 0.67,
-  "valuationScore": -26.3,
-  "marketCap": "73M",
+  "price": 0.66,
+  "valuationScore": -45.8,
+  "marketCap": "72M",
   "sector": "Industrials",
   "domain": "peoplein.com.au",
   "chartData": [
@@ -214,10 +214,14 @@
     {
       "date": "2026-08-30",
       "price": 0.69
+    },
+    {
+      "date": "2026-09-06",
+      "price": 0.65
     }
   ],
-  "testsPassed": 3,
-  "grade": "C",
+  "testsPassed": 5,
+  "grade": "B",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -229,66 +233,66 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.61,
+      "value": 0.59,
       "threshold": 1.5,
-      "label": "0.61x vs 1.5x"
+      "label": "0.59x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 5.07,
+      "value": 7.98,
       "threshold": 10.0,
-      "label": "5.1x vs 10x"
+      "label": "8.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 37.64,
+      "value": 68.91,
       "threshold": 5.0,
-      "label": "37.6% vs 5%"
+      "label": "68.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 5.91,
+      "value": 6.53,
       "threshold": null,
       "label": "Insufficient data"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": false,
-      "value": -3.42,
+      "value": -4.97,
       "threshold": 5.0,
-      "label": "Margin -3.4% / ROE -3.2%"
+      "label": "Margin -5.0% / ROE -7.8%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": -8.2,
+      "passed": true,
+      "value": 0.45,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining -8.2%"
+      "label": "P/S 0.1x ÷ Growth 0.2% = 0.45"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
-      "passed": false,
-      "value": -8.2,
+      "passed": true,
+      "value": 0.2,
       "threshold": -5.0,
-      "label": "-8.2% growth (floor: -5%)"
+      "label": "0.2% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 22.88,
-    "pb": 0.61,
-    "ps": 0.07,
-    "evEbitda": 5.07,
-    "fcfYield": 37.64,
-    "forwardPe": 5.91,
+    "sectorPe": 22.84,
+    "pb": 0.59,
+    "ps": 0.09,
+    "evEbitda": 7.98,
+    "fcfYield": 68.91,
+    "forwardPe": 6.53,
     "dividendYield": null,
-    "revenueGrowth": -8.2,
-    "profitMargin": -3.42,
-    "operatingMargin": 0.68,
-    "roe": -3.18,
-    "debtEquity": 79.0
+    "revenueGrowth": 0.2,
+    "profitMargin": -4.97,
+    "operatingMargin": -0.37,
+    "roe": -7.84,
+    "debtEquity": 81.59
   }
 }

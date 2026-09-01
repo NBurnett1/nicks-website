@@ -1,9 +1,9 @@
 {
   "ticker": "IGO",
   "name": "IGOLIMITED FPO [IGO]",
-  "price": 8.69,
-  "valuationScore": 48.4,
-  "marketCap": "6.6B",
+  "price": 8.54,
+  "valuationScore": 48.5,
+  "marketCap": "6.5B",
   "sector": "Materials",
   "domain": "igo.com.au",
   "chartData": [
@@ -214,6 +214,10 @@
     {
       "date": "2026-08-30",
       "price": 8.58
+    },
+    {
+      "date": "2026-09-06",
+      "price": 8.54
     }
   ],
   "testsPassed": 2,
@@ -222,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 45.74,
-      "threshold": 15.86,
-      "label": "45.7x vs 15.9x sector"
+      "value": 44.95,
+      "threshold": 15.94,
+      "label": "44.9x vs 15.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.19,
+      "value": 3.13,
       "threshold": 1.5,
-      "label": "3.19x vs 1.5x"
+      "label": "3.13x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 116.17,
+      "value": 117.77,
       "threshold": 10.0,
-      "label": "116.2x vs 10x"
+      "label": "117.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.85,
+      "value": 2.9,
       "threshold": 5.0,
       "label": "2.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.03,
-      "threshold": 45.74,
-      "label": "Fwd 14.0x vs Trail 45.7x"
+      "value": 13.85,
+      "threshold": 44.95,
+      "label": "Fwd 13.9x vs Trail 44.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 1.38,
+      "value": 1.36,
       "threshold": 0.5,
-      "label": "P/S 14.2x ÷ Growth 10.3% = 1.38"
+      "label": "P/S 14.0x ÷ Growth 10.3% = 1.36"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -277,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 45.74,
-    "sectorPe": 18.66,
-    "pb": 3.19,
-    "ps": 14.22,
-    "evEbitda": 116.17,
-    "fcfYield": 2.85,
-    "forwardPe": 14.03,
-    "dividendYield": 0.58,
+    "pe": 44.95,
+    "sectorPe": 18.76,
+    "pb": 3.13,
+    "ps": 13.97,
+    "evEbitda": 117.77,
+    "fcfYield": 2.9,
+    "forwardPe": 13.85,
+    "dividendYield": 0.59,
     "revenueGrowth": 10.3,
     "profitMargin": 31.39,
     "operatingMargin": -11.98,

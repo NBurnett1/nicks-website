@@ -1,9 +1,9 @@
 {
   "ticker": "SPK",
   "name": "SPARK NZ FPO NZX [SPK]",
-  "price": 1.76,
-  "valuationScore": -29.1,
-  "marketCap": "3.3B",
+  "price": 1.79,
+  "valuationScore": -28.4,
+  "marketCap": "3.4B",
   "sector": "Communication Services",
   "domain": "sparknz.co.nz",
   "chartData": [
@@ -214,6 +214,10 @@
     {
       "date": "2026-08-30",
       "price": 1.77
+    },
+    {
+      "date": "2026-09-06",
+      "price": 1.79
     }
   ],
   "testsPassed": 4,
@@ -222,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 8.4,
-      "threshold": 44.37,
-      "label": "8.4x vs 44.4x sector"
+      "value": 8.52,
+      "threshold": 43.86,
+      "label": "8.5x vs 43.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.45,
+      "value": 2.48,
       "threshold": 1.5,
-      "label": "2.45x vs 1.5x"
+      "label": "2.48x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -243,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 29.23,
+      "value": 28.83,
       "threshold": 5.0,
-      "label": "29.2% vs 5%"
+      "label": "28.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 14.54,
-      "threshold": 8.4,
-      "label": "Fwd 14.5x vs Trail 8.4x"
+      "value": 14.74,
+      "threshold": 8.52,
+      "label": "Fwd 14.7x vs Trail 8.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -277,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 8.4,
-    "sectorPe": 52.2,
-    "pb": 2.45,
-    "ps": 0.84,
+    "pe": 8.52,
+    "sectorPe": 51.6,
+    "pb": 2.48,
+    "ps": 0.86,
     "evEbitda": 5.09,
-    "fcfYield": 29.23,
-    "forwardPe": 14.54,
-    "dividendYield": 7.0,
+    "fcfYield": 28.83,
+    "forwardPe": 14.74,
+    "dividendYield": 6.9,
     "revenueGrowth": null,
     "profitMargin": 12.64,
     "operatingMargin": 26.7,

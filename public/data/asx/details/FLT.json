@@ -1,8 +1,8 @@
 {
   "ticker": "FLT",
   "name": "FLIGHT CTR FPO [FLT]",
-  "price": 11.78,
-  "valuationScore": 0.7,
+  "price": 11.74,
+  "valuationScore": 0.8,
   "marketCap": "2.4B",
   "sector": "Consumer Cyclical",
   "domain": "fctgl.com",
@@ -214,6 +214,10 @@
     {
       "date": "2026-08-30",
       "price": 11.98
+    },
+    {
+      "date": "2026-09-06",
+      "price": 11.74
     }
   ],
   "testsPassed": 5,
@@ -222,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 16.83,
-      "threshold": 27.96,
-      "label": "16.8x vs 28.0x sector"
+      "value": 17.01,
+      "threshold": 28.11,
+      "label": "17.0x vs 28.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.2,
+      "value": 2.19,
       "threshold": 1.5,
-      "label": "2.20x vs 1.5x"
+      "label": "2.19x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 13.41,
+      "value": 13.23,
       "threshold": 10.0,
-      "label": "13.4x vs 10x"
+      "label": "13.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.42,
+      "value": 5.43,
       "threshold": 5.0,
       "label": "5.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 9.47,
-      "threshold": 16.83,
-      "label": "Fwd 9.5x vs Trail 16.8x"
+      "value": 9.44,
+      "threshold": 17.01,
+      "label": "Fwd 9.4x vs Trail 17.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -277,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 16.83,
-    "sectorPe": 32.89,
-    "pb": 2.2,
-    "ps": 0.85,
-    "evEbitda": 13.41,
-    "fcfYield": 5.42,
-    "forwardPe": 9.47,
-    "dividendYield": 3.51,
+    "pe": 17.01,
+    "sectorPe": 33.08,
+    "pb": 2.19,
+    "ps": 0.84,
+    "evEbitda": 13.23,
+    "fcfYield": 5.43,
+    "forwardPe": 9.44,
+    "dividendYield": 3.58,
     "revenueGrowth": -0.7,
     "profitMargin": 5.22,
     "operatingMargin": 7.75,

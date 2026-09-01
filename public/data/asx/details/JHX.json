@@ -1,9 +1,9 @@
 {
   "ticker": "JHX",
   "name": "J HARDIE CDI 1:1 [JHX]",
-  "price": 41.49,
-  "valuationScore": 21.6,
-  "marketCap": "24.1B",
+  "price": 41.38,
+  "valuationScore": 21.0,
+  "marketCap": "24.0B",
   "sector": "Basic Materials",
   "domain": "jameshardie.com",
   "chartData": [
@@ -214,6 +214,10 @@
     {
       "date": "2026-08-30",
       "price": 41.42
+    },
+    {
+      "date": "2026-09-06",
+      "price": 41.38
     }
   ],
   "testsPassed": 4,
@@ -222,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 133.84,
-      "threshold": 21.64,
-      "label": "133.8x vs 21.6x sector"
+      "value": 133.48,
+      "threshold": 21.92,
+      "label": "133.5x vs 21.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.64,
+      "value": 2.63,
       "threshold": 1.5,
-      "label": "2.64x vs 1.5x"
+      "label": "2.63x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -243,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 8.95,
+      "value": 8.98,
       "threshold": 5.0,
-      "label": "8.9% vs 5%"
+      "label": "9.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 18.61,
-      "threshold": 133.84,
-      "label": "Fwd 18.6x vs Trail 133.8x"
+      "value": 18.56,
+      "threshold": 133.48,
+      "label": "Fwd 18.6x vs Trail 133.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -266,7 +270,7 @@
       "passed": true,
       "value": 0.07,
       "threshold": 0.5,
-      "label": "P/S 4.5x ÷ Growth 63.9% = 0.07"
+      "label": "P/S 4.4x ÷ Growth 63.9% = 0.07"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -277,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 133.84,
-    "sectorPe": 25.46,
-    "pb": 2.64,
-    "ps": 4.45,
+    "pe": 133.48,
+    "sectorPe": 25.79,
+    "pb": 2.63,
+    "ps": 4.44,
     "evEbitda": 19.59,
-    "fcfYield": 8.95,
-    "forwardPe": 18.61,
+    "fcfYield": 8.98,
+    "forwardPe": 18.56,
     "dividendYield": null,
     "revenueGrowth": 63.9,
     "profitMargin": 2.69,

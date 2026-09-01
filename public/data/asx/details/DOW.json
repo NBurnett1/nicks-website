@@ -2,7 +2,7 @@
   "ticker": "DOW",
   "name": "DOWNER EDI FPO [DOW]",
   "price": 6.55,
-  "valuationScore": -5.8,
+  "valuationScore": -5.9,
   "marketCap": "4.3B",
   "sector": "Industrials",
   "domain": "downergroup.com",
@@ -214,6 +214,10 @@
     {
       "date": "2026-08-30",
       "price": 6.56
+    },
+    {
+      "date": "2026-09-06",
+      "price": 6.55
     }
   ],
   "testsPassed": 3,
@@ -223,7 +227,7 @@
       "name": "P/E Discount",
       "passed": false,
       "value": 19.85,
-      "threshold": 19.45,
+      "threshold": 19.42,
       "label": "19.8x vs 19.4x sector"
     },
     "pbBelowBook": {
@@ -236,7 +240,7 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 9.02,
+      "value": 9.01,
       "threshold": 10.0,
       "label": "9.0x vs 10x"
     },
@@ -278,13 +282,13 @@
   },
   "metrics": {
     "pe": 19.85,
-    "sectorPe": 22.88,
+    "sectorPe": 22.84,
     "pb": 2.2,
     "ps": 0.44,
-    "evEbitda": 9.02,
+    "evEbitda": 9.01,
     "fcfYield": 10.06,
     "forwardPe": 12.73,
-    "dividendYield": 4.45,
+    "dividendYield": 4.46,
     "revenueGrowth": -7.7,
     "profitMargin": 2.23,
     "operatingMargin": 5.33,

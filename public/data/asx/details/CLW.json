@@ -1,8 +1,8 @@
 {
   "ticker": "CLW",
   "name": "CHTR H LWR STAPLED [CLW]",
-  "price": 3.5,
-  "valuationScore": 3.7,
+  "price": 3.49,
+  "valuationScore": 3.5,
   "marketCap": "2.5B",
   "sector": "Real Estate",
   "domain": "charterhall.com.au",
@@ -214,17 +214,21 @@
     {
       "date": "2026-08-30",
       "price": 3.49
+    },
+    {
+      "date": "2026-09-06",
+      "price": 3.49
     }
   ],
-  "testsPassed": 3,
+  "testsPassed": 4,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": false,
-      "value": 8.97,
-      "threshold": 8.93,
-      "label": "9.0x vs 8.9x sector"
+      "passed": true,
+      "value": 8.95,
+      "threshold": 9.1,
+      "label": "8.9x vs 9.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -250,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 13.95,
-      "threshold": 8.97,
-      "label": "Fwd 14.0x vs Trail 9.0x"
+      "value": 13.91,
+      "threshold": 8.95,
+      "label": "Fwd 13.9x vs Trail 8.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -277,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 8.97,
-    "sectorPe": 10.51,
+    "pe": 8.95,
+    "sectorPe": 10.71,
     "pb": 0.74,
-    "ps": 13.01,
+    "ps": 12.97,
     "evEbitda": null,
     "fcfYield": -2.79,
-    "forwardPe": 13.95,
+    "forwardPe": 13.91,
     "dividendYield": 7.31,
     "revenueGrowth": 16.2,
     "profitMargin": 141.96,

@@ -1,9 +1,9 @@
 {
   "ticker": "TLS",
   "name": "TELSTRA FPO [TLS]",
-  "price": 4.67,
-  "valuationScore": 2.4,
-  "marketCap": "—",
+  "price": 4.63,
+  "valuationScore": 0.2,
+  "marketCap": "51.6B",
   "sector": "Telecom",
   "domain": "telstra.com.au",
   "chartData": [
@@ -214,45 +214,49 @@
     {
       "date": "2026-08-30",
       "price": 4.61
+    },
+    {
+      "date": "2026-09-06",
+      "price": 4.63
     }
   ],
-  "testsPassed": 3,
+  "testsPassed": 4,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 23.35,
-      "threshold": 18.05,
-      "label": "23.4x vs 18.1x sector"
+      "value": 23.15,
+      "threshold": 17.56,
+      "label": "23.1x vs 17.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.13,
+      "value": 3.94,
       "threshold": 1.5,
-      "label": "4.13x vs 1.5x"
+      "label": "3.94x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 10.03,
+      "value": 10.12,
       "threshold": 10.0,
-      "label": "10.0x vs 10x"
+      "label": "10.1x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": null,
-      "value": null,
+      "passed": true,
+      "value": 6.66,
       "threshold": 5.0,
-      "label": "No FCF data"
+      "label": "6.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 20.45,
-      "threshold": 23.35,
-      "label": "Fwd 20.5x vs Trail 23.4x"
+      "value": 20.28,
+      "threshold": 23.15,
+      "label": "Fwd 20.3x vs Trail 23.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -263,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": -2.0,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "FAIL — Revenue declining -2.0%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -277,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 23.35,
-    "sectorPe": 21.24,
-    "pb": 4.13,
-    "ps": null,
-    "evEbitda": 10.03,
-    "fcfYield": null,
-    "forwardPe": 20.45,
-    "dividendYield": 4.56,
+    "pe": 23.15,
+    "sectorPe": 20.65,
+    "pb": 3.94,
+    "ps": 2.25,
+    "evEbitda": 10.12,
+    "fcfYield": 6.66,
+    "forwardPe": 20.28,
+    "dividendYield": 4.54,
     "revenueGrowth": -2.0,
     "profitMargin": 9.77,
     "operatingMargin": 20.21,

@@ -1,8 +1,8 @@
 {
   "ticker": "ILU",
   "name": "ILUKA RES FPO [ILU]",
-  "price": 6.86,
-  "valuationScore": 22.7,
+  "price": 6.95,
+  "valuationScore": 22.5,
   "marketCap": "3.0B",
   "sector": "Materials",
   "domain": "iluka.com",
@@ -214,6 +214,10 @@
     {
       "date": "2026-08-30",
       "price": 7.02
+    },
+    {
+      "date": "2026-09-06",
+      "price": 6.95
     }
   ],
   "testsPassed": 1,
@@ -229,28 +233,28 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.45,
+      "value": 1.47,
       "threshold": 1.5,
-      "label": "1.45x vs 1.5x"
+      "label": "1.47x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 27.05,
+      "value": 26.54,
       "threshold": 10.0,
-      "label": "27.1x vs 10x"
+      "label": "26.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -13.91,
+      "value": -13.73,
       "threshold": 5.0,
-      "label": "-13.9% vs 5%"
+      "label": "-13.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": -23.18,
+      "value": -23.48,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -278,13 +282,13 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 18.66,
-    "pb": 1.45,
-    "ps": 3.31,
-    "evEbitda": 27.05,
-    "fcfYield": -13.91,
-    "forwardPe": -23.18,
-    "dividendYield": 0.85,
+    "sectorPe": 18.76,
+    "pb": 1.47,
+    "ps": 3.35,
+    "evEbitda": 26.54,
+    "fcfYield": -13.73,
+    "forwardPe": -23.48,
+    "dividendYield": 0.86,
     "revenueGrowth": -21.1,
     "profitMargin": -45.25,
     "operatingMargin": -7.61,

@@ -1,8 +1,8 @@
 {
   "ticker": "TPG",
   "name": "TPGLIMITED FPO [TPG]",
-  "price": 3.77,
-  "valuationScore": -27.8,
+  "price": 3.79,
+  "valuationScore": -26.3,
   "marketCap": "7.4B",
   "sector": "Telecom",
   "domain": "tpgtelecom.com.au",
@@ -214,6 +214,10 @@
     {
       "date": "2026-08-30",
       "price": 3.71
+    },
+    {
+      "date": "2026-09-06",
+      "price": 3.79
     }
   ],
   "testsPassed": 5,
@@ -222,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 125.67,
-      "threshold": 18.05,
-      "label": "125.7x vs 18.1x sector"
+      "value": 126.33,
+      "threshold": 17.56,
+      "label": "126.3x vs 17.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -236,23 +240,23 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 8.85,
+      "value": 8.94,
       "threshold": 10.0,
-      "label": "8.8x vs 10x"
+      "label": "8.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 64.89,
+      "value": 64.55,
       "threshold": 5.0,
-      "label": "64.9% vs 5%"
+      "label": "64.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 41.12,
-      "threshold": 125.67,
-      "label": "Fwd 41.1x vs Trail 125.7x"
+      "value": 41.34,
+      "threshold": 126.33,
+      "label": "Fwd 41.3x vs Trail 126.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -277,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 125.67,
-    "sectorPe": 21.24,
+    "pe": 126.33,
+    "sectorPe": 20.65,
     "pb": 0.85,
-    "ps": 1.47,
-    "evEbitda": 8.85,
-    "fcfYield": 64.89,
-    "forwardPe": 41.12,
-    "dividendYield": 5.39,
+    "ps": 1.48,
+    "evEbitda": 8.94,
+    "fcfYield": 64.55,
+    "forwardPe": 41.34,
+    "dividendYield": 5.28,
     "revenueGrowth": -0.7,
     "profitMargin": 8.64,
     "operatingMargin": 8.55,

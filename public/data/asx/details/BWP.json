@@ -1,8 +1,8 @@
 {
   "ticker": "BWP",
   "name": "BWPPROPGP STAPLED [BWP]",
-  "price": 3.67,
-  "valuationScore": -1.6,
+  "price": 3.65,
+  "valuationScore": -1.4,
   "marketCap": "2.9B",
   "sector": "Real Estate",
   "domain": "bwptrust.com.au",
@@ -214,6 +214,10 @@
     {
       "date": "2026-08-30",
       "price": 3.64
+    },
+    {
+      "date": "2026-09-06",
+      "price": 3.65
     }
   ],
   "testsPassed": 4,
@@ -222,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 6.55,
-      "threshold": 8.93,
-      "label": "6.6x vs 8.9x sector"
+      "value": 6.52,
+      "threshold": 9.1,
+      "label": "6.5x vs 9.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -243,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.15,
+      "value": 4.17,
       "threshold": 5.0,
       "label": "4.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 18.18,
-      "threshold": 6.55,
-      "label": "Fwd 18.2x vs Trail 6.6x"
+      "value": 18.08,
+      "threshold": 6.52,
+      "label": "Fwd 18.1x vs Trail 6.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 4.59,
+      "value": 4.57,
       "threshold": 0.5,
-      "label": "P/S 13.8x ÷ Growth 3.0% = 4.59"
+      "label": "P/S 13.7x ÷ Growth 3.0% = 4.57"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -277,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 6.55,
-    "sectorPe": 10.51,
+    "pe": 6.52,
+    "sectorPe": 10.71,
     "pb": 0.86,
-    "ps": 13.77,
+    "ps": 13.7,
     "evEbitda": null,
-    "fcfYield": 4.15,
-    "forwardPe": 18.18,
-    "dividendYield": 5.32,
+    "fcfYield": 4.17,
+    "forwardPe": 18.08,
+    "dividendYield": 5.31,
     "revenueGrowth": 3.0,
     "profitMargin": 195.1,
     "operatingMargin": 88.29,
