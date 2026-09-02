@@ -1,9 +1,9 @@
 {
   "ticker": "TCL",
   "name": "TRANSURBAN STAPLED [TCL]",
-  "price": 13.96,
-  "valuationScore": 27.9,
-  "marketCap": "43.6B",
+  "price": 13.76,
+  "valuationScore": 27.1,
+  "marketCap": "—",
   "sector": "Industrials",
   "domain": "transurban.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-09-06",
-      "price": 13.96
+      "price": 13.76
     }
   ],
   "testsPassed": 1,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 116.33,
-      "threshold": 19.42,
-      "label": "116.3x vs 19.4x sector"
+      "value": 114.67,
+      "threshold": 18.65,
+      "label": "114.7x vs 18.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.95,
+      "value": 4.88,
       "threshold": 1.5,
-      "label": "4.95x vs 1.5x"
+      "label": "4.88x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 27.09,
+      "value": 27.05,
       "threshold": 10.0,
-      "label": "27.1x vs 10x"
+      "label": "27.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 2.45,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "2.5% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 58.69,
-      "threshold": 116.33,
-      "label": "Fwd 58.7x vs Trail 116.3x"
+      "value": 57.84,
+      "threshold": 114.67,
+      "label": "Fwd 57.8x vs Trail 114.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": -9.8,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining -9.8%"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 116.33,
-    "sectorPe": 22.84,
-    "pb": 4.95,
-    "ps": 11.18,
-    "evEbitda": 27.09,
-    "fcfYield": 2.45,
-    "forwardPe": 58.69,
-    "dividendYield": 5.0,
+    "pe": 114.67,
+    "sectorPe": 21.94,
+    "pb": 4.88,
+    "ps": null,
+    "evEbitda": 27.05,
+    "fcfYield": null,
+    "forwardPe": 57.84,
+    "dividendYield": 5.09,
     "revenueGrowth": -9.8,
     "profitMargin": 9.4,
     "operatingMargin": 24.27,

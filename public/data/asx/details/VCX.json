@@ -1,7 +1,7 @@
 {
   "ticker": "VCX",
   "name": "VICINITY STAPLED [VCX]",
-  "price": 2.5,
+  "price": 2.49,
   "valuationScore": 0.0,
   "marketCap": "11.6B",
   "sector": "Real Estate",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-09-06",
-      "price": 2.5
+      "price": 2.49
     }
   ],
   "testsPassed": 4,
@@ -226,36 +226,36 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 8.33,
-      "threshold": 9.1,
-      "label": "8.3x vs 9.1x sector"
+      "value": 8.3,
+      "threshold": 8.98,
+      "label": "8.3x vs 9.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.96,
+      "value": 0.95,
       "threshold": 1.5,
-      "label": "0.96x vs 1.5x"
+      "label": "0.95x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 19.05,
+      "value": 19.16,
       "threshold": 10.0,
-      "label": "19.0x vs 10x"
+      "label": "19.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.85,
+      "value": 4.87,
       "threshold": 5.0,
-      "label": "4.8% vs 5%"
+      "label": "4.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 15.24,
-      "threshold": 8.33,
+      "value": 15.18,
+      "threshold": 8.3,
       "label": "Fwd 15.2x vs Trail 8.3x"
     },
     "profitabilityCheck": {
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 2.28,
+      "value": 2.27,
       "threshold": 0.5,
-      "label": "P/S 8.2x ÷ Growth 3.6% = 2.28"
+      "label": "P/S 8.2x ÷ Growth 3.6% = 2.27"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 8.33,
-    "sectorPe": 10.71,
-    "pb": 0.96,
-    "ps": 8.21,
-    "evEbitda": 19.05,
-    "fcfYield": 4.85,
-    "forwardPe": 15.24,
-    "dividendYield": 5.0,
+    "pe": 8.3,
+    "sectorPe": 10.56,
+    "pb": 0.95,
+    "ps": 8.18,
+    "evEbitda": 19.16,
+    "fcfYield": 4.87,
+    "forwardPe": 15.18,
+    "dividendYield": 4.98,
     "revenueGrowth": 3.6,
     "profitMargin": 98.48,
     "operatingMargin": 58.18,

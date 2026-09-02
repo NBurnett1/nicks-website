@@ -1,9 +1,9 @@
 {
   "ticker": "AIA",
   "name": "AUCK AIRPT FPO NZX [AIA]",
-  "price": 7.09,
-  "valuationScore": 12.0,
-  "marketCap": "12.1B",
+  "price": 7.04,
+  "valuationScore": 12.3,
+  "marketCap": "12.0B",
   "sector": "Industrials",
   "domain": "aucklandairport.co.nz",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-09-06",
-      "price": 7.09
+      "price": 7.04
     }
   ],
   "testsPassed": 3,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 44.31,
-      "threshold": 19.42,
-      "label": "44.3x vs 19.4x sector"
+      "value": 44.0,
+      "threshold": 18.65,
+      "label": "44.0x vs 18.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -4.83,
+      "value": -4.86,
       "threshold": 5.0,
-      "label": "-4.8% vs 5%"
+      "label": "-4.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 38.61,
-      "threshold": 44.31,
-      "label": "Fwd 38.6x vs Trail 44.3x"
+      "value": 38.34,
+      "threshold": 44.0,
+      "label": "Fwd 38.3x vs Trail 44.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 4.49,
+      "value": 4.45,
       "threshold": 0.5,
-      "label": "P/S 12.1x ÷ Growth 2.7% = 4.49"
+      "label": "P/S 12.0x ÷ Growth 2.7% = 4.45"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 44.31,
-    "sectorPe": 22.84,
+    "pe": 44.0,
+    "sectorPe": 21.94,
     "pb": 1.34,
-    "ps": 12.11,
+    "ps": 12.02,
     "evEbitda": 20.85,
-    "fcfYield": -4.83,
-    "forwardPe": 38.61,
-    "dividendYield": 1.56,
+    "fcfYield": -4.86,
+    "forwardPe": 38.34,
+    "dividendYield": 1.57,
     "revenueGrowth": 2.7,
     "profitMargin": 33.63,
     "operatingMargin": 45.31,
