@@ -2,7 +2,7 @@
   "ticker": "QBE",
   "name": "QBE INSUR. FPO [QBE]",
   "price": 22.76,
-  "valuationScore": -2.0,
+  "valuationScore": -2.1,
   "marketCap": "—",
   "sector": "Financials",
   "domain": "qbe.com",
@@ -220,7 +220,7 @@
       "price": 22.76
     }
   ],
-  "testsPassed": 4,
+  "testsPassed": 3,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
@@ -239,10 +239,10 @@
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
-      "passed": true,
-      "value": 9.96,
+      "passed": false,
+      "value": 10.09,
       "threshold": 10.0,
-      "label": "10.0x vs 10x"
+      "label": "10.1x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
@@ -285,7 +285,7 @@
     "sectorPe": 19.3,
     "pb": 2.1,
     "ps": null,
-    "evEbitda": 9.96,
+    "evEbitda": 10.09,
     "fcfYield": null,
     "forwardPe": 11.55,
     "dividendYield": 4.88,
