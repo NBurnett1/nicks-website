@@ -2,10 +2,10 @@
   "ticker": "MQG",
   "name": "MACQ GROUP FPO [MQG]",
   "price": 249.52,
-  "valuationScore": 2.5,
+  "valuationScore": 2.4,
   "marketCap": "95.1B",
   "sector": "Financials",
-  "domain": "macquarie.com",
+  "domain": "",
   "chartData": [
     {
       "date": "2025-09-07",
@@ -220,15 +220,15 @@
       "price": 249.52
     }
   ],
-  "testsPassed": 3,
-  "grade": "C",
+  "testsPassed": 1,
+  "grade": "D",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
       "value": 25.7,
-      "threshold": 16.44,
-      "label": "25.7x vs 16.4x sector"
+      "threshold": 16.69,
+      "label": "25.7x vs 16.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -260,39 +260,39 @@
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
-      "passed": true,
-      "value": 21.12,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "Margin 21.1% / ROE 11.2%"
+      "label": "Insufficient data"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": 0.92,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 5.3x ÷ Growth 5.8% = 0.92"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
-      "passed": true,
-      "value": 5.8,
+      "passed": null,
+      "value": null,
       "threshold": -5.0,
-      "label": "5.8% growth (floor: -5%)"
+      "label": "No revenue data"
     }
   },
   "metrics": {
     "pe": 25.7,
-    "sectorPe": 19.34,
+    "sectorPe": 19.64,
     "pb": 2.64,
-    "ps": 5.35,
+    "ps": null,
     "evEbitda": null,
     "fcfYield": null,
     "forwardPe": 20.32,
     "dividendYield": 3.43,
-    "revenueGrowth": 5.8,
-    "profitMargin": 21.12,
-    "operatingMargin": 28.36,
-    "roe": 11.21,
+    "revenueGrowth": null,
+    "profitMargin": null,
+    "operatingMargin": null,
+    "roe": null,
     "debtEquity": null
   }
 }
