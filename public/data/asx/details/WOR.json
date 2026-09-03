@@ -1,8 +1,8 @@
 {
   "ticker": "WOR",
   "name": "WORLEY FPO [WOR]",
-  "price": 9.82,
-  "valuationScore": -4.4,
+  "price": 9.77,
+  "valuationScore": -24.2,
   "marketCap": "4.8B",
   "sector": "Energy",
   "domain": "worley.com",
@@ -217,25 +217,25 @@
     },
     {
       "date": "2026-09-06",
-      "price": 9.82
+      "price": 9.77
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 20.89,
-      "threshold": 18.69,
-      "label": "20.9x vs 18.7x sector"
+      "value": 20.79,
+      "threshold": 18.67,
+      "label": "20.8x vs 18.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
-      "passed": null,
-      "value": null,
+      "passed": true,
+      "value": 0.92,
       "threshold": 1.5,
-      "label": "No P/B data"
+      "label": "0.92x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 9.91,
+      "value": 9.96,
       "threshold": 5.0,
-      "label": "9.9% vs 5%"
+      "label": "10.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 10.95,
-      "threshold": 20.89,
-      "label": "Fwd 11.0x vs Trail 20.9x"
+      "value": 10.9,
+      "threshold": 20.79,
+      "label": "Fwd 10.9x vs Trail 20.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 20.89,
-    "sectorPe": 21.99,
-    "pb": null,
+    "pe": 20.79,
+    "sectorPe": 21.97,
+    "pb": 0.92,
     "ps": 0.45,
     "evEbitda": 11.06,
-    "fcfYield": 9.91,
-    "forwardPe": 10.95,
-    "dividendYield": 5.09,
+    "fcfYield": 9.96,
+    "forwardPe": 10.9,
+    "dividendYield": 5.12,
     "revenueGrowth": -7.9,
     "profitMargin": 2.22,
     "operatingMargin": 4.44,

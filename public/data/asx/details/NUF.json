@@ -1,9 +1,9 @@
 {
   "ticker": "NUF",
   "name": "NUFARM FPO [NUF]",
-  "price": 3.29,
-  "valuationScore": -2.2,
-  "marketCap": "—",
+  "price": 3.26,
+  "valuationScore": -12.3,
+  "marketCap": "1.3B",
   "sector": "Basic Materials",
   "domain": "nufarm.com",
   "chartData": [
@@ -217,11 +217,11 @@
     },
     {
       "date": "2026-09-06",
-      "price": 3.29
+      "price": 3.26
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -233,9 +233,9 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.7,
+      "value": 0.69,
       "threshold": 1.5,
-      "label": "0.70x vs 1.5x"
+      "label": "0.69x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -246,15 +246,15 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": null,
-      "value": null,
+      "passed": true,
+      "value": 20.8,
       "threshold": 5.0,
-      "label": "No FCF data"
+      "label": "20.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 16.89,
+      "value": 16.73,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 24.8,
-    "pb": 0.7,
-    "ps": null,
+    "sectorPe": 24.85,
+    "pb": 0.69,
+    "ps": 0.37,
     "evEbitda": 9.15,
-    "fcfYield": null,
-    "forwardPe": 16.89,
+    "fcfYield": 20.8,
+    "forwardPe": 16.73,
     "dividendYield": null,
     "revenueGrowth": null,
     "profitMargin": -4.69,

@@ -1,9 +1,9 @@
 {
   "ticker": "QBE",
   "name": "QBE INSUR. FPO [QBE]",
-  "price": 22.76,
-  "valuationScore": -2.1,
-  "marketCap": "—",
+  "price": 22.79,
+  "valuationScore": -4.4,
+  "marketCap": "34.0B",
   "sector": "Financials",
   "domain": "qbe.com",
   "chartData": [
@@ -217,17 +217,17 @@
     },
     {
       "date": "2026-09-06",
-      "price": 22.76
+      "price": 22.79
     }
   ],
-  "testsPassed": 3,
-  "grade": "C",
+  "testsPassed": 5,
+  "grade": "B",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 11.49,
-      "threshold": 16.4,
+      "value": 11.51,
+      "threshold": 16.44,
       "label": "11.5x vs 16.4x sector"
     },
     "pbBelowBook": {
@@ -246,16 +246,16 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": null,
-      "value": null,
+      "passed": true,
+      "value": 10.12,
       "threshold": 5.0,
-      "label": "No FCF data"
+      "label": "10.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 11.55,
-      "threshold": 11.49,
+      "value": 11.57,
+      "threshold": 11.51,
       "label": "Fwd 11.6x vs Trail 11.5x"
     },
     "profitabilityCheck": {
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": true,
+      "value": 0.21,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "P/S 1.8x ÷ Growth 8.3% = 0.21"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 11.49,
-    "sectorPe": 19.3,
+    "pe": 11.51,
+    "sectorPe": 19.34,
     "pb": 2.1,
-    "ps": null,
+    "ps": 1.75,
     "evEbitda": 10.09,
-    "fcfYield": null,
-    "forwardPe": 11.55,
-    "dividendYield": 4.88,
+    "fcfYield": 10.12,
+    "forwardPe": 11.57,
+    "dividendYield": 4.87,
     "revenueGrowth": 8.3,
     "profitMargin": 11.15,
     "operatingMargin": 15.76,

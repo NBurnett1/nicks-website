@@ -1,8 +1,8 @@
 {
   "ticker": "WEB",
   "name": "WEB TRAVEL FPO [WEB]",
-  "price": 3.71,
-  "valuationScore": 2.9,
+  "price": 3.65,
+  "valuationScore": 2.3,
   "marketCap": "1.3B",
   "sector": "Consumer Cyclical",
   "domain": "webtravelgroup.com",
@@ -217,25 +217,25 @@
     },
     {
       "date": "2026-09-06",
-      "price": 3.71
+      "price": 3.65
     }
   ],
-  "testsPassed": 4,
-  "grade": "C",
+  "testsPassed": 5,
+  "grade": "B",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 37.1,
-      "threshold": 27.06,
-      "label": "37.1x vs 27.1x sector"
+      "value": 36.5,
+      "threshold": 26.96,
+      "label": "36.5x vs 27.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.3,
+      "value": 2.27,
       "threshold": 1.5,
-      "label": "2.30x vs 1.5x"
+      "label": "2.27x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -246,17 +246,17 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 4.96,
+      "passed": true,
+      "value": 5.04,
       "threshold": 5.0,
       "label": "5.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 11.58,
-      "threshold": 37.1,
-      "label": "Fwd 11.6x vs Trail 37.1x"
+      "value": 11.39,
+      "threshold": 36.5,
+      "label": "Fwd 11.4x vs Trail 36.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 37.1,
-    "sectorPe": 31.84,
-    "pb": 2.3,
-    "ps": 3.41,
+    "pe": 36.5,
+    "sectorPe": 31.72,
+    "pb": 2.27,
+    "ps": 3.35,
     "evEbitda": 9.79,
-    "fcfYield": 4.96,
-    "forwardPe": 11.58,
+    "fcfYield": 5.04,
+    "forwardPe": 11.39,
     "dividendYield": null,
     "revenueGrowth": 19.9,
     "profitMargin": 9.01,
