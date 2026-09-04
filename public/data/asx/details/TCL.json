@@ -2,7 +2,7 @@
   "ticker": "TCL",
   "name": "TRANSURBAN STAPLED [TCL]",
   "price": 13.76,
-  "valuationScore": 28.7,
+  "valuationScore": 28.5,
   "marketCap": "42.9B",
   "sector": "Industrials",
   "domain": "transurban.com",
@@ -227,8 +227,8 @@
       "name": "P/E Discount",
       "passed": false,
       "value": 114.67,
-      "threshold": 18.97,
-      "label": "114.7x vs 19.0x sector"
+      "threshold": 19.16,
+      "label": "114.7x vs 19.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": -9.8,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "FAIL — Revenue declining -9.8%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,9 +282,9 @@
   },
   "metrics": {
     "pe": 114.67,
-    "sectorPe": 22.32,
+    "sectorPe": 22.54,
     "pb": 5.56,
-    "ps": null,
+    "ps": 11.02,
     "evEbitda": 26.78,
     "fcfYield": 2.49,
     "forwardPe": 57.84,

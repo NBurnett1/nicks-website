@@ -1,25 +1,25 @@
 {
-  "lastUpdated": "2026-09-04T09:05:21.474839+11:00",
+  "lastUpdated": "2026-09-04T23:02:02.274890+11:00",
   "stocksScanned": 129,
-  "totalAlerts": 116,
+  "totalAlerts": 117,
   "alerts": [
-    {
-      "type": "EXTREME VOLUME",
-      "severity": "critical",
-      "ticker": "PPE",
-      "exchange": "ASX",
-      "headline": "4.7x average volume detected",
-      "detail": "Volume: 246,935 vs 20-day avg: 52,250 | Price down 4.8%",
-      "timestamp": "2026-09-03T22:04:08.183373+00:00"
-    },
     {
       "type": "EXTREME VOLUME",
       "severity": "critical",
       "ticker": "SGR",
       "exchange": "ASX",
-      "headline": "4.0x average volume detected",
-      "detail": "Volume: 15,444,349 vs 20-day avg: 3,839,520 | Price up 8.0%",
-      "timestamp": "2026-09-03T22:04:56.351942+00:00"
+      "headline": "5.2x average volume detected",
+      "detail": "Volume: 22,622,322 vs 20-day avg: 4,335,373 | Price up 11.1%",
+      "timestamp": "2026-09-04T12:01:43.859775+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "critical",
+      "ticker": "SGR",
+      "exchange": "ASX",
+      "headline": "Stock surged 11.1% in one session",
+      "detail": "$0.14 → $0.15",
+      "timestamp": "2026-09-04T12:01:43.983090+00:00"
     },
     {
       "type": "INSIDER_SELL",
@@ -69,11 +69,29 @@
     {
       "type": "PRICE_MOVE",
       "severity": "high",
-      "ticker": "SGR",
+      "ticker": "BAP",
       "exchange": "ASX",
       "headline": "Stock surged 8.0% in one session",
-      "detail": "$0.12 → $0.14",
-      "timestamp": "2026-09-03T22:04:56.478982+00:00"
+      "detail": "$0.81 → $0.88",
+      "timestamp": "2026-09-04T12:01:06.892469+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "high",
+      "ticker": "NEC",
+      "exchange": "ASX",
+      "headline": "Stock plunged 8.5% in one session",
+      "detail": "$1.00 → $0.92",
+      "timestamp": "2026-09-04T12:01:40.143021+00:00"
+    },
+    {
+      "type": "INSIDER_BUY",
+      "severity": "medium",
+      "ticker": "ALU",
+      "exchange": "ASX",
+      "headline": "Hannigan (Todd) (Director (Executive)) purchased 500,000 shares ($240,950)",
+      "detail": "Purchase at price 0.48 per share.",
+      "timestamp": "2026-08-10 00:00:00"
     },
     {
       "type": "INSIDER_BUY",
@@ -148,6 +166,24 @@
       "timestamp": "2026-08-28 00:00:00"
     },
     {
+      "type": "INSIDER_BUY",
+      "severity": "medium",
+      "ticker": "ANN",
+      "exchange": "ASX",
+      "headline": "Samuelson (Jonas) (Director (Non-Executive)) purchased 3,750 shares ($103,683)",
+      "detail": "Purchase at price 27.65 per share.",
+      "timestamp": "2026-08-31 00:00:00"
+    },
+    {
+      "type": "INSIDER_BUY",
+      "severity": "medium",
+      "ticker": "SGP",
+      "exchange": "ASX",
+      "headline": "Johnston (Robert William) (Director (Non-Executive)) purchased 90,000 shares ($285,435)",
+      "detail": "Purchase at price 3.17 per share.",
+      "timestamp": "2026-08-31 00:00:00"
+    },
+    {
       "type": "NEWS",
       "severity": "medium",
       "ticker": "CBA",
@@ -159,31 +195,24 @@
       "timestamp": "2026-09-03T06:27:00Z"
     },
     {
-      "type": "VOLUME SPIKE",
+      "type": "NEWS",
       "severity": "medium",
-      "ticker": "SDF",
+      "ticker": "BHP",
       "exchange": "ASX",
-      "headline": "2.9x average volume detected",
-      "detail": "Volume: 30,666,190 vs 20-day avg: 10,695,655 | Price down 0.0%",
-      "timestamp": "2026-09-03T22:04:34.598018+00:00"
+      "headline": "Albemarle Names BHP Executive Ragnar Udd as Next CEO",
+      "detail": "Source: Oilprice.com",
+      "sentiment": "negative",
+      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/lr.aE0BfxZwIka6R4D7KAg--~B/aD01NjM7dz0xMDAwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/oilprice.com/524093de5beeb13aecda2f9f5dd777cb.jpg",
+      "timestamp": "2026-09-04T04:15:00Z"
     },
     {
       "type": "VOLUME SPIKE",
       "severity": "medium",
-      "ticker": "BRG",
-      "exchange": "ASX",
-      "headline": "2.3x average volume detected",
-      "detail": "Volume: 888,666 vs 20-day avg: 389,021 | Price down 2.1%",
-      "timestamp": "2026-09-03T22:04:50.801710+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "NEC",
+      "ticker": "HVN",
       "exchange": "ASX",
       "headline": "2.6x average volume detected",
-      "detail": "Volume: 14,827,701 vs 20-day avg: 5,637,312 | Price up 4.2%",
-      "timestamp": "2026-09-03T22:04:55.538420+00:00"
+      "detail": "Volume: 6,095,487 vs 20-day avg: 2,368,598 | Price up 2.4%",
+      "timestamp": "2026-09-04T12:01:04.712079+00:00"
     },
     {
       "type": "INSIDER_BUY",
@@ -458,10 +487,37 @@
     {
       "type": "INSIDER_BUY",
       "severity": "low",
+      "ticker": "IPH",
+      "exchange": "ASX",
+      "headline": "Warne (Peter Hastings) (Non Executive Chairman) purchased 10,000 shares ($23,561)",
+      "detail": "Purchase at price 2.36 per share.",
+      "timestamp": "2026-08-27 00:00:00"
+    },
+    {
+      "type": "INSIDER_BUY",
+      "severity": "low",
+      "ticker": "NHF",
+      "exchange": "ASX",
+      "headline": "Watts (Jill Margaret) (Independent Non-Executive Director) purchased 4,123 shares ($19,171)",
+      "detail": "Purchase at price 4.65 per share.",
+      "timestamp": "2026-08-27 00:00:00"
+    },
+    {
+      "type": "INSIDER_BUY",
+      "severity": "low",
       "ticker": "AZJ",
       "exchange": "ASX",
       "headline": "Tough (Samantha) (Independent Non-Executive Director) purchased 3,000 shares ($7,734)",
       "detail": "Purchase at price 2.58 per share.",
+      "timestamp": "2026-08-27 00:00:00"
+    },
+    {
+      "type": "INSIDER_BUY",
+      "severity": "low",
+      "ticker": "BEN",
+      "exchange": "ASX",
+      "headline": "Johnson (Daryl) (Independent Non-Executive Director) purchased 8,500 shares ($61,880)",
+      "detail": "Purchase at price 7.28 per share.",
       "timestamp": "2026-08-27 00:00:00"
     },
     {
@@ -485,154 +541,20 @@
     {
       "type": "INSIDER_BUY",
       "severity": "low",
+      "ticker": "ALQ",
+      "exchange": "ASX",
+      "headline": "Boyce (Christina Mary) (Director (Non-Executive)) purchased 2,000 shares ($31,230)",
+      "detail": "Purchase at price 15.62 per share.",
+      "timestamp": "2026-08-27 00:00:00"
+    },
+    {
+      "type": "INSIDER_BUY",
+      "severity": "low",
       "ticker": "MND",
       "exchange": "ASX",
       "headline": "Buratto (Enrico Paul) (Independent Non-Executive Director) purchased 500 shares ($10,030)",
       "detail": "Purchase at price 20.06 per share.",
       "timestamp": "2026-08-27 00:00:00"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "WBC",
-      "exchange": "ASX",
-      "headline": "Three of Australia's four major banks forecast another rate hike this year",
-      "detail": "Source: Reuters",
-      "sentiment": "neutral",
-      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/3dQPJsVqg_W6pfGdXjtZEQ--~B/aD01NDQ7dz04MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/reuters.com/f61cf61a94be973c7b77ac3377c69369.jpg",
-      "timestamp": "2026-08-27T00:11:01Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "NAB",
-      "exchange": "ASX",
-      "headline": "Three of Australia's four major banks forecast another rate hike this year",
-      "detail": "Source: Reuters",
-      "sentiment": "neutral",
-      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/3dQPJsVqg_W6pfGdXjtZEQ--~B/aD01NDQ7dz04MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/reuters.com/f61cf61a94be973c7b77ac3377c69369.jpg",
-      "timestamp": "2026-08-27T00:11:01Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "FLT",
-      "exchange": "ASX",
-      "headline": "Why Retail Investors Are Tracking These 3 Founder Led Australian Stocks Today",
-      "detail": "Source: Simply Wall St.",
-      "sentiment": "neutral",
-      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/ayK2pgEcxZ4d6zSePQOdJQ--~B/aD00MzI7dz0xMTk0O2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/simply_wall_st__316/6ea9d59ba9adccfe9024a862b8c589f8.jpg",
-      "timestamp": "2026-08-27T00:24:42Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "QAN",
-      "exchange": "ASX",
-      "headline": "Qantas says profits slump as fuel costs surge",
-      "detail": "Source: AFP",
-      "sentiment": "positive",
-      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/bdZBG2Ne8jJACymjl2tZ9w--~B/aD01MTI7dz03Njg7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/afp.com/b7fe7e438765dc86304859715536d10c.jpg",
-      "timestamp": "2026-08-27T02:04:47Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "SIQ",
-      "exchange": "ASX",
-      "headline": "Smartgroup Corporation Ltd (ASX:SIQ) (H1 2026) Earnings Call Highlights: Record Revenue and ...",
-      "detail": "Source: GuruFocus.com",
-      "sentiment": "positive",
-      "thumbnail": null,
-      "timestamp": "2026-08-27T07:01:01Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "BAP",
-      "exchange": "ASX",
-      "headline": "Bapcor Ltd (ASX:BAP) (FY 2026) Earnings Call Highlights: Turnaround Gains Momentum as Cash Flow ...",
-      "detail": "Source: GuruFocus.com",
-      "sentiment": "positive",
-      "thumbnail": null,
-      "timestamp": "2026-08-27T07:01:40Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "RHC",
-      "exchange": "ASX",
-      "headline": "Ramsay Health Care Ltd (RMSYF) (FY 2026) Earnings Call Highlights: Strong Profit Growth and ...",
-      "detail": "Source: GuruFocus.com",
-      "sentiment": "positive",
-      "thumbnail": null,
-      "timestamp": "2026-08-27T07:01:45Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "QAN",
-      "exchange": "ASX",
-      "headline": "Qantas Airways Ltd (QABSY) (FY 2026) Earnings Call Highlights: Resilient Profit Amidst ...",
-      "detail": "Source: GuruFocus.com",
-      "sentiment": "positive",
-      "thumbnail": null,
-      "timestamp": "2026-08-27T09:01:18Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "PRU",
-      "exchange": "ASX",
-      "headline": "Perseus Mining (ASX:PRU) Is Up 9.8% After Boosting Capital Returns And Ore Reserves - Has The Bull Case Changed?",
-      "detail": "Source: Simply Wall St.",
-      "sentiment": "positive",
-      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/PstdKnO4XQhsGCYxndHTYA--~B/aD00MzI7dz0xMTk0O2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/simply_wall_st__316/b3b5a2748dbe57dca97087f8af8726d5.jpg",
-      "timestamp": "2026-08-27T09:09:11Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "PPT",
-      "exchange": "ASX",
-      "headline": "Perpetual Ltd (PPTTF) (FY 2026) Earnings Call Highlights: Profit Rises 6% Amid Strategic Shift",
-      "detail": "Source: GuruFocus.com",
-      "sentiment": "positive",
-      "thumbnail": null,
-      "timestamp": "2026-08-27T11:00:52Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "MIN",
-      "exchange": "ASX",
-      "headline": "Mineral Resources Ltd (MALRF) (FY 2026) Earnings Call Highlights: Record Revenue and EBITDA, ...",
-      "detail": "Source: GuruFocus.com",
-      "sentiment": "positive",
-      "thumbnail": null,
-      "timestamp": "2026-08-27T11:00:58Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "WES",
-      "exchange": "ASX",
-      "headline": "Kmart eyes more homeware stores in Australia and Anko growth in Philippines",
-      "detail": "Source: Retail Insight Network",
-      "sentiment": "positive",
-      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/dTzT.bv8tQT8UrjekA9UIg--~B/aD04MTA7dz0xNDQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/retail_insight_network_724/164d4d1c7f5eb3237647f26b59d507b5.jpg",
-      "timestamp": "2026-08-27T11:07:55Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "WOR",
-      "exchange": "ASX",
-      "headline": "St George Mining CEO: Araxá permitting begins as company eyes Brazil rare earths hub",
-      "detail": "Source: Proactive",
-      "sentiment": "neutral",
-      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/.QMBV3Bb19ui9Wt68XrBDg--~B/aD0xMDgwO3c9MTkyMDthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/proactive_video_751/d4439433041e6fc42418d9b2e83fbf1d.jpg",
-      "timestamp": "2026-08-27T11:53:45Z"
     },
     {
       "type": "NEWS",
@@ -666,6 +588,42 @@
       "sentiment": "neutral",
       "thumbnail": "https://s.yimg.com/uu/api/res/1.2/LV4q7u1Fh10533RI27.pAw--~B/aD03MDA7dz0xNDAwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/stockstory_922/064ceaf2c6ba56fea4ffc6cc66d81aa4.jpg",
       "timestamp": "2026-08-27T16:01:07Z"
+    },
+    {
+      "type": "INSIDER_BUY",
+      "severity": "low",
+      "ticker": "IPH",
+      "exchange": "ASX",
+      "headline": "Warne (Peter Hastings) (Non Executive Chairman) purchased 15,000 shares ($34,969)",
+      "detail": "Purchase at price 2.33 per share.",
+      "timestamp": "2026-08-28 00:00:00"
+    },
+    {
+      "type": "INSIDER_BUY",
+      "severity": "low",
+      "ticker": "BAP",
+      "exchange": "ASX",
+      "headline": "Fraser (Andrew) (Director (Non-Executive)) purchased 60,000 shares ($28,416)",
+      "detail": "Purchase at price 0.47 per share.",
+      "timestamp": "2026-08-28 00:00:00"
+    },
+    {
+      "type": "INSIDER_BUY",
+      "severity": "low",
+      "ticker": "NHF",
+      "exchange": "ASX",
+      "headline": "Watts (Jill Margaret) (Independent Non-Executive Director) purchased 388 shares ($1,804)",
+      "detail": "Purchase at price 4.65 per share.",
+      "timestamp": "2026-08-28 00:00:00"
+    },
+    {
+      "type": "INSIDER_BUY",
+      "severity": "low",
+      "ticker": "DXS",
+      "exchange": "ASX",
+      "headline": "Gidney (Jon) (Director (Independent)) purchased 10,000 shares ($40,113)",
+      "detail": "Purchase at price 4.01 per share.",
+      "timestamp": "2026-08-28 00:00:00"
     },
     {
       "type": "INSIDER_BUY",
@@ -844,10 +802,28 @@
     {
       "type": "INSIDER_BUY",
       "severity": "low",
+      "ticker": "IPH",
+      "exchange": "ASX",
+      "headline": "Warne (Peter Hastings) (Non Executive Chairman) purchased 15,000 shares ($34,776)",
+      "detail": "Purchase at price 2.32 per share.",
+      "timestamp": "2026-08-31 00:00:00"
+    },
+    {
+      "type": "INSIDER_BUY",
+      "severity": "low",
       "ticker": "INA",
       "exchange": "ASX",
       "headline": "Hall (James Tobias) (Independent Non-Executive Director) purchased 10,000 shares ($25,331)",
       "detail": "Purchase at price 2.53 per share.",
+      "timestamp": "2026-08-31 00:00:00"
+    },
+    {
+      "type": "INSIDER_BUY",
+      "severity": "low",
+      "ticker": "ANN",
+      "exchange": "ASX",
+      "headline": "Goodin (Debra) (Independent Non-Executive Director) purchased 2,454 shares ($69,757)",
+      "detail": "Purchase at price 28.43 per share.",
       "timestamp": "2026-08-31 00:00:00"
     },
     {
@@ -937,6 +913,24 @@
       "sentiment": "positive",
       "thumbnail": null,
       "timestamp": "2026-08-31T21:42:33Z"
+    },
+    {
+      "type": "INSIDER_BUY",
+      "severity": "low",
+      "ticker": "IPH",
+      "exchange": "ASX",
+      "headline": "Mason (Katharine Anne) (Director) purchased 19,880 shares ($45,803)",
+      "detail": "Purchase at price 2.30 per share.",
+      "timestamp": "2026-09-01 00:00:00"
+    },
+    {
+      "type": "INSIDER_BUY",
+      "severity": "low",
+      "ticker": "IPH",
+      "exchange": "ASX",
+      "headline": "Warne (Peter Hastings) (Non Executive Chairman) purchased 14,505 shares ($33,551)",
+      "detail": "Purchase at price 2.31 per share.",
+      "timestamp": "2026-09-01 00:00:00"
     },
     {
       "type": "NEWS",
@@ -1086,17 +1080,6 @@
       "severity": "low",
       "ticker": "BHP",
       "exchange": "ASX",
-      "headline": "Is Antamina Set to Boost Wheaton Precious Metals' Production?",
-      "detail": "Source: Zacks",
-      "sentiment": "positive",
-      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/rCFQLcBgv.D0wXopazdaHA--~B/aD00MDA7dz02MzU7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/zacks.com/4ef73817261b072a23a3ecfdb9a43379.jpg",
-      "timestamp": "2026-09-02T14:10:00Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "BHP",
-      "exchange": "ASX",
       "headline": "BHP goes all in on copper as record prices fuel profits",
       "detail": "Source: Yahoo Finance Video",
       "sentiment": "positive",
@@ -1139,17 +1122,6 @@
     {
       "type": "NEWS",
       "severity": "low",
-      "ticker": "PDN",
-      "exchange": "ASX",
-      "headline": "Energy & Utilities Roundup: Market Talk",
-      "detail": "Source: The Wall Street Journal",
-      "sentiment": "neutral",
-      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/n8uuPpP8ZDotbXIl4aqDwA--~B/aD02NDA7dz0xMjgwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/wsj.com/e4d946b23b3ef2d74270adf7954ff48c.jpg",
-      "timestamp": "2026-09-03T16:26:00Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
       "ticker": "BHP",
       "exchange": "ASX",
       "headline": "BHP Group (ASX:BHP) Tests Greener Copper Recovery In Arizona Pilot Projects",
@@ -1168,6 +1140,17 @@
       "sentiment": "neutral",
       "thumbnail": "https://s.yimg.com/uu/api/res/1.2/HFvsNZF_XeOFPAC22xOv0A--~B/aD00MzI7dz0xMTk0O2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/simply_wall_st__316/5bcbcb810206bcc5d4f98bf0187f8a6c.jpg",
       "timestamp": "2026-09-03T18:17:12Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "MQG",
+      "exchange": "ASX",
+      "headline": "Euro Sun Mining plans $400m financing for Rovina Valley Project",
+      "detail": "Source: Mining Technology",
+      "sentiment": "neutral",
+      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/Jm95OXviCZaDWbpAEUxsWg--~B/aD04Mjk7dz0xNDQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/mining_technology_700/97cf83404bf4533cedc45e4f40b38998.jpg",
+      "timestamp": "2026-09-04T11:36:02Z"
     }
   ]
 }

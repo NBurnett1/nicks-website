@@ -1,7 +1,7 @@
 {
   "ticker": "INA",
   "name": "INGENIA STAPLED [INA]",
-  "price": 3.63,
+  "price": 3.65,
   "valuationScore": -3.2,
   "marketCap": "1.5B",
   "sector": "Real Estate",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-09-06",
-      "price": 3.63
+      "price": 3.65
     }
   ],
   "testsPassed": 6,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 8.07,
-      "threshold": 8.89,
-      "label": "8.1x vs 8.9x sector"
+      "value": 8.11,
+      "threshold": 8.98,
+      "label": "8.1x vs 9.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 7.21,
+      "value": 7.17,
       "threshold": 5.0,
       "label": "7.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 8.82,
-      "threshold": 8.07,
-      "label": "Fwd 8.8x vs Trail 8.1x"
+      "value": 8.87,
+      "threshold": 8.11,
+      "label": "Fwd 8.9x vs Trail 8.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 8.07,
-    "sectorPe": 10.45,
+    "pe": 8.11,
+    "sectorPe": 10.56,
     "pb": 0.85,
-    "ps": 2.57,
+    "ps": 2.58,
     "evEbitda": 14.14,
-    "fcfYield": 7.21,
-    "forwardPe": 8.82,
+    "fcfYield": 7.17,
+    "forwardPe": 8.87,
     "dividendYield": 2.64,
     "revenueGrowth": 13.3,
     "profitMargin": 32.35,
