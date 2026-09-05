@@ -2,7 +2,7 @@
   "ticker": "PPE",
   "name": "PEOPLEINFR FPO [PPE]",
   "price": 0.59,
-  "valuationScore": -51.2,
+  "valuationScore": -50.1,
   "marketCap": "65M",
   "sector": "Industrials",
   "domain": "peoplein.com.au",
@@ -220,8 +220,8 @@
       "price": 0.6
     }
   ],
-  "testsPassed": 5,
-  "grade": "B",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -239,17 +239,17 @@
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
-      "passed": true,
-      "value": 7.45,
+      "passed": false,
+      "value": 12.6,
       "threshold": 10.0,
-      "label": "7.5x vs 10x"
+      "label": "12.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 75.86,
+      "value": 76.61,
       "threshold": 5.0,
-      "label": "75.9% vs 5%"
+      "label": "76.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
@@ -261,23 +261,23 @@
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": false,
-      "value": -4.97,
+      "value": -4.98,
       "threshold": 5.0,
       "label": "Margin -5.0% / ROE -7.8%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": true,
-      "value": 0.41,
+      "passed": false,
+      "value": -0.0,
       "threshold": 0.5,
-      "label": "P/S 0.1x ÷ Growth 0.2% = 0.41"
+      "label": "FAIL — Revenue declining -0.0%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": true,
-      "value": 0.2,
+      "value": -0.0,
       "threshold": -5.0,
-      "label": "0.2% growth (floor: -5%)"
+      "label": "-0.0% growth (floor: -5%)"
     }
   },
   "metrics": {
@@ -285,13 +285,13 @@
     "sectorPe": 22.54,
     "pb": 0.61,
     "ps": 0.08,
-    "evEbitda": 7.45,
-    "fcfYield": 75.86,
+    "evEbitda": 12.6,
+    "fcfYield": 76.61,
     "forwardPe": 5.24,
     "dividendYield": null,
-    "revenueGrowth": 0.2,
-    "profitMargin": -4.97,
-    "operatingMargin": -0.37,
+    "revenueGrowth": -0.0,
+    "profitMargin": -4.98,
+    "operatingMargin": -0.49,
     "roe": -7.84,
     "debtEquity": 81.59
   }
