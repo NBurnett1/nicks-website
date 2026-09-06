@@ -2,7 +2,7 @@
   "ticker": "SGR",
   "name": "STAR ENT FPO [SGR]",
   "price": 0.15,
-  "valuationScore": 5.2,
+  "valuationScore": -0.0,
   "marketCap": "995M",
   "sector": "Consumer Cyclical",
   "domain": "starentertainmentgroup.com.au",
@@ -220,8 +220,8 @@
       "price": 0.15
     }
   ],
-  "testsPassed": 1,
-  "grade": "D",
+  "testsPassed": 0,
+  "grade": "F",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -247,9 +247,9 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -16.66,
+      "value": -27.46,
       "threshold": 5.0,
-      "label": "-16.7% vs 5%"
+      "label": "-27.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
@@ -261,38 +261,38 @@
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": false,
-      "value": -17.68,
+      "value": -23.53,
       "threshold": 5.0,
-      "label": "Margin -17.7% / ROE -42.5%"
+      "label": "Margin -23.5% / ROE -73.6%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": -4.1,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining -4.1%"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
-      "passed": true,
-      "value": -4.1,
+      "passed": null,
+      "value": null,
       "threshold": -5.0,
-      "label": "-4.1% growth (floor: -5%)"
+      "label": "No revenue data"
     }
   },
   "metrics": {
     "pe": null,
     "sectorPe": 31.94,
     "pb": 1.72,
-    "ps": 0.75,
-    "evEbitda": -5.35,
-    "fcfYield": -16.66,
+    "ps": 0.76,
+    "evEbitda": -29.34,
+    "fcfYield": -27.46,
     "forwardPe": -13.67,
     "dividendYield": null,
-    "revenueGrowth": -4.1,
-    "profitMargin": -17.68,
-    "operatingMargin": -7.05,
-    "roe": -42.53,
-    "debtEquity": 65.22
+    "revenueGrowth": null,
+    "profitMargin": -23.53,
+    "operatingMargin": -7.03,
+    "roe": -73.56,
+    "debtEquity": 151.42
   }
 }
