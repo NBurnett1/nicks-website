@@ -1,16 +1,12 @@
 {
   "ticker": "INA",
   "name": "INGENIA STAPLED [INA]",
-  "price": 3.65,
-  "valuationScore": -3.2,
-  "marketCap": "1.5B",
+  "price": 4.19,
+  "valuationScore": -1.9,
+  "marketCap": "1.7B",
   "sector": "Real Estate",
   "domain": "ingeniacommunities.com.au",
   "chartData": [
-    {
-      "date": "2025-09-07",
-      "price": 5.5
-    },
     {
       "date": "2025-09-14",
       "price": 5.52
@@ -218,24 +214,28 @@
     {
       "date": "2026-09-06",
       "price": 3.65
+    },
+    {
+      "date": "2026-09-13",
+      "price": 4.19
     }
   ],
-  "testsPassed": 6,
-  "grade": "A",
+  "testsPassed": 5,
+  "grade": "B",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": true,
-      "value": 8.11,
-      "threshold": 8.98,
-      "label": "8.1x vs 9.0x sector"
+      "passed": false,
+      "value": 9.31,
+      "threshold": 8.9,
+      "label": "9.3x vs 8.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.85,
+      "value": 0.98,
       "threshold": 1.5,
-      "label": "0.85x vs 1.5x"
+      "label": "0.98x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 7.17,
+      "value": 6.25,
       "threshold": 5.0,
-      "label": "7.2% vs 5%"
+      "label": "6.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 8.87,
-      "threshold": 8.11,
-      "label": "Fwd 8.9x vs Trail 8.1x"
+      "value": 10.18,
+      "threshold": 9.31,
+      "label": "Fwd 10.2x vs Trail 9.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.19,
+      "value": 0.22,
       "threshold": 0.5,
-      "label": "P/S 2.6x ÷ Growth 13.3% = 0.19"
+      "label": "P/S 3.0x ÷ Growth 13.3% = 0.22"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 8.11,
-    "sectorPe": 10.56,
-    "pb": 0.85,
-    "ps": 2.58,
+    "pe": 9.31,
+    "sectorPe": 10.47,
+    "pb": 0.98,
+    "ps": 2.96,
     "evEbitda": 14.19,
-    "fcfYield": 7.17,
-    "forwardPe": 8.87,
-    "dividendYield": 2.63,
+    "fcfYield": 6.25,
+    "forwardPe": 10.18,
+    "dividendYield": 2.29,
     "revenueGrowth": 13.3,
     "profitMargin": 32.35,
     "operatingMargin": 28.57,

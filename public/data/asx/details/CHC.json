@@ -2,15 +2,11 @@
   "ticker": "CHC",
   "name": "CHARTER HG STP FORUS [CHC]",
   "price": 19.0,
-  "valuationScore": 12.0,
+  "valuationScore": 11.3,
   "marketCap": "9.0B",
   "sector": "Real Estate",
   "domain": "charterhall.com.au",
   "chartData": [
-    {
-      "date": "2025-09-07",
-      "price": 22.81
-    },
     {
       "date": "2025-09-14",
       "price": 22.62
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-06",
       "price": 19.0
+    },
+    {
+      "date": "2026-09-13",
+      "price": 19.0
     }
   ],
   "testsPassed": 3,
@@ -227,8 +227,8 @@
       "name": "P/E Discount",
       "passed": false,
       "value": 21.35,
-      "threshold": 8.98,
-      "label": "21.3x vs 9.0x sector"
+      "threshold": 8.9,
+      "label": "21.3x vs 8.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -282,7 +282,7 @@
   },
   "metrics": {
     "pe": 21.35,
-    "sectorPe": 10.56,
+    "sectorPe": 10.47,
     "pb": 3.1,
     "ps": 11.08,
     "evEbitda": 17.67,

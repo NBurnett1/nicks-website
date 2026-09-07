@@ -2,15 +2,11 @@
   "ticker": "CLW",
   "name": "CHTR H LWR STAPLED [CLW]",
   "price": 3.51,
-  "valuationScore": 3.7,
+  "valuationScore": 3.4,
   "marketCap": "2.5B",
   "sector": "Real Estate",
   "domain": "charterhall.com.au",
   "chartData": [
-    {
-      "date": "2025-09-07",
-      "price": 4.25
-    },
     {
       "date": "2025-09-14",
       "price": 4.3
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-06",
       "price": 3.51
+    },
+    {
+      "date": "2026-09-13",
+      "price": 3.51
     }
   ],
   "testsPassed": 3,
@@ -227,8 +227,8 @@
       "name": "P/E Discount",
       "passed": false,
       "value": 9.0,
-      "threshold": 8.98,
-      "label": "9.0x vs 9.0x sector"
+      "threshold": 8.9,
+      "label": "9.0x vs 8.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -282,7 +282,7 @@
   },
   "metrics": {
     "pe": 9.0,
-    "sectorPe": 10.56,
+    "sectorPe": 10.47,
     "pb": 0.74,
     "ps": 13.05,
     "evEbitda": null,

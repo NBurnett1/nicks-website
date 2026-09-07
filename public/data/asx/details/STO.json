@@ -1,16 +1,12 @@
 {
   "ticker": "STO",
   "name": "SANTOS FPO [STO]",
-  "price": 8.21,
-  "valuationScore": 1.6,
-  "marketCap": "26.7B",
+  "price": 8.35,
+  "valuationScore": 1.0,
+  "marketCap": "—",
   "sector": "Energy",
   "domain": "santos.com",
   "chartData": [
-    {
-      "date": "2025-09-07",
-      "price": 7.49
-    },
     {
       "date": "2025-09-14",
       "price": 7.29
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-06",
       "price": 8.21
+    },
+    {
+      "date": "2026-09-13",
+      "price": 8.35
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 26.48,
-      "threshold": 18.34,
-      "label": "26.5x vs 18.3x sector"
+      "value": 26.94,
+      "threshold": 18.65,
+      "label": "26.9x vs 18.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.21,
+      "value": 1.23,
       "threshold": 1.5,
-      "label": "1.21x vs 1.5x"
+      "label": "1.23x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -246,17 +246,17 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 1.15,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "1.1% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 11.78,
-      "threshold": 26.48,
-      "label": "Fwd 11.8x vs Trail 26.5x"
+      "value": 11.98,
+      "threshold": 26.94,
+      "label": "Fwd 12.0x vs Trail 26.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": 3.35,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 5.4x ÷ Growth 1.6% = 3.35"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 26.48,
-    "sectorPe": 21.58,
-    "pb": 1.21,
-    "ps": 5.35,
+    "pe": 26.94,
+    "sectorPe": 21.94,
+    "pb": 1.23,
+    "ps": null,
     "evEbitda": 12.44,
-    "fcfYield": 1.15,
-    "forwardPe": 11.78,
-    "dividendYield": 3.75,
+    "fcfYield": null,
+    "forwardPe": 11.98,
+    "dividendYield": 3.68,
     "revenueGrowth": 1.6,
     "profitMargin": 14.74,
     "operatingMargin": 11.79,

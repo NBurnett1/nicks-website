@@ -2,15 +2,11 @@
   "ticker": "SPK",
   "name": "SPARK NZ FPO NZX [SPK]",
   "price": 1.76,
-  "valuationScore": -28.4,
+  "valuationScore": -27.7,
   "marketCap": "3.3B",
   "sector": "Communication Services",
   "domain": "sparknz.co.nz",
   "chartData": [
-    {
-      "date": "2025-09-07",
-      "price": 2.12
-    },
     {
       "date": "2025-09-14",
       "price": 2.04
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-06",
       "price": 1.76
+    },
+    {
+      "date": "2026-09-13",
+      "price": 1.76
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 8.38,
-      "threshold": 43.23,
-      "label": "8.4x vs 43.2x sector"
+      "value": 8.4,
+      "threshold": 42.39,
+      "label": "8.4x vs 42.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.48,
+      "value": 2.45,
       "threshold": 1.5,
-      "label": "2.48x vs 1.5x"
+      "label": "2.45x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,15 +247,15 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 29.32,
+      "value": 29.23,
       "threshold": 5.0,
-      "label": "29.3% vs 5%"
+      "label": "29.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 14.5,
-      "threshold": 8.38,
+      "value": 14.54,
+      "threshold": 8.4,
       "label": "Fwd 14.5x vs Trail 8.4x"
     },
     "profitabilityCheck": {
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 8.38,
-    "sectorPe": 50.86,
-    "pb": 2.48,
+    "pe": 8.4,
+    "sectorPe": 49.87,
+    "pb": 2.45,
     "ps": 0.84,
     "evEbitda": 5.08,
-    "fcfYield": 29.32,
-    "forwardPe": 14.5,
-    "dividendYield": 7.01,
+    "fcfYield": 29.23,
+    "forwardPe": 14.54,
+    "dividendYield": 7.0,
     "revenueGrowth": null,
     "profitMargin": 12.64,
     "operatingMargin": 26.7,

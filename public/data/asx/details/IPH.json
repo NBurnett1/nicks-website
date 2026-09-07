@@ -2,15 +2,11 @@
   "ticker": "IPH",
   "name": "IPHLIMITED FPO [IPH]",
   "price": 3.35,
-  "valuationScore": -14.8,
+  "valuationScore": -14.9,
   "marketCap": "859M",
   "sector": "Industrials",
   "domain": "iphlimited.com",
   "chartData": [
-    {
-      "date": "2025-09-07",
-      "price": 3.96
-    },
     {
       "date": "2025-09-14",
       "price": 3.6
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-06",
       "price": 3.35
+    },
+    {
+      "date": "2026-09-13",
+      "price": 3.35
     }
   ],
   "testsPassed": 6,
@@ -227,8 +227,8 @@
       "name": "P/E Discount",
       "passed": true,
       "value": 10.81,
-      "threshold": 19.16,
-      "label": "10.8x vs 19.2x sector"
+      "threshold": 19.56,
+      "label": "10.8x vs 19.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -282,7 +282,7 @@
   },
   "metrics": {
     "pe": 10.81,
-    "sectorPe": 22.54,
+    "sectorPe": 23.01,
     "pb": 1.38,
     "ps": 1.21,
     "evEbitda": 6.53,

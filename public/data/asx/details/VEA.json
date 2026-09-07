@@ -1,16 +1,12 @@
 {
   "ticker": "VEA",
   "name": "VIVA E GRP FPO [VEA]",
-  "price": 2.9,
-  "valuationScore": -24.6,
+  "price": 2.92,
+  "valuationScore": -4.6,
   "marketCap": "4.8B",
   "sector": "Energy",
   "domain": "vivaenergy.com.au",
   "chartData": [
-    {
-      "date": "2025-09-07",
-      "price": 1.97
-    },
     {
       "date": "2025-09-14",
       "price": 1.82
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-06",
       "price": 2.9
+    },
+    {
+      "date": "2026-09-13",
+      "price": 2.92
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 22.31,
-      "threshold": 18.34,
-      "label": "22.3x vs 18.3x sector"
+      "value": 22.46,
+      "threshold": 18.65,
+      "label": "22.5x vs 18.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.57,
+      "value": 2.59,
       "threshold": 1.5,
-      "label": "2.57x vs 1.5x"
+      "label": "2.59x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 11.26,
+      "value": 11.18,
       "threshold": 5.0,
-      "label": "11.3% vs 5%"
+      "label": "11.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 11.78,
-      "threshold": 22.31,
-      "label": "Fwd 11.8x vs Trail 22.3x"
+      "value": 11.86,
+      "threshold": 22.46,
+      "label": "Fwd 11.9x vs Trail 22.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 22.31,
-    "sectorPe": 21.58,
-    "pb": 2.57,
+    "pe": 22.46,
+    "sectorPe": 21.94,
+    "pb": 2.59,
     "ps": 0.16,
     "evEbitda": 6.8,
-    "fcfYield": 11.26,
-    "forwardPe": 11.78,
-    "dividendYield": 5.33,
+    "fcfYield": 11.18,
+    "forwardPe": 11.86,
+    "dividendYield": 5.29,
     "revenueGrowth": 10.2,
     "profitMargin": 0.75,
     "operatingMargin": 6.03,

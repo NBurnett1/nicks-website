@@ -1,16 +1,12 @@
 {
   "ticker": "REA",
   "name": "REA GROUP FPO [REA]",
-  "price": 167.19,
+  "price": 163.16,
   "valuationScore": 5.5,
-  "marketCap": "21.9B",
+  "marketCap": "21.4B",
   "sector": "Technology",
   "domain": "rea-group.com",
   "chartData": [
-    {
-      "date": "2025-09-07",
-      "price": 237.47
-    },
     {
       "date": "2025-09-14",
       "price": 223.19
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-06",
       "price": 167.19
+    },
+    {
+      "date": "2026-09-13",
+      "price": 163.16
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 32.78,
-      "threshold": 35.58,
-      "label": "32.8x vs 35.6x sector"
+      "value": 31.93,
+      "threshold": 34.4,
+      "label": "31.9x vs 34.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 11.52,
+      "value": 11.24,
       "threshold": 1.5,
-      "label": "11.52x vs 1.5x"
+      "label": "11.24x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.36,
+      "value": 2.42,
       "threshold": 5.0,
       "label": "2.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 25.4,
-      "threshold": 32.78,
-      "label": "Fwd 25.4x vs Trail 32.8x"
+      "value": 24.78,
+      "threshold": 31.93,
+      "label": "Fwd 24.8x vs Trail 31.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 32.78,
-    "sectorPe": 41.86,
-    "pb": 11.52,
-    "ps": 11.07,
+    "pe": 31.93,
+    "sectorPe": 40.46,
+    "pb": 11.24,
+    "ps": 10.8,
     "evEbitda": 21.73,
-    "fcfYield": 2.36,
-    "forwardPe": 25.4,
-    "dividendYield": 2.07,
+    "fcfYield": 2.42,
+    "forwardPe": 24.78,
+    "dividendYield": 2.12,
     "revenueGrowth": null,
     "profitMargin": 27.9,
     "operatingMargin": 49.53,

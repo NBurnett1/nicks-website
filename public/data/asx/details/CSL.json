@@ -1,16 +1,12 @@
 {
   "ticker": "CSL",
   "name": "CSL FPO [CSL]",
-  "price": 174.5,
-  "valuationScore": 3.1,
-  "marketCap": "83.6B",
+  "price": 173.18,
+  "valuationScore": 2.0,
+  "marketCap": "—",
   "sector": "Healthcare",
   "domain": "csl.com",
   "chartData": [
-    {
-      "date": "2025-09-07",
-      "price": 204.21
-    },
     {
       "date": "2025-09-14",
       "price": 205.18
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-06",
       "price": 174.5
+    },
+    {
+      "date": "2026-09-13",
+      "price": 173.18
     }
   ],
   "testsPassed": 1,
@@ -233,9 +233,9 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.07,
+      "value": 4.03,
       "threshold": 1.5,
-      "label": "4.07x vs 1.5x"
+      "label": "4.03x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -246,15 +246,15 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 2.27,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "2.3% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 18.81,
+      "value": 18.67,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": 0.96,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 5.3x ÷ Growth 5.5% = 0.96"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,13 +282,13 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 30.07,
-    "pb": 4.07,
-    "ps": 5.29,
+    "sectorPe": 30.39,
+    "pb": 4.03,
+    "ps": null,
     "evEbitda": 18.6,
-    "fcfYield": 2.27,
-    "forwardPe": 18.81,
-    "dividendYield": 2.34,
+    "fcfYield": null,
+    "forwardPe": 18.67,
+    "dividendYield": 2.36,
     "revenueGrowth": 5.5,
     "profitMargin": -16.33,
     "operatingMargin": 21.49,

@@ -8,10 +8,6 @@
   "domain": "webtravelgroup.com",
   "chartData": [
     {
-      "date": "2025-09-07",
-      "price": 4.25
-    },
-    {
       "date": "2025-09-14",
       "price": 4.14
     },
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-06",
       "price": 3.7
+    },
+    {
+      "date": "2026-09-13",
+      "price": 3.7
     }
   ],
   "testsPassed": 4,
@@ -227,8 +227,8 @@
       "name": "P/E Discount",
       "passed": false,
       "value": 37.0,
-      "threshold": 27.15,
-      "label": "37.0x vs 27.1x sector"
+      "threshold": 27.01,
+      "label": "37.0x vs 27.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -282,7 +282,7 @@
   },
   "metrics": {
     "pe": 37.0,
-    "sectorPe": 31.94,
+    "sectorPe": 31.77,
     "pb": 2.3,
     "ps": 3.4,
     "evEbitda": 9.76,

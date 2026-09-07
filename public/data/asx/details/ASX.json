@@ -1,16 +1,12 @@
 {
   "ticker": "ASX",
   "name": "ASX FPO [ASX]",
-  "price": 55.97,
-  "valuationScore": 5.5,
+  "price": 55.88,
+  "valuationScore": 5.4,
   "marketCap": "10.9B",
   "sector": "Financial Services",
   "domain": "asx.com.au",
   "chartData": [
-    {
-      "date": "2025-09-07",
-      "price": 59.23
-    },
     {
       "date": "2025-09-14",
       "price": 58.46
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-06",
       "price": 55.97
+    },
+    {
+      "date": "2026-09-13",
+      "price": 55.88
     }
   ],
   "testsPassed": 4,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 22.48,
-      "threshold": 19.11,
-      "label": "22.5x vs 19.1x sector"
+      "value": 22.44,
+      "threshold": 19.08,
+      "label": "22.4x vs 19.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 21.2,
-      "threshold": 22.48,
-      "label": "Fwd 21.2x vs Trail 22.5x"
+      "value": 21.16,
+      "threshold": 22.44,
+      "label": "Fwd 21.2x vs Trail 22.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 22.48,
-    "sectorPe": 22.48,
+    "pe": 22.44,
+    "sectorPe": 22.44,
     "pb": 2.74,
-    "ps": 8.67,
+    "ps": 8.65,
     "evEbitda": 9.91,
     "fcfYield": -2.97,
-    "forwardPe": 21.2,
-    "dividendYield": 3.74,
+    "forwardPe": 21.16,
+    "dividendYield": 3.75,
     "revenueGrowth": 14.7,
     "profitMargin": 38.42,
     "operatingMargin": 47.31,

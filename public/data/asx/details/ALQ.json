@@ -1,16 +1,12 @@
 {
   "ticker": "ALQ",
   "name": "ALS FPO [ALQ]",
-  "price": 21.94,
-  "valuationScore": 10.0,
+  "price": 21.78,
+  "valuationScore": 9.7,
   "marketCap": "11.1B",
   "sector": "Industrials",
   "domain": "alsglobal.com",
   "chartData": [
-    {
-      "date": "2025-09-07",
-      "price": 18.45
-    },
     {
       "date": "2025-09-14",
       "price": 18.8
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-06",
       "price": 21.94
+    },
+    {
+      "date": "2026-09-13",
+      "price": 21.78
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 34.83,
-      "threshold": 19.16,
-      "label": "34.8x vs 19.2x sector"
+      "value": 34.57,
+      "threshold": 19.56,
+      "label": "34.6x vs 19.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 6.55,
+      "value": 6.5,
       "threshold": 1.5,
-      "label": "6.55x vs 1.5x"
+      "label": "6.50x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.92,
+      "value": 2.94,
       "threshold": 5.0,
       "label": "2.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 21.85,
-      "threshold": 34.83,
-      "label": "Fwd 21.9x vs Trail 34.8x"
+      "value": 21.69,
+      "threshold": 34.57,
+      "label": "Fwd 21.7x vs Trail 34.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.41,
       "threshold": 0.5,
-      "label": "P/S 3.4x ÷ Growth 8.2% = 0.41"
+      "label": "P/S 3.3x ÷ Growth 8.2% = 0.41"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 34.83,
-    "sectorPe": 22.54,
-    "pb": 6.55,
-    "ps": 3.35,
+    "pe": 34.57,
+    "sectorPe": 23.01,
+    "pb": 6.5,
+    "ps": 3.33,
     "evEbitda": 17.75,
-    "fcfYield": 2.92,
-    "forwardPe": 21.85,
-    "dividendYield": 1.94,
+    "fcfYield": 2.94,
+    "forwardPe": 21.69,
+    "dividendYield": 1.95,
     "revenueGrowth": 8.2,
     "profitMargin": 9.6,
     "operatingMargin": 17.83,

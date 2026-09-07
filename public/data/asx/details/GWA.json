@@ -8,10 +8,6 @@
   "domain": "gwagroup.com.au",
   "chartData": [
     {
-      "date": "2025-09-07",
-      "price": 2.41
-    },
-    {
       "date": "2025-09-14",
       "price": 2.39
     },
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-06",
       "price": 2.05
+    },
+    {
+      "date": "2026-09-13",
+      "price": 2.05
     }
   ],
   "testsPassed": 5,
@@ -227,8 +227,8 @@
       "name": "P/E Discount",
       "passed": true,
       "value": 11.39,
-      "threshold": 19.16,
-      "label": "11.4x vs 19.2x sector"
+      "threshold": 19.56,
+      "label": "11.4x vs 19.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -282,7 +282,7 @@
   },
   "metrics": {
     "pe": 11.39,
-    "sectorPe": 22.54,
+    "sectorPe": 23.01,
     "pb": 1.82,
     "ps": 1.23,
     "evEbitda": 8.23,

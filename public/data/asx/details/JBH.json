@@ -1,16 +1,12 @@
 {
   "ticker": "JBH",
   "name": "JB HI-FI FPO [JBH]",
-  "price": 67.3,
-  "valuationScore": -2.1,
+  "price": 67.59,
+  "valuationScore": -2.0,
   "marketCap": "7.4B",
   "sector": "Consumer Discretionary",
   "domain": "jbhifi.com.au",
   "chartData": [
-    {
-      "date": "2025-09-07",
-      "price": 111.02
-    },
     {
       "date": "2025-09-14",
       "price": 109.44
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-06",
       "price": 67.3
+    },
+    {
+      "date": "2026-09-13",
+      "price": 67.59
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 15.06,
-      "threshold": 13.64,
-      "label": "15.1x vs 13.6x sector"
+      "value": 15.12,
+      "threshold": 13.69,
+      "label": "15.1x vs 13.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.49,
+      "value": 4.51,
       "threshold": 1.5,
-      "label": "4.49x vs 1.5x"
+      "label": "4.51x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 7.48,
+      "value": 7.45,
       "threshold": 5.0,
       "label": "7.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.65,
-      "threshold": 15.06,
-      "label": "Fwd 14.6x vs Trail 15.1x"
+      "value": 14.71,
+      "threshold": 15.12,
+      "label": "Fwd 14.7x vs Trail 15.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 15.06,
-    "sectorPe": 16.04,
-    "pb": 4.49,
+    "pe": 15.12,
+    "sectorPe": 16.11,
+    "pb": 4.51,
     "ps": 0.67,
     "evEbitda": 9.88,
-    "fcfYield": 7.48,
-    "forwardPe": 14.65,
-    "dividendYield": 5.01,
+    "fcfYield": 7.45,
+    "forwardPe": 14.71,
+    "dividendYield": 4.99,
     "revenueGrowth": 1.9,
     "profitMargin": 4.43,
     "operatingMargin": 5.59,
