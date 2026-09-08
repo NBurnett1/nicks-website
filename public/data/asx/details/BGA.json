@@ -1,7 +1,7 @@
 {
   "ticker": "BGA",
   "name": "BEGA FPO [BGA]",
-  "price": 6.05,
+  "price": 6.0,
   "valuationScore": 0.7,
   "marketCap": "1.8B",
   "sector": "Consumer Staples",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-09-13",
-      "price": 6.05
+      "price": 6.0
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 33.61,
-      "threshold": 24.76,
-      "label": "33.6x vs 24.8x sector"
+      "value": 33.33,
+      "threshold": 24.95,
+      "label": "33.3x vs 24.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.85,
+      "value": 1.84,
       "threshold": 1.5,
-      "label": "1.85x vs 1.5x"
+      "label": "1.84x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 1.72,
+      "value": 1.73,
       "threshold": 5.0,
       "label": "1.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 20.18,
-      "threshold": 33.61,
-      "label": "Fwd 20.2x vs Trail 33.6x"
+      "value": 20.02,
+      "threshold": 33.33,
+      "label": "Fwd 20.0x vs Trail 33.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 33.61,
-    "sectorPe": 29.13,
-    "pb": 1.85,
+    "pe": 33.33,
+    "sectorPe": 29.35,
+    "pb": 1.84,
     "ps": 0.49,
     "evEbitda": 12.26,
-    "fcfYield": 1.72,
-    "forwardPe": 20.18,
-    "dividendYield": 2.48,
+    "fcfYield": 1.73,
+    "forwardPe": 20.02,
+    "dividendYield": 2.5,
     "revenueGrowth": 8.3,
     "profitMargin": 1.45,
     "operatingMargin": 2.55,
