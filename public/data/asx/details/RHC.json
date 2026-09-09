@@ -1,8 +1,8 @@
 {
   "ticker": "RHC",
   "name": "RAMSAY FPO [RHC]",
-  "price": 53.36,
-  "valuationScore": -1.2,
+  "price": 53.3,
+  "valuationScore": -1.1,
   "marketCap": "12.3B",
   "sector": "Healthcare",
   "domain": "ramsayhealth.com",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-09-13",
-      "price": 53.36
+      "price": 53.3
     }
   ],
   "testsPassed": 3,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 39.24,
-      "threshold": 25.88,
-      "label": "39.2x vs 25.9x sector"
+      "value": 39.19,
+      "threshold": 25.73,
+      "label": "39.2x vs 25.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -247,15 +247,15 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.29,
+      "value": 5.3,
       "threshold": 5.0,
       "label": "5.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 25.58,
-      "threshold": 39.24,
+      "value": 25.55,
+      "threshold": 39.19,
       "label": "Fwd 25.6x vs Trail 39.2x"
     },
     "profitabilityCheck": {
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 39.24,
-    "sectorPe": 30.45,
+    "pe": 39.19,
+    "sectorPe": 30.27,
     "pb": 2.61,
     "ps": 0.66,
     "evEbitda": 13.81,
-    "fcfYield": 5.29,
-    "forwardPe": 25.58,
+    "fcfYield": 5.3,
+    "forwardPe": 25.55,
     "dividendYield": 1.82,
     "revenueGrowth": -0.1,
     "profitMargin": 1.77,

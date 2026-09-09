@@ -1,9 +1,9 @@
 {
   "ticker": "WOR",
   "name": "WORLEY FPO [WOR]",
-  "price": 9.97,
-  "valuationScore": -4.1,
-  "marketCap": "4.9B",
+  "price": 10.17,
+  "valuationScore": -23.7,
+  "marketCap": "5.0B",
   "sector": "Energy",
   "domain": "worley.com",
   "chartData": [
@@ -217,25 +217,25 @@
     },
     {
       "date": "2026-09-13",
-      "price": 9.97
+      "price": 10.17
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 21.21,
-      "threshold": 18.76,
-      "label": "21.2x vs 18.8x sector"
+      "value": 21.64,
+      "threshold": 19.0,
+      "label": "21.6x vs 19.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
-      "passed": null,
-      "value": null,
+      "passed": true,
+      "value": 0.96,
       "threshold": 1.5,
-      "label": "No P/B data"
+      "label": "0.96x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 9.76,
+      "value": 9.56,
       "threshold": 5.0,
-      "label": "9.8% vs 5%"
+      "label": "9.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 11.12,
-      "threshold": 21.21,
-      "label": "Fwd 11.1x vs Trail 21.2x"
+      "value": 11.35,
+      "threshold": 21.64,
+      "label": "Fwd 11.3x vs Trail 21.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 21.21,
-    "sectorPe": 22.07,
-    "pb": null,
-    "ps": 0.45,
+    "pe": 21.64,
+    "sectorPe": 22.36,
+    "pb": 0.96,
+    "ps": 0.46,
     "evEbitda": 11.19,
-    "fcfYield": 9.76,
-    "forwardPe": 11.12,
-    "dividendYield": 5.02,
+    "fcfYield": 9.56,
+    "forwardPe": 11.35,
+    "dividendYield": 4.92,
     "revenueGrowth": -7.9,
     "profitMargin": 2.22,
     "operatingMargin": 4.44,
