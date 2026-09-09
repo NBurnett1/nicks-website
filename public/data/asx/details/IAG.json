@@ -2,8 +2,8 @@
   "ticker": "IAG",
   "name": "INSUR.AUST FPO [IAG]",
   "price": 7.71,
-  "valuationScore": 1.2,
-  "marketCap": "18.0B",
+  "valuationScore": 0.3,
+  "marketCap": "—",
   "sector": "Financials",
   "domain": "iag.com.au",
   "chartData": [
@@ -227,8 +227,8 @@
       "name": "P/E Discount",
       "passed": false,
       "value": 17.93,
-      "threshold": 16.26,
-      "label": "17.9x vs 16.3x sector"
+      "threshold": 16.07,
+      "label": "17.9x vs 16.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -239,17 +239,17 @@
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
-      "passed": false,
-      "value": 10.13,
+      "passed": true,
+      "value": 9.93,
       "threshold": 10.0,
-      "label": "10.1x vs 10x"
+      "label": "9.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 3.63,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "3.6% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": true,
-      "value": 0.09,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 0.9x ÷ Growth 10.3% = 0.09"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,11 +282,11 @@
   },
   "metrics": {
     "pe": 17.93,
-    "sectorPe": 19.14,
+    "sectorPe": 18.91,
     "pb": 2.48,
-    "ps": 0.94,
-    "evEbitda": 10.13,
-    "fcfYield": 3.63,
+    "ps": null,
+    "evEbitda": 9.93,
+    "fcfYield": null,
     "forwardPe": 15.57,
     "dividendYield": 4.15,
     "revenueGrowth": 10.3,

@@ -2,8 +2,8 @@
   "ticker": "CPU",
   "name": "CSHARE FPO [CPU]",
   "price": 39.24,
-  "valuationScore": 10.4,
-  "marketCap": "22.7B",
+  "valuationScore": 10.3,
+  "marketCap": "—",
   "sector": "Financial Services",
   "domain": "computershare.com",
   "chartData": [
@@ -233,9 +233,9 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 7.16,
+      "value": 7.17,
       "threshold": 1.5,
-      "label": "7.16x vs 1.5x"
+      "label": "7.17x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -246,17 +246,17 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 3.17,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "3.2% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 17.4,
+      "value": 17.46,
       "threshold": 26.51,
-      "label": "Fwd 17.4x vs Trail 26.5x"
+      "label": "Fwd 17.5x vs Trail 26.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": 1.58,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 6.9x ÷ Growth 4.4% = 1.58"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -283,11 +283,11 @@
   "metrics": {
     "pe": 26.51,
     "sectorPe": 22.17,
-    "pb": 7.16,
-    "ps": 6.94,
+    "pb": 7.17,
+    "ps": null,
     "evEbitda": 21.09,
-    "fcfYield": 3.17,
-    "forwardPe": 17.4,
+    "fcfYield": null,
+    "forwardPe": 17.46,
     "dividendYield": 3.31,
     "revenueGrowth": 4.4,
     "profitMargin": 18.93,
