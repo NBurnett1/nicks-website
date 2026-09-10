@@ -2,8 +2,8 @@
   "ticker": "MTS",
   "name": "METCASHLTD FPO [MTS]",
   "price": 2.85,
-  "valuationScore": -8.3,
-  "marketCap": "3.1B",
+  "valuationScore": -3.4,
+  "marketCap": "—",
   "sector": "Consumer Defensive",
   "domain": "metcash.com",
   "chartData": [
@@ -220,15 +220,15 @@
       "price": 2.85
     }
   ],
-  "testsPassed": 5,
-  "grade": "B",
+  "testsPassed": 4,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
       "value": 11.4,
-      "threshold": 17.36,
-      "label": "11.4x vs 17.4x sector"
+      "threshold": 17.34,
+      "label": "11.4x vs 17.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,21 +240,21 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 9.2,
+      "value": 9.16,
       "threshold": 10.0,
       "label": "9.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": true,
-      "value": 10.85,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "10.8% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 11.23,
+      "value": 11.2,
       "threshold": 11.4,
       "label": "Fwd 11.2x vs Trail 11.4x"
     },
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": 0.6,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 0.2x ÷ Growth 0.3% = 0.60"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": 11.4,
-    "sectorPe": 20.42,
+    "sectorPe": 20.4,
     "pb": 1.84,
-    "ps": 0.18,
-    "evEbitda": 9.2,
-    "fcfYield": 10.85,
-    "forwardPe": 11.23,
+    "ps": null,
+    "evEbitda": 9.16,
+    "fcfYield": null,
+    "forwardPe": 11.2,
     "dividendYield": 6.67,
     "revenueGrowth": 0.3,
     "profitMargin": 1.61,

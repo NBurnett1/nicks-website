@@ -2,8 +2,8 @@
   "ticker": "QBE",
   "name": "QBE INSUR. FPO [QBE]",
   "price": 22.05,
-  "valuationScore": -4.5,
-  "marketCap": "32.9B",
+  "valuationScore": -2.1,
+  "marketCap": "—",
   "sector": "Financials",
   "domain": "qbe.com",
   "chartData": [
@@ -220,36 +220,36 @@
       "price": 22.05
     }
   ],
-  "testsPassed": 6,
-  "grade": "A",
+  "testsPassed": 4,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
       "value": 11.19,
-      "threshold": 16.03,
-      "label": "11.2x vs 16.0x sector"
+      "threshold": 15.92,
+      "label": "11.2x vs 15.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.03,
+      "value": 2.05,
       "threshold": 1.5,
-      "label": "2.03x vs 1.5x"
+      "label": "2.05x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 9.71,
+      "value": 9.76,
       "threshold": 10.0,
-      "label": "9.7x vs 10x"
+      "label": "9.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": true,
-      "value": 10.46,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "10.5% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": true,
-      "value": 0.2,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 1.7x ÷ Growth 8.3% = 0.20"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,11 +282,11 @@
   },
   "metrics": {
     "pe": 11.19,
-    "sectorPe": 18.86,
-    "pb": 2.03,
-    "ps": 1.69,
-    "evEbitda": 9.71,
-    "fcfYield": 10.46,
+    "sectorPe": 18.73,
+    "pb": 2.05,
+    "ps": null,
+    "evEbitda": 9.76,
+    "fcfYield": null,
     "forwardPe": 11.22,
     "dividendYield": 5.03,
     "revenueGrowth": 8.3,
