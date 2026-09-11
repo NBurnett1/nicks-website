@@ -1,7 +1,7 @@
 {
   "ticker": "RHC",
   "name": "RAMSAY FPO [RHC]",
-  "price": 53.7,
+  "price": 53.55,
   "valuationScore": -0.9,
   "marketCap": "12.4B",
   "sector": "Healthcare",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-09-13",
-      "price": 53.7
+      "price": 53.55
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 39.49,
-      "threshold": 25.66,
-      "label": "39.5x vs 25.7x sector"
+      "value": 39.38,
+      "threshold": 25.62,
+      "label": "39.4x vs 25.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.63,
+      "value": 2.62,
       "threshold": 1.5,
-      "label": "2.63x vs 1.5x"
+      "label": "2.62x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.26,
+      "value": 5.27,
       "threshold": 5.0,
       "label": "5.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 25.74,
-      "threshold": 39.49,
-      "label": "Fwd 25.7x vs Trail 39.5x"
+      "value": 25.67,
+      "threshold": 39.38,
+      "label": "Fwd 25.7x vs Trail 39.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 39.49,
-    "sectorPe": 30.19,
-    "pb": 2.63,
+    "pe": 39.38,
+    "sectorPe": 30.14,
+    "pb": 2.62,
     "ps": 0.67,
     "evEbitda": 13.85,
-    "fcfYield": 5.26,
-    "forwardPe": 25.74,
+    "fcfYield": 5.27,
+    "forwardPe": 25.67,
     "dividendYield": 1.81,
     "revenueGrowth": -0.1,
     "profitMargin": 1.77,
