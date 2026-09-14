@@ -2,15 +2,11 @@
   "ticker": "REH",
   "name": "REECE FPO [REH]",
   "price": 16.33,
-  "valuationScore": 3.6,
+  "valuationScore": 3.7,
   "marketCap": "10.0B",
   "sector": "Industrials",
   "domain": "reece.com.au",
   "chartData": [
-    {
-      "date": "2025-09-14",
-      "price": 10.04
-    },
     {
       "date": "2025-09-21",
       "price": 10.18
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-13",
       "price": 16.33
+    },
+    {
+      "date": "2026-09-20",
+      "price": 16.33
     }
   ],
   "testsPassed": 4,
@@ -227,8 +227,8 @@
       "name": "P/E Discount",
       "passed": false,
       "value": 33.33,
-      "threshold": 19.15,
-      "label": "33.3x vs 19.1x sector"
+      "threshold": 18.84,
+      "label": "33.3x vs 18.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -282,7 +282,7 @@
   },
   "metrics": {
     "pe": 33.33,
-    "sectorPe": 22.53,
+    "sectorPe": 22.17,
     "pb": 2.68,
     "ps": 1.07,
     "evEbitda": 17.13,

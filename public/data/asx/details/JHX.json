@@ -1,16 +1,12 @@
 {
   "ticker": "JHX",
   "name": "J HARDIE CDI 1:1 [JHX]",
-  "price": 39.01,
-  "valuationScore": 24.0,
-  "marketCap": "22.6B",
+  "price": 39.12,
+  "valuationScore": 23.9,
+  "marketCap": "22.7B",
   "sector": "Basic Materials",
   "domain": "jameshardie.com",
   "chartData": [
-    {
-      "date": "2025-09-14",
-      "price": 30.14
-    },
     {
       "date": "2025-09-21",
       "price": 28.86
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-13",
       "price": 39.01
+    },
+    {
+      "date": "2026-09-20",
+      "price": 39.12
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 130.03,
-      "threshold": 19.1,
-      "label": "130.0x vs 19.1x sector"
+      "value": 126.19,
+      "threshold": 18.75,
+      "label": "126.2x vs 18.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.5,
+      "value": 2.51,
       "threshold": 1.5,
-      "label": "2.50x vs 1.5x"
+      "label": "2.51x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 9.52,
+      "value": 9.5,
       "threshold": 5.0,
       "label": "9.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 17.51,
-      "threshold": 130.03,
-      "label": "Fwd 17.5x vs Trail 130.0x"
+      "value": 17.57,
+      "threshold": 126.19,
+      "label": "Fwd 17.6x vs Trail 126.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 130.03,
-    "sectorPe": 22.47,
-    "pb": 2.5,
-    "ps": 4.19,
+    "pe": 126.19,
+    "sectorPe": 22.06,
+    "pb": 2.51,
+    "ps": 4.2,
     "evEbitda": 18.6,
-    "fcfYield": 9.52,
-    "forwardPe": 17.51,
+    "fcfYield": 9.5,
+    "forwardPe": 17.57,
     "dividendYield": null,
     "revenueGrowth": 63.9,
     "profitMargin": 2.69,

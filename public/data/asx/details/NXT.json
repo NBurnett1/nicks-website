@@ -1,16 +1,12 @@
 {
   "ticker": "NXT",
   "name": "NEXTDC FPO [NXT]",
-  "price": 12.06,
-  "valuationScore": 43.2,
-  "marketCap": "9.2B",
+  "price": 11.71,
+  "valuationScore": 44.0,
+  "marketCap": "8.9B",
   "sector": "Technology",
   "domain": "nextdc.com",
   "chartData": [
-    {
-      "date": "2025-09-14",
-      "price": 17.32
-    },
     {
       "date": "2025-09-21",
       "price": 17.81
@@ -218,24 +214,28 @@
     {
       "date": "2026-09-13",
       "price": 12.06
+    },
+    {
+      "date": "2026-09-20",
+      "price": 11.71
     }
   ],
-  "testsPassed": 1,
+  "testsPassed": 2,
   "grade": "D",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 100.5,
-      "threshold": 31.62,
-      "label": "100.5x vs 31.6x sector"
+      "value": 97.58,
+      "threshold": 31.77,
+      "label": "97.6x vs 31.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
-      "passed": false,
-      "value": 1.5,
+      "passed": true,
+      "value": 1.46,
       "threshold": 1.5,
-      "label": "1.50x vs 1.5x"
+      "label": "1.46x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,15 +247,15 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -18.78,
+      "value": -19.34,
       "threshold": 5.0,
-      "label": "-18.8% vs 5%"
+      "label": "-19.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": -46.84,
-      "threshold": 100.5,
+      "value": -45.48,
+      "threshold": 97.58,
       "label": "Insufficient data"
     },
     "profitabilityCheck": {
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.95,
+      "value": 0.92,
       "threshold": 0.5,
-      "label": "P/S 18.5x ÷ Growth 19.4% = 0.95"
+      "label": "P/S 17.9x ÷ Growth 19.4% = 0.92"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 100.5,
-    "sectorPe": 37.2,
-    "pb": 1.5,
-    "ps": 18.47,
+    "pe": 97.58,
+    "sectorPe": 37.38,
+    "pb": 1.46,
+    "ps": 17.94,
     "evEbitda": 61.62,
-    "fcfYield": -18.78,
-    "forwardPe": -46.84,
+    "fcfYield": -19.34,
+    "forwardPe": -45.48,
     "dividendYield": null,
     "revenueGrowth": 19.4,
     "profitMargin": 16.53,

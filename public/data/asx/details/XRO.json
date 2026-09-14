@@ -1,16 +1,12 @@
 {
   "ticker": "XRO",
   "name": "XERO FPO [XRO]",
-  "price": 67.05,
+  "price": 67.63,
   "valuationScore": 1.8,
-  "marketCap": "11.8B",
+  "marketCap": "11.9B",
   "sector": "Technology",
   "domain": "xero.com",
   "chartData": [
-    {
-      "date": "2025-09-14",
-      "price": 162.18
-    },
     {
       "date": "2025-09-21",
       "price": 162.59
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-13",
       "price": 67.05
+    },
+    {
+      "date": "2026-09-20",
+      "price": 67.63
     }
   ],
   "testsPassed": 2,
@@ -233,9 +233,9 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.54,
+      "value": 2.56,
       "threshold": 1.5,
-      "label": "2.54x vs 1.5x"
+      "label": "2.56x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,14 +247,14 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 1.87,
+      "value": 1.85,
       "threshold": 5.0,
       "label": "1.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 34.79,
+      "value": 35.1,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 37.2,
-    "pb": 2.54,
-    "ps": 4.3,
+    "sectorPe": 37.38,
+    "pb": 2.56,
+    "ps": 4.34,
     "evEbitda": 29.58,
-    "fcfYield": 1.87,
-    "forwardPe": 34.79,
+    "fcfYield": 1.85,
+    "forwardPe": 35.1,
     "dividendYield": null,
     "revenueGrowth": 40.8,
     "profitMargin": 6.08,

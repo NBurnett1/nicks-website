@@ -1,16 +1,12 @@
 {
   "ticker": "AMC",
   "name": "AMCOR PLC CDI 1:1 [AMC]",
-  "price": 59.98,
-  "valuationScore": -2.5,
-  "marketCap": "27.7B",
+  "price": 59.02,
+  "valuationScore": -2.7,
+  "marketCap": "27.3B",
   "sector": "Materials",
   "domain": "amcor.com",
   "chartData": [
-    {
-      "date": "2025-09-14",
-      "price": 59.02
-    },
     {
       "date": "2025-09-21",
       "price": 59.44
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-13",
       "price": 59.98
+    },
+    {
+      "date": "2026-09-20",
+      "price": 59.02
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 18.18,
-      "threshold": 15.34,
-      "label": "18.2x vs 15.3x sector"
+      "value": 17.78,
+      "threshold": 15.01,
+      "label": "17.8x vs 15.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.68,
+      "value": 1.66,
       "threshold": 1.5,
-      "label": "1.68x vs 1.5x"
+      "label": "1.66x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.42,
+      "value": 5.51,
       "threshold": 5.0,
-      "label": "5.4% vs 5%"
+      "label": "5.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 9.87,
-      "threshold": 18.18,
-      "label": "Fwd 9.9x vs Trail 18.2x"
+      "value": 9.72,
+      "threshold": 17.78,
+      "label": "Fwd 9.7x vs Trail 17.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.05,
+      "value": 0.04,
       "threshold": 0.5,
-      "label": "P/S 1.2x ÷ Growth 25.9% = 0.05"
+      "label": "P/S 1.2x ÷ Growth 25.9% = 0.04"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 18.18,
-    "sectorPe": 18.05,
-    "pb": 1.68,
-    "ps": 1.18,
+    "pe": 17.78,
+    "sectorPe": 17.66,
+    "pb": 1.66,
+    "ps": 1.16,
     "evEbitda": 11.8,
-    "fcfYield": 5.42,
-    "forwardPe": 9.87,
-    "dividendYield": 6.14,
+    "fcfYield": 5.51,
+    "forwardPe": 9.72,
+    "dividendYield": 6.24,
     "revenueGrowth": 25.9,
     "profitMargin": 4.71,
     "operatingMargin": 9.69,

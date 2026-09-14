@@ -1,16 +1,12 @@
 {
   "ticker": "QAN",
   "name": "QANTAS FPO [QAN]",
-  "price": 9.07,
-  "valuationScore": 9.1,
+  "price": 9.03,
+  "valuationScore": 9.2,
   "marketCap": "13.7B",
   "sector": "Industrials",
   "domain": "qantas.com",
   "chartData": [
-    {
-      "date": "2025-09-14",
-      "price": 10.88
-    },
     {
       "date": "2025-09-21",
       "price": 10.79
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-13",
       "price": 9.07
+    },
+    {
+      "date": "2026-09-20",
+      "price": 9.03
     }
   ],
   "testsPassed": 6,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 10.67,
-      "threshold": 19.15,
-      "label": "10.7x vs 19.1x sector"
+      "value": 10.62,
+      "threshold": 18.84,
+      "label": "10.6x vs 18.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 10.21,
+      "value": 10.17,
       "threshold": 1.5,
-      "label": "10.21x vs 1.5x"
+      "label": "10.17x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -3.19,
+      "value": -3.21,
       "threshold": 5.0,
       "label": "-3.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 7.11,
-      "threshold": 10.67,
-      "label": "Fwd 7.1x vs Trail 10.7x"
+      "value": 7.08,
+      "threshold": 10.62,
+      "label": "Fwd 7.1x vs Trail 10.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 10.67,
-    "sectorPe": 22.53,
-    "pb": 10.21,
+    "pe": 10.62,
+    "sectorPe": 22.17,
+    "pb": 10.17,
     "ps": 0.54,
     "evEbitda": 5.04,
-    "fcfYield": -3.19,
-    "forwardPe": 7.11,
-    "dividendYield": 4.37,
+    "fcfYield": -3.21,
+    "forwardPe": 7.08,
+    "dividendYield": 4.39,
     "revenueGrowth": 7.9,
     "profitMargin": 5.05,
     "operatingMargin": 6.09,

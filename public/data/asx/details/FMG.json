@@ -1,16 +1,12 @@
 {
   "ticker": "FMG",
   "name": "FORTESCUE FPO [FMG]",
-  "price": 16.67,
-  "valuationScore": -6.5,
-  "marketCap": "51.3B",
+  "price": 16.53,
+  "valuationScore": -6.6,
+  "marketCap": "50.9B",
   "sector": "Materials",
   "domain": "fortescue.com",
   "chartData": [
-    {
-      "date": "2025-09-14",
-      "price": 17.77
-    },
     {
       "date": "2025-09-21",
       "price": 17.7
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-13",
       "price": 16.67
+    },
+    {
+      "date": "2026-09-20",
+      "price": 16.53
     }
   ],
   "testsPassed": 6,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 12.92,
-      "threshold": 15.34,
-      "label": "12.9x vs 15.3x sector"
+      "value": 12.72,
+      "threshold": 15.01,
+      "label": "12.7x vs 15.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.81,
+      "value": 1.8,
       "threshold": 1.5,
-      "label": "1.81x vs 1.5x"
+      "label": "1.80x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 6.17,
+      "value": 6.23,
       "threshold": 5.0,
       "label": "6.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 15.13,
-      "threshold": 12.92,
-      "label": "Fwd 15.1x vs Trail 12.9x"
+      "value": 15.01,
+      "threshold": 12.72,
+      "label": "Fwd 15.0x vs Trail 12.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 12.92,
-    "sectorPe": 18.05,
-    "pb": 1.81,
-    "ps": 3.03,
+    "pe": 12.72,
+    "sectorPe": 17.66,
+    "pb": 1.8,
+    "ps": 3.0,
     "evEbitda": 6.38,
-    "fcfYield": 6.17,
-    "forwardPe": 15.13,
-    "dividendYield": 6.48,
+    "fcfYield": 6.23,
+    "forwardPe": 15.01,
+    "dividendYield": 6.53,
     "revenueGrowth": 7.9,
     "profitMargin": 16.92,
     "operatingMargin": 29.25,

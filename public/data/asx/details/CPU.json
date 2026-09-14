@@ -1,16 +1,12 @@
 {
   "ticker": "CPU",
   "name": "CSHARE FPO [CPU]",
-  "price": 39.54,
+  "price": 39.66,
   "valuationScore": 10.7,
   "marketCap": "—",
   "sector": "Financial Services",
   "domain": "computershare.com",
   "chartData": [
-    {
-      "date": "2025-09-14",
-      "price": 35.26
-    },
     {
       "date": "2025-09-21",
       "price": 36.23
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-13",
       "price": 39.54
+    },
+    {
+      "date": "2026-09-20",
+      "price": 39.66
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 26.72,
-      "threshold": 18.7,
-      "label": "26.7x vs 18.7x sector"
+      "value": 26.8,
+      "threshold": 18.62,
+      "label": "26.8x vs 18.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 7.23,
+      "value": 7.25,
       "threshold": 1.5,
-      "label": "7.23x vs 1.5x"
+      "label": "7.25x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 17.59,
-      "threshold": 26.72,
-      "label": "Fwd 17.6x vs Trail 26.7x"
+      "value": 17.64,
+      "threshold": 26.8,
+      "label": "Fwd 17.6x vs Trail 26.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 26.72,
-    "sectorPe": 22.0,
-    "pb": 7.23,
+    "pe": 26.8,
+    "sectorPe": 21.91,
+    "pb": 7.25,
     "ps": null,
     "evEbitda": 21.54,
     "fcfYield": null,
-    "forwardPe": 17.59,
-    "dividendYield": 3.29,
+    "forwardPe": 17.64,
+    "dividendYield": 3.28,
     "revenueGrowth": 4.4,
     "profitMargin": 18.93,
     "operatingMargin": 30.08,

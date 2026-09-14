@@ -1,16 +1,12 @@
 {
   "ticker": "ANZ",
   "name": "ANZ GROUP FPO [ANZ]",
-  "price": 37.27,
+  "price": 37.54,
   "valuationScore": -0.4,
   "marketCap": "—",
   "sector": "Financials",
   "domain": "anz.com.au",
   "chartData": [
-    {
-      "date": "2025-09-14",
-      "price": 31.75
-    },
     {
       "date": "2025-09-21",
       "price": 31.61
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-13",
       "price": 37.27
+    },
+    {
+      "date": "2026-09-20",
+      "price": 37.54
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 18.92,
-      "threshold": 16.27,
-      "label": "18.9x vs 16.3x sector"
+      "value": 19.06,
+      "threshold": 16.33,
+      "label": "19.1x vs 16.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.58,
+      "value": 1.59,
       "threshold": 1.5,
-      "label": "1.58x vs 1.5x"
+      "label": "1.59x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.6,
-      "threshold": 18.92,
-      "label": "Fwd 14.6x vs Trail 18.9x"
+      "value": 14.7,
+      "threshold": 19.06,
+      "label": "Fwd 14.7x vs Trail 19.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 18.92,
-    "sectorPe": 19.15,
-    "pb": 1.58,
+    "pe": 19.06,
+    "sectorPe": 19.21,
+    "pb": 1.59,
     "ps": null,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 14.6,
-    "dividendYield": 4.45,
+    "forwardPe": 14.7,
+    "dividendYield": 4.42,
     "revenueGrowth": -2.1,
     "profitMargin": 27.42,
     "operatingMargin": 48.8,

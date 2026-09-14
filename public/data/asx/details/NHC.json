@@ -1,16 +1,12 @@
 {
   "ticker": "NHC",
   "name": "NEW HOPE FPO [NHC]",
-  "price": 6.33,
-  "valuationScore": 6.5,
+  "price": 6.28,
+  "valuationScore": 6.6,
   "marketCap": "5.3B",
   "sector": "Materials",
   "domain": "newhopegroup.com.au",
   "chartData": [
-    {
-      "date": "2025-09-14",
-      "price": 4.1
-    },
     {
       "date": "2025-09-21",
       "price": 3.97
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-13",
       "price": 6.33
+    },
+    {
+      "date": "2026-09-20",
+      "price": 6.28
     }
   ],
   "testsPassed": 1,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 35.17,
-      "threshold": 15.34,
-      "label": "35.2x vs 15.3x sector"
+      "value": 34.89,
+      "threshold": 15.01,
+      "label": "34.9x vs 15.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.05,
+      "value": 2.04,
       "threshold": 1.5,
-      "label": "2.05x vs 1.5x"
+      "label": "2.04x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 0.83,
+      "value": 0.84,
       "threshold": 5.0,
       "label": "0.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 15.64,
-      "threshold": 35.17,
-      "label": "Fwd 15.6x vs Trail 35.2x"
+      "value": 15.51,
+      "threshold": 34.89,
+      "label": "Fwd 15.5x vs Trail 34.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 35.17,
-    "sectorPe": 18.05,
-    "pb": 2.05,
-    "ps": 3.36,
+    "pe": 34.89,
+    "sectorPe": 17.66,
+    "pb": 2.04,
+    "ps": 3.33,
     "evEbitda": 11.44,
-    "fcfYield": 0.83,
-    "forwardPe": 15.64,
-    "dividendYield": 3.16,
+    "fcfYield": 0.84,
+    "forwardPe": 15.51,
+    "dividendYield": 3.18,
     "revenueGrowth": -20.1,
     "profitMargin": 9.64,
     "operatingMargin": 13.4,

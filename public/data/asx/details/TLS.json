@@ -2,15 +2,11 @@
   "ticker": "TLS",
   "name": "TELSTRA FPO [TLS]",
   "price": 4.83,
-  "valuationScore": 3.4,
+  "valuationScore": 3.5,
   "marketCap": "—",
   "sector": "Telecom",
   "domain": "telstra.com.au",
   "chartData": [
-    {
-      "date": "2025-09-14",
-      "price": 4.75
-    },
     {
       "date": "2025-09-21",
       "price": 4.63
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-13",
       "price": 4.83
+    },
+    {
+      "date": "2026-09-20",
+      "price": 4.83
     }
   ],
   "testsPassed": 3,
@@ -227,8 +227,8 @@
       "name": "P/E Discount",
       "passed": false,
       "value": 24.15,
-      "threshold": 17.39,
-      "label": "24.1x vs 17.4x sector"
+      "threshold": 17.48,
+      "label": "24.1x vs 17.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -282,7 +282,7 @@
   },
   "metrics": {
     "pe": 24.15,
-    "sectorPe": 20.46,
+    "sectorPe": 20.57,
     "pb": 4.27,
     "ps": null,
     "evEbitda": 10.38,
