@@ -2,8 +2,8 @@
   "ticker": "WOW",
   "name": "WOOLWORTHS FPO [WOW]",
   "price": 38.75,
-  "valuationScore": 10.2,
-  "marketCap": "—",
+  "valuationScore": 10.1,
+  "marketCap": "47.3B",
   "sector": "Consumer Staples",
   "domain": "woolworthsgroup.com.au",
   "chartData": [
@@ -220,8 +220,8 @@
       "price": 38.75
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -240,16 +240,16 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 17.8,
+      "value": 17.88,
       "threshold": 10.0,
-      "label": "17.8x vs 10x"
+      "label": "17.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": 4.57,
       "threshold": 5.0,
-      "label": "No FCF data"
+      "label": "4.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": true,
+      "value": 0.17,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "P/S 0.7x ÷ Growth 3.8% = 0.17"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -284,9 +284,9 @@
     "pe": 41.67,
     "sectorPe": 29.3,
     "pb": 9.85,
-    "ps": null,
-    "evEbitda": 17.8,
-    "fcfYield": null,
+    "ps": 0.66,
+    "evEbitda": 17.88,
+    "fcfYield": 4.57,
     "forwardPe": 23.9,
     "dividendYield": 2.5,
     "revenueGrowth": 3.8,
