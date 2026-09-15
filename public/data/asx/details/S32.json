@@ -1,9 +1,9 @@
 {
   "ticker": "S32",
   "name": "SOUTH32 FPO [S32]",
-  "price": 4.93,
+  "price": 4.86,
   "valuationScore": 4.3,
-  "marketCap": "22.1B",
+  "marketCap": "21.8B",
   "sector": "Materials",
   "domain": "south32.net",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-09-20",
-      "price": 4.93
+      "price": 4.86
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 14.94,
-      "threshold": 15.01,
-      "label": "14.9x vs 15.0x sector"
+      "value": 14.73,
+      "threshold": 14.95,
+      "label": "14.7x vs 14.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.64,
+      "value": 1.62,
       "threshold": 1.5,
-      "label": "1.64x vs 1.5x"
+      "label": "1.62x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 16.8,
-      "threshold": 14.94,
-      "label": "Fwd 16.8x vs Trail 14.9x"
+      "value": 16.56,
+      "threshold": 14.73,
+      "label": "Fwd 16.6x vs Trail 14.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 3.38,
+      "value": 3.33,
       "threshold": 0.5,
-      "label": "P/S 3.7x ÷ Growth 1.1% = 3.38"
+      "label": "P/S 3.7x ÷ Growth 1.1% = 3.33"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 14.94,
-    "sectorPe": 17.66,
-    "pb": 1.64,
-    "ps": 3.72,
+    "pe": 14.73,
+    "sectorPe": 17.59,
+    "pb": 1.62,
+    "ps": 3.67,
     "evEbitda": 17.71,
     "fcfYield": -0.06,
-    "forwardPe": 16.8,
-    "dividendYield": 2.64,
+    "forwardPe": 16.56,
+    "dividendYield": 2.68,
     "revenueGrowth": 1.1,
     "profitMargin": 18.3,
     "operatingMargin": 18.16,

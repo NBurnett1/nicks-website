@@ -1,9 +1,9 @@
 {
   "ticker": "AMP",
   "name": "AMP FPO [AMP]",
-  "price": 2.49,
-  "valuationScore": 6.8,
-  "marketCap": "6.1B",
+  "price": 2.5,
+  "valuationScore": 6.1,
+  "marketCap": "—",
   "sector": "Financials",
   "domain": "amp.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-09-20",
-      "price": 2.49
+      "price": 2.5
     }
   ],
   "testsPassed": 2,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 35.57,
-      "threshold": 16.46,
-      "label": "35.6x vs 16.5x sector"
+      "value": 35.71,
+      "threshold": 16.28,
+      "label": "35.7x vs 16.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -246,17 +246,17 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 3.7,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "3.7% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.67,
-      "threshold": 35.57,
-      "label": "Fwd 16.7x vs Trail 35.6x"
+      "value": 16.73,
+      "threshold": 35.71,
+      "label": "Fwd 16.7x vs Trail 35.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": 0.76,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 2.1x ÷ Growth 2.8% = 0.76"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 35.57,
-    "sectorPe": 19.36,
+    "pe": 35.71,
+    "sectorPe": 19.15,
     "pb": 1.64,
-    "ps": 2.14,
+    "ps": null,
     "evEbitda": 18.76,
-    "fcfYield": 3.7,
-    "forwardPe": 16.67,
-    "dividendYield": 2.01,
+    "fcfYield": null,
+    "forwardPe": 16.73,
+    "dividendYield": 2.0,
     "revenueGrowth": 2.8,
     "profitMargin": 6.67,
     "operatingMargin": 66.05,
