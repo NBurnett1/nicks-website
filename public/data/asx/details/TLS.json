@@ -2,8 +2,8 @@
   "ticker": "TLS",
   "name": "TELSTRA FPO [TLS]",
   "price": 4.84,
-  "valuationScore": 3.4,
-  "marketCap": "—",
+  "valuationScore": 1.5,
+  "marketCap": "53.9B",
   "sector": "Telecom",
   "domain": "telstra.com.au",
   "chartData": [
@@ -220,36 +220,36 @@
       "price": 4.84
     }
   ],
-  "testsPassed": 3,
+  "testsPassed": 4,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
       "value": 24.2,
-      "threshold": 17.44,
-      "label": "24.2x vs 17.4x sector"
+      "threshold": 17.51,
+      "label": "24.2x vs 17.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.28,
+      "value": 4.12,
       "threshold": 1.5,
-      "label": "4.28x vs 1.5x"
+      "label": "4.12x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 10.38,
+      "value": 10.39,
       "threshold": 10.0,
       "label": "10.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": null,
-      "value": null,
+      "passed": true,
+      "value": 6.37,
       "threshold": 5.0,
-      "label": "No FCF data"
+      "label": "6.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": -2.0,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "FAIL — Revenue declining -2.0%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,11 +282,11 @@
   },
   "metrics": {
     "pe": 24.2,
-    "sectorPe": 20.52,
-    "pb": 4.28,
-    "ps": null,
-    "evEbitda": 10.38,
-    "fcfYield": null,
+    "sectorPe": 20.6,
+    "pb": 4.12,
+    "ps": 2.35,
+    "evEbitda": 10.39,
+    "fcfYield": 6.37,
     "forwardPe": 21.16,
     "dividendYield": 4.34,
     "revenueGrowth": -2.0,
