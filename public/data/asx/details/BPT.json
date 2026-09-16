@@ -1,9 +1,9 @@
 {
   "ticker": "BPT",
   "name": "BEACH FPO [BPT]",
-  "price": 0.87,
-  "valuationScore": 16.0,
-  "marketCap": "2.0B",
+  "price": 0.9,
+  "valuationScore": -8.2,
+  "marketCap": "—",
   "sector": "Energy",
   "domain": "beachenergy.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-09-20",
-      "price": 0.87
+      "price": 0.9
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 7.25,
-      "threshold": 18.72,
-      "label": "7.2x vs 18.7x sector"
+      "value": 7.5,
+      "threshold": 19.11,
+      "label": "7.5x vs 19.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.61,
+      "value": 0.63,
       "threshold": 1.5,
-      "label": "0.61x vs 1.5x"
+      "label": "0.63x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -246,17 +246,17 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": -7.76,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "-7.8% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 5.71,
-      "threshold": 7.25,
-      "label": "Fwd 5.7x vs Trail 7.2x"
+      "value": 5.91,
+      "threshold": 7.5,
+      "label": "Fwd 5.9x vs Trail 7.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": -17.1,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining -17.1%"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 7.25,
-    "sectorPe": 22.03,
-    "pb": 0.61,
-    "ps": 1.03,
+    "pe": 7.5,
+    "sectorPe": 22.49,
+    "pb": 0.63,
+    "ps": null,
     "evEbitda": 2.77,
-    "fcfYield": -7.76,
-    "forwardPe": 5.71,
-    "dividendYield": 4.6,
+    "fcfYield": null,
+    "forwardPe": 5.91,
+    "dividendYield": 4.44,
     "revenueGrowth": -17.1,
     "profitMargin": 14.65,
     "operatingMargin": 22.79,

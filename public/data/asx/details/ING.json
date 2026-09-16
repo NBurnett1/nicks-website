@@ -1,9 +1,9 @@
 {
   "ticker": "ING",
   "name": "INGHAMS FPO [ING]",
-  "price": 2.03,
-  "valuationScore": -13.2,
-  "marketCap": "755M",
+  "price": 2.0,
+  "valuationScore": -15.6,
+  "marketCap": "742M",
   "sector": "Consumer Staples",
   "domain": "inghams.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-09-20",
-      "price": 1.97
+      "price": 2.0
     }
   ],
   "testsPassed": 6,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 22.56,
-      "threshold": 25.57,
-      "label": "22.6x vs 25.6x sector"
+      "value": 22.17,
+      "threshold": 25.39,
+      "label": "22.2x vs 25.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.0,
+      "value": 2.95,
       "threshold": 1.5,
-      "label": "3.00x vs 1.5x"
+      "label": "2.95x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 20.73,
+      "value": 21.09,
       "threshold": 5.0,
-      "label": "20.7% vs 5%"
+      "label": "21.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 10.03,
-      "threshold": 22.56,
-      "label": "Fwd 10.0x vs Trail 22.6x"
+      "value": 9.86,
+      "threshold": 22.17,
+      "label": "Fwd 9.9x vs Trail 22.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 22.56,
-    "sectorPe": 30.09,
-    "pb": 3.0,
+    "pe": 22.17,
+    "sectorPe": 29.87,
+    "pb": 2.95,
     "ps": 0.23,
     "evEbitda": 9.68,
-    "fcfYield": 20.73,
-    "forwardPe": 10.03,
-    "dividendYield": 4.98,
+    "fcfYield": 21.09,
+    "forwardPe": 9.86,
+    "dividendYield": 5.06,
     "revenueGrowth": 4.9,
     "profitMargin": 1.07,
     "operatingMargin": 5.6,

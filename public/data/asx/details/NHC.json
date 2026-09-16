@@ -1,8 +1,8 @@
 {
   "ticker": "NHC",
   "name": "NEW HOPE FPO [NHC]",
-  "price": 6.47,
-  "valuationScore": 7.1,
+  "price": 6.49,
+  "valuationScore": 4.0,
   "marketCap": "5.5B",
   "sector": "Materials",
   "domain": "newhopegroup.com.au",
@@ -217,18 +217,18 @@
     },
     {
       "date": "2026-09-20",
-      "price": 6.47
+      "price": 6.49
     }
   ],
-  "testsPassed": 1,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 35.94,
-      "threshold": 14.95,
-      "label": "35.9x vs 14.9x sector"
+      "value": 36.06,
+      "threshold": 14.91,
+      "label": "36.1x vs 14.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,59 +240,59 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 11.71,
+      "value": 10.19,
       "threshold": 10.0,
-      "label": "11.7x vs 10x"
+      "label": "10.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 0.81,
+      "value": 4.4,
       "threshold": 5.0,
-      "label": "0.8% vs 5%"
+      "label": "4.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 15.31,
-      "threshold": 35.94,
-      "label": "Fwd 15.3x vs Trail 35.9x"
+      "value": 15.49,
+      "threshold": 36.06,
+      "label": "Fwd 15.5x vs Trail 36.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": false,
-      "value": 9.64,
+      "value": 9.11,
       "threshold": 5.0,
-      "label": "Margin 9.6% / ROE 5.8%"
+      "label": "Margin 9.1% / ROE 6.1%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": -20.1,
+      "passed": true,
+      "value": 0.12,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining -20.1%"
+      "label": "P/S 3.1x ÷ Growth 25.9% = 0.12"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
-      "passed": false,
-      "value": -20.1,
+      "passed": true,
+      "value": 25.9,
       "threshold": -5.0,
-      "label": "-20.1% growth (floor: -5%)"
+      "label": "25.9% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 35.94,
-    "sectorPe": 17.59,
+    "pe": 36.06,
+    "sectorPe": 17.54,
     "pb": 2.1,
-    "ps": 3.43,
-    "evEbitda": 11.71,
-    "fcfYield": 0.81,
-    "forwardPe": 15.31,
-    "dividendYield": 3.09,
-    "revenueGrowth": -20.1,
-    "profitMargin": 9.64,
-    "operatingMargin": 13.4,
-    "roe": 5.84,
-    "debtEquity": 14.71
+    "ps": 3.1,
+    "evEbitda": 10.19,
+    "fcfYield": 4.4,
+    "forwardPe": 15.49,
+    "dividendYield": 9.24,
+    "revenueGrowth": 25.9,
+    "profitMargin": 9.11,
+    "operatingMargin": 16.63,
+    "roe": 6.14,
+    "debtEquity": 14.89
   }
 }
