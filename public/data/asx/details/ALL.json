@@ -1,7 +1,7 @@
 {
   "ticker": "ALL",
   "name": "ARISTOCRAT FPO [ALL]",
-  "price": 61.5,
+  "price": 61.55,
   "valuationScore": 9.6,
   "marketCap": "36.7B",
   "sector": "Consumer Discretionary",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-09-20",
-      "price": 61.5
+      "price": 61.55
     }
   ],
   "testsPassed": 3,
@@ -226,8 +226,8 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 25.95,
-      "threshold": 13.35,
+      "value": 25.86,
+      "threshold": 13.32,
       "label": "25.9x vs 13.3x sector"
     },
     "pbBelowBook": {
@@ -254,8 +254,8 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 21.19,
-      "threshold": 25.95,
+      "value": 21.2,
+      "threshold": 25.86,
       "label": "Fwd 21.2x vs Trail 25.9x"
     },
     "profitabilityCheck": {
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 25.95,
-    "sectorPe": 15.7,
+    "pe": 25.86,
+    "sectorPe": 15.68,
     "pb": 6.01,
     "ps": 5.84,
     "evEbitda": 16.62,
     "fcfYield": 2.49,
-    "forwardPe": 21.19,
-    "dividendYield": null,
+    "forwardPe": 21.2,
+    "dividendYield": 1.61,
     "revenueGrowth": -0.2,
     "profitMargin": 23.46,
     "operatingMargin": 28.62,

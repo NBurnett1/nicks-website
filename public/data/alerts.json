@@ -1,26 +1,8 @@
 {
-  "lastUpdated": "2026-09-17T09:34:41.422652+11:00",
+  "lastUpdated": "2026-09-17T23:33:07.867590+11:00",
   "stocksScanned": 129,
   "totalAlerts": 130,
   "alerts": [
-    {
-      "type": "EXTREME VOLUME",
-      "severity": "critical",
-      "ticker": "AMC",
-      "exchange": "ASX",
-      "headline": "5.9x average volume detected",
-      "detail": "Volume: 3,807,273 vs 20-day avg: 645,417 | Price up 0.0%",
-      "timestamp": "2026-09-16T22:33:49.071402+00:00"
-    },
-    {
-      "type": "INSIDER_SELL",
-      "severity": "high",
-      "ticker": "SUN",
-      "exchange": "ASX",
-      "headline": "Johnston (Steven) (Chief Executive Officer) sold 150,000 shares ($1,916,475)",
-      "detail": "Sale at price 12.78 per share.",
-      "timestamp": "2026-08-18 00:00:00"
-    },
     {
       "type": "INSIDER_BUY",
       "severity": "high",
@@ -51,24 +33,6 @@
     {
       "type": "INSIDER_SELL",
       "severity": "high",
-      "ticker": "SGP",
-      "exchange": "ASX",
-      "headline": "Gupta (Tarun Dinkar) (Chief Executive Officer) sold 874,721 shares ($2,621,801)",
-      "detail": "Sale at price 3.00 per share.",
-      "timestamp": "2026-09-07 00:00:00"
-    },
-    {
-      "type": "INSIDER_SELL",
-      "severity": "high",
-      "ticker": "VEA",
-      "exchange": "ASX",
-      "headline": "Wyatt (Scott Andrew) (Chief Executive Officer) sold 500,000 shares ($1,025,350)",
-      "detail": "Sale at price 2.05 per share.",
-      "timestamp": "2026-09-08 00:00:00"
-    },
-    {
-      "type": "INSIDER_SELL",
-      "severity": "high",
       "ticker": "BRG",
       "exchange": "ASX",
       "headline": "Clayton (James D) (Chief Executive Officer) sold 137,804 shares ($3,029,538)",
@@ -78,20 +42,29 @@
     {
       "type": "PRICE_MOVE",
       "severity": "high",
-      "ticker": "SBM",
+      "ticker": "LNW",
       "exchange": "ASX",
-      "headline": "Stock surged 8.2% in one session",
-      "detail": "$0.80 → $0.86",
-      "timestamp": "2026-09-16T22:33:34.186595+00:00"
+      "headline": "Stock plunged 8.2% in one session",
+      "detail": "$123.68 → $113.57",
+      "timestamp": "2026-09-17T12:32:35.601916+00:00"
     },
     {
-      "type": "PRICE_MOVE",
+      "type": "EXTREME VOLUME",
       "severity": "high",
-      "ticker": "JHX",
+      "ticker": "CWY",
       "exchange": "ASX",
-      "headline": "Stock plunged 5.2% in one session",
-      "detail": "$39.36 → $37.30",
-      "timestamp": "2026-09-16T22:34:03.501575+00:00"
+      "headline": "3.1x average volume detected",
+      "detail": "Volume: 58,177,776 vs 20-day avg: 18,520,134 | Price up 0.7%",
+      "timestamp": "2026-09-17T12:32:46.367366+00:00"
+    },
+    {
+      "type": "EXTREME VOLUME",
+      "severity": "high",
+      "ticker": "ALU",
+      "exchange": "ASX",
+      "headline": "3.5x average volume detected",
+      "detail": "Volume: 1,457,146 vs 20-day avg: 417,142 | Price down 4.8%",
+      "timestamp": "2026-09-17T12:33:07.410891+00:00"
     },
     {
       "type": "INSIDER_BUY",
@@ -220,49 +193,51 @@
       "timestamp": "2026-09-04 00:00:00"
     },
     {
+      "type": "NEWS",
+      "severity": "medium",
+      "ticker": "CBA",
+      "exchange": "ASX",
+      "headline": "Dollar eases from peak as oil prices extend decline, BoJ in focus",
+      "detail": "Source: Reuters",
+      "sentiment": "negative",
+      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/V2c_a8i3o.3B1P3H9VhHFg--~B/aD00OTg7dz04MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/reuters.com/0d6061b1673cdc21a3b8855ecbe8cf09.jpg",
+      "timestamp": "2026-09-17T11:38:39Z"
+    },
+    {
       "type": "VOLUME SPIKE",
       "severity": "medium",
-      "ticker": "GWA",
+      "ticker": "PPT",
+      "exchange": "ASX",
+      "headline": "2.5x average volume detected",
+      "detail": "Volume: 703,640 vs 20-day avg: 278,232 | Price up 0.5%",
+      "timestamp": "2026-09-17T12:32:25.115685+00:00"
+    },
+    {
+      "type": "VOLUME SPIKE",
+      "severity": "medium",
+      "ticker": "IGO",
+      "exchange": "ASX",
+      "headline": "2.0x average volume detected",
+      "detail": "Volume: 6,129,443 vs 20-day avg: 3,059,739 | Price down 1.7%",
+      "timestamp": "2026-09-17T12:32:35.216412+00:00"
+    },
+    {
+      "type": "VOLUME SPIKE",
+      "severity": "medium",
+      "ticker": "AIA",
       "exchange": "ASX",
       "headline": "2.7x average volume detected",
-      "detail": "Volume: 1,408,376 vs 20-day avg: 521,259 | Price up 0.8%",
-      "timestamp": "2026-09-16T22:33:40.137122+00:00"
+      "detail": "Volume: 1,518,443 vs 20-day avg: 556,657 | Price up 1.2%",
+      "timestamp": "2026-09-17T12:32:41.961231+00:00"
     },
     {
       "type": "VOLUME SPIKE",
       "severity": "medium",
-      "ticker": "MIN",
-      "exchange": "ASX",
-      "headline": "2.1x average volume detected",
-      "detail": "Volume: 2,215,117 vs 20-day avg: 1,051,283 | Price down 0.0%",
-      "timestamp": "2026-09-16T22:33:42.752568+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "JHX",
+      "ticker": "NHC",
       "exchange": "ASX",
       "headline": "2.2x average volume detected",
-      "detail": "Volume: 3,070,788 vs 20-day avg: 1,404,223 | Price down 5.2%",
-      "timestamp": "2026-09-16T22:34:03.302268+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "AUB",
-      "exchange": "ASX",
-      "headline": "2.3x average volume detected",
-      "detail": "Volume: 1,239,606 vs 20-day avg: 547,462 | Price up 1.1%",
-      "timestamp": "2026-09-16T22:34:27.425712+00:00"
-    },
-    {
-      "type": "INSIDER_BUY",
-      "severity": "low",
-      "ticker": "GWA",
-      "exchange": "ASX",
-      "headline": "Page (Nicola Janine) (Independent Non-Executive Director) purchased 5,000 shares ($7,634)",
-      "detail": "Purchase at price 1.53 per share.",
-      "timestamp": "2026-08-18 00:00:00"
+      "detail": "Volume: 5,774,840 vs 20-day avg: 2,634,064 | Price down 0.8%",
+      "timestamp": "2026-09-17T12:32:54.215607+00:00"
     },
     {
       "type": "INSIDER_BUY",
@@ -348,6 +323,15 @@
     {
       "type": "INSIDER_BUY",
       "severity": "low",
+      "ticker": "CSL",
+      "exchange": "ASX",
+      "headline": "Watkins (Alison Mary) (Independent Non-Executive Director) purchased 213 shares ($32,427)",
+      "detail": "Purchase at price 152.24 per share.",
+      "timestamp": "2026-08-21 00:00:00"
+    },
+    {
+      "type": "INSIDER_BUY",
+      "severity": "low",
       "ticker": "DOW",
       "exchange": "ASX",
       "headline": "Howse (Adelle Maree) (Independent Non-Executive Director) purchased 7,200 shares ($33,328)",
@@ -402,19 +386,19 @@
     {
       "type": "INSIDER_BUY",
       "severity": "low",
-      "ticker": "NHF",
+      "ticker": "MTS",
       "exchange": "ASX",
-      "headline": "Welsh (Brad) (Chief Executive Officer) purchased 6,686 shares ($31,227)",
-      "detail": "Purchase at price 4.67 per share.",
+      "headline": "Go (Marina Simone) (Independent Non-Executive Director) purchased 10,000 shares ($20,542)",
+      "detail": "Purchase at price 2.05 per share.",
       "timestamp": "2026-08-25 00:00:00"
     },
     {
       "type": "INSIDER_BUY",
       "severity": "low",
-      "ticker": "MTS",
+      "ticker": "NHF",
       "exchange": "ASX",
-      "headline": "Go (Marina Simone) (Independent Non-Executive Director) purchased 10,000 shares ($20,542)",
-      "detail": "Purchase at price 2.05 per share.",
+      "headline": "Welsh (Brad) (Chief Executive Officer) purchased 6,686 shares ($31,227)",
+      "detail": "Purchase at price 4.67 per share.",
       "timestamp": "2026-08-25 00:00:00"
     },
     {
@@ -474,19 +458,19 @@
     {
       "type": "INSIDER_BUY",
       "severity": "low",
-      "ticker": "IPH",
+      "ticker": "WOR",
       "exchange": "ASX",
-      "headline": "Warne (Peter Hastings) (Non Executive Chairman) purchased 10,000 shares ($23,561)",
-      "detail": "Purchase at price 2.36 per share.",
+      "headline": "Johns (Jeanne) (Director (Non-Executive)) purchased 6,000 shares ($42,097)",
+      "detail": "Purchase at price 7.02 per share.",
       "timestamp": "2026-08-27 00:00:00"
     },
     {
       "type": "INSIDER_BUY",
       "severity": "low",
-      "ticker": "WOR",
+      "ticker": "IPH",
       "exchange": "ASX",
-      "headline": "Johns (Jeanne) (Director (Non-Executive)) purchased 6,000 shares ($42,097)",
-      "detail": "Purchase at price 7.02 per share.",
+      "headline": "Warne (Peter Hastings) (Non Executive Chairman) purchased 10,000 shares ($23,561)",
+      "detail": "Purchase at price 2.36 per share.",
       "timestamp": "2026-08-27 00:00:00"
     },
     {
@@ -537,6 +521,15 @@
     {
       "type": "INSIDER_BUY",
       "severity": "low",
+      "ticker": "ALQ",
+      "exchange": "ASX",
+      "headline": "Boyce (Christina Mary) (Director (Non-Executive)) purchased 2,000 shares ($31,230)",
+      "detail": "Purchase at price 15.62 per share.",
+      "timestamp": "2026-08-27 00:00:00"
+    },
+    {
+      "type": "INSIDER_BUY",
+      "severity": "low",
       "ticker": "MND",
       "exchange": "ASX",
       "headline": "Buratto (Enrico Paul) (Independent Non-Executive Director) purchased 500 shares ($10,030)",
@@ -568,6 +561,15 @@
       "exchange": "ASX",
       "headline": "Watts (Jill Margaret) (Independent Non-Executive Director) purchased 388 shares ($1,804)",
       "detail": "Purchase at price 4.65 per share.",
+      "timestamp": "2026-08-28 00:00:00"
+    },
+    {
+      "type": "INSIDER_BUY",
+      "severity": "low",
+      "ticker": "DXS",
+      "exchange": "ASX",
+      "headline": "Gidney (Jon) (Director (Independent)) purchased 10,000 shares ($40,113)",
+      "detail": "Purchase at price 4.01 per share.",
       "timestamp": "2026-08-28 00:00:00"
     },
     {
@@ -778,15 +780,6 @@
       "timestamp": "2026-09-08 00:00:00"
     },
     {
-      "type": "INSIDER_BUY",
-      "severity": "low",
-      "ticker": "BAP",
-      "exchange": "ASX",
-      "headline": "Wilesmith (Christopher David) (Chief Executive Officer) purchased 100,000 shares ($53,340)",
-      "detail": "Purchase at price 0.53 per share.",
-      "timestamp": "2026-09-09 00:00:00"
-    },
-    {
       "type": "NEWS",
       "severity": "low",
       "ticker": "TLS",
@@ -807,15 +800,6 @@
       "sentiment": "positive",
       "thumbnail": "https://s.yimg.com/uu/api/res/1.2/ikkycA6WtkQeIL9Clxdoig--~B/aD0xMDY3O3c9MTYwMDthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/barchart_com_477/43e088ba1524a0829636abde2c6bd918.jpg",
       "timestamp": "2026-09-09T17:57:27Z"
-    },
-    {
-      "type": "INSIDER_BUY",
-      "severity": "low",
-      "ticker": "NEC",
-      "exchange": "ASX",
-      "headline": "Terry (Leigh) (Independent Non-Executive Director) purchased 38,543 shares ($20,863)",
-      "detail": "Purchase at price 0.54 per share.",
-      "timestamp": "2026-09-10 00:00:00"
     },
     {
       "type": "NEWS",
@@ -1256,6 +1240,28 @@
       "sentiment": "positive",
       "thumbnail": "https://s.yimg.com/uu/api/res/1.2/v9VdL5ex72tpiKXhJs9oLw--~B/aD05NjA7dz0xMjgwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/financial_post_articles_610/0a64b2c2255c65e67f9138079ea5ed8f.jpg",
       "timestamp": "2026-09-16T21:33:23Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "S32",
+      "exchange": "ASX",
+      "headline": "Alcoa (AA) Priced $2.6 Billion of Acquisition Notes. Can the Assets Cover $175 Million in Interest?",
+      "detail": "Source: Insider Monkey",
+      "sentiment": "positive",
+      "thumbnail": "https://s.yimg.com/uu/api/res/1.2/8YRIYPE4l_OXGoIc0xiK9Q--~B/aD04MTY7dz0xNDU2O2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/insidermonkey.com/d15130425b806b509938ee3278c36175.jpg",
+      "timestamp": "2026-09-16T22:31:09Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "FLT",
+      "exchange": "ASX",
+      "headline": "Flight Centre Travel Group Ltd's Dividend Analysis",
+      "detail": "Source: GuruFocus.com",
+      "sentiment": "positive",
+      "thumbnail": null,
+      "timestamp": "2026-09-17T11:07:09Z"
     }
   ]
 }
