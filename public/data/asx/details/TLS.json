@@ -2,8 +2,8 @@
   "ticker": "TLS",
   "name": "TELSTRA FPO [TLS]",
   "price": 4.87,
-  "valuationScore": 1.8,
-  "marketCap": "54.2B",
+  "valuationScore": 3.6,
+  "marketCap": "—",
   "sector": "Telecom",
   "domain": "telstra.com.au",
   "chartData": [
@@ -220,36 +220,36 @@
       "price": 4.87
     }
   ],
-  "testsPassed": 4,
+  "testsPassed": 3,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
       "value": 24.35,
-      "threshold": 17.47,
-      "label": "24.3x vs 17.5x sector"
+      "threshold": 17.33,
+      "label": "24.3x vs 17.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.15,
+      "value": 4.31,
       "threshold": 1.5,
-      "label": "4.15x vs 1.5x"
+      "label": "4.31x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 10.45,
+      "value": 10.44,
       "threshold": 10.0,
-      "label": "10.5x vs 10x"
+      "label": "10.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": true,
-      "value": 6.34,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "6.3% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": -2.0,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining -2.0%"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,11 +282,11 @@
   },
   "metrics": {
     "pe": 24.35,
-    "sectorPe": 20.55,
-    "pb": 4.15,
-    "ps": 2.37,
-    "evEbitda": 10.45,
-    "fcfYield": 6.34,
+    "sectorPe": 20.39,
+    "pb": 4.31,
+    "ps": null,
+    "evEbitda": 10.44,
+    "fcfYield": null,
     "forwardPe": 21.29,
     "dividendYield": 4.31,
     "revenueGrowth": -2.0,
