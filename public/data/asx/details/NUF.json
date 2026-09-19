@@ -2,8 +2,8 @@
   "ticker": "NUF",
   "name": "NUFARM FPO [NUF]",
   "price": 3.25,
-  "valuationScore": -1.2,
-  "marketCap": "—",
+  "valuationScore": -8.7,
+  "marketCap": "1.2B",
   "sector": "Basic Materials",
   "domain": "nufarm.com",
   "chartData": [
@@ -220,7 +220,7 @@
       "price": 3.25
     }
   ],
-  "testsPassed": 1,
+  "testsPassed": 2,
   "grade": "D",
   "valuationTests": {
     "peDiscount": {
@@ -246,15 +246,15 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": null,
-      "value": null,
+      "passed": true,
+      "value": 20.87,
       "threshold": 5.0,
-      "label": "No FCF data"
+      "label": "20.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 16.68,
+      "value": 17.0,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": -5.3,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "FAIL — Revenue declining -5.3%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -284,10 +284,10 @@
     "pe": null,
     "sectorPe": 21.34,
     "pb": 0.69,
-    "ps": null,
+    "ps": 0.37,
     "evEbitda": 11.76,
-    "fcfYield": null,
-    "forwardPe": 16.68,
+    "fcfYield": 20.87,
+    "forwardPe": 17.0,
     "dividendYield": null,
     "revenueGrowth": -5.3,
     "profitMargin": -4.69,
