@@ -1,16 +1,12 @@
 {
   "ticker": "ALL",
   "name": "ARISTOCRAT FPO [ALL]",
-  "price": 60.77,
+  "price": 60.55,
   "valuationScore": 9.6,
-  "marketCap": "36.1B",
+  "marketCap": "36.0B",
   "sector": "Consumer Discretionary",
   "domain": "aristocrat.com",
   "chartData": [
-    {
-      "date": "2025-09-21",
-      "price": 67.37
-    },
     {
       "date": "2025-09-28",
       "price": 67.45
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-20",
       "price": 60.77
+    },
+    {
+      "date": "2026-09-27",
+      "price": 60.55
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 25.53,
-      "threshold": 13.14,
-      "label": "25.5x vs 13.1x sector"
+      "value": 25.55,
+      "threshold": 13.24,
+      "label": "25.5x vs 13.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 5.94,
+      "value": 5.92,
       "threshold": 1.5,
-      "label": "5.94x vs 1.5x"
+      "label": "5.92x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,15 +247,15 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.53,
+      "value": 2.54,
       "threshold": 5.0,
       "label": "2.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 20.94,
-      "threshold": 25.53,
+      "value": 20.86,
+      "threshold": 25.55,
       "label": "Fwd 20.9x vs Trail 25.5x"
     },
     "profitabilityCheck": {
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 25.53,
-    "sectorPe": 15.46,
-    "pb": 5.94,
-    "ps": 5.74,
+    "pe": 25.55,
+    "sectorPe": 15.57,
+    "pb": 5.92,
+    "ps": 5.72,
     "evEbitda": 16.43,
-    "fcfYield": 2.53,
-    "forwardPe": 20.94,
-    "dividendYield": 1.63,
+    "fcfYield": 2.54,
+    "forwardPe": 20.86,
+    "dividendYield": 1.64,
     "revenueGrowth": -0.2,
     "profitMargin": 23.46,
     "operatingMargin": 28.62,

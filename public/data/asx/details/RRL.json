@@ -1,16 +1,12 @@
 {
   "ticker": "RRL",
   "name": "REGIS FPO [RRL]",
-  "price": 7.8,
-  "valuationScore": -8.4,
+  "price": 7.76,
+  "valuationScore": -8.2,
   "marketCap": "5.9B",
   "sector": "Basic Materials",
   "domain": "regisresources.com.au",
   "chartData": [
-    {
-      "date": "2025-09-21",
-      "price": 5.27
-    },
     {
       "date": "2025-09-28",
       "price": 5.6
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-20",
       "price": 7.8
+    },
+    {
+      "date": "2026-09-27",
+      "price": 7.76
     }
   ],
   "testsPassed": 7,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 8.3,
-      "threshold": 18.14,
-      "label": "8.3x vs 18.1x sector"
+      "value": 8.26,
+      "threshold": 18.0,
+      "label": "8.3x vs 18.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.71,
+      "value": 2.69,
       "threshold": 1.5,
-      "label": "2.71x vs 1.5x"
+      "label": "2.69x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,15 +247,15 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 11.99,
+      "value": 12.05,
       "threshold": 5.0,
-      "label": "12.0% vs 5%"
+      "label": "12.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 7.41,
-      "threshold": 8.3,
+      "value": 7.37,
+      "threshold": 8.26,
       "label": "Fwd 7.4x vs Trail 8.3x"
     },
     "profitabilityCheck": {
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 8.3,
-    "sectorPe": 21.34,
-    "pb": 2.71,
-    "ps": 2.52,
+    "pe": 8.26,
+    "sectorPe": 21.18,
+    "pb": 2.69,
+    "ps": 2.51,
     "evEbitda": 4.0,
-    "fcfYield": 11.99,
-    "forwardPe": 7.41,
-    "dividendYield": 3.85,
+    "fcfYield": 12.05,
+    "forwardPe": 7.37,
+    "dividendYield": 3.87,
     "revenueGrowth": 44.9,
     "profitMargin": 30.44,
     "operatingMargin": 43.3,

@@ -1,16 +1,12 @@
 {
   "ticker": "ING",
   "name": "INGHAMS FPO [ING]",
-  "price": 1.91,
-  "valuationScore": -16.3,
-  "marketCap": "708M",
+  "price": 1.95,
+  "valuationScore": -13.4,
+  "marketCap": "725M",
   "sector": "Consumer Staples",
   "domain": "inghams.com.au",
   "chartData": [
-    {
-      "date": "2025-09-21",
-      "price": 2.39
-    },
     {
       "date": "2025-09-28",
       "price": 2.41
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-20",
       "price": 1.9
+    },
+    {
+      "date": "2026-09-27",
+      "price": 1.95
     }
   ],
   "testsPassed": 6,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 21.17,
-      "threshold": 24.76,
-      "label": "21.2x vs 24.8x sector"
+      "value": 21.67,
+      "threshold": 24.69,
+      "label": "21.7x vs 24.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.81,
+      "value": 2.88,
       "threshold": 1.5,
-      "label": "2.81x vs 1.5x"
+      "label": "2.88x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 22.09,
+      "value": 21.58,
       "threshold": 5.0,
-      "label": "22.1% vs 5%"
+      "label": "21.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 9.41,
-      "threshold": 21.17,
-      "label": "Fwd 9.4x vs Trail 21.2x"
+      "value": 9.63,
+      "threshold": 21.67,
+      "label": "Fwd 9.6x vs Trail 21.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.04,
+      "value": 0.05,
       "threshold": 0.5,
-      "label": "P/S 0.2x ÷ Growth 4.9% = 0.04"
+      "label": "P/S 0.2x ÷ Growth 4.9% = 0.05"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 21.17,
-    "sectorPe": 29.13,
-    "pb": 2.81,
+    "pe": 21.67,
+    "sectorPe": 29.04,
+    "pb": 2.88,
     "ps": 0.22,
     "evEbitda": 9.46,
-    "fcfYield": 22.09,
-    "forwardPe": 9.41,
-    "dividendYield": 5.3,
+    "fcfYield": 21.58,
+    "forwardPe": 9.63,
+    "dividendYield": 5.18,
     "revenueGrowth": 4.9,
     "profitMargin": 1.07,
     "operatingMargin": 5.6,

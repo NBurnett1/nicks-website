@@ -1,16 +1,12 @@
 {
   "ticker": "CAR",
   "name": "CAR GROUP FPO [CAR]",
-  "price": 23.24,
-  "valuationScore": -4.4,
+  "price": 23.3,
+  "valuationScore": -4.2,
   "marketCap": "8.8B",
   "sector": "Technology",
   "domain": "cargroup.com",
   "chartData": [
-    {
-      "date": "2025-09-21",
-      "price": 36.71
-    },
     {
       "date": "2025-09-28",
       "price": 35.81
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-20",
       "price": 23.24
+    },
+    {
+      "date": "2026-09-27",
+      "price": 23.3
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 28.0,
-      "threshold": 31.17,
-      "label": "28.0x vs 31.2x sector"
+      "value": 28.07,
+      "threshold": 30.92,
+      "label": "28.1x vs 30.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.21,
+      "value": 3.22,
       "threshold": 1.5,
-      "label": "3.21x vs 1.5x"
+      "label": "3.22x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.54,
+      "value": 4.53,
       "threshold": 5.0,
       "label": "4.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 17.76,
-      "threshold": 28.0,
-      "label": "Fwd 17.8x vs Trail 28.0x"
+      "value": 17.81,
+      "threshold": 28.07,
+      "label": "Fwd 17.8x vs Trail 28.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 28.0,
-    "sectorPe": 36.67,
-    "pb": 3.21,
-    "ps": 7.03,
+    "pe": 28.07,
+    "sectorPe": 36.38,
+    "pb": 3.22,
+    "ps": 7.05,
     "evEbitda": 17.68,
-    "fcfYield": 4.54,
-    "forwardPe": 17.76,
-    "dividendYield": 3.74,
+    "fcfYield": 4.53,
+    "forwardPe": 17.81,
+    "dividendYield": 3.73,
     "revenueGrowth": 3.8,
     "profitMargin": 25.03,
     "operatingMargin": 39.59,

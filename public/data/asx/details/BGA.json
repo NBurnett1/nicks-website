@@ -1,16 +1,12 @@
 {
   "ticker": "BGA",
   "name": "BEGA FPO [BGA]",
-  "price": 6.0,
-  "valuationScore": 0.8,
-  "marketCap": "1.8B",
+  "price": 6.07,
+  "valuationScore": 1.1,
+  "marketCap": "1.9B",
   "sector": "Consumer Staples",
   "domain": "begagroup.com.au",
   "chartData": [
-    {
-      "date": "2025-09-21",
-      "price": 5.28
-    },
     {
       "date": "2025-09-28",
       "price": 5.06
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-20",
       "price": 6.0
+    },
+    {
+      "date": "2026-09-27",
+      "price": 6.07
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 33.33,
-      "threshold": 24.76,
-      "label": "33.3x vs 24.8x sector"
+      "value": 33.72,
+      "threshold": 24.69,
+      "label": "33.7x vs 24.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.84,
+      "value": 1.86,
       "threshold": 1.5,
-      "label": "1.84x vs 1.5x"
+      "label": "1.86x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 1.73,
+      "value": 1.71,
       "threshold": 5.0,
       "label": "1.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 19.99,
-      "threshold": 33.33,
-      "label": "Fwd 20.0x vs Trail 33.3x"
+      "value": 20.22,
+      "threshold": 33.72,
+      "label": "Fwd 20.2x vs Trail 33.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 33.33,
-    "sectorPe": 29.13,
-    "pb": 1.84,
+    "pe": 33.72,
+    "sectorPe": 29.04,
+    "pb": 1.86,
     "ps": 0.49,
     "evEbitda": 12.18,
-    "fcfYield": 1.73,
-    "forwardPe": 19.99,
-    "dividendYield": 2.5,
+    "fcfYield": 1.71,
+    "forwardPe": 20.22,
+    "dividendYield": 2.47,
     "revenueGrowth": 8.3,
     "profitMargin": 1.45,
     "operatingMargin": 2.55,

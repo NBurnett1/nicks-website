@@ -1,16 +1,12 @@
 {
   "ticker": "ASG",
   "name": "AUTOSPORTS FPO [ASG]",
-  "price": 1.29,
+  "price": 1.28,
   "valuationScore": 31.7,
-  "marketCap": "275M",
+  "marketCap": "273M",
   "sector": "Consumer Cyclical",
   "domain": "autosportsgroup.com.au",
   "chartData": [
-    {
-      "date": "2025-09-21",
-      "price": 3.33
-    },
     {
       "date": "2025-09-28",
       "price": 3.22
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-20",
       "price": 1.29
+    },
+    {
+      "date": "2026-09-27",
+      "price": 1.28
     }
   ],
   "testsPassed": 4,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 9.92,
-      "threshold": 24.75,
-      "label": "9.9x vs 24.8x sector"
+      "value": 9.85,
+      "threshold": 24.43,
+      "label": "9.8x vs 24.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -68.45,
+      "value": -68.98,
       "threshold": 5.0,
-      "label": "-68.5% vs 5%"
+      "label": "-69.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 5.33,
-      "threshold": 9.92,
-      "label": "Fwd 5.3x vs Trail 9.9x"
+      "value": 5.29,
+      "threshold": 9.85,
+      "label": "Fwd 5.3x vs Trail 9.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 9.92,
-    "sectorPe": 29.12,
+    "pe": 9.85,
+    "sectorPe": 28.74,
     "pb": 0.51,
     "ps": 0.09,
     "evEbitda": 9.07,
-    "fcfYield": -68.45,
-    "forwardPe": 5.33,
-    "dividendYield": 6.2,
+    "fcfYield": -68.98,
+    "forwardPe": 5.29,
+    "dividendYield": 6.25,
     "revenueGrowth": null,
     "profitMargin": 0.81,
     "operatingMargin": 3.81,

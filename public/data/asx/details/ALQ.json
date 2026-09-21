@@ -1,16 +1,12 @@
 {
   "ticker": "ALQ",
   "name": "ALS FPO [ALQ]",
-  "price": 21.37,
-  "valuationScore": 9.7,
+  "price": 21.35,
+  "valuationScore": 9.8,
   "marketCap": "10.8B",
   "sector": "Industrials",
   "domain": "alsglobal.com",
   "chartData": [
-    {
-      "date": "2025-09-21",
-      "price": 19.56
-    },
     {
       "date": "2025-09-28",
       "price": 19.4
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-20",
       "price": 21.37
+    },
+    {
+      "date": "2026-09-27",
+      "price": 21.35
     }
   ],
   "testsPassed": 4,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 33.92,
-      "threshold": 18.87,
-      "label": "33.9x vs 18.9x sector"
+      "value": 33.89,
+      "threshold": 18.76,
+      "label": "33.9x vs 18.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -254,8 +254,8 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 21.29,
-      "threshold": 33.92,
+      "value": 21.27,
+      "threshold": 33.89,
       "label": "Fwd 21.3x vs Trail 33.9x"
     },
     "profitabilityCheck": {
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 33.92,
-    "sectorPe": 22.2,
+    "pe": 33.89,
+    "sectorPe": 22.07,
     "pb": 6.38,
-    "ps": 3.27,
+    "ps": 3.26,
     "evEbitda": 17.34,
     "fcfYield": 3.0,
-    "forwardPe": 21.29,
+    "forwardPe": 21.27,
     "dividendYield": 1.99,
     "revenueGrowth": 8.2,
     "profitMargin": 9.6,

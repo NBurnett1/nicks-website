@@ -1,16 +1,12 @@
 {
   "ticker": "ARB",
   "name": "ARB CORP FPO [ARB]",
-  "price": 18.12,
+  "price": 18.11,
   "valuationScore": -0.5,
   "marketCap": "1.5B",
   "sector": "Consumer Discretionary",
   "domain": "arb.com.au",
   "chartData": [
-    {
-      "date": "2025-09-21",
-      "price": 39.0
-    },
     {
       "date": "2025-09-28",
       "price": 37.03
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-20",
       "price": 18.12
+    },
+    {
+      "date": "2026-09-27",
+      "price": 18.11
     }
   ],
   "testsPassed": 2,
@@ -227,8 +227,8 @@
       "name": "P/E Discount",
       "passed": false,
       "value": 16.32,
-      "threshold": 13.14,
-      "label": "16.3x vs 13.1x sector"
+      "threshold": 13.24,
+      "label": "16.3x vs 13.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -282,13 +282,13 @@
   },
   "metrics": {
     "pe": 16.32,
-    "sectorPe": 15.46,
+    "sectorPe": 15.57,
     "pb": 2.04,
-    "ps": 2.15,
+    "ps": 2.14,
     "evEbitda": 10.86,
     "fcfYield": 4.24,
     "forwardPe": 14.46,
-    "dividendYield": 3.86,
+    "dividendYield": 3.87,
     "revenueGrowth": -6.3,
     "profitMargin": 13.08,
     "operatingMargin": 17.61,

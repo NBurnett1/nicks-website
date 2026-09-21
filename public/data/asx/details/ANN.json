@@ -1,16 +1,12 @@
 {
   "ticker": "ANN",
   "name": "ANSELL FPO [ANN]",
-  "price": 42.31,
+  "price": 42.71,
   "valuationScore": -2.2,
   "marketCap": "6.0B",
   "sector": "Healthcare",
   "domain": "ansell.com",
   "chartData": [
-    {
-      "date": "2025-09-21",
-      "price": 33.08
-    },
     {
       "date": "2025-09-28",
       "price": 30.93
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-20",
       "price": 42.31
+    },
+    {
+      "date": "2026-09-27",
+      "price": 42.71
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 20.64,
-      "threshold": 26.52,
-      "label": "20.6x vs 26.5x sector"
+      "value": 21.04,
+      "threshold": 26.53,
+      "label": "21.0x vs 26.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.11,
+      "value": 2.13,
       "threshold": 1.5,
-      "label": "2.11x vs 1.5x"
+      "label": "2.13x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.48,
+      "value": 3.44,
       "threshold": 5.0,
-      "label": "3.5% vs 5%"
+      "label": "3.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 17.04,
-      "threshold": 20.64,
-      "label": "Fwd 17.0x vs Trail 20.6x"
+      "value": 17.24,
+      "threshold": 21.04,
+      "label": "Fwd 17.2x vs Trail 21.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 20.64,
-    "sectorPe": 31.2,
-    "pb": 2.11,
-    "ps": 2.78,
+    "pe": 21.04,
+    "sectorPe": 31.21,
+    "pb": 2.13,
+    "ps": 2.81,
     "evEbitda": 17.26,
-    "fcfYield": 3.48,
-    "forwardPe": 17.04,
-    "dividendYield": 2.74,
+    "fcfYield": 3.44,
+    "forwardPe": 17.24,
+    "dividendYield": 2.71,
     "revenueGrowth": 13.2,
     "profitMargin": 9.75,
     "operatingMargin": 15.72,

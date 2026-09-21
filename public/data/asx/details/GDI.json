@@ -1,16 +1,12 @@
 {
   "ticker": "GDI",
   "name": "GDI PROP STAPLED [GDI]",
-  "price": 0.64,
-  "valuationScore": 46.9,
-  "marketCap": "345M",
+  "price": 0.63,
+  "valuationScore": 46.7,
+  "marketCap": "340M",
   "sector": "Real Estate",
   "domain": "gdi.com.au",
   "chartData": [
-    {
-      "date": "2025-09-21",
-      "price": 0.63
-    },
     {
       "date": "2025-09-28",
       "price": 0.62
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-20",
       "price": 0.64
+    },
+    {
+      "date": "2026-09-27",
+      "price": 0.63
     }
   ],
   "testsPassed": 1,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 10.67,
-      "threshold": 8.46,
-      "label": "10.7x vs 8.5x sector"
+      "value": 10.5,
+      "threshold": 8.52,
+      "label": "10.5x vs 8.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 12.8,
+      "value": 12.6,
       "threshold": 1.5,
-      "label": "12.80x vs 1.5x"
+      "label": "12.60x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 6.99,
-      "threshold": 10.67,
-      "label": "Fwd 7.0x vs Trail 10.7x"
+      "value": 6.89,
+      "threshold": 10.5,
+      "label": "Fwd 6.9x vs Trail 10.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 10.67,
-    "sectorPe": 9.95,
-    "pb": 12.8,
-    "ps": 4.07,
+    "pe": 10.5,
+    "sectorPe": 10.02,
+    "pb": 12.6,
+    "ps": 4.0,
     "evEbitda": 27.89,
     "fcfYield": -0.17,
-    "forwardPe": 6.99,
-    "dividendYield": 7.81,
+    "forwardPe": 6.89,
+    "dividendYield": 7.94,
     "revenueGrowth": -7.5,
     "profitMargin": 1.63,
     "operatingMargin": 57.71,

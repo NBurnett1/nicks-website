@@ -8,10 +8,6 @@
   "domain": "agl.com.au",
   "chartData": [
     {
-      "date": "2025-09-21",
-      "price": 8.27
-    },
-    {
       "date": "2025-09-28",
       "price": 8.48
     },
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-20",
       "price": 8.45
+    },
+    {
+      "date": "2026-09-27",
+      "price": 8.45
     }
   ],
   "testsPassed": 5,
@@ -227,8 +227,8 @@
       "name": "P/E Discount",
       "passed": true,
       "value": 7.54,
-      "threshold": 17.39,
-      "label": "7.5x vs 17.4x sector"
+      "threshold": 17.49,
+      "label": "7.5x vs 17.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -282,7 +282,7 @@
   },
   "metrics": {
     "pe": 7.54,
-    "sectorPe": 20.46,
+    "sectorPe": 20.58,
     "pb": 1.08,
     "ps": 0.41,
     "evEbitda": 6.98,

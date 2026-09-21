@@ -1,16 +1,12 @@
 {
   "ticker": "INA",
   "name": "INGENIA STAPLED [INA]",
-  "price": 4.32,
-  "valuationScore": -0.4,
+  "price": 4.35,
+  "valuationScore": -0.3,
   "marketCap": "1.8B",
   "sector": "Real Estate",
   "domain": "ingeniacommunities.com.au",
   "chartData": [
-    {
-      "date": "2025-09-21",
-      "price": 5.4
-    },
     {
       "date": "2025-09-28",
       "price": 5.35
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-20",
       "price": 4.32
+    },
+    {
+      "date": "2026-09-27",
+      "price": 4.35
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 9.6,
-      "threshold": 8.46,
-      "label": "9.6x vs 8.5x sector"
+      "value": 9.67,
+      "threshold": 8.52,
+      "label": "9.7x vs 8.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.01,
+      "value": 1.02,
       "threshold": 1.5,
-      "label": "1.01x vs 1.5x"
+      "label": "1.02x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 6.06,
+      "value": 6.02,
       "threshold": 5.0,
-      "label": "6.1% vs 5%"
+      "label": "6.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 10.53,
-      "threshold": 9.6,
-      "label": "Fwd 10.5x vs Trail 9.6x"
+      "value": 10.6,
+      "threshold": 9.67,
+      "label": "Fwd 10.6x vs Trail 9.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 9.6,
-    "sectorPe": 9.95,
-    "pb": 1.01,
-    "ps": 3.06,
+    "pe": 9.67,
+    "sectorPe": 10.02,
+    "pb": 1.02,
+    "ps": 3.08,
     "evEbitda": 15.75,
-    "fcfYield": 6.06,
-    "forwardPe": 10.53,
-    "dividendYield": 2.22,
+    "fcfYield": 6.02,
+    "forwardPe": 10.6,
+    "dividendYield": 2.21,
     "revenueGrowth": 13.3,
     "profitMargin": 32.35,
     "operatingMargin": 28.57,

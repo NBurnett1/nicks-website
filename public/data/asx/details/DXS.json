@@ -1,16 +1,12 @@
 {
   "ticker": "DXS",
   "name": "DEXUS STAPLED [DXS]",
-  "price": 5.55,
-  "valuationScore": -4.3,
-  "marketCap": "6.0B",
+  "price": 5.54,
+  "valuationScore": -4.2,
+  "marketCap": "5.9B",
   "sector": "Real Estate",
   "domain": "dexus.com",
   "chartData": [
-    {
-      "date": "2025-09-21",
-      "price": 6.89
-    },
     {
       "date": "2025-09-28",
       "price": 6.75
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-20",
       "price": 5.55
+    },
+    {
+      "date": "2026-09-27",
+      "price": 5.54
     }
   ],
   "testsPassed": 3,
@@ -226,8 +226,8 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 10.09,
-      "threshold": 8.46,
+      "value": 10.07,
+      "threshold": 8.52,
       "label": "10.1x vs 8.5x sector"
     },
     "pbBelowBook": {
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 8.66,
+      "value": 8.67,
       "threshold": 5.0,
       "label": "8.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 9.46,
-      "threshold": 10.09,
-      "label": "Fwd 9.5x vs Trail 10.1x"
+      "value": 9.44,
+      "threshold": 10.07,
+      "label": "Fwd 9.4x vs Trail 10.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 10.09,
-    "sectorPe": 9.95,
+    "pe": 10.07,
+    "sectorPe": 10.02,
     "pb": 0.6,
-    "ps": 4.5,
+    "ps": 4.49,
     "evEbitda": 11.54,
-    "fcfYield": 8.66,
-    "forwardPe": 9.46,
-    "dividendYield": 6.67,
+    "fcfYield": 8.67,
+    "forwardPe": 9.44,
+    "dividendYield": 6.68,
     "revenueGrowth": -12.1,
     "profitMargin": 46.1,
     "operatingMargin": 66.3,

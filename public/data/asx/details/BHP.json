@@ -1,16 +1,12 @@
 {
   "ticker": "BHP",
   "name": "BHP GROUP FPO [BHP]",
-  "price": 61.05,
-  "valuationScore": 5.3,
-  "marketCap": "310.3B",
+  "price": 60.78,
+  "valuationScore": 5.5,
+  "marketCap": "308.9B",
   "sector": "Materials",
   "domain": "bhp.com",
   "chartData": [
-    {
-      "date": "2025-09-21",
-      "price": 38.07
-    },
     {
       "date": "2025-09-28",
       "price": 40.55
@@ -218,6 +214,10 @@
     {
       "date": "2026-09-20",
       "price": 61.05
+    },
+    {
+      "date": "2026-09-27",
+      "price": 60.78
     }
   ],
   "testsPassed": 4,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 22.44,
-      "threshold": 14.54,
-      "label": "22.4x vs 14.5x sector"
+      "value": 22.43,
+      "threshold": 14.38,
+      "label": "22.4x vs 14.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.09,
+      "value": 3.1,
       "threshold": 5.0,
       "label": "3.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.69,
-      "threshold": 22.44,
-      "label": "Fwd 16.7x vs Trail 22.4x"
+      "value": 16.61,
+      "threshold": 22.43,
+      "label": "Fwd 16.6x vs Trail 22.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 22.44,
-    "sectorPe": 17.1,
+    "pe": 22.43,
+    "sectorPe": 16.92,
     "pb": 4.33,
-    "ps": 5.28,
+    "ps": 5.26,
     "evEbitda": 10.88,
-    "fcfYield": 3.09,
-    "forwardPe": 16.69,
-    "dividendYield": 3.96,
+    "fcfYield": 3.1,
+    "forwardPe": 16.61,
+    "dividendYield": 3.98,
     "revenueGrowth": 18.3,
     "profitMargin": 16.73,
     "operatingMargin": 43.34,
