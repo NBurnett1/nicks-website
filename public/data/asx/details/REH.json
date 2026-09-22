@@ -1,9 +1,9 @@
 {
   "ticker": "REH",
   "name": "REECE FPO [REH]",
-  "price": 16.46,
-  "valuationScore": 3.8,
-  "marketCap": "10.1B",
+  "price": 16.33,
+  "valuationScore": 3.7,
+  "marketCap": "10.0B",
   "sector": "Industrials",
   "domain": "reece.com.au",
   "chartData": [
@@ -217,25 +217,25 @@
     },
     {
       "date": "2026-09-27",
-      "price": 16.46
+      "price": 16.33
     }
   ],
-  "testsPassed": 3,
+  "testsPassed": 4,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 32.92,
-      "threshold": 18.76,
-      "label": "32.9x vs 18.8x sector"
+      "value": 32.66,
+      "threshold": 18.81,
+      "label": "32.7x vs 18.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.7,
+      "value": 2.68,
       "threshold": 1.5,
-      "label": "2.70x vs 1.5x"
+      "label": "2.68x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -246,17 +246,17 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 4.98,
+      "passed": true,
+      "value": 5.01,
       "threshold": 5.0,
       "label": "5.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 26.79,
-      "threshold": 32.92,
-      "label": "Fwd 26.8x vs Trail 32.9x"
+      "value": 26.58,
+      "threshold": 32.66,
+      "label": "Fwd 26.6x vs Trail 32.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 32.92,
-    "sectorPe": 22.07,
-    "pb": 2.7,
-    "ps": 1.08,
+    "pe": 32.66,
+    "sectorPe": 22.13,
+    "pb": 2.68,
+    "ps": 1.07,
     "evEbitda": 17.24,
-    "fcfYield": 4.98,
-    "forwardPe": 26.79,
-    "dividendYield": 1.14,
+    "fcfYield": 5.01,
+    "forwardPe": 26.58,
+    "dividendYield": 1.15,
     "revenueGrowth": 3.4,
     "profitMargin": 3.29,
     "operatingMargin": 5.63,

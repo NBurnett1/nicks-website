@@ -1,9 +1,9 @@
 {
   "ticker": "SUN",
   "name": "SUNCORP FPO [SUN]",
-  "price": 19.55,
-  "valuationScore": 1.2,
-  "marketCap": "20.7B",
+  "price": 19.39,
+  "valuationScore": -0.2,
+  "marketCap": "20.6B",
   "sector": "Financials",
   "domain": "suncorpgroup.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-09-27",
-      "price": 19.55
+      "price": 19.39
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 20.58,
-      "threshold": 16.43,
-      "label": "20.6x vs 16.4x sector"
+      "value": 20.41,
+      "threshold": 16.46,
+      "label": "20.4x vs 16.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.0,
+      "value": 1.98,
       "threshold": 1.5,
-      "label": "2.00x vs 1.5x"
+      "label": "1.98x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 8.09,
+      "value": 8.16,
       "threshold": 5.0,
-      "label": "8.1% vs 5%"
+      "label": "8.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 15.66,
-      "threshold": 20.58,
-      "label": "Fwd 15.7x vs Trail 20.6x"
+      "value": 15.53,
+      "threshold": 20.41,
+      "label": "Fwd 15.5x vs Trail 20.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 20.58,
-    "sectorPe": 19.33,
-    "pb": 2.0,
-    "ps": 1.38,
+    "pe": 20.41,
+    "sectorPe": 19.37,
+    "pb": 1.98,
+    "ps": 1.37,
     "evEbitda": 13.75,
-    "fcfYield": 8.09,
-    "forwardPe": 15.66,
-    "dividendYield": 3.53,
+    "fcfYield": 8.16,
+    "forwardPe": 15.53,
+    "dividendYield": 3.56,
     "revenueGrowth": -0.5,
     "profitMargin": 6.83,
     "operatingMargin": 13.66,
