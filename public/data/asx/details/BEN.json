@@ -1,7 +1,7 @@
 {
   "ticker": "BEN",
   "name": "BEN ADE BK FPO [BEN]",
-  "price": 10.42,
+  "price": 10.32,
   "valuationScore": -2.2,
   "marketCap": "6.0B",
   "sector": "Financials",
@@ -217,25 +217,25 @@
     },
     {
       "date": "2026-09-27",
-      "price": 10.42
+      "price": 10.32
     }
   ],
-  "testsPassed": 3,
+  "testsPassed": 4,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": false,
-      "value": 16.54,
-      "threshold": 16.43,
-      "label": "16.5x vs 16.4x sector"
+      "passed": true,
+      "value": 16.38,
+      "threshold": 16.42,
+      "label": "16.4x vs 16.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.89,
+      "value": 0.88,
       "threshold": 1.5,
-      "label": "0.89x vs 1.5x"
+      "label": "0.88x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 11.65,
-      "threshold": 16.54,
-      "label": "Fwd 11.7x vs Trail 16.5x"
+      "value": 11.54,
+      "threshold": 16.38,
+      "label": "Fwd 11.5x vs Trail 16.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 16.54,
-    "sectorPe": 19.34,
-    "pb": 0.89,
-    "ps": 3.08,
+    "pe": 16.38,
+    "sectorPe": 19.32,
+    "pb": 0.88,
+    "ps": 3.05,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 11.65,
+    "forwardPe": 11.54,
     "dividendYield": 6.33,
     "revenueGrowth": 3.7,
     "profitMargin": 19.23,

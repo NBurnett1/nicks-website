@@ -1,9 +1,9 @@
 {
   "ticker": "PRU",
   "name": "PERSEUS FPO [PRU]",
-  "price": 6.66,
-  "valuationScore": 1.4,
-  "marketCap": "8.8B",
+  "price": 6.84,
+  "valuationScore": 1.5,
+  "marketCap": "9.1B",
   "sector": "Basic Materials",
   "domain": "perseusmining.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-09-27",
-      "price": 6.66
+      "price": 6.84
     }
   ],
   "testsPassed": 6,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 15.14,
-      "threshold": 18.0,
-      "label": "15.1x vs 18.0x sector"
+      "value": 15.55,
+      "threshold": 18.15,
+      "label": "15.5x vs 18.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.75,
+      "value": 2.82,
       "threshold": 1.5,
-      "label": "2.75x vs 1.5x"
+      "label": "2.82x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 1.62,
+      "value": 1.58,
       "threshold": 5.0,
       "label": "1.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 8.79,
-      "threshold": 15.14,
-      "label": "Fwd 8.8x vs Trail 15.1x"
+      "value": 9.02,
+      "threshold": 15.55,
+      "label": "Fwd 9.0x vs Trail 15.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.19,
       "threshold": 0.5,
-      "label": "P/S 6.0x ÷ Growth 31.4% = 0.19"
+      "label": "P/S 6.1x ÷ Growth 31.4% = 0.19"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 15.14,
-    "sectorPe": 21.17,
-    "pb": 2.75,
-    "ps": 5.96,
+    "pe": 15.55,
+    "sectorPe": 21.35,
+    "pb": 2.82,
+    "ps": 6.12,
     "evEbitda": 9.76,
-    "fcfYield": 1.62,
-    "forwardPe": 8.79,
+    "fcfYield": 1.58,
+    "forwardPe": 9.02,
     "dividendYield": 2.1,
     "revenueGrowth": 31.4,
     "profitMargin": 28.86,
