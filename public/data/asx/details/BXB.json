@@ -1,8 +1,8 @@
 {
   "ticker": "BXB",
   "name": "BRAMB LTD FPO [BXB]",
-  "price": 18.73,
-  "valuationScore": 4.6,
+  "price": 18.75,
+  "valuationScore": 4.7,
   "marketCap": "24.9B",
   "sector": "Industrials",
   "domain": "brambles.com",
@@ -217,18 +217,18 @@
     },
     {
       "date": "2026-09-27",
-      "price": 18.73
+      "price": 18.75
     }
   ],
-  "testsPassed": 3,
-  "grade": "C",
+  "testsPassed": 2,
+  "grade": "D",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": true,
-      "value": 19.11,
-      "threshold": 19.15,
-      "label": "19.1x vs 19.1x sector"
+      "passed": false,
+      "value": 19.13,
+      "threshold": 18.98,
+      "label": "19.1x vs 19.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -254,8 +254,8 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.06,
-      "threshold": 19.11,
+      "value": 16.08,
+      "threshold": 19.13,
       "label": "Fwd 16.1x vs Trail 19.1x"
     },
     "profitabilityCheck": {
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 19.11,
-    "sectorPe": 22.53,
+    "pe": 19.13,
+    "sectorPe": 22.33,
     "pb": 5.51,
     "ps": 3.43,
     "evEbitda": 13.17,
     "fcfYield": 2.17,
-    "forwardPe": 16.06,
+    "forwardPe": 16.08,
     "dividendYield": 3.5,
     "revenueGrowth": null,
     "profitMargin": 13.15,

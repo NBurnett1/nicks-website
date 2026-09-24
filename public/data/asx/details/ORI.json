@@ -1,8 +1,8 @@
 {
   "ticker": "ORI",
   "name": "ORICA FPO [ORI]",
-  "price": 23.07,
-  "valuationScore": 4.7,
+  "price": 23.18,
+  "valuationScore": 5.3,
   "marketCap": "10.7B",
   "sector": "Basic Materials",
   "domain": "orica.com",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-09-27",
-      "price": 23.07
+      "price": 23.18
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 45.24,
-      "threshold": 18.15,
-      "label": "45.2x vs 18.1x sector"
+      "value": 45.45,
+      "threshold": 17.67,
+      "label": "45.5x vs 17.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.87,
+      "value": 2.88,
       "threshold": 1.5,
-      "label": "2.87x vs 1.5x"
+      "label": "2.88x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 7.52,
+      "value": 7.49,
       "threshold": 5.0,
       "label": "7.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.79,
-      "threshold": 45.24,
-      "label": "Fwd 16.8x vs Trail 45.2x"
+      "value": 16.87,
+      "threshold": 45.45,
+      "label": "Fwd 16.9x vs Trail 45.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": -1.7,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining -1.7%"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 45.24,
-    "sectorPe": 21.35,
-    "pb": 2.87,
-    "ps": 1.32,
+    "pe": 45.45,
+    "sectorPe": 20.79,
+    "pb": 2.88,
+    "ps": null,
     "evEbitda": 9.64,
-    "fcfYield": 7.52,
-    "forwardPe": 16.79,
-    "dividendYield": 2.62,
+    "fcfYield": 7.49,
+    "forwardPe": 16.87,
+    "dividendYield": 2.61,
     "revenueGrowth": -1.7,
     "profitMargin": 3.09,
     "operatingMargin": 4.86,
