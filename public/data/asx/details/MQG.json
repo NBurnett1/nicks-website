@@ -2,8 +2,8 @@
   "ticker": "MQG",
   "name": "MACQ GROUP FPO [MQG]",
   "price": 242.55,
-  "valuationScore": 2.4,
-  "marketCap": "92.4B",
+  "valuationScore": 0.0,
+  "marketCap": "—",
   "sector": "Financials",
   "domain": "",
   "chartData": [
@@ -220,22 +220,22 @@
       "price": 242.55
     }
   ],
-  "testsPassed": 1,
-  "grade": "D",
+  "testsPassed": 0,
+  "grade": "F",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": false,
-      "value": 24.98,
-      "threshold": 16.21,
-      "label": "25.0x vs 16.2x sector"
+      "passed": null,
+      "value": null,
+      "threshold": null,
+      "label": "Insufficient data"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
-      "passed": false,
-      "value": 2.57,
+      "passed": null,
+      "value": null,
       "threshold": 1.5,
-      "label": "2.57x vs 1.5x"
+      "label": "No P/B data"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -253,10 +253,10 @@
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
-      "passed": true,
-      "value": 19.75,
-      "threshold": 24.98,
-      "label": "Fwd 19.8x vs Trail 25.0x"
+      "passed": null,
+      "value": null,
+      "threshold": null,
+      "label": "Insufficient data"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 24.98,
-    "sectorPe": 19.07,
-    "pb": 2.57,
+    "pe": null,
+    "sectorPe": 19.04,
+    "pb": null,
     "ps": null,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 19.75,
-    "dividendYield": 3.43,
+    "forwardPe": null,
+    "dividendYield": null,
     "revenueGrowth": null,
     "profitMargin": null,
     "operatingMargin": null,

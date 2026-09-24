@@ -2,8 +2,8 @@
   "ticker": "STO",
   "name": "SANTOS FPO [STO]",
   "price": 8.55,
-  "valuationScore": 1.6,
-  "marketCap": "27.8B",
+  "valuationScore": 1.0,
+  "marketCap": "—",
   "sector": "Energy",
   "domain": "santos.com",
   "chartData": [
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 27.58,
+      "value": 26.72,
       "threshold": 19.28,
-      "label": "27.6x vs 19.3x sector"
+      "label": "26.7x vs 19.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,23 +240,23 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 12.67,
+      "value": 12.85,
       "threshold": 10.0,
-      "label": "12.7x vs 10x"
+      "label": "12.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 1.11,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "1.1% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
       "value": 12.17,
-      "threshold": 27.58,
-      "label": "Fwd 12.2x vs Trail 27.6x"
+      "threshold": 26.72,
+      "label": "Fwd 12.2x vs Trail 26.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,12 +281,12 @@
     }
   },
   "metrics": {
-    "pe": 27.58,
+    "pe": 26.72,
     "sectorPe": 22.68,
     "pb": 1.26,
     "ps": null,
-    "evEbitda": 12.67,
-    "fcfYield": 1.11,
+    "evEbitda": 12.85,
+    "fcfYield": null,
     "forwardPe": 12.17,
     "dividendYield": 3.6,
     "revenueGrowth": 1.6,
