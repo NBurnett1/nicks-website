@@ -1,8 +1,8 @@
 {
   "ticker": "PMV",
   "name": "PREM INV. FPO [PMV]",
-  "price": 11.95,
-  "valuationScore": 0.1,
+  "price": 11.77,
+  "valuationScore": -6.0,
   "marketCap": "1.9B",
   "sector": "Consumer Discretionary",
   "domain": "premierinvestments.com.au",
@@ -217,82 +217,82 @@
     },
     {
       "date": "2026-09-27",
-      "price": 11.95
+      "price": 11.77
     }
   ],
-  "testsPassed": 5,
-  "grade": "B",
+  "testsPassed": 4,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": true,
-      "value": 13.28,
-      "threshold": 13.41,
-      "label": "13.3x vs 13.4x sector"
+      "passed": false,
+      "value": 14.53,
+      "threshold": 13.09,
+      "label": "14.5x vs 13.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.87,
+      "value": 1.84,
       "threshold": 1.5,
-      "label": "1.87x vs 1.5x"
+      "label": "1.84x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 8.98,
+      "value": 9.65,
       "threshold": 10.0,
-      "label": "9.0x vs 10x"
+      "label": "9.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 0.48,
+      "passed": true,
+      "value": 14.21,
       "threshold": 5.0,
-      "label": "0.5% vs 5%"
+      "label": "14.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.13,
-      "threshold": 13.28,
-      "label": "Fwd 12.1x vs Trail 13.3x"
+      "value": 12.21,
+      "threshold": 14.53,
+      "label": "Fwd 12.2x vs Trail 14.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": true,
-      "value": 39.05,
+      "value": 15.98,
       "threshold": 5.0,
-      "label": "Margin 39.0% / ROE 16.0%"
+      "label": "Margin 16.0% / ROE 13.2%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": -1.1,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining -1.1%"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
-      "passed": true,
-      "value": -1.1,
+      "passed": null,
+      "value": null,
       "threshold": -5.0,
-      "label": "-1.1% growth (floor: -5%)"
+      "label": "No revenue data"
     }
   },
   "metrics": {
-    "pe": 13.28,
-    "sectorPe": 15.77,
-    "pb": 1.87,
-    "ps": 2.31,
-    "evEbitda": 8.98,
-    "fcfYield": 0.48,
-    "forwardPe": 12.13,
-    "dividendYield": 7.95,
-    "revenueGrowth": -1.1,
-    "profitMargin": 39.05,
-    "operatingMargin": 25.9,
-    "roe": 16.0,
-    "debtEquity": 23.69
+    "pe": 14.53,
+    "sectorPe": 15.39,
+    "pb": 1.84,
+    "ps": 2.32,
+    "evEbitda": 9.65,
+    "fcfYield": 14.21,
+    "forwardPe": 12.21,
+    "dividendYield": 11.13,
+    "revenueGrowth": null,
+    "profitMargin": 15.98,
+    "operatingMargin": 13.78,
+    "roe": 13.15,
+    "debtEquity": 22.95
   }
 }
