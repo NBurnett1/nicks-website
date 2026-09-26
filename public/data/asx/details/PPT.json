@@ -2,7 +2,7 @@
   "ticker": "PPT",
   "name": "PERPETUAL FPO [PPT]",
   "price": 16.81,
-  "valuationScore": -2.7,
+  "valuationScore": -1.1,
   "marketCap": "1.9B",
   "sector": "Financial Services",
   "domain": "perpetual.com.au",
@@ -220,15 +220,15 @@
       "price": 16.81
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": null,
-      "value": null,
-      "threshold": null,
-      "label": "Insufficient data"
+      "passed": false,
+      "value": 32.96,
+      "threshold": 19.91,
+      "label": "33.0x vs 19.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -253,10 +253,10 @@
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
-      "passed": null,
+      "passed": true,
       "value": 10.56,
-      "threshold": null,
-      "label": "Insufficient data"
+      "threshold": 32.96,
+      "label": "Fwd 10.6x vs Trail 33.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,8 +281,8 @@
     }
   },
   "metrics": {
-    "pe": null,
-    "sectorPe": 22.92,
+    "pe": 32.96,
+    "sectorPe": 23.42,
     "pb": 1.24,
     "ps": 1.68,
     "evEbitda": 8.39,
