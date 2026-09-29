@@ -214,6 +214,10 @@
     {
       "date": "2026-09-27",
       "price": 12.34
+    },
+    {
+      "date": "2026-10-04",
+      "price": 12.62
     }
   ],
   "testsPassed": 5,
@@ -222,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 13.87,
+      "value": 13.57,
       "threshold": 13.09,
-      "label": "13.9x vs 13.1x sector"
+      "label": "13.6x vs 13.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -236,9 +240,9 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 9.06,
+      "value": 9.2,
       "threshold": 10.0,
-      "label": "9.1x vs 10x"
+      "label": "9.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
@@ -251,8 +255,8 @@
       "name": "Forward P/E Re-rating",
       "passed": true,
       "value": 11.67,
-      "threshold": 13.87,
-      "label": "Fwd 11.7x vs Trail 13.9x"
+      "threshold": 13.57,
+      "label": "Fwd 11.7x vs Trail 13.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -277,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 13.87,
+    "pe": 13.57,
     "sectorPe": 15.4,
     "pb": 2.19,
     "ps": 0.68,
-    "evEbitda": 9.06,
+    "evEbitda": 9.2,
     "fcfYield": 13.94,
     "forwardPe": 11.67,
-    "dividendYield": 5.27,
+    "dividendYield": 5.15,
     "revenueGrowth": 2.1,
     "profitMargin": 4.9,
     "operatingMargin": 8.54,

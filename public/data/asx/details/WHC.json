@@ -2,7 +2,7 @@
   "ticker": "WHC",
   "name": "WHITEHAVEN FPO [WHC]",
   "price": 7.35,
-  "valuationScore": -23.2,
+  "valuationScore": -23.3,
   "marketCap": "6.0B",
   "sector": "Materials",
   "domain": "whitehavencoal.com.au",
@@ -214,6 +214,10 @@
     {
       "date": "2026-09-27",
       "price": 7.37
+    },
+    {
+      "date": "2026-10-04",
+      "price": 7.35
     }
   ],
   "testsPassed": 6,
@@ -223,8 +227,8 @@
       "name": "P/E Discount",
       "passed": false,
       "value": 15.31,
-      "threshold": 14.22,
-      "label": "15.3x vs 14.2x sector"
+      "threshold": 14.29,
+      "label": "15.3x vs 14.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -236,7 +240,7 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 2.84,
+      "value": 2.83,
       "threshold": 10.0,
       "label": "2.8x vs 10x"
     },
@@ -278,10 +282,10 @@
   },
   "metrics": {
     "pe": 15.31,
-    "sectorPe": 16.73,
+    "sectorPe": 16.81,
     "pb": 1.02,
     "ps": 1.12,
-    "evEbitda": 2.84,
+    "evEbitda": 2.83,
     "fcfYield": 27.27,
     "forwardPe": 13.4,
     "dividendYield": 1.63,

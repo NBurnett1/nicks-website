@@ -2,7 +2,7 @@
   "ticker": "S32",
   "name": "SOUTH32 FPO [S32]",
   "price": 4.88,
-  "valuationScore": 5.1,
+  "valuationScore": 5.0,
   "marketCap": "21.9B",
   "sector": "Materials",
   "domain": "south32.net",
@@ -214,6 +214,10 @@
     {
       "date": "2026-09-27",
       "price": 4.96
+    },
+    {
+      "date": "2026-10-04",
+      "price": 4.88
     }
   ],
   "testsPassed": 2,
@@ -223,8 +227,8 @@
       "name": "P/E Discount",
       "passed": false,
       "value": 14.79,
-      "threshold": 14.22,
-      "label": "14.8x vs 14.2x sector"
+      "threshold": 14.29,
+      "label": "14.8x vs 14.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -236,9 +240,9 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 17.82,
+      "value": 17.53,
       "threshold": 10.0,
-      "label": "17.8x vs 10x"
+      "label": "17.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
@@ -278,13 +282,13 @@
   },
   "metrics": {
     "pe": 14.79,
-    "sectorPe": 16.73,
+    "sectorPe": 16.81,
     "pb": 1.63,
     "ps": 3.68,
-    "evEbitda": 17.82,
+    "evEbitda": 17.53,
     "fcfYield": -0.06,
     "forwardPe": 15.24,
-    "dividendYield": 2.63,
+    "dividendYield": 2.68,
     "revenueGrowth": 1.1,
     "profitMargin": 18.3,
     "operatingMargin": 18.16,
