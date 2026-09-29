@@ -1,9 +1,9 @@
 {
   "ticker": "ORG",
   "name": "ORIGIN ENE FPO [ORG]",
-  "price": 10.95,
-  "valuationScore": -8.5,
-  "marketCap": "18.9B",
+  "price": 10.86,
+  "valuationScore": 0.4,
+  "marketCap": "18.7B",
   "sector": "Energy",
   "domain": "originenergy.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-04",
-      "price": 10.95
+      "price": 10.86
     }
   ],
   "testsPassed": 2,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 12.03,
-      "threshold": 18.97,
-      "label": "12.0x vs 19.0x sector"
+      "value": 11.93,
+      "threshold": 18.92,
+      "label": "11.9x vs 18.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.86,
+      "value": 1.84,
       "threshold": 1.5,
-      "label": "1.86x vs 1.5x"
+      "label": "1.84x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.34,
+      "value": 4.38,
       "threshold": 5.0,
-      "label": "4.3% vs 5%"
+      "label": "4.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 18.31,
-      "threshold": 12.03,
-      "label": "Fwd 18.3x vs Trail 12.0x"
+      "value": 18.17,
+      "threshold": 11.93,
+      "label": "Fwd 18.2x vs Trail 11.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 12.03,
-    "sectorPe": 22.32,
-    "pb": 1.86,
-    "ps": 1.21,
+    "pe": 11.93,
+    "sectorPe": 22.26,
+    "pb": 1.84,
+    "ps": 1.2,
     "evEbitda": 13.38,
-    "fcfYield": 4.34,
-    "forwardPe": 18.31,
-    "dividendYield": 5.48,
+    "fcfYield": 4.38,
+    "forwardPe": 18.17,
+    "dividendYield": 5.52,
     "revenueGrowth": -10.2,
     "profitMargin": 10.08,
     "operatingMargin": 9.47,

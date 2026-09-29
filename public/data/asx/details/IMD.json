@@ -1,7 +1,7 @@
 {
   "ticker": "IMD",
   "name": "IMDEX FPO [IMD]",
-  "price": 3.24,
+  "price": 3.3,
   "valuationScore": 1.2,
   "marketCap": "1.7B",
   "sector": "Industrials",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-04",
-      "price": 3.24
+      "price": 3.3
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 21.6,
-      "threshold": 18.36,
-      "label": "21.6x vs 18.4x sector"
+      "value": 22.0,
+      "threshold": 18.7,
+      "label": "22.0x vs 18.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.43,
+      "value": 2.47,
       "threshold": 1.5,
-      "label": "2.43x vs 1.5x"
+      "label": "2.47x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.11,
+      "value": 4.04,
       "threshold": 5.0,
-      "label": "4.1% vs 5%"
+      "label": "4.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 20.08,
-      "threshold": 21.6,
-      "label": "Fwd 20.1x vs Trail 21.6x"
+      "value": 20.45,
+      "threshold": 22.0,
+      "label": "Fwd 20.4x vs Trail 22.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.13,
       "threshold": 0.5,
-      "label": "P/S 3.2x ÷ Growth 24.7% = 0.13"
+      "label": "P/S 3.3x ÷ Growth 24.7% = 0.13"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 21.6,
-    "sectorPe": 21.6,
-    "pb": 2.43,
-    "ps": 3.24,
+    "pe": 22.0,
+    "sectorPe": 22.0,
+    "pb": 2.47,
+    "ps": 3.3,
     "evEbitda": 14.73,
-    "fcfYield": 4.11,
-    "forwardPe": 20.08,
-    "dividendYield": 1.08,
+    "fcfYield": 4.04,
+    "forwardPe": 20.45,
+    "dividendYield": 1.06,
     "revenueGrowth": 24.7,
     "profitMargin": 15.28,
     "operatingMargin": 14.65,

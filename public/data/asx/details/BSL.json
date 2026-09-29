@@ -1,9 +1,9 @@
 {
   "ticker": "BSL",
   "name": "BLUESCOPE FPO [BSL]",
-  "price": 30.36,
-  "valuationScore": 0.1,
-  "marketCap": "13.3B",
+  "price": 30.39,
+  "valuationScore": -2.5,
+  "marketCap": "—",
   "sector": "Basic Materials",
   "domain": "bluescope.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-04",
-      "price": 30.36
+      "price": 30.39
     }
   ],
   "testsPassed": 5,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 16.77,
-      "threshold": 17.33,
-      "label": "16.8x vs 17.3x sector"
+      "value": 16.79,
+      "threshold": 17.42,
+      "label": "16.8x vs 17.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -246,16 +246,16 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 0.82,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "0.8% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.31,
-      "threshold": 16.77,
+      "value": 12.33,
+      "threshold": 16.79,
       "label": "Fwd 12.3x vs Trail 16.8x"
     },
     "profitabilityCheck": {
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": 1.33,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 0.8x ÷ Growth 0.6% = 1.33"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 16.77,
-    "sectorPe": 20.39,
+    "pe": 16.79,
+    "sectorPe": 20.49,
     "pb": 1.29,
-    "ps": 0.8,
+    "ps": null,
     "evEbitda": 8.75,
-    "fcfYield": 0.82,
-    "forwardPe": 12.31,
+    "fcfYield": null,
+    "forwardPe": 12.33,
     "dividendYield": 4.28,
     "revenueGrowth": 0.6,
     "profitMargin": 4.81,

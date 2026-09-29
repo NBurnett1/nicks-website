@@ -1,8 +1,8 @@
 {
   "ticker": "NHF",
   "name": "NIBHOLDING FPO [NHF]",
-  "price": 6.47,
-  "valuationScore": -5.2,
+  "price": 6.45,
+  "valuationScore": -4.9,
   "marketCap": "3.2B",
   "sector": "Financial Services",
   "domain": "nib.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-04",
-      "price": 6.47
+      "price": 6.45
     }
   ],
   "testsPassed": 6,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 17.03,
-      "threshold": 20.07,
-      "label": "17.0x vs 20.1x sector"
+      "value": 16.97,
+      "threshold": 20.0,
+      "label": "17.0x vs 20.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.74,
+      "value": 2.73,
       "threshold": 1.5,
-      "label": "2.74x vs 1.5x"
+      "label": "2.73x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,15 +247,15 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 6.14,
+      "value": 6.15,
       "threshold": 5.0,
-      "label": "6.1% vs 5%"
+      "label": "6.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.91,
-      "threshold": 17.03,
+      "value": 12.87,
+      "threshold": 16.97,
       "label": "Fwd 12.9x vs Trail 17.0x"
     },
     "profitabilityCheck": {
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 17.03,
-    "sectorPe": 23.61,
-    "pb": 2.74,
+    "pe": 16.97,
+    "sectorPe": 23.53,
+    "pb": 2.73,
     "ps": 0.83,
     "evEbitda": 7.12,
-    "fcfYield": 6.14,
-    "forwardPe": 12.91,
-    "dividendYield": 4.48,
+    "fcfYield": 6.15,
+    "forwardPe": 12.87,
+    "dividendYield": 4.5,
     "revenueGrowth": 4.6,
     "profitMargin": 4.92,
     "operatingMargin": 7.67,
