@@ -2,8 +2,8 @@
   "ticker": "CVN",
   "name": "CARNARVON FPO [CVN]",
   "price": 0.1,
-  "valuationScore": -8.2,
-  "marketCap": "179M",
+  "valuationScore": 28.2,
+  "marketCap": "188M",
   "sector": "Energy",
   "domain": "carnarvon.com.au",
   "chartData": [
@@ -233,66 +233,66 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.67,
+      "value": 0.7,
       "threshold": 1.5,
-      "label": "0.67x vs 1.5x"
+      "label": "0.70x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": 82.65,
       "threshold": 10.0,
-      "label": "No EV/EBITDA data"
+      "label": "82.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -1.9,
+      "value": -2.75,
       "threshold": 5.0,
-      "label": "-1.9% vs 5%"
+      "label": "-2.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": -26.46,
+      "value": -27.78,
       "threshold": null,
       "label": "Insufficient data"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": false,
-      "value": 0.0,
+      "value": -94.4,
       "threshold": 5.0,
-      "label": "Margin 0.0% / ROE -1.9%"
+      "label": "Margin -94.4% / ROE -1.6%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": -47.8,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "FAIL — Revenue declining -47.8%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": false,
-      "value": -73.7,
+      "value": -47.8,
       "threshold": -5.0,
-      "label": "-73.7% growth (floor: -5%)"
+      "label": "-47.8% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 22.26,
-    "pb": 0.67,
-    "ps": -84.79,
-    "evEbitda": -16.0,
-    "fcfYield": -1.9,
-    "forwardPe": -26.46,
+    "sectorPe": 22.61,
+    "pb": 0.7,
+    "ps": 41.88,
+    "evEbitda": 82.65,
+    "fcfYield": -2.75,
+    "forwardPe": -27.78,
     "dividendYield": null,
-    "revenueGrowth": -73.7,
-    "profitMargin": 0.0,
-    "operatingMargin": -76.69,
-    "roe": -1.86,
-    "debtEquity": 0.11
+    "revenueGrowth": -47.8,
+    "profitMargin": -94.4,
+    "operatingMargin": 59.96,
+    "roe": -1.57,
+    "debtEquity": 0.07
   }
 }

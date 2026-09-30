@@ -1,8 +1,8 @@
 {
   "ticker": "A2M",
   "name": "A2 MILK FPO NZ [A2M]",
-  "price": 6.65,
-  "valuationScore": 0.0,
+  "price": 6.66,
+  "valuationScore": -0.1,
   "marketCap": "4.8B",
   "sector": "Consumer Staples",
   "domain": "thea2milkcompany.com",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-04",
-      "price": 6.65
+      "price": 6.66
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 28.91,
-      "threshold": 24.58,
-      "label": "28.9x vs 24.6x sector"
+      "value": 28.96,
+      "threshold": 24.61,
+      "label": "29.0x vs 24.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 5.5,
+      "value": 5.51,
       "threshold": 1.5,
-      "label": "5.50x vs 1.5x"
+      "label": "5.51x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 7.02,
+      "value": 7.01,
       "threshold": 5.0,
       "label": "7.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 21.77,
-      "threshold": 28.91,
-      "label": "Fwd 21.8x vs Trail 28.9x"
+      "value": 21.81,
+      "threshold": 28.96,
+      "label": "Fwd 21.8x vs Trail 29.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 28.91,
-    "sectorPe": 28.91,
-    "pb": 5.5,
-    "ps": 2.45,
+    "pe": 28.96,
+    "sectorPe": 28.96,
+    "pb": 5.51,
+    "ps": 2.46,
     "evEbitda": 13.43,
-    "fcfYield": 7.02,
-    "forwardPe": 21.77,
+    "fcfYield": 7.01,
+    "forwardPe": 21.81,
     "dividendYield": 1.95,
     "revenueGrowth": 6.5,
     "profitMargin": 5.76,
