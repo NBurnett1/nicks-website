@@ -2,8 +2,8 @@
   "ticker": "ANZ",
   "name": "ANZ GROUP FPO [ANZ]",
   "price": 38.31,
-  "valuationScore": -0.4,
-  "marketCap": "—",
+  "valuationScore": -0.6,
+  "marketCap": "115.4B",
   "sector": "Financials",
   "domain": "anz.com.au",
   "chartData": [
@@ -227,7 +227,7 @@
       "name": "P/E Discount",
       "passed": false,
       "value": 19.45,
-      "threshold": 16.58,
+      "threshold": 16.64,
       "label": "19.4x vs 16.6x sector"
     },
     "pbBelowBook": {
@@ -254,7 +254,7 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.99,
+      "value": 14.97,
       "threshold": 19.45,
       "label": "Fwd 15.0x vs Trail 19.4x"
     },
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": -2.1,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "FAIL — Revenue declining -2.1%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": 19.45,
-    "sectorPe": 19.51,
+    "sectorPe": 19.57,
     "pb": 1.62,
-    "ps": null,
+    "ps": 5.36,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 14.99,
+    "forwardPe": 14.97,
     "dividendYield": 4.33,
     "revenueGrowth": -2.1,
     "profitMargin": 27.42,
