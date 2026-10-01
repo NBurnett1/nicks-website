@@ -1,9 +1,9 @@
 {
   "ticker": "SUN",
   "name": "SUNCORP FPO [SUN]",
-  "price": 19.97,
-  "valuationScore": -0.0,
-  "marketCap": "21.2B",
+  "price": 18.5,
+  "valuationScore": -2.9,
+  "marketCap": "19.6B",
   "sector": "Financials",
   "domain": "suncorpgroup.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-04",
-      "price": 19.97
+      "price": 18.5
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 21.02,
-      "threshold": 16.64,
-      "label": "21.0x vs 16.6x sector"
+      "value": 19.47,
+      "threshold": 16.07,
+      "label": "19.5x vs 16.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.04,
+      "value": 1.89,
       "threshold": 1.5,
-      "label": "2.04x vs 1.5x"
+      "label": "1.89x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 7.92,
+      "value": 8.55,
       "threshold": 5.0,
-      "label": "7.9% vs 5%"
+      "label": "8.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.0,
-      "threshold": 21.02,
-      "label": "Fwd 16.0x vs Trail 21.0x"
+      "value": 14.82,
+      "threshold": 19.47,
+      "label": "Fwd 14.8x vs Trail 19.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 21.02,
-    "sectorPe": 19.57,
-    "pb": 2.04,
-    "ps": 1.41,
+    "pe": 19.47,
+    "sectorPe": 18.91,
+    "pb": 1.89,
+    "ps": 1.3,
     "evEbitda": 14.03,
-    "fcfYield": 7.92,
-    "forwardPe": 16.0,
-    "dividendYield": 3.46,
+    "fcfYield": 8.55,
+    "forwardPe": 14.82,
+    "dividendYield": 3.73,
     "revenueGrowth": -0.5,
     "profitMargin": 6.83,
     "operatingMargin": 13.66,

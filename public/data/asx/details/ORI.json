@@ -1,9 +1,9 @@
 {
   "ticker": "ORI",
   "name": "ORICA FPO [ORI]",
-  "price": 23.46,
-  "valuationScore": 6.0,
-  "marketCap": "10.9B",
+  "price": 22.89,
+  "valuationScore": 6.6,
+  "marketCap": "—",
   "sector": "Basic Materials",
   "domain": "orica.com",
   "chartData": [
@@ -217,25 +217,25 @@
     },
     {
       "date": "2026-10-04",
-      "price": 23.46
+      "price": 22.89
     }
   ],
-  "testsPassed": 4,
+  "testsPassed": 3,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 46.0,
-      "threshold": 17.4,
-      "label": "46.0x vs 17.4x sector"
+      "value": 44.88,
+      "threshold": 16.75,
+      "label": "44.9x vs 16.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.91,
+      "value": 2.84,
       "threshold": 1.5,
-      "label": "2.91x vs 1.5x"
+      "label": "2.84x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -246,17 +246,17 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": true,
-      "value": 7.4,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "7.4% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 17.11,
-      "threshold": 46.0,
-      "label": "Fwd 17.1x vs Trail 46.0x"
+      "value": 16.65,
+      "threshold": 44.88,
+      "label": "Fwd 16.7x vs Trail 44.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": -1.7,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining -1.7%"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 46.0,
-    "sectorPe": 20.47,
-    "pb": 2.91,
-    "ps": 1.34,
+    "pe": 44.88,
+    "sectorPe": 19.7,
+    "pb": 2.84,
+    "ps": null,
     "evEbitda": 9.78,
-    "fcfYield": 7.4,
-    "forwardPe": 17.11,
-    "dividendYield": 2.58,
+    "fcfYield": null,
+    "forwardPe": 16.65,
+    "dividendYield": 2.64,
     "revenueGrowth": -1.7,
     "profitMargin": 3.09,
     "operatingMargin": 4.86,

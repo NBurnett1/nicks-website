@@ -1,9 +1,9 @@
 {
   "ticker": "RSG",
   "name": "RESOLUTE FPO [RSG]",
-  "price": 1.16,
-  "valuationScore": -5.2,
-  "marketCap": "2.5B",
+  "price": 1.13,
+  "valuationScore": -5.1,
+  "marketCap": "2.4B",
   "sector": "Basic Materials",
   "domain": "rml.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-04",
-      "price": 1.15
+      "price": 1.13
     }
   ],
   "testsPassed": 7,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 8.88,
-      "threshold": 17.4,
-      "label": "8.9x vs 17.4x sector"
+      "value": 8.69,
+      "threshold": 16.75,
+      "label": "8.7x vs 16.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.36,
+      "value": 2.31,
       "threshold": 1.5,
-      "label": "2.36x vs 1.5x"
+      "label": "2.31x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 8.63,
+      "value": 8.82,
       "threshold": 5.0,
-      "label": "8.6% vs 5%"
+      "label": "8.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 7.17,
-      "threshold": 8.88,
-      "label": "Fwd 7.2x vs Trail 8.9x"
+      "value": 7.02,
+      "threshold": 8.69,
+      "label": "Fwd 7.0x vs Trail 8.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.08,
       "threshold": 0.5,
-      "label": "P/S 2.5x ÷ Growth 30.7% = 0.08"
+      "label": "P/S 2.4x ÷ Growth 30.7% = 0.08"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 8.88,
-    "sectorPe": 20.47,
-    "pb": 2.36,
-    "ps": 2.46,
+    "pe": 8.69,
+    "sectorPe": 19.7,
+    "pb": 2.31,
+    "ps": 2.41,
     "evEbitda": 5.99,
-    "fcfYield": 8.63,
-    "forwardPe": 7.17,
+    "fcfYield": 8.82,
+    "forwardPe": 7.02,
     "dividendYield": null,
     "revenueGrowth": 30.7,
     "profitMargin": 19.77,

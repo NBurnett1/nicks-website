@@ -1,9 +1,9 @@
 {
   "ticker": "SGP",
   "name": "STOCKLAND. STAPLED [SGP]",
-  "price": 4.31,
-  "valuationScore": 1.0,
-  "marketCap": "10.5B",
+  "price": 4.15,
+  "valuationScore": 0.9,
+  "marketCap": "10.1B",
   "sector": "Real Estate",
   "domain": "stockland.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-04",
-      "price": 4.31
+      "price": 4.15
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 10.51,
-      "threshold": 8.87,
-      "label": "10.5x vs 8.9x sector"
+      "value": 10.12,
+      "threshold": 8.62,
+      "label": "10.1x vs 8.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.98,
+      "value": 0.94,
       "threshold": 1.5,
-      "label": "0.98x vs 1.5x"
+      "label": "0.94x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.93,
+      "value": 3.04,
       "threshold": 5.0,
-      "label": "2.9% vs 5%"
+      "label": "3.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 10.73,
-      "threshold": 10.51,
-      "label": "Fwd 10.7x vs Trail 10.5x"
+      "value": 10.33,
+      "threshold": 10.12,
+      "label": "Fwd 10.3x vs Trail 10.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.19,
       "threshold": 0.5,
-      "label": "P/S 2.7x ÷ Growth 14.1% = 0.19"
+      "label": "P/S 2.6x ÷ Growth 14.1% = 0.19"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 10.51,
-    "sectorPe": 10.44,
-    "pb": 0.98,
-    "ps": 2.74,
+    "pe": 10.12,
+    "sectorPe": 10.15,
+    "pb": 0.94,
+    "ps": 2.64,
     "evEbitda": 15.21,
-    "fcfYield": 2.93,
-    "forwardPe": 10.73,
-    "dividendYield": 5.85,
+    "fcfYield": 3.04,
+    "forwardPe": 10.33,
+    "dividendYield": 6.07,
     "revenueGrowth": 14.1,
     "profitMargin": 25.99,
     "operatingMargin": 26.95,
