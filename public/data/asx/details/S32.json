@@ -2,7 +2,7 @@
   "ticker": "S32",
   "name": "SOUTH32 FPO [S32]",
   "price": 4.93,
-  "valuationScore": 4.9,
+  "valuationScore": 4.8,
   "marketCap": "22.1B",
   "sector": "Materials",
   "domain": "south32.net",
@@ -220,15 +220,15 @@
       "price": 4.93
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": false,
-      "value": 14.5,
+      "passed": true,
+      "value": 14.09,
       "threshold": 14.23,
-      "label": "14.5x vs 14.2x sector"
+      "label": "14.1x vs 14.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 15.19,
-      "threshold": 14.5,
-      "label": "Fwd 15.2x vs Trail 14.5x"
+      "value": 15.22,
+      "threshold": 14.09,
+      "label": "Fwd 15.2x vs Trail 14.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 14.5,
+    "pe": 14.09,
     "sectorPe": 16.74,
     "pb": 1.64,
     "ps": 3.72,
     "evEbitda": 17.71,
     "fcfYield": -0.06,
-    "forwardPe": 15.19,
+    "forwardPe": 15.22,
     "dividendYield": 2.65,
     "revenueGrowth": 1.1,
     "profitMargin": 18.3,
