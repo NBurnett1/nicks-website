@@ -1,16 +1,12 @@
 {
   "ticker": "IAG",
   "name": "INSUR.AUST FPO [IAG]",
-  "price": 7.73,
+  "price": 7.7,
   "valuationScore": 1.5,
-  "marketCap": "18.1B",
+  "marketCap": "18.0B",
   "sector": "Financials",
   "domain": "iag.com.au",
   "chartData": [
-    {
-      "date": "2025-10-05",
-      "price": 7.93
-    },
     {
       "date": "2025-10-12",
       "price": 8.05
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-04",
       "price": 7.73
+    },
+    {
+      "date": "2026-10-11",
+      "price": 7.7
     }
   ],
   "testsPassed": 4,
@@ -233,9 +233,9 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.49,
+      "value": 2.48,
       "threshold": 1.5,
-      "label": "2.49x vs 1.5x"
+      "label": "2.48x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,14 +247,14 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.62,
+      "value": 3.63,
       "threshold": 5.0,
       "label": "3.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 15.6,
+      "value": 15.53,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 19.28,
-    "pb": 2.49,
+    "sectorPe": 19.2,
+    "pb": 2.48,
     "ps": 0.94,
     "evEbitda": 9.95,
-    "fcfYield": 3.62,
-    "forwardPe": 15.6,
+    "fcfYield": 3.63,
+    "forwardPe": 15.53,
     "dividendYield": 4.14,
     "revenueGrowth": 10.3,
     "profitMargin": 5.34,

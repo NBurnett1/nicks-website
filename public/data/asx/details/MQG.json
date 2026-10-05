@@ -1,16 +1,12 @@
 {
   "ticker": "MQG",
   "name": "MACQ GROUP FPO [MQG]",
-  "price": 245.63,
-  "valuationScore": 2.6,
-  "marketCap": "93.6B",
+  "price": 248.02,
+  "valuationScore": 2.7,
+  "marketCap": "94.5B",
   "sector": "Financials",
   "domain": "macquarie.com",
   "chartData": [
-    {
-      "date": "2025-10-05",
-      "price": 217.96
-    },
     {
       "date": "2025-10-12",
       "price": 214.15
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-04",
       "price": 245.63
+    },
+    {
+      "date": "2026-10-11",
+      "price": 248.02
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 25.3,
-      "threshold": 16.39,
-      "label": "25.3x vs 16.4x sector"
+      "value": 25.54,
+      "threshold": 16.32,
+      "label": "25.5x vs 16.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.6,
+      "value": 2.62,
       "threshold": 1.5,
-      "label": "2.60x vs 1.5x"
+      "label": "2.62x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 20.0,
-      "threshold": 25.3,
-      "label": "Fwd 20.0x vs Trail 25.3x"
+      "value": 20.2,
+      "threshold": 25.54,
+      "label": "Fwd 20.2x vs Trail 25.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.91,
+      "value": 0.92,
       "threshold": 0.5,
-      "label": "P/S 5.3x ÷ Growth 5.8% = 0.91"
+      "label": "P/S 5.3x ÷ Growth 5.8% = 0.92"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 25.3,
-    "sectorPe": 19.28,
-    "pb": 2.6,
-    "ps": 5.26,
+    "pe": 25.54,
+    "sectorPe": 19.2,
+    "pb": 2.62,
+    "ps": 5.31,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 20.0,
+    "forwardPe": 20.2,
     "dividendYield": 3.43,
     "revenueGrowth": 5.8,
     "profitMargin": 21.12,

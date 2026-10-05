@@ -8,10 +8,6 @@
   "domain": "fortescue.com",
   "chartData": [
     {
-      "date": "2025-10-05",
-      "price": 18.24
-    },
-    {
       "date": "2025-10-12",
       "price": 18.11
     },
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-04",
       "price": 16.19
+    },
+    {
+      "date": "2026-10-11",
+      "price": 16.19
     }
   ],
   "testsPassed": 6,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 12.08,
-      "threshold": 14.23,
-      "label": "12.1x vs 14.2x sector"
+      "value": 11.82,
+      "threshold": 14.01,
+      "label": "11.8x vs 14.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -255,8 +255,8 @@
       "name": "Forward P/E Re-rating",
       "passed": false,
       "value": 14.87,
-      "threshold": 12.08,
-      "label": "Fwd 14.9x vs Trail 12.1x"
+      "threshold": 11.82,
+      "label": "Fwd 14.9x vs Trail 11.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,8 +281,8 @@
     }
   },
   "metrics": {
-    "pe": 12.08,
-    "sectorPe": 16.74,
+    "pe": 11.82,
+    "sectorPe": 16.48,
     "pb": 1.7,
     "ps": 2.94,
     "evEbitda": 6.2,

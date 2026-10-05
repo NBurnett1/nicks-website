@@ -1,16 +1,12 @@
 {
   "ticker": "SUN",
   "name": "SUNCORP FPO [SUN]",
-  "price": 18.35,
+  "price": 18.15,
   "valuationScore": -0.8,
-  "marketCap": "19.5B",
+  "marketCap": "19.2B",
   "sector": "Financials",
   "domain": "suncorpgroup.com.au",
   "chartData": [
-    {
-      "date": "2025-10-05",
-      "price": 19.53
-    },
     {
       "date": "2025-10-12",
       "price": 19.88
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-04",
       "price": 18.35
+    },
+    {
+      "date": "2026-10-11",
+      "price": 18.15
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 19.32,
-      "threshold": 16.39,
-      "label": "19.3x vs 16.4x sector"
+      "value": 19.11,
+      "threshold": 16.32,
+      "label": "19.1x vs 16.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.88,
+      "value": 1.86,
       "threshold": 1.5,
-      "label": "1.88x vs 1.5x"
+      "label": "1.86x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 8.62,
+      "value": 8.71,
       "threshold": 5.0,
-      "label": "8.6% vs 5%"
+      "label": "8.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.65,
-      "threshold": 19.32,
-      "label": "Fwd 14.7x vs Trail 19.3x"
+      "value": 14.49,
+      "threshold": 19.11,
+      "label": "Fwd 14.5x vs Trail 19.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 19.32,
-    "sectorPe": 19.28,
-    "pb": 1.88,
-    "ps": 1.29,
+    "pe": 19.11,
+    "sectorPe": 19.2,
+    "pb": 1.86,
+    "ps": 1.28,
     "evEbitda": 12.97,
-    "fcfYield": 8.62,
-    "forwardPe": 14.65,
+    "fcfYield": 8.71,
+    "forwardPe": 14.49,
     "dividendYield": 3.76,
     "revenueGrowth": -0.5,
     "profitMargin": 6.83,

@@ -1,16 +1,12 @@
 {
   "ticker": "AMP",
   "name": "AMP FPO [AMP]",
-  "price": 2.55,
-  "valuationScore": 6.5,
-  "marketCap": "6.1B",
+  "price": 2.56,
+  "valuationScore": 6.7,
+  "marketCap": "6.2B",
   "sector": "Financials",
   "domain": "amp.com.au",
   "chartData": [
-    {
-      "date": "2025-10-05",
-      "price": 1.64
-    },
     {
       "date": "2025-10-12",
       "price": 1.63
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-04",
       "price": 2.55
+    },
+    {
+      "date": "2026-10-11",
+      "price": 2.56
     }
   ],
   "testsPassed": 2,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 31.88,
-      "threshold": 16.39,
-      "label": "31.9x vs 16.4x sector"
+      "value": 32.0,
+      "threshold": 16.32,
+      "label": "32.0x vs 16.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.65,
+      "value": 3.63,
       "threshold": 5.0,
       "label": "3.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.82,
-      "threshold": 31.88,
-      "label": "Fwd 16.8x vs Trail 31.9x"
+      "value": 16.88,
+      "threshold": 32.0,
+      "label": "Fwd 16.9x vs Trail 32.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 31.88,
-    "sectorPe": 19.28,
+    "pe": 32.0,
+    "sectorPe": 19.2,
     "pb": 1.68,
-    "ps": 2.17,
+    "ps": 2.18,
     "evEbitda": 18.84,
-    "fcfYield": 3.65,
-    "forwardPe": 16.82,
+    "fcfYield": 3.63,
+    "forwardPe": 16.88,
     "dividendYield": 1.96,
     "revenueGrowth": 2.8,
     "profitMargin": 6.67,

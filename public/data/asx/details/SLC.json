@@ -2,15 +2,11 @@
   "ticker": "SLC",
   "name": "SUPERLOOP FPO [SLC]",
   "price": 2.54,
-  "valuationScore": 7.4,
+  "valuationScore": 7.5,
   "marketCap": "1.3B",
   "sector": "Communication Services",
   "domain": "superloop.com",
   "chartData": [
-    {
-      "date": "2025-10-05",
-      "price": 3.25
-    },
     {
       "date": "2025-10-12",
       "price": 3.09
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-04",
       "price": 2.54
+    },
+    {
+      "date": "2026-10-11",
+      "price": 2.54
     }
   ],
   "testsPassed": 3,
@@ -227,8 +227,8 @@
       "name": "P/E Discount",
       "passed": false,
       "value": 84.67,
-      "threshold": 39.2,
-      "label": "84.7x vs 39.2x sector"
+      "threshold": 39.03,
+      "label": "84.7x vs 39.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -282,7 +282,7 @@
   },
   "metrics": {
     "pe": 84.67,
-    "sectorPe": 46.12,
+    "sectorPe": 45.91,
     "pb": 3.18,
     "ps": 1.97,
     "evEbitda": 16.26,

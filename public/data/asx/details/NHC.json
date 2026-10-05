@@ -1,16 +1,12 @@
 {
   "ticker": "NHC",
   "name": "NEW HOPE FPO [NHC]",
-  "price": 5.83,
-  "valuationScore": 2.2,
+  "price": 5.82,
+  "valuationScore": 2.3,
   "marketCap": "4.9B",
   "sector": "Materials",
   "domain": "newhopegroup.com.au",
   "chartData": [
-    {
-      "date": "2025-10-05",
-      "price": 3.67
-    },
     {
       "date": "2025-10-12",
       "price": 3.67
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-04",
       "price": 5.83
+    },
+    {
+      "date": "2026-10-11",
+      "price": 5.82
     }
   ],
   "testsPassed": 4,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 30.68,
-      "threshold": 14.23,
-      "label": "30.7x vs 14.2x sector"
+      "value": 30.63,
+      "threshold": 14.01,
+      "label": "30.6x vs 14.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.9,
+      "value": 4.91,
       "threshold": 5.0,
       "label": "4.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.58,
-      "threshold": 30.68,
-      "label": "Fwd 14.6x vs Trail 30.7x"
+      "value": 14.55,
+      "threshold": 30.63,
+      "label": "Fwd 14.6x vs Trail 30.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 30.68,
-    "sectorPe": 16.74,
+    "pe": 30.63,
+    "sectorPe": 16.48,
     "pb": 1.88,
     "ps": 2.78,
     "evEbitda": 9.1,
-    "fcfYield": 4.9,
-    "forwardPe": 14.58,
+    "fcfYield": 4.91,
+    "forwardPe": 14.55,
     "dividendYield": 10.29,
     "revenueGrowth": 25.9,
     "profitMargin": 9.11,

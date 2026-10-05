@@ -1,16 +1,12 @@
 {
   "ticker": "PDN",
   "name": "PALADIN FPO [PDN]",
-  "price": 9.07,
+  "price": 9.01,
   "valuationScore": 60.0,
-  "marketCap": "4.1B",
+  "marketCap": "4.0B",
   "sector": "Energy",
   "domain": "paladinenergy.com.au",
   "chartData": [
-    {
-      "date": "2025-10-05",
-      "price": 8.57
-    },
     {
       "date": "2025-10-12",
       "price": 8.84
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-04",
       "price": 9.07
+    },
+    {
+      "date": "2026-10-11",
+      "price": 9.01
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 453.5,
-      "threshold": 19.19,
-      "label": "453.5x vs 19.2x sector"
+      "value": 450.5,
+      "threshold": 18.93,
+      "label": "450.5x vs 18.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.54,
+      "value": 2.52,
       "threshold": 1.5,
-      "label": "2.54x vs 1.5x"
+      "label": "2.52x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 23.45,
-      "threshold": 453.5,
-      "label": "Fwd 23.4x vs Trail 453.5x"
+      "value": 23.28,
+      "threshold": 450.5,
+      "label": "Fwd 23.3x vs Trail 450.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.09,
       "threshold": 0.5,
-      "label": "P/S 13.4x ÷ Growth 141.5% = 0.09"
+      "label": "P/S 13.3x ÷ Growth 141.5% = 0.09"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 453.5,
-    "sectorPe": 22.58,
-    "pb": 2.54,
-    "ps": 13.39,
+    "pe": 450.5,
+    "sectorPe": 22.27,
+    "pb": 2.52,
+    "ps": 13.3,
     "evEbitda": 50.14,
     "fcfYield": 0.1,
-    "forwardPe": 23.45,
+    "forwardPe": 23.28,
     "dividendYield": 0.0,
     "revenueGrowth": 141.5,
     "profitMargin": 1.75,

@@ -1,16 +1,12 @@
 {
   "ticker": "JBH",
   "name": "JB HI-FI FPO [JBH]",
-  "price": 70.6,
-  "valuationScore": 0.7,
-  "marketCap": "7.7B",
+  "price": 69.85,
+  "valuationScore": 0.6,
+  "marketCap": "7.6B",
   "sector": "Consumer Discretionary",
   "domain": "jbhifi.com.au",
   "chartData": [
-    {
-      "date": "2025-10-05",
-      "price": 114.12
-    },
     {
       "date": "2025-10-12",
       "price": 111.93
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-04",
       "price": 70.6
+    },
+    {
+      "date": "2026-10-11",
+      "price": 69.85
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 15.79,
-      "threshold": 13.45,
-      "label": "15.8x vs 13.4x sector"
+      "value": 15.63,
+      "threshold": 13.42,
+      "label": "15.6x vs 13.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.71,
+      "value": 4.66,
       "threshold": 1.5,
-      "label": "4.71x vs 1.5x"
+      "label": "4.66x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 7.13,
+      "value": 7.21,
       "threshold": 5.0,
-      "label": "7.1% vs 5%"
+      "label": "7.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 15.36,
-      "threshold": 15.79,
-      "label": "Fwd 15.4x vs Trail 15.8x"
+      "value": 15.2,
+      "threshold": 15.63,
+      "label": "Fwd 15.2x vs Trail 15.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.37,
+      "value": 0.36,
       "threshold": 0.5,
-      "label": "P/S 0.7x ÷ Growth 1.9% = 0.37"
+      "label": "P/S 0.7x ÷ Growth 1.9% = 0.36"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 15.79,
-    "sectorPe": 15.82,
-    "pb": 4.71,
-    "ps": 0.7,
+    "pe": 15.63,
+    "sectorPe": 15.79,
+    "pb": 4.66,
+    "ps": 0.69,
     "evEbitda": 10.34,
-    "fcfYield": 7.13,
-    "forwardPe": 15.36,
+    "fcfYield": 7.21,
+    "forwardPe": 15.2,
     "dividendYield": 4.77,
     "revenueGrowth": 1.9,
     "profitMargin": 4.43,

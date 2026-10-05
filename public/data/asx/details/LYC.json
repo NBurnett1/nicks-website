@@ -1,16 +1,12 @@
 {
   "ticker": "LYC",
   "name": "LYNAS FPO [LYC]",
-  "price": 12.95,
-  "valuationScore": 30.5,
-  "marketCap": "13.0B",
+  "price": 12.63,
+  "valuationScore": 30.0,
+  "marketCap": "12.7B",
   "sector": "Basic Materials",
   "domain": "lynasrareearths.com",
   "chartData": [
-    {
-      "date": "2025-10-05",
-      "price": 18.06
-    },
     {
       "date": "2025-10-12",
       "price": 19.81
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-04",
       "price": 12.95
+    },
+    {
+      "date": "2026-10-11",
+      "price": 12.63
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 58.86,
-      "threshold": 17.02,
-      "label": "58.9x vs 17.0x sector"
+      "value": 57.41,
+      "threshold": 17.08,
+      "label": "57.4x vs 17.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.73,
+      "value": 3.64,
       "threshold": 1.5,
-      "label": "3.73x vs 1.5x"
+      "label": "3.64x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -0.74,
+      "value": -0.75,
       "threshold": 5.0,
-      "label": "-0.7% vs 5%"
+      "label": "-0.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 15.94,
-      "threshold": 58.86,
-      "label": "Fwd 15.9x vs Trail 58.9x"
+      "value": 15.55,
+      "threshold": 57.41,
+      "label": "Fwd 15.5x vs Trail 57.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.15,
       "threshold": 0.5,
-      "label": "P/S 13.3x ÷ Growth 86.7% = 0.15"
+      "label": "P/S 13.0x ÷ Growth 86.7% = 0.15"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 58.86,
-    "sectorPe": 20.02,
-    "pb": 3.73,
-    "ps": 13.33,
+    "pe": 57.41,
+    "sectorPe": 20.09,
+    "pb": 3.64,
+    "ps": 13.0,
     "evEbitda": 43.66,
-    "fcfYield": -0.74,
-    "forwardPe": 15.94,
+    "fcfYield": -0.75,
+    "forwardPe": 15.55,
     "dividendYield": 0.0,
     "revenueGrowth": 86.7,
     "profitMargin": 22.74,

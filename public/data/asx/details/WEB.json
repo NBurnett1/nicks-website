@@ -2,15 +2,11 @@
   "ticker": "WEB",
   "name": "WEBBEDS FPO [WEB]",
   "price": 3.39,
-  "valuationScore": 2.5,
+  "valuationScore": 3.4,
   "marketCap": "1.2B",
   "sector": "Consumer Cyclical",
   "domain": "webbedsgroup.com",
   "chartData": [
-    {
-      "date": "2025-10-05",
-      "price": 4.07
-    },
     {
       "date": "2025-10-12",
       "price": 4.46
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-04",
       "price": 3.39
+    },
+    {
+      "date": "2026-10-11",
+      "price": 3.39
     }
   ],
   "testsPassed": 5,
@@ -227,8 +227,8 @@
       "name": "P/E Discount",
       "passed": false,
       "value": 33.9,
-      "threshold": 23.87,
-      "label": "33.9x vs 23.9x sector"
+      "threshold": 20.68,
+      "label": "33.9x vs 20.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -282,7 +282,7 @@
   },
   "metrics": {
     "pe": 33.9,
-    "sectorPe": 28.08,
+    "sectorPe": 24.33,
     "pb": 2.1,
     "ps": 3.11,
     "evEbitda": 8.79,

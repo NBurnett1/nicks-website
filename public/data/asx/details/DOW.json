@@ -1,16 +1,12 @@
 {
   "ticker": "DOW",
   "name": "DOWNER EDI FPO [DOW]",
-  "price": 6.83,
-  "valuationScore": -4.9,
-  "marketCap": "4.5B",
+  "price": 6.73,
+  "valuationScore": -5.4,
+  "marketCap": "4.4B",
   "sector": "Industrials",
   "domain": "downergroup.com",
   "chartData": [
-    {
-      "date": "2025-10-05",
-      "price": 7.25
-    },
     {
       "date": "2025-10-12",
       "price": 7.2
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-04",
       "price": 6.83
+    },
+    {
+      "date": "2026-10-11",
+      "price": 6.73
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 20.7,
-      "threshold": 18.64,
-      "label": "20.7x vs 18.6x sector"
+      "value": 20.39,
+      "threshold": 19.44,
+      "label": "20.4x vs 19.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.29,
+      "value": 2.26,
       "threshold": 1.5,
-      "label": "2.29x vs 1.5x"
+      "label": "2.26x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 9.74,
+      "value": 9.89,
       "threshold": 5.0,
-      "label": "9.7% vs 5%"
+      "label": "9.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 13.27,
-      "threshold": 20.7,
-      "label": "Fwd 13.3x vs Trail 20.7x"
+      "value": 13.08,
+      "threshold": 20.39,
+      "label": "Fwd 13.1x vs Trail 20.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 20.7,
-    "sectorPe": 21.93,
-    "pb": 2.29,
-    "ps": 0.46,
+    "pe": 20.39,
+    "sectorPe": 22.87,
+    "pb": 2.26,
+    "ps": 0.45,
     "evEbitda": 9.33,
-    "fcfYield": 9.74,
-    "forwardPe": 13.27,
+    "fcfYield": 9.89,
+    "forwardPe": 13.08,
     "dividendYield": 4.28,
     "revenueGrowth": -7.7,
     "profitMargin": 2.23,

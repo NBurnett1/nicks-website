@@ -1,16 +1,12 @@
 {
   "ticker": "PPT",
   "name": "PERPETUAL FPO [PPT]",
-  "price": 16.9,
-  "valuationScore": -1.2,
-  "marketCap": "2.0B",
+  "price": 16.8,
+  "valuationScore": -1.1,
+  "marketCap": "1.9B",
   "sector": "Financial Services",
   "domain": "perpetual.com.au",
   "chartData": [
-    {
-      "date": "2025-10-05",
-      "price": 18.81
-    },
     {
       "date": "2025-10-12",
       "price": 18.56
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-04",
       "price": 16.9
+    },
+    {
+      "date": "2026-10-11",
+      "price": 16.8
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 33.14,
-      "threshold": 20.23,
-      "label": "33.1x vs 20.2x sector"
+      "value": 33.6,
+      "threshold": 20.2,
+      "label": "33.6x vs 20.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.25,
+      "value": 1.24,
       "threshold": 1.5,
-      "label": "1.25x vs 1.5x"
+      "label": "1.24x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.72,
+      "value": 3.74,
       "threshold": 5.0,
       "label": "3.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 10.86,
-      "threshold": 33.14,
-      "label": "Fwd 10.9x vs Trail 33.1x"
+      "value": 10.8,
+      "threshold": 33.6,
+      "label": "Fwd 10.8x vs Trail 33.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 33.14,
-    "sectorPe": 23.8,
-    "pb": 1.25,
-    "ps": 1.69,
+    "pe": 33.6,
+    "sectorPe": 23.76,
+    "pb": 1.24,
+    "ps": 1.68,
     "evEbitda": 8.43,
-    "fcfYield": 3.72,
-    "forwardPe": 10.86,
+    "fcfYield": 3.74,
+    "forwardPe": 10.8,
     "dividendYield": 7.46,
     "revenueGrowth": null,
     "profitMargin": 7.69,

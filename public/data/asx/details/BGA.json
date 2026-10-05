@@ -8,10 +8,6 @@
   "domain": "begagroup.com.au",
   "chartData": [
     {
-      "date": "2025-10-05",
-      "price": 5.09
-    },
-    {
       "date": "2025-10-12",
       "price": 5.06
     },
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-04",
       "price": 6.27
+    },
+    {
+      "date": "2026-10-11",
+      "price": 6.27
     }
   ],
   "testsPassed": 3,
@@ -227,8 +227,8 @@
       "name": "P/E Discount",
       "passed": false,
       "value": 34.83,
-      "threshold": 24.17,
-      "label": "34.8x vs 24.2x sector"
+      "threshold": 24.14,
+      "label": "34.8x vs 24.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -282,7 +282,7 @@
   },
   "metrics": {
     "pe": 34.83,
-    "sectorPe": 28.43,
+    "sectorPe": 28.4,
     "pb": 1.92,
     "ps": 0.51,
     "evEbitda": 12.64,

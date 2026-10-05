@@ -1,16 +1,12 @@
 {
   "ticker": "WTC",
   "name": "WISETECH FPO [WTC]",
-  "price": 33.43,
+  "price": 32.73,
   "valuationScore": 0.8,
-  "marketCap": "11.2B",
+  "marketCap": "11.0B",
   "sector": "Technology",
   "domain": "wisetechglobal.com",
   "chartData": [
-    {
-      "date": "2025-10-05",
-      "price": 89.75
-    },
     {
       "date": "2025-10-12",
       "price": 85.15
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-04",
       "price": 33.43
+    },
+    {
+      "date": "2026-10-11",
+      "price": 32.73
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 43.42,
-      "threshold": 31.33,
-      "label": "43.4x vs 31.3x sector"
+      "value": 42.51,
+      "threshold": 30.87,
+      "label": "42.5x vs 30.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.11,
+      "value": 4.02,
       "threshold": 1.5,
-      "label": "4.11x vs 1.5x"
+      "label": "4.02x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.68,
+      "value": 3.76,
       "threshold": 5.0,
-      "label": "3.7% vs 5%"
+      "label": "3.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 17.82,
-      "threshold": 43.42,
-      "label": "Fwd 17.8x vs Trail 43.4x"
+      "value": 17.43,
+      "threshold": 42.51,
+      "label": "Fwd 17.4x vs Trail 42.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.1,
       "threshold": 0.5,
-      "label": "P/S 8.1x ÷ Growth 82.0% = 0.10"
+      "label": "P/S 7.9x ÷ Growth 82.0% = 0.10"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 43.42,
-    "sectorPe": 36.86,
-    "pb": 4.11,
-    "ps": 8.05,
+    "pe": 42.51,
+    "sectorPe": 36.32,
+    "pb": 4.02,
+    "ps": 7.89,
     "evEbitda": 23.07,
-    "fcfYield": 3.68,
-    "forwardPe": 17.82,
+    "fcfYield": 3.76,
+    "forwardPe": 17.43,
     "dividendYield": 0.66,
     "revenueGrowth": 82.0,
     "profitMargin": 12.8,
