@@ -1,9 +1,9 @@
 {
   "ticker": "NUF",
   "name": "NUFARM FPO [NUF]",
-  "price": 3.13,
-  "valuationScore": -7.8,
-  "marketCap": "1.2B",
+  "price": 3.2,
+  "valuationScore": -0.9,
+  "marketCap": "—",
   "sector": "Basic Materials",
   "domain": "nufarm.com",
   "chartData": [
@@ -217,10 +217,10 @@
     },
     {
       "date": "2026-10-11",
-      "price": 3.13
+      "price": 3.2
     }
   ],
-  "testsPassed": 2,
+  "testsPassed": 1,
   "grade": "D",
   "valuationTests": {
     "peDiscount": {
@@ -233,28 +233,28 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.66,
+      "value": 0.68,
       "threshold": 1.5,
-      "label": "0.66x vs 1.5x"
+      "label": "0.68x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 11.58,
+      "value": 11.56,
       "threshold": 10.0,
       "label": "11.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": true,
-      "value": 21.67,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "21.7% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 17.94,
+      "value": 18.34,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": -5.3,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining -5.3%"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 20.09,
-    "pb": 0.66,
-    "ps": 0.36,
-    "evEbitda": 11.58,
-    "fcfYield": 21.67,
-    "forwardPe": 17.94,
+    "sectorPe": 20.5,
+    "pb": 0.68,
+    "ps": null,
+    "evEbitda": 11.56,
+    "fcfYield": null,
+    "forwardPe": 18.34,
     "dividendYield": 0.0,
     "revenueGrowth": -5.3,
     "profitMargin": -4.69,

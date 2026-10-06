@@ -1,8 +1,8 @@
 {
   "ticker": "PMV",
   "name": "PREM INV. FPO [PMV]",
-  "price": 11.97,
-  "valuationScore": -5.8,
+  "price": 12.1,
+  "valuationScore": -6.0,
   "marketCap": "1.9B",
   "sector": "Consumer Discretionary",
   "domain": "premierinvestments.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-11",
-      "price": 11.97
+      "price": 12.1
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 15.15,
-      "threshold": 13.42,
-      "label": "15.2x vs 13.4x sector"
+      "value": 15.32,
+      "threshold": 13.76,
+      "label": "15.3x vs 13.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.98,
+      "value": 1.9,
       "threshold": 1.5,
-      "label": "1.98x vs 1.5x"
+      "label": "1.90x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 9.83,
+      "value": 9.66,
       "threshold": 10.0,
-      "label": "9.8x vs 10x"
+      "label": "9.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 13.97,
+      "value": 13.82,
       "threshold": 5.0,
-      "label": "14.0% vs 5%"
+      "label": "13.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 11.7,
-      "threshold": 15.15,
-      "label": "Fwd 11.7x vs Trail 15.2x"
+      "value": 11.82,
+      "threshold": 15.32,
+      "label": "Fwd 11.8x vs Trail 15.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 15.15,
-    "sectorPe": 15.79,
-    "pb": 1.98,
-    "ps": 2.36,
-    "evEbitda": 9.83,
-    "fcfYield": 13.97,
-    "forwardPe": 11.7,
+    "pe": 15.32,
+    "sectorPe": 16.19,
+    "pb": 1.9,
+    "ps": 2.39,
+    "evEbitda": 9.66,
+    "fcfYield": 13.82,
+    "forwardPe": 11.82,
     "dividendYield": 7.82,
     "revenueGrowth": null,
     "profitMargin": 15.98,

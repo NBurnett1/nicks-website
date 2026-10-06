@@ -1,9 +1,9 @@
 {
   "ticker": "BSL",
   "name": "BLUESCOPE FPO [BSL]",
-  "price": 30.83,
-  "valuationScore": 0.4,
-  "marketCap": "13.5B",
+  "price": 31.22,
+  "valuationScore": -2.1,
+  "marketCap": "—",
   "sector": "Basic Materials",
   "domain": "bluescope.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-11",
-      "price": 30.83
+      "price": 31.22
     }
   ],
   "testsPassed": 5,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 16.94,
-      "threshold": 17.08,
-      "label": "16.9x vs 17.1x sector"
+      "value": 17.15,
+      "threshold": 17.42,
+      "label": "17.2x vs 17.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.31,
+      "value": 1.33,
       "threshold": 1.5,
-      "label": "1.31x vs 1.5x"
+      "label": "1.33x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 8.82,
+      "value": 8.88,
       "threshold": 10.0,
-      "label": "8.8x vs 10x"
+      "label": "8.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 0.81,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "0.8% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.45,
-      "threshold": 16.94,
-      "label": "Fwd 12.4x vs Trail 16.9x"
+      "value": 12.61,
+      "threshold": 17.15,
+      "label": "Fwd 12.6x vs Trail 17.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": 1.35,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 0.8x ÷ Growth 0.6% = 1.35"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 16.94,
-    "sectorPe": 20.09,
-    "pb": 1.31,
-    "ps": 0.81,
-    "evEbitda": 8.82,
-    "fcfYield": 0.81,
-    "forwardPe": 12.45,
+    "pe": 17.15,
+    "sectorPe": 20.5,
+    "pb": 1.33,
+    "ps": null,
+    "evEbitda": 8.88,
+    "fcfYield": null,
+    "forwardPe": 12.61,
     "dividendYield": 4.25,
     "revenueGrowth": 0.6,
     "profitMargin": 4.81,
