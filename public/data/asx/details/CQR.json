@@ -1,8 +1,8 @@
 {
   "ticker": "CQR",
   "name": "CHRETAILRT ORD UNITS [CQR]",
-  "price": 3.42,
-  "valuationScore": -15.0,
+  "price": 3.41,
+  "valuationScore": -15.3,
   "marketCap": "2.0B",
   "sector": "Real Estate",
   "domain": "charterhall.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-11",
-      "price": 3.42
+      "price": 3.41
     }
   ],
   "testsPassed": 6,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 5.27,
-      "threshold": 8.71,
-      "label": "5.3x vs 8.7x sector"
+      "value": 5.01,
+      "threshold": 8.45,
+      "label": "5.0x vs 8.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 26.85,
+      "value": 26.96,
       "threshold": 5.0,
-      "label": "26.9% vs 5%"
+      "label": "27.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 12.25,
-      "threshold": 5.27,
-      "label": "Fwd 12.2x vs Trail 5.3x"
+      "value": 12.19,
+      "threshold": 5.01,
+      "label": "Fwd 12.2x vs Trail 5.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.3,
       "threshold": 0.5,
-      "label": "P/S 4.8x ÷ Growth 15.7% = 0.30"
+      "label": "P/S 4.7x ÷ Growth 15.7% = 0.30"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 5.27,
-    "sectorPe": 10.25,
+    "pe": 5.01,
+    "sectorPe": 9.95,
     "pb": 0.68,
-    "ps": 4.76,
+    "ps": 4.74,
     "evEbitda": null,
-    "fcfYield": 26.85,
-    "forwardPe": 12.25,
-    "dividendYield": 7.72,
+    "fcfYield": 26.96,
+    "forwardPe": 12.19,
+    "dividendYield": 7.9,
     "revenueGrowth": 15.7,
     "profitMargin": 93.18,
     "operatingMargin": 63.36,
