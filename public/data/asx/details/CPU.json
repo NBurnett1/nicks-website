@@ -1,9 +1,9 @@
 {
   "ticker": "CPU",
   "name": "CSHARE FPO [CPU]",
-  "price": 40.02,
-  "valuationScore": 9.2,
-  "marketCap": "—",
+  "price": 39.96,
+  "valuationScore": 9.8,
+  "marketCap": "23.1B",
   "sector": "Financial Services",
   "domain": "computershare.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-11",
-      "price": 40.02
+      "price": 39.96
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 25.33,
-      "threshold": 20.23,
-      "label": "25.3x vs 20.2x sector"
+      "value": 25.45,
+      "threshold": 20.29,
+      "label": "25.5x vs 20.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 7.02,
+      "value": 7.2,
       "threshold": 1.5,
-      "label": "7.02x vs 1.5x"
+      "label": "7.20x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 21.7,
+      "value": 21.79,
       "threshold": 10.0,
-      "label": "21.7x vs 10x"
+      "label": "21.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": 3.11,
       "threshold": 5.0,
-      "label": "No FCF data"
+      "label": "3.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 17.1,
-      "threshold": 25.33,
-      "label": "Fwd 17.1x vs Trail 25.3x"
+      "value": 17.09,
+      "threshold": 25.45,
+      "label": "Fwd 17.1x vs Trail 25.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": 1.61,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "P/S 7.1x ÷ Growth 4.4% = 1.61"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 25.33,
-    "sectorPe": 23.8,
-    "pb": 7.02,
-    "ps": null,
-    "evEbitda": 21.7,
-    "fcfYield": null,
-    "forwardPe": 17.1,
+    "pe": 25.45,
+    "sectorPe": 23.87,
+    "pb": 7.2,
+    "ps": 7.07,
+    "evEbitda": 21.79,
+    "fcfYield": 3.11,
+    "forwardPe": 17.09,
     "dividendYield": 3.26,
     "revenueGrowth": 4.4,
     "profitMargin": 18.93,

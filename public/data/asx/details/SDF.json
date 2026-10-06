@@ -1,8 +1,8 @@
 {
   "ticker": "SDF",
   "name": "STEADFAST FPO [SDF]",
-  "price": 5.76,
-  "valuationScore": -0.2,
+  "price": 5.77,
+  "valuationScore": -0.6,
   "marketCap": "6.4B",
   "sector": "Financial Services",
   "domain": "steadfast.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-11",
-      "price": 5.76
+      "price": 5.77
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 24.0,
-      "threshold": 20.23,
-      "label": "24.0x vs 20.2x sector"
+      "value": 24.04,
+      "threshold": 20.29,
+      "label": "24.0x vs 20.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.75,
+      "value": 2.71,
       "threshold": 1.5,
-      "label": "2.75x vs 1.5x"
+      "label": "2.71x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,15 +247,15 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.3,
+      "value": 4.29,
       "threshold": 5.0,
       "label": "4.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.45,
-      "threshold": 24.0,
+      "value": 16.48,
+      "threshold": 24.04,
       "label": "Fwd 16.5x vs Trail 24.0x"
     },
     "profitabilityCheck": {
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 24.0,
-    "sectorPe": 23.8,
-    "pb": 2.75,
-    "ps": 2.95,
+    "pe": 24.04,
+    "sectorPe": 23.87,
+    "pb": 2.71,
+    "ps": 2.96,
     "evEbitda": 11.62,
-    "fcfYield": 4.3,
-    "forwardPe": 16.45,
+    "fcfYield": 4.29,
+    "forwardPe": 16.48,
     "dividendYield": 3.64,
     "revenueGrowth": -3.1,
     "profitMargin": 12.41,

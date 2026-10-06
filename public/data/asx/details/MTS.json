@@ -1,9 +1,9 @@
 {
   "ticker": "MTS",
   "name": "METCASHLTD FPO [MTS]",
-  "price": 3.01,
-  "valuationScore": -3.0,
-  "marketCap": "—",
+  "price": 2.99,
+  "valuationScore": -7.2,
+  "marketCap": "3.3B",
   "sector": "Consumer Defensive",
   "domain": "metcash.com",
   "chartData": [
@@ -217,45 +217,45 @@
     },
     {
       "date": "2026-10-11",
-      "price": 3.01
+      "price": 2.99
     }
   ],
-  "testsPassed": 4,
-  "grade": "C",
+  "testsPassed": 5,
+  "grade": "B",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 12.04,
-      "threshold": 17.44,
-      "label": "12.0x vs 17.4x sector"
+      "value": 11.96,
+      "threshold": 17.46,
+      "label": "12.0x vs 17.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.94,
+      "value": 1.93,
       "threshold": 1.5,
-      "label": "1.94x vs 1.5x"
+      "label": "1.93x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 9.2,
+      "value": 9.48,
       "threshold": 10.0,
-      "label": "9.2x vs 10x"
+      "label": "9.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": null,
-      "value": null,
+      "passed": true,
+      "value": 10.35,
       "threshold": 5.0,
-      "label": "No FCF data"
+      "label": "10.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 11.83,
-      "threshold": 12.04,
+      "value": 11.75,
+      "threshold": 11.96,
       "label": "Fwd 11.8x vs Trail 12.0x"
     },
     "profitabilityCheck": {
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": 0.63,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "P/S 0.2x ÷ Growth 0.3% = 0.63"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 12.04,
-    "sectorPe": 20.51,
-    "pb": 1.94,
-    "ps": null,
-    "evEbitda": 9.2,
-    "fcfYield": null,
-    "forwardPe": 11.83,
+    "pe": 11.96,
+    "sectorPe": 20.55,
+    "pb": 1.93,
+    "ps": 0.19,
+    "evEbitda": 9.48,
+    "fcfYield": 10.35,
+    "forwardPe": 11.75,
     "dividendYield": 6.62,
     "revenueGrowth": 0.3,
     "profitMargin": 1.61,

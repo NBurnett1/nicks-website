@@ -1,8 +1,8 @@
 {
   "ticker": "JBH",
   "name": "JB HI-FI FPO [JBH]",
-  "price": 70.29,
-  "valuationScore": 0.7,
+  "price": 70.78,
+  "valuationScore": 0.8,
   "marketCap": "7.7B",
   "sector": "Consumer Discretionary",
   "domain": "jbhifi.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-11",
-      "price": 70.29
+      "price": 70.78
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 15.9,
-      "threshold": 13.4,
-      "label": "15.9x vs 13.4x sector"
+      "value": 16.01,
+      "threshold": 13.41,
+      "label": "16.0x vs 13.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.69,
+      "value": 4.72,
       "threshold": 1.5,
-      "label": "4.69x vs 1.5x"
+      "label": "4.72x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 10.23,
+      "value": 10.3,
       "threshold": 10.0,
-      "label": "10.2x vs 10x"
+      "label": "10.3x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 7.16,
+      "value": 7.11,
       "threshold": 5.0,
-      "label": "7.2% vs 5%"
+      "label": "7.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 15.3,
-      "threshold": 15.9,
-      "label": "Fwd 15.3x vs Trail 15.9x"
+      "value": 15.4,
+      "threshold": 16.01,
+      "label": "Fwd 15.4x vs Trail 16.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 15.9,
+    "pe": 16.01,
     "sectorPe": 15.77,
-    "pb": 4.69,
-    "ps": 0.69,
-    "evEbitda": 10.23,
-    "fcfYield": 7.16,
-    "forwardPe": 15.3,
+    "pb": 4.72,
+    "ps": 0.7,
+    "evEbitda": 10.3,
+    "fcfYield": 7.11,
+    "forwardPe": 15.4,
     "dividendYield": 4.82,
     "revenueGrowth": 1.9,
     "profitMargin": 4.43,

@@ -1,8 +1,8 @@
 {
   "ticker": "TPG",
   "name": "TPGLIMITED FPO [TPG]",
-  "price": 3.81,
-  "valuationScore": -21.0,
+  "price": 3.83,
+  "valuationScore": -20.8,
   "marketCap": "7.5B",
   "sector": "Telecom",
   "domain": "tpgtelecom.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-11",
-      "price": 3.81
+      "price": 3.83
     }
   ],
   "testsPassed": 5,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 127.0,
-      "threshold": 17.44,
-      "label": "127.0x vs 17.4x sector"
+      "value": 127.67,
+      "threshold": 17.46,
+      "label": "127.7x vs 17.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.86,
+      "value": 0.88,
       "threshold": 1.5,
-      "label": "0.86x vs 1.5x"
+      "label": "0.88x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 8.98,
+      "value": 9.0,
       "threshold": 10.0,
       "label": "9.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 64.21,
+      "value": 63.87,
       "threshold": 5.0,
-      "label": "64.2% vs 5%"
+      "label": "63.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 41.56,
-      "threshold": 127.0,
-      "label": "Fwd 41.6x vs Trail 127.0x"
+      "value": 41.78,
+      "threshold": 127.67,
+      "label": "Fwd 41.8x vs Trail 127.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 127.0,
-    "sectorPe": 20.51,
-    "pb": 0.86,
+    "pe": 127.67,
+    "sectorPe": 20.55,
+    "pb": 0.88,
     "ps": 1.49,
-    "evEbitda": 8.98,
-    "fcfYield": 64.21,
-    "forwardPe": 41.56,
+    "evEbitda": 9.0,
+    "fcfYield": 63.87,
+    "forwardPe": 41.78,
     "dividendYield": 5.26,
     "revenueGrowth": -0.7,
     "profitMargin": 8.64,
