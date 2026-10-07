@@ -1,9 +1,9 @@
 {
   "ticker": "REA",
   "name": "REA GROUP FPO [REA]",
-  "price": 153.52,
-  "valuationScore": 7.4,
-  "marketCap": "20.1B",
+  "price": 153.0,
+  "valuationScore": 7.6,
+  "marketCap": "20.0B",
   "sector": "Technology",
   "domain": "rea-group.com",
   "chartData": [
@@ -217,25 +217,25 @@
     },
     {
       "date": "2026-10-11",
-      "price": 153.52
+      "price": 153.0
     }
   ],
-  "testsPassed": 3,
-  "grade": "C",
+  "testsPassed": 2,
+  "grade": "D",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": true,
-      "value": 30.04,
-      "threshold": 30.5,
-      "label": "30.0x vs 30.5x sector"
+      "passed": false,
+      "value": 30.36,
+      "threshold": 30.17,
+      "label": "30.4x vs 30.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 10.57,
+      "value": 10.54,
       "threshold": 1.5,
-      "label": "10.57x vs 1.5x"
+      "label": "10.54x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.57,
+      "value": 2.58,
       "threshold": 5.0,
       "label": "2.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 23.25,
-      "threshold": 30.04,
-      "label": "Fwd 23.3x vs Trail 30.0x"
+      "value": 23.17,
+      "threshold": 30.36,
+      "label": "Fwd 23.2x vs Trail 30.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 30.04,
-    "sectorPe": 35.89,
-    "pb": 10.57,
-    "ps": 10.16,
+    "pe": 30.36,
+    "sectorPe": 35.49,
+    "pb": 10.54,
+    "ps": 10.13,
     "evEbitda": 20.13,
-    "fcfYield": 2.57,
-    "forwardPe": 23.25,
-    "dividendYield": 2.25,
+    "fcfYield": 2.58,
+    "forwardPe": 23.17,
+    "dividendYield": 2.23,
     "revenueGrowth": null,
     "profitMargin": 27.9,
     "operatingMargin": 49.53,

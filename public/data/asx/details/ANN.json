@@ -1,7 +1,7 @@
 {
   "ticker": "ANN",
   "name": "ANSELL FPO [ANN]",
-  "price": 45.64,
+  "price": 45.5,
   "valuationScore": -1.8,
   "marketCap": "6.4B",
   "sector": "Healthcare",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-11",
-      "price": 45.64
+      "price": 45.5
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 21.23,
-      "threshold": 26.2,
-      "label": "21.2x vs 26.2x sector"
+      "value": 21.06,
+      "threshold": 26.0,
+      "label": "21.1x vs 26.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.22,
+      "value": 2.21,
       "threshold": 1.5,
-      "label": "2.22x vs 1.5x"
+      "label": "2.21x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.22,
+      "value": 3.23,
       "threshold": 5.0,
       "label": "3.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 18.0,
-      "threshold": 21.23,
-      "label": "Fwd 18.0x vs Trail 21.2x"
+      "value": 17.94,
+      "threshold": 21.06,
+      "label": "Fwd 17.9x vs Trail 21.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 21.23,
-    "sectorPe": 30.82,
-    "pb": 2.22,
-    "ps": 3.0,
+    "pe": 21.06,
+    "sectorPe": 30.59,
+    "pb": 2.21,
+    "ps": 2.99,
     "evEbitda": 18.29,
-    "fcfYield": 3.22,
-    "forwardPe": 18.0,
+    "fcfYield": 3.23,
+    "forwardPe": 17.94,
     "dividendYield": 2.57,
     "revenueGrowth": 13.2,
     "profitMargin": 9.75,

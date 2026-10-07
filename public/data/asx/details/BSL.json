@@ -1,8 +1,8 @@
 {
   "ticker": "BSL",
   "name": "BLUESCOPE FPO [BSL]",
-  "price": 30.82,
-  "valuationScore": 0.7,
+  "price": 30.83,
+  "valuationScore": 0.5,
   "marketCap": "13.5B",
   "sector": "Basic Materials",
   "domain": "bluescope.com",
@@ -217,18 +217,18 @@
     },
     {
       "date": "2026-10-11",
-      "price": 30.82
+      "price": 30.83
     }
   ],
-  "testsPassed": 4,
-  "grade": "C",
+  "testsPassed": 5,
+  "grade": "B",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": false,
-      "value": 16.84,
-      "threshold": 16.63,
-      "label": "16.8x vs 16.6x sector"
+      "passed": true,
+      "value": 17.22,
+      "threshold": 17.63,
+      "label": "17.2x vs 17.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -255,8 +255,8 @@
       "name": "Forward P/E Re-rating",
       "passed": true,
       "value": 12.44,
-      "threshold": 16.84,
-      "label": "Fwd 12.4x vs Trail 16.8x"
+      "threshold": 17.22,
+      "label": "Fwd 12.4x vs Trail 17.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 16.84,
-    "sectorPe": 19.57,
+    "pe": 17.22,
+    "sectorPe": 20.74,
     "pb": 1.31,
     "ps": 0.81,
     "evEbitda": 8.97,
     "fcfYield": 0.81,
     "forwardPe": 12.44,
-    "dividendYield": 4.22,
+    "dividendYield": 4.17,
     "revenueGrowth": 0.6,
     "profitMargin": 4.81,
     "operatingMargin": 6.86,
