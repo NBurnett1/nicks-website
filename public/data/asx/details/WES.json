@@ -1,9 +1,9 @@
 {
   "ticker": "WES",
   "name": "WESFARMER FPO [WES]",
-  "price": 76.3,
-  "valuationScore": 16.5,
-  "marketCap": "86.6B",
+  "price": 76.4,
+  "valuationScore": 16.8,
+  "marketCap": "86.7B",
   "sector": "Consumer Discretionary",
   "domain": "wesfarmers.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-11",
-      "price": 76.3
+      "price": 76.4
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 29.92,
-      "threshold": 13.5,
-      "label": "29.9x vs 13.5x sector"
+      "value": 29.96,
+      "threshold": 13.11,
+      "label": "30.0x vs 13.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 11.03,
+      "value": 11.04,
       "threshold": 1.5,
-      "label": "11.03x vs 1.5x"
+      "label": "11.04x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 20.44,
+      "value": 20.54,
       "threshold": 10.0,
-      "label": "20.4x vs 10x"
+      "label": "20.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.14,
+      "value": 4.13,
       "threshold": 5.0,
       "label": "4.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 26.17,
-      "threshold": 29.92,
-      "label": "Fwd 26.2x vs Trail 29.9x"
+      "value": 26.2,
+      "threshold": 29.96,
+      "label": "Fwd 26.2x vs Trail 30.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 29.92,
-    "sectorPe": 15.89,
-    "pb": 11.03,
+    "pe": 29.96,
+    "sectorPe": 15.42,
+    "pb": 11.04,
     "ps": 1.83,
-    "evEbitda": 20.44,
-    "fcfYield": 4.14,
-    "forwardPe": 26.17,
+    "evEbitda": 20.54,
+    "fcfYield": 4.13,
+    "forwardPe": 26.2,
     "dividendYield": 2.93,
     "revenueGrowth": 3.8,
     "profitMargin": 6.08,

@@ -1,9 +1,9 @@
 {
   "ticker": "ASX",
   "name": "ASX FPO [ASX]",
-  "price": 58.35,
-  "valuationScore": 5.4,
-  "marketCap": "11.5B",
+  "price": 60.84,
+  "valuationScore": 5.3,
+  "marketCap": "12.0B",
   "sector": "Financial Services",
   "domain": "asx.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-11",
-      "price": 58.35
+      "price": 60.83
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 23.62,
-      "threshold": 20.26,
-      "label": "23.6x vs 20.3x sector"
+      "value": 24.63,
+      "threshold": 20.7,
+      "label": "24.6x vs 20.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.86,
+      "value": 2.98,
       "threshold": 1.5,
-      "label": "2.86x vs 1.5x"
+      "label": "2.98x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 10.74,
+      "value": 10.61,
       "threshold": 10.0,
-      "label": "10.7x vs 10x"
+      "label": "10.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -2.82,
+      "value": -2.7,
       "threshold": 5.0,
-      "label": "-2.8% vs 5%"
+      "label": "-2.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 22.0,
-      "threshold": 23.62,
-      "label": "Fwd 22.0x vs Trail 23.6x"
+      "value": 22.94,
+      "threshold": 24.63,
+      "label": "Fwd 22.9x vs Trail 24.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.62,
+      "value": 0.65,
       "threshold": 0.5,
-      "label": "P/S 9.1x ÷ Growth 14.7% = 0.62"
+      "label": "P/S 9.5x ÷ Growth 14.7% = 0.65"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 23.62,
-    "sectorPe": 23.83,
-    "pb": 2.86,
-    "ps": 9.12,
-    "evEbitda": 10.74,
-    "fcfYield": -2.82,
-    "forwardPe": 22.0,
+    "pe": 24.63,
+    "sectorPe": 24.36,
+    "pb": 2.98,
+    "ps": 9.51,
+    "evEbitda": 10.61,
+    "fcfYield": -2.7,
+    "forwardPe": 22.94,
     "dividendYield": 3.56,
     "revenueGrowth": 14.7,
     "profitMargin": 38.42,

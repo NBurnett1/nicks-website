@@ -1,8 +1,8 @@
 {
   "ticker": "ANN",
   "name": "ANSELL FPO [ANN]",
-  "price": 45.5,
-  "valuationScore": -1.8,
+  "price": 45.38,
+  "valuationScore": -1.7,
   "marketCap": "6.4B",
   "sector": "Healthcare",
   "domain": "ansell.com",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-11",
-      "price": 45.5
+      "price": 45.38
     }
   ],
   "testsPassed": 5,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 21.06,
-      "threshold": 26.0,
-      "label": "21.1x vs 26.0x sector"
+      "value": 21.01,
+      "threshold": 26.24,
+      "label": "21.0x vs 26.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.21,
+      "value": 2.23,
       "threshold": 1.5,
-      "label": "2.21x vs 1.5x"
+      "label": "2.23x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 18.29,
+      "value": 18.45,
       "threshold": 10.0,
-      "label": "18.3x vs 10x"
+      "label": "18.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.23,
+      "value": 3.24,
       "threshold": 5.0,
       "label": "3.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 17.94,
-      "threshold": 21.06,
-      "label": "Fwd 17.9x vs Trail 21.1x"
+      "value": 17.93,
+      "threshold": 21.01,
+      "label": "Fwd 17.9x vs Trail 21.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 21.06,
-    "sectorPe": 30.59,
-    "pb": 2.21,
-    "ps": 2.99,
-    "evEbitda": 18.29,
-    "fcfYield": 3.23,
-    "forwardPe": 17.94,
+    "pe": 21.01,
+    "sectorPe": 30.87,
+    "pb": 2.23,
+    "ps": 2.98,
+    "evEbitda": 18.45,
+    "fcfYield": 3.24,
+    "forwardPe": 17.93,
     "dividendYield": 2.57,
     "revenueGrowth": 13.2,
     "profitMargin": 9.75,

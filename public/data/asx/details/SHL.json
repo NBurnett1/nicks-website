@@ -1,9 +1,9 @@
 {
   "ticker": "SHL",
   "name": "SONIC HLTH FPO [SHL]",
-  "price": 18.83,
-  "valuationScore": -10.4,
-  "marketCap": "9.3B",
+  "price": 18.65,
+  "valuationScore": -10.5,
+  "marketCap": "9.2B",
   "sector": "Healthcare",
   "domain": "sonichealthcare.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-11",
-      "price": 18.83
+      "price": 18.65
     }
   ],
   "testsPassed": 6,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 15.31,
-      "threshold": 26.0,
-      "label": "15.3x vs 26.0x sector"
+      "value": 15.04,
+      "threshold": 26.24,
+      "label": "15.0x vs 26.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.12,
+      "value": 1.11,
       "threshold": 1.5,
-      "label": "1.12x vs 1.5x"
+      "label": "1.11x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 10.86,
+      "value": 10.9,
       "threshold": 10.0,
       "label": "10.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 8.29,
+      "value": 8.37,
       "threshold": 5.0,
-      "label": "8.3% vs 5%"
+      "label": "8.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.38,
-      "threshold": 15.31,
-      "label": "Fwd 14.4x vs Trail 15.3x"
+      "value": 14.24,
+      "threshold": 15.04,
+      "label": "Fwd 14.2x vs Trail 15.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.1,
       "threshold": 0.5,
-      "label": "P/S 0.9x ÷ Growth 8.9% = 0.10"
+      "label": "P/S 0.8x ÷ Growth 8.9% = 0.10"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 15.31,
-    "sectorPe": 30.59,
-    "pb": 1.12,
-    "ps": 0.86,
-    "evEbitda": 10.86,
-    "fcfYield": 8.29,
-    "forwardPe": 14.38,
+    "pe": 15.04,
+    "sectorPe": 30.87,
+    "pb": 1.11,
+    "ps": 0.85,
+    "evEbitda": 10.9,
+    "fcfYield": 8.37,
+    "forwardPe": 14.24,
     "dividendYield": 5.77,
     "revenueGrowth": 8.9,
     "profitMargin": 5.6,

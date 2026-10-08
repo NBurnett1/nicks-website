@@ -1,7 +1,7 @@
 {
   "ticker": "FLT",
   "name": "FLIGHT CTR FPO [FLT]",
-  "price": 10.32,
+  "price": 10.28,
   "valuationScore": 0.6,
   "marketCap": "2.1B",
   "sector": "Consumer Cyclical",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-11",
-      "price": 10.32
+      "price": 10.28
     }
   ],
   "testsPassed": 5,
@@ -226,36 +226,36 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 14.74,
-      "threshold": 20.6,
-      "label": "14.7x vs 20.6x sector"
+      "value": 14.69,
+      "threshold": 20.74,
+      "label": "14.7x vs 20.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.93,
+      "value": 1.92,
       "threshold": 1.5,
-      "label": "1.93x vs 1.5x"
+      "label": "1.92x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 11.88,
+      "value": 11.95,
       "threshold": 10.0,
       "label": "11.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 6.23,
+      "value": 6.25,
       "threshold": 5.0,
       "label": "6.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 8.3,
-      "threshold": 14.74,
+      "value": 8.27,
+      "threshold": 14.69,
       "label": "Fwd 8.3x vs Trail 14.7x"
     },
     "profitabilityCheck": {
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 14.74,
-    "sectorPe": 24.24,
-    "pb": 1.93,
+    "pe": 14.69,
+    "sectorPe": 24.4,
+    "pb": 1.92,
     "ps": 0.73,
-    "evEbitda": 11.88,
-    "fcfYield": 6.23,
-    "forwardPe": 8.3,
+    "evEbitda": 11.95,
+    "fcfYield": 6.25,
+    "forwardPe": 8.27,
     "dividendYield": 4.1,
     "revenueGrowth": -0.7,
     "profitMargin": 5.22,

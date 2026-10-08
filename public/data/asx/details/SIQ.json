@@ -1,8 +1,8 @@
 {
   "ticker": "SIQ",
   "name": "SMARTGROUP FPO [SIQ]",
-  "price": 11.11,
-  "valuationScore": 1.9,
+  "price": 11.16,
+  "valuationScore": 2.3,
   "marketCap": "1.5B",
   "sector": "Industrials",
   "domain": "smartgroup.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-11",
-      "price": 11.11
+      "price": 11.16
     }
   ],
   "testsPassed": 5,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 17.36,
-      "threshold": 19.61,
-      "label": "17.4x vs 19.6x sector"
+      "value": 17.44,
+      "threshold": 18.79,
+      "label": "17.4x vs 18.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 5.21,
+      "value": 5.23,
       "threshold": 1.5,
-      "label": "5.21x vs 1.5x"
+      "label": "5.23x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 10.87,
+      "value": 10.89,
       "threshold": 10.0,
       "label": "10.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.67,
+      "value": 3.66,
       "threshold": 5.0,
       "label": "3.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 15.54,
-      "threshold": 17.36,
-      "label": "Fwd 15.5x vs Trail 17.4x"
+      "value": 15.61,
+      "threshold": 17.44,
+      "label": "Fwd 15.6x vs Trail 17.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 17.36,
-    "sectorPe": 23.07,
-    "pb": 5.21,
-    "ps": 4.37,
-    "evEbitda": 10.87,
-    "fcfYield": 3.67,
-    "forwardPe": 15.54,
+    "pe": 17.44,
+    "sectorPe": 22.1,
+    "pb": 5.23,
+    "ps": 4.39,
+    "evEbitda": 10.89,
+    "fcfYield": 3.66,
+    "forwardPe": 15.61,
     "dividendYield": 3.88,
     "revenueGrowth": 12.8,
     "profitMargin": 23.94,
