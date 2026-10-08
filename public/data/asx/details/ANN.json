@@ -1,9 +1,9 @@
 {
   "ticker": "ANN",
   "name": "ANSELL FPO [ANN]",
-  "price": 45.38,
+  "price": 45.1,
   "valuationScore": -1.7,
-  "marketCap": "6.4B",
+  "marketCap": "6.3B",
   "sector": "Healthcare",
   "domain": "ansell.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-11",
-      "price": 45.38
+      "price": 45.1
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 21.01,
-      "threshold": 26.24,
-      "label": "21.0x vs 26.2x sector"
+      "value": 21.27,
+      "threshold": 26.09,
+      "label": "21.3x vs 26.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.23,
+      "value": 2.19,
       "threshold": 1.5,
-      "label": "2.23x vs 1.5x"
+      "label": "2.19x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.24,
+      "value": 3.26,
       "threshold": 5.0,
-      "label": "3.2% vs 5%"
+      "label": "3.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 17.93,
-      "threshold": 21.01,
-      "label": "Fwd 17.9x vs Trail 21.0x"
+      "value": 17.82,
+      "threshold": 21.27,
+      "label": "Fwd 17.8x vs Trail 21.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.23,
+      "value": 0.22,
       "threshold": 0.5,
-      "label": "P/S 3.0x ÷ Growth 13.2% = 0.23"
+      "label": "P/S 3.0x ÷ Growth 13.2% = 0.22"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 21.01,
-    "sectorPe": 30.87,
-    "pb": 2.23,
-    "ps": 2.98,
+    "pe": 21.27,
+    "sectorPe": 30.69,
+    "pb": 2.19,
+    "ps": 2.97,
     "evEbitda": 18.45,
-    "fcfYield": 3.24,
-    "forwardPe": 17.93,
-    "dividendYield": 2.57,
+    "fcfYield": 3.26,
+    "forwardPe": 17.82,
+    "dividendYield": 2.54,
     "revenueGrowth": 13.2,
     "profitMargin": 9.75,
     "operatingMargin": 15.72,

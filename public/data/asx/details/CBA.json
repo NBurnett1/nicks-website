@@ -1,9 +1,9 @@
 {
   "ticker": "CBA",
   "name": "CWLTH BANK FPO [CBA]",
-  "price": 150.78,
-  "valuationScore": 3.2,
-  "marketCap": "252.1B",
+  "price": 148.12,
+  "valuationScore": 2.7,
+  "marketCap": "247.7B",
   "sector": "Financials",
   "domain": "commbank.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-11",
-      "price": 150.78
+      "price": 148.12
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 23.45,
-      "threshold": 16.61,
-      "label": "23.4x vs 16.6x sector"
+      "value": 23.07,
+      "threshold": 16.66,
+      "label": "23.1x vs 16.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.2,
+      "value": 3.15,
       "threshold": 1.5,
-      "label": "3.20x vs 1.5x"
+      "label": "3.15x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 22.22,
-      "threshold": 23.45,
-      "label": "Fwd 22.2x vs Trail 23.4x"
+      "value": 21.83,
+      "threshold": 23.07,
+      "label": "Fwd 21.8x vs Trail 23.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 1.32,
+      "value": 1.3,
       "threshold": 0.5,
-      "label": "P/S 8.6x ÷ Growth 6.5% = 1.32"
+      "label": "P/S 8.4x ÷ Growth 6.5% = 1.30"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 23.45,
-    "sectorPe": 19.55,
-    "pb": 3.2,
-    "ps": 8.58,
+    "pe": 23.07,
+    "sectorPe": 19.6,
+    "pb": 3.15,
+    "ps": 8.43,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 22.22,
-    "dividendYield": 3.31,
+    "forwardPe": 21.83,
+    "dividendYield": 3.36,
     "revenueGrowth": 6.5,
     "profitMargin": 37.0,
     "operatingMargin": 56.2,
