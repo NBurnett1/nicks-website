@@ -1,8 +1,8 @@
 {
   "ticker": "MND",
   "name": "MONADEL FPO [MND]",
-  "price": 30.6,
-  "valuationScore": 3.3,
+  "price": 30.57,
+  "valuationScore": 3.4,
   "marketCap": "3.1B",
   "sector": "Industrials",
   "domain": "monadelphous.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-11",
-      "price": 30.6
+      "price": 30.57
     }
   ],
   "testsPassed": 4,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 25.08,
-      "threshold": 20.34,
-      "label": "25.1x vs 20.3x sector"
+      "value": 25.06,
+      "threshold": 20.15,
+      "label": "25.1x vs 20.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -247,15 +247,15 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 6.62,
+      "value": 6.63,
       "threshold": 5.0,
       "label": "6.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 22.62,
-      "threshold": 25.08,
+      "value": 22.6,
+      "threshold": 25.06,
       "label": "Fwd 22.6x vs Trail 25.1x"
     },
     "profitabilityCheck": {
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 25.08,
-    "sectorPe": 23.93,
+    "pe": 25.06,
+    "sectorPe": 23.7,
     "pb": 5.38,
     "ps": 1.1,
     "evEbitda": 15.69,
-    "fcfYield": 6.62,
-    "forwardPe": 22.62,
+    "fcfYield": 6.63,
+    "forwardPe": 22.6,
     "dividendYield": 3.73,
     "revenueGrowth": 19.2,
     "profitMargin": 4.55,

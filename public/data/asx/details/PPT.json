@@ -1,7 +1,7 @@
 {
   "ticker": "PPT",
   "name": "PERPETUAL FPO [PPT]",
-  "price": 17.15,
+  "price": 17.2,
   "valuationScore": -1.0,
   "marketCap": "2.0B",
   "sector": "Financial Services",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-11",
-      "price": 17.15
+      "price": 17.2
     }
   ],
   "testsPassed": 3,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 33.63,
+      "value": 33.73,
       "threshold": 20.16,
-      "label": "33.6x vs 20.2x sector"
+      "label": "33.7x vs 20.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.66,
+      "value": 3.65,
       "threshold": 5.0,
-      "label": "3.7% vs 5%"
+      "label": "3.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 11.02,
-      "threshold": 33.63,
-      "label": "Fwd 11.0x vs Trail 33.6x"
+      "value": 11.05,
+      "threshold": 33.73,
+      "label": "Fwd 11.1x vs Trail 33.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 33.63,
+    "pe": 33.73,
     "sectorPe": 23.72,
     "pb": 1.27,
     "ps": 1.72,
     "evEbitda": 8.49,
-    "fcfYield": 3.66,
-    "forwardPe": 11.02,
+    "fcfYield": 3.65,
+    "forwardPe": 11.05,
     "dividendYield": 7.43,
     "revenueGrowth": null,
     "profitMargin": 7.69,

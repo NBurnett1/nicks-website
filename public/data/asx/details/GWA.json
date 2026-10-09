@@ -1,9 +1,9 @@
 {
   "ticker": "GWA",
   "name": "GWA GROUP FPO [GWA]",
-  "price": 1.99,
+  "price": 2.0,
   "valuationScore": -5.2,
-  "marketCap": "506M",
+  "marketCap": "509M",
   "sector": "Industrials",
   "domain": "gwagroup.com.au",
   "chartData": [
@@ -217,25 +217,25 @@
     },
     {
       "date": "2026-10-11",
-      "price": 1.99
+      "price": 2.0
     }
   ],
-  "testsPassed": 6,
-  "grade": "A",
+  "testsPassed": 5,
+  "grade": "B",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 11.06,
-      "threshold": 20.34,
-      "label": "11.1x vs 20.3x sector"
+      "value": 11.11,
+      "threshold": 20.15,
+      "label": "11.1x vs 20.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.77,
+      "value": 1.78,
       "threshold": 1.5,
-      "label": "1.77x vs 1.5x"
+      "label": "1.78x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -246,17 +246,17 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": true,
-      "value": 5.02,
+      "passed": false,
+      "value": 5.0,
       "threshold": 5.0,
       "label": "5.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 9.74,
-      "threshold": 11.06,
-      "label": "Fwd 9.7x vs Trail 11.1x"
+      "value": 9.79,
+      "threshold": 11.11,
+      "label": "Fwd 9.8x vs Trail 11.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 11.06,
-    "sectorPe": 23.93,
-    "pb": 1.77,
+    "pe": 11.11,
+    "sectorPe": 23.7,
+    "pb": 1.78,
     "ps": 1.2,
     "evEbitda": 8.14,
-    "fcfYield": 5.02,
-    "forwardPe": 9.74,
-    "dividendYield": 8.42,
+    "fcfYield": 5.0,
+    "forwardPe": 9.79,
+    "dividendYield": 8.59,
     "revenueGrowth": -0.2,
     "profitMargin": 11.36,
     "operatingMargin": 18.76,
