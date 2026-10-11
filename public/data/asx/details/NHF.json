@@ -1,16 +1,12 @@
 {
   "ticker": "NHF",
   "name": "NIBHOLDING FPO [NHF]",
-  "price": 6.62,
-  "valuationScore": -5.2,
+  "price": 6.57,
+  "valuationScore": -4.9,
   "marketCap": "3.2B",
   "sector": "Financial Services",
   "domain": "nib.com.au",
   "chartData": [
-    {
-      "date": "2025-10-12",
-      "price": 7.15
-    },
     {
       "date": "2025-10-19",
       "price": 6.9
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-11",
       "price": 6.62
+    },
+    {
+      "date": "2026-10-18",
+      "price": 6.57
     }
   ],
   "testsPassed": 6,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 17.42,
+      "value": 17.29,
       "threshold": 20.64,
-      "label": "17.4x vs 20.6x sector"
+      "label": "17.3x vs 20.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.81,
+      "value": 2.79,
       "threshold": 1.5,
-      "label": "2.81x vs 1.5x"
+      "label": "2.79x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 7.18,
+      "value": 7.38,
       "threshold": 10.0,
-      "label": "7.2x vs 10x"
+      "label": "7.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.98,
+      "value": 6.02,
       "threshold": 5.0,
       "label": "6.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 13.14,
-      "threshold": 17.42,
-      "label": "Fwd 13.1x vs Trail 17.4x"
+      "value": 13.04,
+      "threshold": 17.29,
+      "label": "Fwd 13.0x vs Trail 17.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.19,
+      "value": 0.18,
       "threshold": 0.5,
-      "label": "P/S 0.9x ÷ Growth 4.6% = 0.19"
+      "label": "P/S 0.8x ÷ Growth 4.6% = 0.18"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 17.42,
+    "pe": 17.29,
     "sectorPe": 24.29,
-    "pb": 2.81,
+    "pb": 2.79,
     "ps": 0.85,
-    "evEbitda": 7.18,
-    "fcfYield": 5.98,
-    "forwardPe": 13.14,
-    "dividendYield": 4.46,
+    "evEbitda": 7.38,
+    "fcfYield": 6.02,
+    "forwardPe": 13.04,
+    "dividendYield": 4.38,
     "revenueGrowth": 4.6,
     "profitMargin": 4.92,
     "operatingMargin": 7.67,
