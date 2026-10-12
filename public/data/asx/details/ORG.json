@@ -1,9 +1,9 @@
 {
   "ticker": "ORG",
   "name": "ORIGIN ENE FPO [ORG]",
-  "price": 11.34,
-  "valuationScore": 0.9,
-  "marketCap": "19.5B",
+  "price": 11.24,
+  "valuationScore": -8.0,
+  "marketCap": "19.4B",
   "sector": "Energy",
   "domain": "originenergy.com.au",
   "chartData": [
@@ -214,6 +214,10 @@
     {
       "date": "2026-10-11",
       "price": 11.37
+    },
+    {
+      "date": "2026-10-18",
+      "price": 11.24
     }
   ],
   "testsPassed": 2,
@@ -222,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 12.46,
-      "threshold": 18.99,
-      "label": "12.5x vs 19.0x sector"
+      "value": 12.35,
+      "threshold": 18.95,
+      "label": "12.4x vs 18.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.92,
+      "value": 1.91,
       "threshold": 1.5,
-      "label": "1.92x vs 1.5x"
+      "label": "1.91x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -243,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.19,
+      "value": 4.23,
       "threshold": 5.0,
       "label": "4.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 18.71,
-      "threshold": 12.46,
-      "label": "Fwd 18.7x vs Trail 12.5x"
+      "value": 18.55,
+      "threshold": 12.35,
+      "label": "Fwd 18.6x vs Trail 12.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -277,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 12.46,
-    "sectorPe": 22.34,
-    "pb": 1.92,
-    "ps": 1.25,
+    "pe": 12.35,
+    "sectorPe": 22.29,
+    "pb": 1.91,
+    "ps": 1.24,
     "evEbitda": 13.8,
-    "fcfYield": 4.19,
-    "forwardPe": 18.71,
-    "dividendYield": 5.28,
+    "fcfYield": 4.23,
+    "forwardPe": 18.55,
+    "dividendYield": 5.36,
     "revenueGrowth": -10.2,
     "profitMargin": 10.08,
     "operatingMargin": 9.47,

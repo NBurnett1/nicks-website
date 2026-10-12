@@ -1,9 +1,9 @@
 {
   "ticker": "ORI",
   "name": "ORICA FPO [ORI]",
-  "price": 23.1,
+  "price": 23.0,
   "valuationScore": 6.9,
-  "marketCap": "—",
+  "marketCap": "10.7B",
   "sector": "Basic Materials",
   "domain": "orica.com",
   "chartData": [
@@ -214,24 +214,28 @@
     {
       "date": "2026-10-11",
       "price": 23.07
+    },
+    {
+      "date": "2026-10-18",
+      "price": 23.0
     }
   ],
-  "testsPassed": 3,
+  "testsPassed": 4,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 45.29,
-      "threshold": 16.55,
-      "label": "45.3x vs 16.6x sector"
+      "value": 45.1,
+      "threshold": 16.23,
+      "label": "45.1x vs 16.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.87,
+      "value": 2.86,
       "threshold": 1.5,
-      "label": "2.87x vs 1.5x"
+      "label": "2.86x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -242,17 +246,17 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": null,
-      "value": null,
+      "passed": true,
+      "value": 7.54,
       "threshold": 5.0,
-      "label": "No FCF data"
+      "label": "7.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.89,
-      "threshold": 45.29,
-      "label": "Fwd 16.9x vs Trail 45.3x"
+      "value": 16.81,
+      "threshold": 45.1,
+      "label": "Fwd 16.8x vs Trail 45.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -263,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": -1.7,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "FAIL — Revenue declining -1.7%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -277,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 45.29,
-    "sectorPe": 19.47,
-    "pb": 2.87,
-    "ps": null,
+    "pe": 45.1,
+    "sectorPe": 19.09,
+    "pb": 2.86,
+    "ps": 1.31,
     "evEbitda": 9.64,
-    "fcfYield": null,
-    "forwardPe": 16.89,
+    "fcfYield": 7.54,
+    "forwardPe": 16.81,
     "dividendYield": 2.62,
     "revenueGrowth": -1.7,
     "profitMargin": 3.09,

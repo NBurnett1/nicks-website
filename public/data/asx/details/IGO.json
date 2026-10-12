@@ -1,9 +1,9 @@
 {
   "ticker": "IGO",
   "name": "IGOLIMITED FPO [IGO]",
-  "price": 6.14,
-  "valuationScore": 33.0,
-  "marketCap": "4.6B",
+  "price": 5.89,
+  "valuationScore": 32.5,
+  "marketCap": "4.5B",
   "sector": "Materials",
   "domain": "igo.com.au",
   "chartData": [
@@ -214,6 +214,10 @@
     {
       "date": "2026-10-11",
       "price": 6.08
+    },
+    {
+      "date": "2026-10-18",
+      "price": 5.89
     }
   ],
   "testsPassed": 2,
@@ -222,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 32.32,
-      "threshold": 14.08,
-      "label": "32.3x vs 14.1x sector"
+      "value": 31.0,
+      "threshold": 14.09,
+      "label": "31.0x vs 14.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.07,
+      "value": 1.99,
       "threshold": 1.5,
-      "label": "2.07x vs 1.5x"
+      "label": "1.99x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -243,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.03,
+      "value": 4.2,
       "threshold": 5.0,
-      "label": "4.0% vs 5%"
+      "label": "4.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 10.29,
-      "threshold": 32.32,
-      "label": "Fwd 10.3x vs Trail 32.3x"
+      "value": 10.03,
+      "threshold": 31.0,
+      "label": "Fwd 10.0x vs Trail 31.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.98,
+      "value": 0.94,
       "threshold": 0.5,
-      "label": "P/S 10.0x ÷ Growth 10.3% = 0.98"
+      "label": "P/S 9.6x ÷ Growth 10.3% = 0.94"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -277,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 32.32,
-    "sectorPe": 16.56,
-    "pb": 2.07,
-    "ps": 10.04,
+    "pe": 31.0,
+    "sectorPe": 16.58,
+    "pb": 1.99,
+    "ps": 9.64,
     "evEbitda": 79.68,
-    "fcfYield": 4.03,
-    "forwardPe": 10.29,
+    "fcfYield": 4.2,
+    "forwardPe": 10.03,
     "dividendYield": 0.82,
     "revenueGrowth": 10.3,
     "profitMargin": 31.39,

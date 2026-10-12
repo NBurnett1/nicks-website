@@ -1,9 +1,9 @@
 {
   "ticker": "ARB",
   "name": "ARB CORP FPO [ARB]",
-  "price": 17.83,
-  "valuationScore": -0.4,
-  "marketCap": "1.5B",
+  "price": 16.91,
+  "valuationScore": -0.8,
+  "marketCap": "1.4B",
   "sector": "Consumer Discretionary",
   "domain": "arb.com.au",
   "chartData": [
@@ -214,6 +214,10 @@
     {
       "date": "2026-10-11",
       "price": 17.62
+    },
+    {
+      "date": "2026-10-18",
+      "price": 16.91
     }
   ],
   "testsPassed": 2,
@@ -222,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 16.06,
-      "threshold": 13.57,
-      "label": "16.1x vs 13.6x sector"
+      "value": 15.23,
+      "threshold": 13.43,
+      "label": "15.2x vs 13.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.01,
+      "value": 1.91,
       "threshold": 1.5,
-      "label": "2.01x vs 1.5x"
+      "label": "1.91x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -243,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.31,
+      "value": 4.55,
       "threshold": 5.0,
-      "label": "4.3% vs 5%"
+      "label": "4.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.23,
-      "threshold": 16.06,
-      "label": "Fwd 14.2x vs Trail 16.1x"
+      "value": 13.5,
+      "threshold": 15.23,
+      "label": "Fwd 13.5x vs Trail 15.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -277,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 16.06,
-    "sectorPe": 15.97,
-    "pb": 2.01,
-    "ps": 2.11,
+    "pe": 15.23,
+    "sectorPe": 15.8,
+    "pb": 1.91,
+    "ps": 2.0,
     "evEbitda": 10.56,
-    "fcfYield": 4.31,
-    "forwardPe": 14.23,
-    "dividendYield": 3.97,
+    "fcfYield": 4.55,
+    "forwardPe": 13.5,
+    "dividendYield": 4.12,
     "revenueGrowth": -6.3,
     "profitMargin": 13.08,
     "operatingMargin": 17.61,

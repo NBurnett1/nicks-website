@@ -2,8 +2,8 @@
   "ticker": "SYR",
   "name": "SYRAH RES FPO [SYR]",
   "price": 0.07,
-  "valuationScore": -9.8,
-  "marketCap": "—",
+  "valuationScore": 3.8,
+  "marketCap": "163M",
   "sector": "Basic Materials",
   "domain": "syrahresources.com.au",
   "chartData": [
@@ -214,10 +214,14 @@
     {
       "date": "2026-10-11",
       "price": 0.07
+    },
+    {
+      "date": "2026-10-18",
+      "price": 0.07
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -229,9 +233,9 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.2,
+      "value": 0.19,
       "threshold": 1.5,
-      "label": "0.20x vs 1.5x"
+      "label": "0.19x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -242,15 +246,15 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": -26.17,
       "threshold": 5.0,
-      "label": "No FCF data"
+      "label": "-26.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": -2.3,
+      "value": -2.24,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -263,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": true,
+      "value": 0.0,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "P/S 3.3x ÷ Growth 800.4% = 0.00"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -278,12 +282,12 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 19.47,
-    "pb": 0.2,
-    "ps": null,
+    "sectorPe": 19.09,
+    "pb": 0.19,
+    "ps": 3.29,
     "evEbitda": -5.32,
-    "fcfYield": null,
-    "forwardPe": -2.3,
+    "fcfYield": -26.17,
+    "forwardPe": -2.24,
     "dividendYield": 0.0,
     "revenueGrowth": 800.4,
     "profitMargin": 0.0,

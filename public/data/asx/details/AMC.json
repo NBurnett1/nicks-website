@@ -1,9 +1,9 @@
 {
   "ticker": "AMC",
   "name": "AMCOR PLC CDI 1:1 [AMC]",
-  "price": 59.89,
-  "valuationScore": -1.0,
-  "marketCap": "27.7B",
+  "price": 59.51,
+  "valuationScore": -0.9,
+  "marketCap": "27.5B",
   "sector": "Materials",
   "domain": "amcor.com",
   "chartData": [
@@ -214,6 +214,10 @@
     {
       "date": "2026-10-11",
       "price": 60.26
+    },
+    {
+      "date": "2026-10-18",
+      "price": 59.51
     }
   ],
   "testsPassed": 4,
@@ -222,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 17.06,
-      "threshold": 14.08,
-      "label": "17.1x vs 14.1x sector"
+      "value": 16.95,
+      "threshold": 14.09,
+      "label": "17.0x vs 14.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.64,
+      "value": 1.62,
       "threshold": 1.5,
-      "label": "1.64x vs 1.5x"
+      "label": "1.62x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -243,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.44,
+      "value": 5.47,
       "threshold": 5.0,
-      "label": "5.4% vs 5%"
+      "label": "5.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 9.67,
-      "threshold": 17.06,
-      "label": "Fwd 9.7x vs Trail 17.1x"
+      "value": 9.61,
+      "threshold": 16.95,
+      "label": "Fwd 9.6x vs Trail 17.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -277,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 17.06,
-    "sectorPe": 16.56,
-    "pb": 1.64,
-    "ps": 1.18,
+    "pe": 16.95,
+    "sectorPe": 16.58,
+    "pb": 1.62,
+    "ps": 1.17,
     "evEbitda": 11.84,
-    "fcfYield": 5.44,
-    "forwardPe": 9.67,
-    "dividendYield": 6.11,
+    "fcfYield": 5.47,
+    "forwardPe": 9.61,
+    "dividendYield": 6.2,
     "revenueGrowth": 25.9,
     "profitMargin": 4.71,
     "operatingMargin": 9.69,

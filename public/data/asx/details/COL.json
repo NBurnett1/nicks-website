@@ -1,9 +1,9 @@
 {
   "ticker": "COL",
   "name": "COLESGROUP FPO [COL]",
-  "price": 23.12,
-  "valuationScore": 3.8,
-  "marketCap": "31.1B",
+  "price": 23.37,
+  "valuationScore": 4.5,
+  "marketCap": "31.4B",
   "sector": "Consumer Staples",
   "domain": "colesgroup.com.au",
   "chartData": [
@@ -214,6 +214,10 @@
     {
       "date": "2026-10-11",
       "price": 23.31
+    },
+    {
+      "date": "2026-10-18",
+      "price": 23.37
     }
   ],
   "testsPassed": 4,
@@ -222,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 28.54,
-      "threshold": 24.26,
-      "label": "28.5x vs 24.3x sector"
+      "value": 28.85,
+      "threshold": 24.52,
+      "label": "28.9x vs 24.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 7.84,
+      "value": 7.93,
       "threshold": 1.5,
-      "label": "7.84x vs 1.5x"
+      "label": "7.93x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -243,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.69,
+      "value": 5.63,
       "threshold": 5.0,
-      "label": "5.7% vs 5%"
+      "label": "5.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 21.51,
-      "threshold": 28.54,
-      "label": "Fwd 21.5x vs Trail 28.5x"
+      "value": 21.75,
+      "threshold": 28.85,
+      "label": "Fwd 21.7x vs Trail 28.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -277,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 28.54,
-    "sectorPe": 28.54,
-    "pb": 7.84,
-    "ps": 0.68,
+    "pe": 28.85,
+    "sectorPe": 28.85,
+    "pb": 7.93,
+    "ps": 0.69,
     "evEbitda": 15.32,
-    "fcfYield": 5.69,
-    "forwardPe": 21.51,
-    "dividendYield": 3.17,
+    "fcfYield": 5.63,
+    "forwardPe": 21.75,
+    "dividendYield": 3.19,
     "revenueGrowth": 3.0,
     "profitMargin": 2.38,
     "operatingMargin": 4.65,

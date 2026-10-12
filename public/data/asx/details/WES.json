@@ -1,8 +1,8 @@
 {
   "ticker": "WES",
   "name": "WESFARMER FPO [WES]",
-  "price": 77.35,
-  "valuationScore": 16.4,
+  "price": 77.38,
+  "valuationScore": 16.6,
   "marketCap": "87.8B",
   "sector": "Consumer Discretionary",
   "domain": "wesfarmers.com.au",
@@ -214,6 +214,10 @@
     {
       "date": "2026-10-11",
       "price": 77.35
+    },
+    {
+      "date": "2026-10-18",
+      "price": 77.38
     }
   ],
   "testsPassed": 4,
@@ -222,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 30.57,
-      "threshold": 13.57,
-      "label": "30.6x vs 13.6x sector"
+      "value": 30.58,
+      "threshold": 13.43,
+      "label": "30.6x vs 13.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -250,8 +254,8 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 26.53,
-      "threshold": 30.57,
+      "value": 26.54,
+      "threshold": 30.58,
       "label": "Fwd 26.5x vs Trail 30.6x"
     },
     "profitabilityCheck": {
@@ -277,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 30.57,
-    "sectorPe": 15.97,
+    "pe": 30.58,
+    "sectorPe": 15.8,
     "pb": 11.18,
     "ps": 1.86,
     "evEbitda": 20.79,
     "fcfYield": 4.08,
-    "forwardPe": 26.53,
+    "forwardPe": 26.54,
     "dividendYield": 2.87,
     "revenueGrowth": 3.8,
     "profitMargin": 6.08,
