@@ -1,7 +1,7 @@
 {
   "ticker": "PDN",
   "name": "PALADIN FPO [PDN]",
-  "price": 8.1,
+  "price": 8.03,
   "valuationScore": 60.0,
   "marketCap": "3.6B",
   "sector": "Energy",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-18",
-      "price": 8.1
+      "price": 8.03
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 405.0,
-      "threshold": 18.91,
-      "label": "405.0x vs 18.9x sector"
+      "value": 401.5,
+      "threshold": 19.0,
+      "label": "401.5x vs 19.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.27,
+      "value": 2.18,
       "threshold": 1.5,
-      "label": "2.27x vs 1.5x"
+      "label": "2.18x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 20.5,
-      "threshold": 405.0,
-      "label": "Fwd 20.5x vs Trail 405.0x"
+      "value": 19.9,
+      "threshold": 401.5,
+      "label": "Fwd 19.9x vs Trail 401.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.08,
       "threshold": 0.5,
-      "label": "P/S 12.0x ÷ Growth 141.5% = 0.08"
+      "label": "P/S 11.9x ÷ Growth 141.5% = 0.08"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 405.0,
-    "sectorPe": 22.25,
-    "pb": 2.27,
-    "ps": 11.96,
+    "pe": 401.5,
+    "sectorPe": 22.35,
+    "pb": 2.18,
+    "ps": 11.86,
     "evEbitda": 46.47,
     "fcfYield": 0.11,
-    "forwardPe": 20.5,
+    "forwardPe": 19.9,
     "dividendYield": 0.0,
     "revenueGrowth": 141.5,
     "profitMargin": 1.75,
