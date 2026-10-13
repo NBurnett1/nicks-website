@@ -1,9 +1,9 @@
 {
   "ticker": "QAN",
   "name": "QANTAS FPO [QAN]",
-  "price": 8.55,
+  "price": 8.29,
   "valuationScore": 8.6,
-  "marketCap": "12.9B",
+  "marketCap": "12.5B",
   "sector": "Industrials",
   "domain": "qantas.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-18",
-      "price": 8.55
+      "price": 8.28
     }
   ],
   "testsPassed": 6,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 10.18,
-      "threshold": 18.81,
-      "label": "10.2x vs 18.8x sector"
+      "value": 9.86,
+      "threshold": 18.36,
+      "label": "9.9x vs 18.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 9.63,
+      "value": 9.33,
       "threshold": 1.5,
-      "label": "9.63x vs 1.5x"
+      "label": "9.33x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 4.83,
+      "value": 4.85,
       "threshold": 10.0,
       "label": "4.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -3.39,
+      "value": -3.49,
       "threshold": 5.0,
-      "label": "-3.4% vs 5%"
+      "label": "-3.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 6.74,
-      "threshold": 10.18,
-      "label": "Fwd 6.7x vs Trail 10.2x"
+      "value": 6.53,
+      "threshold": 9.86,
+      "label": "Fwd 6.5x vs Trail 9.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 10.18,
-    "sectorPe": 22.13,
-    "pb": 9.63,
-    "ps": 0.51,
-    "evEbitda": 4.83,
-    "fcfYield": -3.39,
-    "forwardPe": 6.74,
+    "pe": 9.86,
+    "sectorPe": 21.6,
+    "pb": 9.33,
+    "ps": 0.49,
+    "evEbitda": 4.85,
+    "fcfYield": -3.49,
+    "forwardPe": 6.53,
     "dividendYield": 4.65,
     "revenueGrowth": 7.9,
     "profitMargin": 5.05,

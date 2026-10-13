@@ -1,9 +1,9 @@
 {
   "ticker": "PLS",
   "name": "PLSGROUP FPO [PLS]",
-  "price": 3.37,
-  "valuationScore": 1.0,
-  "marketCap": "10.9B",
+  "price": 3.19,
+  "valuationScore": 0.6,
+  "marketCap": "10.3B",
   "sector": "Basic Materials",
   "domain": "pls.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-18",
-      "price": 3.37
+      "price": 3.18
     }
   ],
   "testsPassed": 6,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 21.06,
-      "threshold": 16.23,
-      "label": "21.1x vs 16.2x sector"
+      "value": 19.91,
+      "threshold": 15.75,
+      "label": "19.9x vs 15.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.66,
+      "value": 2.52,
       "threshold": 1.5,
-      "label": "2.66x vs 1.5x"
+      "label": "2.52x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 9.65,
+      "value": 9.25,
       "threshold": 10.0,
-      "label": "9.6x vs 10x"
+      "label": "9.3x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 7.36,
+      "value": 7.79,
       "threshold": 5.0,
-      "label": "7.4% vs 5%"
+      "label": "7.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.68,
-      "threshold": 21.06,
-      "label": "Fwd 14.7x vs Trail 21.1x"
+      "value": 13.87,
+      "threshold": 19.91,
+      "label": "Fwd 13.9x vs Trail 19.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.02,
       "threshold": 0.5,
-      "label": "P/S 5.6x ÷ Growth 281.7% = 0.02"
+      "label": "P/S 5.3x ÷ Growth 281.7% = 0.02"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 21.06,
-    "sectorPe": 19.09,
-    "pb": 2.66,
-    "ps": 5.62,
-    "evEbitda": 9.65,
-    "fcfYield": 7.36,
-    "forwardPe": 14.68,
-    "dividendYield": 1.35,
+    "pe": 19.91,
+    "sectorPe": 18.52,
+    "pb": 2.52,
+    "ps": 5.31,
+    "evEbitda": 9.25,
+    "fcfYield": 7.79,
+    "forwardPe": 13.87,
+    "dividendYield": 1.43,
     "revenueGrowth": 281.7,
     "profitMargin": 27.18,
     "operatingMargin": 55.32,
