@@ -1,9 +1,9 @@
 {
   "ticker": "AZJ",
   "name": "AURIZON FPO [AZJ]",
-  "price": 3.78,
-  "valuationScore": -3.6,
-  "marketCap": "6.4B",
+  "price": 3.75,
+  "valuationScore": -3.9,
+  "marketCap": "6.3B",
   "sector": "Industrials",
   "domain": "aurizon.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-18",
-      "price": 3.78
+      "price": 3.76
     }
   ],
   "testsPassed": 6,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 18.0,
-      "threshold": 18.36,
-      "label": "18.0x vs 18.4x sector"
+      "value": 17.88,
+      "threshold": 19.79,
+      "label": "17.9x vs 19.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.62,
+      "value": 1.6,
       "threshold": 1.5,
-      "label": "1.62x vs 1.5x"
+      "label": "1.60x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 7.41,
+      "value": 7.45,
       "threshold": 10.0,
-      "label": "7.4x vs 10x"
+      "label": "7.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.5,
+      "value": 4.53,
       "threshold": 5.0,
       "label": "4.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 15.35,
-      "threshold": 18.0,
-      "label": "Fwd 15.4x vs Trail 18.0x"
+      "value": 15.25,
+      "threshold": 17.88,
+      "label": "Fwd 15.3x vs Trail 17.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 18.0,
-    "sectorPe": 21.6,
-    "pb": 1.62,
-    "ps": 1.53,
-    "evEbitda": 7.41,
-    "fcfYield": 4.5,
-    "forwardPe": 15.35,
+    "pe": 17.88,
+    "sectorPe": 23.29,
+    "pb": 1.6,
+    "ps": 1.52,
+    "evEbitda": 7.45,
+    "fcfYield": 4.53,
+    "forwardPe": 15.25,
     "dividendYield": 6.15,
     "revenueGrowth": 9.0,
     "profitMargin": 8.69,

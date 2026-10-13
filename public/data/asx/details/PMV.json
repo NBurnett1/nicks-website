@@ -1,7 +1,7 @@
 {
   "ticker": "PMV",
   "name": "PREM INV. FPO [PMV]",
-  "price": 12.45,
+  "price": 12.44,
   "valuationScore": -5.3,
   "marketCap": "2.0B",
   "sector": "Consumer Discretionary",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-18",
-      "price": 12.45
+      "price": 12.44
     }
   ],
   "testsPassed": 3,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 15.56,
-      "threshold": 13.45,
-      "label": "15.6x vs 13.4x sector"
+      "value": 15.36,
+      "threshold": 13.28,
+      "label": "15.4x vs 13.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,23 +240,23 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 10.08,
+      "value": 10.09,
       "threshold": 10.0,
       "label": "10.1x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 13.43,
+      "value": 13.44,
       "threshold": 5.0,
       "label": "13.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.17,
-      "threshold": 15.56,
-      "label": "Fwd 12.2x vs Trail 15.6x"
+      "value": 12.16,
+      "threshold": 15.36,
+      "label": "Fwd 12.2x vs Trail 15.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 15.56,
-    "sectorPe": 15.82,
+    "pe": 15.36,
+    "sectorPe": 15.62,
     "pb": 2.06,
     "ps": 2.46,
-    "evEbitda": 10.08,
-    "fcfYield": 13.43,
-    "forwardPe": 12.17,
+    "evEbitda": 10.09,
+    "fcfYield": 13.44,
+    "forwardPe": 12.16,
     "dividendYield": 7.64,
     "revenueGrowth": null,
     "profitMargin": 15.98,

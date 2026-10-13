@@ -1,9 +1,9 @@
 {
   "ticker": "BHP",
   "name": "BHP GROUP FPO [BHP]",
-  "price": 61.28,
-  "valuationScore": 6.2,
-  "marketCap": "311.5B",
+  "price": 61.11,
+  "valuationScore": 6.0,
+  "marketCap": "310.6B",
   "sector": "Materials",
   "domain": "bhp.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-18",
-      "price": 61.28
+      "price": 61.11
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 21.5,
-      "threshold": 14.1,
-      "label": "21.5x vs 14.1x sector"
+      "value": 21.82,
+      "threshold": 14.02,
+      "label": "21.8x vs 14.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.27,
+      "value": 4.24,
       "threshold": 1.5,
-      "label": "4.27x vs 1.5x"
+      "label": "4.24x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 11.12,
+      "value": 10.92,
       "threshold": 10.0,
-      "label": "11.1x vs 10x"
+      "label": "10.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.08,
+      "value": 3.09,
       "threshold": 5.0,
       "label": "3.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.48,
-      "threshold": 21.5,
-      "label": "Fwd 16.5x vs Trail 21.5x"
+      "value": 16.37,
+      "threshold": 21.82,
+      "label": "Fwd 16.4x vs Trail 21.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 21.5,
-    "sectorPe": 16.59,
-    "pb": 4.27,
-    "ps": 5.3,
-    "evEbitda": 11.12,
-    "fcfYield": 3.08,
-    "forwardPe": 16.48,
+    "pe": 21.82,
+    "sectorPe": 16.5,
+    "pb": 4.24,
+    "ps": 5.29,
+    "evEbitda": 10.92,
+    "fcfYield": 3.09,
+    "forwardPe": 16.37,
     "dividendYield": 3.87,
     "revenueGrowth": 18.3,
     "profitMargin": 16.73,

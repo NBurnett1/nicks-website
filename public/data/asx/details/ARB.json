@@ -1,9 +1,9 @@
 {
   "ticker": "ARB",
   "name": "ARB CORP FPO [ARB]",
-  "price": 17.34,
-  "valuationScore": -0.7,
-  "marketCap": "1.5B",
+  "price": 17.1,
+  "valuationScore": -0.8,
+  "marketCap": "1.4B",
   "sector": "Consumer Discretionary",
   "domain": "arb.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-18",
-      "price": 17.34
+      "price": 17.1
     }
   ],
   "testsPassed": 2,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 15.62,
-      "threshold": 13.45,
-      "label": "15.6x vs 13.4x sector"
+      "value": 15.0,
+      "threshold": 13.28,
+      "label": "15.0x vs 13.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.96,
+      "value": 1.93,
       "threshold": 1.5,
-      "label": "1.96x vs 1.5x"
+      "label": "1.93x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 10.13,
+      "value": 10.39,
       "threshold": 10.0,
-      "label": "10.1x vs 10x"
+      "label": "10.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.43,
+      "value": 4.5,
       "threshold": 5.0,
-      "label": "4.4% vs 5%"
+      "label": "4.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 13.84,
-      "threshold": 15.62,
-      "label": "Fwd 13.8x vs Trail 15.6x"
+      "value": 13.65,
+      "threshold": 15.0,
+      "label": "Fwd 13.6x vs Trail 15.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 15.62,
-    "sectorPe": 15.82,
-    "pb": 1.96,
-    "ps": 2.05,
-    "evEbitda": 10.13,
-    "fcfYield": 4.43,
-    "forwardPe": 13.84,
+    "pe": 15.0,
+    "sectorPe": 15.62,
+    "pb": 1.93,
+    "ps": 2.02,
+    "evEbitda": 10.39,
+    "fcfYield": 4.5,
+    "forwardPe": 13.65,
     "dividendYield": 4.14,
     "revenueGrowth": -6.3,
     "profitMargin": 13.08,
