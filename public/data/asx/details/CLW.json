@@ -1,9 +1,9 @@
 {
   "ticker": "CLW",
   "name": "CHTR H LWR STAPLED [CLW]",
-  "price": 3.26,
+  "price": 3.21,
   "valuationScore": 3.3,
-  "marketCap": "2.4B",
+  "marketCap": "2.3B",
   "sector": "Real Estate",
   "domain": "charterhall.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-18",
-      "price": 3.26
+      "price": 3.21
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 8.36,
-      "threshold": 8.67,
+      "value": 8.45,
+      "threshold": 8.71,
       "label": "8.4x vs 8.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.69,
+      "value": 0.68,
       "threshold": 1.5,
-      "label": "0.69x vs 1.5x"
+      "label": "0.68x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -2.99,
+      "value": -3.04,
       "threshold": 5.0,
       "label": "-3.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 13.0,
-      "threshold": 8.36,
-      "label": "Fwd 13.0x vs Trail 8.4x"
+      "value": 12.8,
+      "threshold": 8.45,
+      "label": "Fwd 12.8x vs Trail 8.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.75,
+      "value": 0.74,
       "threshold": 0.5,
-      "label": "P/S 12.1x ÷ Growth 16.2% = 0.75"
+      "label": "P/S 11.9x ÷ Growth 16.2% = 0.74"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 8.36,
-    "sectorPe": 10.21,
-    "pb": 0.69,
-    "ps": 12.12,
+    "pe": 8.45,
+    "sectorPe": 10.25,
+    "pb": 0.68,
+    "ps": 11.93,
     "evEbitda": null,
-    "fcfYield": -2.99,
-    "forwardPe": 13.0,
+    "fcfYield": -3.04,
+    "forwardPe": 12.8,
     "dividendYield": 7.77,
     "revenueGrowth": 16.2,
     "profitMargin": 141.96,

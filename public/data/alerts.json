@@ -1,8 +1,17 @@
 {
-  "lastUpdated": "2026-10-14T10:36:51.481962+11:00",
+  "lastUpdated": "2026-10-14T23:43:55.809988+11:00",
   "stocksScanned": 129,
-  "totalAlerts": 28,
+  "totalAlerts": 32,
   "alerts": [
+    {
+      "type": "PRICE_MOVE",
+      "severity": "critical",
+      "ticker": "ALU",
+      "exchange": "ASX",
+      "headline": "Stock surged 11.1% in one session",
+      "detail": "$0.41 → $0.45",
+      "timestamp": "2026-10-14T12:43:55.195728+00:00"
+    },
     {
       "type": "INSIDER_SELL",
       "severity": "high",
@@ -40,31 +49,49 @@
       "timestamp": "2026-09-30 00:00:00"
     },
     {
+      "type": "EXTREME VOLUME",
+      "severity": "high",
+      "ticker": "PDN",
+      "exchange": "ASX",
+      "headline": "3.1x average volume detected",
+      "detail": "Volume: 9,839,522 vs 20-day avg: 3,203,007 | Price down 9.3%",
+      "timestamp": "2026-10-14T12:43:12.286085+00:00"
+    },
+    {
       "type": "PRICE_MOVE",
       "severity": "high",
       "ticker": "PDN",
       "exchange": "ASX",
-      "headline": "Stock plunged 5.2% in one session",
-      "detail": "$8.03 → $7.61",
-      "timestamp": "2026-10-13T23:35:46.074223+00:00"
+      "headline": "Stock plunged 9.3% in one session",
+      "detail": "$8.03 → $7.28",
+      "timestamp": "2026-10-14T12:43:12.431052+00:00"
     },
     {
       "type": "PRICE_MOVE",
       "severity": "high",
-      "ticker": "VEE",
+      "ticker": "NEC",
       "exchange": "ASX",
-      "headline": "Stock plunged 6.3% in one session",
-      "detail": "$0.56 → $0.52",
-      "timestamp": "2026-10-13T23:36:04.738789+00:00"
+      "headline": "Stock plunged 5.3% in one session",
+      "detail": "$0.65 → $0.62",
+      "timestamp": "2026-10-14T12:43:28.508779+00:00"
     },
     {
       "type": "PRICE_MOVE",
       "severity": "high",
-      "ticker": "ALU",
+      "ticker": "SLC",
       "exchange": "ASX",
-      "headline": "Stock surged 6.2% in one session",
-      "detail": "$0.41 → $0.43",
-      "timestamp": "2026-10-13T23:36:51.481913+00:00"
+      "headline": "Stock surged 5.4% in one session",
+      "detail": "$2.39 → $2.52",
+      "timestamp": "2026-10-14T12:43:30.185703+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "high",
+      "ticker": "ORA",
+      "exchange": "ASX",
+      "headline": "Stock plunged 5.8% in one session",
+      "detail": "$1.38 → $1.30",
+      "timestamp": "2026-10-14T12:43:52.508355+00:00"
     },
     {
       "type": "INSIDER_BUY",
@@ -83,6 +110,15 @@
       "headline": "Gorman (Michael Bryan) (Independent Non-Executive Director) purchased 46,600 shares ($104,337)",
       "detail": "Purchase at price 2.24 per share.",
       "timestamp": "2026-10-07 00:00:00"
+    },
+    {
+      "type": "VOLUME SPIKE",
+      "severity": "medium",
+      "ticker": "PPE",
+      "exchange": "ASX",
+      "headline": "3.0x average volume detected",
+      "detail": "Volume: 391,694 vs 20-day avg: 131,311 | Price down 2.9%",
+      "timestamp": "2026-10-14T12:42:43.438581+00:00"
     },
     {
       "type": "INSIDER_BUY",

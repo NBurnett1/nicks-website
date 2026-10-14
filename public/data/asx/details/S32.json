@@ -1,9 +1,9 @@
 {
   "ticker": "S32",
   "name": "SOUTH32 FPO [S32]",
-  "price": 4.86,
-  "valuationScore": 4.7,
-  "marketCap": "21.7B",
+  "price": 4.74,
+  "valuationScore": 4.3,
+  "marketCap": "21.2B",
   "sector": "Materials",
   "domain": "south32.net",
   "chartData": [
@@ -217,25 +217,25 @@
     },
     {
       "date": "2026-10-18",
-      "price": 4.86
+      "price": 4.74
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": false,
-      "value": 14.71,
-      "threshold": 14.02,
-      "label": "14.7x vs 14.0x sector"
+      "passed": true,
+      "value": 13.94,
+      "threshold": 14.11,
+      "label": "13.9x vs 14.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.56,
+      "value": 1.52,
       "threshold": 1.5,
-      "label": "1.56x vs 1.5x"
+      "label": "1.52x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 15.92,
-      "threshold": 14.71,
-      "label": "Fwd 15.9x vs Trail 14.7x"
+      "value": 15.55,
+      "threshold": 13.94,
+      "label": "Fwd 15.5x vs Trail 13.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 3.33,
+      "value": 3.25,
       "threshold": 0.5,
-      "label": "P/S 3.7x ÷ Growth 1.1% = 3.33"
+      "label": "P/S 3.6x ÷ Growth 1.1% = 3.25"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 14.71,
-    "sectorPe": 16.5,
-    "pb": 1.56,
-    "ps": 3.66,
+    "pe": 13.94,
+    "sectorPe": 16.6,
+    "pb": 1.52,
+    "ps": 3.57,
     "evEbitda": 17.35,
     "fcfYield": -0.06,
-    "forwardPe": 15.92,
-    "dividendYield": 2.61,
+    "forwardPe": 15.55,
+    "dividendYield": 2.7,
     "revenueGrowth": 1.1,
     "profitMargin": 18.3,
     "operatingMargin": 18.16,

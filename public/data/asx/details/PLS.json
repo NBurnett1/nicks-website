@@ -1,8 +1,8 @@
 {
   "ticker": "PLS",
   "name": "PLSGROUP FPO [PLS]",
-  "price": 3.16,
-  "valuationScore": 0.6,
+  "price": 3.17,
+  "valuationScore": 0.4,
   "marketCap": "10.2B",
   "sector": "Basic Materials",
   "domain": "pls.com",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-18",
-      "price": 3.16
+      "price": 3.17
     }
   ],
   "testsPassed": 6,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 21.07,
-      "threshold": 16.21,
-      "label": "21.1x vs 16.2x sector"
+      "value": 18.65,
+      "threshold": 15.17,
+      "label": "18.6x vs 15.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.5,
+      "value": 2.51,
       "threshold": 1.5,
-      "label": "2.50x vs 1.5x"
+      "label": "2.51x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 7.85,
+      "value": 7.82,
       "threshold": 5.0,
       "label": "7.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 13.9,
-      "threshold": 21.07,
-      "label": "Fwd 13.9x vs Trail 21.1x"
+      "value": 13.94,
+      "threshold": 18.65,
+      "label": "Fwd 13.9x vs Trail 18.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 21.07,
-    "sectorPe": 19.08,
-    "pb": 2.5,
-    "ps": 5.27,
+    "pe": 18.65,
+    "sectorPe": 17.85,
+    "pb": 2.51,
+    "ps": 5.29,
     "evEbitda": 8.37,
-    "fcfYield": 7.85,
-    "forwardPe": 13.9,
-    "dividendYield": 1.48,
+    "fcfYield": 7.82,
+    "forwardPe": 13.94,
+    "dividendYield": 1.62,
     "revenueGrowth": 281.7,
     "profitMargin": 27.18,
     "operatingMargin": 55.32,
