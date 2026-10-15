@@ -1,9 +1,9 @@
 {
   "ticker": "BOQ",
   "name": "BANK QLD FPO [BOQ]",
-  "price": 6.49,
-  "valuationScore": 4.3,
-  "marketCap": "4.3B",
+  "price": 6.87,
+  "valuationScore": 3.7,
+  "marketCap": "4.5B",
   "sector": "Financials",
   "domain": "boq.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-18",
-      "price": 6.49
+      "price": 6.87
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 46.36,
-      "threshold": 16.72,
-      "label": "46.4x vs 16.7x sector"
+      "value": 42.94,
+      "threshold": 16.5,
+      "label": "42.9x vs 16.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.72,
+      "value": 0.76,
       "threshold": 1.5,
-      "label": "0.72x vs 1.5x"
+      "label": "0.76x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.22,
-      "threshold": 46.36,
-      "label": "Fwd 12.2x vs Trail 46.4x"
+      "value": 12.1,
+      "threshold": 42.94,
+      "label": "Fwd 12.1x vs Trail 42.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 1.28,
+      "value": 1.35,
       "threshold": 0.5,
-      "label": "P/S 2.6x ÷ Growth 2.0% = 1.28"
+      "label": "P/S 2.7x ÷ Growth 2.0% = 1.35"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 46.36,
-    "sectorPe": 19.67,
-    "pb": 0.72,
-    "ps": 2.56,
+    "pe": 42.94,
+    "sectorPe": 19.41,
+    "pb": 0.76,
+    "ps": 2.71,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 12.22,
-    "dividendYield": 5.98,
+    "forwardPe": 12.1,
+    "dividendYield": 6.16,
     "revenueGrowth": 2.0,
     "profitMargin": 5.89,
     "operatingMargin": 25.77,
