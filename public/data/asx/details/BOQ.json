@@ -2,7 +2,7 @@
   "ticker": "BOQ",
   "name": "BANK QLD FPO [BOQ]",
   "price": 6.87,
-  "valuationScore": 3.7,
+  "valuationScore": -2.1,
   "marketCap": "4.5B",
   "sector": "Financials",
   "domain": "boq.com.au",
@@ -220,22 +220,22 @@
       "price": 6.87
     }
   ],
-  "testsPassed": 3,
-  "grade": "C",
+  "testsPassed": 2,
+  "grade": "D",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 42.94,
-      "threshold": 16.5,
-      "label": "42.9x vs 16.5x sector"
+      "value": 18.57,
+      "threshold": 16.83,
+      "label": "18.6x vs 16.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.76,
+      "value": 0.78,
       "threshold": 1.5,
-      "label": "0.76x vs 1.5x"
+      "label": "0.78x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,45 +254,45 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.32,
-      "threshold": 42.94,
-      "label": "Fwd 12.3x vs Trail 42.9x"
+      "value": 12.02,
+      "threshold": 18.57,
+      "label": "Fwd 12.0x vs Trail 18.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": false,
-      "value": 5.89,
+      "value": 15.96,
       "threshold": 5.0,
-      "label": "Margin 5.9% / ROE 1.6%"
+      "label": "Margin 16.0% / ROE 4.3%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 1.35,
+      "value": -11.5,
       "threshold": 0.5,
-      "label": "P/S 2.7x ÷ Growth 2.0% = 1.35"
+      "label": "FAIL — Revenue declining -11.5%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
-      "passed": true,
-      "value": 2.0,
+      "passed": false,
+      "value": -11.5,
       "threshold": -5.0,
-      "label": "2.0% growth (floor: -5%)"
+      "label": "-11.5% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 42.94,
-    "sectorPe": 19.41,
-    "pb": 0.76,
-    "ps": 2.71,
+    "pe": 18.57,
+    "sectorPe": 19.8,
+    "pb": 0.78,
+    "ps": 2.88,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 12.32,
-    "dividendYield": 6.16,
-    "revenueGrowth": 2.0,
-    "profitMargin": 5.89,
-    "operatingMargin": 25.77,
-    "roe": 1.64,
+    "forwardPe": 12.02,
+    "dividendYield": 5.82,
+    "revenueGrowth": -11.5,
+    "profitMargin": 15.96,
+    "operatingMargin": 52.6,
+    "roe": 4.29,
     "debtEquity": null
   }
 }
