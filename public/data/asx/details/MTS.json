@@ -2,7 +2,7 @@
   "ticker": "MTS",
   "name": "METCASHLTD FPO [MTS]",
   "price": 3.13,
-  "valuationScore": -6.5,
+  "valuationScore": -6.6,
   "marketCap": "3.4B",
   "sector": "Consumer Defensive",
   "domain": "metcash.com",
@@ -220,15 +220,15 @@
       "price": 3.13
     }
   ],
-  "testsPassed": 5,
-  "grade": "B",
+  "testsPassed": 4,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 12.52,
-      "threshold": 17.48,
-      "label": "12.5x vs 17.5x sector"
+      "value": 12.04,
+      "threshold": 17.62,
+      "label": "12.0x vs 17.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -253,10 +253,10 @@
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
-      "passed": true,
+      "passed": false,
       "value": 12.3,
-      "threshold": 12.52,
-      "label": "Fwd 12.3x vs Trail 12.5x"
+      "threshold": 12.04,
+      "label": "Fwd 12.3x vs Trail 12.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 12.52,
-    "sectorPe": 20.56,
+    "pe": 12.04,
+    "sectorPe": 20.73,
     "pb": 2.02,
     "ps": 0.2,
     "evEbitda": 9.72,
     "fcfYield": 9.88,
     "forwardPe": 12.3,
-    "dividendYield": 6.03,
+    "dividendYield": 6.07,
     "revenueGrowth": 0.3,
     "profitMargin": 1.61,
     "operatingMargin": 2.8,
