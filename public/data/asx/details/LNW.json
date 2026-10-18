@@ -2,7 +2,7 @@
   "ticker": "LNW",
   "name": "LIGHT & WO CDI 1:1 [LNW]",
   "price": 120.16,
-  "valuationScore": 39.0,
+  "valuationScore": 38.4,
   "marketCap": "9.0B",
   "sector": "Consumer Cyclical",
   "domain": "lnw.com",
@@ -220,22 +220,22 @@
       "price": 120.16
     }
   ],
-  "testsPassed": 4,
-  "grade": "C",
+  "testsPassed": 5,
+  "grade": "B",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": false,
-      "value": 22.89,
-      "threshold": 21.41,
-      "label": "22.9x vs 21.4x sector"
+      "passed": true,
+      "value": 23.11,
+      "threshold": 24.57,
+      "label": "23.1x vs 24.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 21.25,
+      "value": 21.19,
       "threshold": 1.5,
-      "label": "21.25x vs 1.5x"
+      "label": "21.19x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 9.4,
-      "threshold": 22.89,
-      "label": "Fwd 9.4x vs Trail 22.9x"
+      "value": 9.33,
+      "threshold": 23.11,
+      "label": "Fwd 9.3x vs Trail 23.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 22.89,
-    "sectorPe": 25.19,
-    "pb": 21.25,
+    "pe": 23.11,
+    "sectorPe": 28.9,
+    "pb": 21.19,
     "ps": 2.68,
     "evEbitda": 11.33,
     "fcfYield": 6.78,
-    "forwardPe": 9.4,
+    "forwardPe": 9.33,
     "dividendYield": 0.0,
     "revenueGrowth": 2.3,
     "profitMargin": 8.09,
