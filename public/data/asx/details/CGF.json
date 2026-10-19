@@ -1,16 +1,12 @@
 {
   "ticker": "CGF",
   "name": "CHALLENGER FPO [CGF]",
-  "price": 9.85,
+  "price": 11.75,
   "valuationScore": 13.4,
-  "marketCap": "6.7B",
+  "marketCap": "7.9B",
   "sector": "Financial Services",
   "domain": "challenger.com.au",
   "chartData": [
-    {
-      "date": "2025-10-19",
-      "price": 8.56
-    },
     {
       "date": "2025-10-26",
       "price": 8.55
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-18",
       "price": 9.85
+    },
+    {
+      "date": "2026-10-25",
+      "price": 11.75
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 17.28,
-      "threshold": 20.9,
-      "label": "17.3x vs 20.9x sector"
+      "value": 20.61,
+      "threshold": 20.94,
+      "label": "20.6x vs 20.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.64,
+      "value": 1.96,
       "threshold": 1.5,
-      "label": "1.64x vs 1.5x"
+      "label": "1.96x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -25.96,
+      "value": -21.76,
       "threshold": 5.0,
-      "label": "-26.0% vs 5%"
+      "label": "-21.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 13.42,
-      "threshold": 17.28,
-      "label": "Fwd 13.4x vs Trail 17.3x"
+      "value": 16.01,
+      "threshold": 20.61,
+      "label": "Fwd 16.0x vs Trail 20.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 17.28,
-    "sectorPe": 24.59,
-    "pb": 1.64,
-    "ps": 2.32,
-    "evEbitda": -9.61,
-    "fcfYield": -25.96,
-    "forwardPe": 13.42,
+    "pe": 20.61,
+    "sectorPe": 24.64,
+    "pb": 1.96,
+    "ps": 2.77,
+    "evEbitda": -8.87,
+    "fcfYield": -21.76,
+    "forwardPe": 16.01,
     "dividendYield": 3.25,
     "revenueGrowth": null,
     "profitMargin": 17.62,

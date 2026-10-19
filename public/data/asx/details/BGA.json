@@ -2,15 +2,11 @@
   "ticker": "BGA",
   "name": "BEGA FPO [BGA]",
   "price": 6.37,
-  "valuationScore": 1.2,
+  "valuationScore": 1.3,
   "marketCap": "1.9B",
   "sector": "Consumer Staples",
   "domain": "begagroup.com.au",
   "chartData": [
-    {
-      "date": "2025-10-19",
-      "price": 5.15
-    },
     {
       "date": "2025-10-26",
       "price": 5.24
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-18",
       "price": 6.37
+    },
+    {
+      "date": "2026-10-25",
+      "price": 6.37
     }
   ],
   "testsPassed": 3,
@@ -227,8 +227,8 @@
       "name": "P/E Discount",
       "passed": false,
       "value": 35.39,
-      "threshold": 25.08,
-      "label": "35.4x vs 25.1x sector"
+      "threshold": 24.99,
+      "label": "35.4x vs 25.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -282,7 +282,7 @@
   },
   "metrics": {
     "pe": 35.39,
-    "sectorPe": 29.51,
+    "sectorPe": 29.4,
     "pb": 1.95,
     "ps": 0.52,
     "evEbitda": 12.81,

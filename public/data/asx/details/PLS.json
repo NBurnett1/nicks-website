@@ -1,16 +1,12 @@
 {
   "ticker": "PLS",
   "name": "PLSGROUP FPO [PLS]",
-  "price": 2.98,
-  "valuationScore": -0.3,
-  "marketCap": "9.6B",
+  "price": 2.9,
+  "valuationScore": -0.9,
+  "marketCap": "9.4B",
   "sector": "Basic Materials",
   "domain": "pls.com",
   "chartData": [
-    {
-      "date": "2025-10-19",
-      "price": 2.66
-    },
     {
       "date": "2025-10-26",
       "price": 3.2
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-18",
       "price": 2.98
+    },
+    {
+      "date": "2026-10-25",
+      "price": 2.9
     }
   ],
   "testsPassed": 6,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 18.62,
-      "threshold": 15.47,
-      "label": "18.6x vs 15.5x sector"
+      "value": 18.13,
+      "threshold": 15.29,
+      "label": "18.1x vs 15.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.36,
+      "value": 2.29,
       "threshold": 1.5,
-      "label": "2.36x vs 1.5x"
+      "label": "2.29x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 8.06,
+      "value": 7.82,
       "threshold": 10.0,
-      "label": "8.1x vs 10x"
+      "label": "7.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 8.32,
+      "value": 8.55,
       "threshold": 5.0,
-      "label": "8.3% vs 5%"
+      "label": "8.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 13.41,
-      "threshold": 18.62,
-      "label": "Fwd 13.4x vs Trail 18.6x"
+      "value": 13.2,
+      "threshold": 18.13,
+      "label": "Fwd 13.2x vs Trail 18.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.02,
       "threshold": 0.5,
-      "label": "P/S 5.0x ÷ Growth 281.7% = 0.02"
+      "label": "P/S 4.8x ÷ Growth 281.7% = 0.02"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 18.62,
-    "sectorPe": 18.2,
-    "pb": 2.36,
-    "ps": 4.97,
-    "evEbitda": 8.06,
-    "fcfYield": 8.32,
-    "forwardPe": 13.41,
+    "pe": 18.13,
+    "sectorPe": 17.99,
+    "pb": 2.29,
+    "ps": 4.84,
+    "evEbitda": 7.82,
+    "fcfYield": 8.55,
+    "forwardPe": 13.2,
     "dividendYield": 1.68,
     "revenueGrowth": 281.7,
     "profitMargin": 27.18,

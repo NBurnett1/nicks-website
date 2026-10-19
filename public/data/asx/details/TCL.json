@@ -1,16 +1,12 @@
 {
   "ticker": "TCL",
   "name": "TRANSURBAN STAPLED [TCL]",
-  "price": 13.65,
-  "valuationScore": 30.4,
-  "marketCap": "42.6B",
+  "price": 13.68,
+  "valuationScore": 29.1,
+  "marketCap": "42.7B",
   "sector": "Industrials",
   "domain": "transurban.com",
   "chartData": [
-    {
-      "date": "2025-10-19",
-      "price": 14.08
-    },
     {
       "date": "2025-10-26",
       "price": 14.31
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-18",
       "price": 13.65
+    },
+    {
+      "date": "2026-10-25",
+      "price": 13.68
     }
   ],
   "testsPassed": 1,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 113.75,
+      "value": 114.0,
       "threshold": 17.85,
-      "label": "113.8x vs 17.9x sector"
+      "label": "114.0x vs 17.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 5.52,
+      "value": 5.53,
       "threshold": 1.5,
-      "label": "5.52x vs 1.5x"
+      "label": "5.53x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 26.63,
+      "value": 26.67,
       "threshold": 10.0,
-      "label": "26.6x vs 10x"
+      "label": "26.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.51,
+      "value": 2.5,
       "threshold": 5.0,
       "label": "2.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 78.81,
-      "threshold": 113.75,
-      "label": "Fwd 78.8x vs Trail 113.8x"
+      "value": 78.98,
+      "threshold": 114.0,
+      "label": "Fwd 79.0x vs Trail 114.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 113.75,
+    "pe": 114.0,
     "sectorPe": 21.0,
-    "pb": 5.52,
-    "ps": 10.94,
-    "evEbitda": 26.63,
-    "fcfYield": 2.51,
-    "forwardPe": 78.81,
+    "pb": 5.53,
+    "ps": 10.96,
+    "evEbitda": 26.67,
+    "fcfYield": 2.5,
+    "forwardPe": 78.98,
     "dividendYield": 5.13,
     "revenueGrowth": -9.8,
     "profitMargin": 9.4,

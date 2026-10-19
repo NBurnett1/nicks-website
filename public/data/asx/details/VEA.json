@@ -1,16 +1,12 @@
 {
   "ticker": "VEA",
   "name": "VIVA E GRP FPO [VEA]",
-  "price": 3.1,
-  "valuationScore": -2.8,
-  "marketCap": "5.1B",
+  "price": 3.12,
+  "valuationScore": -25.5,
+  "marketCap": "5.2B",
   "sector": "Energy",
   "domain": "vivaenergy.com.au",
   "chartData": [
-    {
-      "date": "2025-10-19",
-      "price": 1.69
-    },
     {
       "date": "2025-10-26",
       "price": 1.76
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-18",
       "price": 3.1
+    },
+    {
+      "date": "2026-10-25",
+      "price": 3.12
     }
   ],
   "testsPassed": 5,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 23.85,
-      "threshold": 18.55,
-      "label": "23.8x vs 18.6x sector"
+      "value": 24.0,
+      "threshold": 18.53,
+      "label": "24.0x vs 18.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.75,
+      "value": 2.77,
       "threshold": 1.5,
-      "label": "2.75x vs 1.5x"
+      "label": "2.77x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 7.02,
+      "value": 7.04,
       "threshold": 10.0,
       "label": "7.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 10.46,
+      "value": 10.39,
       "threshold": 5.0,
-      "label": "10.5% vs 5%"
+      "label": "10.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 11.44,
-      "threshold": 23.85,
-      "label": "Fwd 11.4x vs Trail 23.8x"
+      "value": 11.51,
+      "threshold": 24.0,
+      "label": "Fwd 11.5x vs Trail 24.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 23.85,
-    "sectorPe": 21.83,
-    "pb": 2.75,
+    "pe": 24.0,
+    "sectorPe": 21.8,
+    "pb": 2.77,
     "ps": 0.17,
-    "evEbitda": 7.02,
-    "fcfYield": 10.46,
-    "forwardPe": 11.44,
+    "evEbitda": 7.04,
+    "fcfYield": 10.39,
+    "forwardPe": 11.51,
     "dividendYield": 4.99,
     "revenueGrowth": 10.2,
     "profitMargin": 0.75,

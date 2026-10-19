@@ -1,16 +1,12 @@
 {
   "ticker": "RHC",
   "name": "RAMSAY FPO [RHC]",
-  "price": 55.55,
-  "valuationScore": -2.0,
-  "marketCap": "12.8B",
+  "price": 55.0,
+  "valuationScore": -2.1,
+  "marketCap": "12.7B",
   "sector": "Healthcare",
   "domain": "ramsayhealth.com",
   "chartData": [
-    {
-      "date": "2025-10-19",
-      "price": 31.03
-    },
     {
       "date": "2025-10-26",
       "price": 31.33
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-18",
       "price": 55.55
+    },
+    {
+      "date": "2026-10-25",
+      "price": 55.0
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 40.85,
-      "threshold": 26.84,
-      "label": "40.8x vs 26.8x sector"
+      "value": 40.44,
+      "threshold": 26.65,
+      "label": "40.4x vs 26.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.72,
+      "value": 2.69,
       "threshold": 1.5,
-      "label": "2.72x vs 1.5x"
+      "label": "2.69x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 13.41,
+      "value": 13.34,
       "threshold": 10.0,
-      "label": "13.4x vs 10x"
+      "label": "13.3x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.51,
+      "value": 5.56,
       "threshold": 5.0,
-      "label": "5.5% vs 5%"
+      "label": "5.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 26.63,
-      "threshold": 40.85,
-      "label": "Fwd 26.6x vs Trail 40.8x"
+      "value": 26.37,
+      "threshold": 40.44,
+      "label": "Fwd 26.4x vs Trail 40.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.69,
+      "value": 0.68,
       "threshold": 0.5,
-      "label": "P/S 0.7x ÷ Growth 1.0% = 0.69"
+      "label": "P/S 0.7x ÷ Growth 1.0% = 0.68"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 40.85,
-    "sectorPe": 31.58,
-    "pb": 2.72,
-    "ps": 0.69,
-    "evEbitda": 13.41,
-    "fcfYield": 5.51,
-    "forwardPe": 26.63,
+    "pe": 40.44,
+    "sectorPe": 31.35,
+    "pb": 2.69,
+    "ps": 0.68,
+    "evEbitda": 13.34,
+    "fcfYield": 5.56,
+    "forwardPe": 26.37,
     "dividendYield": 1.75,
     "revenueGrowth": 1.0,
     "profitMargin": 1.76,

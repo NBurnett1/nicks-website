@@ -1,16 +1,12 @@
 {
   "ticker": "CHC",
   "name": "CHARTER HG STP FORUS [CHC]",
-  "price": 18.51,
-  "valuationScore": 11.5,
-  "marketCap": "8.8B",
+  "price": 19.35,
+  "valuationScore": 12.1,
+  "marketCap": "9.2B",
   "sector": "Real Estate",
   "domain": "charterhall.com.au",
   "chartData": [
-    {
-      "date": "2025-10-19",
-      "price": 22.11
-    },
     {
       "date": "2025-10-26",
       "price": 22.6
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-18",
       "price": 18.51
+    },
+    {
+      "date": "2026-10-25",
+      "price": 19.35
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 20.8,
-      "threshold": 8.77,
+      "value": 20.81,
+      "threshold": 8.83,
       "label": "20.8x vs 8.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.02,
+      "value": 3.16,
       "threshold": 1.5,
-      "label": "3.02x vs 1.5x"
+      "label": "3.16x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 17.24,
+      "value": 17.98,
       "threshold": 10.0,
-      "label": "17.2x vs 10x"
+      "label": "18.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.93,
+      "value": 5.67,
       "threshold": 5.0,
-      "label": "5.9% vs 5%"
+      "label": "5.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.65,
-      "threshold": 20.8,
-      "label": "Fwd 14.7x vs Trail 20.8x"
+      "value": 15.32,
+      "threshold": 20.81,
+      "label": "Fwd 15.3x vs Trail 20.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 20.8,
-    "sectorPe": 10.32,
-    "pb": 3.02,
-    "ps": 10.79,
-    "evEbitda": 17.24,
-    "fcfYield": 5.93,
-    "forwardPe": 14.65,
+    "pe": 20.81,
+    "sectorPe": 10.39,
+    "pb": 3.16,
+    "ps": 11.28,
+    "evEbitda": 17.98,
+    "fcfYield": 5.67,
+    "forwardPe": 15.32,
     "dividendYield": 2.79,
     "revenueGrowth": -8.6,
     "profitMargin": 29.77,

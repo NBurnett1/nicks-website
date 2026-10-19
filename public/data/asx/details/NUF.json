@@ -1,16 +1,12 @@
 {
   "ticker": "NUF",
   "name": "NUFARM FPO [NUF]",
-  "price": 3.09,
-  "valuationScore": -1.0,
-  "marketCap": "—",
+  "price": 3.06,
+  "valuationScore": -6.6,
+  "marketCap": "1.2B",
   "sector": "Basic Materials",
   "domain": "nufarm.com",
   "chartData": [
-    {
-      "date": "2025-10-19",
-      "price": 2.21
-    },
     {
       "date": "2025-10-26",
       "price": 2.19
@@ -218,9 +214,13 @@
     {
       "date": "2026-10-18",
       "price": 3.09
+    },
+    {
+      "date": "2026-10-25",
+      "price": 3.06
     }
   ],
-  "testsPassed": 1,
+  "testsPassed": 2,
   "grade": "D",
   "valuationTests": {
     "peDiscount": {
@@ -240,21 +240,21 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 11.5,
+      "value": 11.45,
       "threshold": 10.0,
-      "label": "11.5x vs 10x"
+      "label": "11.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": null,
-      "value": null,
+      "passed": true,
+      "value": 22.16,
       "threshold": 5.0,
-      "label": "No FCF data"
+      "label": "22.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 17.71,
+      "value": 17.54,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": -5.3,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "FAIL — Revenue declining -5.3%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 18.2,
+    "sectorPe": 17.99,
     "pb": 0.65,
-    "ps": null,
-    "evEbitda": 11.5,
-    "fcfYield": null,
-    "forwardPe": 17.71,
+    "ps": 0.35,
+    "evEbitda": 11.45,
+    "fcfYield": 22.16,
+    "forwardPe": 17.54,
     "dividendYield": 0.0,
     "revenueGrowth": -5.3,
     "profitMargin": -4.69,

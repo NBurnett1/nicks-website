@@ -1,16 +1,12 @@
 {
   "ticker": "HVN",
   "name": "HARVEY FPO [HVN]",
-  "price": 4.12,
-  "valuationScore": -7.1,
+  "price": 4.09,
+  "valuationScore": -7.2,
   "marketCap": "5.1B",
   "sector": "Consumer Discretionary",
   "domain": "harveynormanholdings.com.au",
   "chartData": [
-    {
-      "date": "2025-10-19",
-      "price": 6.86
-    },
     {
       "date": "2025-10-26",
       "price": 6.82
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-18",
       "price": 4.12
+    },
+    {
+      "date": "2026-10-25",
+      "price": 4.09
     }
   ],
   "testsPassed": 6,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 9.81,
-      "threshold": 13.73,
-      "label": "9.8x vs 13.7x sector"
+      "value": 9.74,
+      "threshold": 13.62,
+      "label": "9.7x vs 13.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.05,
+      "value": 1.04,
       "threshold": 1.5,
-      "label": "1.05x vs 1.5x"
+      "label": "1.04x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 8.79,
+      "value": 8.74,
       "threshold": 10.0,
-      "label": "8.8x vs 10x"
+      "label": "8.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 10.6,
+      "value": 10.68,
       "threshold": 5.0,
-      "label": "10.6% vs 5%"
+      "label": "10.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 11.44,
-      "threshold": 9.81,
-      "label": "Fwd 11.4x vs Trail 9.8x"
+      "value": 11.38,
+      "threshold": 9.74,
+      "label": "Fwd 11.4x vs Trail 9.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 9.81,
-    "sectorPe": 16.15,
-    "pb": 1.05,
-    "ps": 1.68,
-    "evEbitda": 8.79,
-    "fcfYield": 10.6,
-    "forwardPe": 11.44,
+    "pe": 9.74,
+    "sectorPe": 16.03,
+    "pb": 1.04,
+    "ps": 1.67,
+    "evEbitda": 8.74,
+    "fcfYield": 10.68,
+    "forwardPe": 11.38,
     "dividendYield": 6.67,
     "revenueGrowth": -2.9,
     "profitMargin": 17.32,

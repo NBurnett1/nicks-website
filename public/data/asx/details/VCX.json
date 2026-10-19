@@ -2,15 +2,11 @@
   "ticker": "VCX",
   "name": "VICINITY STAPLED [VCX]",
   "price": 2.35,
-  "valuationScore": -0.5,
+  "valuationScore": -0.7,
   "marketCap": "11.0B",
   "sector": "Real Estate",
   "domain": "vicinity.com.au",
   "chartData": [
-    {
-      "date": "2025-10-19",
-      "price": 2.45
-    },
     {
       "date": "2025-10-26",
       "price": 2.53
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-18",
       "price": 2.35
+    },
+    {
+      "date": "2026-10-25",
+      "price": 2.35
     }
   ],
   "testsPassed": 5,
@@ -227,7 +227,7 @@
       "name": "P/E Discount",
       "passed": true,
       "value": 7.83,
-      "threshold": 8.77,
+      "threshold": 8.83,
       "label": "7.8x vs 8.8x sector"
     },
     "pbBelowBook": {
@@ -282,7 +282,7 @@
   },
   "metrics": {
     "pe": 7.83,
-    "sectorPe": 10.32,
+    "sectorPe": 10.39,
     "pb": 0.9,
     "ps": 7.79,
     "evEbitda": 18.35,

@@ -1,16 +1,12 @@
 {
   "ticker": "NEC",
   "name": "NINE ENT FPO [NEC]",
-  "price": 0.65,
-  "valuationScore": 8.1,
+  "price": 0.66,
+  "valuationScore": 8.2,
   "marketCap": "1.0B",
   "sector": "Communication Services",
   "domain": "nineforbrands.com.au",
   "chartData": [
-    {
-      "date": "2025-10-19",
-      "price": 1.11
-    },
     {
       "date": "2025-10-26",
       "price": 1.11
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-18",
       "price": 0.65
+    },
+    {
+      "date": "2026-10-25",
+      "price": 0.66
     }
   ],
   "testsPassed": 3,
@@ -233,28 +233,28 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.87,
+      "value": 0.88,
       "threshold": 1.5,
-      "label": "0.87x vs 1.5x"
+      "label": "0.88x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 10.27,
+      "value": 10.33,
       "threshold": 10.0,
       "label": "10.3x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -8.74,
+      "value": -8.6,
       "threshold": 5.0,
-      "label": "-8.7% vs 5%"
+      "label": "-8.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 6.7,
+      "value": 6.8,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 46.49,
-    "pb": 0.87,
-    "ps": 0.47,
-    "evEbitda": 10.27,
-    "fcfYield": -8.74,
-    "forwardPe": 6.7,
+    "sectorPe": 47.45,
+    "pb": 0.88,
+    "ps": 0.48,
+    "evEbitda": 10.33,
+    "fcfYield": -8.6,
+    "forwardPe": 6.8,
     "dividendYield": 11.54,
     "revenueGrowth": 11.3,
     "profitMargin": 23.25,

@@ -2,15 +2,11 @@
   "ticker": "ORG",
   "name": "ORIGIN ENE FPO [ORG]",
   "price": 12.06,
-  "valuationScore": 1.5,
+  "valuationScore": -7.2,
   "marketCap": "20.8B",
   "sector": "Energy",
   "domain": "originenergy.com.au",
   "chartData": [
-    {
-      "date": "2025-10-19",
-      "price": 11.62
-    },
     {
       "date": "2025-10-26",
       "price": 11.89
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-18",
       "price": 12.06
+    },
+    {
+      "date": "2026-10-25",
+      "price": 12.06
     }
   ],
   "testsPassed": 2,
@@ -227,8 +227,8 @@
       "name": "P/E Discount",
       "passed": true,
       "value": 13.25,
-      "threshold": 18.55,
-      "label": "13.3x vs 18.6x sector"
+      "threshold": 18.53,
+      "label": "13.3x vs 18.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -282,7 +282,7 @@
   },
   "metrics": {
     "pe": 13.25,
-    "sectorPe": 21.83,
+    "sectorPe": 21.8,
     "pb": 2.04,
     "ps": 1.33,
     "evEbitda": 14.49,

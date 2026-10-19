@@ -1,16 +1,12 @@
 {
   "ticker": "NAB",
   "name": "NAT. BANK FPO [NAB]",
-  "price": 39.32,
-  "valuationScore": 0.2,
-  "marketCap": "—",
+  "price": 39.9,
+  "valuationScore": -0.0,
+  "marketCap": "122.1B",
   "sector": "Financials",
   "domain": "nab.com.au",
   "chartData": [
-    {
-      "date": "2025-10-19",
-      "price": 41.55
-    },
     {
       "date": "2025-10-26",
       "price": 41.5
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-18",
       "price": 39.32
+    },
+    {
+      "date": "2026-10-25",
+      "price": 39.9
     }
   ],
   "testsPassed": 2,
@@ -227,15 +227,15 @@
       "name": "P/E Discount",
       "passed": false,
       "value": 19.66,
-      "threshold": 16.71,
+      "threshold": 16.74,
       "label": "19.7x vs 16.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.99,
+      "value": 2.02,
       "threshold": 1.5,
-      "label": "1.99x vs 1.5x"
+      "label": "2.02x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.1,
+      "value": 16.34,
       "threshold": 19.66,
-      "label": "Fwd 16.1x vs Trail 19.7x"
+      "label": "Fwd 16.3x vs Trail 19.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": 0.96,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "P/S 5.9x ÷ Growth 6.1% = 0.96"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": 19.66,
-    "sectorPe": 19.66,
-    "pb": 1.99,
-    "ps": null,
+    "sectorPe": 19.7,
+    "pb": 2.02,
+    "ps": 5.86,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 16.1,
+    "forwardPe": 16.34,
     "dividendYield": 4.32,
     "revenueGrowth": 6.1,
     "profitMargin": 29.26,
