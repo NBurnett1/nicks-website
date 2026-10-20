@@ -1,7 +1,7 @@
 {
   "ticker": "CAR",
   "name": "CAR GROUP FPO [CAR]",
-  "price": 24.03,
+  "price": 24.07,
   "valuationScore": -4.5,
   "marketCap": "9.1B",
   "sector": "Technology",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-25",
-      "price": 24.03
+      "price": 24.07
     }
   ],
   "testsPassed": 4,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 28.95,
-      "threshold": 33.64,
-      "label": "29.0x vs 33.6x sector"
+      "value": 29.0,
+      "threshold": 33.72,
+      "label": "29.0x vs 33.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -247,15 +247,15 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.39,
+      "value": 4.38,
       "threshold": 5.0,
       "label": "4.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 18.37,
-      "threshold": 28.95,
+      "value": 18.39,
+      "threshold": 29.0,
       "label": "Fwd 18.4x vs Trail 29.0x"
     },
     "profitabilityCheck": {
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 1.91,
+      "value": 1.92,
       "threshold": 0.5,
-      "label": "P/S 7.3x ÷ Growth 3.8% = 1.91"
+      "label": "P/S 7.3x ÷ Growth 3.8% = 1.92"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 28.95,
-    "sectorPe": 39.57,
+    "pe": 29.0,
+    "sectorPe": 39.67,
     "pb": 3.32,
-    "ps": 7.27,
+    "ps": 7.29,
     "evEbitda": 18.2,
-    "fcfYield": 4.39,
-    "forwardPe": 18.37,
-    "dividendYield": 3.66,
+    "fcfYield": 4.38,
+    "forwardPe": 18.39,
+    "dividendYield": 3.62,
     "revenueGrowth": 3.8,
     "profitMargin": 25.03,
     "operatingMargin": 39.59,
