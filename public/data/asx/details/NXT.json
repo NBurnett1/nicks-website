@@ -1,9 +1,9 @@
 {
   "ticker": "NXT",
   "name": "NEXTDC FPO [NXT]",
-  "price": 5.35,
+  "price": 5.75,
   "valuationScore": 60.0,
-  "marketCap": "4.1B",
+  "marketCap": "4.4B",
   "sector": "Technology",
   "domain": "nextdc.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-25",
-      "price": 5.35
+      "price": 5.75
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 76.43,
-      "threshold": 34.42,
-      "label": "76.4x vs 34.4x sector"
+      "value": 82.14,
+      "threshold": 35.32,
+      "label": "82.1x vs 35.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.67,
+      "value": 0.72,
       "threshold": 1.5,
-      "label": "0.67x vs 1.5x"
+      "label": "0.72x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,15 +247,15 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -42.33,
+      "value": -39.39,
       "threshold": 5.0,
-      "label": "-42.3% vs 5%"
+      "label": "-39.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": -26.25,
-      "threshold": 76.43,
+      "value": -28.21,
+      "threshold": 82.14,
       "label": "Insufficient data"
     },
     "profitabilityCheck": {
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.42,
+      "value": 0.45,
       "threshold": 0.5,
-      "label": "P/S 8.2x ÷ Growth 19.4% = 0.42"
+      "label": "P/S 8.8x ÷ Growth 19.4% = 0.45"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 76.43,
-    "sectorPe": 40.5,
-    "pb": 0.67,
-    "ps": 8.19,
+    "pe": 82.14,
+    "sectorPe": 41.56,
+    "pb": 0.72,
+    "ps": 8.81,
     "evEbitda": 34.67,
-    "fcfYield": -42.33,
-    "forwardPe": -26.25,
+    "fcfYield": -39.39,
+    "forwardPe": -28.21,
     "dividendYield": 0.0,
     "revenueGrowth": 19.4,
     "profitMargin": 16.53,

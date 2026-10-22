@@ -1,7 +1,7 @@
 {
   "ticker": "MTS",
   "name": "METCASHLTD FPO [MTS]",
-  "price": 3.14,
+  "price": 3.18,
   "valuationScore": -6.7,
   "marketCap": "3.5B",
   "sector": "Consumer Defensive",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-25",
-      "price": 3.14
+      "price": 3.18
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 12.56,
-      "threshold": 17.71,
-      "label": "12.6x vs 17.7x sector"
+      "value": 12.72,
+      "threshold": 17.47,
+      "label": "12.7x vs 17.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.02,
+      "value": 2.05,
       "threshold": 1.5,
-      "label": "2.02x vs 1.5x"
+      "label": "2.05x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 9.85,
+      "value": 9.73,
       "threshold": 5.0,
-      "label": "9.8% vs 5%"
+      "label": "9.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.33,
-      "threshold": 12.56,
-      "label": "Fwd 12.3x vs Trail 12.6x"
+      "value": 12.48,
+      "threshold": 12.72,
+      "label": "Fwd 12.5x vs Trail 12.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.66,
+      "value": 0.67,
       "threshold": 0.5,
-      "label": "P/S 0.2x ÷ Growth 0.3% = 0.66"
+      "label": "P/S 0.2x ÷ Growth 0.3% = 0.67"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 12.56,
-    "sectorPe": 20.83,
-    "pb": 2.02,
+    "pe": 12.72,
+    "sectorPe": 20.55,
+    "pb": 2.05,
     "ps": 0.2,
     "evEbitda": 9.74,
-    "fcfYield": 9.85,
-    "forwardPe": 12.33,
+    "fcfYield": 9.73,
+    "forwardPe": 12.48,
     "dividendYield": 6.05,
     "revenueGrowth": 0.3,
     "profitMargin": 1.61,

@@ -1,8 +1,8 @@
 {
   "ticker": "PMV",
   "name": "PREM INV. FPO [PMV]",
-  "price": 13.22,
-  "valuationScore": -4.7,
+  "price": 13.37,
+  "valuationScore": -4.5,
   "marketCap": "2.1B",
   "sector": "Consumer Discretionary",
   "domain": "premierinvestments.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-25",
-      "price": 13.22
+      "price": 13.37
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 16.32,
-      "threshold": 13.9,
-      "label": "16.3x vs 13.9x sector"
+      "value": 16.51,
+      "threshold": 13.95,
+      "label": "16.5x vs 13.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.19,
+      "value": 2.22,
       "threshold": 1.5,
-      "label": "2.19x vs 1.5x"
+      "label": "2.22x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 12.65,
+      "value": 12.51,
       "threshold": 5.0,
-      "label": "12.7% vs 5%"
+      "label": "12.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.92,
-      "threshold": 16.32,
-      "label": "Fwd 12.9x vs Trail 16.3x"
+      "value": 13.07,
+      "threshold": 16.51,
+      "label": "Fwd 13.1x vs Trail 16.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 16.32,
-    "sectorPe": 16.35,
-    "pb": 2.19,
-    "ps": 2.61,
+    "pe": 16.51,
+    "sectorPe": 16.42,
+    "pb": 2.22,
+    "ps": 2.64,
     "evEbitda": 10.78,
-    "fcfYield": 12.65,
-    "forwardPe": 12.92,
-    "dividendYield": 7.2,
+    "fcfYield": 12.51,
+    "forwardPe": 13.07,
+    "dividendYield": 7.19,
     "revenueGrowth": null,
     "profitMargin": 15.98,
     "operatingMargin": 13.78,
