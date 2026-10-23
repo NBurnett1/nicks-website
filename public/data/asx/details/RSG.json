@@ -1,9 +1,9 @@
 {
   "ticker": "RSG",
   "name": "RESOLUTE FPO [RSG]",
-  "price": 1.11,
-  "valuationScore": -4.1,
-  "marketCap": "2.4B",
+  "price": 1.03,
+  "valuationScore": -4.2,
+  "marketCap": "2.2B",
   "sector": "Basic Materials",
   "domain": "rml.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-25",
-      "price": 1.12
+      "price": 1.03
     }
   ],
   "testsPassed": 7,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 8.58,
-      "threshold": 15.28,
-      "label": "8.6x vs 15.3x sector"
+      "value": 7.96,
+      "threshold": 15.02,
+      "label": "8.0x vs 15.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.0,
+      "value": 1.86,
       "threshold": 1.5,
-      "label": "2.00x vs 1.5x"
+      "label": "1.86x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 8.94,
+      "value": 9.63,
       "threshold": 5.0,
-      "label": "8.9% vs 5%"
+      "label": "9.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 6.48,
-      "threshold": 8.58,
-      "label": "Fwd 6.5x vs Trail 8.6x"
+      "value": 6.01,
+      "threshold": 7.96,
+      "label": "Fwd 6.0x vs Trail 8.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.08,
+      "value": 0.07,
       "threshold": 0.5,
-      "label": "P/S 2.4x ÷ Growth 30.7% = 0.08"
+      "label": "P/S 2.2x ÷ Growth 30.7% = 0.07"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 8.58,
-    "sectorPe": 17.97,
-    "pb": 2.0,
-    "ps": 2.38,
+    "pe": 7.96,
+    "sectorPe": 17.67,
+    "pb": 1.86,
+    "ps": 2.21,
     "evEbitda": 5.76,
-    "fcfYield": 8.94,
-    "forwardPe": 6.48,
+    "fcfYield": 9.63,
+    "forwardPe": 6.01,
     "dividendYield": 0.0,
     "revenueGrowth": 30.7,
     "profitMargin": 19.77,

@@ -1,9 +1,9 @@
 {
   "ticker": "REA",
   "name": "REA GROUP FPO [REA]",
-  "price": 166.05,
+  "price": 164.11,
   "valuationScore": 7.0,
-  "marketCap": "21.7B",
+  "marketCap": "21.5B",
   "sector": "Technology",
   "domain": "rea-group.com",
   "chartData": [
@@ -217,25 +217,25 @@
     },
     {
       "date": "2026-10-25",
-      "price": 166.05
+      "price": 164.11
     }
   ],
-  "testsPassed": 3,
-  "grade": "C",
+  "testsPassed": 2,
+  "grade": "D",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": true,
-      "value": 31.93,
-      "threshold": 32.37,
-      "label": "31.9x vs 32.4x sector"
+      "passed": false,
+      "value": 32.5,
+      "threshold": 32.15,
+      "label": "32.5x vs 32.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 11.44,
+      "value": 11.3,
       "threshold": 1.5,
-      "label": "11.44x vs 1.5x"
+      "label": "11.30x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.37,
+      "value": 2.4,
       "threshold": 5.0,
       "label": "2.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 25.15,
-      "threshold": 31.93,
-      "label": "Fwd 25.1x vs Trail 31.9x"
+      "value": 24.85,
+      "threshold": 32.5,
+      "label": "Fwd 24.9x vs Trail 32.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 31.93,
-    "sectorPe": 38.08,
-    "pb": 11.44,
-    "ps": 10.99,
+    "pe": 32.5,
+    "sectorPe": 37.83,
+    "pb": 11.3,
+    "ps": 10.86,
     "evEbitda": 21.58,
-    "fcfYield": 2.37,
-    "forwardPe": 25.15,
-    "dividendYield": 2.12,
+    "fcfYield": 2.4,
+    "forwardPe": 24.85,
+    "dividendYield": 2.08,
     "revenueGrowth": null,
     "profitMargin": 27.9,
     "operatingMargin": 49.53,

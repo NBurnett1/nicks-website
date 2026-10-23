@@ -1,9 +1,9 @@
 {
   "ticker": "PMV",
   "name": "PREM INV. FPO [PMV]",
-  "price": 13.37,
-  "valuationScore": -4.4,
-  "marketCap": "2.1B",
+  "price": 13.93,
+  "valuationScore": -4.1,
+  "marketCap": "2.2B",
   "sector": "Consumer Discretionary",
   "domain": "premierinvestments.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-10-25",
-      "price": 13.37
+      "price": 13.93
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 16.51,
-      "threshold": 13.95,
-      "label": "16.5x vs 13.9x sector"
+      "value": 16.58,
+      "threshold": 13.87,
+      "label": "16.6x vs 13.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.22,
+      "value": 2.31,
       "threshold": 1.5,
-      "label": "2.22x vs 1.5x"
+      "label": "2.31x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 12.51,
+      "value": 12.0,
       "threshold": 5.0,
-      "label": "12.5% vs 5%"
+      "label": "12.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 13.07,
-      "threshold": 16.51,
-      "label": "Fwd 13.1x vs Trail 16.5x"
+      "value": 13.61,
+      "threshold": 16.58,
+      "label": "Fwd 13.6x vs Trail 16.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 16.51,
-    "sectorPe": 16.42,
-    "pb": 2.22,
-    "ps": 2.64,
+    "pe": 16.58,
+    "sectorPe": 16.32,
+    "pb": 2.31,
+    "ps": 2.75,
     "evEbitda": 10.92,
-    "fcfYield": 12.51,
-    "forwardPe": 13.07,
-    "dividendYield": 7.19,
+    "fcfYield": 12.0,
+    "forwardPe": 13.61,
+    "dividendYield": 7.11,
     "revenueGrowth": null,
     "profitMargin": 15.98,
     "operatingMargin": 13.78,
