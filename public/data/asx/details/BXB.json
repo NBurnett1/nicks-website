@@ -1,16 +1,12 @@
 {
   "ticker": "BXB",
   "name": "BRAMB LTD FPO [BXB]",
-  "price": 21.65,
+  "price": 21.51,
   "valuationScore": 7.2,
-  "marketCap": "28.7B",
+  "marketCap": "28.6B",
   "sector": "Industrials",
   "domain": "brambles.com",
   "chartData": [
-    {
-      "date": "2025-10-26",
-      "price": 23.93
-    },
     {
       "date": "2025-11-02",
       "price": 24.09
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-25",
       "price": 21.65
+    },
+    {
+      "date": "2026-11-01",
+      "price": 21.51
     }
   ],
   "testsPassed": 2,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 21.02,
-      "threshold": 17.87,
-      "label": "21.0x vs 17.9x sector"
+      "value": 21.09,
+      "threshold": 17.93,
+      "label": "21.1x vs 17.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 6.29,
+      "value": 6.25,
       "threshold": 1.5,
-      "label": "6.29x vs 1.5x"
+      "label": "6.25x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 1.88,
+      "value": 1.89,
       "threshold": 5.0,
       "label": "1.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 18.46,
-      "threshold": 21.02,
-      "label": "Fwd 18.5x vs Trail 21.0x"
+      "value": 18.34,
+      "threshold": 21.09,
+      "label": "Fwd 18.3x vs Trail 21.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 21.02,
-    "sectorPe": 21.02,
-    "pb": 6.29,
-    "ps": 3.96,
+    "pe": 21.09,
+    "sectorPe": 21.09,
+    "pb": 6.25,
+    "ps": 3.94,
     "evEbitda": 15.01,
-    "fcfYield": 1.88,
-    "forwardPe": 18.46,
+    "fcfYield": 1.89,
+    "forwardPe": 18.34,
     "dividendYield": 3.03,
     "revenueGrowth": null,
     "profitMargin": 13.15,

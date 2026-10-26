@@ -1,16 +1,12 @@
 {
   "ticker": "APX",
   "name": "APPEN FPO [APX]",
-  "price": 1.06,
+  "price": 1.14,
   "valuationScore": -25.0,
-  "marketCap": "285M",
+  "marketCap": "305M",
   "sector": "Technology",
   "domain": "appen.com",
   "chartData": [
-    {
-      "date": "2025-10-26",
-      "price": 0.75
-    },
     {
       "date": "2025-11-02",
       "price": 0.77
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-25",
       "price": 1.06
+    },
+    {
+      "date": "2026-11-01",
+      "price": 1.13
     }
   ],
   "testsPassed": 2,
@@ -233,9 +233,9 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.15,
+      "value": 2.31,
       "threshold": 1.5,
-      "label": "2.15x vs 1.5x"
+      "label": "2.31x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,14 +247,14 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -1.9,
+      "value": -1.77,
       "threshold": 5.0,
-      "label": "-1.9% vs 5%"
+      "label": "-1.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 8.11,
+      "value": 8.69,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.07,
       "threshold": 0.5,
-      "label": "P/S 1.1x ÷ Growth 17.2% = 0.07"
+      "label": "P/S 1.2x ÷ Growth 17.2% = 0.07"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 39.43,
-    "pb": 2.15,
-    "ps": 1.14,
+    "sectorPe": 39.16,
+    "pb": 2.31,
+    "ps": 1.22,
     "evEbitda": -135.99,
-    "fcfYield": -1.9,
-    "forwardPe": 8.11,
+    "fcfYield": -1.77,
+    "forwardPe": 8.69,
     "dividendYield": 0.0,
     "revenueGrowth": 17.2,
     "profitMargin": -2.8,

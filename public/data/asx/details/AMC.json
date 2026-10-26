@@ -1,16 +1,12 @@
 {
   "ticker": "AMC",
   "name": "AMCOR PLC CDI 1:1 [AMC]",
-  "price": 65.99,
+  "price": 66.22,
   "valuationScore": 1.4,
-  "marketCap": "30.5B",
+  "marketCap": "30.6B",
   "sector": "Materials",
   "domain": "amcor.com",
   "chartData": [
-    {
-      "date": "2025-10-26",
-      "price": 59.44
-    },
     {
       "date": "2025-11-02",
       "price": 56.94
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-25",
       "price": 65.99
+    },
+    {
+      "date": "2026-11-01",
+      "price": 66.22
     }
   ],
   "testsPassed": 3,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 18.8,
+      "value": 18.87,
       "threshold": 14.99,
-      "label": "18.8x vs 15.0x sector"
+      "label": "18.9x vs 15.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.93,
+      "value": 4.92,
       "threshold": 5.0,
       "label": "4.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 10.81,
-      "threshold": 18.8,
-      "label": "Fwd 10.8x vs Trail 18.8x"
+      "value": 10.85,
+      "threshold": 18.87,
+      "label": "Fwd 10.8x vs Trail 18.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 18.8,
-    "sectorPe": 17.64,
+    "pe": 18.87,
+    "sectorPe": 17.63,
     "pb": 1.82,
     "ps": 1.3,
     "evEbitda": 12.59,
-    "fcfYield": 4.93,
-    "forwardPe": 10.81,
+    "fcfYield": 4.92,
+    "forwardPe": 10.85,
     "dividendYield": 5.58,
     "revenueGrowth": 25.9,
     "profitMargin": 4.71,

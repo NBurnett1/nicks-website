@@ -1,16 +1,12 @@
 {
   "ticker": "ORI",
   "name": "ORICA FPO [ORI]",
-  "price": 22.87,
-  "valuationScore": 9.5,
-  "marketCap": "10.6B",
+  "price": 22.7,
+  "valuationScore": 9.0,
+  "marketCap": "10.5B",
   "sector": "Basic Materials",
   "domain": "orica.com",
   "chartData": [
-    {
-      "date": "2025-10-26",
-      "price": 21.7
-    },
     {
       "date": "2025-11-02",
       "price": 21.67
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-25",
       "price": 22.87
+    },
+    {
+      "date": "2026-11-01",
+      "price": 22.7
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 44.84,
-      "threshold": 14.56,
-      "label": "44.8x vs 14.6x sector"
+      "value": 44.51,
+      "threshold": 14.71,
+      "label": "44.5x vs 14.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.84,
+      "value": 2.82,
       "threshold": 1.5,
-      "label": "2.84x vs 1.5x"
+      "label": "2.82x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 7.59,
+      "value": 7.64,
       "threshold": 5.0,
       "label": "7.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.78,
-      "threshold": 44.84,
-      "label": "Fwd 16.8x vs Trail 44.8x"
+      "value": 16.65,
+      "threshold": 44.51,
+      "label": "Fwd 16.7x vs Trail 44.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 44.84,
-    "sectorPe": 17.13,
-    "pb": 2.84,
-    "ps": 1.31,
+    "pe": 44.51,
+    "sectorPe": 17.31,
+    "pb": 2.82,
+    "ps": 1.3,
     "evEbitda": 9.58,
-    "fcfYield": 7.59,
-    "forwardPe": 16.78,
+    "fcfYield": 7.64,
+    "forwardPe": 16.65,
     "dividendYield": 2.65,
     "revenueGrowth": -1.7,
     "profitMargin": 3.09,

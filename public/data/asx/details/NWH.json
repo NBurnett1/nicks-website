@@ -1,16 +1,12 @@
 {
   "ticker": "NWH",
   "name": "NRWHOLDLTD FPO [NWH]",
-  "price": 6.02,
-  "valuationScore": -2.8,
+  "price": 5.98,
+  "valuationScore": -2.9,
   "marketCap": "2.8B",
   "sector": "Industrials",
   "domain": "nrw.com.au",
   "chartData": [
-    {
-      "date": "2025-10-26",
-      "price": 4.65
-    },
     {
       "date": "2025-11-02",
       "price": 4.69
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-25",
       "price": 6.02
+    },
+    {
+      "date": "2026-11-01",
+      "price": 5.98
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 18.24,
-      "threshold": 17.87,
-      "label": "18.2x vs 17.9x sector"
+      "value": 18.12,
+      "threshold": 17.93,
+      "label": "18.1x vs 17.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.01,
+      "value": 3.98,
       "threshold": 1.5,
-      "label": "4.01x vs 1.5x"
+      "label": "3.98x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 7.6,
+      "value": 7.65,
       "threshold": 5.0,
-      "label": "7.6% vs 5%"
+      "label": "7.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.57,
-      "threshold": 18.24,
-      "label": "Fwd 12.6x vs Trail 18.2x"
+      "value": 12.49,
+      "threshold": 18.12,
+      "label": "Fwd 12.5x vs Trail 18.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 18.24,
-    "sectorPe": 21.02,
-    "pb": 4.01,
-    "ps": 0.65,
+    "pe": 18.12,
+    "sectorPe": 21.09,
+    "pb": 3.98,
+    "ps": 0.64,
     "evEbitda": 7.03,
-    "fcfYield": 7.6,
-    "forwardPe": 12.57,
+    "fcfYield": 7.65,
+    "forwardPe": 12.49,
     "dividendYield": 3.82,
     "revenueGrowth": 43.6,
     "profitMargin": 3.57,

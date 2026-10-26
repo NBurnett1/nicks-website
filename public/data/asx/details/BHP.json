@@ -1,16 +1,12 @@
 {
   "ticker": "BHP",
   "name": "BHP GROUP FPO [BHP]",
-  "price": 55.05,
-  "valuationScore": 4.6,
-  "marketCap": "279.8B",
+  "price": 55.62,
+  "valuationScore": 4.7,
+  "marketCap": "282.7B",
   "sector": "Materials",
   "domain": "bhp.com",
   "chartData": [
-    {
-      "date": "2025-10-26",
-      "price": 41.53
-    },
     {
       "date": "2025-11-02",
       "price": 41.73
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-25",
       "price": 55.05
+    },
+    {
+      "date": "2026-11-01",
+      "price": 55.62
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 19.32,
+      "value": 19.31,
       "threshold": 14.99,
       "label": "19.3x vs 15.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.86,
+      "value": 3.9,
       "threshold": 1.5,
-      "label": "3.86x vs 1.5x"
+      "label": "3.90x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.43,
+      "value": 3.39,
       "threshold": 5.0,
       "label": "3.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.92,
-      "threshold": 19.32,
-      "label": "Fwd 14.9x vs Trail 19.3x"
+      "value": 15.07,
+      "threshold": 19.31,
+      "label": "Fwd 15.1x vs Trail 19.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 19.32,
-    "sectorPe": 17.64,
-    "pb": 3.86,
-    "ps": 4.76,
+    "pe": 19.31,
+    "sectorPe": 17.63,
+    "pb": 3.9,
+    "ps": 4.81,
     "evEbitda": 9.86,
-    "fcfYield": 3.43,
-    "forwardPe": 14.92,
+    "fcfYield": 3.39,
+    "forwardPe": 15.07,
     "dividendYield": 4.39,
     "revenueGrowth": 18.3,
     "profitMargin": 16.73,

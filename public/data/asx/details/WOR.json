@@ -1,16 +1,12 @@
 {
   "ticker": "WOR",
   "name": "WORLEY FPO [WOR]",
-  "price": 9.5,
+  "price": 9.64,
   "valuationScore": -27.3,
-  "marketCap": "4.6B",
+  "marketCap": "4.7B",
   "sector": "Energy",
   "domain": "worley.com",
   "chartData": [
-    {
-      "date": "2025-10-26",
-      "price": 13.73
-    },
     {
       "date": "2025-11-02",
       "price": 13.64
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-25",
       "price": 9.5
+    },
+    {
+      "date": "2026-11-01",
+      "price": 9.64
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 20.21,
-      "threshold": 17.71,
-      "label": "20.2x vs 17.7x sector"
+      "value": 20.51,
+      "threshold": 17.49,
+      "label": "20.5x vs 17.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.95,
+      "value": 0.96,
       "threshold": 1.5,
-      "label": "0.95x vs 1.5x"
+      "label": "0.96x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 10.24,
+      "value": 10.09,
       "threshold": 5.0,
-      "label": "10.2% vs 5%"
+      "label": "10.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 10.6,
-      "threshold": 20.21,
-      "label": "Fwd 10.6x vs Trail 20.2x"
+      "value": 10.75,
+      "threshold": 20.51,
+      "label": "Fwd 10.8x vs Trail 20.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 20.21,
-    "sectorPe": 20.84,
-    "pb": 0.95,
-    "ps": 0.43,
+    "pe": 20.51,
+    "sectorPe": 20.58,
+    "pb": 0.96,
+    "ps": 0.44,
     "evEbitda": 10.8,
-    "fcfYield": 10.24,
-    "forwardPe": 10.6,
+    "fcfYield": 10.09,
+    "forwardPe": 10.75,
     "dividendYield": 5.26,
     "revenueGrowth": -7.9,
     "profitMargin": 2.22,

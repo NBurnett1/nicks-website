@@ -1,16 +1,12 @@
 {
   "ticker": "WEB",
   "name": "WEBBEDS FPO [WEB]",
-  "price": 3.47,
+  "price": 3.43,
   "valuationScore": 2.8,
   "marketCap": "1.2B",
   "sector": "Consumer Cyclical",
   "domain": "webbedsgroup.com",
   "chartData": [
-    {
-      "date": "2025-10-26",
-      "price": 4.31
-    },
     {
       "date": "2025-11-02",
       "price": 4.18
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-25",
       "price": 3.47
+    },
+    {
+      "date": "2026-11-01",
+      "price": 3.43
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 34.7,
-      "threshold": 22.8,
-      "label": "34.7x vs 22.8x sector"
+      "value": 34.3,
+      "threshold": 22.57,
+      "label": "34.3x vs 22.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.15,
+      "value": 2.13,
       "threshold": 1.5,
-      "label": "2.15x vs 1.5x"
+      "label": "2.13x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.34,
+      "value": 5.4,
       "threshold": 5.0,
-      "label": "5.3% vs 5%"
+      "label": "5.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 10.74,
-      "threshold": 34.7,
-      "label": "Fwd 10.7x vs Trail 34.7x"
+      "value": 10.62,
+      "threshold": 34.3,
+      "label": "Fwd 10.6x vs Trail 34.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.16,
       "threshold": 0.5,
-      "label": "P/S 3.2x ÷ Growth 19.9% = 0.16"
+      "label": "P/S 3.1x ÷ Growth 19.9% = 0.16"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 34.7,
-    "sectorPe": 26.82,
-    "pb": 2.15,
-    "ps": 3.16,
+    "pe": 34.3,
+    "sectorPe": 26.55,
+    "pb": 2.13,
+    "ps": 3.13,
     "evEbitda": 9.04,
-    "fcfYield": 5.34,
-    "forwardPe": 10.74,
+    "fcfYield": 5.4,
+    "forwardPe": 10.62,
     "dividendYield": 0.0,
     "revenueGrowth": 19.9,
     "profitMargin": 9.01,

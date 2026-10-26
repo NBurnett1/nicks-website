@@ -1,16 +1,12 @@
 {
   "ticker": "MTS",
   "name": "METCASHLTD FPO [MTS]",
-  "price": 3.2,
-  "valuationScore": -6.6,
+  "price": 3.19,
+  "valuationScore": -6.5,
   "marketCap": "3.5B",
   "sector": "Consumer Defensive",
   "domain": "metcash.com",
   "chartData": [
-    {
-      "date": "2025-10-26",
-      "price": 3.6
-    },
     {
       "date": "2025-11-02",
       "price": 3.6
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-25",
       "price": 3.2
+    },
+    {
+      "date": "2026-11-01",
+      "price": 3.19
     }
   ],
   "testsPassed": 5,
@@ -226,8 +226,8 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 12.8,
-      "threshold": 17.74,
+      "value": 12.76,
+      "threshold": 17.67,
       "label": "12.8x vs 17.7x sector"
     },
     "pbBelowBook": {
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 9.67,
+      "value": 9.7,
       "threshold": 5.0,
       "label": "9.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.56,
-      "threshold": 12.8,
-      "label": "Fwd 12.6x vs Trail 12.8x"
+      "value": 12.52,
+      "threshold": 12.76,
+      "label": "Fwd 12.5x vs Trail 12.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.68,
+      "value": 0.67,
       "threshold": 0.5,
-      "label": "P/S 0.2x ÷ Growth 0.3% = 0.68"
+      "label": "P/S 0.2x ÷ Growth 0.3% = 0.67"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 12.8,
-    "sectorPe": 20.87,
+    "pe": 12.76,
+    "sectorPe": 20.79,
     "pb": 2.06,
     "ps": 0.2,
     "evEbitda": 9.87,
-    "fcfYield": 9.67,
-    "forwardPe": 12.56,
+    "fcfYield": 9.7,
+    "forwardPe": 12.52,
     "dividendYield": 5.94,
     "revenueGrowth": 0.3,
     "profitMargin": 1.61,

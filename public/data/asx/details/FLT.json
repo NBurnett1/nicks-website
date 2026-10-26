@@ -1,16 +1,12 @@
 {
   "ticker": "FLT",
   "name": "FLIGHT CTR FPO [FLT]",
-  "price": 11.25,
-  "valuationScore": 1.1,
-  "marketCap": "2.3B",
+  "price": 11.09,
+  "valuationScore": 1.2,
+  "marketCap": "2.2B",
   "sector": "Consumer Cyclical",
   "domain": "fctgl.com",
   "chartData": [
-    {
-      "date": "2025-10-26",
-      "price": 11.91
-    },
     {
       "date": "2025-11-02",
       "price": 11.85
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-25",
       "price": 11.25
+    },
+    {
+      "date": "2026-11-01",
+      "price": 11.09
     }
   ],
   "testsPassed": 5,
@@ -227,15 +227,15 @@
       "name": "P/E Discount",
       "passed": true,
       "value": 16.07,
-      "threshold": 22.8,
-      "label": "16.1x vs 22.8x sector"
+      "threshold": 22.57,
+      "label": "16.1x vs 22.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.1,
+      "value": 2.07,
       "threshold": 1.5,
-      "label": "2.10x vs 1.5x"
+      "label": "2.07x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.75,
+      "value": 5.83,
       "threshold": 5.0,
       "label": "5.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 9.05,
+      "value": 8.92,
       "threshold": 16.07,
-      "label": "Fwd 9.0x vs Trail 16.1x"
+      "label": "Fwd 8.9x vs Trail 16.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": 16.07,
-    "sectorPe": 26.82,
-    "pb": 2.1,
-    "ps": 0.8,
+    "sectorPe": 26.55,
+    "pb": 2.07,
+    "ps": 0.78,
     "evEbitda": 12.76,
-    "fcfYield": 5.75,
-    "forwardPe": 9.05,
+    "fcfYield": 5.83,
+    "forwardPe": 8.92,
     "dividendYield": 3.73,
     "revenueGrowth": -0.7,
     "profitMargin": 5.22,

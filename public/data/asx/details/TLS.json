@@ -1,16 +1,12 @@
 {
   "ticker": "TLS",
   "name": "TELSTRA FPO [TLS]",
-  "price": 4.95,
+  "price": 4.93,
   "valuationScore": 2.1,
-  "marketCap": "54.9B",
+  "marketCap": "54.7B",
   "sector": "Telecom",
   "domain": "telstra.com.au",
   "chartData": [
-    {
-      "date": "2025-10-26",
-      "price": 4.69
-    },
     {
       "date": "2025-11-02",
       "price": 4.68
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-25",
       "price": 4.95
+    },
+    {
+      "date": "2026-11-01",
+      "price": 4.93
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 24.75,
-      "threshold": 17.74,
-      "label": "24.7x vs 17.7x sector"
+      "value": 24.65,
+      "threshold": 17.67,
+      "label": "24.6x vs 17.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.38,
+      "value": 4.36,
       "threshold": 1.5,
-      "label": "4.38x vs 1.5x"
+      "label": "4.36x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 6.26,
+      "value": 6.28,
       "threshold": 5.0,
       "label": "6.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 21.64,
-      "threshold": 24.75,
-      "label": "Fwd 21.6x vs Trail 24.7x"
+      "value": 21.55,
+      "threshold": 24.65,
+      "label": "Fwd 21.6x vs Trail 24.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 24.75,
-    "sectorPe": 20.87,
-    "pb": 4.38,
-    "ps": 2.39,
+    "pe": 24.65,
+    "sectorPe": 20.79,
+    "pb": 4.36,
+    "ps": 2.38,
     "evEbitda": 10.56,
-    "fcfYield": 6.26,
-    "forwardPe": 21.64,
+    "fcfYield": 6.28,
+    "forwardPe": 21.55,
     "dividendYield": 4.24,
     "revenueGrowth": -2.0,
     "profitMargin": 9.77,

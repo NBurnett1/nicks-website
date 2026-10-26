@@ -1,16 +1,12 @@
 {
   "ticker": "ORG",
   "name": "ORIGIN ENE FPO [ORG]",
-  "price": 12.18,
-  "valuationScore": -6.5,
-  "marketCap": "21.0B",
+  "price": 12.09,
+  "valuationScore": -6.9,
+  "marketCap": "20.8B",
   "sector": "Energy",
   "domain": "originenergy.com.au",
   "chartData": [
-    {
-      "date": "2025-10-26",
-      "price": 11.89
-    },
     {
       "date": "2025-11-02",
       "price": 11.64
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-25",
       "price": 12.18
+    },
+    {
+      "date": "2026-11-01",
+      "price": 12.09
     }
   ],
   "testsPassed": 2,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 13.38,
-      "threshold": 17.71,
-      "label": "13.4x vs 17.7x sector"
+      "value": 13.29,
+      "threshold": 17.49,
+      "label": "13.3x vs 17.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.06,
+      "value": 2.05,
       "threshold": 1.5,
-      "label": "2.06x vs 1.5x"
+      "label": "2.05x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.9,
+      "value": 3.93,
       "threshold": 5.0,
       "label": "3.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 19.28,
-      "threshold": 13.38,
-      "label": "Fwd 19.3x vs Trail 13.4x"
+      "value": 19.13,
+      "threshold": 13.29,
+      "label": "Fwd 19.1x vs Trail 13.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 13.38,
-    "sectorPe": 20.84,
-    "pb": 2.06,
-    "ps": 1.34,
+    "pe": 13.29,
+    "sectorPe": 20.58,
+    "pb": 2.05,
+    "ps": 1.33,
     "evEbitda": 14.61,
-    "fcfYield": 3.9,
-    "forwardPe": 19.28,
+    "fcfYield": 3.93,
+    "forwardPe": 19.13,
     "dividendYield": 4.93,
     "revenueGrowth": -10.2,
     "profitMargin": 10.08,

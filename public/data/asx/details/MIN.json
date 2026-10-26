@@ -1,16 +1,12 @@
 {
   "ticker": "MIN",
   "name": "MINERALRES FPO [MIN]",
-  "price": 42.36,
-  "valuationScore": -5.5,
-  "marketCap": "8.4B",
+  "price": 43.03,
+  "valuationScore": -5.4,
+  "marketCap": "8.5B",
   "sector": "Materials",
   "domain": "mineralresources.com.au",
   "chartData": [
-    {
-      "date": "2025-10-26",
-      "price": 44.35
-    },
     {
       "date": "2025-11-02",
       "price": 47.76
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-25",
       "price": 42.36
+    },
+    {
+      "date": "2026-11-01",
+      "price": 43.03
     }
   ],
   "testsPassed": 6,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 7.93,
+      "value": 7.94,
       "threshold": 14.99,
       "label": "7.9x vs 15.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.92,
+      "value": 1.95,
       "threshold": 1.5,
-      "label": "1.92x vs 1.5x"
+      "label": "1.95x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 6.43,
+      "value": 6.33,
       "threshold": 5.0,
-      "label": "6.4% vs 5%"
+      "label": "6.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 13.24,
-      "threshold": 7.93,
-      "label": "Fwd 13.2x vs Trail 7.9x"
+      "value": 13.47,
+      "threshold": 7.94,
+      "label": "Fwd 13.5x vs Trail 7.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 7.93,
-    "sectorPe": 17.64,
-    "pb": 1.92,
-    "ps": 1.3,
+    "pe": 7.94,
+    "sectorPe": 17.63,
+    "pb": 1.95,
+    "ps": 1.32,
     "evEbitda": 5.34,
-    "fcfYield": 6.43,
-    "forwardPe": 13.24,
+    "fcfYield": 6.33,
+    "forwardPe": 13.47,
     "dividendYield": 1.96,
     "revenueGrowth": 56.2,
     "profitMargin": 16.42,

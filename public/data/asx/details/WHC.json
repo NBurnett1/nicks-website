@@ -1,16 +1,12 @@
 {
   "ticker": "WHC",
   "name": "WHITEHAVEN FPO [WHC]",
-  "price": 7.91,
+  "price": 7.87,
   "valuationScore": -17.9,
   "marketCap": "6.5B",
   "sector": "Materials",
   "domain": "whitehavencoal.com.au",
   "chartData": [
-    {
-      "date": "2025-10-26",
-      "price": 6.9
-    },
     {
       "date": "2025-11-02",
       "price": 7.11
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-25",
       "price": 7.91
+    },
+    {
+      "date": "2026-11-01",
+      "price": 7.87
     }
   ],
   "testsPassed": 6,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 16.48,
+      "value": 16.4,
       "threshold": 14.99,
-      "label": "16.5x vs 15.0x sector"
+      "label": "16.4x vs 15.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.1,
+      "value": 1.09,
       "threshold": 1.5,
-      "label": "1.10x vs 1.5x"
+      "label": "1.09x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 25.38,
+      "value": 25.5,
       "threshold": 5.0,
-      "label": "25.4% vs 5%"
+      "label": "25.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 13.29,
-      "threshold": 16.48,
-      "label": "Fwd 13.3x vs Trail 16.5x"
+      "value": 12.49,
+      "threshold": 16.4,
+      "label": "Fwd 12.5x vs Trail 16.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 16.48,
-    "sectorPe": 17.64,
-    "pb": 1.1,
+    "pe": 16.4,
+    "sectorPe": 17.63,
+    "pb": 1.09,
     "ps": 1.2,
     "evEbitda": 3.0,
-    "fcfYield": 25.38,
-    "forwardPe": 13.29,
+    "fcfYield": 25.5,
+    "forwardPe": 12.49,
     "dividendYield": 1.52,
     "revenueGrowth": 21.6,
     "profitMargin": 7.13,

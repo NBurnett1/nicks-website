@@ -1,16 +1,12 @@
 {
   "ticker": "NAB",
   "name": "NAT. BANK FPO [NAB]",
-  "price": 41.31,
-  "valuationScore": 0.0,
-  "marketCap": "126.5B",
+  "price": 41.0,
+  "valuationScore": 0.1,
+  "marketCap": "125.5B",
   "sector": "Financials",
   "domain": "nab.com.au",
   "chartData": [
-    {
-      "date": "2025-10-26",
-      "price": 41.5
-    },
     {
       "date": "2025-11-02",
       "price": 41.86
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-25",
       "price": 41.31
+    },
+    {
+      "date": "2026-11-01",
+      "price": 41.0
     }
   ],
   "testsPassed": 2,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 20.66,
-      "threshold": 17.42,
+      "value": 20.71,
+      "threshold": 17.41,
       "label": "20.7x vs 17.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.09,
+      "value": 2.07,
       "threshold": 1.5,
-      "label": "2.09x vs 1.5x"
+      "label": "2.07x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.97,
-      "threshold": 20.66,
-      "label": "Fwd 17.0x vs Trail 20.7x"
+      "value": 16.84,
+      "threshold": 20.71,
+      "label": "Fwd 16.8x vs Trail 20.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": false,
       "value": 0.99,
       "threshold": 0.5,
-      "label": "P/S 6.1x ÷ Growth 6.1% = 0.99"
+      "label": "P/S 6.0x ÷ Growth 6.1% = 0.99"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 20.66,
-    "sectorPe": 20.49,
-    "pb": 2.09,
-    "ps": 6.06,
+    "pe": 20.71,
+    "sectorPe": 20.48,
+    "pb": 2.07,
+    "ps": 6.02,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 16.97,
+    "forwardPe": 16.84,
     "dividendYield": 4.12,
     "revenueGrowth": 6.1,
     "profitMargin": 29.26,

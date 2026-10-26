@@ -2,15 +2,11 @@
   "ticker": "SCG",
   "name": "SCENTRE STAPLED [SCG]",
   "price": 3.53,
-  "valuationScore": 0.6,
+  "valuationScore": 0.5,
   "marketCap": "18.5B",
   "sector": "Real Estate",
   "domain": "scentregroup.com",
   "chartData": [
-    {
-      "date": "2025-10-26",
-      "price": 4.02
-    },
     {
       "date": "2025-11-02",
       "price": 3.88
@@ -218,6 +214,10 @@
     {
       "date": "2026-10-25",
       "price": 3.53
+    },
+    {
+      "date": "2026-11-01",
+      "price": 3.53
     }
   ],
   "testsPassed": 2,
@@ -227,7 +227,7 @@
       "name": "P/E Discount",
       "passed": false,
       "value": 9.29,
-      "threshold": 8.89,
+      "threshold": 8.93,
       "label": "9.3x vs 8.9x sector"
     },
     "pbBelowBook": {
@@ -282,7 +282,7 @@
   },
   "metrics": {
     "pe": 9.29,
-    "sectorPe": 10.45,
+    "sectorPe": 10.51,
     "pb": 0.95,
     "ps": 7.17,
     "evEbitda": null,
