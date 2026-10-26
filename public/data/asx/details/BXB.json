@@ -1,9 +1,9 @@
 {
   "ticker": "BXB",
   "name": "BRAMB LTD FPO [BXB]",
-  "price": 21.51,
-  "valuationScore": 7.2,
-  "marketCap": "28.6B",
+  "price": 21.43,
+  "valuationScore": 7.0,
+  "marketCap": "28.5B",
   "sector": "Industrials",
   "domain": "brambles.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-01",
-      "price": 21.51
+      "price": 21.43
     }
   ],
   "testsPassed": 2,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 21.09,
-      "threshold": 17.93,
-      "label": "21.1x vs 17.9x sector"
+      "value": 21.01,
+      "threshold": 17.96,
+      "label": "21.0x vs 18.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 6.25,
+      "value": 6.22,
       "threshold": 1.5,
-      "label": "6.25x vs 1.5x"
+      "label": "6.22x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 15.01,
+      "value": 14.92,
       "threshold": 10.0,
-      "label": "15.0x vs 10x"
+      "label": "14.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 1.89,
+      "value": 1.9,
       "threshold": 5.0,
       "label": "1.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 18.34,
-      "threshold": 21.09,
-      "label": "Fwd 18.3x vs Trail 21.1x"
+      "value": 18.28,
+      "threshold": 21.01,
+      "label": "Fwd 18.3x vs Trail 21.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 21.09,
-    "sectorPe": 21.09,
-    "pb": 6.25,
-    "ps": 3.94,
-    "evEbitda": 15.01,
-    "fcfYield": 1.89,
-    "forwardPe": 18.34,
+    "pe": 21.01,
+    "sectorPe": 21.13,
+    "pb": 6.22,
+    "ps": 3.92,
+    "evEbitda": 14.92,
+    "fcfYield": 1.9,
+    "forwardPe": 18.28,
     "dividendYield": 3.03,
     "revenueGrowth": null,
     "profitMargin": 13.15,

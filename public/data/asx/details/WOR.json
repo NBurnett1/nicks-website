@@ -1,8 +1,8 @@
 {
   "ticker": "WOR",
   "name": "WORLEY FPO [WOR]",
-  "price": 9.64,
-  "valuationScore": -27.3,
+  "price": 9.69,
+  "valuationScore": -5.5,
   "marketCap": "4.7B",
   "sector": "Energy",
   "domain": "worley.com",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-01",
-      "price": 9.64
+      "price": 9.69
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 20.51,
+      "value": 20.61,
       "threshold": 17.49,
-      "label": "20.5x vs 17.5x sector"
+      "label": "20.6x vs 17.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.96,
+      "value": 0.97,
       "threshold": 1.5,
-      "label": "0.96x vs 1.5x"
+      "label": "0.97x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 10.8,
+      "value": 10.91,
       "threshold": 10.0,
-      "label": "10.8x vs 10x"
+      "label": "10.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 10.09,
+      "value": 10.04,
       "threshold": 5.0,
-      "label": "10.1% vs 5%"
+      "label": "10.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 10.75,
-      "threshold": 20.51,
-      "label": "Fwd 10.8x vs Trail 20.5x"
+      "value": 10.8,
+      "threshold": 20.61,
+      "label": "Fwd 10.8x vs Trail 20.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 20.51,
-    "sectorPe": 20.58,
-    "pb": 0.96,
+    "pe": 20.61,
+    "sectorPe": 20.57,
+    "pb": 0.97,
     "ps": 0.44,
-    "evEbitda": 10.8,
-    "fcfYield": 10.09,
-    "forwardPe": 10.75,
+    "evEbitda": 10.91,
+    "fcfYield": 10.04,
+    "forwardPe": 10.8,
     "dividendYield": 5.26,
     "revenueGrowth": -7.9,
     "profitMargin": 2.22,

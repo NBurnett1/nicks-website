@@ -1,8 +1,8 @@
 {
   "ticker": "DOW",
   "name": "DOWNER EDI FPO [DOW]",
-  "price": 6.99,
-  "valuationScore": -4.7,
+  "price": 7.02,
+  "valuationScore": -4.8,
   "marketCap": "4.6B",
   "sector": "Industrials",
   "domain": "downergroup.com",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-01",
-      "price": 6.99
+      "price": 7.02
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 21.18,
-      "threshold": 17.93,
-      "label": "21.2x vs 17.9x sector"
+      "value": 21.27,
+      "threshold": 17.96,
+      "label": "21.3x vs 18.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.35,
+      "value": 2.36,
       "threshold": 1.5,
-      "label": "2.35x vs 1.5x"
+      "label": "2.36x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 9.66,
+      "value": 9.51,
       "threshold": 10.0,
-      "label": "9.7x vs 10x"
+      "label": "9.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 9.52,
+      "value": 9.48,
       "threshold": 5.0,
       "label": "9.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 13.58,
-      "threshold": 21.18,
-      "label": "Fwd 13.6x vs Trail 21.2x"
+      "value": 13.66,
+      "threshold": 21.27,
+      "label": "Fwd 13.7x vs Trail 21.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 21.18,
-    "sectorPe": 21.09,
-    "pb": 2.35,
+    "pe": 21.27,
+    "sectorPe": 21.13,
+    "pb": 2.36,
     "ps": 0.47,
-    "evEbitda": 9.66,
-    "fcfYield": 9.52,
-    "forwardPe": 13.58,
+    "evEbitda": 9.51,
+    "fcfYield": 9.48,
+    "forwardPe": 13.66,
     "dividendYield": 4.1,
     "revenueGrowth": -7.7,
     "profitMargin": 2.23,
