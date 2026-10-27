@@ -1,9 +1,9 @@
 {
   "ticker": "ING",
   "name": "INGHAMS FPO [ING]",
-  "price": 2.08,
-  "valuationScore": -13.4,
-  "marketCap": "773M",
+  "price": 2.09,
+  "valuationScore": -13.2,
+  "marketCap": "777M",
   "sector": "Consumer Staples",
   "domain": "inghams.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-01",
-      "price": 2.08
+      "price": 2.09
     }
   ],
   "testsPassed": 6,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 23.11,
-      "threshold": 25.17,
-      "label": "23.1x vs 25.2x sector"
+      "value": 23.22,
+      "threshold": 25.0,
+      "label": "23.2x vs 25.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.07,
+      "value": 3.09,
       "threshold": 1.5,
-      "label": "3.07x vs 1.5x"
+      "label": "3.09x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 9.83,
+      "value": 9.76,
       "threshold": 10.0,
       "label": "9.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 20.22,
+      "value": 20.12,
       "threshold": 5.0,
-      "label": "20.2% vs 5%"
+      "label": "20.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 10.11,
-      "threshold": 23.11,
-      "label": "Fwd 10.1x vs Trail 23.1x"
+      "value": 10.16,
+      "threshold": 23.22,
+      "label": "Fwd 10.2x vs Trail 23.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 23.11,
-    "sectorPe": 29.62,
-    "pb": 3.07,
+    "pe": 23.22,
+    "sectorPe": 29.41,
+    "pb": 3.09,
     "ps": 0.24,
-    "evEbitda": 9.83,
-    "fcfYield": 20.22,
-    "forwardPe": 10.11,
+    "evEbitda": 9.76,
+    "fcfYield": 20.12,
+    "forwardPe": 10.16,
     "dividendYield": 4.76,
     "revenueGrowth": 4.9,
     "profitMargin": 1.07,

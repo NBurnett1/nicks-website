@@ -1,9 +1,9 @@
 {
   "ticker": "AMC",
   "name": "AMCOR PLC CDI 1:1 [AMC]",
-  "price": 65.81,
-  "valuationScore": 1.3,
-  "marketCap": "30.4B",
+  "price": 65.24,
+  "valuationScore": 1.0,
+  "marketCap": "30.1B",
   "sector": "Materials",
   "domain": "amcor.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-01",
-      "price": 65.81
+      "price": 65.24
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 18.64,
-      "threshold": 14.84,
-      "label": "18.6x vs 14.8x sector"
+      "value": 18.48,
+      "threshold": 14.72,
+      "label": "18.5x vs 14.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.81,
+      "value": 1.8,
       "threshold": 1.5,
-      "label": "1.81x vs 1.5x"
+      "label": "1.80x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 12.62,
+      "value": 12.57,
       "threshold": 10.0,
       "label": "12.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.95,
+      "value": 4.99,
       "threshold": 5.0,
       "label": "5.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 10.78,
-      "threshold": 18.64,
-      "label": "Fwd 10.8x vs Trail 18.6x"
+      "value": 10.69,
+      "threshold": 18.48,
+      "label": "Fwd 10.7x vs Trail 18.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 18.64,
-    "sectorPe": 17.46,
-    "pb": 1.81,
-    "ps": 1.29,
-    "evEbitda": 12.62,
-    "fcfYield": 4.95,
-    "forwardPe": 10.78,
+    "pe": 18.48,
+    "sectorPe": 17.31,
+    "pb": 1.8,
+    "ps": 1.28,
+    "evEbitda": 12.57,
+    "fcfYield": 4.99,
+    "forwardPe": 10.69,
     "dividendYield": 5.56,
     "revenueGrowth": 25.9,
     "profitMargin": 4.71,

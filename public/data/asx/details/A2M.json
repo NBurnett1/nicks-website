@@ -1,8 +1,8 @@
 {
   "ticker": "A2M",
   "name": "A2 MILK FPO NZ [A2M]",
-  "price": 6.81,
-  "valuationScore": 0.6,
+  "price": 6.83,
+  "valuationScore": 0.7,
   "marketCap": "5.0B",
   "sector": "Consumer Staples",
   "domain": "thea2milkcompany.com",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-01",
-      "price": 6.81
+      "price": 6.83
     }
   ],
   "testsPassed": 5,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 28.38,
-      "threshold": 25.17,
-      "label": "28.4x vs 25.2x sector"
+      "value": 28.46,
+      "threshold": 25.0,
+      "label": "28.5x vs 25.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 5.67,
+      "value": 5.69,
       "threshold": 1.5,
-      "label": "5.67x vs 1.5x"
+      "label": "5.69x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 14.26,
+      "value": 13.81,
       "threshold": 10.0,
-      "label": "14.3x vs 10x"
+      "label": "13.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 6.85,
+      "value": 6.83,
       "threshold": 5.0,
       "label": "6.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 22.12,
-      "threshold": 28.38,
-      "label": "Fwd 22.1x vs Trail 28.4x"
+      "value": 22.18,
+      "threshold": 28.46,
+      "label": "Fwd 22.2x vs Trail 28.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 28.38,
-    "sectorPe": 29.62,
-    "pb": 5.67,
-    "ps": 2.51,
-    "evEbitda": 14.26,
-    "fcfYield": 6.85,
-    "forwardPe": 22.12,
+    "pe": 28.46,
+    "sectorPe": 29.41,
+    "pb": 5.69,
+    "ps": 2.52,
+    "evEbitda": 13.81,
+    "fcfYield": 6.83,
+    "forwardPe": 22.18,
     "dividendYield": 1.85,
     "revenueGrowth": 6.5,
     "profitMargin": 5.76,

@@ -1,9 +1,9 @@
 {
   "ticker": "MND",
   "name": "MONADEL FPO [MND]",
-  "price": 28.29,
+  "price": 28.44,
   "valuationScore": 1.6,
-  "marketCap": "2.8B",
+  "marketCap": "2.9B",
   "sector": "Industrials",
   "domain": "monadelphous.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-01",
-      "price": 28.29
+      "price": 28.44
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 22.1,
-      "threshold": 18.13,
-      "label": "22.1x vs 18.1x sector"
+      "value": 22.22,
+      "threshold": 18.17,
+      "label": "22.2x vs 18.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.98,
+      "value": 5.0,
       "threshold": 1.5,
-      "label": "4.98x vs 1.5x"
+      "label": "5.00x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 13.67,
+      "value": 13.92,
       "threshold": 10.0,
-      "label": "13.7x vs 10x"
+      "label": "13.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 7.16,
+      "value": 7.12,
       "threshold": 5.0,
-      "label": "7.2% vs 5%"
+      "label": "7.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 20.92,
-      "threshold": 22.1,
-      "label": "Fwd 20.9x vs Trail 22.1x"
+      "value": 21.03,
+      "threshold": 22.22,
+      "label": "Fwd 21.0x vs Trail 22.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 22.1,
-    "sectorPe": 21.33,
-    "pb": 4.98,
+    "pe": 22.22,
+    "sectorPe": 21.38,
+    "pb": 5.0,
     "ps": 1.02,
-    "evEbitda": 13.67,
-    "fcfYield": 7.16,
-    "forwardPe": 20.92,
+    "evEbitda": 13.92,
+    "fcfYield": 7.12,
+    "forwardPe": 21.03,
     "dividendYield": 4.24,
     "revenueGrowth": 19.2,
     "profitMargin": 4.55,
