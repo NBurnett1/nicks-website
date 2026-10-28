@@ -1,9 +1,9 @@
 {
   "ticker": "HVN",
   "name": "HARVEY FPO [HVN]",
-  "price": 4.07,
-  "valuationScore": -7.3,
-  "marketCap": "5.1B",
+  "price": 4.0,
+  "valuationScore": -7.4,
+  "marketCap": "5.0B",
   "sector": "Consumer Discretionary",
   "domain": "harveynormanholdings.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-01",
-      "price": 4.07
+      "price": 4.0
     }
   ],
   "testsPassed": 6,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 9.69,
-      "threshold": 14.18,
-      "label": "9.7x vs 14.2x sector"
+      "value": 9.52,
+      "threshold": 13.89,
+      "label": "9.5x vs 13.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.04,
+      "value": 1.02,
       "threshold": 1.5,
-      "label": "1.04x vs 1.5x"
+      "label": "1.02x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 10.73,
+      "value": 10.92,
       "threshold": 5.0,
-      "label": "10.7% vs 5%"
+      "label": "10.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 11.33,
-      "threshold": 9.69,
-      "label": "Fwd 11.3x vs Trail 9.7x"
+      "value": 11.1,
+      "threshold": 9.52,
+      "label": "Fwd 11.1x vs Trail 9.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 9.69,
-    "sectorPe": 16.68,
-    "pb": 1.04,
-    "ps": 1.66,
+    "pe": 9.52,
+    "sectorPe": 16.34,
+    "pb": 1.02,
+    "ps": 1.63,
     "evEbitda": 8.73,
-    "fcfYield": 10.73,
-    "forwardPe": 11.33,
-    "dividendYield": 6.63,
+    "fcfYield": 10.92,
+    "forwardPe": 11.1,
+    "dividendYield": 6.74,
     "revenueGrowth": -2.9,
     "profitMargin": 17.32,
     "operatingMargin": 23.19,

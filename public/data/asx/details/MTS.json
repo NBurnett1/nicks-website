@@ -1,9 +1,9 @@
 {
   "ticker": "MTS",
   "name": "METCASHLTD FPO [MTS]",
-  "price": 3.2,
-  "valuationScore": -6.8,
-  "marketCap": "3.5B",
+  "price": 3.18,
+  "valuationScore": -2.7,
+  "marketCap": "—",
   "sector": "Consumer Defensive",
   "domain": "metcash.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-01",
-      "price": 3.2
+      "price": 3.18
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 12.31,
-      "threshold": 17.81,
-      "label": "12.3x vs 17.8x sector"
+      "value": 12.72,
+      "threshold": 17.67,
+      "label": "12.7x vs 17.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.06,
+      "value": 2.05,
       "threshold": 1.5,
-      "label": "2.06x vs 1.5x"
+      "label": "2.05x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -246,17 +246,17 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": true,
-      "value": 9.67,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "9.7% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
-      "passed": false,
-      "value": 12.56,
-      "threshold": 12.31,
-      "label": "Fwd 12.6x vs Trail 12.3x"
+      "passed": true,
+      "value": 12.48,
+      "threshold": 12.72,
+      "label": "Fwd 12.5x vs Trail 12.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": 0.68,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 0.2x ÷ Growth 0.3% = 0.68"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 12.31,
-    "sectorPe": 20.95,
-    "pb": 2.06,
-    "ps": 0.2,
+    "pe": 12.72,
+    "sectorPe": 20.78,
+    "pb": 2.05,
+    "ps": null,
     "evEbitda": 9.91,
-    "fcfYield": 9.67,
-    "forwardPe": 12.56,
-    "dividendYield": 5.96,
+    "fcfYield": null,
+    "forwardPe": 12.48,
+    "dividendYield": 5.9,
     "revenueGrowth": 0.3,
     "profitMargin": 1.61,
     "operatingMargin": 2.8,

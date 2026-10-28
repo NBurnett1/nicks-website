@@ -1,9 +1,9 @@
 {
   "ticker": "STO",
   "name": "SANTOS FPO [STO]",
-  "price": 9.06,
+  "price": 9.02,
   "valuationScore": 2.4,
-  "marketCap": "29.4B",
+  "marketCap": "—",
   "sector": "Energy",
   "domain": "santos.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-01",
-      "price": 9.06
+      "price": 9.02
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 27.45,
-      "threshold": 18.04,
-      "label": "27.5x vs 18.0x sector"
+      "value": 27.33,
+      "threshold": 18.12,
+      "label": "27.3x vs 18.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.33,
+      "value": 1.31,
       "threshold": 1.5,
-      "label": "1.33x vs 1.5x"
+      "label": "1.31x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -246,17 +246,17 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 1.04,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "1.0% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 11.97,
-      "threshold": 27.45,
-      "label": "Fwd 12.0x vs Trail 27.5x"
+      "value": 9.27,
+      "threshold": 27.33,
+      "label": "Fwd 9.3x vs Trail 27.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": 3.69,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 5.9x ÷ Growth 1.6% = 3.69"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 27.45,
-    "sectorPe": 21.22,
-    "pb": 1.33,
-    "ps": 5.91,
+    "pe": 27.33,
+    "sectorPe": 21.32,
+    "pb": 1.31,
+    "ps": null,
     "evEbitda": 13.63,
-    "fcfYield": 1.04,
-    "forwardPe": 11.97,
+    "fcfYield": null,
+    "forwardPe": 9.27,
     "dividendYield": 3.35,
     "revenueGrowth": 1.6,
     "profitMargin": 14.74,
