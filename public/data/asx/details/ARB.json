@@ -1,8 +1,8 @@
 {
   "ticker": "ARB",
   "name": "ARB CORP FPO [ARB]",
-  "price": 16.63,
-  "valuationScore": -1.4,
+  "price": 16.73,
+  "valuationScore": -1.3,
   "marketCap": "1.4B",
   "sector": "Consumer Discretionary",
   "domain": "arb.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-01",
-      "price": 16.63
+      "price": 16.73
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 14.85,
-      "threshold": 13.89,
-      "label": "14.8x vs 13.9x sector"
+      "value": 14.94,
+      "threshold": 14.02,
+      "label": "14.9x vs 14.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.88,
+      "value": 1.89,
       "threshold": 1.5,
-      "label": "1.88x vs 1.5x"
+      "label": "1.89x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 9.89,
+      "value": 9.97,
       "threshold": 10.0,
-      "label": "9.9x vs 10x"
+      "label": "10.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.62,
+      "value": 4.59,
       "threshold": 5.0,
       "label": "4.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 13.8,
-      "threshold": 14.85,
-      "label": "Fwd 13.8x vs Trail 14.8x"
+      "value": 13.89,
+      "threshold": 14.94,
+      "label": "Fwd 13.9x vs Trail 14.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 14.85,
-    "sectorPe": 16.34,
-    "pb": 1.88,
-    "ps": 1.97,
-    "evEbitda": 9.89,
-    "fcfYield": 4.62,
-    "forwardPe": 13.8,
+    "pe": 14.94,
+    "sectorPe": 16.49,
+    "pb": 1.89,
+    "ps": 1.98,
+    "evEbitda": 9.97,
+    "fcfYield": 4.59,
+    "forwardPe": 13.89,
     "dividendYield": 4.24,
     "revenueGrowth": -6.3,
     "profitMargin": 13.08,

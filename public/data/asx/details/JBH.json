@@ -1,8 +1,8 @@
 {
   "ticker": "JBH",
   "name": "JB HI-FI FPO [JBH]",
-  "price": 70.66,
-  "valuationScore": 0.5,
+  "price": 70.77,
+  "valuationScore": 0.6,
   "marketCap": "7.7B",
   "sector": "Consumer Discretionary",
   "domain": "jbhifi.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-01",
-      "price": 70.66
+      "price": 70.76
     }
   ],
   "testsPassed": 4,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 15.81,
-      "threshold": 13.89,
-      "label": "15.8x vs 13.9x sector"
+      "value": 16.23,
+      "threshold": 14.02,
+      "label": "16.2x vs 14.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,23 +240,23 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 10.57,
+      "value": 10.35,
       "threshold": 10.0,
-      "label": "10.6x vs 10x"
+      "label": "10.3x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 7.13,
+      "value": 7.12,
       "threshold": 5.0,
       "label": "7.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 15.43,
-      "threshold": 15.81,
-      "label": "Fwd 15.4x vs Trail 15.8x"
+      "value": 15.45,
+      "threshold": 16.23,
+      "label": "Fwd 15.4x vs Trail 16.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 15.81,
-    "sectorPe": 16.34,
+    "pe": 16.23,
+    "sectorPe": 16.49,
     "pb": 4.72,
     "ps": 0.7,
-    "evEbitda": 10.57,
-    "fcfYield": 7.13,
-    "forwardPe": 15.43,
+    "evEbitda": 10.35,
+    "fcfYield": 7.12,
+    "forwardPe": 15.45,
     "dividendYield": 4.66,
     "revenueGrowth": 1.9,
     "profitMargin": 4.43,

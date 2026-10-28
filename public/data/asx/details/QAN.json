@@ -2,7 +2,7 @@
   "ticker": "QAN",
   "name": "QANTAS FPO [QAN]",
   "price": 8.7,
-  "valuationScore": 7.6,
+  "valuationScore": 7.7,
   "marketCap": "13.2B",
   "sector": "Industrials",
   "domain": "qantas.com",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-01",
-      "price": 8.7
+      "price": 8.69
     }
   ],
   "testsPassed": 6,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 10.24,
-      "threshold": 17.95,
-      "label": "10.2x vs 17.9x sector"
+      "value": 10.23,
+      "threshold": 18.11,
+      "label": "10.2x vs 18.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,7 +240,7 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 4.88,
+      "value": 4.9,
       "threshold": 10.0,
       "label": "4.9x vs 10x"
     },
@@ -254,8 +254,8 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 6.97,
-      "threshold": 10.24,
+      "value": 6.96,
+      "threshold": 10.23,
       "label": "Fwd 7.0x vs Trail 10.2x"
     },
     "profitabilityCheck": {
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 10.24,
-    "sectorPe": 21.12,
+    "pe": 10.23,
+    "sectorPe": 21.3,
     "pb": 8.74,
     "ps": 0.52,
-    "evEbitda": 4.88,
+    "evEbitda": 4.9,
     "fcfYield": -3.33,
-    "forwardPe": 6.97,
+    "forwardPe": 6.96,
     "dividendYield": 4.58,
     "revenueGrowth": 7.9,
     "profitMargin": 5.05,

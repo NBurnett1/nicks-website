@@ -1,9 +1,9 @@
 {
   "ticker": "WBC",
   "name": "WESTPAC FPO [WBC]",
-  "price": 36.53,
+  "price": 36.88,
   "valuationScore": -0.7,
-  "marketCap": "124.7B",
+  "marketCap": "125.9B",
   "sector": "Financials",
   "domain": "westpac.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-01",
-      "price": 36.53
+      "price": 36.88
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 17.82,
-      "threshold": 17.09,
-      "label": "17.8x vs 17.1x sector"
+      "value": 17.99,
+      "threshold": 17.31,
+      "label": "18.0x vs 17.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.76,
+      "value": 1.78,
       "threshold": 1.5,
-      "label": "1.76x vs 1.5x"
+      "label": "1.78x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 17.11,
-      "threshold": 17.82,
-      "label": "Fwd 17.1x vs Trail 17.8x"
+      "value": 17.28,
+      "threshold": 17.99,
+      "label": "Fwd 17.3x vs Trail 18.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 3.73,
+      "value": 3.77,
       "threshold": 0.5,
-      "label": "P/S 5.6x ÷ Growth 1.5% = 3.73"
+      "label": "P/S 5.7x ÷ Growth 1.5% = 3.77"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 17.82,
-    "sectorPe": 20.11,
-    "pb": 1.76,
-    "ps": 5.6,
+    "pe": 17.99,
+    "sectorPe": 20.37,
+    "pb": 1.78,
+    "ps": 5.66,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 17.11,
+    "forwardPe": 17.28,
     "dividendYield": 4.26,
     "revenueGrowth": 1.5,
     "profitMargin": 31.5,

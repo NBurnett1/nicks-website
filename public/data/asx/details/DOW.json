@@ -1,8 +1,8 @@
 {
   "ticker": "DOW",
   "name": "DOWNER EDI FPO [DOW]",
-  "price": 6.97,
-  "valuationScore": -5.0,
+  "price": 7.03,
+  "valuationScore": -4.9,
   "marketCap": "4.6B",
   "sector": "Industrials",
   "domain": "downergroup.com",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-01",
-      "price": 6.97
+      "price": 7.03
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 21.12,
-      "threshold": 17.95,
-      "label": "21.1x vs 17.9x sector"
+      "value": 21.3,
+      "threshold": 18.11,
+      "label": "21.3x vs 18.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.34,
+      "value": 2.36,
       "threshold": 1.5,
-      "label": "2.34x vs 1.5x"
+      "label": "2.36x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 9.63,
+      "value": 9.49,
       "threshold": 10.0,
-      "label": "9.6x vs 10x"
+      "label": "9.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 9.55,
+      "value": 9.47,
       "threshold": 5.0,
-      "label": "9.6% vs 5%"
+      "label": "9.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 13.66,
-      "threshold": 21.12,
-      "label": "Fwd 13.7x vs Trail 21.1x"
+      "value": 13.78,
+      "threshold": 21.3,
+      "label": "Fwd 13.8x vs Trail 21.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 21.12,
-    "sectorPe": 21.12,
-    "pb": 2.34,
+    "pe": 21.3,
+    "sectorPe": 21.3,
+    "pb": 2.36,
     "ps": 0.47,
-    "evEbitda": 9.63,
-    "fcfYield": 9.55,
-    "forwardPe": 13.66,
+    "evEbitda": 9.49,
+    "fcfYield": 9.47,
+    "forwardPe": 13.78,
     "dividendYield": 4.12,
     "revenueGrowth": -7.7,
     "profitMargin": 2.23,

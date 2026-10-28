@@ -1,9 +1,9 @@
 {
   "ticker": "WHC",
   "name": "WHITEHAVEN FPO [WHC]",
-  "price": 7.79,
-  "valuationScore": -17.9,
-  "marketCap": "6.4B",
+  "price": 7.93,
+  "valuationScore": -17.7,
+  "marketCap": "6.5B",
   "sector": "Materials",
   "domain": "whitehavencoal.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-01",
-      "price": 7.79
+      "price": 7.93
     }
   ],
   "testsPassed": 6,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 16.57,
-      "threshold": 14.91,
-      "label": "16.6x vs 14.9x sector"
+      "value": 16.87,
+      "threshold": 15.01,
+      "label": "16.9x vs 15.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.08,
+      "value": 1.1,
       "threshold": 1.5,
-      "label": "1.08x vs 1.5x"
+      "label": "1.10x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 3.02,
+      "value": 2.97,
       "threshold": 10.0,
       "label": "3.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 25.77,
+      "value": 25.31,
       "threshold": 5.0,
-      "label": "25.8% vs 5%"
+      "label": "25.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 13.06,
-      "threshold": 16.57,
-      "label": "Fwd 13.1x vs Trail 16.6x"
+      "value": 13.29,
+      "threshold": 16.87,
+      "label": "Fwd 13.3x vs Trail 16.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.05,
+      "value": 0.06,
       "threshold": 0.5,
-      "label": "P/S 1.2x ÷ Growth 21.6% = 0.05"
+      "label": "P/S 1.2x ÷ Growth 21.6% = 0.06"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 16.57,
-    "sectorPe": 17.54,
-    "pb": 1.08,
-    "ps": 1.18,
-    "evEbitda": 3.02,
-    "fcfYield": 25.77,
-    "forwardPe": 13.06,
+    "pe": 16.87,
+    "sectorPe": 17.66,
+    "pb": 1.1,
+    "ps": 1.2,
+    "evEbitda": 2.97,
+    "fcfYield": 25.31,
+    "forwardPe": 13.29,
     "dividendYield": 1.5,
     "revenueGrowth": 21.6,
     "profitMargin": 7.13,
