@@ -1,9 +1,9 @@
 {
   "ticker": "CGF",
   "name": "CHALLENGER FPO [CGF]",
-  "price": 11.98,
-  "valuationScore": 13.2,
-  "marketCap": "8.1B",
+  "price": 12.07,
+  "valuationScore": 11.4,
+  "marketCap": "8.2B",
   "sector": "Financial Services",
   "domain": "challenger.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-01",
-      "price": 11.98
+      "price": 12.07
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 21.02,
-      "threshold": 21.25,
-      "label": "21.0x vs 21.2x sector"
+      "value": 20.47,
+      "threshold": 21.36,
+      "label": "20.5x vs 21.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.0,
+      "value": 2.01,
       "threshold": 1.5,
-      "label": "2.00x vs 1.5x"
+      "label": "2.01x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -21.35,
+      "value": -21.18,
       "threshold": 5.0,
-      "label": "-21.4% vs 5%"
+      "label": "-21.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.15,
-      "threshold": 21.02,
-      "label": "Fwd 16.1x vs Trail 21.0x"
+      "value": 16.27,
+      "threshold": 20.47,
+      "label": "Fwd 16.3x vs Trail 20.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 21.02,
-    "sectorPe": 25.0,
-    "pb": 2.0,
-    "ps": 2.82,
-    "evEbitda": -8.87,
-    "fcfYield": -21.35,
-    "forwardPe": 16.15,
+    "pe": 20.47,
+    "sectorPe": 25.12,
+    "pb": 2.01,
+    "ps": 2.84,
+    "evEbitda": -8.78,
+    "fcfYield": -21.18,
+    "forwardPe": 16.27,
     "dividendYield": 2.72,
     "revenueGrowth": null,
     "profitMargin": 17.62,

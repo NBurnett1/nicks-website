@@ -1,9 +1,9 @@
 {
   "ticker": "ALQ",
   "name": "ALS FPO [ALQ]",
-  "price": 20.75,
-  "valuationScore": 8.6,
-  "marketCap": "10.5B",
+  "price": 20.9,
+  "valuationScore": 8.7,
+  "marketCap": "10.6B",
   "sector": "Industrials",
   "domain": "alsglobal.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-01",
-      "price": 20.75
+      "price": 20.9
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 32.42,
-      "threshold": 18.24,
-      "label": "32.4x vs 18.2x sector"
+      "value": 32.66,
+      "threshold": 18.4,
+      "label": "32.7x vs 18.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 6.2,
+      "value": 6.24,
       "threshold": 1.5,
-      "label": "6.20x vs 1.5x"
+      "label": "6.24x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 16.68,
+      "value": 16.89,
       "threshold": 10.0,
-      "label": "16.7x vs 10x"
+      "label": "16.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.08,
+      "value": 3.06,
       "threshold": 5.0,
       "label": "3.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 20.76,
-      "threshold": 32.42,
-      "label": "Fwd 20.8x vs Trail 32.4x"
+      "value": 20.91,
+      "threshold": 32.66,
+      "label": "Fwd 20.9x vs Trail 32.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 32.42,
-    "sectorPe": 21.45,
-    "pb": 6.2,
-    "ps": 3.17,
-    "evEbitda": 16.68,
-    "fcfYield": 3.08,
-    "forwardPe": 20.76,
+    "pe": 32.66,
+    "sectorPe": 21.65,
+    "pb": 6.24,
+    "ps": 3.19,
+    "evEbitda": 16.89,
+    "fcfYield": 3.06,
+    "forwardPe": 20.91,
     "dividendYield": 2.08,
     "revenueGrowth": 8.2,
     "profitMargin": 9.6,
