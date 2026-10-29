@@ -1,25 +1,52 @@
 {
-  "lastUpdated": "2026-10-29T10:48:17.368264+11:00",
+  "lastUpdated": "2026-10-30T01:01:28.656975+11:00",
   "stocksScanned": 129,
-  "totalAlerts": 27,
+  "totalAlerts": 34,
   "alerts": [
     {
-      "type": "PRICE_MOVE",
+      "type": "EXTREME VOLUME",
+      "severity": "critical",
+      "ticker": "CCX",
+      "exchange": "ASX",
+      "headline": "7.1x average volume detected",
+      "detail": "Volume: 2,540,552 vs 20-day avg: 355,393 | Price down 7.7%",
+      "timestamp": "2026-10-29T14:00:15.889326+00:00"
+    },
+    {
+      "type": "EXTREME VOLUME",
       "severity": "critical",
       "ticker": "APX",
       "exchange": "ASX",
-      "headline": "Stock surged 15.7% in one session",
-      "detail": "$1.27 → $1.48",
-      "timestamp": "2026-10-28T23:47:07.961080+00:00"
+      "headline": "6.1x average volume detected",
+      "detail": "Volume: 13,599,219 vs 20-day avg: 2,237,295 | Price up 5.1%",
+      "timestamp": "2026-10-29T14:00:16.339973+00:00"
     },
     {
       "type": "EXTREME VOLUME",
       "severity": "critical",
       "ticker": "BAP",
       "exchange": "ASX",
-      "headline": "4.8x average volume detected",
-      "detail": "Volume: 22,089,361 vs 20-day avg: 4,631,532 | Price down 2.3%",
-      "timestamp": "2026-10-28T23:47:14.955523+00:00"
+      "headline": "5.7x average volume detected",
+      "detail": "Volume: 26,192,253 vs 20-day avg: 4,631,532 | Price down 2.3%",
+      "timestamp": "2026-10-29T14:00:23.904980+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "critical",
+      "ticker": "SYR",
+      "exchange": "ASX",
+      "headline": "Stock surged 10.0% in one session",
+      "detail": "$0.06 → $0.07",
+      "timestamp": "2026-10-29T14:01:08.948368+00:00"
+    },
+    {
+      "type": "EXTREME VOLUME",
+      "severity": "critical",
+      "ticker": "SGR",
+      "exchange": "ASX",
+      "headline": "7.8x average volume detected",
+      "detail": "Volume: 19,135,360 vs 20-day avg: 2,444,672 | Price up 7.7%",
+      "timestamp": "2026-10-29T14:01:11.821767+00:00"
     },
     {
       "type": "INSIDER_BUY",
@@ -33,11 +60,47 @@
     {
       "type": "PRICE_MOVE",
       "severity": "high",
-      "ticker": "ALU",
+      "ticker": "CCX",
       "exchange": "ASX",
-      "headline": "Stock surged 6.3% in one session",
-      "detail": "$0.40 → $0.42",
-      "timestamp": "2026-10-28T23:48:16.941622+00:00"
+      "headline": "Stock plunged 7.7% in one session",
+      "detail": "$0.04 → $0.04",
+      "timestamp": "2026-10-29T14:00:16.030941+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "high",
+      "ticker": "APX",
+      "exchange": "ASX",
+      "headline": "Stock surged 5.1% in one session",
+      "detail": "$1.27 → $1.34",
+      "timestamp": "2026-10-29T14:00:16.469101+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "high",
+      "ticker": "PLS",
+      "exchange": "ASX",
+      "headline": "Stock plunged 8.0% in one session",
+      "detail": "$2.99 → $2.75",
+      "timestamp": "2026-10-29T14:00:41.182833+00:00"
+    },
+    {
+      "type": "EXTREME VOLUME",
+      "severity": "high",
+      "ticker": "SYR",
+      "exchange": "ASX",
+      "headline": "3.0x average volume detected",
+      "detail": "Volume: 8,187,625 vs 20-day avg: 2,705,448 | Price up 10.0%",
+      "timestamp": "2026-10-29T14:01:08.830625+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "high",
+      "ticker": "SGR",
+      "exchange": "ASX",
+      "headline": "Stock surged 7.7% in one session",
+      "detail": "$0.13 → $0.14",
+      "timestamp": "2026-10-29T14:01:12.004165+00:00"
     },
     {
       "type": "INSIDER_BUY",
@@ -85,40 +148,31 @@
       "timestamp": "2026-10-19 00:00:00"
     },
     {
-      "type": "INSIDER_BUY",
+      "type": "VOLUME SPIKE",
       "severity": "medium",
-      "ticker": "S32",
+      "ticker": "CQR",
       "exchange": "ASX",
-      "headline": "Pearce (Stephen Thomas) (Independent Non-Executive Director) purchased 70,000 shares ($212,933)",
-      "detail": "Purchase at price 3.04 per share.",
-      "timestamp": "2026-10-22 00:00:00"
+      "headline": "2.3x average volume detected",
+      "detail": "Volume: 4,411,745 vs 20-day avg: 1,921,248 | Price up 0.8%",
+      "timestamp": "2026-10-29T14:00:19.146724+00:00"
     },
     {
       "type": "VOLUME SPIKE",
       "severity": "medium",
-      "ticker": "CCX",
-      "exchange": "ASX",
-      "headline": "2.7x average volume detected",
-      "detail": "Volume: 882,804 vs 20-day avg: 330,279 | Price down 0.0%",
-      "timestamp": "2026-10-28T23:47:07.309147+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "APX",
+      "ticker": "SUL",
       "exchange": "ASX",
       "headline": "2.4x average volume detected",
-      "detail": "Volume: 5,428,359 vs 20-day avg: 2,237,295 | Price up 15.7%",
-      "timestamp": "2026-10-28T23:47:07.807887+00:00"
+      "detail": "Volume: 1,430,371 vs 20-day avg: 596,398 | Price down 2.8%",
+      "timestamp": "2026-10-29T14:00:25.226489+00:00"
     },
     {
-      "type": "INSIDER_BUY",
-      "severity": "low",
-      "ticker": "PNI",
+      "type": "VOLUME SPIKE",
+      "severity": "medium",
+      "ticker": "ASX",
       "exchange": "ASX",
-      "headline": "Berends (Lorraine) (Independent Non-Executive Director) purchased 1,500 shares ($14,580)",
-      "detail": "Purchase at price 9.72 per share.",
-      "timestamp": "2026-09-29 00:00:00"
+      "headline": "2.3x average volume detected",
+      "detail": "Volume: 1,681,094 vs 20-day avg: 716,288 | Price up 3.0%",
+      "timestamp": "2026-10-29T14:01:04.439104+00:00"
     },
     {
       "type": "INSIDER_BUY",
@@ -154,15 +208,6 @@
       "exchange": "ASX",
       "headline": "Drummond (Craig Milton) (Independent Non-Executive Chairman) purchased 10,000 shares ($91,570)",
       "detail": "Purchase at price 9.16 per share.",
-      "timestamp": "2026-10-02 00:00:00"
-    },
-    {
-      "type": "INSIDER_BUY",
-      "severity": "low",
-      "ticker": "NAB",
-      "exchange": "ASX",
-      "headline": "Hunt (Warwick Ean) (Independent Non-Executive Director) purchased 60 shares ($1,610)",
-      "detail": "Purchase at price 26.85 per share.",
       "timestamp": "2026-10-02 00:00:00"
     },
     {
@@ -245,6 +290,24 @@
       "headline": "Korsanos (Antonia) (Director (Non-Executive)) purchased 4,255 shares ($17,439)",
       "detail": "Purchase at price 4.10 per share.",
       "timestamp": "2026-10-22 00:00:00"
+    },
+    {
+      "type": "INSIDER_BUY",
+      "severity": "low",
+      "ticker": "BAP",
+      "exchange": "ASX",
+      "headline": "Carey (Annette) (Director (Non-Executive)) purchased 25,000 shares ($14,592)",
+      "detail": "Purchase at price 0.58 per share.",
+      "timestamp": "2026-10-23 00:00:00"
+    },
+    {
+      "type": "INSIDER_BUY",
+      "severity": "low",
+      "ticker": "BAP",
+      "exchange": "ASX",
+      "headline": "Fraser (Andrew) (Director (Non-Executive)) purchased 60,000 shares ($37,134)",
+      "detail": "Purchase at price 0.62 per share.",
+      "timestamp": "2026-10-23 00:00:00"
     }
   ]
 }

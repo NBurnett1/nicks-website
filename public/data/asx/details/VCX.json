@@ -1,7 +1,7 @@
 {
   "ticker": "VCX",
   "name": "VICINITY STAPLED [VCX]",
-  "price": 2.4,
+  "price": 2.42,
   "valuationScore": -1.0,
   "marketCap": "11.3B",
   "sector": "Real Estate",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-01",
-      "price": 2.4
+      "price": 2.42
     }
   ],
   "testsPassed": 4,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 8.02,
-      "threshold": 8.93,
-      "label": "8.0x vs 8.9x sector"
+      "value": 8.07,
+      "threshold": 8.81,
+      "label": "8.1x vs 8.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 5.0,
+      "value": 4.97,
       "threshold": 5.0,
       "label": "5.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 14.67,
-      "threshold": 8.02,
-      "label": "Fwd 14.7x vs Trail 8.0x"
+      "value": 14.76,
+      "threshold": 8.07,
+      "label": "Fwd 14.8x vs Trail 8.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 2.21,
+      "value": 2.23,
       "threshold": 0.5,
-      "label": "P/S 8.0x ÷ Growth 3.6% = 2.21"
+      "label": "P/S 8.0x ÷ Growth 3.6% = 2.23"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 8.02,
-    "sectorPe": 10.51,
+    "pe": 8.07,
+    "sectorPe": 10.36,
     "pb": 0.92,
-    "ps": 7.97,
+    "ps": 8.02,
     "evEbitda": 18.56,
-    "fcfYield": 5.0,
-    "forwardPe": 14.67,
-    "dividendYield": 5.17,
+    "fcfYield": 4.97,
+    "forwardPe": 14.76,
+    "dividendYield": 5.19,
     "revenueGrowth": 3.6,
     "profitMargin": 98.48,
     "operatingMargin": 58.18,

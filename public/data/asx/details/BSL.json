@@ -1,9 +1,9 @@
 {
   "ticker": "BSL",
   "name": "BLUESCOPE FPO [BSL]",
-  "price": 33.13,
-  "valuationScore": -0.5,
-  "marketCap": "—",
+  "price": 33.19,
+  "valuationScore": 2.2,
+  "marketCap": "14.5B",
   "sector": "Basic Materials",
   "domain": "bluescope.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-01",
-      "price": 33.13
+      "price": 33.19
     }
   ],
   "testsPassed": 4,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 18.2,
-      "threshold": 15.0,
-      "label": "18.2x vs 15.0x sector"
+      "value": 18.54,
+      "threshold": 15.67,
+      "label": "18.5x vs 15.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -246,17 +246,17 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": 0.75,
       "threshold": 5.0,
-      "label": "No FCF data"
+      "label": "0.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 11.82,
-      "threshold": 18.2,
-      "label": "Fwd 11.8x vs Trail 18.2x"
+      "value": 11.84,
+      "threshold": 18.54,
+      "label": "Fwd 11.8x vs Trail 18.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": 1.45,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "P/S 0.9x ÷ Growth 0.6% = 1.45"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 18.2,
-    "sectorPe": 17.65,
+    "pe": 18.54,
+    "sectorPe": 18.44,
     "pb": 1.41,
-    "ps": null,
+    "ps": 0.87,
     "evEbitda": 9.58,
-    "fcfYield": null,
-    "forwardPe": 11.82,
-    "dividendYield": 3.91,
+    "fcfYield": 0.75,
+    "forwardPe": 11.84,
+    "dividendYield": 3.88,
     "revenueGrowth": 0.6,
     "profitMargin": 4.81,
     "operatingMargin": 6.86,

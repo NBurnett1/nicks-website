@@ -1,9 +1,9 @@
 {
   "ticker": "CGF",
   "name": "CHALLENGER FPO [CGF]",
-  "price": 11.88,
-  "valuationScore": 11.5,
-  "marketCap": "8.0B",
+  "price": 11.98,
+  "valuationScore": 13.2,
+  "marketCap": "8.1B",
   "sector": "Financial Services",
   "domain": "challenger.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-01",
-      "price": 11.88
+      "price": 11.98
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 20.84,
-      "threshold": 21.48,
-      "label": "20.8x vs 21.5x sector"
+      "value": 21.02,
+      "threshold": 21.25,
+      "label": "21.0x vs 21.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.98,
+      "value": 2.0,
       "threshold": 1.5,
-      "label": "1.98x vs 1.5x"
+      "label": "2.00x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -21.53,
+      "value": -21.35,
       "threshold": 5.0,
-      "label": "-21.5% vs 5%"
+      "label": "-21.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.01,
-      "threshold": 20.84,
-      "label": "Fwd 16.0x vs Trail 20.8x"
+      "value": 16.15,
+      "threshold": 21.02,
+      "label": "Fwd 16.1x vs Trail 21.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 20.84,
-    "sectorPe": 25.27,
-    "pb": 1.98,
-    "ps": 2.8,
+    "pe": 21.02,
+    "sectorPe": 25.0,
+    "pb": 2.0,
+    "ps": 2.82,
     "evEbitda": -8.87,
-    "fcfYield": -21.53,
-    "forwardPe": 16.01,
-    "dividendYield": 2.7,
+    "fcfYield": -21.35,
+    "forwardPe": 16.15,
+    "dividendYield": 2.72,
     "revenueGrowth": null,
     "profitMargin": 17.62,
     "operatingMargin": 60.43,
