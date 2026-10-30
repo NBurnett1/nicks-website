@@ -1,7 +1,7 @@
 {
   "ticker": "ARB",
   "name": "ARB CORP FPO [ARB]",
-  "price": 16.84,
+  "price": 16.67,
   "valuationScore": -1.1,
   "marketCap": "1.4B",
   "sector": "Consumer Discretionary",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-01",
-      "price": 16.83
+      "price": 16.67
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 15.17,
-      "threshold": 14.09,
-      "label": "15.2x vs 14.1x sector"
+      "value": 15.02,
+      "threshold": 13.48,
+      "label": "15.0x vs 13.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.9,
+      "value": 1.88,
       "threshold": 1.5,
-      "label": "1.90x vs 1.5x"
+      "label": "1.88x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.57,
+      "value": 4.6,
       "threshold": 5.0,
       "label": "4.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 13.97,
-      "threshold": 15.17,
-      "label": "Fwd 14.0x vs Trail 15.2x"
+      "value": 13.84,
+      "threshold": 15.02,
+      "label": "Fwd 13.8x vs Trail 15.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 15.17,
-    "sectorPe": 16.58,
-    "pb": 1.9,
-    "ps": 1.99,
+    "pe": 15.02,
+    "sectorPe": 15.86,
+    "pb": 1.88,
+    "ps": 1.98,
     "evEbitda": 9.98,
-    "fcfYield": 4.57,
-    "forwardPe": 13.97,
-    "dividendYield": 4.21,
+    "fcfYield": 4.6,
+    "forwardPe": 13.84,
+    "dividendYield": 4.2,
     "revenueGrowth": -6.3,
     "profitMargin": 13.08,
     "operatingMargin": 17.61,

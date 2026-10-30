@@ -1,7 +1,7 @@
 {
   "ticker": "AIA",
   "name": "AUCK AIRPT FPO NZX [AIA]",
-  "price": 6.79,
+  "price": 6.78,
   "valuationScore": 10.8,
   "marketCap": "11.6B",
   "sector": "Industrials",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-01",
-      "price": 6.8
+      "price": 6.78
     }
   ],
   "testsPassed": 3,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 39.97,
-      "threshold": 18.4,
-      "label": "40.0x vs 18.4x sector"
+      "value": 39.88,
+      "threshold": 18.39,
+      "label": "39.9x vs 18.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -5.02,
+      "value": -5.03,
       "threshold": 5.0,
       "label": "-5.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 37.7,
-      "threshold": 39.97,
-      "label": "Fwd 37.7x vs Trail 40.0x"
+      "value": 37.62,
+      "threshold": 39.88,
+      "label": "Fwd 37.6x vs Trail 39.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 4.31,
+      "value": 4.3,
       "threshold": 0.5,
-      "label": "P/S 11.6x ÷ Growth 2.7% = 4.31"
+      "label": "P/S 11.6x ÷ Growth 2.7% = 4.30"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 39.97,
-    "sectorPe": 21.65,
+    "pe": 39.88,
+    "sectorPe": 21.64,
     "pb": 1.31,
-    "ps": 11.64,
+    "ps": 11.61,
     "evEbitda": 19.99,
-    "fcfYield": -5.02,
-    "forwardPe": 37.7,
-    "dividendYield": 1.77,
+    "fcfYield": -5.03,
+    "forwardPe": 37.62,
+    "dividendYield": 1.76,
     "revenueGrowth": 2.7,
     "profitMargin": 33.63,
     "operatingMargin": 45.31,

@@ -2,7 +2,7 @@
   "ticker": "SPK",
   "name": "SPARK NZ FPO NZX [SPK]",
   "price": 1.58,
-  "valuationScore": -30.4,
+  "valuationScore": -30.1,
   "marketCap": "3.0B",
   "sector": "Communication Services",
   "domain": "sparknz.co.nz",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-01",
-      "price": 1.58
+      "price": 1.59
     }
   ],
   "testsPassed": 4,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 6.88,
-      "threshold": 41.53,
-      "label": "6.9x vs 41.5x sector"
+      "value": 7.2,
+      "threshold": 41.31,
+      "label": "7.2x vs 41.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 32.52,
+      "value": 32.46,
       "threshold": 5.0,
       "label": "32.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 13.15,
-      "threshold": 6.88,
-      "label": "Fwd 13.2x vs Trail 6.9x"
+      "value": 13.18,
+      "threshold": 7.2,
+      "label": "Fwd 13.2x vs Trail 7.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 6.88,
-    "sectorPe": 48.86,
+    "pe": 7.2,
+    "sectorPe": 48.6,
     "pb": 2.24,
     "ps": 0.76,
     "evEbitda": 4.74,
-    "fcfYield": 32.52,
-    "forwardPe": 13.15,
-    "dividendYield": 7.9,
+    "fcfYield": 32.46,
+    "forwardPe": 13.18,
+    "dividendYield": 7.73,
     "revenueGrowth": null,
     "profitMargin": 12.64,
     "operatingMargin": 26.7,

@@ -1,8 +1,8 @@
 {
   "ticker": "AGL",
   "name": "AGL ENERGY FPO [AGL]",
-  "price": 9.01,
-  "valuationScore": -1.3,
+  "price": 9.02,
+  "valuationScore": -1.2,
   "marketCap": "6.1B",
   "sector": "Utilities",
   "domain": "agl.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-01",
-      "price": 9.01
+      "price": 9.02
     }
   ],
   "testsPassed": 5,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 7.9,
-      "threshold": 17.71,
-      "label": "7.9x vs 17.7x sector"
+      "value": 7.98,
+      "threshold": 17.54,
+      "label": "8.0x vs 17.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -2.23,
+      "value": -2.22,
       "threshold": 5.0,
       "label": "-2.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 13.06,
-      "threshold": 7.9,
-      "label": "Fwd 13.1x vs Trail 7.9x"
+      "value": 13.08,
+      "threshold": 7.98,
+      "label": "Fwd 13.1x vs Trail 8.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 7.9,
-    "sectorPe": 20.83,
+    "pe": 7.98,
+    "sectorPe": 20.63,
     "pb": 1.15,
-    "ps": 0.43,
+    "ps": 0.44,
     "evEbitda": 7.31,
-    "fcfYield": -2.23,
-    "forwardPe": 13.06,
-    "dividendYield": 5.88,
+    "fcfYield": -2.22,
+    "forwardPe": 13.08,
+    "dividendYield": 5.79,
     "revenueGrowth": -4.7,
     "profitMargin": 5.43,
     "operatingMargin": 14.16,

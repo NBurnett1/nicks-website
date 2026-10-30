@@ -1,9 +1,9 @@
 {
   "ticker": "WBC",
   "name": "WESTPAC FPO [WBC]",
-  "price": 37.55,
-  "valuationScore": -0.6,
-  "marketCap": "128.2B",
+  "price": 36.82,
+  "valuationScore": -0.7,
+  "marketCap": "125.7B",
   "sector": "Financials",
   "domain": "westpac.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-01",
-      "price": 37.55
+      "price": 36.82
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 18.14,
-      "threshold": 17.29,
-      "label": "18.1x vs 17.3x sector"
+      "value": 18.32,
+      "threshold": 17.4,
+      "label": "18.3x vs 17.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.81,
+      "value": 1.78,
       "threshold": 1.5,
-      "label": "1.81x vs 1.5x"
+      "label": "1.78x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 17.59,
-      "threshold": 18.14,
-      "label": "Fwd 17.6x vs Trail 18.1x"
+      "value": 17.29,
+      "threshold": 18.32,
+      "label": "Fwd 17.3x vs Trail 18.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 3.84,
+      "value": 3.76,
       "threshold": 0.5,
-      "label": "P/S 5.8x ÷ Growth 1.5% = 3.84"
+      "label": "P/S 5.6x ÷ Growth 1.5% = 3.76"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 18.14,
-    "sectorPe": 20.34,
-    "pb": 1.81,
-    "ps": 5.76,
+    "pe": 18.32,
+    "sectorPe": 20.47,
+    "pb": 1.78,
+    "ps": 5.65,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 17.59,
-    "dividendYield": 4.22,
+    "forwardPe": 17.29,
+    "dividendYield": 4.14,
     "revenueGrowth": 1.5,
     "profitMargin": 31.5,
     "operatingMargin": 50.43,
