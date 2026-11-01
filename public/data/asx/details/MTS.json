@@ -2,15 +2,11 @@
   "ticker": "MTS",
   "name": "METCASHLTD FPO [MTS]",
   "price": 3.21,
-  "valuationScore": -2.5,
-  "marketCap": "—",
+  "valuationScore": -6.6,
+  "marketCap": "3.5B",
   "sector": "Consumer Defensive",
   "domain": "metcash.com",
   "chartData": [
-    {
-      "date": "2025-11-02",
-      "price": 3.6
-    },
     {
       "date": "2025-11-09",
       "price": 3.7
@@ -226,9 +222,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 12.84,
-      "threshold": 17.64,
-      "label": "12.8x vs 17.6x sector"
+      "value": 12.35,
+      "threshold": 17.65,
+      "label": "12.3x vs 17.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -246,17 +242,17 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": null,
-      "value": null,
+      "passed": true,
+      "value": 9.64,
       "threshold": 5.0,
-      "label": "No FCF data"
+      "label": "9.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
-      "passed": true,
+      "passed": false,
       "value": 12.6,
-      "threshold": 12.84,
-      "label": "Fwd 12.6x vs Trail 12.8x"
+      "threshold": 12.35,
+      "label": "Fwd 12.6x vs Trail 12.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,10 +263,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": 0.68,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "P/S 0.2x ÷ Growth 0.3% = 0.68"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,12 +277,12 @@
     }
   },
   "metrics": {
-    "pe": 12.84,
-    "sectorPe": 20.75,
+    "pe": 12.35,
+    "sectorPe": 20.77,
     "pb": 2.07,
-    "ps": null,
+    "ps": 0.2,
     "evEbitda": 9.88,
-    "fcfYield": null,
+    "fcfYield": 9.64,
     "forwardPe": 12.6,
     "dividendYield": 5.92,
     "revenueGrowth": 0.3,

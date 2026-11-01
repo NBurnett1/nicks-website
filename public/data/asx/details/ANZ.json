@@ -2,15 +2,11 @@
   "ticker": "ANZ",
   "name": "ANZ GROUP FPO [ANZ]",
   "price": 40.81,
-  "valuationScore": -0.3,
-  "marketCap": "—",
+  "valuationScore": -0.4,
+  "marketCap": "122.9B",
   "sector": "Financials",
   "domain": "anz.com.au",
   "chartData": [
-    {
-      "date": "2025-11-02",
-      "price": 35.06
-    },
     {
       "date": "2025-11-09",
       "price": 35.2
@@ -227,7 +223,7 @@
       "name": "P/E Discount",
       "passed": false,
       "value": 20.72,
-      "threshold": 17.58,
+      "threshold": 17.59,
       "label": "20.7x vs 17.6x sector"
     },
     "pbBelowBook": {
@@ -267,10 +263,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": -2.1,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "FAIL — Revenue declining -2.1%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,9 +278,9 @@
   },
   "metrics": {
     "pe": 20.72,
-    "sectorPe": 20.68,
+    "sectorPe": 20.7,
     "pb": 1.73,
-    "ps": null,
+    "ps": 5.71,
     "evEbitda": null,
     "fcfYield": null,
     "forwardPe": 15.88,
