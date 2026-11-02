@@ -1,9 +1,9 @@
 {
   "ticker": "NAB",
   "name": "NAT. BANK FPO [NAB]",
-  "price": 41.51,
-  "valuationScore": 0.1,
-  "marketCap": "127.1B",
+  "price": 40.91,
+  "valuationScore": 0.3,
+  "marketCap": "—",
   "sector": "Financials",
   "domain": "nab.com.au",
   "chartData": [
@@ -214,6 +214,10 @@
     {
       "date": "2026-11-01",
       "price": 41.51
+    },
+    {
+      "date": "2026-11-08",
+      "price": 40.91
     }
   ],
   "testsPassed": 2,
@@ -222,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 20.75,
-      "threshold": 17.59,
-      "label": "20.8x vs 17.6x sector"
+      "value": 20.45,
+      "threshold": 17.39,
+      "label": "20.5x vs 17.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.1,
+      "value": 2.07,
       "threshold": 1.5,
-      "label": "2.10x vs 1.5x"
+      "label": "2.07x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -250,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 17.11,
-      "threshold": 20.75,
-      "label": "Fwd 17.1x vs Trail 20.8x"
+      "value": 16.86,
+      "threshold": 20.45,
+      "label": "Fwd 16.9x vs Trail 20.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -263,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": 1.0,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 6.1x ÷ Growth 6.1% = 1.00"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -277,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 20.75,
-    "sectorPe": 20.7,
-    "pb": 2.1,
-    "ps": 6.09,
+    "pe": 20.45,
+    "sectorPe": 20.45,
+    "pb": 2.07,
+    "ps": null,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 17.11,
+    "forwardPe": 16.86,
     "dividendYield": 4.1,
     "revenueGrowth": 6.1,
     "profitMargin": 29.26,

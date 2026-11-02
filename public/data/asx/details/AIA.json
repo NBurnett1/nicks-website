@@ -1,8 +1,8 @@
 {
   "ticker": "AIA",
   "name": "AUCK AIRPT FPO NZX [AIA]",
-  "price": 6.78,
-  "valuationScore": 10.9,
+  "price": 6.83,
+  "valuationScore": 11.0,
   "marketCap": "11.6B",
   "sector": "Industrials",
   "domain": "aucklandairport.co.nz",
@@ -214,6 +214,10 @@
     {
       "date": "2026-11-01",
       "price": 6.78
+    },
+    {
+      "date": "2026-11-08",
+      "price": 6.83
     }
   ],
   "testsPassed": 3,
@@ -222,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 39.88,
-      "threshold": 18.39,
-      "label": "39.9x vs 18.4x sector"
+      "value": 40.18,
+      "threshold": 18.47,
+      "label": "40.2x vs 18.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.31,
+      "value": 1.32,
       "threshold": 1.5,
-      "label": "1.31x vs 1.5x"
+      "label": "1.32x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 20.11,
+      "value": 20.23,
       "threshold": 10.0,
-      "label": "20.1x vs 10x"
+      "label": "20.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -5.03,
+      "value": -5.0,
       "threshold": 5.0,
       "label": "-5.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 37.62,
-      "threshold": 39.88,
-      "label": "Fwd 37.6x vs Trail 39.9x"
+      "value": 37.89,
+      "threshold": 40.18,
+      "label": "Fwd 37.9x vs Trail 40.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 4.3,
+      "value": 4.33,
       "threshold": 0.5,
-      "label": "P/S 11.6x ÷ Growth 2.7% = 4.30"
+      "label": "P/S 11.7x ÷ Growth 2.7% = 4.33"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -277,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 39.88,
-    "sectorPe": 21.64,
-    "pb": 1.31,
-    "ps": 11.61,
-    "evEbitda": 20.11,
-    "fcfYield": -5.03,
-    "forwardPe": 37.62,
+    "pe": 40.18,
+    "sectorPe": 21.73,
+    "pb": 1.32,
+    "ps": 11.7,
+    "evEbitda": 20.23,
+    "fcfYield": -5.0,
+    "forwardPe": 37.89,
     "dividendYield": 1.75,
     "revenueGrowth": 2.7,
     "profitMargin": 33.63,

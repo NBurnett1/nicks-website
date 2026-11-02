@@ -1,9 +1,9 @@
 {
   "ticker": "WTC",
   "name": "WISETECH FPO [WTC]",
-  "price": 40.81,
-  "valuationScore": 3.0,
-  "marketCap": "13.7B",
+  "price": 40.52,
+  "valuationScore": 2.8,
+  "marketCap": "13.6B",
   "sector": "Technology",
   "domain": "wisetechglobal.com",
   "chartData": [
@@ -214,6 +214,10 @@
     {
       "date": "2026-11-01",
       "price": 40.81
+    },
+    {
+      "date": "2026-11-08",
+      "price": 40.52
     }
   ],
   "testsPassed": 4,
@@ -222,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 51.66,
-      "threshold": 34.05,
-      "label": "51.7x vs 34.0x sector"
+      "value": 51.29,
+      "threshold": 34.39,
+      "label": "51.3x vs 34.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.92,
+      "value": 4.89,
       "threshold": 1.5,
-      "label": "4.92x vs 1.5x"
+      "label": "4.89x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -243,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.02,
+      "value": 3.04,
       "threshold": 5.0,
       "label": "3.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 22.21,
-      "threshold": 51.66,
-      "label": "Fwd 22.2x vs Trail 51.7x"
+      "value": 22.05,
+      "threshold": 51.29,
+      "label": "Fwd 22.1x vs Trail 51.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -277,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 51.66,
-    "sectorPe": 40.06,
-    "pb": 4.92,
-    "ps": 9.83,
+    "pe": 51.29,
+    "sectorPe": 40.46,
+    "pb": 4.89,
+    "ps": 9.76,
     "evEbitda": 27.42,
-    "fcfYield": 3.02,
-    "forwardPe": 22.21,
+    "fcfYield": 3.04,
+    "forwardPe": 22.05,
     "dividendYield": 0.54,
     "revenueGrowth": 82.0,
     "profitMargin": 12.8,

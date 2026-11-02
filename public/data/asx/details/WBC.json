@@ -1,9 +1,9 @@
 {
   "ticker": "WBC",
   "name": "WESTPAC FPO [WBC]",
-  "price": 36.82,
-  "valuationScore": -0.9,
-  "marketCap": "125.7B",
+  "price": 37.19,
+  "valuationScore": -0.6,
+  "marketCap": "127.0B",
   "sector": "Financials",
   "domain": "westpac.com.au",
   "chartData": [
@@ -214,24 +214,28 @@
     {
       "date": "2026-11-01",
       "price": 36.82
+    },
+    {
+      "date": "2026-11-08",
+      "price": 37.19
     }
   ],
-  "testsPassed": 3,
-  "grade": "C",
+  "testsPassed": 2,
+  "grade": "D",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 18.14,
-      "threshold": 17.59,
-      "label": "18.1x vs 17.6x sector"
+      "value": 18.32,
+      "threshold": 17.39,
+      "label": "18.3x vs 17.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.78,
+      "value": 1.79,
       "threshold": 1.5,
-      "label": "1.78x vs 1.5x"
+      "label": "1.79x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -250,45 +254,45 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 17.29,
-      "threshold": 18.14,
-      "label": "Fwd 17.3x vs Trail 18.1x"
+      "value": 17.11,
+      "threshold": 18.32,
+      "label": "Fwd 17.1x vs Trail 18.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": true,
-      "value": 31.5,
+      "value": 31.34,
       "threshold": 5.0,
-      "label": "Margin 31.5% / ROE 9.8%"
+      "label": "Margin 31.3% / ROE 9.5%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 3.76,
+      "value": -6.4,
       "threshold": 0.5,
-      "label": "P/S 5.6x ÷ Growth 1.5% = 3.76"
+      "label": "FAIL — Revenue declining -6.4%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
-      "passed": true,
-      "value": 1.5,
+      "passed": false,
+      "value": -6.4,
       "threshold": -5.0,
-      "label": "1.5% growth (floor: -5%)"
+      "label": "-6.4% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 18.14,
-    "sectorPe": 20.7,
-    "pb": 1.78,
-    "ps": 5.65,
+    "pe": 18.32,
+    "sectorPe": 20.45,
+    "pb": 1.79,
+    "ps": 5.84,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 17.29,
+    "forwardPe": 17.11,
     "dividendYield": 4.18,
-    "revenueGrowth": 1.5,
-    "profitMargin": 31.5,
-    "operatingMargin": 50.43,
-    "roe": 9.8,
+    "revenueGrowth": -6.4,
+    "profitMargin": 31.34,
+    "operatingMargin": 39.83,
+    "roe": 9.46,
     "debtEquity": null
   }
 }

@@ -1,7 +1,7 @@
 {
   "ticker": "JBH",
   "name": "JB HI-FI FPO [JBH]",
-  "price": 72.88,
+  "price": 72.9,
   "valuationScore": 0.8,
   "marketCap": "8.0B",
   "sector": "Consumer Discretionary",
@@ -214,6 +214,10 @@
     {
       "date": "2026-11-01",
       "price": 72.88
+    },
+    {
+      "date": "2026-11-08",
+      "price": 72.9
     }
   ],
   "testsPassed": 4,
@@ -222,8 +226,8 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 16.3,
-      "threshold": 14.05,
+      "value": 16.31,
+      "threshold": 14.12,
       "label": "16.3x vs 14.1x sector"
     },
     "pbBelowBook": {
@@ -250,8 +254,8 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.19,
-      "threshold": 16.3,
+      "value": 16.24,
+      "threshold": 16.31,
       "label": "Fwd 16.2x vs Trail 16.3x"
     },
     "profitabilityCheck": {
@@ -277,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 16.3,
-    "sectorPe": 16.53,
+    "pe": 16.31,
+    "sectorPe": 16.62,
     "pb": 4.86,
     "ps": 0.72,
     "evEbitda": 10.65,
     "fcfYield": 6.91,
-    "forwardPe": 16.19,
+    "forwardPe": 16.24,
     "dividendYield": 4.62,
     "revenueGrowth": 1.9,
     "profitMargin": 4.43,

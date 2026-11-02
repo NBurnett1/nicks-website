@@ -1,8 +1,8 @@
 {
   "ticker": "SUL",
   "name": "SUPARETAIL FPO [SUL]",
-  "price": 12.73,
-  "valuationScore": -6.5,
+  "price": 13.0,
+  "valuationScore": -6.2,
   "marketCap": "2.9B",
   "sector": "Consumer Discretionary",
   "domain": "superretailgroup.com.au",
@@ -214,24 +214,28 @@
     {
       "date": "2026-11-01",
       "price": 12.73
+    },
+    {
+      "date": "2026-11-08",
+      "price": 13.0
     }
   ],
-  "testsPassed": 6,
-  "grade": "A",
+  "testsPassed": 5,
+  "grade": "B",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": true,
-      "value": 13.99,
-      "threshold": 14.05,
-      "label": "14.0x vs 14.1x sector"
+      "passed": false,
+      "value": 14.29,
+      "threshold": 14.12,
+      "label": "14.3x vs 14.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.21,
+      "value": 2.26,
       "threshold": 1.5,
-      "label": "2.21x vs 1.5x"
+      "label": "2.26x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -243,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 13.82,
+      "value": 13.53,
       "threshold": 5.0,
-      "label": "13.8% vs 5%"
+      "label": "13.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.26,
-      "threshold": 13.99,
-      "label": "Fwd 12.3x vs Trail 14.0x"
+      "value": 12.52,
+      "threshold": 14.29,
+      "label": "Fwd 12.5x vs Trail 14.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -277,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 13.99,
-    "sectorPe": 16.53,
-    "pb": 2.21,
-    "ps": 0.68,
+    "pe": 14.29,
+    "sectorPe": 16.62,
+    "pb": 2.26,
+    "ps": 0.7,
     "evEbitda": 9.26,
-    "fcfYield": 13.82,
-    "forwardPe": 12.26,
+    "fcfYield": 13.53,
+    "forwardPe": 12.52,
     "dividendYield": 5.11,
     "revenueGrowth": 2.1,
     "profitMargin": 4.9,

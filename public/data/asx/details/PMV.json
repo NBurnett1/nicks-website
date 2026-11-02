@@ -1,9 +1,9 @@
 {
   "ticker": "PMV",
   "name": "PREM INV. FPO [PMV]",
-  "price": 13.4,
-  "valuationScore": -4.3,
-  "marketCap": "2.1B",
+  "price": 13.54,
+  "valuationScore": -4.2,
+  "marketCap": "2.2B",
   "sector": "Consumer Discretionary",
   "domain": "premierinvestments.com.au",
   "chartData": [
@@ -214,6 +214,10 @@
     {
       "date": "2026-11-01",
       "price": 13.4
+    },
+    {
+      "date": "2026-11-08",
+      "price": 13.54
     }
   ],
   "testsPassed": 3,
@@ -222,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 16.75,
-      "threshold": 14.05,
-      "label": "16.8x vs 14.1x sector"
+      "value": 16.93,
+      "threshold": 14.12,
+      "label": "16.9x vs 14.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.22,
+      "value": 2.24,
       "threshold": 1.5,
-      "label": "2.22x vs 1.5x"
+      "label": "2.24x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -243,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 12.48,
+      "value": 12.35,
       "threshold": 5.0,
-      "label": "12.5% vs 5%"
+      "label": "12.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 13.1,
-      "threshold": 16.75,
-      "label": "Fwd 13.1x vs Trail 16.8x"
+      "value": 13.23,
+      "threshold": 16.93,
+      "label": "Fwd 13.2x vs Trail 16.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -277,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 16.75,
-    "sectorPe": 16.53,
-    "pb": 2.22,
-    "ps": 2.65,
+    "pe": 16.93,
+    "sectorPe": 16.62,
+    "pb": 2.24,
+    "ps": 2.67,
     "evEbitda": 10.94,
-    "fcfYield": 12.48,
-    "forwardPe": 13.1,
+    "fcfYield": 12.35,
+    "forwardPe": 13.23,
     "dividendYield": 7.09,
     "revenueGrowth": null,
     "profitMargin": 15.98,

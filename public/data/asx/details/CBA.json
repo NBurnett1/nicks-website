@@ -1,9 +1,9 @@
 {
   "ticker": "CBA",
   "name": "CWLTH BANK FPO [CBA]",
-  "price": 166.72,
-  "valuationScore": 3.3,
-  "marketCap": "278.8B",
+  "price": 165.05,
+  "valuationScore": 3.6,
+  "marketCap": "275.9B",
   "sector": "Financials",
   "domain": "commbank.com.au",
   "chartData": [
@@ -214,6 +214,10 @@
     {
       "date": "2026-11-01",
       "price": 166.72
+    },
+    {
+      "date": "2026-11-08",
+      "price": 165.05
     }
   ],
   "testsPassed": 3,
@@ -222,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 25.57,
-      "threshold": 17.59,
-      "label": "25.6x vs 17.6x sector"
+      "value": 25.31,
+      "threshold": 17.39,
+      "label": "25.3x vs 17.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.54,
+      "value": 3.51,
       "threshold": 1.5,
-      "label": "3.54x vs 1.5x"
+      "label": "3.51x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -250,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 24.54,
-      "threshold": 25.57,
-      "label": "Fwd 24.5x vs Trail 25.6x"
+      "value": 24.29,
+      "threshold": 25.31,
+      "label": "Fwd 24.3x vs Trail 25.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 1.46,
+      "value": 1.45,
       "threshold": 0.5,
-      "label": "P/S 9.5x ÷ Growth 6.5% = 1.46"
+      "label": "P/S 9.4x ÷ Growth 6.5% = 1.45"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -277,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 25.57,
-    "sectorPe": 20.7,
-    "pb": 3.54,
-    "ps": 9.49,
+    "pe": 25.31,
+    "sectorPe": 20.45,
+    "pb": 3.51,
+    "ps": 9.4,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 24.54,
+    "forwardPe": 24.29,
     "dividendYield": 3.03,
     "revenueGrowth": 6.5,
     "profitMargin": 37.0,

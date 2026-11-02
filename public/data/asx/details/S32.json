@@ -1,7 +1,7 @@
 {
   "ticker": "S32",
   "name": "SOUTH32 FPO [S32]",
-  "price": 4.34,
+  "price": 4.33,
   "valuationScore": 3.3,
   "marketCap": "19.4B",
   "sector": "Materials",
@@ -214,6 +214,10 @@
     {
       "date": "2026-11-01",
       "price": 4.34
+    },
+    {
+      "date": "2026-11-08",
+      "price": 4.33
     }
   ],
   "testsPassed": 4,
@@ -222,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 12.4,
-      "threshold": 14.98,
-      "label": "12.4x vs 15.0x sector"
+      "value": 12.37,
+      "threshold": 14.95,
+      "label": "12.4x vs 14.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -250,8 +254,8 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 14.1,
-      "threshold": 12.4,
+      "value": 14.07,
+      "threshold": 12.37,
       "label": "Fwd 14.1x vs Trail 12.4x"
     },
     "profitabilityCheck": {
@@ -277,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 12.4,
-    "sectorPe": 17.63,
+    "pe": 12.37,
+    "sectorPe": 17.58,
     "pb": 1.41,
-    "ps": 3.27,
+    "ps": 3.26,
     "evEbitda": 15.57,
     "fcfYield": -0.07,
-    "forwardPe": 14.1,
+    "forwardPe": 14.07,
     "dividendYield": 3.01,
     "revenueGrowth": 1.1,
     "profitMargin": 18.3,
