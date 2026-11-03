@@ -1,9 +1,9 @@
 {
   "ticker": "NHC",
   "name": "NEW HOPE FPO [NHC]",
-  "price": 5.93,
-  "valuationScore": 3.2,
-  "marketCap": "5.0B",
+  "price": 5.67,
+  "valuationScore": 2.5,
+  "marketCap": "4.8B",
   "sector": "Materials",
   "domain": "newhopegroup.com.au",
   "chartData": [
@@ -217,25 +217,25 @@
     },
     {
       "date": "2026-11-08",
-      "price": 5.93
+      "price": 5.66
     }
   ],
-  "testsPassed": 4,
-  "grade": "C",
+  "testsPassed": 5,
+  "grade": "B",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 31.21,
-      "threshold": 14.95,
-      "label": "31.2x vs 14.9x sector"
+      "value": 29.82,
+      "threshold": 15.06,
+      "label": "29.8x vs 15.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.91,
+      "value": 1.83,
       "threshold": 1.5,
-      "label": "1.91x vs 1.5x"
+      "label": "1.83x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -246,17 +246,17 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 4.81,
+      "passed": true,
+      "value": 5.04,
       "threshold": 5.0,
-      "label": "4.8% vs 5%"
+      "label": "5.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.95,
-      "threshold": 31.21,
-      "label": "Fwd 12.9x vs Trail 31.2x"
+      "value": 12.37,
+      "threshold": 29.82,
+      "label": "Fwd 12.4x vs Trail 29.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.11,
+      "value": 0.1,
       "threshold": 0.5,
-      "label": "P/S 2.8x ÷ Growth 25.9% = 0.11"
+      "label": "P/S 2.7x ÷ Growth 25.9% = 0.10"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 31.21,
-    "sectorPe": 17.58,
-    "pb": 1.91,
-    "ps": 2.83,
+    "pe": 29.82,
+    "sectorPe": 17.71,
+    "pb": 1.83,
+    "ps": 2.71,
     "evEbitda": 9.27,
-    "fcfYield": 4.81,
-    "forwardPe": 12.95,
+    "fcfYield": 5.04,
+    "forwardPe": 12.37,
     "dividendYield": 10.1,
     "revenueGrowth": 25.9,
     "profitMargin": 9.11,

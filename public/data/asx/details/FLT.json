@@ -1,8 +1,8 @@
 {
   "ticker": "FLT",
   "name": "FLIGHT CTR FPO [FLT]",
-  "price": 11.7,
-  "valuationScore": 1.3,
+  "price": 11.85,
+  "valuationScore": 1.1,
   "marketCap": "2.4B",
   "sector": "Consumer Cyclical",
   "domain": "fctgl.com",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-08",
-      "price": 11.7
+      "price": 11.85
     }
   ],
   "testsPassed": 5,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 16.96,
-      "threshold": 22.59,
-      "label": "17.0x vs 22.6x sector"
+      "value": 16.46,
+      "threshold": 22.61,
+      "label": "16.5x vs 22.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.18,
+      "value": 2.21,
       "threshold": 1.5,
-      "label": "2.18x vs 1.5x"
+      "label": "2.21x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 12.85,
+      "value": 13.16,
       "threshold": 10.0,
-      "label": "12.9x vs 10x"
+      "label": "13.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.53,
+      "value": 5.46,
       "threshold": 5.0,
       "label": "5.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 9.41,
-      "threshold": 16.96,
-      "label": "Fwd 9.4x vs Trail 17.0x"
+      "value": 9.53,
+      "threshold": 16.46,
+      "label": "Fwd 9.5x vs Trail 16.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 16.96,
-    "sectorPe": 26.58,
-    "pb": 2.18,
-    "ps": 0.83,
-    "evEbitda": 12.85,
-    "fcfYield": 5.53,
-    "forwardPe": 9.41,
+    "pe": 16.46,
+    "sectorPe": 26.6,
+    "pb": 2.21,
+    "ps": 0.84,
+    "evEbitda": 13.16,
+    "fcfYield": 5.46,
+    "forwardPe": 9.53,
     "dividendYield": 3.7,
     "revenueGrowth": -0.7,
     "profitMargin": 5.22,

@@ -2,7 +2,7 @@
   "ticker": "AZJ",
   "name": "AURIZON FPO [AZJ]",
   "price": 3.92,
-  "valuationScore": -3.6,
+  "valuationScore": -3.8,
   "marketCap": "6.6B",
   "sector": "Industrials",
   "domain": "aurizon.com.au",
@@ -217,25 +217,25 @@
     },
     {
       "date": "2026-11-08",
-      "price": 3.92
+      "price": 3.91
     }
   ],
-  "testsPassed": 5,
-  "grade": "B",
+  "testsPassed": 6,
+  "grade": "A",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": false,
-      "value": 18.67,
-      "threshold": 18.47,
-      "label": "18.7x vs 18.5x sector"
+      "passed": true,
+      "value": 18.64,
+      "threshold": 18.85,
+      "label": "18.6x vs 18.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.68,
+      "value": 1.67,
       "threshold": 1.5,
-      "label": "1.68x vs 1.5x"
+      "label": "1.67x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.34,
+      "value": 4.35,
       "threshold": 5.0,
       "label": "4.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 15.92,
-      "threshold": 18.67,
-      "label": "Fwd 15.9x vs Trail 18.7x"
+      "value": 15.9,
+      "threshold": 18.64,
+      "label": "Fwd 15.9x vs Trail 18.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 18.67,
-    "sectorPe": 21.73,
-    "pb": 1.68,
+    "pe": 18.64,
+    "sectorPe": 22.18,
+    "pb": 1.67,
     "ps": 1.58,
     "evEbitda": 7.6,
-    "fcfYield": 4.34,
-    "forwardPe": 15.92,
+    "fcfYield": 4.35,
+    "forwardPe": 15.9,
     "dividendYield": 5.91,
     "revenueGrowth": 9.0,
     "profitMargin": 8.69,

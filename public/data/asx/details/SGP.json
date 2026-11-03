@@ -1,9 +1,9 @@
 {
   "ticker": "SGP",
   "name": "STOCKLAND. STAPLED [SGP]",
-  "price": 4.29,
-  "valuationScore": 0.5,
-  "marketCap": "10.4B",
+  "price": 4.36,
+  "valuationScore": 0.6,
+  "marketCap": "10.6B",
   "sector": "Real Estate",
   "domain": "stockland.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-08",
-      "price": 4.29
+      "price": 4.36
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 10.46,
-      "threshold": 8.95,
-      "label": "10.5x vs 8.9x sector"
+      "value": 10.63,
+      "threshold": 8.99,
+      "label": "10.6x vs 9.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.97,
+      "value": 0.99,
       "threshold": 1.5,
-      "label": "0.97x vs 1.5x"
+      "label": "0.99x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 15.19,
+      "value": 15.16,
       "threshold": 10.0,
       "label": "15.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.95,
+      "value": 2.9,
       "threshold": 5.0,
-      "label": "3.0% vs 5%"
+      "label": "2.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 11.13,
-      "threshold": 10.46,
-      "label": "Fwd 11.1x vs Trail 10.5x"
+      "value": 11.31,
+      "threshold": 10.63,
+      "label": "Fwd 11.3x vs Trail 10.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.19,
+      "value": 0.2,
       "threshold": 0.5,
-      "label": "P/S 2.7x ÷ Growth 14.1% = 0.19"
+      "label": "P/S 2.8x ÷ Growth 14.1% = 0.20"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 10.46,
-    "sectorPe": 10.53,
-    "pb": 0.97,
-    "ps": 2.73,
-    "evEbitda": 15.19,
-    "fcfYield": 2.95,
-    "forwardPe": 11.13,
+    "pe": 10.63,
+    "sectorPe": 10.57,
+    "pb": 0.99,
+    "ps": 2.77,
+    "evEbitda": 15.16,
+    "fcfYield": 2.9,
+    "forwardPe": 11.31,
     "dividendYield": 5.86,
     "revenueGrowth": 14.1,
     "profitMargin": 25.99,

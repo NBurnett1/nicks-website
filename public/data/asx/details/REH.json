@@ -1,9 +1,9 @@
 {
   "ticker": "REH",
   "name": "REECE FPO [REH]",
-  "price": 18.11,
-  "valuationScore": 5.0,
-  "marketCap": "11.1B",
+  "price": 18.24,
+  "valuationScore": 4.7,
+  "marketCap": "11.2B",
   "sector": "Industrials",
   "domain": "reece.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-08",
-      "price": 18.11
+      "price": 18.24
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 36.96,
-      "threshold": 18.47,
-      "label": "37.0x vs 18.5x sector"
+      "value": 35.08,
+      "threshold": 18.85,
+      "label": "35.1x vs 18.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.97,
+      "value": 2.99,
       "threshold": 1.5,
-      "label": "2.97x vs 1.5x"
+      "label": "2.99x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 17.8,
+      "value": 18.69,
       "threshold": 10.0,
-      "label": "17.8x vs 10x"
+      "label": "18.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.52,
+      "value": 4.49,
       "threshold": 5.0,
       "label": "4.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 29.55,
-      "threshold": 36.96,
-      "label": "Fwd 29.6x vs Trail 37.0x"
+      "value": 29.72,
+      "threshold": 35.08,
+      "label": "Fwd 29.7x vs Trail 35.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 36.96,
-    "sectorPe": 21.73,
-    "pb": 2.97,
-    "ps": 1.19,
-    "evEbitda": 17.8,
-    "fcfYield": 4.52,
-    "forwardPe": 29.55,
+    "pe": 35.08,
+    "sectorPe": 22.18,
+    "pb": 2.99,
+    "ps": 1.2,
+    "evEbitda": 18.69,
+    "fcfYield": 4.49,
+    "forwardPe": 29.72,
     "dividendYield": 1.1,
     "revenueGrowth": 3.4,
     "profitMargin": 3.29,

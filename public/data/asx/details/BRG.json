@@ -1,9 +1,9 @@
 {
   "ticker": "BRG",
   "name": "BREVILLE FPO [BRG]",
-  "price": 30.77,
-  "valuationScore": 10.3,
-  "marketCap": "4.5B",
+  "price": 30.41,
+  "valuationScore": 10.0,
+  "marketCap": "4.4B",
   "sector": "Consumer Discretionary",
   "domain": "brevillegroup.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-08",
-      "price": 30.77
+      "price": 30.42
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 32.73,
-      "threshold": 14.12,
-      "label": "32.7x vs 14.1x sector"
+      "value": 32.02,
+      "threshold": 14.16,
+      "label": "32.0x vs 14.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.21,
+      "value": 4.16,
       "threshold": 1.5,
-      "label": "4.21x vs 1.5x"
+      "label": "4.16x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 19.06,
+      "value": 19.18,
       "threshold": 10.0,
-      "label": "19.1x vs 10x"
+      "label": "19.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.73,
+      "value": 2.76,
       "threshold": 5.0,
-      "label": "2.7% vs 5%"
+      "label": "2.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 25.84,
-      "threshold": 32.73,
-      "label": "Fwd 25.8x vs Trail 32.7x"
+      "value": 25.54,
+      "threshold": 32.02,
+      "label": "Fwd 25.5x vs Trail 32.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 1.3,
+      "value": 1.29,
       "threshold": 0.5,
-      "label": "P/S 2.5x ÷ Growth 1.9% = 1.30"
+      "label": "P/S 2.5x ÷ Growth 1.9% = 1.29"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 32.73,
-    "sectorPe": 16.62,
-    "pb": 4.21,
-    "ps": 2.48,
-    "evEbitda": 19.06,
-    "fcfYield": 2.73,
-    "forwardPe": 25.84,
+    "pe": 32.02,
+    "sectorPe": 16.66,
+    "pb": 4.16,
+    "ps": 2.45,
+    "evEbitda": 19.18,
+    "fcfYield": 2.76,
+    "forwardPe": 25.54,
     "dividendYield": 1.24,
     "revenueGrowth": 1.9,
     "profitMargin": 7.63,

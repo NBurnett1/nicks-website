@@ -1,7 +1,7 @@
 {
   "ticker": "ANN",
   "name": "ANSELL FPO [ANN]",
-  "price": 44.96,
+  "price": 44.62,
   "valuationScore": -2.0,
   "marketCap": "6.3B",
   "sector": "Healthcare",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-08",
-      "price": 44.96
+      "price": 44.62
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 21.01,
-      "threshold": 26.37,
-      "label": "21.0x vs 26.4x sector"
+      "value": 21.05,
+      "threshold": 26.54,
+      "label": "21.0x vs 26.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.21,
+      "value": 2.2,
       "threshold": 1.5,
-      "label": "2.21x vs 1.5x"
+      "label": "2.20x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.27,
+      "value": 3.3,
       "threshold": 5.0,
       "label": "3.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 17.91,
-      "threshold": 21.01,
-      "label": "Fwd 17.9x vs Trail 21.0x"
+      "value": 17.77,
+      "threshold": 21.05,
+      "label": "Fwd 17.8x vs Trail 21.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.22,
       "threshold": 0.5,
-      "label": "P/S 3.0x ÷ Growth 13.2% = 0.22"
+      "label": "P/S 2.9x ÷ Growth 13.2% = 0.22"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 21.01,
-    "sectorPe": 31.02,
-    "pb": 2.21,
-    "ps": 2.96,
+    "pe": 21.05,
+    "sectorPe": 31.22,
+    "pb": 2.2,
+    "ps": 2.93,
     "evEbitda": 18.25,
-    "fcfYield": 3.27,
-    "forwardPe": 17.91,
+    "fcfYield": 3.3,
+    "forwardPe": 17.77,
     "dividendYield": 2.55,
     "revenueGrowth": 13.2,
     "profitMargin": 9.75,
