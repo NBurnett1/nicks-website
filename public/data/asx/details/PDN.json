@@ -1,9 +1,9 @@
 {
   "ticker": "PDN",
   "name": "PALADIN FPO [PDN]",
-  "price": 7.51,
+  "price": 7.4,
   "valuationScore": 60.0,
-  "marketCap": "3.4B",
+  "marketCap": "3.3B",
   "sector": "Energy",
   "domain": "paladinenergy.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-08",
-      "price": 7.51
+      "price": 7.4
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 375.75,
-      "threshold": 18.12,
-      "label": "375.8x vs 18.1x sector"
+      "value": 370.0,
+      "threshold": 18.15,
+      "label": "370.0x vs 18.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.05,
+      "value": 2.02,
       "threshold": 1.5,
-      "label": "2.05x vs 1.5x"
+      "label": "2.02x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 20.47,
-      "threshold": 375.75,
-      "label": "Fwd 20.5x vs Trail 375.8x"
+      "value": 20.16,
+      "threshold": 370.0,
+      "label": "Fwd 20.2x vs Trail 370.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.08,
       "threshold": 0.5,
-      "label": "P/S 11.1x ÷ Growth 141.5% = 0.08"
+      "label": "P/S 10.9x ÷ Growth 141.5% = 0.08"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 375.75,
-    "sectorPe": 21.32,
-    "pb": 2.05,
-    "ps": 11.1,
+    "pe": 370.0,
+    "sectorPe": 21.35,
+    "pb": 2.02,
+    "ps": 10.93,
     "evEbitda": 41.46,
     "fcfYield": 0.12,
-    "forwardPe": 20.47,
+    "forwardPe": 20.16,
     "dividendYield": 0.0,
     "revenueGrowth": 141.5,
     "profitMargin": 1.75,

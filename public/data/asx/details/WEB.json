@@ -1,8 +1,8 @@
 {
   "ticker": "WEB",
   "name": "WEBBEDS FPO [WEB]",
-  "price": 3.7,
-  "valuationScore": 3.3,
+  "price": 3.75,
+  "valuationScore": 3.4,
   "marketCap": "1.3B",
   "sector": "Consumer Cyclical",
   "domain": "webbedsgroup.com",
@@ -217,25 +217,25 @@
     },
     {
       "date": "2026-11-08",
-      "price": 3.7
+      "price": 3.75
     }
   ],
-  "testsPassed": 5,
-  "grade": "B",
+  "testsPassed": 4,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 37.0,
-      "threshold": 22.61,
-      "label": "37.0x vs 22.6x sector"
+      "value": 37.5,
+      "threshold": 22.81,
+      "label": "37.5x vs 22.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.3,
+      "value": 2.33,
       "threshold": 1.5,
-      "label": "2.30x vs 1.5x"
+      "label": "2.33x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -246,17 +246,17 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": true,
-      "value": 5.01,
+      "passed": false,
+      "value": 4.94,
       "threshold": 5.0,
-      "label": "5.0% vs 5%"
+      "label": "4.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 11.45,
-      "threshold": 37.0,
-      "label": "Fwd 11.4x vs Trail 37.0x"
+      "value": 11.6,
+      "threshold": 37.5,
+      "label": "Fwd 11.6x vs Trail 37.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 37.0,
-    "sectorPe": 26.6,
-    "pb": 2.3,
-    "ps": 3.37,
+    "pe": 37.5,
+    "sectorPe": 26.83,
+    "pb": 2.33,
+    "ps": 3.42,
     "evEbitda": 9.57,
-    "fcfYield": 5.01,
-    "forwardPe": 11.45,
+    "fcfYield": 4.94,
+    "forwardPe": 11.6,
     "dividendYield": 0.0,
     "revenueGrowth": 19.9,
     "profitMargin": 9.01,
