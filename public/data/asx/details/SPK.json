@@ -1,9 +1,9 @@
 {
   "ticker": "SPK",
   "name": "SPARK NZ FPO NZX [SPK]",
-  "price": 1.6,
-  "valuationScore": -30.7,
-  "marketCap": "3.0B",
+  "price": 1.65,
+  "valuationScore": -30.0,
+  "marketCap": "3.1B",
   "sector": "Communication Services",
   "domain": "sparknz.co.nz",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-08",
-      "price": 1.6
+      "price": 1.64
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 6.96,
-      "threshold": 42.34,
-      "label": "7.0x vs 42.3x sector"
+      "value": 7.48,
+      "threshold": 42.84,
+      "label": "7.5x vs 42.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.26,
+      "value": 2.33,
       "threshold": 1.5,
-      "label": "2.26x vs 1.5x"
+      "label": "2.33x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 32.15,
+      "value": 31.27,
       "threshold": 5.0,
-      "label": "32.1% vs 5%"
+      "label": "31.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 13.3,
-      "threshold": 6.96,
-      "label": "Fwd 13.3x vs Trail 7.0x"
+      "value": 13.68,
+      "threshold": 7.48,
+      "label": "Fwd 13.7x vs Trail 7.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 6.96,
-    "sectorPe": 49.81,
-    "pb": 2.26,
-    "ps": 0.77,
+    "pe": 7.48,
+    "sectorPe": 50.41,
+    "pb": 2.33,
+    "ps": 0.79,
     "evEbitda": 4.8,
-    "fcfYield": 32.15,
-    "forwardPe": 13.3,
-    "dividendYield": 7.68,
+    "fcfYield": 31.27,
+    "forwardPe": 13.68,
+    "dividendYield": 7.56,
     "revenueGrowth": null,
     "profitMargin": 12.64,
     "operatingMargin": 26.7,
