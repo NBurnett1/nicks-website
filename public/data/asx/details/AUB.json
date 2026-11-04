@@ -1,8 +1,8 @@
 {
   "ticker": "AUB",
   "name": "AUB GROUP FPO [AUB]",
-  "price": 29.84,
-  "valuationScore": 1.0,
+  "price": 29.96,
+  "valuationScore": 0.9,
   "marketCap": "3.9B",
   "sector": "Financial Services",
   "domain": "aubgroup.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-08",
-      "price": 29.84
+      "price": 29.96
     }
   ],
   "testsPassed": 2,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 38.26,
-      "threshold": 21.61,
-      "label": "38.3x vs 21.6x sector"
+      "value": 37.45,
+      "threshold": 21.51,
+      "label": "37.4x vs 21.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.07,
+      "value": 2.08,
       "threshold": 1.5,
-      "label": "2.07x vs 1.5x"
+      "label": "2.08x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 12.67,
+      "value": 12.87,
       "threshold": 10.0,
-      "label": "12.7x vs 10x"
+      "label": "12.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.01,
+      "value": 4.0,
       "threshold": 5.0,
       "label": "4.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.04,
-      "threshold": 38.26,
-      "label": "Fwd 14.0x vs Trail 38.3x"
+      "value": 14.1,
+      "threshold": 37.45,
+      "label": "Fwd 14.1x vs Trail 37.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.6,
+      "value": 0.61,
       "threshold": 0.5,
-      "label": "P/S 3.1x ÷ Growth 5.2% = 0.60"
+      "label": "P/S 3.2x ÷ Growth 5.2% = 0.61"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 38.26,
-    "sectorPe": 25.42,
-    "pb": 2.07,
-    "ps": 3.14,
-    "evEbitda": 12.67,
-    "fcfYield": 4.01,
-    "forwardPe": 14.04,
+    "pe": 37.45,
+    "sectorPe": 25.3,
+    "pb": 2.08,
+    "ps": 3.16,
+    "evEbitda": 12.87,
+    "fcfYield": 4.0,
+    "forwardPe": 14.1,
     "dividendYield": 3.35,
     "revenueGrowth": 5.2,
     "profitMargin": 7.75,

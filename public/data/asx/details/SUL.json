@@ -1,8 +1,8 @@
 {
   "ticker": "SUL",
   "name": "SUPARETAIL FPO [SUL]",
-  "price": 13.25,
-  "valuationScore": -6.3,
+  "price": 13.28,
+  "valuationScore": -6.2,
   "marketCap": "3.0B",
   "sector": "Consumer Discretionary",
   "domain": "superretailgroup.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-08",
-      "price": 13.25
+      "price": 13.28
     }
   ],
   "testsPassed": 5,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 14.56,
-      "threshold": 14.55,
-      "label": "14.6x vs 14.6x sector"
+      "value": 14.43,
+      "threshold": 14.0,
+      "label": "14.4x vs 14.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.3,
+      "value": 2.31,
       "threshold": 1.5,
-      "label": "2.30x vs 1.5x"
+      "label": "2.31x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 9.39,
+      "value": 9.52,
       "threshold": 10.0,
-      "label": "9.4x vs 10x"
+      "label": "9.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 13.27,
+      "value": 13.24,
       "threshold": 5.0,
-      "label": "13.3% vs 5%"
+      "label": "13.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.76,
-      "threshold": 14.56,
-      "label": "Fwd 12.8x vs Trail 14.6x"
+      "value": 12.79,
+      "threshold": 14.43,
+      "label": "Fwd 12.8x vs Trail 14.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 14.56,
-    "sectorPe": 17.11,
-    "pb": 2.3,
+    "pe": 14.43,
+    "sectorPe": 16.47,
+    "pb": 2.31,
     "ps": 0.71,
-    "evEbitda": 9.39,
-    "fcfYield": 13.27,
-    "forwardPe": 12.76,
+    "evEbitda": 9.52,
+    "fcfYield": 13.24,
+    "forwardPe": 12.79,
     "dividendYield": 5.0,
     "revenueGrowth": 2.1,
     "profitMargin": 4.9,
