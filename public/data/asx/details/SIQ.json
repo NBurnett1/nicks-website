@@ -1,7 +1,7 @@
 {
   "ticker": "SIQ",
   "name": "SMARTGROUP FPO [SIQ]",
-  "price": 11.3,
+  "price": 11.42,
   "valuationScore": 1.9,
   "marketCap": "1.6B",
   "sector": "Industrials",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-08",
-      "price": 11.3
+      "price": 11.42
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 17.12,
-      "threshold": 18.42,
-      "label": "17.1x vs 18.4x sector"
+      "value": 17.84,
+      "threshold": 18.47,
+      "label": "17.8x vs 18.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 5.2,
+      "value": 5.26,
       "threshold": 1.5,
-      "label": "5.20x vs 1.5x"
+      "label": "5.26x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.61,
+      "value": 3.57,
       "threshold": 5.0,
       "label": "3.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 15.69,
-      "threshold": 17.12,
-      "label": "Fwd 15.7x vs Trail 17.1x"
+      "value": 15.85,
+      "threshold": 17.84,
+      "label": "Fwd 15.9x vs Trail 17.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.35,
       "threshold": 0.5,
-      "label": "P/S 4.4x ÷ Growth 12.8% = 0.35"
+      "label": "P/S 4.5x ÷ Growth 12.8% = 0.35"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 17.12,
-    "sectorPe": 21.67,
-    "pb": 5.2,
-    "ps": 4.45,
+    "pe": 17.84,
+    "sectorPe": 21.73,
+    "pb": 5.26,
+    "ps": 4.5,
     "evEbitda": 11.07,
-    "fcfYield": 3.61,
-    "forwardPe": 15.69,
-    "dividendYield": 3.88,
+    "fcfYield": 3.57,
+    "forwardPe": 15.85,
+    "dividendYield": 3.81,
     "revenueGrowth": 12.8,
     "profitMargin": 23.94,
     "operatingMargin": 35.04,
