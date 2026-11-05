@@ -1,8 +1,8 @@
 {
   "ticker": "QBE",
   "name": "QBE INSUR. FPO [QBE]",
-  "price": 25.95,
-  "valuationScore": -3.0,
+  "price": 25.99,
+  "valuationScore": -2.8,
   "marketCap": "38.8B",
   "sector": "Financials",
   "domain": "qbe.com",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-08",
-      "price": 25.95
+      "price": 25.99
     }
   ],
   "testsPassed": 5,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 12.3,
-      "threshold": 17.46,
-      "label": "12.3x vs 17.5x sector"
+      "value": 12.2,
+      "threshold": 16.61,
+      "label": "12.2x vs 16.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.34,
+      "value": 2.35,
       "threshold": 1.5,
-      "label": "2.34x vs 1.5x"
+      "label": "2.35x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 11.48,
+      "value": 11.58,
       "threshold": 10.0,
-      "label": "11.5x vs 10x"
+      "label": "11.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 8.88,
+      "value": 8.87,
       "threshold": 5.0,
       "label": "8.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 12.65,
-      "threshold": 12.3,
-      "label": "Fwd 12.7x vs Trail 12.3x"
+      "value": 12.67,
+      "threshold": 12.2,
+      "label": "Fwd 12.7x vs Trail 12.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 12.3,
-    "sectorPe": 20.54,
-    "pb": 2.34,
-    "ps": 1.99,
-    "evEbitda": 11.48,
-    "fcfYield": 8.88,
-    "forwardPe": 12.65,
+    "pe": 12.2,
+    "sectorPe": 19.54,
+    "pb": 2.35,
+    "ps": 2.0,
+    "evEbitda": 11.58,
+    "fcfYield": 8.87,
+    "forwardPe": 12.67,
     "dividendYield": 4.31,
     "revenueGrowth": 8.3,
     "profitMargin": 11.15,

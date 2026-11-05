@@ -1,9 +1,9 @@
 {
   "ticker": "PPT",
   "name": "PERPETUAL FPO [PPT]",
-  "price": 17.31,
-  "valuationScore": -1.7,
-  "marketCap": "2.0B",
+  "price": 17.69,
+  "valuationScore": -1.4,
+  "marketCap": "2.1B",
   "sector": "Financial Services",
   "domain": "perpetual.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-08",
-      "price": 17.31
+      "price": 17.69
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 33.94,
-      "threshold": 21.57,
-      "label": "33.9x vs 21.6x sector"
+      "value": 35.38,
+      "threshold": 21.61,
+      "label": "35.4x vs 21.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.28,
+      "value": 1.31,
       "threshold": 1.5,
-      "label": "1.28x vs 1.5x"
+      "label": "1.31x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 8.76,
+      "value": 8.6,
       "threshold": 10.0,
-      "label": "8.8x vs 10x"
+      "label": "8.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.61,
+      "value": 3.53,
       "threshold": 5.0,
-      "label": "3.6% vs 5%"
+      "label": "3.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.28,
-      "threshold": 33.94,
-      "label": "Fwd 12.3x vs Trail 33.9x"
+      "value": 12.55,
+      "threshold": 35.38,
+      "label": "Fwd 12.5x vs Trail 35.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 33.94,
-    "sectorPe": 25.37,
-    "pb": 1.28,
-    "ps": 1.74,
-    "evEbitda": 8.76,
-    "fcfYield": 3.61,
-    "forwardPe": 12.28,
+    "pe": 35.38,
+    "sectorPe": 25.42,
+    "pb": 1.31,
+    "ps": 1.78,
+    "evEbitda": 8.6,
+    "fcfYield": 3.53,
+    "forwardPe": 12.55,
     "dividendYield": 7.12,
     "revenueGrowth": null,
     "profitMargin": 7.69,

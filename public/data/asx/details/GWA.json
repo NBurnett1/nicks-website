@@ -2,8 +2,8 @@
   "ticker": "GWA",
   "name": "GWA GROUP FPO [GWA]",
   "price": 2.08,
-  "valuationScore": -4.8,
-  "marketCap": "529M",
+  "valuationScore": -5.0,
+  "marketCap": "530M",
   "sector": "Industrials",
   "domain": "gwagroup.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-08",
-      "price": 2.08
+      "price": 2.09
     }
   ],
   "testsPassed": 5,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 11.56,
-      "threshold": 18.13,
-      "label": "11.6x vs 18.1x sector"
+      "value": 11.58,
+      "threshold": 18.42,
+      "label": "11.6x vs 18.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,22 +240,22 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 8.39,
+      "value": 8.33,
       "threshold": 10.0,
-      "label": "8.4x vs 10x"
+      "label": "8.3x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.8,
+      "value": 4.79,
       "threshold": 5.0,
       "label": "4.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 10.4,
-      "threshold": 11.56,
+      "value": 10.43,
+      "threshold": 11.58,
       "label": "Fwd 10.4x vs Trail 11.6x"
     },
     "profitabilityCheck": {
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 11.56,
-    "sectorPe": 21.33,
+    "pe": 11.58,
+    "sectorPe": 21.67,
     "pb": 1.85,
-    "ps": 1.25,
-    "evEbitda": 8.39,
-    "fcfYield": 4.8,
-    "forwardPe": 10.4,
+    "ps": 1.26,
+    "evEbitda": 8.33,
+    "fcfYield": 4.79,
+    "forwardPe": 10.43,
     "dividendYield": 8.1,
     "revenueGrowth": -0.2,
     "profitMargin": 11.36,
