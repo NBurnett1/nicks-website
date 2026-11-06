@@ -1,9 +1,9 @@
 {
   "ticker": "FMG",
   "name": "FORTESCUE FPO [FMG]",
-  "price": 15.49,
-  "valuationScore": -4.8,
-  "marketCap": "47.7B",
+  "price": 15.19,
+  "valuationScore": -4.9,
+  "marketCap": "46.8B",
   "sector": "Materials",
   "domain": "fortescue.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-08",
-      "price": 15.49
+      "price": 15.19
     }
   ],
   "testsPassed": 6,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 11.31,
-      "threshold": 13.95,
-      "label": "11.3x vs 13.9x sector"
+      "value": 10.12,
+      "threshold": 14.24,
+      "label": "10.1x vs 14.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.65,
+      "value": 1.62,
       "threshold": 1.5,
-      "label": "1.65x vs 1.5x"
+      "label": "1.62x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 5.45,
+      "value": 5.93,
       "threshold": 10.0,
-      "label": "5.4x vs 10x"
+      "label": "5.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 6.65,
+      "value": 6.78,
       "threshold": 5.0,
-      "label": "6.7% vs 5%"
+      "label": "6.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 16.19,
-      "threshold": 11.31,
-      "label": "Fwd 16.2x vs Trail 11.3x"
+      "value": 15.87,
+      "threshold": 10.12,
+      "label": "Fwd 15.9x vs Trail 10.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.36,
+      "value": 0.35,
       "threshold": 0.5,
-      "label": "P/S 2.8x ÷ Growth 7.9% = 0.36"
+      "label": "P/S 2.8x ÷ Growth 7.9% = 0.35"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 11.31,
-    "sectorPe": 16.41,
-    "pb": 1.65,
-    "ps": 2.81,
-    "evEbitda": 5.45,
-    "fcfYield": 6.65,
-    "forwardPe": 16.19,
+    "pe": 10.12,
+    "sectorPe": 16.75,
+    "pb": 1.62,
+    "ps": 2.76,
+    "evEbitda": 5.93,
+    "fcfYield": 6.78,
+    "forwardPe": 15.87,
     "dividendYield": 7.61,
     "revenueGrowth": 7.9,
     "profitMargin": 16.92,

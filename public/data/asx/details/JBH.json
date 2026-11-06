@@ -1,9 +1,9 @@
 {
   "ticker": "JBH",
   "name": "JB HI-FI FPO [JBH]",
-  "price": 77.16,
+  "price": 77.69,
   "valuationScore": 0.6,
-  "marketCap": "8.4B",
+  "marketCap": "8.5B",
   "sector": "Consumer Discretionary",
   "domain": "jbhifi.com.au",
   "chartData": [
@@ -217,46 +217,46 @@
     },
     {
       "date": "2026-11-08",
-      "price": 77.16
+      "price": 77.69
     }
   ],
-  "testsPassed": 4,
+  "testsPassed": 3,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 17.26,
-      "threshold": 14.92,
-      "label": "17.3x vs 14.9x sector"
+      "value": 16.6,
+      "threshold": 14.41,
+      "label": "16.6x vs 14.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 5.15,
+      "value": 5.18,
       "threshold": 1.5,
-      "label": "5.15x vs 1.5x"
+      "label": "5.18x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 10.76,
+      "value": 11.24,
       "threshold": 10.0,
-      "label": "10.8x vs 10x"
+      "label": "11.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 6.53,
+      "value": 6.48,
       "threshold": 5.0,
       "label": "6.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
-      "passed": true,
-      "value": 17.18,
-      "threshold": 17.26,
-      "label": "Fwd 17.2x vs Trail 17.3x"
+      "passed": false,
+      "value": 17.3,
+      "threshold": 16.6,
+      "label": "Fwd 17.3x vs Trail 16.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 17.26,
-    "sectorPe": 17.55,
-    "pb": 5.15,
-    "ps": 0.76,
-    "evEbitda": 10.76,
-    "fcfYield": 6.53,
-    "forwardPe": 17.18,
+    "pe": 16.6,
+    "sectorPe": 16.95,
+    "pb": 5.18,
+    "ps": 0.77,
+    "evEbitda": 11.24,
+    "fcfYield": 6.48,
+    "forwardPe": 17.3,
     "dividendYield": 4.58,
     "revenueGrowth": 1.9,
     "profitMargin": 4.43,

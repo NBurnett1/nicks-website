@@ -1,8 +1,8 @@
 {
   "ticker": "SPK",
   "name": "SPARK NZ FPO NZX [SPK]",
-  "price": 1.68,
-  "valuationScore": -29.7,
+  "price": 1.67,
+  "valuationScore": -29.9,
   "marketCap": "3.2B",
   "sector": "Communication Services",
   "domain": "sparknz.co.nz",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-08",
-      "price": 1.68
+      "price": 1.67
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 7.64,
-      "threshold": 43.2,
-      "label": "7.6x vs 43.2x sector"
+      "value": 7.26,
+      "threshold": 43.11,
+      "label": "7.3x vs 43.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.38,
+      "value": 2.36,
       "threshold": 1.5,
-      "label": "2.38x vs 1.5x"
+      "label": "2.36x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 4.87,
+      "value": 4.93,
       "threshold": 10.0,
       "label": "4.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 30.62,
+      "value": 30.81,
       "threshold": 5.0,
-      "label": "30.6% vs 5%"
+      "label": "30.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 13.97,
-      "threshold": 7.64,
-      "label": "Fwd 14.0x vs Trail 7.6x"
+      "value": 13.89,
+      "threshold": 7.26,
+      "label": "Fwd 13.9x vs Trail 7.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 7.64,
-    "sectorPe": 50.82,
-    "pb": 2.38,
-    "ps": 0.81,
-    "evEbitda": 4.87,
-    "fcfYield": 30.62,
-    "forwardPe": 13.97,
+    "pe": 7.26,
+    "sectorPe": 50.71,
+    "pb": 2.36,
+    "ps": 0.8,
+    "evEbitda": 4.93,
+    "fcfYield": 30.81,
+    "forwardPe": 13.89,
     "dividendYield": 7.4,
     "revenueGrowth": null,
     "profitMargin": 12.64,

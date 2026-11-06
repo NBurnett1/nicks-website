@@ -1,7 +1,7 @@
 {
   "ticker": "PMV",
   "name": "PREM INV. FPO [PMV]",
-  "price": 14.27,
+  "price": 14.36,
   "valuationScore": -4.4,
   "marketCap": "2.3B",
   "sector": "Consumer Discretionary",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-08",
-      "price": 14.27
+      "price": 14.36
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 17.84,
-      "threshold": 14.92,
-      "label": "17.8x vs 14.9x sector"
+      "value": 17.3,
+      "threshold": 14.41,
+      "label": "17.3x vs 14.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.37,
+      "value": 2.38,
       "threshold": 1.5,
-      "label": "2.37x vs 1.5x"
+      "label": "2.38x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 11.33,
+      "value": 11.72,
       "threshold": 10.0,
-      "label": "11.3x vs 10x"
+      "label": "11.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 11.72,
+      "value": 11.64,
       "threshold": 5.0,
-      "label": "11.7% vs 5%"
+      "label": "11.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 13.95,
-      "threshold": 17.84,
-      "label": "Fwd 13.9x vs Trail 17.8x"
+      "value": 14.03,
+      "threshold": 17.3,
+      "label": "Fwd 14.0x vs Trail 17.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 17.84,
-    "sectorPe": 17.55,
-    "pb": 2.37,
-    "ps": 2.82,
-    "evEbitda": 11.33,
-    "fcfYield": 11.72,
-    "forwardPe": 13.95,
+    "pe": 17.3,
+    "sectorPe": 16.95,
+    "pb": 2.38,
+    "ps": 2.84,
+    "evEbitda": 11.72,
+    "fcfYield": 11.64,
+    "forwardPe": 14.03,
     "dividendYield": 6.87,
     "revenueGrowth": null,
     "profitMargin": 15.98,

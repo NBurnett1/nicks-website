@@ -1,9 +1,9 @@
 {
   "ticker": "IGO",
   "name": "IGOLIMITED FPO [IGO]",
-  "price": 5.27,
-  "valuationScore": 26.6,
-  "marketCap": "4.0B",
+  "price": 4.94,
+  "valuationScore": 26.3,
+  "marketCap": "3.7B",
   "sector": "Materials",
   "domain": "igo.com.au",
   "chartData": [
@@ -217,46 +217,46 @@
     },
     {
       "date": "2026-11-08",
-      "price": 5.27
+      "price": 4.94
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 27.74,
-      "threshold": 13.95,
-      "label": "27.7x vs 13.9x sector"
+      "value": 23.52,
+      "threshold": 14.24,
+      "label": "23.5x vs 14.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.78,
+      "value": 1.67,
       "threshold": 1.5,
-      "label": "1.78x vs 1.5x"
+      "label": "1.67x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 61.59,
+      "value": 67.86,
       "threshold": 10.0,
-      "label": "61.6x vs 10x"
+      "label": "67.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 4.7,
+      "passed": true,
+      "value": 5.01,
       "threshold": 5.0,
-      "label": "4.7% vs 5%"
+      "label": "5.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 9.16,
-      "threshold": 27.74,
-      "label": "Fwd 9.2x vs Trail 27.7x"
+      "value": 8.59,
+      "threshold": 23.52,
+      "label": "Fwd 8.6x vs Trail 23.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.84,
+      "value": 0.78,
       "threshold": 0.5,
-      "label": "P/S 8.6x ÷ Growth 10.3% = 0.84"
+      "label": "P/S 8.1x ÷ Growth 10.3% = 0.78"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 27.74,
-    "sectorPe": 16.41,
-    "pb": 1.78,
-    "ps": 8.62,
-    "evEbitda": 61.59,
-    "fcfYield": 4.7,
-    "forwardPe": 9.16,
+    "pe": 23.52,
+    "sectorPe": 16.75,
+    "pb": 1.67,
+    "ps": 8.08,
+    "evEbitda": 67.86,
+    "fcfYield": 5.01,
+    "forwardPe": 8.59,
     "dividendYield": 1.03,
     "revenueGrowth": 10.3,
     "profitMargin": 31.39,
