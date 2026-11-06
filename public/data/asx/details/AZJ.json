@@ -2,7 +2,7 @@
   "ticker": "AZJ",
   "name": "AURIZON FPO [AZJ]",
   "price": 3.85,
-  "valuationScore": -3.7,
+  "valuationScore": -3.8,
   "marketCap": "6.5B",
   "sector": "Industrials",
   "domain": "aurizon.com.au",
@@ -220,15 +220,15 @@
       "price": 3.85
     }
   ],
-  "testsPassed": 5,
-  "grade": "B",
+  "testsPassed": 6,
+  "grade": "A",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": false,
+      "passed": true,
       "value": 18.33,
-      "threshold": 18.29,
-      "label": "18.3x vs 18.3x sector"
+      "threshold": 18.86,
+      "label": "18.3x vs 18.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -282,7 +282,7 @@
   },
   "metrics": {
     "pe": 18.33,
-    "sectorPe": 21.52,
+    "sectorPe": 22.19,
     "pb": 1.65,
     "ps": 1.56,
     "evEbitda": 7.52,

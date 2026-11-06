@@ -2,7 +2,7 @@
   "ticker": "ING",
   "name": "INGHAMS FPO [ING]",
   "price": 2.19,
-  "valuationScore": -13.5,
+  "valuationScore": -13.6,
   "marketCap": "814M",
   "sector": "Consumer Staples",
   "domain": "inghams.com.au",
@@ -220,15 +220,15 @@
       "price": 2.19
     }
   ],
-  "testsPassed": 5,
-  "grade": "B",
+  "testsPassed": 6,
+  "grade": "A",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": false,
+      "passed": true,
       "value": 24.33,
-      "threshold": 24.24,
-      "label": "24.3x vs 24.2x sector"
+      "threshold": 25.25,
+      "label": "24.3x vs 25.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,7 +240,7 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 9.91,
+      "value": 9.95,
       "threshold": 10.0,
       "label": "9.9x vs 10x"
     },
@@ -282,10 +282,10 @@
   },
   "metrics": {
     "pe": 24.33,
-    "sectorPe": 28.52,
+    "sectorPe": 29.71,
     "pb": 3.23,
     "ps": 0.25,
-    "evEbitda": 9.91,
+    "evEbitda": 9.95,
     "fcfYield": 19.2,
     "forwardPe": 10.65,
     "dividendYield": 4.65,
