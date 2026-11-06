@@ -1,9 +1,9 @@
 {
   "ticker": "NAB",
   "name": "NAT. BANK FPO [NAB]",
-  "price": 40.14,
-  "valuationScore": 0.1,
-  "marketCap": "122.9B",
+  "price": 40.0,
+  "valuationScore": 0.2,
+  "marketCap": "124.4B",
   "sector": "Financials",
   "domain": "nab.com.au",
   "chartData": [
@@ -217,25 +217,25 @@
     },
     {
       "date": "2026-11-08",
-      "price": 40.14
+      "price": 40.0
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 21.24,
-      "threshold": 17.68,
-      "label": "21.2x vs 17.7x sector"
+      "value": 20.2,
+      "threshold": 17.17,
+      "label": "20.2x vs 17.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.03,
+      "value": 1.99,
       "threshold": 1.5,
-      "label": "2.03x vs 1.5x"
+      "label": "1.99x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,45 +254,45 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.12,
-      "threshold": 21.24,
-      "label": "Fwd 16.1x vs Trail 21.2x"
+      "value": 16.06,
+      "threshold": 20.2,
+      "label": "Fwd 16.1x vs Trail 20.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
-      "passed": null,
-      "value": 29.26,
+      "passed": true,
+      "value": 29.68,
       "threshold": 5.0,
-      "label": "Insufficient data"
+      "label": "Margin 29.7% / ROE 9.7%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.97,
+      "value": -3.1,
       "threshold": 0.5,
-      "label": "P/S 5.9x ÷ Growth 6.1% = 0.97"
+      "label": "FAIL — Revenue declining -3.1%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": true,
-      "value": 6.1,
+      "value": -3.1,
       "threshold": -5.0,
-      "label": "6.1% growth (floor: -5%)"
+      "label": "-3.1% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 21.24,
-    "sectorPe": 20.81,
-    "pb": 2.03,
-    "ps": 5.89,
+    "pe": 20.2,
+    "sectorPe": 20.2,
+    "pb": 1.99,
+    "ps": 6.01,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 16.12,
-    "dividendYield": 4.13,
-    "revenueGrowth": 6.1,
-    "profitMargin": 29.26,
-    "operatingMargin": 50.0,
-    "roe": null,
+    "forwardPe": 16.06,
+    "dividendYield": 4.36,
+    "revenueGrowth": -3.1,
+    "profitMargin": 29.68,
+    "operatingMargin": 52.59,
+    "roe": 9.69,
     "debtEquity": null
   }
 }

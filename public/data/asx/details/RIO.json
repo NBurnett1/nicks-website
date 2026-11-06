@@ -1,9 +1,9 @@
 {
   "ticker": "RIO",
   "name": "RIO TINTO FPO [RIO]",
-  "price": 148.62,
-  "valuationScore": 3.2,
-  "marketCap": "241.7B",
+  "price": 149.93,
+  "valuationScore": 3.4,
+  "marketCap": "243.8B",
   "sector": "Materials",
   "domain": "riotinto.com",
   "chartData": [
@@ -217,25 +217,25 @@
     },
     {
       "date": "2026-11-08",
-      "price": 148.59
+      "price": 149.93
     }
   ],
-  "testsPassed": 4,
-  "grade": "C",
+  "testsPassed": 5,
+  "grade": "B",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 12.75,
-      "threshold": 14.24,
-      "label": "12.7x vs 14.2x sector"
+      "value": 13.76,
+      "threshold": 14.43,
+      "label": "13.8x vs 14.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.59,
+      "value": 2.62,
       "threshold": 1.5,
-      "label": "2.59x vs 1.5x"
+      "label": "2.62x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 1.49,
+      "value": 1.47,
       "threshold": 5.0,
       "label": "1.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
-      "passed": false,
-      "value": 12.75,
-      "threshold": 12.75,
-      "label": "Fwd 12.7x vs Trail 12.7x"
+      "passed": true,
+      "value": 12.86,
+      "threshold": 13.76,
+      "label": "Fwd 12.9x vs Trail 13.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 12.75,
-    "sectorPe": 16.75,
-    "pb": 2.59,
-    "ps": 3.91,
+    "pe": 13.76,
+    "sectorPe": 16.98,
+    "pb": 2.62,
+    "ps": 3.95,
     "evEbitda": 11.71,
-    "fcfYield": 1.49,
-    "forwardPe": 12.75,
-    "dividendYield": 4.64,
+    "fcfYield": 1.47,
+    "forwardPe": 12.86,
+    "dividendYield": 4.34,
     "revenueGrowth": 15.5,
     "profitMargin": 19.58,
     "operatingMargin": 28.05,
