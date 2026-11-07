@@ -2,7 +2,7 @@
   "ticker": "JHX",
   "name": "J HARDIE CDI 1:1 [JHX]",
   "price": 39.2,
-  "valuationScore": 30.7,
+  "valuationScore": 13.2,
   "marketCap": "22.8B",
   "sector": "Basic Materials",
   "domain": "jameshardie.com",
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 112.0,
-      "threshold": 15.02,
-      "label": "112.0x vs 15.0x sector"
+      "value": 46.67,
+      "threshold": 14.89,
+      "label": "46.7x vs 14.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -247,52 +247,52 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 0.51,
+      "value": 0.7,
       "threshold": 5.0,
-      "label": "0.5% vs 5%"
+      "label": "0.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 17.91,
-      "threshold": 112.0,
-      "label": "Fwd 17.9x vs Trail 112.0x"
+      "value": 17.85,
+      "threshold": 46.67,
+      "label": "Fwd 17.9x vs Trail 46.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": false,
-      "value": 5.1,
+      "value": 6.22,
       "threshold": 5.0,
-      "label": "Margin 5.1% / ROE 4.5%"
+      "label": "Margin 6.2% / ROE 5.5%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.38,
+      "value": 0.17,
       "threshold": 0.5,
-      "label": "P/S 4.0x ÷ Growth 10.5% = 0.38"
+      "label": "P/S 4.0x ÷ Growth 23.7% = 0.17"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": true,
-      "value": 10.5,
+      "value": 23.7,
       "threshold": -5.0,
-      "label": "10.5% growth (floor: -5%)"
+      "label": "23.7% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 112.0,
-    "sectorPe": 17.67,
+    "pe": 46.67,
+    "sectorPe": 17.52,
     "pb": 2.38,
-    "ps": 4.02,
+    "ps": 4.03,
     "evEbitda": 16.56,
-    "fcfYield": 0.51,
-    "forwardPe": 17.91,
+    "fcfYield": 0.7,
+    "forwardPe": 17.85,
     "dividendYield": 0.0,
-    "revenueGrowth": 10.5,
-    "profitMargin": 5.1,
+    "revenueGrowth": 23.7,
+    "profitMargin": 6.22,
     "operatingMargin": 19.56,
-    "roe": 4.49,
+    "roe": 5.46,
     "debtEquity": 63.16
   }
 }

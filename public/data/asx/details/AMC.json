@@ -2,7 +2,7 @@
   "ticker": "AMC",
   "name": "AMCOR PLC CDI 1:1 [AMC]",
   "price": 65.01,
-  "valuationScore": -6.8,
+  "valuationScore": 2.2,
   "marketCap": "30.0B",
   "sector": "Materials",
   "domain": "amcor.com",
@@ -220,15 +220,15 @@
       "price": 65.01
     }
   ],
-  "testsPassed": 4,
+  "testsPassed": 3,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 18.42,
-      "threshold": 14.19,
-      "label": "18.4x vs 14.2x sector"
+      "value": 19.29,
+      "threshold": 14.43,
+      "label": "19.3x vs 14.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,23 +240,23 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 12.57,
+      "value": 12.91,
       "threshold": 10.0,
-      "label": "12.6x vs 10x"
+      "label": "12.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": true,
-      "value": 18.99,
+      "passed": false,
+      "value": 2.99,
       "threshold": 5.0,
-      "label": "19.0% vs 5%"
+      "label": "3.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 10.65,
-      "threshold": 18.42,
-      "label": "Fwd 10.7x vs Trail 18.4x"
+      "value": 10.79,
+      "threshold": 19.29,
+      "label": "Fwd 10.8x vs Trail 19.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,18 +281,18 @@
     }
   },
   "metrics": {
-    "pe": 18.42,
-    "sectorPe": 16.7,
+    "pe": 19.29,
+    "sectorPe": 16.98,
     "pb": 1.8,
     "ps": 1.26,
-    "evEbitda": 12.57,
-    "fcfYield": 18.99,
-    "forwardPe": 10.65,
-    "dividendYield": 6.05,
+    "evEbitda": 12.91,
+    "fcfYield": 2.99,
+    "forwardPe": 10.79,
+    "dividendYield": 5.78,
     "revenueGrowth": 6.7,
     "profitMargin": 4.55,
-    "operatingMargin": 8.42,
+    "operatingMargin": 8.04,
     "roe": 9.25,
-    "debtEquity": 126.4
+    "debtEquity": 133.99
   }
 }
