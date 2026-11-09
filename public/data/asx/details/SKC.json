@@ -1,9 +1,9 @@
 {
   "ticker": "SKC",
   "name": "SKYCITY FPO NZX [SKC]",
-  "price": 0.55,
-  "valuationScore": 35.2,
-  "marketCap": "607M",
+  "price": 0.57,
+  "valuationScore": 34.2,
+  "marketCap": "629M",
   "sector": "Consumer Cyclical",
   "domain": "skycityentertainmentgroup.com",
   "chartData": [
@@ -214,6 +214,10 @@
     {
       "date": "2026-11-08",
       "price": 0.55
+    },
+    {
+      "date": "2026-11-15",
+      "price": 0.57
     }
   ],
   "testsPassed": 4,
@@ -222,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 27.5,
-      "threshold": 20.75,
-      "label": "27.5x vs 20.8x sector"
+      "value": 28.5,
+      "threshold": 21.07,
+      "label": "28.5x vs 21.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.48,
+      "value": 0.5,
       "threshold": 1.5,
-      "label": "0.48x vs 1.5x"
+      "label": "0.50x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 9.29,
+      "value": 9.46,
       "threshold": 10.0,
-      "label": "9.3x vs 10x"
+      "label": "9.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -59.57,
+      "value": -57.48,
       "threshold": 5.0,
-      "label": "-59.6% vs 5%"
+      "label": "-57.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.14,
-      "threshold": 27.5,
-      "label": "Fwd 16.1x vs Trail 27.5x"
+      "value": 16.73,
+      "threshold": 28.5,
+      "label": "Fwd 16.7x vs Trail 28.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 1.06,
+      "value": 1.1,
       "threshold": 0.5,
-      "label": "P/S 0.7x ÷ Growth 0.7% = 1.06"
+      "label": "P/S 0.8x ÷ Growth 0.7% = 1.10"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -277,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 27.5,
-    "sectorPe": 24.41,
-    "pb": 0.48,
-    "ps": 0.74,
-    "evEbitda": 9.29,
-    "fcfYield": -59.57,
-    "forwardPe": 16.14,
+    "pe": 28.5,
+    "sectorPe": 24.79,
+    "pb": 0.5,
+    "ps": 0.77,
+    "evEbitda": 9.46,
+    "fcfYield": -57.48,
+    "forwardPe": 16.73,
     "dividendYield": 0.0,
     "revenueGrowth": 0.7,
     "profitMargin": 2.23,

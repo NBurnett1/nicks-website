@@ -1,9 +1,9 @@
 {
   "ticker": "SYR",
   "name": "SYRAH RES FPO [SYR]",
-  "price": 0.06,
-  "valuationScore": 44.1,
-  "marketCap": "146M",
+  "price": 0.07,
+  "valuationScore": -9.6,
+  "marketCap": "—",
   "sector": "Basic Materials",
   "domain": "syrahresources.com.au",
   "chartData": [
@@ -214,10 +214,14 @@
     {
       "date": "2026-11-08",
       "price": 0.06
+    },
+    {
+      "date": "2026-11-15",
+      "price": 0.07
     }
   ],
-  "testsPassed": 3,
-  "grade": "C",
+  "testsPassed": 2,
+  "grade": "D",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -229,9 +233,9 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.35,
+      "value": 0.38,
       "threshold": 1.5,
-      "label": "0.35x vs 1.5x"
+      "label": "0.38x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -242,15 +246,15 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": -29.07,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "-29.1% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": -1.34,
+      "value": -1.42,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -263,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": true,
-      "value": 0.0,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 3.0x ÷ Growth 800.4% = 0.00"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -278,12 +282,12 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 17.52,
-    "pb": 0.35,
-    "ps": 2.96,
-    "evEbitda": -5.12,
-    "fcfYield": -29.07,
-    "forwardPe": -1.34,
+    "sectorPe": 17.85,
+    "pb": 0.38,
+    "ps": null,
+    "evEbitda": -5.25,
+    "fcfYield": null,
+    "forwardPe": -1.42,
     "dividendYield": 0.0,
     "revenueGrowth": 800.4,
     "profitMargin": 0.0,

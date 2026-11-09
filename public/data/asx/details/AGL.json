@@ -1,7 +1,7 @@
 {
   "ticker": "AGL",
   "name": "AGL ENERGY FPO [AGL]",
-  "price": 9.04,
+  "price": 9.0,
   "valuationScore": -1.3,
   "marketCap": "6.1B",
   "sector": "Utilities",
@@ -214,6 +214,10 @@
     {
       "date": "2026-11-08",
       "price": 9.04
+    },
+    {
+      "date": "2026-11-15",
+      "price": 9.0
     }
   ],
   "testsPassed": 5,
@@ -222,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 8.07,
-      "threshold": 18.13,
-      "label": "8.1x vs 18.1x sector"
+      "value": 8.04,
+      "threshold": 17.93,
+      "label": "8.0x vs 17.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -236,23 +240,23 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 7.35,
+      "value": 7.33,
       "threshold": 10.0,
-      "label": "7.4x vs 10x"
+      "label": "7.3x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -2.22,
+      "value": -2.23,
       "threshold": 5.0,
       "label": "-2.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 13.11,
-      "threshold": 8.07,
-      "label": "Fwd 13.1x vs Trail 8.1x"
+      "value": 13.05,
+      "threshold": 8.04,
+      "label": "Fwd 13.1x vs Trail 8.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -277,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 8.07,
-    "sectorPe": 21.33,
+    "pe": 8.04,
+    "sectorPe": 21.1,
     "pb": 1.15,
-    "ps": 0.44,
-    "evEbitda": 7.35,
-    "fcfYield": -2.22,
-    "forwardPe": 13.11,
+    "ps": 0.43,
+    "evEbitda": 7.33,
+    "fcfYield": -2.23,
+    "forwardPe": 13.05,
     "dividendYield": 5.75,
     "revenueGrowth": -4.7,
     "profitMargin": 5.43,

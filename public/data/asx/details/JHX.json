@@ -1,9 +1,9 @@
 {
   "ticker": "JHX",
   "name": "J HARDIE CDI 1:1 [JHX]",
-  "price": 39.2,
-  "valuationScore": 13.2,
-  "marketCap": "22.8B",
+  "price": 41.89,
+  "valuationScore": 15.1,
+  "marketCap": "24.4B",
   "sector": "Basic Materials",
   "domain": "jameshardie.com",
   "chartData": [
@@ -214,6 +214,10 @@
     {
       "date": "2026-11-08",
       "price": 39.2
+    },
+    {
+      "date": "2026-11-15",
+      "price": 41.89
     }
   ],
   "testsPassed": 3,
@@ -222,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 46.67,
-      "threshold": 14.89,
-      "label": "46.7x vs 14.9x sector"
+      "value": 49.87,
+      "threshold": 15.17,
+      "label": "49.9x vs 15.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.38,
+      "value": 2.55,
       "threshold": 1.5,
-      "label": "2.38x vs 1.5x"
+      "label": "2.55x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 16.56,
+      "value": 17.53,
       "threshold": 10.0,
-      "label": "16.6x vs 10x"
+      "label": "17.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 0.7,
+      "value": 0.65,
       "threshold": 5.0,
       "label": "0.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 18.06,
-      "threshold": 46.67,
-      "label": "Fwd 18.1x vs Trail 46.7x"
+      "value": 19.27,
+      "threshold": 49.87,
+      "label": "Fwd 19.3x vs Trail 49.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.17,
+      "value": 0.18,
       "threshold": 0.5,
-      "label": "P/S 4.0x ÷ Growth 23.7% = 0.17"
+      "label": "P/S 4.3x ÷ Growth 23.7% = 0.18"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -277,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 46.67,
-    "sectorPe": 17.52,
-    "pb": 2.38,
-    "ps": 4.03,
-    "evEbitda": 16.56,
-    "fcfYield": 0.7,
-    "forwardPe": 18.06,
+    "pe": 49.87,
+    "sectorPe": 17.85,
+    "pb": 2.55,
+    "ps": 4.3,
+    "evEbitda": 17.53,
+    "fcfYield": 0.65,
+    "forwardPe": 19.27,
     "dividendYield": 0.0,
     "revenueGrowth": 23.7,
     "profitMargin": 6.22,

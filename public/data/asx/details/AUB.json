@@ -1,8 +1,8 @@
 {
   "ticker": "AUB",
   "name": "AUB GROUP FPO [AUB]",
-  "price": 30.34,
-  "valuationScore": 1.2,
+  "price": 30.25,
+  "valuationScore": 1.6,
   "marketCap": "4.0B",
   "sector": "Financial Services",
   "domain": "aubgroup.com.au",
@@ -214,6 +214,10 @@
     {
       "date": "2026-11-08",
       "price": 30.34
+    },
+    {
+      "date": "2026-11-15",
+      "price": 30.25
     }
   ],
   "testsPassed": 2,
@@ -222,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 38.9,
+      "value": 38.78,
       "threshold": 21.56,
-      "label": "38.9x vs 21.6x sector"
+      "label": "38.8x vs 21.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.11,
+      "value": 2.1,
       "threshold": 1.5,
-      "label": "2.11x vs 1.5x"
+      "label": "2.10x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 13.03,
+      "value": 13.0,
       "threshold": 10.0,
       "label": "13.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.95,
+      "value": 3.96,
       "threshold": 5.0,
       "label": "4.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.28,
-      "threshold": 38.9,
-      "label": "Fwd 14.3x vs Trail 38.9x"
+      "value": 14.23,
+      "threshold": 38.78,
+      "label": "Fwd 14.2x vs Trail 38.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -277,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 38.9,
-    "sectorPe": 25.37,
-    "pb": 2.11,
-    "ps": 3.2,
-    "evEbitda": 13.03,
-    "fcfYield": 3.95,
-    "forwardPe": 14.28,
+    "pe": 38.78,
+    "sectorPe": 25.36,
+    "pb": 2.1,
+    "ps": 3.19,
+    "evEbitda": 13.0,
+    "fcfYield": 3.96,
+    "forwardPe": 14.23,
     "dividendYield": 3.23,
     "revenueGrowth": 5.2,
     "profitMargin": 7.75,

@@ -1,9 +1,9 @@
 {
   "ticker": "BEN",
   "name": "BEN ADE BK FPO [BEN]",
-  "price": 10.83,
-  "valuationScore": -2.3,
-  "marketCap": "6.3B",
+  "price": 10.6,
+  "valuationScore": -2.2,
+  "marketCap": "6.1B",
   "sector": "Financials",
   "domain": "bendigoadelaide.com.au",
   "chartData": [
@@ -214,6 +214,10 @@
     {
       "date": "2026-11-08",
       "price": 10.83
+    },
+    {
+      "date": "2026-11-15",
+      "price": 10.6
     }
   ],
   "testsPassed": 4,
@@ -222,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 17.19,
-      "threshold": 17.29,
-      "label": "17.2x vs 17.3x sector"
+      "value": 16.83,
+      "threshold": 16.85,
+      "label": "16.8x vs 16.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.93,
+      "value": 0.91,
       "threshold": 1.5,
-      "label": "0.93x vs 1.5x"
+      "label": "0.91x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -250,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.5,
-      "threshold": 17.19,
-      "label": "Fwd 12.5x vs Trail 17.2x"
+      "value": 12.23,
+      "threshold": 16.83,
+      "label": "Fwd 12.2x vs Trail 16.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.87,
+      "value": 0.85,
       "threshold": 0.5,
-      "label": "P/S 3.2x ÷ Growth 3.7% = 0.87"
+      "label": "P/S 3.1x ÷ Growth 3.7% = 0.85"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -277,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 17.19,
-    "sectorPe": 20.34,
-    "pb": 0.93,
-    "ps": 3.2,
+    "pe": 16.83,
+    "sectorPe": 19.82,
+    "pb": 0.91,
+    "ps": 3.14,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 12.5,
+    "forwardPe": 12.23,
     "dividendYield": 6.09,
     "revenueGrowth": 3.7,
     "profitMargin": 19.23,

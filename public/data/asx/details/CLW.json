@@ -1,9 +1,9 @@
 {
   "ticker": "CLW",
   "name": "CHTR H LWR STAPLED [CLW]",
-  "price": 3.56,
+  "price": 3.49,
   "valuationScore": 3.3,
-  "marketCap": "2.6B",
+  "marketCap": "2.5B",
   "sector": "Real Estate",
   "domain": "charterhall.com.au",
   "chartData": [
@@ -214,6 +214,10 @@
     {
       "date": "2026-11-08",
       "price": 3.56
+    },
+    {
+      "date": "2026-11-15",
+      "price": 3.49
     }
   ],
   "testsPassed": 4,
@@ -222,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 9.13,
-      "threshold": 9.32,
-      "label": "9.1x vs 9.3x sector"
+      "value": 8.95,
+      "threshold": 9.12,
+      "label": "8.9x vs 9.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.76,
+      "value": 0.74,
       "threshold": 1.5,
-      "label": "0.76x vs 1.5x"
+      "label": "0.74x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -243,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -2.74,
+      "value": -2.79,
       "threshold": 5.0,
-      "label": "-2.7% vs 5%"
+      "label": "-2.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 14.19,
-      "threshold": 9.13,
-      "label": "Fwd 14.2x vs Trail 9.1x"
+      "value": 13.91,
+      "threshold": 8.95,
+      "label": "Fwd 13.9x vs Trail 8.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.82,
+      "value": 0.8,
       "threshold": 0.5,
-      "label": "P/S 13.2x ÷ Growth 16.2% = 0.82"
+      "label": "P/S 13.0x ÷ Growth 16.2% = 0.80"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -277,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 9.13,
-    "sectorPe": 10.96,
-    "pb": 0.76,
-    "ps": 13.23,
+    "pe": 8.95,
+    "sectorPe": 10.73,
+    "pb": 0.74,
+    "ps": 12.97,
     "evEbitda": null,
-    "fcfYield": -2.74,
-    "forwardPe": 14.19,
+    "fcfYield": -2.79,
+    "forwardPe": 13.91,
     "dividendYield": 7.16,
     "revenueGrowth": 16.2,
     "profitMargin": 141.96,

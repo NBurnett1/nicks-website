@@ -1,9 +1,9 @@
 {
   "ticker": "SCG",
   "name": "SCENTRE STAPLED [SCG]",
-  "price": 3.61,
-  "valuationScore": 0.5,
-  "marketCap": "18.9B",
+  "price": 3.45,
+  "valuationScore": 0.3,
+  "marketCap": "18.0B",
   "sector": "Real Estate",
   "domain": "scentregroup.com",
   "chartData": [
@@ -214,24 +214,28 @@
     {
       "date": "2026-11-08",
       "price": 3.61
+    },
+    {
+      "date": "2026-11-15",
+      "price": 3.45
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": false,
-      "value": 9.5,
-      "threshold": 9.32,
-      "label": "9.5x vs 9.3x sector"
+      "passed": true,
+      "value": 9.08,
+      "threshold": 9.12,
+      "label": "9.1x vs 9.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.97,
+      "value": 0.93,
       "threshold": 1.5,
-      "label": "0.97x vs 1.5x"
+      "label": "0.93x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -243,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.24,
+      "value": 3.39,
       "threshold": 5.0,
-      "label": "3.2% vs 5%"
+      "label": "3.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 14.5,
-      "threshold": 9.5,
-      "label": "Fwd 14.5x vs Trail 9.5x"
+      "value": 13.85,
+      "threshold": 9.08,
+      "label": "Fwd 13.9x vs Trail 9.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -277,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 9.5,
-    "sectorPe": 10.96,
-    "pb": 0.97,
-    "ps": 7.33,
+    "pe": 9.08,
+    "sectorPe": 10.73,
+    "pb": 0.93,
+    "ps": 7.01,
     "evEbitda": null,
-    "fcfYield": 3.24,
-    "forwardPe": 14.5,
+    "fcfYield": 3.39,
+    "forwardPe": 13.85,
     "dividendYield": 5.11,
     "revenueGrowth": -8.3,
     "profitMargin": 76.53,

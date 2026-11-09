@@ -1,8 +1,8 @@
 {
   "ticker": "VEA",
   "name": "VIVA E GRP FPO [VEA]",
-  "price": 2.66,
-  "valuationScore": -29.3,
+  "price": 2.64,
+  "valuationScore": -5.9,
   "marketCap": "4.4B",
   "sector": "Energy",
   "domain": "vivaenergy.com.au",
@@ -214,6 +214,10 @@
     {
       "date": "2026-11-08",
       "price": 2.66
+    },
+    {
+      "date": "2026-11-15",
+      "price": 2.64
     }
   ],
   "testsPassed": 5,
@@ -222,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 20.46,
-      "threshold": 17.83,
-      "label": "20.5x vs 17.8x sector"
+      "value": 20.31,
+      "threshold": 17.71,
+      "label": "20.3x vs 17.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.36,
+      "value": 2.34,
       "threshold": 1.5,
-      "label": "2.36x vs 1.5x"
+      "label": "2.34x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 6.54,
+      "value": 6.51,
       "threshold": 10.0,
       "label": "6.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 12.19,
+      "value": 12.28,
       "threshold": 5.0,
-      "label": "12.2% vs 5%"
+      "label": "12.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 10.02,
-      "threshold": 20.46,
-      "label": "Fwd 10.0x vs Trail 20.5x"
+      "value": 9.95,
+      "threshold": 20.31,
+      "label": "Fwd 9.9x vs Trail 20.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -277,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 20.46,
-    "sectorPe": 20.98,
-    "pb": 2.36,
+    "pe": 20.31,
+    "sectorPe": 20.83,
+    "pb": 2.34,
     "ps": 0.15,
-    "evEbitda": 6.54,
-    "fcfYield": 12.19,
-    "forwardPe": 10.02,
+    "evEbitda": 6.51,
+    "fcfYield": 12.28,
+    "forwardPe": 9.95,
     "dividendYield": 5.81,
     "revenueGrowth": 10.2,
     "profitMargin": 0.75,

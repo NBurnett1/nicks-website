@@ -1,8 +1,8 @@
 {
   "ticker": "AMP",
   "name": "AMP FPO [AMP]",
-  "price": 2.22,
-  "valuationScore": 3.6,
+  "price": 2.19,
+  "valuationScore": 3.8,
   "marketCap": "5.3B",
   "sector": "Financials",
   "domain": "amp.com.au",
@@ -214,6 +214,10 @@
     {
       "date": "2026-11-08",
       "price": 2.22
+    },
+    {
+      "date": "2026-11-15",
+      "price": 2.19
     }
   ],
   "testsPassed": 3,
@@ -222,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 27.75,
-      "threshold": 17.29,
-      "label": "27.8x vs 17.3x sector"
+      "value": 27.38,
+      "threshold": 16.85,
+      "label": "27.4x vs 16.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.46,
+      "value": 1.44,
       "threshold": 1.5,
-      "label": "1.46x vs 1.5x"
+      "label": "1.44x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 18.38,
+      "value": 18.34,
       "threshold": 10.0,
-      "label": "18.4x vs 10x"
+      "label": "18.3x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.21,
+      "value": 4.27,
       "threshold": 5.0,
-      "label": "4.2% vs 5%"
+      "label": "4.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 15.03,
-      "threshold": 27.75,
-      "label": "Fwd 15.0x vs Trail 27.8x"
+      "value": 14.83,
+      "threshold": 27.38,
+      "label": "Fwd 14.8x vs Trail 27.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -264,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.67,
+      "value": 0.66,
       "threshold": 0.5,
-      "label": "P/S 1.9x ÷ Growth 2.8% = 0.67"
+      "label": "P/S 1.9x ÷ Growth 2.8% = 0.66"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -277,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 27.75,
-    "sectorPe": 20.34,
-    "pb": 1.46,
-    "ps": 1.88,
-    "evEbitda": 18.38,
-    "fcfYield": 4.21,
-    "forwardPe": 15.03,
+    "pe": 27.38,
+    "sectorPe": 19.82,
+    "pb": 1.44,
+    "ps": 1.86,
+    "evEbitda": 18.34,
+    "fcfYield": 4.27,
+    "forwardPe": 14.83,
     "dividendYield": 2.25,
     "revenueGrowth": 2.8,
     "profitMargin": 6.67,
