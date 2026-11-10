@@ -1,9 +1,9 @@
 {
   "ticker": "ING",
   "name": "INGHAMS FPO [ING]",
-  "price": 2.18,
-  "valuationScore": -13.4,
-  "marketCap": "811M",
+  "price": 2.19,
+  "valuationScore": -13.6,
+  "marketCap": "816M",
   "sector": "Consumer Staples",
   "domain": "inghams.com.au",
   "chartData": [
@@ -217,25 +217,25 @@
     },
     {
       "date": "2026-11-15",
-      "price": 2.18
+      "price": 2.19
     }
   ],
-  "testsPassed": 5,
-  "grade": "B",
+  "testsPassed": 6,
+  "grade": "A",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": false,
-      "value": 24.22,
-      "threshold": 23.9,
-      "label": "24.2x vs 23.9x sector"
+      "passed": true,
+      "value": 24.39,
+      "threshold": 26.0,
+      "label": "24.4x vs 26.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.22,
+      "value": 3.24,
       "threshold": 1.5,
-      "label": "3.22x vs 1.5x"
+      "label": "3.24x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 19.29,
+      "value": 19.16,
       "threshold": 5.0,
-      "label": "19.3% vs 5%"
+      "label": "19.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 10.6,
-      "threshold": 24.22,
-      "label": "Fwd 10.6x vs Trail 24.2x"
+      "value": 10.67,
+      "threshold": 24.39,
+      "label": "Fwd 10.7x vs Trail 24.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 24.22,
-    "sectorPe": 28.12,
-    "pb": 3.22,
+    "pe": 24.39,
+    "sectorPe": 30.58,
+    "pb": 3.24,
     "ps": 0.25,
     "evEbitda": 9.93,
-    "fcfYield": 19.29,
-    "forwardPe": 10.6,
+    "fcfYield": 19.16,
+    "forwardPe": 10.67,
     "dividendYield": 4.61,
     "revenueGrowth": 4.9,
     "profitMargin": 1.07,

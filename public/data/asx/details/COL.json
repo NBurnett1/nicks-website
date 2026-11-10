@@ -1,8 +1,8 @@
 {
   "ticker": "COL",
   "name": "COLESGROUP FPO [COL]",
-  "price": 22.57,
-  "valuationScore": 2.9,
+  "price": 22.53,
+  "valuationScore": 2.5,
   "marketCap": "30.3B",
   "sector": "Consumer Staples",
   "domain": "colesgroup.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-15",
-      "price": 22.57
+      "price": 22.53
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 27.86,
-      "threshold": 23.9,
-      "label": "27.9x vs 23.9x sector"
+      "value": 27.81,
+      "threshold": 26.0,
+      "label": "27.8x vs 26.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 7.66,
+      "value": 7.64,
       "threshold": 1.5,
-      "label": "7.66x vs 1.5x"
+      "label": "7.64x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.83,
+      "value": 5.84,
       "threshold": 5.0,
       "label": "5.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 22.54,
-      "threshold": 27.86,
-      "label": "Fwd 22.5x vs Trail 27.9x"
+      "value": 22.5,
+      "threshold": 27.81,
+      "label": "Fwd 22.5x vs Trail 27.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 27.86,
-    "sectorPe": 28.12,
-    "pb": 7.66,
+    "pe": 27.81,
+    "sectorPe": 30.58,
+    "pb": 7.64,
     "ps": 0.66,
     "evEbitda": 14.95,
-    "fcfYield": 5.83,
-    "forwardPe": 22.54,
+    "fcfYield": 5.84,
+    "forwardPe": 22.5,
     "dividendYield": 3.27,
     "revenueGrowth": 3.0,
     "profitMargin": 2.38,
