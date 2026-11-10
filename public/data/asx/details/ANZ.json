@@ -1,8 +1,8 @@
 {
   "ticker": "ANZ",
   "name": "ANZ GROUP FPO [ANZ]",
-  "price": 39.68,
-  "valuationScore": -0.2,
+  "price": 39.44,
+  "valuationScore": -0.9,
   "marketCap": "—",
   "sector": "Financials",
   "domain": "anz.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-15",
-      "price": 39.68
+      "price": 39.44
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 20.77,
-      "threshold": 17.13,
-      "label": "20.8x vs 17.1x sector"
+      "value": 16.5,
+      "threshold": 16.06,
+      "label": "16.5x vs 16.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.67,
+      "value": 1.66,
       "threshold": 1.5,
-      "label": "1.67x vs 1.5x"
+      "label": "1.66x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,16 +254,16 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 15.02,
-      "threshold": 20.77,
-      "label": "Fwd 15.0x vs Trail 20.8x"
+      "value": 14.95,
+      "threshold": 16.5,
+      "label": "Fwd 14.9x vs Trail 16.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": true,
-      "value": 33.72,
+      "value": 33.76,
       "threshold": 5.0,
-      "label": "Margin 33.7% / ROE 10.2%"
+      "label": "Margin 33.8% / ROE 10.2%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
@@ -275,23 +275,23 @@
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": true,
-      "value": 0.4,
+      "value": 0.2,
       "threshold": -5.0,
-      "label": "0.4% growth (floor: -5%)"
+      "label": "0.2% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 20.77,
-    "sectorPe": 20.15,
-    "pb": 1.67,
+    "pe": 16.5,
+    "sectorPe": 18.89,
+    "pb": 1.66,
     "ps": null,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 15.02,
-    "dividendYield": 4.12,
-    "revenueGrowth": 0.4,
-    "profitMargin": 33.72,
-    "operatingMargin": 47.33,
+    "forwardPe": 14.95,
+    "dividendYield": 4.25,
+    "revenueGrowth": 0.2,
+    "profitMargin": 33.76,
+    "operatingMargin": 51.11,
     "roe": 10.15,
     "debtEquity": null
   }

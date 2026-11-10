@@ -1,9 +1,9 @@
 {
   "ticker": "AIA",
   "name": "AUCK AIRPT FPO NZX [AIA]",
-  "price": 7.28,
+  "price": 7.33,
   "valuationScore": 11.5,
-  "marketCap": "12.4B",
+  "marketCap": "12.5B",
   "sector": "Industrials",
   "domain": "aucklandairport.co.nz",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-15",
-      "price": 7.28
+      "price": 7.33
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 42.82,
-      "threshold": 18.53,
-      "label": "42.8x vs 18.5x sector"
+      "value": 43.12,
+      "threshold": 18.8,
+      "label": "43.1x vs 18.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.41,
+      "value": 1.42,
       "threshold": 1.5,
-      "label": "1.41x vs 1.5x"
+      "label": "1.42x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -4.69,
+      "value": -4.66,
       "threshold": 5.0,
       "label": "-4.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 40.39,
-      "threshold": 42.82,
-      "label": "Fwd 40.4x vs Trail 42.8x"
+      "value": 40.67,
+      "threshold": 43.12,
+      "label": "Fwd 40.7x vs Trail 43.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 4.62,
+      "value": 4.65,
       "threshold": 0.5,
-      "label": "P/S 12.5x ÷ Growth 2.7% = 4.62"
+      "label": "P/S 12.6x ÷ Growth 2.7% = 4.65"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 42.82,
-    "sectorPe": 21.8,
-    "pb": 1.41,
-    "ps": 12.47,
+    "pe": 43.12,
+    "sectorPe": 22.12,
+    "pb": 1.42,
+    "ps": 12.55,
     "evEbitda": 21.02,
-    "fcfYield": -4.69,
-    "forwardPe": 40.39,
-    "dividendYield": 1.67,
+    "fcfYield": -4.66,
+    "forwardPe": 40.67,
+    "dividendYield": 1.65,
     "revenueGrowth": 2.7,
     "profitMargin": 33.63,
     "operatingMargin": 45.31,

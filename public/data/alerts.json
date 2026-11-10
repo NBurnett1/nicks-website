@@ -1,16 +1,43 @@
 {
-  "lastUpdated": "2026-11-10T13:32:48.523636+11:00",
+  "lastUpdated": "2026-11-11T02:29:54.827755+11:00",
   "stocksScanned": 129,
-  "totalAlerts": 159,
+  "totalAlerts": 161,
   "alerts": [
+    {
+      "type": "EXTREME VOLUME",
+      "severity": "critical",
+      "ticker": "LNW",
+      "exchange": "ASX",
+      "headline": "4.1x average volume detected",
+      "detail": "Volume: 849,491 vs 20-day avg: 209,743 | Price up 2.4%",
+      "timestamp": "2026-11-10T15:29:19.657209+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "critical",
+      "ticker": "SLC",
+      "exchange": "ASX",
+      "headline": "Stock plunged 10.2% in one session",
+      "detail": "$2.75 → $2.47",
+      "timestamp": "2026-11-10T15:29:31.274431+00:00"
+    },
     {
       "type": "PRICE_MOVE",
       "severity": "critical",
       "ticker": "MND",
       "exchange": "ASX",
-      "headline": "Stock surged 14.5% in one session",
-      "detail": "$28.30 → $32.40",
-      "timestamp": "2026-11-10T02:32:29.616361+00:00"
+      "headline": "Stock surged 15.3% in one session",
+      "detail": "$28.30 → $32.63",
+      "timestamp": "2026-11-10T15:29:41.113815+00:00"
+    },
+    {
+      "type": "EXTREME VOLUME",
+      "severity": "critical",
+      "ticker": "SIQ",
+      "exchange": "ASX",
+      "headline": "4.1x average volume detected",
+      "detail": "Volume: 2,101,162 vs 20-day avg: 516,067 | Price up 3.5%",
+      "timestamp": "2026-11-10T15:29:43.402932+00:00"
     },
     {
       "type": "INSIDER_SELL",
@@ -22,13 +49,31 @@
       "timestamp": "2026-10-20 00:00:00"
     },
     {
+      "type": "EXTREME VOLUME",
+      "severity": "high",
+      "ticker": "CCX",
+      "exchange": "ASX",
+      "headline": "3.7x average volume detected",
+      "detail": "Volume: 2,239,619 vs 20-day avg: 611,263 | Price down 7.7%",
+      "timestamp": "2026-11-10T15:28:46.050906+00:00"
+    },
+    {
       "type": "PRICE_MOVE",
       "severity": "high",
       "ticker": "CCX",
       "exchange": "ASX",
-      "headline": "Stock plunged 5.1% in one session",
+      "headline": "Stock plunged 7.7% in one session",
       "detail": "$0.04 → $0.04",
-      "timestamp": "2026-11-10T02:31:17.251854+00:00"
+      "timestamp": "2026-11-10T15:28:46.188468+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "high",
+      "ticker": "DOW",
+      "exchange": "ASX",
+      "headline": "Stock surged 5.2% in one session",
+      "detail": "$6.94 → $7.30",
+      "timestamp": "2026-11-10T15:28:59.795156+00:00"
     },
     {
       "type": "PRICE_MOVE",
@@ -37,25 +82,43 @@
       "exchange": "ASX",
       "headline": "Stock surged 6.0% in one session",
       "detail": "$6.12 → $6.49",
-      "timestamp": "2026-11-10T02:31:42.989330+00:00"
+      "timestamp": "2026-11-10T15:29:04.855367+00:00"
     },
     {
       "type": "PRICE_MOVE",
       "severity": "high",
-      "ticker": "SLC",
+      "ticker": "MP1",
       "exchange": "ASX",
-      "headline": "Stock plunged 8.4% in one session",
-      "detail": "$2.75 → $2.52",
-      "timestamp": "2026-11-10T02:32:16.060276+00:00"
+      "headline": "Stock surged 6.4% in one session",
+      "detail": "$17.34 → $18.45",
+      "timestamp": "2026-11-10T15:29:15.150405+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "high",
+      "ticker": "QAN",
+      "exchange": "ASX",
+      "headline": "Stock surged 6.3% in one session",
+      "detail": "$9.31 → $9.90",
+      "timestamp": "2026-11-10T15:29:29.824239+00:00"
+    },
+    {
+      "type": "EXTREME VOLUME",
+      "severity": "high",
+      "ticker": "MND",
+      "exchange": "ASX",
+      "headline": "3.4x average volume detected",
+      "detail": "Volume: 699,644 vs 20-day avg: 208,409 | Price up 15.3%",
+      "timestamp": "2026-11-10T15:29:40.959934+00:00"
     },
     {
       "type": "PRICE_MOVE",
       "severity": "high",
       "ticker": "IMD",
       "exchange": "ASX",
-      "headline": "Stock surged 5.2% in one session",
-      "detail": "$3.28 → $3.45",
-      "timestamp": "2026-11-10T02:32:42.076381+00:00"
+      "headline": "Stock surged 6.1% in one session",
+      "detail": "$3.28 → $3.48",
+      "timestamp": "2026-11-10T15:29:50.448266+00:00"
     },
     {
       "type": "PRICE_MOVE",
@@ -64,7 +127,7 @@
       "exchange": "ASX",
       "headline": "Stock surged 8.1% in one session",
       "detail": "$0.37 → $0.40",
-      "timestamp": "2026-11-10T02:32:48.523496+00:00"
+      "timestamp": "2026-11-10T15:29:54.827624+00:00"
     },
     {
       "type": "INSIDER_BUY",
@@ -101,28 +164,6 @@
       "headline": "Gupta (Tarun Dinkar) (Chief Executive Officer) purchased 263,303 shares ($734,773)",
       "detail": "Purchase at price 2.79 per share.",
       "timestamp": "2026-10-19 00:00:00"
-    },
-    {
-      "type": "NEWS",
-      "severity": "medium",
-      "ticker": "PLS",
-      "exchange": "ASX",
-      "headline": "Australian lithium stocks slide as Citi cuts forecasts on weaker battery demand",
-      "detail": "Source: Investing.com",
-      "sentiment": "negative",
-      "thumbnail": null,
-      "timestamp": "2026-11-02T05:45:34Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "medium",
-      "ticker": "WBC",
-      "exchange": "ASX",
-      "headline": "Neoen obtains $1.2bn debt financing for Australian renewable projects",
-      "detail": "Source: Power Technology",
-      "sentiment": "negative",
-      "thumbnail": "https://media.zenfs.com/en/power_technology_866/b79e42b8208b0d3df9f8cba375f66dc7.jpg",
-      "timestamp": "2026-11-02T11:46:33Z"
     },
     {
       "type": "NEWS",
@@ -182,18 +223,27 @@
       "severity": "medium",
       "ticker": "SKC",
       "exchange": "ASX",
-      "headline": "2.4x average volume detected",
-      "detail": "Volume: 356,080 vs 20-day avg: 147,507 | Price up 0.9%",
-      "timestamp": "2026-11-10T02:31:58.192440+00:00"
+      "headline": "2.5x average volume detected",
+      "detail": "Volume: 374,505 vs 20-day avg: 147,507 | Price down 0.0%",
+      "timestamp": "2026-11-10T15:29:16.900467+00:00"
     },
     {
       "type": "VOLUME SPIKE",
       "severity": "medium",
-      "ticker": "SIQ",
+      "ticker": "JHX",
       "exchange": "ASX",
-      "headline": "2.4x average volume detected",
-      "detail": "Volume: 1,214,862 vs 20-day avg: 516,067 | Price up 3.7%",
-      "timestamp": "2026-11-10T02:32:32.119260+00:00"
+      "headline": "2.5x average volume detected",
+      "detail": "Volume: 3,697,498 vs 20-day avg: 1,476,481 | Price up 2.1%",
+      "timestamp": "2026-11-10T15:29:21.703899+00:00"
+    },
+    {
+      "type": "VOLUME SPIKE",
+      "severity": "medium",
+      "ticker": "SLC",
+      "exchange": "ASX",
+      "headline": "2.9x average volume detected",
+      "detail": "Volume: 5,584,605 vs 20-day avg: 1,918,717 | Price down 10.2%",
+      "timestamp": "2026-11-10T15:29:31.166991+00:00"
     },
     {
       "type": "INSIDER_BUY",
@@ -254,8 +304,8 @@
       "severity": "low",
       "ticker": "BAP",
       "exchange": "ASX",
-      "headline": "Fraser (Andrew) (Director (Non-Executive)) purchased 60,000 shares ($37,134)",
-      "detail": "Purchase at price 0.62 per share.",
+      "headline": "Carey (Annette) (Director (Non-Executive)) purchased 25,000 shares ($14,592)",
+      "detail": "Purchase at price 0.58 per share.",
       "timestamp": "2026-10-23 00:00:00"
     },
     {
@@ -263,8 +313,8 @@
       "severity": "low",
       "ticker": "BAP",
       "exchange": "ASX",
-      "headline": "Carey (Annette) (Director (Non-Executive)) purchased 25,000 shares ($14,592)",
-      "detail": "Purchase at price 0.58 per share.",
+      "headline": "Fraser (Andrew) (Director (Non-Executive)) purchased 60,000 shares ($37,134)",
+      "detail": "Purchase at price 0.62 per share.",
       "timestamp": "2026-10-23 00:00:00"
     },
     {
@@ -311,61 +361,6 @@
       "headline": "Edwards (Lachlan) (Director (Non-Executive)) purchased 20,000 shares ($11,804)",
       "detail": "Purchase at price 0.59 per share.",
       "timestamp": "2026-10-30 00:00:00"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "FMG",
-      "exchange": "ASX",
-      "headline": "3 Great Dividend Shares To Own In November 2026",
-      "detail": "Source: Simply Wall St.",
-      "sentiment": "positive",
-      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/b3afc3aebe63e88efd88ece816db6b85.jpg",
-      "timestamp": "2026-11-02T07:10:59Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "NHF",
-      "exchange": "ASX",
-      "headline": "3 Great Dividend Shares To Own In November 2026",
-      "detail": "Source: Simply Wall St.",
-      "sentiment": "positive",
-      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/b3afc3aebe63e88efd88ece816db6b85.jpg",
-      "timestamp": "2026-11-02T07:10:59Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "RMD",
-      "exchange": "ASX",
-      "headline": "ResMed: 3 Key Takeaways for Long-Term Investors",
-      "detail": "Source: Motley Fool",
-      "sentiment": "neutral",
-      "thumbnail": "https://media.zenfs.com/en/motleyfool.com/2fcea16b3ae624a34a13182644465c52.jpg",
-      "timestamp": "2026-11-02T09:33:51Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "VEA",
-      "exchange": "ASX",
-      "headline": "Coles posts 2.2% rise in Q1 sales",
-      "detail": "Source: Retail Insight Network",
-      "sentiment": "neutral",
-      "thumbnail": "https://media.zenfs.com/en/retail_insight_network_724/7285407a3d7754d8f1f6ce48481dd3aa.jpg",
-      "timestamp": "2026-11-02T14:36:03Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "COL",
-      "exchange": "ASX",
-      "headline": "Coles posts 2.2% rise in Q1 sales",
-      "detail": "Source: Retail Insight Network",
-      "sentiment": "neutral",
-      "thumbnail": "https://media.zenfs.com/en/retail_insight_network_724/7285407a3d7754d8f1f6ce48481dd3aa.jpg",
-      "timestamp": "2026-11-02T14:36:03Z"
     },
     {
       "type": "NEWS",
@@ -564,6 +559,15 @@
       "timestamp": "2026-11-04 00:00:00"
     },
     {
+      "type": "INSIDER_BUY",
+      "severity": "low",
+      "ticker": "AMP",
+      "exchange": "ASX",
+      "headline": "Bailey (Kathleen Anne) (Independent Non-Executive Director) purchased 18,518 shares ($28,014)",
+      "detail": "Purchase at price 1.51 per share.",
+      "timestamp": "2026-11-04 00:00:00"
+    },
+    {
       "type": "NEWS",
       "severity": "low",
       "ticker": "MND",
@@ -573,28 +577,6 @@
       "sentiment": "positive",
       "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/25bb09d680a14f675310a720ce49a711.jpg",
       "timestamp": "2026-11-04T03:16:23Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "WOR",
-      "exchange": "ASX",
-      "headline": "Top 3 Australian Uranium Stocks To Watch In November 2026",
-      "detail": "Source: Simply Wall St.",
-      "sentiment": "neutral",
-      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/67b2b004d6b6fbb0c05d4d086193e833.jpg",
-      "timestamp": "2026-11-04T07:12:43Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "PDN",
-      "exchange": "ASX",
-      "headline": "Top 3 Australian Uranium Stocks To Watch In November 2026",
-      "detail": "Source: Simply Wall St.",
-      "sentiment": "neutral",
-      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/67b2b004d6b6fbb0c05d4d086193e833.jpg",
-      "timestamp": "2026-11-04T07:12:43Z"
     },
     {
       "type": "NEWS",
@@ -645,17 +627,6 @@
       "severity": "low",
       "ticker": "LNW",
       "exchange": "ASX",
-      "headline": "Light & Wonder: Q3 Earnings Snapshot",
-      "detail": "Source: Associated Press",
-      "sentiment": "neutral",
-      "thumbnail": null,
-      "timestamp": "2026-11-04T22:37:48Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "LNW",
-      "exchange": "ASX",
       "headline": "Light & Wonder (LNWO) Surpasses Q3 Earnings Estimates",
       "detail": "Source: Zacks",
       "sentiment": "neutral",
@@ -694,17 +665,6 @@
       "sentiment": "neutral",
       "thumbnail": "https://media.zenfs.com/en/proactive_video_751/734a017d74f3f45eee1f6a8efb6ec455.jpg",
       "timestamp": "2026-11-05T02:32:00Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "CPU",
-      "exchange": "ASX",
-      "headline": "3 Australian Dividend Stocks With At Least 4.5% Earnings Growth",
-      "detail": "Source: Simply Wall St.",
-      "sentiment": "positive",
-      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/25bb09d680a14f675310a720ce49a711.jpg",
-      "timestamp": "2026-11-05T04:43:02Z"
     },
     {
       "type": "NEWS",
@@ -969,17 +929,6 @@
       "sentiment": "neutral",
       "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/0450be450a8d596595ae11ee9462ccd2.jpg",
       "timestamp": "2026-11-05T21:17:03Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "QAN",
-      "exchange": "ASX",
-      "headline": "Qantas Expects $2.63 Billion First-Half Fuel Bill Amid Elevated Oil Prices",
-      "detail": "Source: The Wall Street Journal",
-      "sentiment": "neutral",
-      "thumbnail": "https://media.zenfs.com/en/wsj.com/65b4aeb623145e536abf551481290ede.jpg",
-      "timestamp": "2026-11-05T23:44:00Z"
     },
     {
       "type": "NEWS",
@@ -1512,17 +1461,6 @@
     {
       "type": "NEWS",
       "severity": "low",
-      "ticker": "QAN",
-      "exchange": "ASX",
-      "headline": "Ryanair Stock And Other Airlines Watching Fuel Prices Closely",
-      "detail": "Source: Simply Wall St.",
-      "sentiment": "neutral",
-      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/9ef178742311992a21277ff872dc65a1.jpg",
-      "timestamp": "2026-11-09T11:08:48Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
       "ticker": "AMC",
       "exchange": "ASX",
       "headline": "Should International Paper Stock Holders Look At Amcor Instead?",
@@ -1611,17 +1549,6 @@
     {
       "type": "NEWS",
       "severity": "low",
-      "ticker": "BHP",
-      "exchange": "ASX",
-      "headline": "BHP’s (BHP) CEO Says One Project Is “Rapidly Taking Shape.” It Isn’t Copper",
-      "detail": "Source: Insider Monkey",
-      "sentiment": "neutral",
-      "thumbnail": "https://media.zenfs.com/en/insidermonkey.com/8a08322ebdeca5d2ee94db085538d17d.jpg",
-      "timestamp": "2026-11-09T19:09:30Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
       "ticker": "RIO",
       "exchange": "ASX",
       "headline": "Where Is Rio Tinto’s (RIO) Copper Growth Coming From?",
@@ -1688,13 +1615,90 @@
     {
       "type": "NEWS",
       "severity": "low",
+      "ticker": "CPU",
+      "exchange": "ASX",
+      "headline": "3 Australian Dividend Stocks With At Least 4% Yield",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "positive",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/25bb09d680a14f675310a720ce49a711.jpg",
+      "timestamp": "2026-11-10T03:12:10Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "BHP",
+      "exchange": "ASX",
+      "headline": "3 Australian Dividend Stocks With At Least 4% Yield",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "positive",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/25bb09d680a14f675310a720ce49a711.jpg",
+      "timestamp": "2026-11-10T03:12:10Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
       "ticker": "QAN",
       "exchange": "ASX",
-      "headline": "Australia's Qantas to axe 850 jobs in offshoring deal with Accenture",
-      "detail": "Source: Reuters",
+      "headline": "Qantas to Cut 850 Jobs After Tech Deal With Accenture",
+      "detail": "Source: The Wall Street Journal",
+      "sentiment": "neutral",
+      "thumbnail": "https://media.zenfs.com/en/wsj.com/6088010c336284db5fde06e838e4b6f2.jpg",
+      "timestamp": "2026-11-10T05:12:00Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "QAN",
+      "exchange": "ASX",
+      "headline": "Asian airline stocks surge as oil prices slide on Iran peace hopes",
+      "detail": "Source: Investing.com",
       "sentiment": "positive",
-      "thumbnail": "https://media.zenfs.com/en/reuters.com/7aed340a9b7979f029d0bd70531227c0.jpg",
-      "timestamp": "2026-11-10T01:30:41Z"
+      "thumbnail": null,
+      "timestamp": "2026-11-10T05:32:31Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "WOR",
+      "exchange": "ASX",
+      "headline": "3 Australian Nuclear Stocks To Own In November 2026",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "neutral",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/67b2b004d6b6fbb0c05d4d086193e833.jpg",
+      "timestamp": "2026-11-10T09:11:10Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "PDN",
+      "exchange": "ASX",
+      "headline": "3 Australian Nuclear Stocks To Own In November 2026",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "neutral",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/67b2b004d6b6fbb0c05d4d086193e833.jpg",
+      "timestamp": "2026-11-10T09:11:10Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "QAN",
+      "exchange": "ASX",
+      "headline": "Auto & Transport Roundup: Market Talk",
+      "detail": "Source: The Wall Street Journal",
+      "sentiment": "neutral",
+      "thumbnail": "https://media.zenfs.com/en/wsj.com/239f772893ffb8cd9b66ed553526baef.jpg",
+      "timestamp": "2026-11-10T13:12:00Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "LNW",
+      "exchange": "ASX",
+      "headline": "Wall Street Analysts See a 35.27% Upside in Light & Wonder (LNWO): Can the Stock Really Move This High?",
+      "detail": "Source: Zacks",
+      "sentiment": "positive",
+      "thumbnail": "https://media.zenfs.com/en/zacks.com/e8e4b0344809eaac6d73c9fd25fd180a.jpg",
+      "timestamp": "2026-11-10T13:55:02Z"
     }
   ]
 }
