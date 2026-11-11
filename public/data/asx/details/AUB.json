@@ -1,8 +1,8 @@
 {
   "ticker": "AUB",
   "name": "AUB GROUP FPO [AUB]",
-  "price": 30.78,
-  "valuationScore": 1.3,
+  "price": 30.5,
+  "valuationScore": 1.4,
   "marketCap": "4.0B",
   "sector": "Financial Services",
   "domain": "aubgroup.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-15",
-      "price": 30.78
+      "price": 30.5
     }
   ],
   "testsPassed": 2,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 39.46,
-      "threshold": 21.63,
-      "label": "39.5x vs 21.6x sector"
+      "value": 39.1,
+      "threshold": 21.82,
+      "label": "39.1x vs 21.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.14,
+      "value": 2.12,
       "threshold": 1.5,
-      "label": "2.14x vs 1.5x"
+      "label": "2.12x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.89,
+      "value": 3.93,
       "threshold": 5.0,
       "label": "3.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.48,
-      "threshold": 39.46,
-      "label": "Fwd 14.5x vs Trail 39.5x"
+      "value": 14.35,
+      "threshold": 39.1,
+      "label": "Fwd 14.4x vs Trail 39.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,17 +281,17 @@
     }
   },
   "metrics": {
-    "pe": 39.46,
-    "sectorPe": 25.45,
-    "pb": 2.14,
-    "ps": 3.24,
+    "pe": 39.1,
+    "sectorPe": 25.67,
+    "pb": 2.12,
+    "ps": 3.21,
     "evEbitda": 13.13,
-    "fcfYield": 3.89,
-    "forwardPe": 14.48,
-    "dividendYield": 3.24,
+    "fcfYield": 3.93,
+    "forwardPe": 14.35,
+    "dividendYield": 3.2,
     "revenueGrowth": 5.2,
     "profitMargin": 7.75,
-    "operatingMargin": 29.5,
+    "operatingMargin": 26.77,
     "roe": 6.3,
     "debtEquity": 55.35
   }

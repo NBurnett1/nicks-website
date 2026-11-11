@@ -1,9 +1,9 @@
 {
   "ticker": "IPH",
   "name": "IPHLIMITED FPO [IPH]",
-  "price": 4.1,
-  "valuationScore": -12.3,
-  "marketCap": "1.1B",
+  "price": 4.06,
+  "valuationScore": -12.5,
+  "marketCap": "1.0B",
   "sector": "Industrials",
   "domain": "iphlimited.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-15",
-      "price": 4.1
+      "price": 4.06
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 12.81,
-      "threshold": 18.59,
-      "label": "12.8x vs 18.6x sector"
+      "value": 13.1,
+      "threshold": 18.75,
+      "label": "13.1x vs 18.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.69,
+      "value": 1.67,
       "threshold": 1.5,
-      "label": "1.69x vs 1.5x"
+      "label": "1.67x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 14.69,
+      "value": 14.83,
       "threshold": 5.0,
-      "label": "14.7% vs 5%"
+      "label": "14.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 8.43,
-      "threshold": 12.81,
-      "label": "Fwd 8.4x vs Trail 12.8x"
+      "value": 8.35,
+      "threshold": 13.1,
+      "label": "Fwd 8.3x vs Trail 13.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,17 +281,17 @@
     }
   },
   "metrics": {
-    "pe": 12.81,
-    "sectorPe": 21.88,
-    "pb": 1.69,
-    "ps": 1.48,
+    "pe": 13.1,
+    "sectorPe": 22.06,
+    "pb": 1.67,
+    "ps": 1.47,
     "evEbitda": 7.54,
-    "fcfYield": 14.69,
-    "forwardPe": 8.43,
-    "dividendYield": 9.77,
+    "fcfYield": 14.83,
+    "forwardPe": 8.35,
+    "dividendYield": 9.54,
     "revenueGrowth": -5.0,
     "profitMargin": 11.32,
-    "operatingMargin": 18.7,
+    "operatingMargin": 18.72,
     "roe": 12.17,
     "debtEquity": 67.22
   }

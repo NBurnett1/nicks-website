@@ -1,9 +1,9 @@
 {
   "ticker": "ORG",
   "name": "ORIGIN ENE FPO [ORG]",
-  "price": 12.15,
-  "valuationScore": -6.2,
-  "marketCap": "20.9B",
+  "price": 12.27,
+  "valuationScore": 1.5,
+  "marketCap": "21.1B",
   "sector": "Energy",
   "domain": "originenergy.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-15",
-      "price": 12.15
+      "price": 12.27
     }
   ],
   "testsPassed": 2,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 13.35,
-      "threshold": 17.34,
-      "label": "13.4x vs 17.3x sector"
+      "value": 13.48,
+      "threshold": 18.26,
+      "label": "13.5x vs 18.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.06,
+      "value": 2.08,
       "threshold": 1.5,
-      "label": "2.06x vs 1.5x"
+      "label": "2.08x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.91,
+      "value": 3.87,
       "threshold": 5.0,
       "label": "3.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 18.77,
-      "threshold": 13.35,
-      "label": "Fwd 18.8x vs Trail 13.4x"
+      "value": 18.83,
+      "threshold": 13.48,
+      "label": "Fwd 18.8x vs Trail 13.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,17 +281,17 @@
     }
   },
   "metrics": {
-    "pe": 13.35,
-    "sectorPe": 20.4,
-    "pb": 2.06,
-    "ps": 1.34,
+    "pe": 13.48,
+    "sectorPe": 21.48,
+    "pb": 2.08,
+    "ps": 1.35,
     "evEbitda": 14.58,
-    "fcfYield": 3.91,
-    "forwardPe": 18.77,
-    "dividendYield": 4.92,
+    "fcfYield": 3.87,
+    "forwardPe": 18.83,
+    "dividendYield": 4.94,
     "revenueGrowth": -10.2,
     "profitMargin": 10.08,
-    "operatingMargin": 9.47,
+    "operatingMargin": 8.54,
     "roe": 15.7,
     "debtEquity": 49.4
   }

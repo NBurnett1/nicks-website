@@ -1,8 +1,8 @@
 {
   "ticker": "SIQ",
   "name": "SMARTGROUP FPO [SIQ]",
-  "price": 11.34,
-  "valuationScore": 1.7,
+  "price": 11.5,
+  "valuationScore": 1.8,
   "marketCap": "1.6B",
   "sector": "Industrials",
   "domain": "smartgroup.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-15",
-      "price": 11.34
+      "price": 11.5
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 17.18,
-      "threshold": 18.59,
-      "label": "17.2x vs 18.6x sector"
+      "value": 17.97,
+      "threshold": 18.75,
+      "label": "18.0x vs 18.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 5.22,
+      "value": 5.3,
       "threshold": 1.5,
-      "label": "5.22x vs 1.5x"
+      "label": "5.30x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.6,
+      "value": 3.55,
       "threshold": 5.0,
-      "label": "3.6% vs 5%"
+      "label": "3.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 15.32,
-      "threshold": 17.18,
-      "label": "Fwd 15.3x vs Trail 17.2x"
+      "value": 15.54,
+      "threshold": 17.97,
+      "label": "Fwd 15.5x vs Trail 18.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,17 +281,17 @@
     }
   },
   "metrics": {
-    "pe": 17.18,
-    "sectorPe": 21.88,
-    "pb": 5.22,
-    "ps": 4.47,
+    "pe": 17.97,
+    "sectorPe": 22.06,
+    "pb": 5.3,
+    "ps": 4.53,
     "evEbitda": 11.39,
-    "fcfYield": 3.6,
-    "forwardPe": 15.32,
-    "dividendYield": 3.82,
+    "fcfYield": 3.55,
+    "forwardPe": 15.54,
+    "dividendYield": 3.69,
     "revenueGrowth": 12.8,
     "profitMargin": 23.94,
-    "operatingMargin": 35.04,
+    "operatingMargin": 36.08,
     "roe": 30.98,
     "debtEquity": 32.04
   }

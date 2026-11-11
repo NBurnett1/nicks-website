@@ -2,8 +2,8 @@
   "ticker": "SYR",
   "name": "SYRAH RES FPO [SYR]",
   "price": 0.07,
-  "valuationScore": 44.1,
-  "marketCap": "151M",
+  "valuationScore": -9.6,
+  "marketCap": "—",
   "sector": "Basic Materials",
   "domain": "syrahresources.com.au",
   "chartData": [
@@ -217,11 +217,11 @@
     },
     {
       "date": "2026-11-15",
-      "price": 0.06
+      "price": 0.07
     }
   ],
-  "testsPassed": 3,
-  "grade": "C",
+  "testsPassed": 2,
+  "grade": "D",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -233,9 +233,9 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.37,
+      "value": 0.38,
       "threshold": 1.5,
-      "label": "0.37x vs 1.5x"
+      "label": "0.38x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -246,15 +246,15 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": -28.18,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "-28.2% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": -1.38,
+      "value": -1.44,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": true,
-      "value": 0.0,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 3.1x ÷ Growth 800.4% = 0.00"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,16 +282,16 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 18.04,
-    "pb": 0.37,
-    "ps": 3.05,
+    "sectorPe": 18.7,
+    "pb": 0.38,
+    "ps": null,
     "evEbitda": -5.25,
-    "fcfYield": -28.18,
-    "forwardPe": -1.38,
+    "fcfYield": null,
+    "forwardPe": -1.44,
     "dividendYield": 0.0,
     "revenueGrowth": 800.4,
     "profitMargin": 0.0,
-    "operatingMargin": -272.44,
+    "operatingMargin": -181.31,
     "roe": -49.02,
     "debtEquity": 108.76
   }

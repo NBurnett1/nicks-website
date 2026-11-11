@@ -1,9 +1,9 @@
 {
   "ticker": "AZJ",
   "name": "AURIZON FPO [AZJ]",
-  "price": 3.96,
-  "valuationScore": -3.8,
-  "marketCap": "6.7B",
+  "price": 3.92,
+  "valuationScore": -3.9,
+  "marketCap": "6.6B",
   "sector": "Industrials",
   "domain": "aurizon.com.au",
   "chartData": [
@@ -217,25 +217,25 @@
     },
     {
       "date": "2026-11-15",
-      "price": 3.96
+      "price": 3.92
     }
   ],
-  "testsPassed": 5,
-  "grade": "B",
+  "testsPassed": 6,
+  "grade": "A",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": false,
-      "value": 18.86,
-      "threshold": 18.59,
-      "label": "18.9x vs 18.6x sector"
+      "passed": true,
+      "value": 18.67,
+      "threshold": 18.75,
+      "label": "18.7x vs 18.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.69,
+      "value": 1.68,
       "threshold": 1.5,
-      "label": "1.69x vs 1.5x"
+      "label": "1.68x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.3,
+      "value": 4.34,
       "threshold": 5.0,
       "label": "4.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.03,
-      "threshold": 18.86,
-      "label": "Fwd 16.0x vs Trail 18.9x"
+      "value": 15.89,
+      "threshold": 18.67,
+      "label": "Fwd 15.9x vs Trail 18.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,17 +281,17 @@
     }
   },
   "metrics": {
-    "pe": 18.86,
-    "sectorPe": 21.88,
-    "pb": 1.69,
-    "ps": 1.6,
+    "pe": 18.67,
+    "sectorPe": 22.06,
+    "pb": 1.68,
+    "ps": 1.58,
     "evEbitda": 7.58,
-    "fcfYield": 4.3,
-    "forwardPe": 16.03,
-    "dividendYield": 5.97,
+    "fcfYield": 4.34,
+    "forwardPe": 15.89,
+    "dividendYield": 5.9,
     "revenueGrowth": 9.0,
     "profitMargin": 8.69,
-    "operatingMargin": 20.31,
+    "operatingMargin": 22.63,
     "roe": 9.02,
     "debtEquity": 148.34
   }

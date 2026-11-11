@@ -1,9 +1,9 @@
 {
   "ticker": "DOW",
   "name": "DOWNER EDI FPO [DOW]",
-  "price": 7.31,
-  "valuationScore": -4.8,
-  "marketCap": "4.8B",
+  "price": 7.28,
+  "valuationScore": -5.1,
+  "marketCap": "4.7B",
   "sector": "Industrials",
   "domain": "downergroup.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-15",
-      "price": 7.31
+      "price": 7.28
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 22.15,
-      "threshold": 18.59,
-      "label": "22.2x vs 18.6x sector"
+      "value": 22.06,
+      "threshold": 18.75,
+      "label": "22.1x vs 18.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.45,
+      "value": 2.44,
       "threshold": 1.5,
-      "label": "2.45x vs 1.5x"
+      "label": "2.44x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 9.1,
+      "value": 9.28,
       "threshold": 5.0,
-      "label": "9.1% vs 5%"
+      "label": "9.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.33,
-      "threshold": 22.15,
-      "label": "Fwd 14.3x vs Trail 22.2x"
+      "value": 14.27,
+      "threshold": 22.06,
+      "label": "Fwd 14.3x vs Trail 22.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,17 +281,17 @@
     }
   },
   "metrics": {
-    "pe": 22.15,
-    "sectorPe": 21.88,
-    "pb": 2.45,
-    "ps": 0.49,
+    "pe": 22.06,
+    "sectorPe": 22.06,
+    "pb": 2.44,
+    "ps": 0.48,
     "evEbitda": 9.87,
-    "fcfYield": 9.1,
-    "forwardPe": 14.33,
-    "dividendYield": 4.21,
+    "fcfYield": 9.28,
+    "forwardPe": 14.27,
+    "dividendYield": 4.0,
     "revenueGrowth": -7.7,
     "profitMargin": 2.23,
-    "operatingMargin": 5.33,
+    "operatingMargin": 4.58,
     "roe": 10.29,
     "debtEquity": 66.05
   }
