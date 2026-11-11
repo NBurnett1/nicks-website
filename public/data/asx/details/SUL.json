@@ -220,15 +220,15 @@
       "price": 13.55
     }
   ],
-  "testsPassed": 6,
-  "grade": "A",
+  "testsPassed": 5,
+  "grade": "B",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": true,
+      "passed": false,
       "value": 14.89,
-      "threshold": 15.0,
-      "label": "14.9x vs 15.0x sector"
+      "threshold": 14.84,
+      "label": "14.9x vs 14.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,9 +240,9 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 9.6,
+      "value": 9.67,
       "threshold": 10.0,
-      "label": "9.6x vs 10x"
+      "label": "9.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
@@ -282,10 +282,10 @@
   },
   "metrics": {
     "pe": 14.89,
-    "sectorPe": 17.65,
+    "sectorPe": 17.46,
     "pb": 2.35,
     "ps": 0.73,
-    "evEbitda": 9.6,
+    "evEbitda": 9.67,
     "fcfYield": 12.98,
     "forwardPe": 13.05,
     "dividendYield": 4.84,

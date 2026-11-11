@@ -1,8 +1,8 @@
 {
   "ticker": "DOW",
   "name": "DOWNER EDI FPO [DOW]",
-  "price": 7.3,
-  "valuationScore": -5.0,
+  "price": 7.31,
+  "valuationScore": -4.8,
   "marketCap": "4.8B",
   "sector": "Industrials",
   "domain": "downergroup.com",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-15",
-      "price": 7.3
+      "price": 7.31
     }
   ],
   "testsPassed": 3,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 22.12,
-      "threshold": 18.8,
-      "label": "22.1x vs 18.8x sector"
+      "value": 22.15,
+      "threshold": 18.59,
+      "label": "22.2x vs 18.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,23 +240,23 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 9.46,
+      "value": 9.87,
       "threshold": 10.0,
-      "label": "9.5x vs 10x"
+      "label": "9.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 9.12,
+      "value": 9.1,
       "threshold": 5.0,
       "label": "9.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.31,
-      "threshold": 22.12,
-      "label": "Fwd 14.3x vs Trail 22.1x"
+      "value": 14.33,
+      "threshold": 22.15,
+      "label": "Fwd 14.3x vs Trail 22.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 22.12,
-    "sectorPe": 22.12,
+    "pe": 22.15,
+    "sectorPe": 21.88,
     "pb": 2.45,
     "ps": 0.49,
-    "evEbitda": 9.46,
-    "fcfYield": 9.12,
-    "forwardPe": 14.31,
+    "evEbitda": 9.87,
+    "fcfYield": 9.1,
+    "forwardPe": 14.33,
     "dividendYield": 4.21,
     "revenueGrowth": -7.7,
     "profitMargin": 2.23,

@@ -1,8 +1,8 @@
 {
   "ticker": "FLT",
   "name": "FLIGHT CTR FPO [FLT]",
-  "price": 12.59,
-  "valuationScore": 1.8,
+  "price": 12.46,
+  "valuationScore": 1.5,
   "marketCap": "2.5B",
   "sector": "Consumer Cyclical",
   "domain": "fctgl.com",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-15",
-      "price": 12.59
+      "price": 12.46
     }
   ],
   "testsPassed": 5,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 17.99,
-      "threshold": 21.28,
-      "label": "18.0x vs 21.3x sector"
+      "value": 17.55,
+      "threshold": 21.68,
+      "label": "17.5x vs 21.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.35,
+      "value": 2.32,
       "threshold": 1.5,
-      "label": "2.35x vs 1.5x"
+      "label": "2.32x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 13.72,
+      "value": 13.94,
       "threshold": 10.0,
-      "label": "13.7x vs 10x"
+      "label": "13.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.14,
+      "value": 5.19,
       "threshold": 5.0,
-      "label": "5.1% vs 5%"
+      "label": "5.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 10.12,
-      "threshold": 17.99,
-      "label": "Fwd 10.1x vs Trail 18.0x"
+      "value": 10.02,
+      "threshold": 17.55,
+      "label": "Fwd 10.0x vs Trail 17.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 17.99,
-    "sectorPe": 25.04,
-    "pb": 2.35,
-    "ps": 0.89,
-    "evEbitda": 13.72,
-    "fcfYield": 5.14,
-    "forwardPe": 10.12,
+    "pe": 17.55,
+    "sectorPe": 25.5,
+    "pb": 2.32,
+    "ps": 0.88,
+    "evEbitda": 13.94,
+    "fcfYield": 5.19,
+    "forwardPe": 10.02,
     "dividendYield": 3.4,
     "revenueGrowth": -0.7,
     "profitMargin": 5.22,

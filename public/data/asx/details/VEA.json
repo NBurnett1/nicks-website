@@ -1,9 +1,9 @@
 {
   "ticker": "VEA",
   "name": "VIVA E GRP FPO [VEA]",
-  "price": 2.71,
-  "valuationScore": -5.4,
-  "marketCap": "4.5B",
+  "price": 2.67,
+  "valuationScore": -30.0,
+  "marketCap": "4.4B",
   "sector": "Energy",
   "domain": "vivaenergy.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-15",
-      "price": 2.71
+      "price": 2.66
     }
   ],
   "testsPassed": 5,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 20.85,
-      "threshold": 18.11,
-      "label": "20.8x vs 18.1x sector"
+      "value": 19.04,
+      "threshold": 17.34,
+      "label": "19.0x vs 17.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.4,
+      "value": 2.36,
       "threshold": 1.5,
-      "label": "2.40x vs 1.5x"
+      "label": "2.36x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 6.51,
+      "value": 6.59,
       "threshold": 10.0,
-      "label": "6.5x vs 10x"
+      "label": "6.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 11.96,
+      "value": 12.16,
       "threshold": 5.0,
-      "label": "12.0% vs 5%"
+      "label": "12.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 10.21,
-      "threshold": 20.85,
-      "label": "Fwd 10.2x vs Trail 20.8x"
+      "value": 10.04,
+      "threshold": 19.04,
+      "label": "Fwd 10.0x vs Trail 19.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 20.85,
-    "sectorPe": 21.31,
-    "pb": 2.4,
+    "pe": 19.04,
+    "sectorPe": 20.4,
+    "pb": 2.36,
     "ps": 0.15,
-    "evEbitda": 6.51,
-    "fcfYield": 11.96,
-    "forwardPe": 10.21,
+    "evEbitda": 6.59,
+    "fcfYield": 12.16,
+    "forwardPe": 10.04,
     "dividendYield": 5.86,
     "revenueGrowth": 10.2,
     "profitMargin": 0.75,

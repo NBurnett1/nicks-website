@@ -1,8 +1,8 @@
 {
   "ticker": "SPK",
   "name": "SPARK NZ FPO NZX [SPK]",
-  "price": 1.72,
-  "valuationScore": -25.8,
+  "price": 1.73,
+  "valuationScore": -26.7,
   "marketCap": "3.3B",
   "sector": "Communication Services",
   "domain": "sparknz.co.nz",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-15",
-      "price": 1.72
+      "price": 1.73
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 7.82,
-      "threshold": 38.31,
-      "label": "7.8x vs 38.3x sector"
+      "value": 7.87,
+      "threshold": 39.97,
+      "label": "7.9x vs 40.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.43,
+      "value": 2.45,
       "threshold": 1.5,
-      "label": "2.43x vs 1.5x"
+      "label": "2.45x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 4.95,
+      "value": 5.01,
       "threshold": 10.0,
       "label": "5.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 29.91,
+      "value": 29.7,
       "threshold": 5.0,
-      "label": "29.9% vs 5%"
+      "label": "29.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 14.5,
-      "threshold": 7.82,
-      "label": "Fwd 14.5x vs Trail 7.8x"
+      "value": 14.6,
+      "threshold": 7.87,
+      "label": "Fwd 14.6x vs Trail 7.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 7.82,
-    "sectorPe": 45.08,
-    "pb": 2.43,
+    "pe": 7.87,
+    "sectorPe": 47.02,
+    "pb": 2.45,
     "ps": 0.83,
-    "evEbitda": 4.95,
-    "fcfYield": 29.91,
-    "forwardPe": 14.5,
+    "evEbitda": 5.01,
+    "fcfYield": 29.7,
+    "forwardPe": 14.6,
     "dividendYield": 7.2,
     "revenueGrowth": null,
     "profitMargin": 12.64,
