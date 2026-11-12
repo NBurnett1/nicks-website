@@ -1,9 +1,9 @@
 {
   "ticker": "SUN",
   "name": "SUNCORP FPO [SUN]",
-  "price": 20.81,
-  "valuationScore": 0.7,
-  "marketCap": "22.1B",
+  "price": 20.66,
+  "valuationScore": 0.5,
+  "marketCap": "21.9B",
   "sector": "Financials",
   "domain": "suncorpgroup.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-15",
-      "price": 20.81
+      "price": 20.66
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 21.91,
-      "threshold": 16.13,
-      "label": "21.9x vs 16.1x sector"
+      "value": 21.52,
+      "threshold": 16.21,
+      "label": "21.5x vs 16.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.13,
+      "value": 2.11,
       "threshold": 1.5,
-      "label": "2.13x vs 1.5x"
+      "label": "2.11x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 14.47,
+      "value": 14.57,
       "threshold": 10.0,
-      "label": "14.5x vs 10x"
+      "label": "14.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 7.6,
+      "value": 7.66,
       "threshold": 5.0,
-      "label": "7.6% vs 5%"
+      "label": "7.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.6,
-      "threshold": 21.91,
-      "label": "Fwd 16.6x vs Trail 21.9x"
+      "value": 16.48,
+      "threshold": 21.52,
+      "label": "Fwd 16.5x vs Trail 21.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 21.91,
-    "sectorPe": 18.97,
-    "pb": 2.13,
-    "ps": 1.47,
-    "evEbitda": 14.47,
-    "fcfYield": 7.6,
-    "forwardPe": 16.6,
+    "pe": 21.52,
+    "sectorPe": 19.07,
+    "pb": 2.11,
+    "ps": 1.46,
+    "evEbitda": 14.57,
+    "fcfYield": 7.66,
+    "forwardPe": 16.48,
     "dividendYield": 3.34,
     "revenueGrowth": -0.5,
     "profitMargin": 6.83,

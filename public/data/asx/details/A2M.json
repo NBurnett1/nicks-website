@@ -1,8 +1,8 @@
 {
   "ticker": "A2M",
   "name": "A2 MILK FPO NZ [A2M]",
-  "price": 7.26,
-  "valuationScore": 0.7,
+  "price": 7.22,
+  "valuationScore": 0.6,
   "marketCap": "5.3B",
   "sector": "Consumer Staples",
   "domain": "thea2milkcompany.com",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-15",
-      "price": 7.26
+      "price": 7.22
     }
   ],
   "testsPassed": 5,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 29.04,
-      "threshold": 24.68,
-      "label": "29.0x vs 24.7x sector"
+      "value": 30.08,
+      "threshold": 25.57,
+      "label": "30.1x vs 25.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 6.05,
+      "value": 6.02,
       "threshold": 1.5,
-      "label": "6.05x vs 1.5x"
+      "label": "6.02x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 15.05,
+      "value": 14.89,
       "threshold": 10.0,
-      "label": "15.1x vs 10x"
+      "label": "14.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 6.43,
+      "value": 6.46,
       "threshold": 5.0,
-      "label": "6.4% vs 5%"
+      "label": "6.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 23.52,
-      "threshold": 29.04,
-      "label": "Fwd 23.5x vs Trail 29.0x"
+      "value": 23.39,
+      "threshold": 30.08,
+      "label": "Fwd 23.4x vs Trail 30.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 29.04,
-    "sectorPe": 29.04,
-    "pb": 6.05,
-    "ps": 2.68,
-    "evEbitda": 15.05,
-    "fcfYield": 6.43,
-    "forwardPe": 23.52,
+    "pe": 30.08,
+    "sectorPe": 30.08,
+    "pb": 6.02,
+    "ps": 2.67,
+    "evEbitda": 14.89,
+    "fcfYield": 6.46,
+    "forwardPe": 23.39,
     "dividendYield": 1.77,
     "revenueGrowth": 6.5,
     "profitMargin": 5.76,

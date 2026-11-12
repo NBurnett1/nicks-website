@@ -1,9 +1,9 @@
 {
   "ticker": "S32",
   "name": "SOUTH32 FPO [S32]",
-  "price": 4.69,
+  "price": 4.6,
   "valuationScore": 4.1,
-  "marketCap": "21.0B",
+  "marketCap": "20.6B",
   "sector": "Materials",
   "domain": "south32.net",
   "chartData": [
@@ -217,46 +217,46 @@
     },
     {
       "date": "2026-11-15",
-      "price": 4.69
+      "price": 4.6
     }
   ],
-  "testsPassed": 3,
+  "testsPassed": 4,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 13.4,
-      "threshold": 14.68,
-      "label": "13.4x vs 14.7x sector"
+      "value": 13.14,
+      "threshold": 14.64,
+      "label": "13.1x vs 14.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
-      "passed": false,
-      "value": 1.52,
+      "passed": true,
+      "value": 1.49,
       "threshold": 1.5,
-      "label": "1.52x vs 1.5x"
+      "label": "1.49x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 16.7,
+      "value": 16.84,
       "threshold": 10.0,
-      "label": "16.7x vs 10x"
+      "label": "16.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -0.06,
+      "value": -0.07,
       "threshold": 5.0,
       "label": "-0.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 15.24,
-      "threshold": 13.4,
-      "label": "Fwd 15.2x vs Trail 13.4x"
+      "value": 14.95,
+      "threshold": 13.14,
+      "label": "Fwd 14.9x vs Trail 13.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 3.21,
+      "value": 3.15,
       "threshold": 0.5,
-      "label": "P/S 3.5x ÷ Growth 1.1% = 3.21"
+      "label": "P/S 3.5x ÷ Growth 1.1% = 3.15"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 13.4,
-    "sectorPe": 17.27,
-    "pb": 1.52,
-    "ps": 3.53,
-    "evEbitda": 16.7,
-    "fcfYield": -0.06,
-    "forwardPe": 15.24,
+    "pe": 13.14,
+    "sectorPe": 17.22,
+    "pb": 1.49,
+    "ps": 3.46,
+    "evEbitda": 16.84,
+    "fcfYield": -0.07,
+    "forwardPe": 14.95,
     "dividendYield": 2.81,
     "revenueGrowth": 1.1,
     "profitMargin": 18.3,

@@ -1,9 +1,9 @@
 {
   "ticker": "TCL",
   "name": "TRANSURBAN STAPLED [TCL]",
-  "price": 14.77,
-  "valuationScore": 30.3,
-  "marketCap": "46.1B",
+  "price": 14.88,
+  "valuationScore": 30.4,
+  "marketCap": "46.4B",
   "sector": "Industrials",
   "domain": "transurban.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-15",
-      "price": 14.77
+      "price": 14.88
     }
   ],
   "testsPassed": 1,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 123.08,
-      "threshold": 18.75,
-      "label": "123.1x vs 18.8x sector"
+      "value": 123.96,
+      "threshold": 18.84,
+      "label": "124.0x vs 18.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 5.97,
+      "value": 6.01,
       "threshold": 1.5,
-      "label": "5.97x vs 1.5x"
+      "label": "6.01x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 28.32,
+      "value": 28.14,
       "threshold": 10.0,
-      "label": "28.3x vs 10x"
+      "label": "28.1x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.32,
+      "value": 2.3,
       "threshold": 5.0,
       "label": "2.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 75.23,
-      "threshold": 123.08,
-      "label": "Fwd 75.2x vs Trail 123.1x"
+      "value": 75.77,
+      "threshold": 123.96,
+      "label": "Fwd 75.8x vs Trail 124.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 123.08,
-    "sectorPe": 22.06,
-    "pb": 5.97,
-    "ps": 11.84,
-    "evEbitda": 28.32,
-    "fcfYield": 2.32,
-    "forwardPe": 75.23,
+    "pe": 123.96,
+    "sectorPe": 22.17,
+    "pb": 6.01,
+    "ps": 11.92,
+    "evEbitda": 28.14,
+    "fcfYield": 2.3,
+    "forwardPe": 75.77,
     "dividendYield": 4.69,
     "revenueGrowth": -9.8,
     "profitMargin": 9.4,

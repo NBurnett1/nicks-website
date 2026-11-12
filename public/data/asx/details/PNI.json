@@ -1,8 +1,8 @@
 {
   "ticker": "PNI",
   "name": "PINNACLE FPO [PNI]",
-  "price": 15.96,
-  "valuationScore": 42.8,
+  "price": 15.82,
+  "valuationScore": 43.3,
   "marketCap": "3.9B",
   "sector": "Financial Services",
   "domain": "pinnacleinvestment.com",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-15",
-      "price": 15.96
+      "price": 15.82
     }
   ],
   "testsPassed": 4,
@@ -226,23 +226,23 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 20.46,
-      "threshold": 21.82,
-      "label": "20.5x vs 21.8x sector"
+      "value": 20.03,
+      "threshold": 21.62,
+      "label": "20.0x vs 21.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.22,
+      "value": 3.19,
       "threshold": 1.5,
-      "label": "3.22x vs 1.5x"
+      "label": "3.19x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 124.87,
+      "value": 126.62,
       "threshold": 10.0,
-      "label": "124.9x vs 10x"
+      "label": "126.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.18,
-      "threshold": 20.46,
-      "label": "Fwd 16.2x vs Trail 20.5x"
+      "value": 16.03,
+      "threshold": 20.03,
+      "label": "Fwd 16.0x vs Trail 20.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": false,
       "value": 0.52,
       "threshold": 0.5,
-      "label": "P/S 35.5x ÷ Growth 68.2% = 0.52"
+      "label": "P/S 35.1x ÷ Growth 68.2% = 0.52"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 20.46,
-    "sectorPe": 25.67,
-    "pb": 3.22,
-    "ps": 35.46,
-    "evEbitda": 124.87,
+    "pe": 20.03,
+    "sectorPe": 25.44,
+    "pb": 3.19,
+    "ps": 35.15,
+    "evEbitda": 126.62,
     "fcfYield": 0.68,
-    "forwardPe": 16.18,
+    "forwardPe": 16.03,
     "dividendYield": 3.81,
     "revenueGrowth": 68.2,
     "profitMargin": 161.1,

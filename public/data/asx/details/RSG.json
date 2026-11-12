@@ -1,8 +1,8 @@
 {
   "ticker": "RSG",
   "name": "RESOLUTE FPO [RSG]",
-  "price": 1.28,
-  "valuationScore": -5.6,
+  "price": 1.25,
+  "valuationScore": -5.5,
   "marketCap": "2.7B",
   "sector": "Basic Materials",
   "domain": "rml.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-15",
-      "price": 1.28
+      "price": 1.25
     }
   ],
   "testsPassed": 7,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 9.18,
-      "threshold": 15.9,
-      "label": "9.2x vs 15.9x sector"
+      "value": 8.94,
+      "threshold": 14.98,
+      "label": "8.9x vs 15.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.31,
+      "value": 2.25,
       "threshold": 1.5,
-      "label": "2.31x vs 1.5x"
+      "label": "2.25x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 6.81,
+      "value": 6.75,
       "threshold": 10.0,
       "label": "6.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 7.76,
+      "value": 7.96,
       "threshold": 5.0,
-      "label": "7.8% vs 5%"
+      "label": "8.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 7.46,
-      "threshold": 9.18,
-      "label": "Fwd 7.5x vs Trail 9.2x"
+      "value": 7.27,
+      "threshold": 8.94,
+      "label": "Fwd 7.3x vs Trail 8.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 9.18,
-    "sectorPe": 18.7,
-    "pb": 2.31,
-    "ps": 2.74,
-    "evEbitda": 6.81,
-    "fcfYield": 7.76,
-    "forwardPe": 7.46,
+    "pe": 8.94,
+    "sectorPe": 17.63,
+    "pb": 2.25,
+    "ps": 2.67,
+    "evEbitda": 6.75,
+    "fcfYield": 7.96,
+    "forwardPe": 7.27,
     "dividendYield": 0.0,
     "revenueGrowth": 30.7,
     "profitMargin": 19.77,
