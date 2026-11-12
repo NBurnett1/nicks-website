@@ -1,8 +1,8 @@
 {
   "ticker": "BGA",
   "name": "BEGA FPO [BGA]",
-  "price": 6.77,
-  "valuationScore": 1.4,
+  "price": 6.74,
+  "valuationScore": 1.6,
   "marketCap": "2.1B",
   "sector": "Consumer Staples",
   "domain": "begagroup.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-15",
-      "price": 6.77
+      "price": 6.74
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 37.61,
-      "threshold": 25.57,
-      "label": "37.6x vs 25.6x sector"
+      "value": 37.44,
+      "threshold": 24.45,
+      "label": "37.4x vs 24.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.08,
+      "value": 2.07,
       "threshold": 1.5,
-      "label": "2.08x vs 1.5x"
+      "label": "2.07x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 13.48,
+      "value": 13.45,
       "threshold": 10.0,
-      "label": "13.5x vs 10x"
+      "label": "13.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 1.53,
+      "value": 1.54,
       "threshold": 5.0,
       "label": "1.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 22.64,
-      "threshold": 37.61,
-      "label": "Fwd 22.6x vs Trail 37.6x"
+      "value": 22.54,
+      "threshold": 37.44,
+      "label": "Fwd 22.5x vs Trail 37.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 37.61,
-    "sectorPe": 30.08,
-    "pb": 2.08,
+    "pe": 37.44,
+    "sectorPe": 28.76,
+    "pb": 2.07,
     "ps": 0.55,
-    "evEbitda": 13.48,
-    "fcfYield": 1.53,
-    "forwardPe": 22.64,
-    "dividendYield": 2.27,
+    "evEbitda": 13.45,
+    "fcfYield": 1.54,
+    "forwardPe": 22.54,
+    "dividendYield": 2.22,
     "revenueGrowth": 8.3,
     "profitMargin": 1.45,
     "operatingMargin": 3.3,

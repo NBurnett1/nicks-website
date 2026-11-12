@@ -1,8 +1,8 @@
 {
   "ticker": "CAR",
   "name": "CAR GROUP FPO [CAR]",
-  "price": 26.18,
-  "valuationScore": -5.5,
+  "price": 26.09,
+  "valuationScore": -5.4,
   "marketCap": "9.9B",
   "sector": "Technology",
   "domain": "cargroup.com",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-15",
-      "price": 26.18
+      "price": 26.09
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 31.54,
-      "threshold": 39.22,
-      "label": "31.5x vs 39.2x sector"
+      "value": 31.43,
+      "threshold": 39.34,
+      "label": "31.4x vs 39.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.62,
+      "value": 3.6,
       "threshold": 1.5,
-      "label": "3.62x vs 1.5x"
+      "label": "3.60x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.03,
+      "value": 4.04,
       "threshold": 5.0,
       "label": "4.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 20.03,
-      "threshold": 31.54,
-      "label": "Fwd 20.0x vs Trail 31.5x"
+      "value": 19.96,
+      "threshold": 31.43,
+      "label": "Fwd 20.0x vs Trail 31.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 2.09,
+      "value": 2.08,
       "threshold": 0.5,
-      "label": "P/S 7.9x ÷ Growth 3.8% = 2.09"
+      "label": "P/S 7.9x ÷ Growth 3.8% = 2.08"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 31.54,
-    "sectorPe": 46.14,
-    "pb": 3.62,
-    "ps": 7.92,
+    "pe": 31.43,
+    "sectorPe": 46.28,
+    "pb": 3.6,
+    "ps": 7.9,
     "evEbitda": 19.66,
-    "fcfYield": 4.03,
-    "forwardPe": 20.03,
-    "dividendYield": 3.34,
+    "fcfYield": 4.04,
+    "forwardPe": 19.96,
+    "dividendYield": 3.31,
     "revenueGrowth": 3.8,
     "profitMargin": 25.03,
     "operatingMargin": 38.45,
