@@ -1,8 +1,8 @@
 {
   "ticker": "GNC",
   "name": "GRAINCORP FPO [GNC]",
-  "price": 7.16,
-  "valuationScore": 7.8,
+  "price": 7.37,
+  "valuationScore": 14.2,
   "marketCap": "1.6B",
   "sector": "Consumer Staples",
   "domain": "graincorp.com.au",
@@ -217,11 +217,11 @@
     },
     {
       "date": "2026-11-15",
-      "price": 7.16
+      "price": 7.37
     }
   ],
-  "testsPassed": 1,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -233,66 +233,66 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.16,
+      "value": 1.23,
       "threshold": 1.5,
-      "label": "1.16x vs 1.5x"
+      "label": "1.23x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 41.89,
+      "value": 27.39,
       "threshold": 10.0,
-      "label": "41.9x vs 10x"
+      "label": "27.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.11,
+      "value": -12.86,
       "threshold": 5.0,
-      "label": "2.1% vs 5%"
+      "label": "-12.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 20.16,
+      "value": 21.0,
       "threshold": null,
       "label": "Insufficient data"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": false,
-      "value": -0.19,
+      "value": -0.14,
       "threshold": 5.0,
-      "label": "Margin -0.2% / ROE -0.9%"
+      "label": "Margin -0.1% / ROE -0.8%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": -5.1,
+      "passed": true,
+      "value": 0.22,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining -5.1%"
+      "label": "P/S 0.2x ÷ Growth 1.0% = 0.22"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
-      "passed": false,
-      "value": -5.1,
+      "passed": true,
+      "value": 1.0,
       "threshold": -5.0,
-      "label": "-5.1% growth (floor: -5%)"
+      "label": "1.0% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 30.5,
-    "pb": 1.16,
+    "sectorPe": 29.04,
+    "pb": 1.23,
     "ps": 0.22,
-    "evEbitda": 41.89,
-    "fcfYield": 2.11,
-    "forwardPe": 20.16,
-    "dividendYield": 3.98,
-    "revenueGrowth": -5.1,
-    "profitMargin": -0.19,
-    "operatingMargin": 0.09,
-    "roe": -0.95,
-    "debtEquity": 140.97
+    "evEbitda": 27.39,
+    "fcfYield": -12.86,
+    "forwardPe": 21.0,
+    "dividendYield": 4.0,
+    "revenueGrowth": 1.0,
+    "profitMargin": -0.14,
+    "operatingMargin": 0.14,
+    "roe": -0.75,
+    "debtEquity": 78.98
   }
 }

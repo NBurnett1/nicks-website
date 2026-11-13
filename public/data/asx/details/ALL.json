@@ -1,9 +1,9 @@
 {
   "ticker": "ALL",
   "name": "ARISTOCRAT FPO [ALL]",
-  "price": 65.91,
-  "valuationScore": 9.4,
-  "marketCap": "39.0B",
+  "price": 66.34,
+  "valuationScore": 10.0,
+  "marketCap": "39.3B",
   "sector": "Consumer Discretionary",
   "domain": "aristocrat.com",
   "chartData": [
@@ -217,82 +217,82 @@
     },
     {
       "date": "2026-11-15",
-      "price": 65.9
+      "price": 66.34
     }
   ],
-  "testsPassed": 3,
-  "grade": "C",
+  "testsPassed": 2,
+  "grade": "D",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 28.16,
-      "threshold": 14.88,
-      "label": "28.2x vs 14.9x sector"
+      "value": 29.62,
+      "threshold": 14.93,
+      "label": "29.6x vs 14.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 6.44,
+      "value": 6.91,
       "threshold": 1.5,
-      "label": "6.44x vs 1.5x"
+      "label": "6.91x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 17.54,
+      "value": 17.55,
       "threshold": 10.0,
       "label": "17.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.34,
+      "value": 2.6,
       "threshold": 5.0,
-      "label": "2.3% vs 5%"
+      "label": "2.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 19.86,
-      "threshold": 28.16,
-      "label": "Fwd 19.9x vs Trail 28.2x"
+      "value": 19.99,
+      "threshold": 29.62,
+      "label": "Fwd 20.0x vs Trail 29.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": true,
-      "value": 23.46,
+      "value": 22.51,
       "threshold": 5.0,
-      "label": "Margin 23.5% / ROE 22.0%"
+      "label": "Margin 22.5% / ROE 22.3%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": -0.2,
+      "value": -6.1,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining -0.2%"
+      "label": "FAIL — Revenue declining -6.1%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
-      "passed": true,
-      "value": -0.2,
+      "passed": false,
+      "value": -6.1,
       "threshold": -5.0,
-      "label": "-0.2% growth (floor: -5%)"
+      "label": "-6.1% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 28.16,
-    "sectorPe": 17.51,
-    "pb": 6.44,
-    "ps": 6.21,
-    "evEbitda": 17.54,
-    "fcfYield": 2.34,
-    "forwardPe": 19.86,
-    "dividendYield": 1.5,
-    "revenueGrowth": -0.2,
-    "profitMargin": 23.46,
-    "operatingMargin": 29.82,
-    "roe": 22.03,
-    "debtEquity": 30.65
+    "pe": 29.62,
+    "sectorPe": 17.57,
+    "pb": 6.91,
+    "ps": 6.45,
+    "evEbitda": 17.55,
+    "fcfYield": 2.6,
+    "forwardPe": 19.99,
+    "dividendYield": 1.52,
+    "revenueGrowth": -6.1,
+    "profitMargin": 22.51,
+    "operatingMargin": 30.44,
+    "roe": 22.28,
+    "debtEquity": 31.98
   }
 }

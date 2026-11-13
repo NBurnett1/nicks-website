@@ -1,9 +1,9 @@
 {
   "ticker": "WOW",
   "name": "WOOLWORTHS FPO [WOW]",
-  "price": 41.92,
-  "valuationScore": 10.6,
-  "marketCap": "—",
+  "price": 41.94,
+  "valuationScore": 10.9,
+  "marketCap": "51.2B",
   "sector": "Consumer Staples",
   "domain": "woolworthsgroup.com.au",
   "chartData": [
@@ -217,18 +217,18 @@
     },
     {
       "date": "2026-11-15",
-      "price": 41.92
+      "price": 41.94
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 45.57,
-      "threshold": 25.93,
-      "label": "45.6x vs 25.9x sector"
+      "value": 45.59,
+      "threshold": 24.68,
+      "label": "45.6x vs 24.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -246,16 +246,16 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": 4.22,
       "threshold": 5.0,
-      "label": "No FCF data"
+      "label": "4.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 25.98,
-      "threshold": 45.57,
+      "value": 25.99,
+      "threshold": 45.59,
       "label": "Fwd 26.0x vs Trail 45.6x"
     },
     "profitabilityCheck": {
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": true,
+      "value": 0.19,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "P/S 0.7x ÷ Growth 3.8% = 0.19"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 45.57,
-    "sectorPe": 30.5,
+    "pe": 45.59,
+    "sectorPe": 29.04,
     "pb": 10.66,
-    "ps": null,
+    "ps": 0.72,
     "evEbitda": 19.0,
-    "fcfYield": null,
-    "forwardPe": 25.98,
+    "fcfYield": 4.22,
+    "forwardPe": 25.99,
     "dividendYield": 2.31,
     "revenueGrowth": 3.8,
     "profitMargin": 1.59,

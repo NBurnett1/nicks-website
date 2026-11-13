@@ -1,8 +1,17 @@
 {
-  "lastUpdated": "2026-11-13T11:53:02.754276+11:00",
+  "lastUpdated": "2026-11-14T02:11:19.600287+11:00",
   "stocksScanned": 129,
-  "totalAlerts": 149,
+  "totalAlerts": 153,
   "alerts": [
+    {
+      "type": "PRICE_MOVE",
+      "severity": "critical",
+      "ticker": "PDN",
+      "exchange": "ASX",
+      "headline": "Stock plunged 17.6% in one session",
+      "detail": "$8.70 → $7.17",
+      "timestamp": "2026-11-13T15:10:43.843913+00:00"
+    },
     {
       "type": "INSIDER_SELL",
       "severity": "high",
@@ -15,29 +24,47 @@
     {
       "type": "PRICE_MOVE",
       "severity": "high",
-      "ticker": "CCX",
+      "ticker": "PPE",
       "exchange": "ASX",
-      "headline": "Stock surged 8.1% in one session",
-      "detail": "$0.04 → $0.04",
-      "timestamp": "2026-11-13T00:51:53.020183+00:00"
+      "headline": "Stock plunged 5.5% in one session",
+      "detail": "$0.46 → $0.43",
+      "timestamp": "2026-11-13T15:10:19.827149+00:00"
     },
     {
       "type": "PRICE_MOVE",
       "severity": "high",
       "ticker": "ING",
       "exchange": "ASX",
-      "headline": "Stock plunged 5.7% in one session",
-      "detail": "$2.28 → $2.15",
-      "timestamp": "2026-11-13T00:51:55.164883+00:00"
+      "headline": "Stock plunged 5.3% in one session",
+      "detail": "$2.28 → $2.16",
+      "timestamp": "2026-11-13T15:10:25.123460+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "high",
+      "ticker": "GNC",
+      "exchange": "ASX",
+      "headline": "Stock surged 5.3% in one session",
+      "detail": "$7.00 → $7.37",
+      "timestamp": "2026-11-13T15:10:52.760342+00:00"
     },
     {
       "type": "PRICE_MOVE",
       "severity": "high",
       "ticker": "SIQ",
       "exchange": "ASX",
-      "headline": "Stock plunged 5.6% in one session",
-      "detail": "$11.38 → $10.74",
-      "timestamp": "2026-11-13T00:52:56.228577+00:00"
+      "headline": "Stock plunged 5.7% in one session",
+      "detail": "$11.38 → $10.73",
+      "timestamp": "2026-11-13T15:11:13.561481+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "high",
+      "ticker": "SGR",
+      "exchange": "ASX",
+      "headline": "Stock plunged 5.7% in one session",
+      "detail": "$0.17 → $0.17",
+      "timestamp": "2026-11-13T15:11:16.977123+00:00"
     },
     {
       "type": "INSIDER_SELL",
@@ -65,17 +92,6 @@
       "headline": "Hannigan (Todd) (Director (Executive)) purchased 657,108 shares ($183,727)",
       "detail": "Purchase at price 0.28 per share.",
       "timestamp": "2026-11-04 00:00:00"
-    },
-    {
-      "type": "NEWS",
-      "severity": "medium",
-      "ticker": "NAB",
-      "exchange": "ASX",
-      "headline": "NAB shares slump 7% to three-week low as FY26 cash earnings miss",
-      "detail": "Source: Investing.com",
-      "sentiment": "negative",
-      "thumbnail": null,
-      "timestamp": "2026-11-05T01:03:59Z"
     },
     {
       "type": "NEWS",
@@ -131,6 +147,15 @@
       "sentiment": "negative",
       "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/1483dc6f19a26cc4775cbcb0606c0b9d.jpg",
       "timestamp": "2026-11-11T21:12:36Z"
+    },
+    {
+      "type": "VOLUME SPIKE",
+      "severity": "medium",
+      "ticker": "GNC",
+      "exchange": "ASX",
+      "headline": "2.3x average volume detected",
+      "detail": "Volume: 2,440,303 vs 20-day avg: 1,058,203 | Price up 5.3%",
+      "timestamp": "2026-11-13T15:10:52.647486+00:00"
     },
     {
       "type": "INSIDER_BUY",
@@ -257,61 +282,6 @@
       "headline": "Bailey (Kathleen Anne) (Independent Non-Executive Director) purchased 18,518 shares ($28,014)",
       "detail": "Purchase at price 1.51 per share.",
       "timestamp": "2026-11-04 00:00:00"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "ARB",
-      "exchange": "ASX",
-      "headline": "ARB (ASX:ARB) Shares May Trade At A Discount To Cash Flow",
-      "detail": "Source: Simply Wall St.",
-      "sentiment": "neutral",
-      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/d295619ca4385708381c7a943909baae.jpg",
-      "timestamp": "2026-11-05T02:08:27Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "REA",
-      "exchange": "ASX",
-      "headline": "REA Group shares rally on strong Q1 revenue",
-      "detail": "Source: Investing.com",
-      "sentiment": "positive",
-      "thumbnail": null,
-      "timestamp": "2026-11-05T04:52:37Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "WOR",
-      "exchange": "ASX",
-      "headline": "Worley signs EPC contract for Venture Global’s CP2 expansion project",
-      "detail": "Source: Offshore Technology",
-      "sentiment": "neutral",
-      "thumbnail": "https://media.zenfs.com/en/offshore_technology_431/c5e96d775489db865d58a40d45e4c6a4.jpg",
-      "timestamp": "2026-11-05T09:59:20Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "ALL",
-      "exchange": "ASX",
-      "headline": "3 Australian Defensive Stocks With ROE Over 20%",
-      "detail": "Source: Simply Wall St.",
-      "sentiment": "neutral",
-      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/458559082245f3e3e142761485ce89d1.jpg",
-      "timestamp": "2026-11-05T13:13:14Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "MND",
-      "exchange": "ASX",
-      "headline": "3 Australian Defensive Stocks With ROE Over 20%",
-      "detail": "Source: Simply Wall St.",
-      "sentiment": "neutral",
-      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/458559082245f3e3e142761485ce89d1.jpg",
-      "timestamp": "2026-11-05T13:13:14Z"
     },
     {
       "type": "NEWS",
@@ -503,17 +473,6 @@
     {
       "type": "NEWS",
       "severity": "low",
-      "ticker": "PDN",
-      "exchange": "ASX",
-      "headline": "Paladin Energy (ASX:PDN) Shares Look Rich After Long Term Uranium Deals",
-      "detail": "Source: Simply Wall St.",
-      "sentiment": "positive",
-      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/c36fd55ce84939c882b05cbf66b4ea70.jpg",
-      "timestamp": "2026-11-06T07:10:05Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
       "ticker": "AMP",
       "exchange": "ASX",
       "headline": "AMP (ASX:AMP) Shares May Trade At A Premium On Pension Boost Scrutiny",
@@ -554,28 +513,6 @@
       "sentiment": "neutral",
       "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/b2fc1054c8c4ceaedb1eb91bb340fb9b.jpg",
       "timestamp": "2026-11-06T12:18:05Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "LYC",
-      "exchange": "ASX",
-      "headline": "Ramelius Resources And 2 Australian Growth Stocks To Own",
-      "detail": "Source: Simply Wall St.",
-      "sentiment": "positive",
-      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/a804a82b740daf6b6ceae753a2922fc3.jpg",
-      "timestamp": "2026-11-06T14:14:03Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "JHX",
-      "exchange": "ASX",
-      "headline": "James Hardie Industries PLC (JHIUF) (Q2 2027) Earnings Call Highlights: Strong Margin Expansion ...",
-      "detail": "Source: GuruFocus.com",
-      "sentiment": "positive",
-      "thumbnail": null,
-      "timestamp": "2026-11-06T17:13:34Z"
     },
     {
       "type": "NEWS",
@@ -888,17 +825,6 @@
     {
       "type": "NEWS",
       "severity": "low",
-      "ticker": "FLT",
-      "exchange": "ASX",
-      "headline": "Flight Centre Travel Group And 2 Australian Founder Led Stocks To Watch",
-      "detail": "Source: Simply Wall St.",
-      "sentiment": "neutral",
-      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/b8221975e4a7c80628cfddfe3241b527.jpg",
-      "timestamp": "2026-11-09T14:11:50Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
       "ticker": "PRU",
       "exchange": "ASX",
       "headline": "Can Perseus Mining (ASX:PRU) Justify Its Price After Reaffirming Full Year Guidance?",
@@ -954,7 +880,7 @@
     {
       "type": "NEWS",
       "severity": "low",
-      "ticker": "ANN",
+      "ticker": "ORG",
       "exchange": "ASX",
       "headline": "3 Australian Undervalued Stocks To Watch In November 2026",
       "detail": "Source: Simply Wall St.",
@@ -965,7 +891,7 @@
     {
       "type": "NEWS",
       "severity": "low",
-      "ticker": "ORG",
+      "ticker": "ANN",
       "exchange": "ASX",
       "headline": "3 Australian Undervalued Stocks To Watch In November 2026",
       "detail": "Source: Simply Wall St.",
@@ -1150,9 +1076,18 @@
       "timestamp": "2026-11-10T22:35:28Z"
     },
     {
+      "type": "INSIDER_BUY",
+      "severity": "low",
+      "ticker": "VEA",
+      "exchange": "ASX",
+      "headline": "Bell (Alistair) (Independent Non-Executive Director) purchased 10,000 shares ($18,392)",
+      "detail": "Purchase at price 1.84 per share.",
+      "timestamp": "2026-11-11 00:00:00"
+    },
+    {
       "type": "NEWS",
       "severity": "low",
-      "ticker": "ANN",
+      "ticker": "ORG",
       "exchange": "ASX",
       "headline": "3 Australian Undervalued Stocks Trading Up To 49% Below Cash Flow Value",
       "detail": "Source: Simply Wall St.",
@@ -1163,7 +1098,7 @@
     {
       "type": "NEWS",
       "severity": "low",
-      "ticker": "ORG",
+      "ticker": "ANN",
       "exchange": "ASX",
       "headline": "3 Australian Undervalued Stocks Trading Up To 49% Below Cash Flow Value",
       "detail": "Source: Simply Wall St.",
@@ -1214,17 +1149,6 @@
       "sentiment": "neutral",
       "thumbnail": "https://media.zenfs.com/en/mining_technology_700/da9b78cebf2710b7ea329cee3744f820.jpg",
       "timestamp": "2026-11-11T12:57:02Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "RSG",
-      "exchange": "ASX",
-      "headline": "Australian Growth Stocks To Watch In November 2026",
-      "detail": "Source: Simply Wall St.",
-      "sentiment": "positive",
-      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/458559082245f3e3e142761485ce89d1.jpg",
-      "timestamp": "2026-11-11T15:10:10Z"
     },
     {
       "type": "NEWS",
@@ -1328,7 +1252,7 @@
     {
       "type": "NEWS",
       "severity": "low",
-      "ticker": "ANN",
+      "ticker": "ORG",
       "exchange": "ASX",
       "headline": "Top 3 Australian Undervalued Stocks To Watch In November 2026",
       "detail": "Source: Simply Wall St.",
@@ -1339,7 +1263,7 @@
     {
       "type": "NEWS",
       "severity": "low",
-      "ticker": "ORG",
+      "ticker": "ANN",
       "exchange": "ASX",
       "headline": "Top 3 Australian Undervalued Stocks To Watch In November 2026",
       "detail": "Source: Simply Wall St.",
@@ -1390,17 +1314,6 @@
       "sentiment": "positive",
       "thumbnail": null,
       "timestamp": "2026-11-12T07:06:35Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "LYC",
-      "exchange": "ASX",
-      "headline": "MP Gains 2% After Q3 Earnings Beat: Reason Enough to Buy the Stock?",
-      "detail": "Source: Zacks",
-      "sentiment": "positive",
-      "thumbnail": "https://media.zenfs.com/en/zacks.com/db7cefc499bcd44fdcb56d11875ee56d.jpg",
-      "timestamp": "2026-11-12T07:19:00Z"
     },
     {
       "type": "NEWS",
@@ -1599,6 +1512,127 @@
       "sentiment": "positive",
       "thumbnail": null,
       "timestamp": "2026-11-12T23:04:40Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "ORI",
+      "exchange": "ASX",
+      "headline": "Orica Ltd (OCLDY) (FY 2026) Earnings Call Highlights: Record EBIT, Digital Growth, and FY27 Outlook",
+      "detail": "Source: GuruFocus.com",
+      "sentiment": "positive",
+      "thumbnail": null,
+      "timestamp": "2026-11-13T01:08:45Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "STO",
+      "exchange": "ASX",
+      "headline": "3 Oil And Gas Stocks With Cash Flow Leverage As Crude Prices Swing",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "neutral",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/b21972f90d07f1bd1c37f988bf08e67d.jpg",
+      "timestamp": "2026-11-13T05:15:48Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "RSG",
+      "exchange": "ASX",
+      "headline": "3 Australian Growth Stocks With Earnings Growth Over 23%",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "positive",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/458559082245f3e3e142761485ce89d1.jpg",
+      "timestamp": "2026-11-13T06:13:20Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "LYC",
+      "exchange": "ASX",
+      "headline": "3 Australian Growth Stocks With Earnings Growth Over 23%",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "positive",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/458559082245f3e3e142761485ce89d1.jpg",
+      "timestamp": "2026-11-13T06:13:20Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "DMP",
+      "exchange": "ASX",
+      "headline": "Domino's (ASX:DMP) Shares May Be 18% Overvalued On AGM Reset News",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "neutral",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/d7ebeda325b0d7702c9bfcfcd5d01af0.jpg",
+      "timestamp": "2026-11-13T07:11:53Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "PME",
+      "exchange": "ASX",
+      "headline": "3 Australian Founder Led Stocks With Revenue Growth Up To 38%",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "positive",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/b8221975e4a7c80628cfddfe3241b527.jpg",
+      "timestamp": "2026-11-13T07:13:50Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "FLT",
+      "exchange": "ASX",
+      "headline": "3 Australian Founder Led Stocks With Revenue Growth Up To 38%",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "positive",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/b8221975e4a7c80628cfddfe3241b527.jpg",
+      "timestamp": "2026-11-13T07:13:50Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "WOR",
+      "exchange": "ASX",
+      "headline": "Australian Uranium Stocks To Watch In November 2026",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "neutral",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/67b2b004d6b6fbb0c05d4d086193e833.jpg",
+      "timestamp": "2026-11-13T10:10:06Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "PDN",
+      "exchange": "ASX",
+      "headline": "Australian Uranium Stocks To Watch In November 2026",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "neutral",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/67b2b004d6b6fbb0c05d4d086193e833.jpg",
+      "timestamp": "2026-11-13T10:10:06Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "JHX",
+      "exchange": "ASX",
+      "headline": "Why Everyone Is Watching James Hardie Industries (ASX:JHX) Right Now",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "neutral",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/9a19dc33cd005e9199744ef08b0f9bee.jpg",
+      "timestamp": "2026-11-13T11:12:11Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "LYC",
+      "exchange": "ASX",
+      "headline": "MP's Q3 Revenues Jump 176%: Can This Growth Be Sustained?",
+      "detail": "Source: Zacks",
+      "sentiment": "positive",
+      "thumbnail": "https://media.zenfs.com/en/zacks.com/b722e658bf812e4a58e158c041871ac6.jpg",
+      "timestamp": "2026-11-13T13:42:00Z"
     }
   ]
 }
