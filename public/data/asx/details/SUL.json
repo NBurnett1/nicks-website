@@ -2,7 +2,7 @@
   "ticker": "SUL",
   "name": "SUPARETAIL FPO [SUL]",
   "price": 13.38,
-  "valuationScore": -6.7,
+  "valuationScore": -6.8,
   "marketCap": "3.0B",
   "sector": "Consumer Discretionary",
   "domain": "superretailgroup.com.au",
@@ -220,15 +220,15 @@
       "price": 13.38
     }
   ],
-  "testsPassed": 5,
-  "grade": "B",
+  "testsPassed": 6,
+  "grade": "A",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": false,
-      "value": 15.03,
-      "threshold": 14.84,
-      "label": "15.0x vs 14.8x sector"
+      "passed": true,
+      "value": 14.7,
+      "threshold": 14.93,
+      "label": "14.7x vs 14.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -255,8 +255,8 @@
       "name": "Forward P/E Re-rating",
       "passed": true,
       "value": 12.89,
-      "threshold": 15.03,
-      "label": "Fwd 12.9x vs Trail 15.0x"
+      "threshold": 14.7,
+      "label": "Fwd 12.9x vs Trail 14.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 15.03,
-    "sectorPe": 17.46,
+    "pe": 14.7,
+    "sectorPe": 17.57,
     "pb": 2.32,
     "ps": 0.72,
     "evEbitda": 9.58,
     "fcfYield": 13.15,
     "forwardPe": 12.89,
-    "dividendYield": 4.8,
+    "dividendYield": 4.86,
     "revenueGrowth": 2.1,
     "profitMargin": 4.9,
     "operatingMargin": 8.51,
