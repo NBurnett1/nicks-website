@@ -1,16 +1,12 @@
 {
   "ticker": "TLS",
   "name": "TELSTRA FPO [TLS]",
-  "price": 5.12,
-  "valuationScore": 1.6,
-  "marketCap": "56.6B",
+  "price": 5.14,
+  "valuationScore": 1.7,
+  "marketCap": "56.8B",
   "sector": "Telecom",
   "domain": "telstra.com.au",
   "chartData": [
-    {
-      "date": "2025-11-16",
-      "price": 4.73
-    },
     {
       "date": "2025-11-23",
       "price": 4.67
@@ -218,6 +214,10 @@
     {
       "date": "2026-11-15",
       "price": 5.12
+    },
+    {
+      "date": "2026-11-22",
+      "price": 5.14
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 25.6,
-      "threshold": 18.4,
-      "label": "25.6x vs 18.4x sector"
+      "value": 25.7,
+      "threshold": 18.44,
+      "label": "25.7x vs 18.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.53,
+      "value": 4.55,
       "threshold": 1.5,
-      "label": "4.53x vs 1.5x"
+      "label": "4.55x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 6.08,
+      "value": 6.05,
       "threshold": 5.0,
-      "label": "6.1% vs 5%"
+      "label": "6.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 22.36,
-      "threshold": 25.6,
-      "label": "Fwd 22.4x vs Trail 25.6x"
+      "value": 22.44,
+      "threshold": 25.7,
+      "label": "Fwd 22.4x vs Trail 25.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 25.6,
-    "sectorPe": 21.65,
-    "pb": 4.53,
-    "ps": 2.47,
+    "pe": 25.7,
+    "sectorPe": 21.69,
+    "pb": 4.55,
+    "ps": 2.48,
     "evEbitda": 10.83,
-    "fcfYield": 6.08,
-    "forwardPe": 22.36,
+    "fcfYield": 6.05,
+    "forwardPe": 22.44,
     "dividendYield": 4.1,
     "revenueGrowth": -2.0,
     "profitMargin": 9.77,

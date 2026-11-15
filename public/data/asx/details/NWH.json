@@ -1,16 +1,12 @@
 {
   "ticker": "NWH",
   "name": "NRWHOLDLTD FPO [NWH]",
-  "price": 6.7,
-  "valuationScore": -1.9,
+  "price": 6.79,
+  "valuationScore": -1.6,
   "marketCap": "3.1B",
   "sector": "Industrials",
   "domain": "nrw.com.au",
   "chartData": [
-    {
-      "date": "2025-11-16",
-      "price": 4.78
-    },
     {
       "date": "2025-11-23",
       "price": 4.78
@@ -218,6 +214,10 @@
     {
       "date": "2026-11-15",
       "price": 6.7
+    },
+    {
+      "date": "2026-11-22",
+      "price": 6.79
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 20.3,
-      "threshold": 18.7,
-      "label": "20.3x vs 18.7x sector"
+      "value": 20.58,
+      "threshold": 18.61,
+      "label": "20.6x vs 18.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.46,
+      "value": 4.52,
       "threshold": 1.5,
-      "label": "4.46x vs 1.5x"
+      "label": "4.52x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 6.83,
+      "value": 6.74,
       "threshold": 5.0,
-      "label": "6.8% vs 5%"
+      "label": "6.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 13.96,
-      "threshold": 20.3,
-      "label": "Fwd 14.0x vs Trail 20.3x"
+      "value": 14.12,
+      "threshold": 20.58,
+      "label": "Fwd 14.1x vs Trail 20.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 20.3,
-    "sectorPe": 22.0,
-    "pb": 4.46,
-    "ps": 0.72,
+    "pe": 20.58,
+    "sectorPe": 21.89,
+    "pb": 4.52,
+    "ps": 0.73,
     "evEbitda": 7.76,
-    "fcfYield": 6.83,
-    "forwardPe": 13.96,
+    "fcfYield": 6.74,
+    "forwardPe": 14.12,
     "dividendYield": 3.43,
     "revenueGrowth": 43.6,
     "profitMargin": 3.57,

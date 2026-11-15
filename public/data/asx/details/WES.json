@@ -1,16 +1,12 @@
 {
   "ticker": "WES",
   "name": "WESFARMER FPO [WES]",
-  "price": 80.82,
+  "price": 80.56,
   "valuationScore": 15.5,
-  "marketCap": "91.8B",
+  "marketCap": "91.5B",
   "sector": "Consumer Discretionary",
   "domain": "wesfarmers.com.au",
   "chartData": [
-    {
-      "date": "2025-11-16",
-      "price": 78.92
-    },
     {
       "date": "2025-11-23",
       "price": 77.85
@@ -218,6 +214,10 @@
     {
       "date": "2026-11-15",
       "price": 80.82
+    },
+    {
+      "date": "2026-11-22",
+      "price": 80.56
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 31.94,
+      "value": 31.84,
       "threshold": 14.93,
-      "label": "31.9x vs 14.9x sector"
+      "label": "31.8x vs 14.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 11.5,
+      "value": 11.47,
       "threshold": 1.5,
-      "label": "11.50x vs 1.5x"
+      "label": "11.47x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.91,
+      "value": 3.92,
       "threshold": 5.0,
       "label": "3.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 28.08,
-      "threshold": 31.94,
-      "label": "Fwd 28.1x vs Trail 31.9x"
+      "value": 27.99,
+      "threshold": 31.84,
+      "label": "Fwd 28.0x vs Trail 31.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 31.94,
+    "pe": 31.84,
     "sectorPe": 17.57,
-    "pb": 11.5,
-    "ps": 1.94,
+    "pb": 11.47,
+    "ps": 1.93,
     "evEbitda": 21.61,
-    "fcfYield": 3.91,
-    "forwardPe": 28.08,
+    "fcfYield": 3.92,
+    "forwardPe": 27.99,
     "dividendYield": 2.75,
     "revenueGrowth": 3.8,
     "profitMargin": 6.08,

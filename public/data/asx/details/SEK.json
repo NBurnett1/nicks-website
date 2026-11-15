@@ -1,16 +1,12 @@
 {
   "ticker": "SEK",
   "name": "SEEK FPO [SEK]",
-  "price": 14.28,
-  "valuationScore": -6.0,
+  "price": 14.32,
+  "valuationScore": -6.1,
   "marketCap": "5.1B",
   "sector": "Technology",
   "domain": "au.seek.com",
   "chartData": [
-    {
-      "date": "2025-11-16",
-      "price": 24.26
-    },
     {
       "date": "2025-11-23",
       "price": 24.05
@@ -218,6 +214,10 @@
     {
       "date": "2026-11-15",
       "price": 14.28
+    },
+    {
+      "date": "2026-11-22",
+      "price": 14.32
     }
   ],
   "testsPassed": 0,
@@ -233,9 +233,9 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.4,
+      "value": 2.41,
       "threshold": 1.5,
-      "label": "2.40x vs 1.5x"
+      "label": "2.41x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,14 +247,14 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.94,
+      "value": 3.93,
       "threshold": 5.0,
       "label": "3.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 20.4,
+      "value": 20.45,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 45.98,
-    "pb": 2.4,
-    "ps": 3.98,
+    "sectorPe": 46.83,
+    "pb": 2.41,
+    "ps": 3.99,
     "evEbitda": 19.2,
-    "fcfYield": 3.94,
-    "forwardPe": 20.4,
+    "fcfYield": 3.93,
+    "forwardPe": 20.45,
     "dividendYield": 3.64,
     "revenueGrowth": null,
     "profitMargin": -28.91,

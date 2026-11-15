@@ -1,16 +1,12 @@
 {
   "ticker": "FMG",
   "name": "FORTESCUE FPO [FMG]",
-  "price": 14.85,
-  "valuationScore": -7.5,
-  "marketCap": "45.7B",
+  "price": 14.81,
+  "valuationScore": -7.4,
+  "marketCap": "45.6B",
   "sector": "Materials",
   "domain": "fortescue.com",
   "chartData": [
-    {
-      "date": "2025-11-16",
-      "price": 19.13
-    },
     {
       "date": "2025-11-23",
       "price": 18.97
@@ -218,6 +214,10 @@
     {
       "date": "2026-11-15",
       "price": 14.85
+    },
+    {
+      "date": "2026-11-22",
+      "price": 14.81
     }
   ],
   "testsPassed": 6,
@@ -226,8 +226,8 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 10.84,
-      "threshold": 14.59,
+      "value": 10.81,
+      "threshold": 14.57,
       "label": "10.8x vs 14.6x sector"
     },
     "pbBelowBook": {
@@ -247,15 +247,15 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 6.93,
+      "value": 6.95,
       "threshold": 5.0,
-      "label": "6.9% vs 5%"
+      "label": "7.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 15.82,
-      "threshold": 10.84,
+      "value": 15.78,
+      "threshold": 10.81,
       "label": "Fwd 15.8x vs Trail 10.8x"
     },
     "profitabilityCheck": {
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 10.84,
-    "sectorPe": 17.16,
+    "pe": 10.81,
+    "sectorPe": 17.14,
     "pb": 1.58,
     "ps": 2.69,
     "evEbitda": 5.69,
-    "fcfYield": 6.93,
-    "forwardPe": 15.82,
+    "fcfYield": 6.95,
+    "forwardPe": 15.78,
     "dividendYield": 7.27,
     "revenueGrowth": 7.9,
     "profitMargin": 16.92,

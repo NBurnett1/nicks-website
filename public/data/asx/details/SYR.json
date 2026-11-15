@@ -2,15 +2,11 @@
   "ticker": "SYR",
   "name": "SYRAH RES FPO [SYR]",
   "price": 0.06,
-  "valuationScore": 43.7,
-  "marketCap": "149M",
+  "valuationScore": -9.5,
+  "marketCap": "—",
   "sector": "Basic Materials",
   "domain": "syrahresources.com.au",
   "chartData": [
-    {
-      "date": "2025-11-16",
-      "price": 0.31
-    },
     {
       "date": "2025-11-23",
       "price": 0.28
@@ -218,10 +214,14 @@
     {
       "date": "2026-11-15",
       "price": 0.06
+    },
+    {
+      "date": "2026-11-22",
+      "price": 0.06
     }
   ],
-  "testsPassed": 3,
-  "grade": "C",
+  "testsPassed": 2,
+  "grade": "D",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -246,10 +246,10 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": -28.62,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "-28.6% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": true,
-      "value": 0.0,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 3.0x ÷ Growth 800.4% = 0.00"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,11 +282,11 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 17.96,
+    "sectorPe": 17.9,
     "pb": 0.36,
-    "ps": 3.01,
+    "ps": null,
     "evEbitda": -5.15,
-    "fcfYield": -28.62,
+    "fcfYield": null,
     "forwardPe": -1.36,
     "dividendYield": 0.0,
     "revenueGrowth": 800.4,

@@ -2,15 +2,11 @@
   "ticker": "GWA",
   "name": "GWA GROUP FPO [GWA]",
   "price": 2.09,
-  "valuationScore": -5.1,
+  "valuationScore": -5.0,
   "marketCap": "532M",
   "sector": "Industrials",
   "domain": "gwagroup.com.au",
   "chartData": [
-    {
-      "date": "2025-11-16",
-      "price": 2.22
-    },
     {
       "date": "2025-11-23",
       "price": 2.22
@@ -218,6 +214,10 @@
     {
       "date": "2026-11-15",
       "price": 2.09
+    },
+    {
+      "date": "2026-11-22",
+      "price": 2.09
     }
   ],
   "testsPassed": 5,
@@ -227,8 +227,8 @@
       "name": "P/E Discount",
       "passed": true,
       "value": 11.61,
-      "threshold": 18.7,
-      "label": "11.6x vs 18.7x sector"
+      "threshold": 18.61,
+      "label": "11.6x vs 18.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -282,7 +282,7 @@
   },
   "metrics": {
     "pe": 11.61,
-    "sectorPe": 22.0,
+    "sectorPe": 21.89,
     "pb": 1.86,
     "ps": 1.26,
     "evEbitda": 8.36,

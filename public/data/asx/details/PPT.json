@@ -1,16 +1,12 @@
 {
   "ticker": "PPT",
   "name": "PERPETUAL FPO [PPT]",
-  "price": 18.42,
-  "valuationScore": -1.2,
+  "price": 18.45,
+  "valuationScore": -0.9,
   "marketCap": "2.1B",
   "sector": "Financial Services",
   "domain": "perpetual.com.au",
   "chartData": [
-    {
-      "date": "2025-11-16",
-      "price": 17.52
-    },
     {
       "date": "2025-11-23",
       "price": 17.22
@@ -218,6 +214,10 @@
     {
       "date": "2026-11-15",
       "price": 18.42
+    },
+    {
+      "date": "2026-11-22",
+      "price": 18.45
     }
   ],
   "testsPassed": 3,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 36.12,
-      "threshold": 21.74,
-      "label": "36.1x vs 21.7x sector"
+      "value": 36.18,
+      "threshold": 21.76,
+      "label": "36.2x vs 21.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 13.07,
-      "threshold": 36.12,
-      "label": "Fwd 13.1x vs Trail 36.1x"
+      "value": 13.09,
+      "threshold": 36.18,
+      "label": "Fwd 13.1x vs Trail 36.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 36.12,
-    "sectorPe": 25.57,
+    "pe": 36.18,
+    "sectorPe": 25.6,
     "pb": 1.36,
-    "ps": 1.85,
+    "ps": 1.86,
     "evEbitda": 9.05,
     "fcfYield": 3.39,
-    "forwardPe": 13.07,
+    "forwardPe": 13.09,
     "dividendYield": 6.84,
     "revenueGrowth": null,
     "profitMargin": 7.69,

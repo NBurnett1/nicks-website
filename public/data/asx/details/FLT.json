@@ -1,16 +1,12 @@
 {
   "ticker": "FLT",
   "name": "FLIGHT CTR FPO [FLT]",
-  "price": 12.09,
-  "valuationScore": 1.3,
+  "price": 12.1,
+  "valuationScore": 1.2,
   "marketCap": "2.4B",
   "sector": "Consumer Cyclical",
   "domain": "fctgl.com",
   "chartData": [
-    {
-      "date": "2025-11-16",
-      "price": 12.51
-    },
     {
       "date": "2025-11-23",
       "price": 11.61
@@ -218,6 +214,10 @@
     {
       "date": "2026-11-15",
       "price": 12.09
+    },
+    {
+      "date": "2026-11-22",
+      "price": 12.1
     }
   ],
   "testsPassed": 5,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 17.27,
-      "threshold": 21.59,
-      "label": "17.3x vs 21.6x sector"
+      "value": 17.29,
+      "threshold": 21.69,
+      "label": "17.3x vs 21.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -255,7 +255,7 @@
       "name": "Forward P/E Re-rating",
       "passed": true,
       "value": 9.94,
-      "threshold": 17.27,
+      "threshold": 17.29,
       "label": "Fwd 9.9x vs Trail 17.3x"
     },
     "profitabilityCheck": {
@@ -281,8 +281,8 @@
     }
   },
   "metrics": {
-    "pe": 17.27,
-    "sectorPe": 25.4,
+    "pe": 17.29,
+    "sectorPe": 25.52,
     "pb": 2.26,
     "ps": 0.86,
     "evEbitda": 13.5,

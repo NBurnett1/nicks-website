@@ -1,16 +1,12 @@
 {
   "ticker": "NXT",
   "name": "NEXTDC FPO [NXT]",
-  "price": 10.03,
+  "price": 10.05,
   "valuationScore": 49.2,
   "marketCap": "7.6B",
   "sector": "Technology",
   "domain": "nextdc.com",
   "chartData": [
-    {
-      "date": "2025-11-16",
-      "price": 13.82
-    },
     {
       "date": "2025-11-23",
       "price": 13.51
@@ -218,6 +214,10 @@
     {
       "date": "2026-11-15",
       "price": 10.03
+    },
+    {
+      "date": "2026-11-22",
+      "price": 10.05
     }
   ],
   "testsPassed": 2,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 83.58,
-      "threshold": 39.08,
-      "label": "83.6x vs 39.1x sector"
+      "value": 83.75,
+      "threshold": 39.8,
+      "label": "83.8x vs 39.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -247,15 +247,15 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -22.58,
+      "value": -22.53,
       "threshold": 5.0,
-      "label": "-22.6% vs 5%"
+      "label": "-22.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": -32.01,
-      "threshold": 83.58,
+      "value": -32.08,
+      "threshold": 83.75,
       "label": "Insufficient data"
     },
     "profitabilityCheck": {
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 83.58,
-    "sectorPe": 45.98,
+    "pe": 83.75,
+    "sectorPe": 46.83,
     "pb": 1.25,
-    "ps": 15.37,
+    "ps": 15.4,
     "evEbitda": 53.47,
-    "fcfYield": -22.58,
-    "forwardPe": -32.01,
+    "fcfYield": -22.53,
+    "forwardPe": -32.08,
     "dividendYield": 0.0,
     "revenueGrowth": 19.4,
     "profitMargin": 16.53,

@@ -1,16 +1,12 @@
 {
   "ticker": "WOW",
   "name": "WOOLWORTHS FPO [WOW]",
-  "price": 41.94,
-  "valuationScore": 10.9,
-  "marketCap": "51.2B",
+  "price": 42.03,
+  "valuationScore": 10.6,
+  "marketCap": "—",
   "sector": "Consumer Staples",
   "domain": "woolworthsgroup.com.au",
   "chartData": [
-    {
-      "date": "2025-11-16",
-      "price": 27.54
-    },
     {
       "date": "2025-11-23",
       "price": 27.38
@@ -218,24 +214,28 @@
     {
       "date": "2026-11-15",
       "price": 41.94
+    },
+    {
+      "date": "2026-11-22",
+      "price": 42.03
     }
   ],
-  "testsPassed": 3,
-  "grade": "C",
+  "testsPassed": 2,
+  "grade": "D",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 45.59,
-      "threshold": 24.68,
-      "label": "45.6x vs 24.7x sector"
+      "value": 45.68,
+      "threshold": 24.96,
+      "label": "45.7x vs 25.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 10.66,
+      "value": 10.69,
       "threshold": 1.5,
-      "label": "10.66x vs 1.5x"
+      "label": "10.69x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -246,17 +246,17 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 4.22,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "4.2% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 25.99,
-      "threshold": 45.59,
-      "label": "Fwd 26.0x vs Trail 45.6x"
+      "value": 26.04,
+      "threshold": 45.68,
+      "label": "Fwd 26.0x vs Trail 45.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": true,
-      "value": 0.19,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 0.7x ÷ Growth 3.8% = 0.19"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 45.59,
-    "sectorPe": 29.04,
-    "pb": 10.66,
-    "ps": 0.72,
+    "pe": 45.68,
+    "sectorPe": 29.36,
+    "pb": 10.69,
+    "ps": null,
     "evEbitda": 19.0,
-    "fcfYield": 4.22,
-    "forwardPe": 25.99,
+    "fcfYield": null,
+    "forwardPe": 26.04,
     "dividendYield": 2.31,
     "revenueGrowth": 3.8,
     "profitMargin": 1.59,
