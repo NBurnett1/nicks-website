@@ -1,8 +1,8 @@
 {
   "ticker": "SUN",
   "name": "SUNCORP FPO [SUN]",
-  "price": 20.64,
-  "valuationScore": 0.5,
+  "price": 20.7,
+  "valuationScore": 0.4,
   "marketCap": "21.9B",
   "sector": "Financials",
   "domain": "suncorpgroup.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-22",
-      "price": 20.64
+      "price": 20.7
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 21.73,
-      "threshold": 16.31,
-      "label": "21.7x vs 16.3x sector"
+      "value": 21.79,
+      "threshold": 16.46,
+      "label": "21.8x vs 16.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.11,
+      "value": 2.12,
       "threshold": 1.5,
-      "label": "2.11x vs 1.5x"
+      "label": "2.12x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 14.43,
+      "value": 14.5,
       "threshold": 10.0,
-      "label": "14.4x vs 10x"
+      "label": "14.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 7.66,
+      "value": 7.64,
       "threshold": 5.0,
-      "label": "7.7% vs 5%"
+      "label": "7.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.47,
-      "threshold": 21.73,
-      "label": "Fwd 16.5x vs Trail 21.7x"
+      "value": 16.52,
+      "threshold": 21.79,
+      "label": "Fwd 16.5x vs Trail 21.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 21.73,
-    "sectorPe": 19.19,
-    "pb": 2.11,
+    "pe": 21.79,
+    "sectorPe": 19.36,
+    "pb": 2.12,
     "ps": 1.46,
-    "evEbitda": 14.43,
-    "fcfYield": 7.66,
-    "forwardPe": 16.47,
+    "evEbitda": 14.5,
+    "fcfYield": 7.64,
+    "forwardPe": 16.52,
     "dividendYield": 3.35,
     "revenueGrowth": -0.5,
     "profitMargin": 6.83,

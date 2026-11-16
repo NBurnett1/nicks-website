@@ -2,8 +2,8 @@
   "ticker": "STO",
   "name": "SANTOS FPO [STO]",
   "price": 8.8,
-  "valuationScore": 1.8,
-  "marketCap": "—",
+  "valuationScore": 1.7,
+  "marketCap": "28.6B",
   "sector": "Energy",
   "domain": "santos.com",
   "chartData": [
@@ -227,8 +227,8 @@
       "name": "P/E Discount",
       "passed": false,
       "value": 26.67,
-      "threshold": 18.14,
-      "label": "26.7x vs 18.1x sector"
+      "threshold": 18.45,
+      "label": "26.7x vs 18.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -240,16 +240,16 @@
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 13.19,
+      "value": 13.16,
       "threshold": 10.0,
       "label": "13.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": 1.08,
       "threshold": 5.0,
-      "label": "No FCF data"
+      "label": "1.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": null,
-      "value": null,
+      "passed": false,
+      "value": 3.59,
       "threshold": 0.5,
-      "label": "No P/S or growth data"
+      "label": "P/S 5.7x ÷ Growth 1.6% = 3.59"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -282,11 +282,11 @@
   },
   "metrics": {
     "pe": 26.67,
-    "sectorPe": 21.34,
+    "sectorPe": 21.71,
     "pb": 1.28,
-    "ps": null,
-    "evEbitda": 13.19,
-    "fcfYield": null,
+    "ps": 5.74,
+    "evEbitda": 13.16,
+    "fcfYield": 1.08,
     "forwardPe": 8.97,
     "dividendYield": 3.49,
     "revenueGrowth": 1.6,

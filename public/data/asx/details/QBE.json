@@ -1,9 +1,9 @@
 {
   "ticker": "QBE",
   "name": "QBE INSUR. FPO [QBE]",
-  "price": 26.71,
-  "valuationScore": -2.5,
-  "marketCap": "39.9B",
+  "price": 26.84,
+  "valuationScore": -2.6,
+  "marketCap": "40.1B",
   "sector": "Financials",
   "domain": "qbe.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-22",
-      "price": 26.71
+      "price": 26.84
     }
   ],
   "testsPassed": 5,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 12.66,
-      "threshold": 16.31,
-      "label": "12.7x vs 16.3x sector"
+      "value": 12.72,
+      "threshold": 16.46,
+      "label": "12.7x vs 16.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.41,
+      "value": 2.42,
       "threshold": 1.5,
-      "label": "2.41x vs 1.5x"
+      "label": "2.42x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 11.95,
+      "value": 11.99,
       "threshold": 10.0,
       "label": "12.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 8.63,
+      "value": 8.59,
       "threshold": 5.0,
       "label": "8.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 13.01,
-      "threshold": 12.66,
-      "label": "Fwd 13.0x vs Trail 12.7x"
+      "value": 13.07,
+      "threshold": 12.72,
+      "label": "Fwd 13.1x vs Trail 12.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 12.66,
-    "sectorPe": 19.19,
-    "pb": 2.41,
-    "ps": 2.05,
-    "evEbitda": 11.95,
-    "fcfYield": 8.63,
-    "forwardPe": 13.01,
+    "pe": 12.72,
+    "sectorPe": 19.36,
+    "pb": 2.42,
+    "ps": 2.06,
+    "evEbitda": 11.99,
+    "fcfYield": 8.59,
+    "forwardPe": 13.07,
     "dividendYield": 4.15,
     "revenueGrowth": 8.3,
     "profitMargin": 11.15,

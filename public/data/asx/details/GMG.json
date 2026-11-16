@@ -1,9 +1,9 @@
 {
   "ticker": "GMG",
   "name": "GOOD GROUP STAPLED [GMG]",
-  "price": 29.12,
-  "valuationScore": 10.8,
-  "marketCap": "59.8B",
+  "price": 28.97,
+  "valuationScore": 10.4,
+  "marketCap": "59.5B",
   "sector": "Real Estate",
   "domain": "goodman.com",
   "chartData": [
@@ -217,46 +217,46 @@
     },
     {
       "date": "2026-11-22",
-      "price": 29.12
+      "price": 28.97
     }
   ],
-  "testsPassed": 4,
-  "grade": "C",
+  "testsPassed": 5,
+  "grade": "B",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 21.89,
-      "threshold": 9.3,
-      "label": "21.9x vs 9.3x sector"
+      "value": 21.78,
+      "threshold": 9.35,
+      "label": "21.8x vs 9.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.39,
+      "value": 2.37,
       "threshold": 1.5,
-      "label": "2.39x vs 1.5x"
+      "label": "2.37x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 25.42,
+      "value": 25.52,
       "threshold": 10.0,
-      "label": "25.4x vs 10x"
+      "label": "25.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 5.0,
+      "passed": true,
+      "value": 5.02,
       "threshold": 5.0,
       "label": "5.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 18.3,
-      "threshold": 21.89,
-      "label": "Fwd 18.3x vs Trail 21.9x"
+      "value": 18.2,
+      "threshold": 21.78,
+      "label": "Fwd 18.2x vs Trail 21.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 21.89,
-    "sectorPe": 10.95,
-    "pb": 2.39,
-    "ps": 14.74,
-    "evEbitda": 25.42,
-    "fcfYield": 5.0,
-    "forwardPe": 18.3,
+    "pe": 21.78,
+    "sectorPe": 11.0,
+    "pb": 2.37,
+    "ps": 14.66,
+    "evEbitda": 25.52,
+    "fcfYield": 5.02,
+    "forwardPe": 18.2,
     "dividendYield": 1.04,
     "revenueGrowth": 65.8,
     "profitMargin": 68.44,

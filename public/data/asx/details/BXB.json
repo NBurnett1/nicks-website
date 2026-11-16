@@ -1,9 +1,9 @@
 {
   "ticker": "BXB",
   "name": "BRAMB LTD FPO [BXB]",
-  "price": 22.35,
-  "valuationScore": 6.9,
-  "marketCap": "29.7B",
+  "price": 22.2,
+  "valuationScore": 6.8,
+  "marketCap": "29.5B",
   "sector": "Industrials",
   "domain": "brambles.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-22",
-      "price": 22.35
+      "price": 22.2
     }
   ],
   "testsPassed": 2,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 21.7,
-      "threshold": 18.61,
-      "label": "21.7x vs 18.6x sector"
+      "value": 21.55,
+      "threshold": 18.6,
+      "label": "21.6x vs 18.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 6.49,
+      "value": 6.45,
       "threshold": 1.5,
-      "label": "6.49x vs 1.5x"
+      "label": "6.45x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 15.42,
+      "value": 15.35,
       "threshold": 10.0,
       "label": "15.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 1.82,
+      "value": 1.83,
       "threshold": 5.0,
       "label": "1.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 19.09,
-      "threshold": 21.7,
-      "label": "Fwd 19.1x vs Trail 21.7x"
+      "value": 18.96,
+      "threshold": 21.55,
+      "label": "Fwd 19.0x vs Trail 21.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 21.7,
-    "sectorPe": 21.89,
-    "pb": 6.49,
-    "ps": 4.09,
-    "evEbitda": 15.42,
-    "fcfYield": 1.82,
-    "forwardPe": 19.09,
+    "pe": 21.55,
+    "sectorPe": 21.88,
+    "pb": 6.45,
+    "ps": 4.07,
+    "evEbitda": 15.35,
+    "fcfYield": 1.83,
+    "forwardPe": 18.96,
     "dividendYield": 2.94,
     "revenueGrowth": null,
     "profitMargin": 13.15,
