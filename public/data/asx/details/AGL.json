@@ -1,9 +1,9 @@
 {
   "ticker": "AGL",
   "name": "AGL ENERGY FPO [AGL]",
-  "price": 9.13,
-  "valuationScore": -1.4,
-  "marketCap": "6.1B",
+  "price": 9.15,
+  "valuationScore": -1.3,
+  "marketCap": "6.2B",
   "sector": "Utilities",
   "domain": "agl.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-22",
-      "price": 9.13
+      "price": 9.15
     }
   ],
   "testsPassed": 5,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 8.08,
-      "threshold": 18.07,
-      "label": "8.1x vs 18.1x sector"
+      "value": 8.17,
+      "threshold": 18.02,
+      "label": "8.2x vs 18.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.16,
+      "value": 1.17,
       "threshold": 1.5,
-      "label": "1.16x vs 1.5x"
+      "label": "1.17x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 7.39,
+      "value": 7.42,
       "threshold": 10.0,
       "label": "7.4x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -2.2,
+      "value": -2.19,
       "threshold": 5.0,
       "label": "-2.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 13.22,
-      "threshold": 8.08,
-      "label": "Fwd 13.2x vs Trail 8.1x"
+      "value": 13.24,
+      "threshold": 8.17,
+      "label": "Fwd 13.2x vs Trail 8.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 8.08,
-    "sectorPe": 21.26,
-    "pb": 1.16,
+    "pe": 8.17,
+    "sectorPe": 21.2,
+    "pb": 1.17,
     "ps": 0.44,
-    "evEbitda": 7.39,
-    "fcfYield": -2.2,
-    "forwardPe": 13.22,
-    "dividendYield": 5.73,
+    "evEbitda": 7.42,
+    "fcfYield": -2.19,
+    "forwardPe": 13.24,
+    "dividendYield": 5.71,
     "revenueGrowth": -4.7,
     "profitMargin": 5.43,
     "operatingMargin": 10.88,
