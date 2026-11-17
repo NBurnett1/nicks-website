@@ -1,7 +1,7 @@
 {
   "ticker": "AUB",
   "name": "AUB GROUP FPO [AUB]",
-  "price": 31.7,
+  "price": 31.46,
   "valuationScore": 1.7,
   "marketCap": "4.1B",
   "sector": "Financial Services",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-22",
-      "price": 31.7
+      "price": 31.46
     }
   ],
   "testsPassed": 2,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 40.64,
-      "threshold": 21.7,
-      "label": "40.6x vs 21.7x sector"
+      "value": 40.33,
+      "threshold": 21.59,
+      "label": "40.3x vs 21.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.2,
+      "value": 2.18,
       "threshold": 1.5,
-      "label": "2.20x vs 1.5x"
+      "label": "2.18x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.78,
+      "value": 3.81,
       "threshold": 5.0,
       "label": "3.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.81,
-      "threshold": 40.64,
-      "label": "Fwd 14.8x vs Trail 40.6x"
+      "value": 14.7,
+      "threshold": 40.33,
+      "label": "Fwd 14.7x vs Trail 40.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 40.64,
-    "sectorPe": 25.54,
-    "pb": 2.2,
-    "ps": 3.34,
+    "pe": 40.33,
+    "sectorPe": 25.4,
+    "pb": 2.18,
+    "ps": 3.32,
     "evEbitda": 13.47,
-    "fcfYield": 3.78,
-    "forwardPe": 14.81,
+    "fcfYield": 3.81,
+    "forwardPe": 14.7,
     "dividendYield": 3.07,
     "revenueGrowth": 5.2,
     "profitMargin": 7.75,

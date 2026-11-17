@@ -1,9 +1,9 @@
 {
   "ticker": "IMD",
   "name": "IMDEX FPO [IMD]",
-  "price": 3.34,
-  "valuationScore": 0.7,
-  "marketCap": "1.7B",
+  "price": 3.17,
+  "valuationScore": 0.6,
+  "marketCap": "1.6B",
   "sector": "Industrials",
   "domain": "imdex.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-22",
-      "price": 3.34
+      "price": 3.16
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 22.27,
-      "threshold": 18.6,
-      "label": "22.3x vs 18.6x sector"
+      "value": 22.61,
+      "threshold": 18.49,
+      "label": "22.6x vs 18.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.5,
+      "value": 2.37,
       "threshold": 1.5,
-      "label": "2.50x vs 1.5x"
+      "label": "2.37x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.99,
+      "value": 4.21,
       "threshold": 5.0,
-      "label": "4.0% vs 5%"
+      "label": "4.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 20.22,
-      "threshold": 22.27,
-      "label": "Fwd 20.2x vs Trail 22.3x"
+      "value": 19.16,
+      "threshold": 22.61,
+      "label": "Fwd 19.2x vs Trail 22.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.14,
+      "value": 0.13,
       "threshold": 0.5,
-      "label": "P/S 3.3x ÷ Growth 24.7% = 0.14"
+      "label": "P/S 3.2x ÷ Growth 24.7% = 0.13"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 22.27,
-    "sectorPe": 21.88,
-    "pb": 2.5,
-    "ps": 3.34,
+    "pe": 22.61,
+    "sectorPe": 21.75,
+    "pb": 2.37,
+    "ps": 3.17,
     "evEbitda": 15.13,
-    "fcfYield": 3.99,
-    "forwardPe": 20.22,
+    "fcfYield": 4.21,
+    "forwardPe": 19.16,
     "dividendYield": 1.03,
     "revenueGrowth": 24.7,
     "profitMargin": 15.28,

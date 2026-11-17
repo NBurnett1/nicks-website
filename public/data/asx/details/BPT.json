@@ -1,7 +1,7 @@
 {
   "ticker": "BPT",
   "name": "BEACH FPO [BPT]",
-  "price": 0.89,
+  "price": 0.88,
   "valuationScore": 16.2,
   "marketCap": "2.0B",
   "sector": "Energy",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-22",
-      "price": 0.89
+      "price": 0.88
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 7.42,
-      "threshold": 18.45,
-      "label": "7.4x vs 18.4x sector"
+      "value": 7.35,
+      "threshold": 17.99,
+      "label": "7.4x vs 18.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.62,
+      "value": 0.61,
       "threshold": 1.5,
-      "label": "0.62x vs 1.5x"
+      "label": "0.61x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -7.59,
+      "value": -7.66,
       "threshold": 5.0,
-      "label": "-7.6% vs 5%"
+      "label": "-7.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 5.59,
-      "threshold": 7.42,
-      "label": "Fwd 5.6x vs Trail 7.4x"
+      "value": 5.54,
+      "threshold": 7.35,
+      "label": "Fwd 5.5x vs Trail 7.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 7.42,
-    "sectorPe": 21.71,
-    "pb": 0.62,
-    "ps": 1.06,
+    "pe": 7.35,
+    "sectorPe": 21.16,
+    "pb": 0.61,
+    "ps": 1.05,
     "evEbitda": 2.83,
-    "fcfYield": -7.59,
-    "forwardPe": 5.59,
+    "fcfYield": -7.66,
+    "forwardPe": 5.54,
     "dividendYield": 4.44,
     "revenueGrowth": -17.1,
     "profitMargin": 14.65,

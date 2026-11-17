@@ -1,9 +1,9 @@
 {
   "ticker": "ING",
   "name": "INGHAMS FPO [ING]",
-  "price": 2.2,
-  "valuationScore": -12.9,
-  "marketCap": "818M",
+  "price": 2.15,
+  "valuationScore": -13.3,
+  "marketCap": "798M",
   "sector": "Consumer Staples",
   "domain": "inghams.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-22",
-      "price": 2.2
+      "price": 2.14
     }
   ],
   "testsPassed": 6,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 24.44,
-      "threshold": 25.13,
-      "label": "24.4x vs 25.1x sector"
+      "value": 23.83,
+      "threshold": 25.02,
+      "label": "23.8x vs 25.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.25,
+      "value": 3.17,
       "threshold": 1.5,
-      "label": "3.25x vs 1.5x"
+      "label": "3.17x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 19.12,
+      "value": 19.61,
       "threshold": 5.0,
-      "label": "19.1% vs 5%"
+      "label": "19.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 11.44,
-      "threshold": 24.44,
-      "label": "Fwd 11.4x vs Trail 24.4x"
+      "value": 11.16,
+      "threshold": 23.83,
+      "label": "Fwd 11.2x vs Trail 23.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.05,
       "threshold": 0.5,
-      "label": "P/S 0.3x ÷ Growth 4.9% = 0.05"
+      "label": "P/S 0.2x ÷ Growth 4.9% = 0.05"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 24.44,
-    "sectorPe": 29.56,
-    "pb": 3.25,
+    "pe": 23.83,
+    "sectorPe": 29.44,
+    "pb": 3.17,
     "ps": 0.25,
     "evEbitda": 9.96,
-    "fcfYield": 19.12,
-    "forwardPe": 11.44,
+    "fcfYield": 19.61,
+    "forwardPe": 11.16,
     "dividendYield": 4.68,
     "revenueGrowth": 4.9,
     "profitMargin": 1.07,

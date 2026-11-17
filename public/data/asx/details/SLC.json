@@ -1,8 +1,8 @@
 {
   "ticker": "SLC",
   "name": "SUPERLOOP FPO [SLC]",
-  "price": 2.55,
-  "valuationScore": 6.3,
+  "price": 2.46,
+  "valuationScore": 6.1,
   "marketCap": "1.3B",
   "sector": "Communication Services",
   "domain": "superloop.com",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-22",
-      "price": 2.55
+      "price": 2.46
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 85.0,
-      "threshold": 39.59,
-      "label": "85.0x vs 39.6x sector"
+      "value": 82.17,
+      "threshold": 38.44,
+      "label": "82.2x vs 38.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.19,
+      "value": 3.09,
       "threshold": 1.5,
-      "label": "3.19x vs 1.5x"
+      "label": "3.09x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.85,
+      "value": 3.99,
       "threshold": 5.0,
-      "label": "3.9% vs 5%"
+      "label": "4.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 20.54,
-      "threshold": 85.0,
-      "label": "Fwd 20.5x vs Trail 85.0x"
+      "value": 19.86,
+      "threshold": 82.17,
+      "label": "Fwd 19.9x vs Trail 82.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.1,
       "threshold": 0.5,
-      "label": "P/S 2.0x ÷ Growth 20.0% = 0.10"
+      "label": "P/S 1.9x ÷ Growth 20.0% = 0.10"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 85.0,
-    "sectorPe": 46.58,
-    "pb": 3.19,
-    "ps": 1.98,
+    "pe": 82.17,
+    "sectorPe": 45.22,
+    "pb": 3.09,
+    "ps": 1.91,
     "evEbitda": 16.32,
-    "fcfYield": 3.85,
-    "forwardPe": 20.54,
+    "fcfYield": 3.99,
+    "forwardPe": 19.86,
     "dividendYield": 0.0,
     "revenueGrowth": 20.0,
     "profitMargin": 2.64,

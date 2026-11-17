@@ -1,9 +1,9 @@
 {
   "ticker": "IPH",
   "name": "IPHLIMITED FPO [IPH]",
-  "price": 3.95,
-  "valuationScore": -12.8,
-  "marketCap": "1.0B",
+  "price": 3.34,
+  "valuationScore": -15.2,
+  "marketCap": "858M",
   "sector": "Industrials",
   "domain": "iphlimited.com",
   "chartData": [
@@ -217,25 +217,25 @@
     },
     {
       "date": "2026-11-22",
-      "price": 3.95
+      "price": 3.34
     }
   ],
-  "testsPassed": 5,
-  "grade": "B",
+  "testsPassed": 6,
+  "grade": "A",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 12.74,
-      "threshold": 18.6,
-      "label": "12.7x vs 18.6x sector"
+      "value": 11.13,
+      "threshold": 18.49,
+      "label": "11.1x vs 18.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
-      "passed": false,
-      "value": 1.63,
+      "passed": true,
+      "value": 1.38,
       "threshold": 1.5,
-      "label": "1.63x vs 1.5x"
+      "label": "1.38x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 15.25,
+      "value": 18.03,
       "threshold": 5.0,
-      "label": "15.2% vs 5%"
+      "label": "18.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 8.12,
-      "threshold": 12.74,
-      "label": "Fwd 8.1x vs Trail 12.7x"
+      "value": 6.87,
+      "threshold": 11.13,
+      "label": "Fwd 6.9x vs Trail 11.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 12.74,
-    "sectorPe": 21.88,
-    "pb": 1.63,
-    "ps": 1.43,
+    "pe": 11.13,
+    "sectorPe": 21.75,
+    "pb": 1.38,
+    "ps": 1.21,
     "evEbitda": 7.35,
-    "fcfYield": 15.25,
-    "forwardPe": 8.12,
+    "fcfYield": 18.03,
+    "forwardPe": 6.87,
     "dividendYield": 9.75,
     "revenueGrowth": -5.0,
     "profitMargin": 11.32,
