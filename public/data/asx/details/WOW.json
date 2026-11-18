@@ -2,8 +2,8 @@
   "ticker": "WOW",
   "name": "WOOLWORTHS FPO [WOW]",
   "price": 41.99,
-  "valuationScore": 11.0,
-  "marketCap": "51.3B",
+  "valuationScore": 11.2,
+  "marketCap": "—",
   "sector": "Consumer Staples",
   "domain": "woolworthsgroup.com.au",
   "chartData": [
@@ -220,15 +220,15 @@
       "price": 41.99
     }
   ],
-  "testsPassed": 3,
-  "grade": "C",
+  "testsPassed": 2,
+  "grade": "D",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 45.64,
-      "threshold": 25.66,
-      "label": "45.6x vs 25.7x sector"
+      "value": 45.15,
+      "threshold": 24.65,
+      "label": "45.2x vs 24.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -246,17 +246,17 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 4.22,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "4.2% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
       "value": 26.02,
-      "threshold": 45.64,
-      "label": "Fwd 26.0x vs Trail 45.6x"
+      "threshold": 45.15,
+      "label": "Fwd 26.0x vs Trail 45.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": true,
-      "value": 0.19,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 0.7x ÷ Growth 3.8% = 0.19"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 45.64,
-    "sectorPe": 30.19,
+    "pe": 45.15,
+    "sectorPe": 29.0,
     "pb": 10.68,
-    "ps": 0.72,
+    "ps": null,
     "evEbitda": 19.03,
-    "fcfYield": 4.22,
+    "fcfYield": null,
     "forwardPe": 26.02,
-    "dividendYield": 2.3,
+    "dividendYield": 2.31,
     "revenueGrowth": 3.8,
     "profitMargin": 1.59,
     "operatingMargin": 3.02,

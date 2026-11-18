@@ -1,8 +1,8 @@
 {
   "ticker": "SIQ",
   "name": "SMARTGROUP FPO [SIQ]",
-  "price": 10.85,
-  "valuationScore": 1.5,
+  "price": 10.78,
+  "valuationScore": 1.6,
   "marketCap": "1.5B",
   "sector": "Industrials",
   "domain": "smartgroup.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-22",
-      "price": 10.85
+      "price": 10.78
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 16.69,
-      "threshold": 18.4,
-      "label": "16.7x vs 18.4x sector"
+      "value": 16.84,
+      "threshold": 18.24,
+      "label": "16.8x vs 18.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 5.0,
+      "value": 4.97,
       "threshold": 1.5,
-      "label": "5.00x vs 1.5x"
+      "label": "4.97x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.76,
+      "value": 3.79,
       "threshold": 5.0,
       "label": "3.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.61,
-      "threshold": 16.69,
-      "label": "Fwd 14.6x vs Trail 16.7x"
+      "value": 14.51,
+      "threshold": 16.84,
+      "label": "Fwd 14.5x vs Trail 16.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.33,
       "threshold": 0.5,
-      "label": "P/S 4.3x ÷ Growth 12.8% = 0.33"
+      "label": "P/S 4.2x ÷ Growth 12.8% = 0.33"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 16.69,
-    "sectorPe": 21.65,
-    "pb": 5.0,
-    "ps": 4.27,
+    "pe": 16.84,
+    "sectorPe": 21.45,
+    "pb": 4.97,
+    "ps": 4.24,
     "evEbitda": 10.67,
-    "fcfYield": 3.76,
-    "forwardPe": 14.61,
-    "dividendYield": 3.99,
+    "fcfYield": 3.79,
+    "forwardPe": 14.51,
+    "dividendYield": 3.95,
     "revenueGrowth": 12.8,
     "profitMargin": 23.94,
     "operatingMargin": 36.08,

@@ -2,8 +2,8 @@
   "ticker": "MTS",
   "name": "METCASHLTD FPO [MTS]",
   "price": 3.44,
-  "valuationScore": -5.9,
-  "marketCap": "3.8B",
+  "valuationScore": -2.1,
+  "marketCap": "—",
   "sector": "Consumer Defensive",
   "domain": "metcash.com",
   "chartData": [
@@ -220,15 +220,15 @@
       "price": 3.44
     }
   ],
-  "testsPassed": 4,
+  "testsPassed": 3,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 13.78,
-      "threshold": 18.13,
-      "label": "13.8x vs 18.1x sector"
+      "value": 13.76,
+      "threshold": 17.85,
+      "label": "13.8x vs 17.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -246,16 +246,16 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": true,
-      "value": 8.98,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "9.0% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 13.53,
-      "threshold": 13.78,
+      "value": 13.51,
+      "threshold": 13.76,
       "label": "Fwd 13.5x vs Trail 13.8x"
     },
     "profitabilityCheck": {
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": 0.73,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 0.2x ÷ Growth 0.3% = 0.73"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 13.78,
-    "sectorPe": 21.33,
+    "pe": 13.76,
+    "sectorPe": 21.0,
     "pb": 2.22,
-    "ps": 0.22,
+    "ps": null,
     "evEbitda": 10.35,
-    "fcfYield": 8.98,
-    "forwardPe": 13.53,
-    "dividendYield": 5.54,
+    "fcfYield": null,
+    "forwardPe": 13.51,
+    "dividendYield": 5.52,
     "revenueGrowth": 0.3,
     "profitMargin": 1.61,
     "operatingMargin": 2.69,

@@ -1,9 +1,9 @@
 {
   "ticker": "CHC",
   "name": "CHARTER HG STP FORUS [CHC]",
-  "price": 22.19,
-  "valuationScore": 14.8,
-  "marketCap": "10.5B",
+  "price": 21.91,
+  "valuationScore": 14.7,
+  "marketCap": "10.4B",
   "sector": "Real Estate",
   "domain": "charterhall.com.au",
   "chartData": [
@@ -217,25 +217,25 @@
     },
     {
       "date": "2026-11-22",
-      "price": 22.19
+      "price": 21.91
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 25.51,
-      "threshold": 9.43,
-      "label": "25.5x vs 9.4x sector"
+      "value": 24.62,
+      "threshold": 9.25,
+      "label": "24.6x vs 9.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 3.62,
+      "value": 3.58,
       "threshold": 1.5,
-      "label": "3.62x vs 1.5x"
+      "label": "3.58x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -246,17 +246,17 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": 4.94,
+      "passed": true,
+      "value": 5.01,
       "threshold": 5.0,
-      "label": "4.9% vs 5%"
+      "label": "5.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 17.57,
-      "threshold": 25.51,
-      "label": "Fwd 17.6x vs Trail 25.5x"
+      "value": 17.35,
+      "threshold": 24.62,
+      "label": "Fwd 17.4x vs Trail 24.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 25.51,
-    "sectorPe": 11.1,
-    "pb": 3.62,
-    "ps": 12.94,
+    "pe": 24.62,
+    "sectorPe": 10.88,
+    "pb": 3.58,
+    "ps": 12.77,
     "evEbitda": 20.25,
-    "fcfYield": 4.94,
-    "forwardPe": 17.57,
-    "dividendYield": 2.32,
+    "fcfYield": 5.01,
+    "forwardPe": 17.35,
+    "dividendYield": 2.36,
     "revenueGrowth": -8.6,
     "profitMargin": 29.77,
     "operatingMargin": 65.29,

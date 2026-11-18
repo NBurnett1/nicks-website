@@ -2,8 +2,8 @@
   "ticker": "BPT",
   "name": "BEACH FPO [BPT]",
   "price": 0.88,
-  "valuationScore": 16.2,
-  "marketCap": "2.0B",
+  "valuationScore": -7.9,
+  "marketCap": "—",
   "sector": "Energy",
   "domain": "beachenergy.com.au",
   "chartData": [
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 7.31,
-      "threshold": 17.91,
-      "label": "7.3x vs 17.9x sector"
+      "value": 7.29,
+      "threshold": 17.84,
+      "label": "7.3x vs 17.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -246,16 +246,16 @@
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
-      "passed": false,
-      "value": -7.7,
+      "passed": null,
+      "value": null,
       "threshold": 5.0,
-      "label": "-7.7% vs 5%"
+      "label": "No FCF data"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 5.5,
-      "threshold": 7.31,
+      "value": 5.49,
+      "threshold": 7.29,
       "label": "Fwd 5.5x vs Trail 7.3x"
     },
     "profitabilityCheck": {
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": -17.1,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining -17.1%"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 7.31,
-    "sectorPe": 21.07,
+    "pe": 7.29,
+    "sectorPe": 20.98,
     "pb": 0.61,
-    "ps": 1.04,
+    "ps": null,
     "evEbitda": 2.8,
-    "fcfYield": -7.7,
-    "forwardPe": 5.5,
-    "dividendYield": 4.49,
+    "fcfYield": null,
+    "forwardPe": 5.49,
+    "dividendYield": 4.55,
     "revenueGrowth": -17.1,
     "profitMargin": 14.65,
     "operatingMargin": 21.0,
