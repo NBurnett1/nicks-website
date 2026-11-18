@@ -1,9 +1,9 @@
 {
   "ticker": "LNW",
   "name": "LIGHT & WO CDI 1:1 [LNW]",
-  "price": 117.52,
-  "valuationScore": 25.4,
-  "marketCap": "9.0B",
+  "price": 120.22,
+  "valuationScore": 26.5,
+  "marketCap": "9.2B",
   "sector": "Consumer Cyclical",
   "domain": "lnw.com",
   "chartData": [
@@ -217,25 +217,25 @@
     },
     {
       "date": "2026-11-22",
-      "price": 117.52
+      "price": 120.22
     }
   ],
-  "testsPassed": 5,
-  "grade": "B",
+  "testsPassed": 4,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
-      "passed": true,
-      "value": 21.52,
-      "threshold": 21.58,
-      "label": "21.5x vs 21.6x sector"
+      "passed": false,
+      "value": 22.02,
+      "threshold": 21.9,
+      "label": "22.0x vs 21.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 14.9,
+      "value": 15.24,
       "threshold": 1.5,
-      "label": "14.90x vs 1.5x"
+      "label": "15.24x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 7.75,
+      "value": 7.58,
       "threshold": 5.0,
-      "label": "7.8% vs 5%"
+      "label": "7.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 9.31,
-      "threshold": 21.52,
-      "label": "Fwd 9.3x vs Trail 21.5x"
+      "value": 9.53,
+      "threshold": 22.02,
+      "label": "Fwd 9.5x vs Trail 22.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 21.52,
-    "sectorPe": 25.39,
-    "pb": 14.9,
-    "ps": 2.69,
+    "pe": 22.02,
+    "sectorPe": 25.76,
+    "pb": 15.24,
+    "ps": 2.76,
     "evEbitda": 11.05,
-    "fcfYield": 7.75,
-    "forwardPe": 9.31,
+    "fcfYield": 7.58,
+    "forwardPe": 9.53,
     "dividendYield": 0.0,
     "revenueGrowth": -2.0,
     "profitMargin": 8.71,

@@ -1,8 +1,8 @@
 {
   "ticker": "IMD",
   "name": "IMDEX FPO [IMD]",
-  "price": 3.18,
-  "valuationScore": 0.2,
+  "price": 3.21,
+  "valuationScore": 0.5,
   "marketCap": "1.7B",
   "sector": "Industrials",
   "domain": "imdex.com",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-22",
-      "price": 3.18
+      "price": 3.2
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 21.2,
-      "threshold": 18.21,
-      "label": "21.2x vs 18.2x sector"
+      "value": 22.89,
+      "threshold": 18.4,
+      "label": "22.9x vs 18.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.38,
+      "value": 2.4,
       "threshold": 1.5,
-      "label": "2.38x vs 1.5x"
+      "label": "2.40x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.19,
+      "value": 4.16,
       "threshold": 5.0,
       "label": "4.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 19.25,
-      "threshold": 21.2,
-      "label": "Fwd 19.2x vs Trail 21.2x"
+      "value": 19.4,
+      "threshold": 22.89,
+      "label": "Fwd 19.4x vs Trail 22.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 21.2,
-    "sectorPe": 21.42,
-    "pb": 2.38,
-    "ps": 3.18,
+    "pe": 22.89,
+    "sectorPe": 21.65,
+    "pb": 2.4,
+    "ps": 3.21,
     "evEbitda": 14.49,
-    "fcfYield": 4.19,
-    "forwardPe": 19.25,
+    "fcfYield": 4.16,
+    "forwardPe": 19.4,
     "dividendYield": 1.05,
     "revenueGrowth": 24.7,
     "profitMargin": 15.28,

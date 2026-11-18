@@ -1,7 +1,7 @@
 {
   "ticker": "AMP",
   "name": "AMP FPO [AMP]",
-  "price": 2.21,
+  "price": 2.19,
   "valuationScore": 4.0,
   "marketCap": "5.3B",
   "sector": "Financials",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-22",
-      "price": 2.21
+      "price": 2.19
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 27.63,
+      "value": 27.44,
       "threshold": 16.21,
-      "label": "27.6x vs 16.2x sector"
+      "label": "27.4x vs 16.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.45,
+      "value": 1.44,
       "threshold": 1.5,
-      "label": "1.45x vs 1.5x"
+      "label": "1.44x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.23,
+      "value": 4.26,
       "threshold": 5.0,
-      "label": "4.2% vs 5%"
+      "label": "4.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.96,
-      "threshold": 27.63,
-      "label": "Fwd 15.0x vs Trail 27.6x"
+      "value": 14.86,
+      "threshold": 27.44,
+      "label": "Fwd 14.9x vs Trail 27.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.67,
+      "value": 0.66,
       "threshold": 0.5,
-      "label": "P/S 1.9x ÷ Growth 2.8% = 0.67"
+      "label": "P/S 1.9x ÷ Growth 2.8% = 0.66"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 27.63,
-    "sectorPe": 19.06,
-    "pb": 1.45,
-    "ps": 1.87,
+    "pe": 27.44,
+    "sectorPe": 19.07,
+    "pb": 1.44,
+    "ps": 1.86,
     "evEbitda": 18.37,
-    "fcfYield": 4.23,
-    "forwardPe": 14.96,
+    "fcfYield": 4.26,
+    "forwardPe": 14.86,
     "dividendYield": 2.22,
     "revenueGrowth": 2.8,
     "profitMargin": 6.67,
