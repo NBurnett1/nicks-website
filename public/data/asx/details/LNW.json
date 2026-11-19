@@ -1,9 +1,9 @@
 {
   "ticker": "LNW",
   "name": "LIGHT & WO CDI 1:1 [LNW]",
-  "price": 117.45,
-  "valuationScore": 25.9,
-  "marketCap": "9.0B",
+  "price": 119.11,
+  "valuationScore": 26.7,
+  "marketCap": "9.1B",
   "sector": "Consumer Cyclical",
   "domain": "lnw.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-22",
-      "price": 117.45
+      "price": 119.11
     }
   ],
   "testsPassed": 5,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 21.51,
-      "threshold": 21.89,
-      "label": "21.5x vs 21.9x sector"
+      "value": 21.82,
+      "threshold": 22.06,
+      "label": "21.8x vs 22.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 14.89,
+      "value": 15.1,
       "threshold": 1.5,
-      "label": "14.89x vs 1.5x"
+      "label": "15.10x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
       "value": 11.05,
       "threshold": 10.0,
-      "label": "11.1x vs 10x"
+      "label": "11.0x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 7.76,
+      "value": 7.65,
       "threshold": 5.0,
-      "label": "7.8% vs 5%"
+      "label": "7.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 9.32,
-      "threshold": 21.51,
-      "label": "Fwd 9.3x vs Trail 21.5x"
+      "value": 9.46,
+      "threshold": 21.82,
+      "label": "Fwd 9.5x vs Trail 21.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 21.51,
-    "sectorPe": 25.76,
-    "pb": 14.89,
-    "ps": 2.69,
+    "pe": 21.82,
+    "sectorPe": 25.96,
+    "pb": 15.1,
+    "ps": 2.73,
     "evEbitda": 11.05,
-    "fcfYield": 7.76,
-    "forwardPe": 9.32,
+    "fcfYield": 7.65,
+    "forwardPe": 9.46,
     "dividendYield": 0.0,
     "revenueGrowth": -2.0,
     "profitMargin": 8.71,

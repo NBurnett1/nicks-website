@@ -1,8 +1,8 @@
 {
   "ticker": "PPT",
   "name": "PERPETUAL FPO [PPT]",
-  "price": 17.77,
-  "valuationScore": -1.2,
+  "price": 17.84,
+  "valuationScore": -1.1,
   "marketCap": "2.1B",
   "sector": "Financial Services",
   "domain": "perpetual.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-22",
-      "price": 17.77
+      "price": 17.84
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 34.84,
-      "threshold": 21.66,
-      "label": "34.8x vs 21.7x sector"
+      "value": 35.68,
+      "threshold": 21.68,
+      "label": "35.7x vs 21.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.31,
+      "value": 1.32,
       "threshold": 1.5,
-      "label": "1.31x vs 1.5x"
+      "label": "1.32x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 8.89,
+      "value": 8.79,
       "threshold": 10.0,
-      "label": "8.9x vs 10x"
+      "label": "8.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.52,
+      "value": 3.5,
       "threshold": 5.0,
       "label": "3.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.6,
-      "threshold": 34.84,
-      "label": "Fwd 12.6x vs Trail 34.8x"
+      "value": 12.65,
+      "threshold": 35.68,
+      "label": "Fwd 12.7x vs Trail 35.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 34.84,
-    "sectorPe": 25.48,
-    "pb": 1.31,
+    "pe": 35.68,
+    "sectorPe": 25.51,
+    "pb": 1.32,
     "ps": 1.79,
-    "evEbitda": 8.89,
-    "fcfYield": 3.52,
-    "forwardPe": 12.6,
+    "evEbitda": 8.79,
+    "fcfYield": 3.5,
+    "forwardPe": 12.65,
     "dividendYield": 6.98,
     "revenueGrowth": null,
     "profitMargin": 7.69,
