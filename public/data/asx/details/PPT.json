@@ -1,8 +1,8 @@
 {
   "ticker": "PPT",
   "name": "PERPETUAL FPO [PPT]",
-  "price": 17.84,
-  "valuationScore": -1.1,
+  "price": 17.66,
+  "valuationScore": -1.7,
   "marketCap": "2.1B",
   "sector": "Financial Services",
   "domain": "perpetual.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-22",
-      "price": 17.84
+      "price": 17.66
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 35.68,
-      "threshold": 21.68,
-      "label": "35.7x vs 21.7x sector"
+      "value": 34.63,
+      "threshold": 21.61,
+      "label": "34.6x vs 21.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.32,
+      "value": 1.31,
       "threshold": 1.5,
-      "label": "1.32x vs 1.5x"
+      "label": "1.31x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 8.79,
+      "value": 8.74,
       "threshold": 10.0,
-      "label": "8.8x vs 10x"
+      "label": "8.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.5,
+      "value": 3.54,
       "threshold": 5.0,
       "label": "3.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.65,
-      "threshold": 35.68,
-      "label": "Fwd 12.7x vs Trail 35.7x"
+      "value": 12.53,
+      "threshold": 34.63,
+      "label": "Fwd 12.5x vs Trail 34.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 35.68,
-    "sectorPe": 25.51,
-    "pb": 1.32,
-    "ps": 1.79,
-    "evEbitda": 8.79,
-    "fcfYield": 3.5,
-    "forwardPe": 12.65,
-    "dividendYield": 6.98,
+    "pe": 34.63,
+    "sectorPe": 25.43,
+    "pb": 1.31,
+    "ps": 1.78,
+    "evEbitda": 8.74,
+    "fcfYield": 3.54,
+    "forwardPe": 12.53,
+    "dividendYield": 7.09,
     "revenueGrowth": null,
     "profitMargin": 7.69,
     "operatingMargin": 14.53,

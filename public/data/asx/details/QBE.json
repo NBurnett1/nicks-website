@@ -1,8 +1,8 @@
 {
   "ticker": "QBE",
   "name": "QBE INSUR. FPO [QBE]",
-  "price": 26.33,
-  "valuationScore": -2.3,
+  "price": 26.27,
+  "valuationScore": -2.4,
   "marketCap": "39.3B",
   "sector": "Financials",
   "domain": "qbe.com",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-22",
-      "price": 26.33
+      "price": 26.27
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 12.54,
-      "threshold": 16.06,
-      "label": "12.5x vs 16.1x sector"
+      "value": 12.45,
+      "threshold": 15.97,
+      "label": "12.5x vs 16.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.38,
+      "value": 2.37,
       "threshold": 1.5,
-      "label": "2.38x vs 1.5x"
+      "label": "2.37x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 8.76,
+      "value": 8.78,
       "threshold": 5.0,
       "label": "8.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 12.64,
-      "threshold": 12.54,
-      "label": "Fwd 12.6x vs Trail 12.5x"
+      "value": 12.49,
+      "threshold": 12.45,
+      "label": "Fwd 12.5x vs Trail 12.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 12.54,
-    "sectorPe": 18.9,
-    "pb": 2.38,
+    "pe": 12.45,
+    "sectorPe": 18.79,
+    "pb": 2.37,
     "ps": 2.02,
     "evEbitda": 11.82,
-    "fcfYield": 8.76,
-    "forwardPe": 12.64,
-    "dividendYield": 4.17,
+    "fcfYield": 8.78,
+    "forwardPe": 12.49,
+    "dividendYield": 4.19,
     "revenueGrowth": 8.3,
     "profitMargin": 11.15,
     "operatingMargin": 16.4,
