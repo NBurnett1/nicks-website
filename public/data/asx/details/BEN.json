@@ -1,9 +1,9 @@
 {
   "ticker": "BEN",
   "name": "BEN ADE BK FPO [BEN]",
-  "price": 10.58,
+  "price": 10.43,
   "valuationScore": -2.0,
-  "marketCap": "6.1B",
+  "marketCap": "6.0B",
   "sector": "Financials",
   "domain": "bendigoadelaide.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-22",
-      "price": 10.58
+      "price": 10.43
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 16.79,
-      "threshold": 15.97,
-      "label": "16.8x vs 16.0x sector"
+      "value": 16.56,
+      "threshold": 15.81,
+      "label": "16.6x vs 15.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.91,
+      "value": 0.89,
       "threshold": 1.5,
-      "label": "0.91x vs 1.5x"
+      "label": "0.89x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.21,
-      "threshold": 16.79,
-      "label": "Fwd 12.2x vs Trail 16.8x"
+      "value": 12.03,
+      "threshold": 16.56,
+      "label": "Fwd 12.0x vs Trail 16.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.85,
+      "value": 0.83,
       "threshold": 0.5,
-      "label": "P/S 3.1x ÷ Growth 3.7% = 0.85"
+      "label": "P/S 3.1x ÷ Growth 3.7% = 0.83"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 16.79,
-    "sectorPe": 18.79,
-    "pb": 0.91,
-    "ps": 3.13,
+    "pe": 16.56,
+    "sectorPe": 18.6,
+    "pb": 0.89,
+    "ps": 3.09,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 12.21,
+    "forwardPe": 12.03,
     "dividendYield": 6.19,
     "revenueGrowth": 3.7,
     "profitMargin": 19.23,
