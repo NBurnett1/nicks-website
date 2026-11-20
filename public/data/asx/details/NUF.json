@@ -1,8 +1,8 @@
 {
   "ticker": "NUF",
   "name": "NUFARM FPO [NUF]",
-  "price": 2.96,
-  "valuationScore": -15.4,
+  "price": 2.87,
+  "valuationScore": -13.3,
   "marketCap": "1.1B",
   "sector": "Basic Materials",
   "domain": "nufarm.com",
@@ -217,11 +217,11 @@
     },
     {
       "date": "2026-11-22",
-      "price": 2.96
+      "price": 2.87
     }
   ],
-  "testsPassed": 2,
-  "grade": "D",
+  "testsPassed": 3,
+  "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
@@ -233,66 +233,66 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.63,
+      "value": 0.61,
       "threshold": 1.5,
-      "label": "0.63x vs 1.5x"
+      "label": "0.61x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
-      "passed": false,
-      "value": 11.45,
+      "passed": true,
+      "value": 7.95,
       "threshold": 10.0,
-      "label": "11.4x vs 10x"
+      "label": "7.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 22.91,
+      "value": 18.15,
       "threshold": 5.0,
-      "label": "22.9% vs 5%"
+      "label": "18.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 13.23,
+      "value": 12.83,
       "threshold": null,
       "label": "Insufficient data"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": false,
-      "value": -4.69,
+      "value": -2.48,
       "threshold": 5.0,
-      "label": "Margin -4.7% / ROE -7.2%"
+      "label": "Margin -2.5% / ROE -4.0%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": -5.3,
+      "value": -8.3,
       "threshold": 0.5,
-      "label": "FAIL — Revenue declining -5.3%"
+      "label": "FAIL — Revenue declining -8.3%"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": false,
-      "value": -5.3,
+      "value": -8.3,
       "threshold": -5.0,
-      "label": "-5.3% growth (floor: -5%)"
+      "label": "-8.3% growth (floor: -5%)"
     }
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 16.4,
-    "pb": 0.63,
+    "sectorPe": 16.68,
+    "pb": 0.61,
     "ps": 0.34,
-    "evEbitda": 11.45,
-    "fcfYield": 22.91,
-    "forwardPe": 13.23,
+    "evEbitda": 7.95,
+    "fcfYield": 18.15,
+    "forwardPe": 12.83,
     "dividendYield": 0.0,
-    "revenueGrowth": -5.3,
-    "profitMargin": -4.69,
-    "operatingMargin": 3.17,
-    "roe": -7.18,
-    "debtEquity": 76.86
+    "revenueGrowth": -8.3,
+    "profitMargin": -2.48,
+    "operatingMargin": 5.15,
+    "roe": -3.97,
+    "debtEquity": 61.78
   }
 }

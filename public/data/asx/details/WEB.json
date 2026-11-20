@@ -1,8 +1,8 @@
 {
   "ticker": "WEB",
   "name": "WEBBEDS FPO [WEB]",
-  "price": 3.7,
-  "valuationScore": 4.1,
+  "price": 3.64,
+  "valuationScore": 3.8,
   "marketCap": "1.3B",
   "sector": "Consumer Cyclical",
   "domain": "webbedsgroup.com",
@@ -217,46 +217,46 @@
     },
     {
       "date": "2026-11-22",
-      "price": 3.7
+      "price": 3.64
     }
   ],
-  "testsPassed": 4,
-  "grade": "C",
+  "testsPassed": 5,
+  "grade": "B",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 37.0,
-      "threshold": 21.64,
-      "label": "37.0x vs 21.6x sector"
+      "value": 36.4,
+      "threshold": 21.95,
+      "label": "36.4x vs 21.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.3,
+      "value": 2.26,
       "threshold": 1.5,
-      "label": "2.30x vs 1.5x"
+      "label": "2.26x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
-      "passed": false,
-      "value": 10.33,
+      "passed": true,
+      "value": 9.57,
       "threshold": 10.0,
-      "label": "10.3x vs 10x"
+      "label": "9.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.01,
+      "value": 5.09,
       "threshold": 5.0,
-      "label": "5.0% vs 5%"
+      "label": "5.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 11.45,
-      "threshold": 37.0,
-      "label": "Fwd 11.5x vs Trail 37.0x"
+      "value": 11.27,
+      "threshold": 36.4,
+      "label": "Fwd 11.3x vs Trail 36.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.17,
       "threshold": 0.5,
-      "label": "P/S 3.4x ÷ Growth 19.9% = 0.17"
+      "label": "P/S 3.3x ÷ Growth 19.9% = 0.17"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 37.0,
-    "sectorPe": 25.46,
-    "pb": 2.3,
-    "ps": 3.37,
-    "evEbitda": 10.33,
-    "fcfYield": 5.01,
-    "forwardPe": 11.45,
+    "pe": 36.4,
+    "sectorPe": 25.83,
+    "pb": 2.26,
+    "ps": 3.32,
+    "evEbitda": 9.57,
+    "fcfYield": 5.09,
+    "forwardPe": 11.27,
     "dividendYield": 0.0,
     "revenueGrowth": 19.9,
     "profitMargin": 9.01,
