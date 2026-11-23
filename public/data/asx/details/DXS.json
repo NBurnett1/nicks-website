@@ -1,9 +1,9 @@
 {
   "ticker": "DXS",
   "name": "DEXUS STAPLED [DXS]",
-  "price": 5.96,
-  "valuationScore": -4.3,
-  "marketCap": "6.3B",
+  "price": 5.85,
+  "valuationScore": -4.4,
+  "marketCap": "6.2B",
   "sector": "Real Estate",
   "domain": "dexus.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-29",
-      "price": 5.96
+      "price": 5.85
     }
   ],
   "testsPassed": 3,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 10.84,
-      "threshold": 9.1,
-      "label": "10.8x vs 9.1x sector"
+      "value": 10.64,
+      "threshold": 8.87,
+      "label": "10.6x vs 8.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.64,
+      "value": 0.63,
       "threshold": 1.5,
-      "label": "0.64x vs 1.5x"
+      "label": "0.63x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 11.99,
+      "value": 11.89,
       "threshold": 10.0,
-      "label": "12.0x vs 10x"
+      "label": "11.9x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 8.13,
+      "value": 8.28,
       "threshold": 5.0,
-      "label": "8.1% vs 5%"
+      "label": "8.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 10.39,
-      "threshold": 10.84,
-      "label": "Fwd 10.4x vs Trail 10.8x"
+      "value": 10.2,
+      "threshold": 10.64,
+      "label": "Fwd 10.2x vs Trail 10.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 10.84,
-    "sectorPe": 10.71,
-    "pb": 0.64,
-    "ps": 4.79,
-    "evEbitda": 11.99,
-    "fcfYield": 8.13,
-    "forwardPe": 10.39,
+    "pe": 10.64,
+    "sectorPe": 10.44,
+    "pb": 0.63,
+    "ps": 4.7,
+    "evEbitda": 11.89,
+    "fcfYield": 8.28,
+    "forwardPe": 10.2,
     "dividendYield": 6.24,
     "revenueGrowth": -12.1,
     "profitMargin": 46.1,

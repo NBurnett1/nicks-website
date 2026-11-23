@@ -1,8 +1,8 @@
 {
   "ticker": "INA",
   "name": "INGENIA STAPLED [INA]",
-  "price": 5.13,
-  "valuationScore": 1.0,
+  "price": 5.09,
+  "valuationScore": 1.1,
   "marketCap": "2.1B",
   "sector": "Real Estate",
   "domain": "ingeniacommunities.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-29",
-      "price": 5.13
+      "price": 5.09
     }
   ],
   "testsPassed": 5,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 11.4,
-      "threshold": 9.1,
-      "label": "11.4x vs 9.1x sector"
+      "value": 11.31,
+      "threshold": 8.87,
+      "label": "11.3x vs 8.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.2,
+      "value": 1.19,
       "threshold": 1.5,
-      "label": "1.20x vs 1.5x"
+      "label": "1.19x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 17.69,
+      "value": 17.55,
       "threshold": 10.0,
-      "label": "17.7x vs 10x"
+      "label": "17.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.1,
+      "value": 5.14,
       "threshold": 5.0,
       "label": "5.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 12.55,
-      "threshold": 11.4,
-      "label": "Fwd 12.6x vs Trail 11.4x"
+      "value": 12.45,
+      "threshold": 11.31,
+      "label": "Fwd 12.5x vs Trail 11.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 11.4,
-    "sectorPe": 10.71,
-    "pb": 1.2,
-    "ps": 3.63,
-    "evEbitda": 17.69,
-    "fcfYield": 5.1,
-    "forwardPe": 12.55,
+    "pe": 11.31,
+    "sectorPe": 10.44,
+    "pb": 1.19,
+    "ps": 3.6,
+    "evEbitda": 17.55,
+    "fcfYield": 5.14,
+    "forwardPe": 12.45,
     "dividendYield": 1.86,
     "revenueGrowth": 13.3,
     "profitMargin": 32.35,

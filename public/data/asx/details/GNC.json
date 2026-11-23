@@ -1,7 +1,7 @@
 {
   "ticker": "GNC",
   "name": "GRAINCORP FPO [GNC]",
-  "price": 6.49,
+  "price": 6.42,
   "valuationScore": 17.0,
   "marketCap": "1.4B",
   "sector": "Consumer Staples",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-29",
-      "price": 6.49
+      "price": 6.42
     }
   ],
   "testsPassed": 3,
@@ -233,28 +233,28 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.08,
+      "value": 1.07,
       "threshold": 1.5,
-      "label": "1.08x vs 1.5x"
+      "label": "1.07x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 26.35,
+      "value": 25.84,
       "threshold": 10.0,
-      "label": "26.4x vs 10x"
+      "label": "25.8x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -14.61,
+      "value": -14.76,
       "threshold": 5.0,
-      "label": "-14.6% vs 5%"
+      "label": "-14.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 18.92,
+      "value": 18.72,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 26.7,
-    "pb": 1.08,
+    "sectorPe": 26.54,
+    "pb": 1.07,
     "ps": 0.2,
-    "evEbitda": 26.35,
-    "fcfYield": -14.61,
-    "forwardPe": 18.92,
+    "evEbitda": 25.84,
+    "fcfYield": -14.76,
+    "forwardPe": 18.72,
     "dividendYield": 4.24,
     "revenueGrowth": 1.0,
     "profitMargin": -0.14,

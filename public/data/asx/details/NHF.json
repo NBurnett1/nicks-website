@@ -1,8 +1,8 @@
 {
   "ticker": "NHF",
   "name": "NIBHOLDING FPO [NHF]",
-  "price": 6.64,
-  "valuationScore": -5.0,
+  "price": 6.71,
+  "valuationScore": -4.9,
   "marketCap": "3.3B",
   "sector": "Financial Services",
   "domain": "nib.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-29",
-      "price": 6.64
+      "price": 6.71
     }
   ],
   "testsPassed": 6,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 17.47,
-      "threshold": 21.44,
-      "label": "17.5x vs 21.4x sector"
+      "value": 17.66,
+      "threshold": 21.36,
+      "label": "17.7x vs 21.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.81,
+      "value": 2.84,
       "threshold": 1.5,
-      "label": "2.81x vs 1.5x"
+      "label": "2.84x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 7.6,
+      "value": 7.53,
       "threshold": 10.0,
-      "label": "7.6x vs 10x"
+      "label": "7.5x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.96,
+      "value": 5.89,
       "threshold": 5.0,
-      "label": "6.0% vs 5%"
+      "label": "5.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 13.24,
-      "threshold": 17.47,
-      "label": "Fwd 13.2x vs Trail 17.5x"
+      "value": 13.48,
+      "threshold": 17.66,
+      "label": "Fwd 13.5x vs Trail 17.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 17.47,
-    "sectorPe": 25.23,
-    "pb": 2.81,
-    "ps": 0.85,
-    "evEbitda": 7.6,
-    "fcfYield": 5.96,
-    "forwardPe": 13.24,
+    "pe": 17.66,
+    "sectorPe": 25.13,
+    "pb": 2.84,
+    "ps": 0.86,
+    "evEbitda": 7.53,
+    "fcfYield": 5.89,
+    "forwardPe": 13.48,
     "dividendYield": 4.3,
     "revenueGrowth": 4.6,
     "profitMargin": 4.92,

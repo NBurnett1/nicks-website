@@ -1,8 +1,8 @@
 {
   "ticker": "NWH",
   "name": "NRWHOLDLTD FPO [NWH]",
-  "price": 6.1,
-  "valuationScore": -2.8,
+  "price": 6.16,
+  "valuationScore": -2.5,
   "marketCap": "2.8B",
   "sector": "Industrials",
   "domain": "nrw.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-29",
-      "price": 6.1
+      "price": 6.16
     }
   ],
   "testsPassed": 5,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 18.48,
-      "threshold": 18.15,
-      "label": "18.5x vs 18.1x sector"
+      "value": 18.67,
+      "threshold": 18.02,
+      "label": "18.7x vs 18.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.06,
+      "value": 4.1,
       "threshold": 1.5,
-      "label": "4.06x vs 1.5x"
+      "label": "4.10x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 7.08,
+      "value": 7.18,
       "threshold": 10.0,
-      "label": "7.1x vs 10x"
+      "label": "7.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 7.5,
+      "value": 7.42,
       "threshold": 5.0,
-      "label": "7.5% vs 5%"
+      "label": "7.4% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 12.69,
-      "threshold": 18.48,
-      "label": "Fwd 12.7x vs Trail 18.5x"
+      "value": 12.81,
+      "threshold": 18.67,
+      "label": "Fwd 12.8x vs Trail 18.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 18.48,
-    "sectorPe": 21.35,
-    "pb": 4.06,
+    "pe": 18.67,
+    "sectorPe": 21.2,
+    "pb": 4.1,
     "ps": 0.66,
-    "evEbitda": 7.08,
-    "fcfYield": 7.5,
-    "forwardPe": 12.69,
+    "evEbitda": 7.18,
+    "fcfYield": 7.42,
+    "forwardPe": 12.81,
     "dividendYield": 3.79,
     "revenueGrowth": 43.6,
     "profitMargin": 3.57,

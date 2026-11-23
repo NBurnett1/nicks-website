@@ -1,34 +1,79 @@
 {
-  "lastUpdated": "2026-11-23T11:37:27.747682+11:00",
+  "lastUpdated": "2026-11-24T06:04:38.734451+11:00",
   "stocksScanned": 129,
-  "totalAlerts": 116,
+  "totalAlerts": 141,
   "alerts": [
+    {
+      "type": "PRICE_MOVE",
+      "severity": "critical",
+      "ticker": "CCX",
+      "exchange": "ASX",
+      "headline": "Stock plunged 10.4% in one session",
+      "detail": "$0.05 → $0.04",
+      "timestamp": "2026-11-23T19:03:11.547836+00:00"
+    },
     {
       "type": "PRICE_MOVE",
       "severity": "critical",
       "ticker": "ALQ",
       "exchange": "ASX",
-      "headline": "Stock plunged 12.3% in one session",
-      "detail": "$19.30 → $16.93",
-      "timestamp": "2026-11-23T00:37:04.313360+00:00"
+      "headline": "Stock plunged 12.2% in one session",
+      "detail": "$19.30 → $16.94",
+      "timestamp": "2026-11-23T19:04:13.580762+00:00"
+    },
+    {
+      "type": "EXTREME VOLUME",
+      "severity": "critical",
+      "ticker": "WEB",
+      "exchange": "ASX",
+      "headline": "4.5x average volume detected",
+      "detail": "Volume: 5,535,459 vs 20-day avg: 1,237,649 | Price down 10.4%",
+      "timestamp": "2026-11-23T19:04:28.818186+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "critical",
+      "ticker": "WEB",
+      "exchange": "ASX",
+      "headline": "Stock plunged 10.4% in one session",
+      "detail": "$3.64 → $3.26",
+      "timestamp": "2026-11-23T19:04:28.970408+00:00"
     },
     {
       "type": "PRICE_MOVE",
       "severity": "high",
-      "ticker": "CCX",
+      "ticker": "SBM",
       "exchange": "ASX",
-      "headline": "Stock plunged 6.2% in one session",
-      "detail": "$0.05 → $0.05",
-      "timestamp": "2026-11-23T00:36:05.772187+00:00"
+      "headline": "Stock surged 5.4% in one session",
+      "detail": "$0.64 → $0.68",
+      "timestamp": "2026-11-23T19:03:20.211053+00:00"
     },
     {
       "type": "PRICE_MOVE",
       "severity": "high",
       "ticker": "ASG",
       "exchange": "ASX",
-      "headline": "Stock plunged 5.7% in one session",
-      "detail": "$0.97 → $0.92",
-      "timestamp": "2026-11-23T00:36:42.932005+00:00"
+      "headline": "Stock plunged 7.2% in one session",
+      "detail": "$0.97 → $0.90",
+      "timestamp": "2026-11-23T19:03:49.995415+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "high",
+      "ticker": "VEE",
+      "exchange": "ASX",
+      "headline": "Stock plunged 6.3% in one session",
+      "detail": "$0.47 → $0.44",
+      "timestamp": "2026-11-23T19:04:12.451264+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "high",
+      "ticker": "ALU",
+      "exchange": "ASX",
+      "headline": "Stock surged 8.9% in one session",
+      "detail": "$0.28 → $0.31",
+      "timestamp": "2026-11-23T19:04:38.734325+00:00"
     },
     {
       "type": "INSIDER_BUY",
@@ -126,6 +171,57 @@
       "sentiment": "negative",
       "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/d295619ca4385708381c7a943909baae.jpg",
       "timestamp": "2026-11-21T08:10:26Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "medium",
+      "ticker": "DOW",
+      "exchange": "ASX",
+      "headline": "Downer shares jump over 3% on $730 million NSW transmission contract",
+      "detail": "Source: Investing.com",
+      "sentiment": "negative",
+      "thumbnail": null,
+      "timestamp": "2026-11-23T04:03:47Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "medium",
+      "ticker": "NAB",
+      "exchange": "ASX",
+      "headline": "Australian bank NAB apologises after staff learn of layoffs early through automated email",
+      "detail": "Source: Reuters",
+      "sentiment": "negative",
+      "thumbnail": "https://media.zenfs.com/en/reuters.com/8fa607af60d181cb3cf7a3985f30af27.jpg_up.jpg",
+      "timestamp": "2026-11-23T07:31:48Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "medium",
+      "ticker": "DOW",
+      "exchange": "ASX",
+      "headline": "Learn Why The Bull Case For Downer EDI Stock Could Change Following Transmission Line Contract",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "negative",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/e6c7d8e11f5dbf66a241a1412e4eb959.jpg",
+      "timestamp": "2026-11-23T17:15:15Z"
+    },
+    {
+      "type": "VOLUME SPIKE",
+      "severity": "medium",
+      "ticker": "RRL",
+      "exchange": "ASX",
+      "headline": "2.1x average volume detected",
+      "detail": "Volume: 6,477,675 vs 20-day avg: 3,021,674 | Price up 0.9%",
+      "timestamp": "2026-11-23T19:03:14.961218+00:00"
+    },
+    {
+      "type": "VOLUME SPIKE",
+      "severity": "medium",
+      "ticker": "ALQ",
+      "exchange": "ASX",
+      "headline": "2.2x average volume detected",
+      "detail": "Volume: 3,147,631 vs 20-day avg: 1,419,239 | Price down 12.2%",
+      "timestamp": "2026-11-23T19:04:13.392527+00:00"
     },
     {
       "type": "INSIDER_BUY",
@@ -252,61 +348,6 @@
       "headline": "Bell (Alistair) (Independent Non-Executive Director) purchased 10,000 shares ($18,347)",
       "detail": "Purchase at price 1.83 per share.",
       "timestamp": "2026-11-11 00:00:00"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "FLT",
-      "exchange": "ASX",
-      "headline": "Top 3 Australian Founder Led Stocks With Earnings Growth Over 13% To Watch",
-      "detail": "Source: Simply Wall St.",
-      "sentiment": "positive",
-      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/b8221975e4a7c80628cfddfe3241b527.jpg",
-      "timestamp": "2026-11-15T07:09:28Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "MP1",
-      "exchange": "ASX",
-      "headline": "Top 3 Australian Growth Stocks To Watch In November 2026",
-      "detail": "Source: Simply Wall St.",
-      "sentiment": "positive",
-      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/458559082245f3e3e142761485ce89d1.jpg",
-      "timestamp": "2026-11-15T10:08:53Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "HVN",
-      "exchange": "ASX",
-      "headline": "Top 3 Australian Founder Led Stocks To Watch In November 2026",
-      "detail": "Source: Simply Wall St.",
-      "sentiment": "neutral",
-      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/b8221975e4a7c80628cfddfe3241b527.jpg",
-      "timestamp": "2026-11-15T12:11:06Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "FLT",
-      "exchange": "ASX",
-      "headline": "Top 3 Australian Founder Led Stocks To Watch In November 2026",
-      "detail": "Source: Simply Wall St.",
-      "sentiment": "neutral",
-      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/b8221975e4a7c80628cfddfe3241b527.jpg",
-      "timestamp": "2026-11-15T12:11:06Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "QAN",
-      "exchange": "ASX",
-      "headline": "Expedia: 3 Key Takeaways for Long-Term Investors",
-      "detail": "Source: Motley Fool",
-      "sentiment": "neutral",
-      "thumbnail": "https://media.zenfs.com/en/motleyfool.com/2fcea16b3ae624a34a13182644465c52.jpg",
-      "timestamp": "2026-11-15T18:11:03Z"
     },
     {
       "type": "INSIDER_BUY",
@@ -701,17 +742,6 @@
     {
       "type": "NEWS",
       "severity": "low",
-      "ticker": "BHP",
-      "exchange": "ASX",
-      "headline": "Time for Copper-Focused BHP to Show How It Can Grow",
-      "detail": "Source: The Wall Street Journal",
-      "sentiment": "neutral",
-      "thumbnail": "https://media.zenfs.com/en/wsj.com/c121ec2ea20701377bd7806b765d7622.jpg",
-      "timestamp": "2026-11-19T07:06:00Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
       "ticker": "WOR",
       "exchange": "ASX",
       "headline": "Gelion hires Worley to design pilot plant for sulfur battery material",
@@ -888,17 +918,6 @@
     {
       "type": "NEWS",
       "severity": "low",
-      "ticker": "RIO",
-      "exchange": "ASX",
-      "headline": "Rio Tinto (LSE:RIO) Stock Fair Value Edges Higher After Mixed Analyst Target Changes",
-      "detail": "Source: Simply Wall St.",
-      "sentiment": "positive",
-      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/71a0e9bde60fe3fe4270d59f307242be.jpg",
-      "timestamp": "2026-11-19T21:11:23Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
       "ticker": "DMP",
       "exchange": "ASX",
       "headline": "3 Australian Restaurant Stocks Facing Higher Fuel Costs and Inflation",
@@ -943,17 +962,6 @@
     {
       "type": "NEWS",
       "severity": "low",
-      "ticker": "BHP",
-      "exchange": "ASX",
-      "headline": "The Copper and Iron Ore Behind Your Wiring and Appliances: $90,000 Across These 3 Miners Pays $5,330 a Year",
-      "detail": "Source: 24/7 Wall St.",
-      "sentiment": "neutral",
-      "thumbnail": "https://media.zenfs.com/en/24_7_wall_st__718/a1932b613fc1755f7b78e10c089da48e.jpg",
-      "timestamp": "2026-11-20T16:54:17Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
       "ticker": "RIO",
       "exchange": "ASX",
       "headline": "The Copper and Iron Ore Behind Your Wiring and Appliances: $90,000 Across These 3 Miners Pays $5,330 a Year",
@@ -976,17 +984,6 @@
     {
       "type": "NEWS",
       "severity": "low",
-      "ticker": "XRO",
-      "exchange": "ASX",
-      "headline": "PayPal Stock Drops on $31 Million CFO Pay Deal",
-      "detail": "Source: GuruFocus.com",
-      "sentiment": "positive",
-      "thumbnail": null,
-      "timestamp": "2026-11-20T17:10:54Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
       "ticker": "CBA",
       "exchange": "ASX",
       "headline": "Electric Vehicles Now Make Up Nearly 1/3rd of Global New Car Sales: Study",
@@ -994,28 +991,6 @@
       "sentiment": "neutral",
       "thumbnail": "https://media.zenfs.com/en/road_track_223/e700a39470ee766db327783dd1fd0309.jpg",
       "timestamp": "2026-11-20T17:28:26Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "AMC",
-      "exchange": "ASX",
-      "headline": "Which Gives You More Of A Packaging Rebound, Smurfit WestRock Or Amcor?",
-      "detail": "Source: Trefis",
-      "sentiment": "neutral",
-      "thumbnail": "https://media.zenfs.com/en/trefis_142/7d4ae959d6ba4c3ec36c5832fcd35af8.jpg",
-      "timestamp": "2026-11-20T19:08:49Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "MQG",
-      "exchange": "ASX",
-      "headline": "Oil Futures Fall for Third Straight Week on Supply Outlook",
-      "detail": "Source: The Wall Street Journal",
-      "sentiment": "neutral",
-      "thumbnail": "https://media.zenfs.com/en/wsj.com/164a5c558733f16eb1cb4e81da196865.jpg_up.jpg",
-      "timestamp": "2026-11-20T21:16:00Z"
     },
     {
       "type": "NEWS",
@@ -1130,17 +1105,6 @@
     {
       "type": "NEWS",
       "severity": "low",
-      "ticker": "AMC",
-      "exchange": "ASX",
-      "headline": "Better Dividend Stock for Retirees: British American Tobacco vs. Amcor",
-      "detail": "Source: TIKR",
-      "sentiment": "positive",
-      "thumbnail": "https://media.zenfs.com/en/tikr_258/a47e11138a0b819ad806d6156572e8ef",
-      "timestamp": "2026-11-21T18:35:25Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
       "ticker": "SUL",
       "exchange": "ASX",
       "headline": "3 Australian Dividend Stocks To Own In November 2026",
@@ -1218,17 +1182,6 @@
     {
       "type": "NEWS",
       "severity": "low",
-      "ticker": "BHP",
-      "exchange": "ASX",
-      "headline": "Should you buy copper’s dip? Here’s why UBS favors long position",
-      "detail": "Source: Investing.com",
-      "sentiment": "positive",
-      "thumbnail": null,
-      "timestamp": "2026-11-22T09:39:20Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
       "ticker": "MIN",
       "exchange": "ASX",
       "headline": "Why Mineral Resources Bears Were Right Before The Drop",
@@ -1236,6 +1189,314 @@
       "sentiment": "neutral",
       "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/b2fc1054c8c4ceaedb1eb91bb340fb9b.jpg",
       "timestamp": "2026-11-22T19:07:19Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "WBC",
+      "exchange": "ASX",
+      "headline": "AI Investment Adding to Inflation: Jain",
+      "detail": "Source: Bloomberg",
+      "sentiment": "neutral",
+      "thumbnail": "https://media.zenfs.com/en/bloomberg_markets_video_2/d1e33e6966b4aa5cb8da704bf3e5e87a.jpg",
+      "timestamp": "2026-11-23T00:43:49Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "BPT",
+      "exchange": "ASX",
+      "headline": "Beach Energy confirms talks with Santos over Queensland gas assets",
+      "detail": "Source: Proactive",
+      "sentiment": "neutral",
+      "thumbnail": "https://media.zenfs.com/en/proactive_us_504/103c6d256ad061c3502d827e0f0a7a8d.jpg",
+      "timestamp": "2026-11-23T00:59:00Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "STO",
+      "exchange": "ASX",
+      "headline": "Beach Energy confirms talks with Santos over Queensland gas assets",
+      "detail": "Source: Proactive",
+      "sentiment": "neutral",
+      "thumbnail": "https://media.zenfs.com/en/proactive_us_504/103c6d256ad061c3502d827e0f0a7a8d.jpg",
+      "timestamp": "2026-11-23T00:59:00Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "ORG",
+      "exchange": "ASX",
+      "headline": "ASX Battery Stocks Getting A Closer Look As Grid Storage Spending Shifts",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "neutral",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/7eb46fcdb523360dadb6dfcfeb7a0c54.jpg",
+      "timestamp": "2026-11-23T01:07:51Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "NWH",
+      "exchange": "ASX",
+      "headline": "3 Australian Penny Stocks To Own In November 2026",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "neutral",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/a8efa0136d067f130df51c04f68fa4dd.jpg",
+      "timestamp": "2026-11-23T02:08:00Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "SDF",
+      "exchange": "ASX",
+      "headline": "3 Australian Penny Stocks To Own In November 2026",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "neutral",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/a8efa0136d067f130df51c04f68fa4dd.jpg",
+      "timestamp": "2026-11-23T02:08:00Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "APX",
+      "exchange": "ASX",
+      "headline": "3 Australian AI Stocks With Up To 95% Revenue Growth",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "positive",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/871af692fc2d5847de076172309213fa.jpg",
+      "timestamp": "2026-11-23T02:08:48Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "WOR",
+      "exchange": "ASX",
+      "headline": "Gelion CEO on Worley partnership, battery scale-up and licensing opportunities",
+      "detail": "Source: Proactive",
+      "sentiment": "positive",
+      "thumbnail": "https://media.zenfs.com/en/proactive_video_751/f698ef786c20d4975ef659220d21a269.jpg",
+      "timestamp": "2026-11-23T04:33:49Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "BHP",
+      "exchange": "ASX",
+      "headline": "BHP plans to double South Australian copper output by 2040; shares up",
+      "detail": "Source: Investing.com",
+      "sentiment": "neutral",
+      "thumbnail": null,
+      "timestamp": "2026-11-23T04:37:44Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "SDF",
+      "exchange": "ASX",
+      "headline": "3 Australian Dividend Stocks With At Least 3% Yield",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "positive",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/a8efa0136d067f130df51c04f68fa4dd.jpg",
+      "timestamp": "2026-11-23T06:13:15Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "XRO",
+      "exchange": "ASX",
+      "headline": "PayPal Sale: Why This Analyst Sees A ‘Lower Likelihood’",
+      "detail": "Source: Stocktwits",
+      "sentiment": "neutral",
+      "thumbnail": "https://media.zenfs.com/en/stocktwits_383/2e8e80efcf6de3fc0694312d92e7863b",
+      "timestamp": "2026-11-23T07:47:22Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "RIO",
+      "exchange": "ASX",
+      "headline": "FTSE 100 today: Stocks rise as banks, gold miners lead; UK PMI beats forecasts",
+      "detail": "Source: Investing.com",
+      "sentiment": "positive",
+      "thumbnail": null,
+      "timestamp": "2026-11-23T08:58:10Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "SUL",
+      "exchange": "ASX",
+      "headline": "3 Dividend Stocks With Up To 6% Yield",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "positive",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/5118a4f66365dd437924f567147b69d2.jpg",
+      "timestamp": "2026-11-23T11:12:51Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "AMC",
+      "exchange": "ASX",
+      "headline": "Is West Pharmaceutical Stock Too Expensive At $390?",
+      "detail": "Source: Trefis",
+      "sentiment": "neutral",
+      "thumbnail": null,
+      "timestamp": "2026-11-23T14:03:13Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "MQG",
+      "exchange": "ASX",
+      "headline": "Applied Digital Signs $5.4B Hyperscaler Lease For 150 MW AI Capacity, Targets First Deliveries In 2028",
+      "detail": "Source: Stocktwits",
+      "sentiment": "neutral",
+      "thumbnail": "https://media.zenfs.com/en/stocktwits_383/06f54b645a8e90fcae0d3e7507f72e3e",
+      "timestamp": "2026-11-23T14:09:59Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "QAN",
+      "exchange": "ASX",
+      "headline": "Rebecca Vallance Celebrates 15 Years of Global Success With New Projects, Partnerships and Milestones",
+      "detail": "Source: WWD",
+      "sentiment": "positive",
+      "thumbnail": "https://media.zenfs.com/en/wwd_409/672095cc8e0defba8bdb886a0aad193e.jpg",
+      "timestamp": "2026-11-23T15:53:04Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "BHP",
+      "exchange": "ASX",
+      "headline": "European Equities Traded in the US as American Depositary Receipts Surge in Monday Trading",
+      "detail": "Source: MT Newswires",
+      "sentiment": "positive",
+      "thumbnail": null,
+      "timestamp": "2026-11-23T16:24:10Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "BWP",
+      "exchange": "ASX",
+      "headline": "BWP Trust (ASX:BWP) Shares Could Trade At A Discount On A 25% Three Year Gain",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "neutral",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/f5a210760908d97935771220324a42ed.jpg",
+      "timestamp": "2026-11-23T17:08:35Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "ILU",
+      "exchange": "ASX",
+      "headline": "Is Iluka Resources (ASX:ILU) Fully Priced For Its Sales Base?",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "neutral",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/b2fc1054c8c4ceaedb1eb91bb340fb9b.jpg",
+      "timestamp": "2026-11-23T17:08:38Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "BSL",
+      "exchange": "ASX",
+      "headline": "BlueScope Steel (ASX:BSL) Shares Look Undervalued On An 86% Five Year Run",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "neutral",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/78858d26fc6234beea1e5acde84dc6b0.jpg",
+      "timestamp": "2026-11-23T17:08:40Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "BHP",
+      "exchange": "ASX",
+      "headline": "3 ETFs That Hold BHP Very Differently As Copper Approval Stalls",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "neutral",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/b3afc3aebe63e88efd88ece816db6b85.jpg",
+      "timestamp": "2026-11-23T17:08:46Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "AMC",
+      "exchange": "ASX",
+      "headline": "Amcor or Las Vegas Sands: Only One Gets My Dividend Dollars for the Next 10 Years",
+      "detail": "Source: TIKR",
+      "sentiment": "positive",
+      "thumbnail": "https://media.zenfs.com/en/tikr_258/fad8a4418a2217bbed5b42419f25aba3",
+      "timestamp": "2026-11-23T17:09:12Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "MND",
+      "exchange": "ASX",
+      "headline": "Monadelphous Group (ASX:MND) Shares Look About Right Despite A 298% Run",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "neutral",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/67b2b004d6b6fbb0c05d4d086193e833.jpg",
+      "timestamp": "2026-11-23T17:09:20Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "ORI",
+      "exchange": "ASX",
+      "headline": "Full Year Earnings Beat Might Change The Case For Investing In Orica (ASX:ORI)",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "positive",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/64412698a106bf0db28d8c4e0914d553.jpg",
+      "timestamp": "2026-11-23T17:10:51Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "PRU",
+      "exchange": "ASX",
+      "headline": "Perseus Mining (ASX:PRU) Shares May Still Look Reasonable On Earnings",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "neutral",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/458559082245f3e3e142761485ce89d1.jpg",
+      "timestamp": "2026-11-23T18:07:20Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "PDN",
+      "exchange": "ASX",
+      "headline": "Paladin Energy (ASX:PDN) Shares Still Look Very Expensive After The 41% Fall",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "neutral",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/c36fd55ce84939c882b05cbf66b4ea70.jpg",
+      "timestamp": "2026-11-23T18:08:04Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "RRL",
+      "exchange": "ASX",
+      "headline": "Regis Resources (ASX:RRL) Shares Still Look Undervalued Following Their 242% Run",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "neutral",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/a804a82b740daf6b6ceae753a2922fc3.jpg",
+      "timestamp": "2026-11-23T18:08:37Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "RSG",
+      "exchange": "ASX",
+      "headline": "Resolute Mining (ASX:RSG) Shares Could Be Below Fair Value After Doropo Update",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "neutral",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/458559082245f3e3e142761485ce89d1.jpg",
+      "timestamp": "2026-11-23T18:09:15Z"
     }
   ]
 }
