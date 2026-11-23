@@ -1,16 +1,12 @@
 {
   "ticker": "REA",
   "name": "REA GROUP FPO [REA]",
-  "price": 157.85,
-  "valuationScore": 4.2,
+  "price": 158.1,
+  "valuationScore": 4.3,
   "marketCap": "20.7B",
   "sector": "Technology",
   "domain": "rea-group.com",
   "chartData": [
-    {
-      "date": "2025-11-23",
-      "price": 193.19
-    },
     {
       "date": "2025-11-30",
       "price": 192.55
@@ -218,6 +214,10 @@
     {
       "date": "2026-11-22",
       "price": 157.85
+    },
+    {
+      "date": "2026-11-29",
+      "price": 158.1
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 30.89,
-      "threshold": 37.33,
-      "label": "30.9x vs 37.3x sector"
+      "value": 30.94,
+      "threshold": 37.4,
+      "label": "30.9x vs 37.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 10.87,
+      "value": 10.89,
       "threshold": 1.5,
-      "label": "10.87x vs 1.5x"
+      "label": "10.89x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,15 +247,15 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.5,
+      "value": 2.49,
       "threshold": 5.0,
       "label": "2.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 24.48,
-      "threshold": 30.89,
+      "value": 24.52,
+      "threshold": 30.94,
       "label": "Fwd 24.5x vs Trail 30.9x"
     },
     "profitabilityCheck": {
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 30.89,
-    "sectorPe": 43.91,
-    "pb": 10.87,
-    "ps": 10.45,
+    "pe": 30.94,
+    "sectorPe": 43.99,
+    "pb": 10.89,
+    "ps": 10.47,
     "evEbitda": 20.5,
-    "fcfYield": 2.5,
-    "forwardPe": 24.48,
+    "fcfYield": 2.49,
+    "forwardPe": 24.52,
     "dividendYield": 2.19,
     "revenueGrowth": null,
     "profitMargin": 27.9,

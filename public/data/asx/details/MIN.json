@@ -1,16 +1,12 @@
 {
   "ticker": "MIN",
   "name": "MINERALRES FPO [MIN]",
-  "price": 38.69,
-  "valuationScore": -6.8,
-  "marketCap": "7.7B",
+  "price": 39.08,
+  "valuationScore": -6.9,
+  "marketCap": "7.8B",
   "sector": "Materials",
   "domain": "mineralresources.com.au",
   "chartData": [
-    {
-      "date": "2025-11-23",
-      "price": 48.2
-    },
     {
       "date": "2025-11-30",
       "price": 48.43
@@ -218,6 +214,10 @@
     {
       "date": "2026-11-22",
       "price": 38.69
+    },
+    {
+      "date": "2026-11-29",
+      "price": 39.08
     }
   ],
   "testsPassed": 6,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 7.25,
-      "threshold": 13.58,
-      "label": "7.2x vs 13.6x sector"
+      "value": 7.32,
+      "threshold": 13.76,
+      "label": "7.3x vs 13.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.75,
+      "value": 1.77,
       "threshold": 1.5,
-      "label": "1.75x vs 1.5x"
+      "label": "1.77x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 7.04,
+      "value": 6.97,
       "threshold": 5.0,
       "label": "7.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 12.98,
-      "threshold": 7.25,
-      "label": "Fwd 13.0x vs Trail 7.2x"
+      "value": 13.11,
+      "threshold": 7.32,
+      "label": "Fwd 13.1x vs Trail 7.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 7.25,
-    "sectorPe": 15.98,
-    "pb": 1.75,
-    "ps": 1.19,
+    "pe": 7.32,
+    "sectorPe": 16.19,
+    "pb": 1.77,
+    "ps": 1.2,
     "evEbitda": 5.05,
-    "fcfYield": 7.04,
-    "forwardPe": 12.98,
+    "fcfYield": 6.97,
+    "forwardPe": 13.11,
     "dividendYield": 2.15,
     "revenueGrowth": 56.2,
     "profitMargin": 16.42,

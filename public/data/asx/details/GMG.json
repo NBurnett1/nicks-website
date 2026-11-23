@@ -1,16 +1,12 @@
 {
   "ticker": "GMG",
   "name": "GOOD GROUP STAPLED [GMG]",
-  "price": 27.55,
-  "valuationScore": 9.9,
-  "marketCap": "56.6B",
+  "price": 27.4,
+  "valuationScore": 9.8,
+  "marketCap": "56.3B",
   "sector": "Real Estate",
   "domain": "goodman.com",
   "chartData": [
-    {
-      "date": "2025-11-23",
-      "price": 28.37
-    },
     {
       "date": "2025-11-30",
       "price": 29.4
@@ -218,6 +214,10 @@
     {
       "date": "2026-11-22",
       "price": 27.55
+    },
+    {
+      "date": "2026-11-29",
+      "price": 27.4
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 20.71,
-      "threshold": 9.06,
-      "label": "20.7x vs 9.1x sector"
+      "value": 20.6,
+      "threshold": 9.1,
+      "label": "20.6x vs 9.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.26,
+      "value": 2.25,
       "threshold": 1.5,
-      "label": "2.26x vs 1.5x"
+      "label": "2.25x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.28,
+      "value": 5.31,
       "threshold": 5.0,
       "label": "5.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 17.31,
-      "threshold": 20.71,
-      "label": "Fwd 17.3x vs Trail 20.7x"
+      "value": 17.22,
+      "threshold": 20.6,
+      "label": "Fwd 17.2x vs Trail 20.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 20.71,
-    "sectorPe": 10.66,
-    "pb": 2.26,
-    "ps": 13.94,
+    "pe": 20.6,
+    "sectorPe": 10.71,
+    "pb": 2.25,
+    "ps": 13.87,
     "evEbitda": 24.32,
-    "fcfYield": 5.28,
-    "forwardPe": 17.31,
+    "fcfYield": 5.31,
+    "forwardPe": 17.22,
     "dividendYield": 1.09,
     "revenueGrowth": 65.8,
     "profitMargin": 68.44,

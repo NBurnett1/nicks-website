@@ -1,16 +1,12 @@
 {
   "ticker": "RHC",
   "name": "RAMSAY FPO [RHC]",
-  "price": 53.9,
+  "price": 53.77,
   "valuationScore": -2.4,
   "marketCap": "12.4B",
   "sector": "Healthcare",
   "domain": "ramsayhealth.com",
   "chartData": [
-    {
-      "date": "2025-11-23",
-      "price": 30.68
-    },
     {
       "date": "2025-11-30",
       "price": 36.12
@@ -218,6 +214,10 @@
     {
       "date": "2026-11-22",
       "price": 53.9
+    },
+    {
+      "date": "2026-11-29",
+      "price": 53.77
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 39.63,
-      "threshold": 26.32,
-      "label": "39.6x vs 26.3x sector"
+      "value": 39.54,
+      "threshold": 26.29,
+      "label": "39.5x vs 26.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.64,
+      "value": 2.63,
       "threshold": 1.5,
-      "label": "2.64x vs 1.5x"
+      "label": "2.63x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.68,
+      "value": 5.69,
       "threshold": 5.0,
       "label": "5.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 25.48,
-      "threshold": 39.63,
-      "label": "Fwd 25.5x vs Trail 39.6x"
+      "value": 25.42,
+      "threshold": 39.54,
+      "label": "Fwd 25.4x vs Trail 39.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 39.63,
-    "sectorPe": 30.96,
-    "pb": 2.64,
+    "pe": 39.54,
+    "sectorPe": 30.93,
+    "pb": 2.63,
     "ps": 0.67,
     "evEbitda": 13.2,
-    "fcfYield": 5.68,
-    "forwardPe": 25.48,
+    "fcfYield": 5.69,
+    "forwardPe": 25.42,
     "dividendYield": 1.8,
     "revenueGrowth": 1.0,
     "profitMargin": 1.76,

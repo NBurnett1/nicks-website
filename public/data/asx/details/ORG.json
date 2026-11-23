@@ -1,16 +1,12 @@
 {
   "ticker": "ORG",
   "name": "ORIGIN ENE FPO [ORG]",
-  "price": 12.46,
-  "valuationScore": -4.8,
-  "marketCap": "21.5B",
+  "price": 12.52,
+  "valuationScore": 2.5,
+  "marketCap": "21.6B",
   "sector": "Energy",
   "domain": "originenergy.com.au",
   "chartData": [
-    {
-      "date": "2025-11-23",
-      "price": 10.86
-    },
     {
       "date": "2025-11-30",
       "price": 11.1
@@ -218,6 +214,10 @@
     {
       "date": "2026-11-22",
       "price": 12.46
+    },
+    {
+      "date": "2026-11-29",
+      "price": 12.52
     }
   ],
   "testsPassed": 2,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 13.69,
-      "threshold": 17.08,
-      "label": "13.7x vs 17.1x sector"
+      "value": 13.75,
+      "threshold": 17.07,
+      "label": "13.8x vs 17.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.11,
+      "value": 2.12,
       "threshold": 1.5,
-      "label": "2.11x vs 1.5x"
+      "label": "2.12x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.81,
+      "value": 3.8,
       "threshold": 5.0,
       "label": "3.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 19.51,
-      "threshold": 13.69,
-      "label": "Fwd 19.5x vs Trail 13.7x"
+      "value": 19.6,
+      "threshold": 13.75,
+      "label": "Fwd 19.6x vs Trail 13.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 13.69,
+    "pe": 13.75,
     "sectorPe": 20.09,
-    "pb": 2.11,
-    "ps": 1.37,
+    "pb": 2.12,
+    "ps": 1.38,
     "evEbitda": 14.89,
-    "fcfYield": 3.81,
-    "forwardPe": 19.51,
+    "fcfYield": 3.8,
+    "forwardPe": 19.6,
     "dividendYield": 4.82,
     "revenueGrowth": -10.2,
     "profitMargin": 10.08,

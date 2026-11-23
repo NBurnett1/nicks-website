@@ -1,16 +1,12 @@
 {
   "ticker": "JBH",
   "name": "JB HI-FI FPO [JBH]",
-  "price": 75.31,
+  "price": 75.12,
   "valuationScore": 0.9,
   "marketCap": "8.2B",
   "sector": "Consumer Discretionary",
   "domain": "jbhifi.com.au",
   "chartData": [
-    {
-      "date": "2025-11-23",
-      "price": 91.14
-    },
     {
       "date": "2025-11-30",
       "price": 93.97
@@ -218,6 +214,10 @@
     {
       "date": "2026-11-22",
       "price": 75.31
+    },
+    {
+      "date": "2026-11-29",
+      "price": 75.12
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 16.85,
-      "threshold": 14.44,
-      "label": "16.8x vs 14.4x sector"
+      "value": 16.81,
+      "threshold": 14.48,
+      "label": "16.8x vs 14.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 5.03,
+      "value": 5.01,
       "threshold": 1.5,
-      "label": "5.03x vs 1.5x"
+      "label": "5.01x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 6.69,
+      "value": 6.7,
       "threshold": 5.0,
       "label": "6.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.77,
-      "threshold": 16.85,
-      "label": "Fwd 16.8x vs Trail 16.8x"
+      "value": 16.73,
+      "threshold": 16.81,
+      "label": "Fwd 16.7x vs Trail 16.8x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 16.85,
-    "sectorPe": 16.99,
-    "pb": 5.03,
+    "pe": 16.81,
+    "sectorPe": 17.04,
+    "pb": 5.01,
     "ps": 0.74,
     "evEbitda": 10.99,
-    "fcfYield": 6.69,
-    "forwardPe": 16.77,
+    "fcfYield": 6.7,
+    "forwardPe": 16.73,
     "dividendYield": 4.47,
     "revenueGrowth": 1.9,
     "profitMargin": 4.43,

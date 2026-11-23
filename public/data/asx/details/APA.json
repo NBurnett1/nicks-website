@@ -1,16 +1,12 @@
 {
   "ticker": "APA",
   "name": "APA GROUP STAPLED [APA]",
-  "price": 11.25,
-  "valuationScore": 18.8,
+  "price": 11.28,
+  "valuationScore": 19.0,
   "marketCap": "15.0B",
   "sector": "Utilities",
   "domain": "apa.com.au",
   "chartData": [
-    {
-      "date": "2025-11-23",
-      "price": 8.71
-    },
     {
       "date": "2025-11-30",
       "price": 8.73
@@ -218,6 +214,10 @@
     {
       "date": "2026-11-22",
       "price": 11.25
+    },
+    {
+      "date": "2026-11-29",
+      "price": 11.27
     }
   ],
   "testsPassed": 2,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 70.31,
-      "threshold": 17.22,
-      "label": "70.3x vs 17.2x sector"
+      "value": 70.47,
+      "threshold": 17.07,
+      "label": "70.5x vs 17.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 5.52,
+      "value": 5.53,
       "threshold": 1.5,
-      "label": "5.52x vs 1.5x"
+      "label": "5.53x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 0.91,
+      "value": 0.9,
       "threshold": 5.0,
       "label": "0.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 41.75,
-      "threshold": 70.31,
-      "label": "Fwd 41.8x vs Trail 70.3x"
+      "value": 41.85,
+      "threshold": 70.47,
+      "label": "Fwd 41.8x vs Trail 70.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 70.31,
-    "sectorPe": 20.26,
-    "pb": 5.52,
-    "ps": 4.99,
+    "pe": 70.47,
+    "sectorPe": 20.09,
+    "pb": 5.53,
+    "ps": 5.0,
     "evEbitda": 13.3,
-    "fcfYield": 0.91,
-    "forwardPe": 41.75,
+    "fcfYield": 0.9,
+    "forwardPe": 41.85,
     "dividendYield": 5.16,
     "revenueGrowth": -12.3,
     "profitMargin": 6.89,

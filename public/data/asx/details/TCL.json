@@ -1,16 +1,12 @@
 {
   "ticker": "TCL",
   "name": "TRANSURBAN STAPLED [TCL]",
-  "price": 14.7,
-  "valuationScore": 32.4,
-  "marketCap": "45.9B",
+  "price": 14.79,
+  "valuationScore": 32.0,
+  "marketCap": "46.1B",
   "sector": "Industrials",
   "domain": "transurban.com",
   "chartData": [
-    {
-      "date": "2025-11-23",
-      "price": 14.14
-    },
     {
       "date": "2025-11-30",
       "price": 14.25
@@ -218,6 +214,10 @@
     {
       "date": "2026-11-22",
       "price": 14.7
+    },
+    {
+      "date": "2026-11-29",
+      "price": 14.78
     }
   ],
   "testsPassed": 1,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 122.5,
-      "threshold": 17.9,
-      "label": "122.5x vs 17.9x sector"
+      "value": 123.21,
+      "threshold": 18.15,
+      "label": "123.2x vs 18.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 5.94,
+      "value": 5.97,
       "threshold": 1.5,
-      "label": "5.94x vs 1.5x"
+      "label": "5.97x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.33,
+      "value": 2.32,
       "threshold": 5.0,
       "label": "2.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 78.81,
-      "threshold": 122.5,
-      "label": "Fwd 78.8x vs Trail 122.5x"
+      "value": 77.36,
+      "threshold": 123.21,
+      "label": "Fwd 77.4x vs Trail 123.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 122.5,
-    "sectorPe": 21.06,
-    "pb": 5.94,
-    "ps": 11.78,
+    "pe": 123.21,
+    "sectorPe": 21.35,
+    "pb": 5.97,
+    "ps": 11.85,
     "evEbitda": 28.04,
-    "fcfYield": 2.33,
-    "forwardPe": 78.81,
+    "fcfYield": 2.32,
+    "forwardPe": 77.36,
     "dividendYield": 4.76,
     "revenueGrowth": -9.8,
     "profitMargin": 9.4,

@@ -1,16 +1,12 @@
 {
   "ticker": "LYC",
   "name": "LYNAS FPO [LYC]",
-  "price": 12.44,
-  "valuationScore": 36.5,
+  "price": 12.45,
+  "valuationScore": 35.8,
   "marketCap": "12.5B",
   "sector": "Basic Materials",
   "domain": "lynasrareearths.com",
   "chartData": [
-    {
-      "date": "2025-11-23",
-      "price": 14.7
-    },
     {
       "date": "2025-11-30",
       "price": 14.47
@@ -218,6 +214,10 @@
     {
       "date": "2026-11-22",
       "price": 12.44
+    },
+    {
+      "date": "2026-11-29",
+      "price": 12.44
     }
   ],
   "testsPassed": 3,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 56.55,
-      "threshold": 14.18,
-      "label": "56.5x vs 14.2x sector"
+      "value": 56.57,
+      "threshold": 14.26,
+      "label": "56.6x vs 14.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -254,9 +254,9 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 16.4,
-      "threshold": 56.55,
-      "label": "Fwd 16.4x vs Trail 56.5x"
+      "value": 16.41,
+      "threshold": 56.57,
+      "label": "Fwd 16.4x vs Trail 56.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 56.55,
-    "sectorPe": 16.68,
+    "pe": 56.57,
+    "sectorPe": 16.78,
     "pb": 3.59,
-    "ps": 12.8,
+    "ps": 12.81,
     "evEbitda": 41.82,
     "fcfYield": -0.77,
-    "forwardPe": 16.4,
+    "forwardPe": 16.41,
     "dividendYield": 0.0,
     "revenueGrowth": 86.7,
     "profitMargin": 22.74,

@@ -1,16 +1,12 @@
 {
   "ticker": "NHF",
   "name": "NIBHOLDING FPO [NHF]",
-  "price": 6.75,
-  "valuationScore": -5.5,
+  "price": 6.64,
+  "valuationScore": -5.0,
   "marketCap": "3.3B",
   "sector": "Financial Services",
   "domain": "nib.com.au",
   "chartData": [
-    {
-      "date": "2025-11-23",
-      "price": 6.71
-    },
     {
       "date": "2025-11-30",
       "price": 6.81
@@ -218,6 +214,10 @@
     {
       "date": "2026-11-22",
       "price": 6.75
+    },
+    {
+      "date": "2026-11-29",
+      "price": 6.64
     }
   ],
   "testsPassed": 6,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 17.76,
-      "threshold": 21.37,
-      "label": "17.8x vs 21.4x sector"
+      "value": 17.47,
+      "threshold": 21.44,
+      "label": "17.5x vs 21.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.86,
+      "value": 2.81,
       "threshold": 1.5,
-      "label": "2.86x vs 1.5x"
+      "label": "2.81x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 5.86,
+      "value": 5.96,
       "threshold": 5.0,
-      "label": "5.9% vs 5%"
+      "label": "6.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 13.46,
-      "threshold": 17.76,
-      "label": "Fwd 13.5x vs Trail 17.8x"
+      "value": 13.24,
+      "threshold": 17.47,
+      "label": "Fwd 13.2x vs Trail 17.5x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 17.76,
-    "sectorPe": 25.14,
-    "pb": 2.86,
-    "ps": 0.87,
+    "pe": 17.47,
+    "sectorPe": 25.23,
+    "pb": 2.81,
+    "ps": 0.85,
     "evEbitda": 7.6,
-    "fcfYield": 5.86,
-    "forwardPe": 13.46,
+    "fcfYield": 5.96,
+    "forwardPe": 13.24,
     "dividendYield": 4.3,
     "revenueGrowth": 4.6,
     "profitMargin": 4.92,

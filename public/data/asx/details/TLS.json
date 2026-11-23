@@ -1,16 +1,12 @@
 {
   "ticker": "TLS",
   "name": "TELSTRA FPO [TLS]",
-  "price": 5.17,
-  "valuationScore": 3.0,
-  "marketCap": "57.1B",
+  "price": 5.19,
+  "valuationScore": 3.1,
+  "marketCap": "57.3B",
   "sector": "Telecom",
   "domain": "telstra.com.au",
   "chartData": [
-    {
-      "date": "2025-11-23",
-      "price": 4.67
-    },
     {
       "date": "2025-11-30",
       "price": 4.71
@@ -218,6 +214,10 @@
     {
       "date": "2026-11-22",
       "price": 5.17
+    },
+    {
+      "date": "2026-11-29",
+      "price": 5.19
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 25.85,
-      "threshold": 17.22,
-      "label": "25.9x vs 17.2x sector"
+      "value": 25.95,
+      "threshold": 17.07,
+      "label": "25.9x vs 17.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.58,
+      "value": 4.59,
       "threshold": 1.5,
-      "label": "4.58x vs 1.5x"
+      "label": "4.59x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 6.02,
+      "value": 5.99,
       "threshold": 5.0,
       "label": "6.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 22.57,
-      "threshold": 25.85,
-      "label": "Fwd 22.6x vs Trail 25.9x"
+      "value": 22.66,
+      "threshold": 25.95,
+      "label": "Fwd 22.7x vs Trail 25.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 25.85,
-    "sectorPe": 20.26,
-    "pb": 4.58,
-    "ps": 2.49,
+    "pe": 25.95,
+    "sectorPe": 20.09,
+    "pb": 4.59,
+    "ps": 2.5,
     "evEbitda": 10.91,
-    "fcfYield": 6.02,
-    "forwardPe": 22.57,
+    "fcfYield": 5.99,
+    "forwardPe": 22.66,
     "dividendYield": 4.06,
     "revenueGrowth": -2.0,
     "profitMargin": 9.77,

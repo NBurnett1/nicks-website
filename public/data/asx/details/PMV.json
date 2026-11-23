@@ -1,16 +1,12 @@
 {
   "ticker": "PMV",
   "name": "PREM INV. FPO [PMV]",
-  "price": 13.71,
-  "valuationScore": -4.4,
+  "price": 13.82,
+  "valuationScore": -4.3,
   "marketCap": "2.2B",
   "sector": "Consumer Discretionary",
   "domain": "premierinvestments.com.au",
   "chartData": [
-    {
-      "date": "2025-11-23",
-      "price": 16.12
-    },
     {
       "date": "2025-11-30",
       "price": 16.74
@@ -218,6 +214,10 @@
     {
       "date": "2026-11-22",
       "price": 13.71
+    },
+    {
+      "date": "2026-11-29",
+      "price": 13.82
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 17.14,
-      "threshold": 14.44,
-      "label": "17.1x vs 14.4x sector"
+      "value": 17.27,
+      "threshold": 14.48,
+      "label": "17.3x vs 14.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.27,
+      "value": 2.29,
       "threshold": 1.5,
-      "label": "2.27x vs 1.5x"
+      "label": "2.29x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 12.19,
+      "value": 12.1,
       "threshold": 5.0,
-      "label": "12.2% vs 5%"
+      "label": "12.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 13.38,
-      "threshold": 17.14,
-      "label": "Fwd 13.4x vs Trail 17.1x"
+      "value": 13.49,
+      "threshold": 17.27,
+      "label": "Fwd 13.5x vs Trail 17.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 17.14,
-    "sectorPe": 16.99,
-    "pb": 2.27,
-    "ps": 2.71,
+    "pe": 17.27,
+    "sectorPe": 17.04,
+    "pb": 2.29,
+    "ps": 2.73,
     "evEbitda": 11.22,
-    "fcfYield": 12.19,
-    "forwardPe": 13.38,
+    "fcfYield": 12.1,
+    "forwardPe": 13.49,
     "dividendYield": 6.93,
     "revenueGrowth": null,
     "profitMargin": 15.98,

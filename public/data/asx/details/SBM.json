@@ -1,16 +1,12 @@
 {
   "ticker": "SBM",
   "name": "ST.BARBARA FPO [SBM]",
-  "price": 0.65,
-  "valuationScore": -4.2,
-  "marketCap": "791M",
+  "price": 0.68,
+  "valuationScore": -7.5,
+  "marketCap": "830M",
   "sector": "Basic Materials",
   "domain": "stbarbara.com.au",
   "chartData": [
-    {
-      "date": "2025-11-23",
-      "price": 0.48
-    },
     {
       "date": "2025-11-30",
       "price": 0.54
@@ -218,6 +214,10 @@
     {
       "date": "2026-11-22",
       "price": 0.64
+    },
+    {
+      "date": "2026-11-29",
+      "price": 0.68
     }
   ],
   "testsPassed": 1,
@@ -233,9 +233,9 @@
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.84,
+      "value": 0.88,
       "threshold": 1.5,
-      "label": "0.84x vs 1.5x"
+      "label": "0.88x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,14 +247,14 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": -3.83,
+      "value": -3.65,
       "threshold": 5.0,
-      "label": "-3.8% vs 5%"
+      "label": "-3.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": null,
-      "value": 17.47,
+      "value": 18.34,
       "threshold": null,
       "label": "Insufficient data"
     },
@@ -282,12 +282,12 @@
   },
   "metrics": {
     "pe": null,
-    "sectorPe": 16.68,
-    "pb": 0.84,
-    "ps": 218.15,
+    "sectorPe": 16.78,
+    "pb": 0.88,
+    "ps": 228.98,
     "evEbitda": -12.57,
-    "fcfYield": -3.83,
-    "forwardPe": 17.47,
+    "fcfYield": -3.65,
+    "forwardPe": 18.34,
     "dividendYield": 7.75,
     "revenueGrowth": null,
     "profitMargin": 13508.44,

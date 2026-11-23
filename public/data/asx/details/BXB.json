@@ -1,16 +1,12 @@
 {
   "ticker": "BXB",
   "name": "BRAMB LTD FPO [BXB]",
-  "price": 21.83,
-  "valuationScore": 7.4,
-  "marketCap": "29.0B",
+  "price": 21.99,
+  "valuationScore": 7.2,
+  "marketCap": "29.2B",
   "sector": "Industrials",
   "domain": "brambles.com",
   "chartData": [
-    {
-      "date": "2025-11-23",
-      "price": 22.53
-    },
     {
       "date": "2025-11-30",
       "price": 23.31
@@ -218,6 +214,10 @@
     {
       "date": "2026-11-22",
       "price": 21.83
+    },
+    {
+      "date": "2026-11-29",
+      "price": 21.99
     }
   ],
   "testsPassed": 2,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 21.19,
-      "threshold": 17.9,
-      "label": "21.2x vs 17.9x sector"
+      "value": 21.35,
+      "threshold": 18.15,
+      "label": "21.3x vs 18.1x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 6.34,
+      "value": 6.39,
       "threshold": 1.5,
-      "label": "6.34x vs 1.5x"
+      "label": "6.39x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 1.86,
+      "value": 1.85,
       "threshold": 5.0,
       "label": "1.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 18.65,
-      "threshold": 21.19,
-      "label": "Fwd 18.6x vs Trail 21.2x"
+      "value": 18.78,
+      "threshold": 21.35,
+      "label": "Fwd 18.8x vs Trail 21.3x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 21.19,
-    "sectorPe": 21.06,
-    "pb": 6.34,
-    "ps": 4.0,
+    "pe": 21.35,
+    "sectorPe": 21.35,
+    "pb": 6.39,
+    "ps": 4.03,
     "evEbitda": 15.12,
-    "fcfYield": 1.86,
-    "forwardPe": 18.65,
+    "fcfYield": 1.85,
+    "forwardPe": 18.78,
     "dividendYield": 3.0,
     "revenueGrowth": null,
     "profitMargin": 13.15,

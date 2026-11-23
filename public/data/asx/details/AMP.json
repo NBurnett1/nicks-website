@@ -1,16 +1,12 @@
 {
   "ticker": "AMP",
   "name": "AMP FPO [AMP]",
-  "price": 2.0,
-  "valuationScore": 3.2,
-  "marketCap": "4.7B",
+  "price": 2.04,
+  "valuationScore": 3.6,
+  "marketCap": "4.8B",
   "sector": "Financials",
   "domain": "amp.com.au",
   "chartData": [
-    {
-      "date": "2025-11-23",
-      "price": 1.59
-    },
     {
       "date": "2025-11-30",
       "price": 1.69
@@ -218,6 +214,10 @@
     {
       "date": "2026-11-22",
       "price": 2.0
+    },
+    {
+      "date": "2026-11-29",
+      "price": 2.05
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 24.94,
-      "threshold": 15.81,
-      "label": "24.9x vs 15.8x sector"
+      "value": 25.56,
+      "threshold": 15.5,
+      "label": "25.6x vs 15.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.31,
+      "value": 1.34,
       "threshold": 1.5,
-      "label": "1.31x vs 1.5x"
+      "label": "1.34x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 4.75,
+      "value": 4.63,
       "threshold": 5.0,
-      "label": "4.8% vs 5%"
+      "label": "4.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 13.51,
-      "threshold": 24.94,
-      "label": "Fwd 13.5x vs Trail 24.9x"
+      "value": 13.85,
+      "threshold": 25.56,
+      "label": "Fwd 13.8x vs Trail 25.6x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.6,
+      "value": 0.61,
       "threshold": 0.5,
-      "label": "P/S 1.7x ÷ Growth 2.8% = 0.60"
+      "label": "P/S 1.7x ÷ Growth 2.8% = 0.61"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 24.94,
-    "sectorPe": 18.6,
-    "pb": 1.31,
-    "ps": 1.67,
+    "pe": 25.56,
+    "sectorPe": 18.23,
+    "pb": 1.34,
+    "ps": 1.71,
     "evEbitda": 18.07,
-    "fcfYield": 4.75,
-    "forwardPe": 13.51,
+    "fcfYield": 4.63,
+    "forwardPe": 13.85,
     "dividendYield": 2.51,
     "revenueGrowth": 2.8,
     "profitMargin": 6.67,

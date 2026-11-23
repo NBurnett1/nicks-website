@@ -1,16 +1,12 @@
 {
   "ticker": "SCG",
   "name": "SCENTRE STAPLED [SCG]",
-  "price": 3.57,
+  "price": 3.56,
   "valuationScore": 0.6,
-  "marketCap": "18.7B",
+  "marketCap": "18.6B",
   "sector": "Real Estate",
   "domain": "scentregroup.com",
   "chartData": [
-    {
-      "date": "2025-11-23",
-      "price": 3.85
-    },
     {
       "date": "2025-11-30",
       "price": 3.89
@@ -218,6 +214,10 @@
     {
       "date": "2026-11-22",
       "price": 3.57
+    },
+    {
+      "date": "2026-11-29",
+      "price": 3.56
     }
   ],
   "testsPassed": 2,
@@ -226,8 +226,8 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 9.39,
-      "threshold": 9.06,
+      "value": 9.36,
+      "threshold": 9.1,
       "label": "9.4x vs 9.1x sector"
     },
     "pbBelowBook": {
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.28,
+      "value": 3.29,
       "threshold": 5.0,
       "label": "3.3% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 14.4,
-      "threshold": 9.39,
-      "label": "Fwd 14.4x vs Trail 9.4x"
+      "value": 14.34,
+      "threshold": 9.36,
+      "label": "Fwd 14.3x vs Trail 9.4x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 9.39,
-    "sectorPe": 10.66,
+    "pe": 9.36,
+    "sectorPe": 10.71,
     "pb": 0.96,
-    "ps": 7.25,
+    "ps": 7.22,
     "evEbitda": null,
-    "fcfYield": 3.28,
-    "forwardPe": 14.4,
+    "fcfYield": 3.29,
+    "forwardPe": 14.34,
     "dividendYield": 5.16,
     "revenueGrowth": -8.3,
     "profitMargin": 76.53,

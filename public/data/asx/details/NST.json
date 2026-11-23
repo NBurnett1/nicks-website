@@ -1,16 +1,12 @@
 {
   "ticker": "NST",
   "name": "NTH STAR FPO [NST]",
-  "price": 21.95,
-  "valuationScore": 3.0,
-  "marketCap": "31.3B",
+  "price": 22.2,
+  "valuationScore": 2.9,
+  "marketCap": "31.6B",
   "sector": "Materials",
   "domain": "nsrltd.com",
   "chartData": [
-    {
-      "date": "2025-11-23",
-      "price": 24.97
-    },
     {
       "date": "2025-11-30",
       "price": 26.59
@@ -218,6 +214,10 @@
     {
       "date": "2026-11-22",
       "price": 21.95
+    },
+    {
+      "date": "2026-11-29",
+      "price": 22.2
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 18.92,
-      "threshold": 13.58,
-      "label": "18.9x vs 13.6x sector"
+      "value": 19.14,
+      "threshold": 13.76,
+      "label": "19.1x vs 13.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.99,
+      "value": 2.02,
       "threshold": 1.5,
-      "label": "1.99x vs 1.5x"
+      "label": "2.02x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 1.23,
+      "value": 1.22,
       "threshold": 5.0,
       "label": "1.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 10.29,
-      "threshold": 18.92,
-      "label": "Fwd 10.3x vs Trail 18.9x"
+      "value": 10.41,
+      "threshold": 19.14,
+      "label": "Fwd 10.4x vs Trail 19.1x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -270,7 +270,7 @@
       "passed": true,
       "value": 0.22,
       "threshold": 0.5,
-      "label": "P/S 4.1x ÷ Growth 18.7% = 0.22"
+      "label": "P/S 4.2x ÷ Growth 18.7% = 0.22"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 18.92,
-    "sectorPe": 15.98,
-    "pb": 1.99,
-    "ps": 4.1,
+    "pe": 19.14,
+    "sectorPe": 16.19,
+    "pb": 2.02,
+    "ps": 4.15,
     "evEbitda": 7.7,
-    "fcfYield": 1.23,
-    "forwardPe": 10.29,
+    "fcfYield": 1.22,
+    "forwardPe": 10.41,
     "dividendYield": 2.51,
     "revenueGrowth": 18.7,
     "profitMargin": 21.83,

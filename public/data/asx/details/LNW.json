@@ -1,16 +1,12 @@
 {
   "ticker": "LNW",
   "name": "LIGHT & WO CDI 1:1 [LNW]",
-  "price": 116.85,
-  "valuationScore": 26.0,
+  "price": 116.81,
+  "valuationScore": 26.3,
   "marketCap": "8.9B",
   "sector": "Consumer Cyclical",
   "domain": "lnw.com",
   "chartData": [
-    {
-      "date": "2025-11-23",
-      "price": 139.25
-    },
     {
       "date": "2025-11-30",
       "price": 153.0
@@ -218,6 +214,10 @@
     {
       "date": "2026-11-22",
       "price": 116.85
+    },
+    {
+      "date": "2026-11-29",
+      "price": 116.81
     }
   ],
   "testsPassed": 5,
@@ -226,9 +226,9 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 21.4,
-      "threshold": 21.95,
-      "label": "21.4x vs 21.9x sector"
+      "value": 21.39,
+      "threshold": 21.84,
+      "label": "21.4x vs 21.8x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
@@ -254,8 +254,8 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 9.28,
-      "threshold": 21.4,
+      "value": 9.27,
+      "threshold": 21.39,
       "label": "Fwd 9.3x vs Trail 21.4x"
     },
     "profitabilityCheck": {
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 21.4,
-    "sectorPe": 25.83,
+    "pe": 21.39,
+    "sectorPe": 25.7,
     "pb": 14.81,
     "ps": 2.68,
     "evEbitda": 11.01,
     "fcfYield": 7.8,
-    "forwardPe": 9.28,
+    "forwardPe": 9.27,
     "dividendYield": 0.0,
     "revenueGrowth": -2.0,
     "profitMargin": 8.71,

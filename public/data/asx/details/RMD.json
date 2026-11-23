@@ -1,16 +1,12 @@
 {
   "ticker": "RMD",
   "name": "RESMED CDI 10:1 [RMD]",
-  "price": 35.44,
+  "price": 35.48,
   "valuationScore": -3.3,
-  "marketCap": "49.8B",
+  "marketCap": "49.9B",
   "sector": "Healthcare",
   "domain": "resmed.com",
   "chartData": [
-    {
-      "date": "2025-11-23",
-      "price": 37.52
-    },
     {
       "date": "2025-11-30",
       "price": 39.01
@@ -218,6 +214,10 @@
     {
       "date": "2026-11-22",
       "price": 35.44
+    },
+    {
+      "date": "2026-11-29",
+      "price": 35.48
     }
   ],
   "testsPassed": 5,
@@ -226,8 +226,8 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 22.29,
-      "threshold": 26.32,
+      "value": 22.31,
+      "threshold": 26.29,
       "label": "22.3x vs 26.3x sector"
     },
     "pbBelowBook": {
@@ -254,8 +254,8 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 18.76,
-      "threshold": 22.29,
+      "value": 18.78,
+      "threshold": 22.31,
       "label": "Fwd 18.8x vs Trail 22.3x"
     },
     "profitabilityCheck": {
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 1.47,
+      "value": 1.48,
       "threshold": 0.5,
-      "label": "P/S 8.7x ÷ Growth 5.9% = 1.47"
+      "label": "P/S 8.7x ÷ Growth 5.9% = 1.48"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 22.29,
-    "sectorPe": 30.96,
+    "pe": 22.31,
+    "sectorPe": 30.93,
     "pb": 2.36,
-    "ps": 8.7,
+    "ps": 8.71,
     "evEbitda": 9.19,
     "fcfYield": 2.6,
-    "forwardPe": 18.76,
+    "forwardPe": 18.78,
     "dividendYield": 1.11,
     "revenueGrowth": 5.9,
     "profitMargin": 27.79,

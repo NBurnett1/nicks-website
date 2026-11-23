@@ -1,16 +1,12 @@
 {
   "ticker": "RRL",
   "name": "REGIS FPO [RRL]",
-  "price": 5.77,
-  "valuationScore": -28.7,
+  "price": 5.8,
+  "valuationScore": -15.3,
   "marketCap": "4.4B",
   "sector": "Basic Materials",
   "domain": "regisresources.com.au",
   "chartData": [
-    {
-      "date": "2025-11-23",
-      "price": 6.32
-    },
     {
       "date": "2025-11-30",
       "price": 7.07
@@ -218,6 +214,10 @@
     {
       "date": "2026-11-22",
       "price": 5.77
+    },
+    {
+      "date": "2026-11-29",
+      "price": 5.8
     }
   ],
   "testsPassed": 7,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 6.14,
-      "threshold": 14.18,
-      "label": "6.1x vs 14.2x sector"
+      "value": 6.18,
+      "threshold": 14.26,
+      "label": "6.2x vs 14.3x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.0,
+      "value": 2.01,
       "threshold": 1.5,
-      "label": "2.00x vs 1.5x"
+      "label": "2.01x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 16.21,
+      "value": 16.11,
       "threshold": 5.0,
-      "label": "16.2% vs 5%"
+      "label": "16.1% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 5.88,
-      "threshold": 6.14,
-      "label": "Fwd 5.9x vs Trail 6.1x"
+      "value": 5.92,
+      "threshold": 6.18,
+      "label": "Fwd 5.9x vs Trail 6.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 6.14,
-    "sectorPe": 16.68,
-    "pb": 2.0,
-    "ps": 1.86,
+    "pe": 6.18,
+    "sectorPe": 16.78,
+    "pb": 2.01,
+    "ps": 1.87,
     "evEbitda": 2.74,
-    "fcfYield": 16.21,
-    "forwardPe": 5.88,
+    "fcfYield": 16.11,
+    "forwardPe": 5.92,
     "dividendYield": 5.2,
     "revenueGrowth": 44.9,
     "profitMargin": 30.44,

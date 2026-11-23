@@ -1,16 +1,12 @@
 {
   "ticker": "MGR",
   "name": "MIRVAC GRP STAPLED [MGR]",
-  "price": 1.86,
-  "valuationScore": -5.4,
-  "marketCap": "7.2B",
+  "price": 1.87,
+  "valuationScore": -5.3,
+  "marketCap": "7.3B",
   "sector": "Real Estate",
   "domain": "mirvac.com",
   "chartData": [
-    {
-      "date": "2025-11-23",
-      "price": 2.1
-    },
     {
       "date": "2025-11-30",
       "price": 2.05
@@ -218,6 +214,10 @@
     {
       "date": "2026-11-22",
       "price": 1.87
+    },
+    {
+      "date": "2026-11-29",
+      "price": 1.87
     }
   ],
   "testsPassed": 3,
@@ -226,8 +226,8 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 10.97,
-      "threshold": 9.06,
+      "value": 11.01,
+      "threshold": 9.1,
       "label": "11.0x vs 9.1x sector"
     },
     "pbBelowBook": {
@@ -247,15 +247,15 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 11.05,
+      "value": 11.01,
       "threshold": 5.0,
-      "label": "11.1% vs 5%"
+      "label": "11.0% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 12.97,
-      "threshold": 10.97,
+      "value": 13.02,
+      "threshold": 11.01,
       "label": "Fwd 13.0x vs Trail 11.0x"
     },
     "profitabilityCheck": {
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 0.9,
+      "value": 0.91,
       "threshold": 0.5,
-      "label": "P/S 2.4x ÷ Growth 2.7% = 0.90"
+      "label": "P/S 2.4x ÷ Growth 2.7% = 0.91"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 10.97,
-    "sectorPe": 10.66,
+    "pe": 11.01,
+    "sectorPe": 10.71,
     "pb": 0.79,
-    "ps": 2.44,
+    "ps": 2.45,
     "evEbitda": 12.53,
-    "fcfYield": 11.05,
-    "forwardPe": 12.97,
+    "fcfYield": 11.01,
+    "forwardPe": 13.02,
     "dividendYield": 5.15,
     "revenueGrowth": 2.7,
     "profitMargin": 22.79,
