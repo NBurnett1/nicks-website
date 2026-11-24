@@ -1,8 +1,8 @@
 {
   "ticker": "TAH",
   "name": "TABCORP FPO [TAH]",
-  "price": 0.83,
-  "valuationScore": 0.5,
+  "price": 0.82,
+  "valuationScore": 0.4,
   "marketCap": "1.9B",
   "sector": "Consumer Cyclical",
   "domain": "tabcorp.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-29",
-      "price": 0.83
+      "price": 0.82
     }
   ],
   "testsPassed": 5,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 41.6,
-      "threshold": 21.95,
-      "label": "41.6x vs 21.9x sector"
+      "value": 41.25,
+      "threshold": 22.03,
+      "label": "41.2x vs 22.0x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 1.43,
+      "value": 1.42,
       "threshold": 1.5,
-      "label": "1.43x vs 1.5x"
+      "label": "1.42x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -247,16 +247,16 @@
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 8.47,
+      "value": 8.54,
       "threshold": 5.0,
       "label": "8.5% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 18.8,
-      "threshold": 41.6,
-      "label": "Fwd 18.8x vs Trail 41.6x"
+      "value": 18.64,
+      "threshold": 41.25,
+      "label": "Fwd 18.6x vs Trail 41.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -268,9 +268,9 @@
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": false,
-      "value": 1.45,
+      "value": 1.43,
       "threshold": 0.5,
-      "label": "P/S 0.7x ÷ Growth 0.5% = 1.45"
+      "label": "P/S 0.7x ÷ Growth 0.5% = 1.43"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 41.6,
-    "sectorPe": 25.82,
-    "pb": 1.43,
+    "pe": 41.25,
+    "sectorPe": 25.92,
+    "pb": 1.42,
     "ps": 0.72,
     "evEbitda": 7.7,
-    "fcfYield": 8.47,
-    "forwardPe": 18.8,
+    "fcfYield": 8.54,
+    "forwardPe": 18.64,
     "dividendYield": 3.64,
     "revenueGrowth": 0.5,
     "profitMargin": 1.75,

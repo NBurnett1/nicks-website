@@ -1,8 +1,8 @@
 {
   "ticker": "SPK",
   "name": "SPARK NZ FPO NZX [SPK]",
-  "price": 1.75,
-  "valuationScore": -23.0,
+  "price": 1.76,
+  "valuationScore": -22.9,
   "marketCap": "3.3B",
   "sector": "Communication Services",
   "domain": "sparknz.co.nz",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-29",
-      "price": 1.75
+      "price": 1.76
     }
   ],
   "testsPassed": 4,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 7.95,
-      "threshold": 34.76,
-      "label": "8.0x vs 34.8x sector"
+      "value": 8.0,
+      "threshold": 34.85,
+      "label": "8.0x vs 34.9x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.48,
+      "value": 2.49,
       "threshold": 1.5,
-      "label": "2.48x vs 1.5x"
+      "label": "2.49x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 4.98,
+      "value": 5.08,
       "threshold": 10.0,
-      "label": "5.0x vs 10x"
+      "label": "5.1x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 29.4,
+      "value": 29.23,
       "threshold": 5.0,
-      "label": "29.4% vs 5%"
+      "label": "29.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 14.79,
-      "threshold": 7.95,
-      "label": "Fwd 14.8x vs Trail 8.0x"
+      "value": 14.87,
+      "threshold": 8.0,
+      "label": "Fwd 14.9x vs Trail 8.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 7.95,
-    "sectorPe": 40.89,
-    "pb": 2.48,
+    "pe": 8.0,
+    "sectorPe": 41.0,
+    "pb": 2.49,
     "ps": 0.84,
-    "evEbitda": 4.98,
-    "fcfYield": 29.4,
-    "forwardPe": 14.79,
+    "evEbitda": 5.08,
+    "fcfYield": 29.23,
+    "forwardPe": 14.87,
     "dividendYield": 7.14,
     "revenueGrowth": null,
     "profitMargin": 12.64,

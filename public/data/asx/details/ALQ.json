@@ -1,9 +1,9 @@
 {
   "ticker": "ALQ",
   "name": "ALS FPO [ALQ]",
-  "price": 16.82,
-  "valuationScore": 5.6,
-  "marketCap": "8.5B",
+  "price": 16.93,
+  "valuationScore": 4.6,
+  "marketCap": "8.6B",
   "sector": "Industrials",
   "domain": "alsglobal.com",
   "chartData": [
@@ -217,82 +217,82 @@
     },
     {
       "date": "2026-11-29",
-      "price": 16.82
+      "price": 16.93
     }
   ],
-  "testsPassed": 4,
+  "testsPassed": 3,
   "grade": "C",
   "valuationTests": {
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 30.57,
-      "threshold": 18.31,
-      "label": "30.6x vs 18.3x sector"
+      "value": 26.87,
+      "threshold": 18.4,
+      "label": "26.9x vs 18.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 5.02,
+      "value": 4.67,
       "threshold": 1.5,
-      "label": "5.02x vs 1.5x"
+      "label": "4.67x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 14.16,
+      "value": 13.32,
       "threshold": 10.0,
-      "label": "14.2x vs 10x"
+      "label": "13.3x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.81,
+      "value": 3.23,
       "threshold": 5.0,
-      "label": "3.8% vs 5%"
+      "label": "3.2% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 17.55,
-      "threshold": 30.57,
-      "label": "Fwd 17.6x vs Trail 30.6x"
+      "value": 17.71,
+      "threshold": 26.87,
+      "label": "Fwd 17.7x vs Trail 26.9x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": true,
-      "value": 9.6,
+      "value": 14.06,
       "threshold": 5.0,
-      "label": "Margin 9.6% / ROE 21.4%"
+      "label": "Margin 14.1% / ROE 26.9%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": true,
-      "value": 0.31,
+      "passed": false,
+      "value": 0.75,
       "threshold": 0.5,
-      "label": "P/S 2.6x ÷ Growth 8.2% = 0.31"
+      "label": "P/S 2.5x ÷ Growth 3.4% = 0.75"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": true,
-      "value": 8.2,
+      "value": 3.4,
       "threshold": -5.0,
-      "label": "8.2% growth (floor: -5%)"
+      "label": "3.4% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 30.57,
-    "sectorPe": 21.54,
-    "pb": 5.02,
-    "ps": 2.57,
-    "evEbitda": 14.16,
-    "fcfYield": 3.81,
-    "forwardPe": 17.55,
-    "dividendYield": 2.2,
-    "revenueGrowth": 8.2,
-    "profitMargin": 9.6,
-    "operatingMargin": 17.06,
-    "roe": 21.45,
-    "debtEquity": 92.19
+    "pe": 26.87,
+    "sectorPe": 21.65,
+    "pb": 4.67,
+    "ps": 2.55,
+    "evEbitda": 13.32,
+    "fcfYield": 3.23,
+    "forwardPe": 17.71,
+    "dividendYield": 2.75,
+    "revenueGrowth": 3.4,
+    "profitMargin": 14.06,
+    "operatingMargin": 18.41,
+    "roe": 26.91,
+    "debtEquity": 94.08
   }
 }

@@ -1,8 +1,8 @@
 {
   "ticker": "PRU",
   "name": "PERSEUS FPO [PRU]",
-  "price": 5.92,
-  "valuationScore": -0.3,
+  "price": 5.96,
+  "valuationScore": -0.4,
   "marketCap": "7.9B",
   "sector": "Basic Materials",
   "domain": "perseusmining.com",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-29",
-      "price": 5.92
+      "price": 5.96
     }
   ],
   "testsPassed": 6,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 12.6,
-      "threshold": 14.17,
-      "label": "12.6x vs 14.2x sector"
+      "value": 12.68,
+      "threshold": 14.72,
+      "label": "12.7x vs 14.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 2.4,
+      "value": 2.42,
       "threshold": 1.5,
-      "label": "2.40x vs 1.5x"
+      "label": "2.42x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 8.46,
+      "value": 8.64,
       "threshold": 10.0,
-      "label": "8.5x vs 10x"
+      "label": "8.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 1.83,
+      "value": 1.82,
       "threshold": 5.0,
       "label": "1.8% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 7.24,
-      "threshold": 12.6,
-      "label": "Fwd 7.2x vs Trail 12.6x"
+      "value": 7.29,
+      "threshold": 12.68,
+      "label": "Fwd 7.3x vs Trail 12.7x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 12.6,
-    "sectorPe": 16.67,
-    "pb": 2.4,
-    "ps": 5.29,
-    "evEbitda": 8.46,
-    "fcfYield": 1.83,
-    "forwardPe": 7.24,
+    "pe": 12.68,
+    "sectorPe": 17.31,
+    "pb": 2.42,
+    "ps": 5.33,
+    "evEbitda": 8.64,
+    "fcfYield": 1.82,
+    "forwardPe": 7.29,
     "dividendYield": 2.39,
     "revenueGrowth": 31.4,
     "profitMargin": 28.86,
