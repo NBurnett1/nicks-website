@@ -1,8 +1,8 @@
 {
   "ticker": "SIQ",
   "name": "SMARTGROUP FPO [SIQ]",
-  "price": 10.53,
-  "valuationScore": 1.3,
+  "price": 10.4,
+  "valuationScore": 1.1,
   "marketCap": "1.4B",
   "sector": "Industrials",
   "domain": "smartgroup.com.au",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-29",
-      "price": 10.53
+      "price": 10.4
     }
   ],
   "testsPassed": 5,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 15.95,
-      "threshold": 18.11,
-      "label": "16.0x vs 18.1x sector"
+      "value": 16.25,
+      "threshold": 18.38,
+      "label": "16.2x vs 18.4x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 4.85,
+      "value": 4.79,
       "threshold": 1.5,
-      "label": "4.85x vs 1.5x"
+      "label": "4.79x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 10.51,
+      "value": 10.21,
       "threshold": 10.0,
-      "label": "10.5x vs 10x"
+      "label": "10.2x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 3.88,
+      "value": 3.92,
       "threshold": 5.0,
       "label": "3.9% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.18,
-      "threshold": 15.95,
-      "label": "Fwd 14.2x vs Trail 16.0x"
+      "value": 14.0,
+      "threshold": 16.25,
+      "label": "Fwd 14.0x vs Trail 16.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 15.95,
-    "sectorPe": 21.3,
-    "pb": 4.85,
-    "ps": 4.15,
-    "evEbitda": 10.51,
-    "fcfYield": 3.88,
-    "forwardPe": 14.18,
-    "dividendYield": 4.1,
+    "pe": 16.25,
+    "sectorPe": 21.62,
+    "pb": 4.79,
+    "ps": 4.1,
+    "evEbitda": 10.21,
+    "fcfYield": 3.92,
+    "forwardPe": 14.0,
+    "dividendYield": 4.01,
     "revenueGrowth": 12.8,
     "profitMargin": 23.94,
     "operatingMargin": 36.08,
