@@ -1,7 +1,7 @@
 {
   "ticker": "CLW",
   "name": "CHTR H LWR STAPLED [CLW]",
-  "price": 3.55,
+  "price": 3.56,
   "valuationScore": 3.4,
   "marketCap": "2.6B",
   "sector": "Real Estate",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-29",
-      "price": 3.55
+      "price": 3.56
     }
   ],
   "testsPassed": 4,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": true,
-      "value": 9.1,
-      "threshold": 9.14,
-      "label": "9.1x vs 9.1x sector"
+      "value": 9.13,
+      "threshold": 9.19,
+      "label": "9.1x vs 9.2x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": true,
-      "value": 0.75,
+      "value": 0.76,
       "threshold": 1.5,
-      "label": "0.75x vs 1.5x"
+      "label": "0.76x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,8 +254,8 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": false,
-      "value": 14.18,
-      "threshold": 9.1,
+      "value": 14.22,
+      "threshold": 9.13,
       "label": "Fwd 14.2x vs Trail 9.1x"
     },
     "profitabilityCheck": {
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 9.1,
-    "sectorPe": 10.76,
-    "pb": 0.75,
-    "ps": 13.26,
+    "pe": 9.13,
+    "sectorPe": 10.82,
+    "pb": 0.76,
+    "ps": 13.3,
     "evEbitda": null,
     "fcfYield": -2.73,
-    "forwardPe": 14.18,
+    "forwardPe": 14.22,
     "dividendYield": 7.29,
     "revenueGrowth": 16.2,
     "profitMargin": 141.96,

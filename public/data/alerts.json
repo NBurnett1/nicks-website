@@ -1,25 +1,52 @@
 {
-  "lastUpdated": "2026-11-25T05:44:01.090266+11:00",
+  "lastUpdated": "2026-11-25T14:19:56.014012+11:00",
   "stocksScanned": 129,
-  "totalAlerts": 138,
+  "totalAlerts": 142,
   "alerts": [
+    {
+      "type": "EXTREME VOLUME",
+      "severity": "critical",
+      "ticker": "WEB",
+      "exchange": "ASX",
+      "headline": "5.6x average volume detected",
+      "detail": "Volume: 8,937,241 vs 20-day avg: 1,609,127 | Price down 23.7%",
+      "timestamp": "2026-11-25T03:19:55.540999+00:00"
+    },
     {
       "type": "PRICE_MOVE",
       "severity": "critical",
-      "ticker": "APX",
-      "exchange": "ASX",
-      "headline": "Stock surged 12.3% in one session",
-      "detail": "$1.10 → $1.24",
-      "timestamp": "2026-11-24T18:42:56.161634+00:00"
-    },
-    {
-      "type": "EXTREME VOLUME",
-      "severity": "high",
       "ticker": "WEB",
       "exchange": "ASX",
-      "headline": "3.6x average volume detected",
-      "detail": "Volume: 5,207,090 vs 20-day avg: 1,437,709 | Price up 4.3%",
-      "timestamp": "2026-11-24T18:43:51.383643+00:00"
+      "headline": "Stock plunged 23.7% in one session",
+      "detail": "$3.40 → $2.60",
+      "timestamp": "2026-11-25T03:19:55.640911+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "high",
+      "ticker": "MIN",
+      "exchange": "ASX",
+      "headline": "Stock plunged 5.3% in one session",
+      "detail": "$39.92 → $37.80",
+      "timestamp": "2026-11-25T03:19:03.876851+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "high",
+      "ticker": "MP1",
+      "exchange": "ASX",
+      "headline": "Stock plunged 8.6% in one session",
+      "detail": "$14.91 → $13.62",
+      "timestamp": "2026-11-25T03:19:21.397234+00:00"
+    },
+    {
+      "type": "PRICE_MOVE",
+      "severity": "high",
+      "ticker": "ALU",
+      "exchange": "ASX",
+      "headline": "Stock surged 6.9% in one session",
+      "detail": "$0.29 → $0.31",
+      "timestamp": "2026-11-25T03:19:56.013895+00:00"
     },
     {
       "type": "INSIDER_BUY",
@@ -29,17 +56,6 @@
       "headline": "Hannigan (Todd) (Director (Executive)) purchased 657,108 shares ($183,727)",
       "detail": "Purchase at price 0.28 per share.",
       "timestamp": "2026-11-04 00:00:00"
-    },
-    {
-      "type": "NEWS",
-      "severity": "medium",
-      "ticker": "NHC",
-      "exchange": "ASX",
-      "headline": "What New Hope Doubters Missed",
-      "detail": "Source: Simply Wall St.",
-      "sentiment": "negative",
-      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/68ed3f776c1ca8247ec702ef0b8619b8.jpg",
-      "timestamp": "2026-11-17T00:18:47Z"
     },
     {
       "type": "NEWS",
@@ -163,31 +179,15 @@
       "timestamp": "2026-11-24T12:14:08Z"
     },
     {
-      "type": "VOLUME SPIKE",
+      "type": "NEWS",
       "severity": "medium",
-      "ticker": "COH",
+      "ticker": "BHP",
       "exchange": "ASX",
-      "headline": "2.4x average volume detected",
-      "detail": "Volume: 784,293 vs 20-day avg: 333,130 | Price up 1.5%",
-      "timestamp": "2026-11-24T18:43:39.530525+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "ALQ",
-      "exchange": "ASX",
-      "headline": "2.1x average volume detected",
-      "detail": "Volume: 2,995,236 vs 20-day avg: 1,418,405 | Price down 0.1%",
-      "timestamp": "2026-11-24T18:43:44.778164+00:00"
-    },
-    {
-      "type": "VOLUME SPIKE",
-      "severity": "medium",
-      "ticker": "BGA",
-      "exchange": "ASX",
-      "headline": "2.5x average volume detected",
-      "detail": "Volume: 1,613,253 vs 20-day avg: 632,965 | Price up 2.8%",
-      "timestamp": "2026-11-24T18:43:53.481227+00:00"
+      "headline": "Why Copper Producer Chile Is Missing Out on Surging Prices",
+      "detail": "Source: Barrons.com",
+      "sentiment": "negative",
+      "thumbnail": "https://media.zenfs.com/en/Barrons.com/47dd77514c68c54f9f62fc83ada1751c.jpg_up.jpg",
+      "timestamp": "2026-11-24T21:13:00Z"
     },
     {
       "type": "INSIDER_BUY",
@@ -264,19 +264,19 @@
     {
       "type": "INSIDER_BUY",
       "severity": "low",
-      "ticker": "BAP",
+      "ticker": "GWA",
       "exchange": "ASX",
-      "headline": "Korhonen (Jacqueline) (Director (Non-Executive)) purchased 11,500 shares ($6,849)",
-      "detail": "Purchase at price 0.60 per share.",
+      "headline": "Page (Nicola Janine) (Independent Non-Executive Director) purchased 2,500 shares ($3,618)",
+      "detail": "Purchase at price 1.45 per share.",
       "timestamp": "2026-11-09 00:00:00"
     },
     {
       "type": "INSIDER_BUY",
       "severity": "low",
-      "ticker": "GWA",
+      "ticker": "BAP",
       "exchange": "ASX",
-      "headline": "Page (Nicola Janine) (Independent Non-Executive Director) purchased 2,500 shares ($3,618)",
-      "detail": "Purchase at price 1.45 per share.",
+      "headline": "Korhonen (Jacqueline) (Director (Non-Executive)) purchased 11,500 shares ($6,849)",
+      "detail": "Purchase at price 0.60 per share.",
       "timestamp": "2026-11-09 00:00:00"
     },
     {
@@ -323,39 +323,6 @@
       "headline": "Del Prado (Michael) (Independent Non-Executive Director) purchased 235 shares ($16,187)",
       "detail": "Purchase at price 68.88 per share.",
       "timestamp": "2026-11-16 00:00:00"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "PME",
-      "exchange": "ASX",
-      "headline": "Top 3 Australian Owner Operator Stocks To Watch In November 2026",
-      "detail": "Source: Simply Wall St.",
-      "sentiment": "neutral",
-      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/0330513203e58a5d862459e7d8bf7d1e.jpg",
-      "timestamp": "2026-11-16T19:15:51Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "QAN",
-      "exchange": "ASX",
-      "headline": "Accenture (ACN) Stock May Trade At A Discount On Fresh AI Outsourcing News",
-      "detail": "Source: Simply Wall St.",
-      "sentiment": "neutral",
-      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/b4e1f9a6d1d205158550a8556227885c.jpg",
-      "timestamp": "2026-11-17T02:07:29Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "CSL",
-      "exchange": "ASX",
-      "headline": "CSL Stock And Australian Growth Shares Worth Watching as Rates Stay Higher",
-      "detail": "Source: Simply Wall St.",
-      "sentiment": "positive",
-      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/bc990e9008f43584feee85dfcec5848d.jpg",
-      "timestamp": "2026-11-17T02:08:48Z"
     },
     {
       "type": "NEWS",
@@ -1280,44 +1247,11 @@
       "severity": "low",
       "ticker": "AMC",
       "exchange": "ASX",
-      "headline": "Amcor or Gap: Only One Gets My Dividend Dollars for the Next 10 Years",
-      "detail": "Source: TIKR",
-      "sentiment": "positive",
-      "thumbnail": "https://media.zenfs.com/en/tikr_258/aa10a4aa2f5e958f5b2c44a809282252",
-      "timestamp": "2026-11-23T22:25:16Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "AMC",
-      "exchange": "ASX",
-      "headline": "What Amcor (AMCR)'s Dividend Raise Means For Shareholders",
-      "detail": "Source: Simply Wall St.",
-      "sentiment": "positive",
-      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/8b5995c03917f710ca4ebf3892cd3042.jpg",
-      "timestamp": "2026-11-23T23:21:31Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "AMC",
-      "exchange": "ASX",
       "headline": "Can Amcor (AMCR) Still Look Like A Bargain As Shelf Registration Questions Dilution?",
       "detail": "Source: Simply Wall St.",
       "sentiment": "neutral",
       "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/8b5995c03917f710ca4ebf3892cd3042.jpg",
       "timestamp": "2026-11-24T01:19:16Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "BHP",
-      "exchange": "ASX",
-      "headline": "Deutsche Bank cuts price targets on 13 miners and upgrades Norsk Hydro to 'buy'",
-      "detail": "Source: Proactive",
-      "sentiment": "neutral",
-      "thumbnail": "https://media.zenfs.com/en/proactive_us_504/ab385baf73faae3157f14659f5319346.jpg",
-      "timestamp": "2026-11-24T09:45:00Z"
     },
     {
       "type": "NEWS",
@@ -1329,17 +1263,6 @@
       "sentiment": "neutral",
       "thumbnail": "https://media.zenfs.com/en/proactive_us_504/ab385baf73faae3157f14659f5319346.jpg",
       "timestamp": "2026-11-24T09:45:00Z"
-    },
-    {
-      "type": "NEWS",
-      "severity": "low",
-      "ticker": "BHP",
-      "exchange": "ASX",
-      "headline": "Basic Materials Roundup: Market Talk",
-      "detail": "Source: The Wall Street Journal",
-      "sentiment": "neutral",
-      "thumbnail": "https://media.zenfs.com/en/wsj.com/6cbe71ab82b896527dcbe08183dedb54.jpg_up.jpg",
-      "timestamp": "2026-11-24T12:02:00Z"
     },
     {
       "type": "NEWS",
@@ -1472,6 +1395,127 @@
       "sentiment": "neutral",
       "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/c904d0943c04a641480bb3c64df98c5c.jpg",
       "timestamp": "2026-11-24T18:13:01Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "ASX",
+      "exchange": "ASX",
+      "headline": "ASX (ASX:ASX) Shares Could Be 38% Overvalued As Excess Returns Look Stretched",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "neutral",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/f9d06b0c3a3a1a121794b94db59f3bf9.jpg",
+      "timestamp": "2026-11-24T19:07:37Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "BEN",
+      "exchange": "ASX",
+      "headline": "Bendigo And Adelaide Bank (ASX:BEN) Shares Look Reasonable On Capital Returns",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "neutral",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/e5fb49c70bbb1f4ab69554e66b369323.jpg",
+      "timestamp": "2026-11-24T19:09:55Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "WES",
+      "exchange": "ASX",
+      "headline": "Wesfarmers (ASX:WES) Shares Look Priced At A Premium As 65% Run Continues",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "neutral",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/b7068fa25e303f79adb2d7b8d2fecea4.jpg",
+      "timestamp": "2026-11-24T19:10:11Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "BRG",
+      "exchange": "ASX",
+      "headline": "Breville Group (ASX:BRG) Shares Look Overvalued On Cash Flow Grounds",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "neutral",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/735a6600f7e838005a9031e56dc23f1e.jpg",
+      "timestamp": "2026-11-24T20:08:20Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "ANZ",
+      "exchange": "ASX",
+      "headline": "ANZ (ASX:ANZ) Shares Look Reasonable As The 93% Five Year Run Continues",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "neutral",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/7f825c94d3b28732b4c0ebb8edb2418e.jpg",
+      "timestamp": "2026-11-24T20:08:49Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "MP1",
+      "exchange": "ASX",
+      "headline": "Megaport (ASX:MP1) Shares May Be 40% Undervalued On AGM Growth Update",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "positive",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/1483dc6f19a26cc4775cbcb0606c0b9d.jpg",
+      "timestamp": "2026-11-24T20:09:58Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "IAG",
+      "exchange": "ASX",
+      "headline": "Insurance Australia Group (ASX:IAG) Shares May Be Below Fair Value On Excess Returns",
+      "detail": "Source: Simply Wall St.",
+      "sentiment": "neutral",
+      "thumbnail": "https://media.zenfs.com/en/simply_wall_st__316/66c0401baa27f4fad686a44efafe8593.jpg",
+      "timestamp": "2026-11-24T20:10:01Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "AMC",
+      "exchange": "ASX",
+      "headline": "O-I Glass (OI) Stock Is Up 7.3% Today Without Company News",
+      "detail": "Source: GuruFocus.com",
+      "sentiment": "neutral",
+      "thumbnail": null,
+      "timestamp": "2026-11-24T20:45:49Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "AMC",
+      "exchange": "ASX",
+      "headline": "Why Is Everybody Paying A Premium For West Pharmaceutical Stock?",
+      "detail": "Source: Trefis",
+      "sentiment": "neutral",
+      "thumbnail": "https://media.zenfs.com/en/trefis_142/b87c198cbaae024d5323cfe7f26dced9.jpg",
+      "timestamp": "2026-11-24T20:57:23Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "WEB",
+      "exchange": "ASX",
+      "headline": "WebBeds Group Ltd (WEJTY) Q2 2027 Earnings Call Highlights: Revenue Jumps 17% as WebBeds ...",
+      "detail": "Source: GuruFocus.com",
+      "sentiment": "positive",
+      "thumbnail": null,
+      "timestamp": "2026-11-25T00:20:41Z"
+    },
+    {
+      "type": "NEWS",
+      "severity": "low",
+      "ticker": "BHP",
+      "exchange": "ASX",
+      "headline": "Envision Eyes 400 MW Green Hydrogen Project for Australian Steelmaking",
+      "detail": "Source: Oilprice.com",
+      "sentiment": "neutral",
+      "thumbnail": "https://media.zenfs.com/en/oilprice.com/675f77deb9111c8820200e3deec99b17.jpg_up.jpg",
+      "timestamp": "2026-11-25T02:16:43Z"
     }
   ]
 }
