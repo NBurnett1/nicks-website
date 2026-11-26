@@ -1,9 +1,9 @@
 {
   "ticker": "ANZ",
   "name": "ANZ GROUP FPO [ANZ]",
-  "price": 38.61,
-  "valuationScore": -0.9,
-  "marketCap": "116.3B",
+  "price": 38.81,
+  "valuationScore": -0.7,
+  "marketCap": "—",
   "sector": "Financials",
   "domain": "anz.com.au",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-29",
-      "price": 38.61
+      "price": 38.81
     }
   ],
   "testsPassed": 3,
@@ -226,16 +226,16 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 16.15,
-      "threshold": 15.89,
-      "label": "16.2x vs 15.9x sector"
+      "value": 16.24,
+      "threshold": 15.56,
+      "label": "16.2x vs 15.6x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.63,
+      "value": 1.64,
       "threshold": 1.5,
-      "label": "1.63x vs 1.5x"
+      "label": "1.64x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
@@ -254,8 +254,8 @@
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 14.65,
-      "threshold": 16.15,
+      "value": 14.73,
+      "threshold": 16.24,
       "label": "Fwd 14.7x vs Trail 16.2x"
     },
     "profitabilityCheck": {
@@ -267,10 +267,10 @@
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
-      "passed": false,
-      "value": 26.99,
+      "passed": null,
+      "value": null,
       "threshold": 0.5,
-      "label": "P/S 5.4x ÷ Growth 0.2% = 26.99"
+      "label": "No P/S or growth data"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
@@ -281,14 +281,14 @@
     }
   },
   "metrics": {
-    "pe": 16.15,
-    "sectorPe": 18.69,
-    "pb": 1.63,
-    "ps": 5.4,
+    "pe": 16.24,
+    "sectorPe": 18.3,
+    "pb": 1.64,
+    "ps": null,
     "evEbitda": null,
     "fcfYield": null,
-    "forwardPe": 14.65,
-    "dividendYield": 4.29,
+    "forwardPe": 14.73,
+    "dividendYield": 4.3,
     "revenueGrowth": 0.2,
     "profitMargin": 33.76,
     "operatingMargin": 49.46,

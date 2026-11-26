@@ -1,9 +1,9 @@
 {
   "ticker": "WEB",
   "name": "WEBBEDS FPO [WEB]",
-  "price": 2.56,
-  "valuationScore": 1.9,
-  "marketCap": "922M",
+  "price": 2.5,
+  "valuationScore": -1.2,
+  "marketCap": "898M",
   "sector": "Consumer Cyclical",
   "domain": "webbedsgroup.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-29",
-      "price": 2.57
+      "price": 2.5
     }
   ],
   "testsPassed": 5,
@@ -226,73 +226,73 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 36.64,
-      "threshold": 21.92,
-      "label": "36.6x vs 21.9x sector"
+      "value": 25.0,
+      "threshold": 19.53,
+      "label": "25.0x vs 19.5x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 1.59,
+      "value": 1.55,
       "threshold": 1.5,
-      "label": "1.59x vs 1.5x"
+      "label": "1.55x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": true,
-      "value": 8.82,
+      "value": 5.69,
       "threshold": 10.0,
-      "label": "8.8x vs 10x"
+      "label": "5.7x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": true,
-      "value": 7.22,
+      "value": 7.72,
       "threshold": 5.0,
-      "label": "7.2% vs 5%"
+      "label": "7.7% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 8.58,
-      "threshold": 36.64,
-      "label": "Fwd 8.6x vs Trail 36.6x"
+      "value": 7.74,
+      "threshold": 25.0,
+      "label": "Fwd 7.7x vs Trail 25.0x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
       "passed": false,
-      "value": 9.01,
+      "value": -0.55,
       "threshold": 5.0,
-      "label": "Margin 9.0% / ROE 6.1%"
+      "label": "Margin -0.6% / ROE -0.4%"
     },
     "valueGrowthScore": {
       "name": "Value/Growth Score",
       "passed": true,
-      "value": 0.12,
+      "value": 0.48,
       "threshold": 0.5,
-      "label": "P/S 2.3x ÷ Growth 19.9% = 0.12"
+      "label": "P/S 2.2x ÷ Growth 4.6% = 0.48"
     },
     "revenueTrend": {
       "name": "Revenue Trend",
       "passed": true,
-      "value": 19.9,
+      "value": 4.6,
       "threshold": -5.0,
-      "label": "19.9% growth (floor: -5%)"
+      "label": "4.6% growth (floor: -5%)"
     }
   },
   "metrics": {
-    "pe": 36.64,
-    "sectorPe": 25.79,
-    "pb": 1.59,
-    "ps": 2.34,
-    "evEbitda": 8.82,
-    "fcfYield": 7.22,
-    "forwardPe": 8.58,
+    "pe": 25.0,
+    "sectorPe": 22.98,
+    "pb": 1.55,
+    "ps": 2.23,
+    "evEbitda": 5.69,
+    "fcfYield": 7.72,
+    "forwardPe": 7.74,
     "dividendYield": 0.0,
-    "revenueGrowth": 19.9,
-    "profitMargin": 9.01,
-    "operatingMargin": 24.92,
-    "roe": 6.14,
-    "debtEquity": 43.9
+    "revenueGrowth": 4.6,
+    "profitMargin": -0.55,
+    "operatingMargin": 24.63,
+    "roe": -0.38,
+    "debtEquity": 37.2
   }
 }
