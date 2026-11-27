@@ -1,9 +1,9 @@
 {
   "ticker": "ALL",
   "name": "ARISTOCRAT FPO [ALL]",
-  "price": 65.0,
-  "valuationScore": 10.3,
-  "marketCap": "38.5B",
+  "price": 65.34,
+  "valuationScore": 10.4,
+  "marketCap": "38.7B",
   "sector": "Consumer Discretionary",
   "domain": "aristocrat.com",
   "chartData": [
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-11-29",
-      "price": 65.0
+      "price": 65.34
     }
   ],
   "testsPassed": 2,
@@ -226,37 +226,37 @@
     "peDiscount": {
       "name": "P/E Discount",
       "passed": false,
-      "value": 29.02,
-      "threshold": 14.83,
-      "label": "29.0x vs 14.8x sector"
+      "value": 29.17,
+      "threshold": 14.73,
+      "label": "29.2x vs 14.7x sector"
     },
     "pbBelowBook": {
       "name": "P/B Below Book",
       "passed": false,
-      "value": 6.77,
+      "value": 6.8,
       "threshold": 1.5,
-      "label": "6.77x vs 1.5x"
+      "label": "6.80x vs 1.5x"
     },
     "evEbitdaCheap": {
       "name": "EV/EBITDA Cheap",
       "passed": false,
-      "value": 17.62,
+      "value": 17.63,
       "threshold": 10.0,
       "label": "17.6x vs 10x"
     },
     "fcfYieldStrong": {
       "name": "FCF Yield Strong",
       "passed": false,
-      "value": 2.66,
+      "value": 2.64,
       "threshold": 5.0,
-      "label": "2.7% vs 5%"
+      "label": "2.6% vs 5%"
     },
     "forwardPeRerate": {
       "name": "Forward P/E Re-rating",
       "passed": true,
-      "value": 19.75,
-      "threshold": 29.02,
-      "label": "Fwd 19.8x vs Trail 29.0x"
+      "value": 19.86,
+      "threshold": 29.17,
+      "label": "Fwd 19.9x vs Trail 29.2x"
     },
     "profitabilityCheck": {
       "name": "Profitability Check",
@@ -281,13 +281,13 @@
     }
   },
   "metrics": {
-    "pe": 29.02,
-    "sectorPe": 17.45,
-    "pb": 6.77,
-    "ps": 6.32,
-    "evEbitda": 17.62,
-    "fcfYield": 2.66,
-    "forwardPe": 19.75,
+    "pe": 29.17,
+    "sectorPe": 17.33,
+    "pb": 6.8,
+    "ps": 6.35,
+    "evEbitda": 17.63,
+    "fcfYield": 2.64,
+    "forwardPe": 19.86,
     "dividendYield": 1.55,
     "revenueGrowth": -6.1,
     "profitMargin": 22.51,
